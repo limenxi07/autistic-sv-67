@@ -1,0 +1,31 @@
+F
+======================================================================
+FAIL: test_fully_corroborated_prediction_retains_identity (tests.test_v4_tracking.TrackingTests.test_fully_corroborated_prediction_retains_identity)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/enxi/coding/autistic-sv-67/tests/test_v4_tracking.py", line 42, in test_fully_corroborated_prediction_retains_identity
+    result = reconcile(observation, hypotheses, check, self.budget())
+  File "/Users/enxi/coding/autistic-sv-67/agents/v4_tracking.py", line 597, in reconcile
+    _enumerate(
+    ~~~~~~~~~~^
+        labels,
+        ^^^^^^^
+    ...<4 lines>...
+        inherited=inherited + unresolved,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/enxi/.local/share/uv/python/cpython-3.13.15-macos-aarch64-none/lib/python3.13/unittest/mock.py", line 1169, in __call__
+    return self._mock_call(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/Users/enxi/.local/share/uv/python/cpython-3.13.15-macos-aarch64-none/lib/python3.13/unittest/mock.py", line 1173, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/Users/enxi/.local/share/uv/python/cpython-3.13.15-macos-aarch64-none/lib/python3.13/unittest/mock.py", line 1234, in _execute_mock_call
+    raise effect
+AssertionError: Unnecessary reconstruction
+
+----------------------------------------------------------------------
+Ran 1 test in 0.029s
+
+FAILED (failures=1)

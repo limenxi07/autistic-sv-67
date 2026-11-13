@@ -1,0 +1,31 @@
+test_v4_diagnostics (unittest.loader._FailedTest.test_v4_diagnostics) ... ERROR
+test_v4_harness (unittest.loader._FailedTest.test_v4_harness) ... ERROR
+
+======================================================================
+ERROR: test_v4_diagnostics (unittest.loader._FailedTest.test_v4_diagnostics)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_v4_diagnostics
+Traceback (most recent call last):
+  File "/Users/enxi/.local/share/uv/python/cpython-3.13.15-macos-aarch64-none/lib/python3.13/unittest/loader.py", line 141, in loadTestsFromName
+    module = __import__(module_name)
+  File "/Users/enxi/coding/autistic-sv-67/tests/test_v4_diagnostics.py", line 5, in <module>
+    from tools.diagnose_v4 import extract_regressions, verify_baseline
+ModuleNotFoundError: No module named 'tools.diagnose_v4'
+
+
+======================================================================
+ERROR: test_v4_harness (unittest.loader._FailedTest.test_v4_harness)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_v4_harness
+Traceback (most recent call last):
+  File "/Users/enxi/.local/share/uv/python/cpython-3.13.15-macos-aarch64-none/lib/python3.13/unittest/loader.py", line 141, in loadTestsFromName
+    module = __import__(module_name)
+  File "/Users/enxi/coding/autistic-sv-67/tests/test_v4_harness.py", line 7, in <module>
+    from tools.benchmark_v4 import replay_job, validate_timing_report
+ModuleNotFoundError: No module named 'tools.benchmark_v4'
+
+
+----------------------------------------------------------------------
+Ran 2 tests in 0.000s
+
+FAILED (errors=2)

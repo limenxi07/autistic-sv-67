@@ -1,0 +1,23 @@
+{
+  "platform_result": {
+    "source": "user-reported",
+    "message": "Your code failed to evaluate correctly. There might be a syntax error or unsupported libraries are used, please check your code again.",
+    "submitted_hash": "not confirmed; most recently delivered source was3c56f6514b1839d444666b4ccc2efecf98c4f8f49452fcb5375314553021a7cd",
+    "paste_scope": "user replaced entire editor",
+    "grader_python_version": "not provided",
+    "notebook_python_version": "3.13.15"
+  },
+  "reproduced_locally": [
+    "Python3.10/3.11 syntax rejects type alias statements",
+    "dataclass with deferred annotations fails under exec with unregistered __name__",
+    "future import fails when a grader prelude precedes the source"
+  ],
+  "fix": [
+    "remove future import",
+    "use assignment type aliases",
+    "use NamedTuple SearchResult to tolerate unregistered modules, including inherited deferred-annotation compilation flags"
+  ],
+  "source_sha256": "55d3ae5655e5c4d6d289e7a8812a0a2bee2b37ae137008472539d5d405c5600a",
+  "tests": "46 passed; three new compatibility tests first failed then passed",
+  "root_cause_status": "actual grader traceback unavailable; locally reproduced compatibility hazards fixed"
+}

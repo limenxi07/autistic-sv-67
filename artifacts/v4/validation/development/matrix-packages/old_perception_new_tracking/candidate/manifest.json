@@ -1,0 +1,38 @@
+{
+  "source_sha256": "dc4bcfee30df7ae3cdc1acd9e748eda05387a38ab5e2a0597b7db22d82048a97",
+  "bytes": 424004,
+  "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+  "model_sha256": "7fa06cb8068cd7dc4dad9c1e49ebb3b66c0121d7811d84247290e667c3aa70b3",
+  "checkpoint_sha256": "8e2719baa11766629b1ec05026f4dcf3ef241171a7157264b27ca7097b39c1b7",
+  "policy_sha256": "3f6bf2e49009a6315aa9bacc912dbc79c127bf9d6b73cff1916faac871a0b8b1",
+  "policy": {
+    "temperature": 0.25,
+    "min_confidence": 0.85,
+    "min_margin": 0.2,
+    "view": "full"
+  },
+  "runtime_sources": {
+    "artifacts/p3/frozen/task1_agent.py": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+    "agents/v4_backend.py": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+    "agents/v4_types.py": "f8260ca790f304d1708488663c0688b829b53a63ec92b6005eadf01a0c7e9fb2",
+    "agents/v4_bridge.py": "4de2865a94da7791ad0df8930939ba4e6dc86a012754adff88b4bcc0a67cce21",
+    "agents/v4_model.py": "5e913c862a508723191348daa1217c5e0e0d83533af1ec50cd44ddcb0d9e7c07",
+    "agents/v4_perception.py": "f3759c9b81ecfd33430c2ff9f92969dba59bcb2b7538660084925be5458421af",
+    "agents/v4_tracking.py": "fe851ab23686b695535bde4f27ec54aa1666375b0ad75ada90711cf21b3ec1c4",
+    "agents/v4_planner.py": "0e0e3a97d2b6665f5e56ea4457b03509fa9d53df5ca18e8b2d628f0d294e0e80",
+    "agents/v4.py": "56ff1afa974c697cb3eac13fca93bb3723ae1dc4909ef154593518694fdac80e"
+  },
+  "configuration": {
+    "initial_seconds": 3.0,
+    "cutoff_seconds": 3.5,
+    "reference_initial_seconds": 2.0,
+    "max_hypotheses": 4,
+    "max_ambiguous_cells": 2,
+    "default_structured": "P3.Agent"
+  },
+  "export_parity_passed": true,
+  "runtime_overrides": {},
+  "status": "Source freeze only; qualification gates are separate.",
+  "ablation": "old_perception_new_tracking",
+  "perception_implementation": "unchanged V3 gem/shield selective"
+}

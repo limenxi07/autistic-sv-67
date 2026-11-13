@@ -1,0 +1,97 @@
+--- before/agents/v4_perception.py
++++ after/agents/v4_perception.py
+@@ -1,16 +1,21 @@
+ """Lazy CPU perception: runtime model bytes are supplied by the V3 package."""
++
++from types import SimpleNamespace
+ 
+ from agents.v4_bridge import CLASSES, split_cells
+ from agents.v4_types import CellScores, PerceptionEvidence, PerceptionPolicy
+ 
+-_loader = None
+-_model = None
+-_temperature = 1.0
+-_policy = PerceptionPolicy(1.0, 0.85, 0.20, "full")
++# Mutate one shared object so pasted function-scoped notebook cells and module
++# execution use the same configuration; rebinding globals splits those scopes.
++_perception_runtime = SimpleNamespace(
++    loader=None,
++    model=None,
++    temperature=1.0,
++    policy=PerceptionPolicy(1.0, 0.85, 0.20, "full"),
++)
+ 
+ 
+ def configure(loader, temperature=1.0, *, policy=None):
+-    global _loader, _model, _temperature, _policy
+     if temperature <= 0:
+         raise ValueError("Temperature must be positive")
+     selected = policy or PerceptionPolicy(float(temperature), 0.85, 0.20, "full")
+@@ -19,12 +24,13 @@
+         "inset_005",
+     ):
+         raise ValueError("Model calibration/policy mismatch")
+-    _loader, _model, _temperature = loader, None, float(temperature)
+-    _policy = selected
++    _perception_runtime.loader = loader
++    _perception_runtime.model = None
++    _perception_runtime.temperature = float(temperature)
++    _perception_runtime.policy = selected
+ 
+ 
+ def _get_model():
+-    global _model
+     import torch
+ 
+     torch.set_num_threads(1)
+@@ -32,11 +38,11 @@
+         torch.set_num_interop_threads(1)
+     if torch.get_num_threads() != 1 or torch.get_num_interop_threads() != 1:
+         raise RuntimeError("Inference thread configuration failed")
+-    if _model is None:
+-        if _loader is None:
++    if _perception_runtime.model is None:
++        if _perception_runtime.loader is None:
+             raise RuntimeError("V3 vision model has not been configured")
+-        _model = _loader().eval()
+-    return _model
++        _perception_runtime.model = _perception_runtime.loader().eval()
++    return _perception_runtime.model
+ 
+ 
+ def classify(observation, cells=None):
+@@ -73,7 +79,7 @@
+     )
+     with torch.inference_mode():
+         values = torch.softmax(
+-            model(torch.from_numpy(crops)) / _temperature, dim=1
++            model(torch.from_numpy(crops)) / _perception_runtime.temperature, dim=1
+         ).numpy()
+     for (x, y), value in zip(selected, values):
+         probabilities[y, x] = value
+@@ -242,7 +248,7 @@
+ 
+ 
+ def current_policy():
+-    return _policy
++    return _perception_runtime.policy
+ 
+ 
+ def classify_evidence(observation, cells=None):
+@@ -252,7 +258,7 @@
+     scores = classify(observation, cells)
+     probabilities = scores.probabilities
+     disagreements = []
+-    if _policy.view == "inset_005":
++    if _perception_runtime.policy.view == "inset_005":
+         rival = {CLASSES.index(k) for k in ("gem", "coin", "ghost", "shield")}
+         protected = {
+             CLASSES.index(k)
+@@ -277,4 +283,6 @@
+                 probabilities[y, x] = (
+                     probabilities[y, x] + inset.probabilities[y, x]
+                 ) / 2
+-    return PerceptionEvidence(scores, tuple(disagreements), _policy.view)
++    return PerceptionEvidence(
++        scores, tuple(disagreements), _perception_runtime.policy.view
++    )

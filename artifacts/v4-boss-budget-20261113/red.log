@@ -1,0 +1,25 @@
+EE
+======================================================================
+ERROR: test_boss_package_can_plan_after_task2_deadline_in_both_modes (tests.test_v4_package.PackageTests.test_boss_package_can_plan_after_task2_deadline_in_both_modes)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/enxi/coding/autistic-sv-67/tests/test_v4_package.py", line 119, in test_boss_package_can_plan_after_task2_deadline_in_both_modes
+    source = package(
+        self.root, EXPORT, self.policy, self.folder / "boss", task3=True
+    )
+TypeError: package() got an unexpected keyword argument 'task3'
+
+======================================================================
+ERROR: test_boss_reference_fallback_keeps_longer_original_deadline (tests.test_v4_package.PackageTests.test_boss_reference_fallback_keeps_longer_original_deadline)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/enxi/coding/autistic-sv-67/tests/test_v4_package.py", line 155, in test_boss_reference_fallback_keeps_longer_original_deadline
+    source = package(
+        self.root, EXPORT, self.policy, self.folder / "boss", task3=True
+    )
+TypeError: package() got an unexpected keyword argument 'task3'
+
+----------------------------------------------------------------------
+Ran 2 tests in 0.312s
+
+FAILED (errors=2)

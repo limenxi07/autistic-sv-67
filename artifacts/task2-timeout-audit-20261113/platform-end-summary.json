@@ -1,0 +1,65 @@
+{
+  "provenance": "Selected fields transcribed from the user-pasted TASK2_END_0b61 platform Debugging reports; not a raw traceback transcript.",
+  "source_sha256": "0b61f5c7c594541b12656995aa2389642ce37a48ad9f5a2bc3544360c45d92d5",
+  "rows": [
+    {
+      "label": "B3 So Close Yet So Far",
+      "trigger": "predicted_terminal_action",
+      "elapsed": 4.347926,
+      "agent_seconds": 2.758861,
+      "between_calls_seconds": 1.589018,
+      "actions": 106,
+      "first_step_seconds": 1.312574,
+      "plan_remaining": 0,
+      "cutoff": 4.65,
+      "observed_status": {
+        "score": -315,
+        "phase": "ongoing",
+        "turn": 105
+      },
+      "predicted_status": [
+        {
+          "score": -315,
+          "win": true,
+          "lose": false
+        }
+      ],
+      "reason": "conditional_plan",
+      "visual_discrepancies": 0,
+      "metadata_discrepancies": 0,
+      "repairs": 0,
+      "recoveries": 0
+    },
+    {
+      "label": "B4 Measure Twice and Cut Once",
+      "trigger": "first_fallback",
+      "elapsed": 4.682607,
+      "agent_seconds": 3.195567,
+      "between_calls_seconds": 1.486994,
+      "actions": 96,
+      "first_step_seconds": 1.383517,
+      "plan_remaining": null,
+      "cutoff": 4.65,
+      "observed_status": {
+        "score": -285,
+        "phase": "ongoing",
+        "turn": 95
+      },
+      "predicted_status": [],
+      "reason": "unresolved_perception",
+      "visual_discrepancies": 0,
+      "metadata_discrepancies": 0,
+      "repairs": 0,
+      "recoveries": 0,
+      "last_action": "wait",
+      "last_step_seconds": 0.032577,
+      "last_gap_seconds": 0.044024
+    }
+  ],
+  "interpretation": {
+    "b3": "Predicted winning action prepared before execution deadline; diagnostic prevents final env.step, so not a completed graded win.",
+    "b4": "Budget crossed during observation processing; reconcile can return no hypotheses on deadline expiry, producing unresolved_perception and clearing planner. Controlled-clock reproduction confirms this path with a consistent observation.",
+    "graded_set_mapping": "Still unknown; this confirms a platform Debugging failure mechanism, not identity of graded set 4.",
+    "production_changed": false
+  }
+}

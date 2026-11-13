@@ -1,0 +1,2978 @@
+{
+  "cases": [
+    {
+      "notebook": false,
+      "label": "A0 Basic Movement",
+      "report": {
+        "source": "0b61f5c7c594541b12656995aa2389642ce37a48ad9f5a2bc3544360c45d92d5",
+        "trigger": "predicted_terminal_action",
+        "elapsed": 0.052079,
+        "agent_seconds": 0.049998,
+        "between_calls_seconds": 0.002074,
+        "inflight_step_seconds": 0.0,
+        "actions": 4,
+        "first_step_seconds": 0.038023,
+        "plan_remaining": 0,
+        "cutoff": 4.65,
+        "observed_status": {
+          "score": -9,
+          "phase": "ongoing",
+          "turn": 3
+        },
+        "predicted_status": [
+          {
+            "score": -9,
+            "win": true,
+            "lose": false
+          }
+        ],
+        "stats": {
+          "input_mode": "image",
+          "visual_discrepancies": 0,
+          "metadata_discrepancies": 0,
+          "repairs": 0,
+          "recoveries": 0,
+          "actions": 4,
+          "hypotheses": 1,
+          "reason": "conditional_plan",
+          "conditional_on_perception": true,
+          "planner_stop_reason": "exhausted",
+          "planner_backend": "fast"
+        },
+        "tail": [
+          {
+            "turn": 1,
+            "action": "right",
+            "reason": "conditional_plan",
+            "step_seconds": 0.007424,
+            "gap_seconds": 0.000745
+          },
+          {
+            "turn": 2,
+            "action": "right",
+            "reason": "conditional_plan",
+            "step_seconds": 0.002287,
+            "gap_seconds": 0.000663
+          },
+          {
+            "turn": 3,
+            "action": "right",
+            "reason": "conditional_plan",
+            "step_seconds": 0.002263,
+            "gap_seconds": 0.00065
+          }
+        ]
+      },
+      "actual_terminal_win": true,
+      "actual_score": -9
+    },
+    {
+      "notebook": false,
+      "label": "A1 Maze Turns",
+      "report": {
+        "source": "0b61f5c7c594541b12656995aa2389642ce37a48ad9f5a2bc3544360c45d92d5",
+        "trigger": "predicted_terminal_action",
+        "elapsed": 0.061508,
+        "agent_seconds": 0.048918,
+        "between_calls_seconds": 0.012577,
+        "inflight_step_seconds": 0.0,
+        "actions": 10,
+        "first_step_seconds": 0.033789,
+        "plan_remaining": 0,
+        "cutoff": 4.65,
+        "observed_status": {
+          "score": -27,
+          "phase": "ongoing",
+          "turn": 9
+        },
+        "predicted_status": [
+          {
+            "score": -27,
+            "win": true,
+            "lose": false
+          }
+        ],
+        "stats": {
+          "input_mode": "image",
+          "visual_discrepancies": 0,
+          "metadata_discrepancies": 0,
+          "repairs": 0,
+          "recoveries": 0,
+          "actions": 10,
+          "hypotheses": 1,
+          "reason": "conditional_plan",
+          "conditional_on_perception": true,
+          "planner_stop_reason": "exhausted",
+          "planner_backend": "fast"
+        },
+        "tail": [
+          {
+            "turn": 7,
+            "action": "right",
+            "reason": "conditional_plan",
+            "step_seconds": 0.002225,
+            "gap_seconds": 0.001581
+          },
+          {
+            "turn": 8,
+            "action": "right",
+            "reason": "conditional_plan",
+            "step_seconds": 0.002108,
+            "gap_seconds": 0.001312
+          },
+          {
+            "turn": 9,
+            "action": "right",
+            "reason": "conditional_plan",
+            "step_seconds": 0.001622,
+            "gap_seconds": 0.001268
+          }
+        ]
+      },
+      "actual_terminal_win": true,
+      "actual_score": -27
+    },
+    {
+      "notebook": false,
+      "label": "A2 Optional Coin Path",
+      "report": {
+        "source": "0b61f5c7c594541b12656995aa2389642ce37a48ad9f5a2bc3544360c45d92d5",
+        "trigger": "predicted_terminal_action",
+        "elapsed": 0.247479,
+        "agent_seconds": 0.216319,
+        "between_calls_seconds": 0.031152,
+        "inflight_step_seconds": 0.0,
+        "actions": 18,
+        "first_step_seconds": 0.179338,
+        "plan_remaining": 0,
+        "cutoff": 4.65,
+        "observed_status": {
+          "score": -21,
+          "phase": "ongoing",
+          "turn": 17
+        },
+        "predicted_status": [
+          {
+            "score": -21,
+            "win": true,
+            "lose": false
+          }
+        ],
+        "stats": {
+          "input_mode": "image",
+          "visual_discrepancies": 0,
+          "metadata_discrepancies": 0,
+          "repairs": 0,
+          "recoveries": 0,
+          "actions": 18,
+          "hypotheses": 1,
+          "reason": "conditional_plan",
+          "conditional_on_perception": true,
+          "planner_stop_reason": "deadline",
+          "planner_backend": "fast"
+        },
+        "tail": [
+          {
+            "turn": 15,
+            "action": "right",
+            "reason": "conditional_plan",
+            "step_seconds": 0.00254,
+            "gap_seconds": 0.001435
+          },
+          {
+            "turn": 16,
+            "action": "pick_up",
+            "reason": "conditional_plan",
+            "step_seconds": 0.001688,
+            "gap_seconds": 0.001491
+          },
+          {
+            "turn": 17,
+            "action": "right",
+            "reason": "conditional_plan",
+            "step_seconds": 0.001513,
+            "gap_seconds": 0.001414
+          }
+        ]
+      },
+      "actual_terminal_win": true,
+      "actual_score": -21
+    },
+    {
+      "notebook": false,
+      "label": "A3 Multiple Required Gems",
+      "report": {
+        "source": "0b61f5c7c594541b12656995aa2389642ce37a48ad9f5a2bc3544360c45d92d5",
+        "trigger": "predicted_terminal_action",
+        "elapsed": 0.171762,
+        "agent_seconds": 0.122728,
+        "between_calls_seconds": 0.049028,
+        "inflight_step_seconds": 0.0,
+        "actions": 22,
+        "first_step_seconds": 0.080358,
+        "plan_remaining": 0,
+        "cutoff": 4.65,
+        "observed_status": {
+          "score": -63,
+          "phase": "ongoing",
+          "turn": 21
+        },
+        "predicted_status": [
+          {
+            "score": -63,
+            "win": true,
+            "lose": false
+          }
+        ],
+        "stats": {
+          "input_mode": "image",
+          "visual_discrepancies": 0,
+          "metadata_discrepancies": 0,
+          "repairs": 0,
+          "recoveries": 0,
+          "actions": 22,
+          "hypotheses": 1,
+          "reason": "conditional_plan",
+          "conditional_on_perception": true,
+          "planner_stop_reason": "deadline",
+          "planner_backend": "fast"
+        },
+        "tail": [
+          {
+            "turn": 19,
+            "action": "right",
+            "reason": "conditional_plan",
+            "step_seconds": 0.001529,
+            "gap_seconds": 0.002024
+          },
+          {
+            "turn": 20,
+            "action": "right",
+            "reason": "conditional_plan",
+            "step_seconds": 0.001834,
+            "gap_seconds": 0.002185
+          },
+          {
+            "turn": 21,
+            "action": "right",
+            "reason": "conditional_plan",
+            "step_seconds": 0.002386,
+            "gap_seconds": 0.002114
+          }
+        ]
+      },
+      "actual_terminal_win": true,
+      "actual_score": -63
+    },
+    {
+      "notebook": false,
+      "label": "A4 Key and Door",
+      "report": {
+        "source": "0b61f5c7c594541b12656995aa2389642ce37a48ad9f5a2bc3544360c45d92d5",
+        "trigger": "predicted_terminal_action",
+        "elapsed": 0.097162,
+        "agent_seconds": 0.083262,
+        "between_calls_seconds": 0.013893,
+        "inflight_step_seconds": 0.0,
+        "actions": 12,
+        "first_step_seconds": 0.061645,
+        "plan_remaining": 0,
+        "cutoff": 4.65,
+        "observed_status": {
+          "score": -33,
+          "phase": "ongoing",
+          "turn": 11
+        },
+        "predicted_status": [
+          {
+            "score": -33,
+            "win": true,
+            "lose": false
+          }
+        ],
+        "stats": {
+          "input_mode": "image",
+          "visual_discrepancies": 0,
+          "metadata_discrepancies": 0,
+          "repairs": 0,
+          "recoveries": 0,
+          "actions": 12,
+          "hypotheses": 1,
+          "reason": "conditional_plan",
+          "conditional_on_perception": true,
+          "planner_stop_reason": "exhausted",
+          "planner_backend": "fast"
+        },
+        "tail": [
+          {
+            "turn": 9,
+            "action": "right",
+            "reason": "conditional_plan",
+            "step_seconds": 0.001239,
+            "gap_seconds": 0.000728
+          },
+          {
+            "turn": 10,
+            "action": "right",
+            "reason": "conditional_plan",
+            "step_seconds": 0.001203,
+            "gap_seconds": 0.000699
+          },
+          {
+            "turn": 11,
+            "action": "right",
+            "reason": "conditional_plan",
+            "step_seconds": 0.002257,
+            "gap_seconds": 0.000974
+          }
+        ]
+      },
+      "actual_terminal_win": true,
+      "actual_score": -33
+    },
+    {
+      "notebook": false,
+      "label": "A5 Hazard Detour",
+      "report": {
+        "source": "0b61f5c7c594541b12656995aa2389642ce37a48ad9f5a2bc3544360c45d92d5",
+        "trigger": "predicted_terminal_action",
+        "elapsed": 0.104355,
+        "agent_seconds": 0.092606,
+        "between_calls_seconds": 0.011741,
+        "inflight_step_seconds": 0.0,
+        "actions": 14,
+        "first_step_seconds": 0.069722,
+        "plan_remaining": 0,
+        "cutoff": 4.65,
+        "observed_status": {
+          "score": -39,
+          "phase": "ongoing",
+          "turn": 13
+        },
+        "predicted_status": [
+          {
+            "score": -39,
+            "win": true,
+            "lose": false
+          }
+        ],
+        "stats": {
+          "input_mode": "image",
+          "visual_discrepancies": 0,
+          "metadata_discrepancies": 0,
+          "repairs": 0,
+          "recoveries": 0,
+          "actions": 14,
+          "hypotheses": 1,
+          "reason": "conditional_plan",
+          "conditional_on_perception": true,
+          "planner_stop_reason": "deadline",
+          "planner_backend": "fast"
+        },
+        "tail": [
+          {
+            "turn": 11,
+            "action": "down",
+            "reason": "conditional_plan",
+            "step_seconds": 0.001903,
+            "gap_seconds": 0.000819
+          },
+          {
+            "turn": 12,
+            "action": "down",
+            "reason": "conditional_plan",
+            "step_seconds": 0.002031,
+            "gap_seconds": 0.000776
+          },
+          {
+            "turn": 13,
+            "action": "down",
+            "reason": "conditional_plan",
+            "step_seconds": 0.001392,
+            "gap_seconds": 0.000984
+          }
+        ]
+      },
+      "actual_terminal_win": true,
+      "actual_score": -39
+    },
+    {
+      "notebook": false,
+      "label": "A6 Pushable Box",
+      "report": {
+        "source": "0b61f5c7c594541b12656995aa2389642ce37a48ad9f5a2bc3544360c45d92d5",
+        "trigger": "predicted_terminal_action",
+        "elapsed": 0.068672,
+        "agent_seconds": 0.062736,
+        "between_calls_seconds": 0.005927,
+        "inflight_step_seconds": 0.0,
+        "actions": 8,
+        "first_step_seconds": 0.047655,
+        "plan_remaining": 0,
+        "cutoff": 4.65,
+        "observed_status": {
+          "score": -21,
+          "phase": "ongoing",
+          "turn": 7
+        },
+        "predicted_status": [
+          {
+            "score": -21,
+            "win": true,
+            "lose": false
+          }
+        ],
+        "stats": {
+          "input_mode": "image",
+          "visual_discrepancies": 0,
+          "metadata_discrepancies": 0,
+          "repairs": 0,
+          "recoveries": 0,
+          "actions": 8,
+          "hypotheses": 1,
+          "reason": "conditional_plan",
+          "conditional_on_perception": true,
+          "planner_stop_reason": "exhausted",
+          "planner_backend": "fast"
+        },
+        "tail": [
+          {
+            "turn": 5,
+            "action": "right",
+            "reason": "conditional_plan",
+            "step_seconds": 0.001333,
+            "gap_seconds": 0.001051
+          },
+          {
+            "turn": 6,
+            "action": "right",
+            "reason": "conditional_plan",
+            "step_seconds": 0.002014,
+            "gap_seconds": 0.000734
+          },
+          {
+            "turn": 7,
+            "action": "right",
+            "reason": "conditional_plan",
+            "step_seconds": 0.002751,
+            "gap_seconds": 0.00086
+          }
+        ]
+      },
+      "actual_terminal_win": true,
+      "actual_score": -21
+    },
+    {
+      "notebook": false,
+      "label": "A7 Shield Powerup",
+      "report": {
+        "source": "0b61f5c7c594541b12656995aa2389642ce37a48ad9f5a2bc3544360c45d92d5",
+        "trigger": "predicted_terminal_action",
+        "elapsed": 0.102334,
+        "agent_seconds": 0.090229,
+        "between_calls_seconds": 0.012093,
+        "inflight_step_seconds": 0.0,
+        "actions": 15,
+        "first_step_seconds": 0.065896,
+        "plan_remaining": 0,
+        "cutoff": 4.65,
+        "observed_status": {
+          "score": -42,
+          "phase": "ongoing",
+          "turn": 14
+        },
+        "predicted_status": [
+          {
+            "score": -42,
+            "win": true,
+            "lose": false
+          }
+        ],
+        "stats": {
+          "input_mode": "image",
+          "visual_discrepancies": 0,
+          "metadata_discrepancies": 0,
+          "repairs": 0,
+          "recoveries": 0,
+          "actions": 15,
+          "hypotheses": 1,
+          "reason": "conditional_plan",
+          "conditional_on_perception": true,
+          "planner_stop_reason": "deadline",
+          "planner_backend": "fast"
+        },
+        "tail": [
+          {
+            "turn": 12,
+            "action": "right",
+            "reason": "conditional_plan",
+            "step_seconds": 0.001243,
+            "gap_seconds": 0.000729
+          },
+          {
+            "turn": 13,
+            "action": "right",
+            "reason": "conditional_plan",
+            "step_seconds": 0.001453,
+            "gap_seconds": 0.000693
+          },
+          {
+            "turn": 14,
+            "action": "right",
+            "reason": "conditional_plan",
+            "step_seconds": 0.002202,
+            "gap_seconds": 0.000891
+          }
+        ]
+      },
+      "actual_terminal_win": true,
+      "actual_score": -42
+    },
+    {
+      "notebook": false,
+      "label": "A8 Ghost Powerup",
+      "report": {
+        "source": "0b61f5c7c594541b12656995aa2389642ce37a48ad9f5a2bc3544360c45d92d5",
+        "trigger": "predicted_terminal_action",
+        "elapsed": 0.116844,
+        "agent_seconds": 0.104387,
+        "between_calls_seconds": 0.012447,
+        "inflight_step_seconds": 0.0,
+        "actions": 17,
+        "first_step_seconds": 0.069435,
+        "plan_remaining": 0,
+        "cutoff": 4.65,
+        "observed_status": {
+          "score": -48,
+          "phase": "ongoing",
+          "turn": 16
+        },
+        "predicted_status": [
+          {
+            "score": -48,
+            "win": true,
+            "lose": false
+          }
+        ],
+        "stats": {
+          "input_mode": "image",
+          "visual_discrepancies": 0,
+          "metadata_discrepancies": 0,
+          "repairs": 0,
+          "recoveries": 0,
+          "actions": 17,
+          "hypotheses": 1,
+          "reason": "conditional_plan",
+          "conditional_on_perception": true,
+          "planner_stop_reason": "deadline",
+          "planner_backend": "fast"
+        },
+        "tail": [
+          {
+            "turn": 14,
+            "action": "right",
+            "reason": "conditional_plan",
+            "step_seconds": 0.001908,
+            "gap_seconds": 0.000663
+          },
+          {
+            "turn": 15,
+            "action": "right",
+            "reason": "conditional_plan",
+            "step_seconds": 0.001353,
+            "gap_seconds": 0.000741
+          },
+          {
+            "turn": 16,
+            "action": "right",
+            "reason": "conditional_plan",
+            "step_seconds": 0.002124,
+            "gap_seconds": 0.000692
+          }
+        ]
+      },
+      "actual_terminal_win": true,
+      "actual_score": -48
+    },
+    {
+      "notebook": false,
+      "label": "A9 Boots Powerup",
+      "report": {
+        "source": "0b61f5c7c594541b12656995aa2389642ce37a48ad9f5a2bc3544360c45d92d5",
+        "trigger": "predicted_terminal_action",
+        "elapsed": 0.076677,
+        "agent_seconds": 0.067145,
+        "between_calls_seconds": 0.009525,
+        "inflight_step_seconds": 0.0,
+        "actions": 10,
+        "first_step_seconds": 0.050509,
+        "plan_remaining": 0,
+        "cutoff": 4.65,
+        "observed_status": {
+          "score": -27,
+          "phase": "ongoing",
+          "turn": 9
+        },
+        "predicted_status": [
+          {
+            "score": -27,
+            "win": true,
+            "lose": false
+          }
+        ],
+        "stats": {
+          "input_mode": "image",
+          "visual_discrepancies": 0,
+          "metadata_discrepancies": 0,
+          "repairs": 0,
+          "recoveries": 0,
+          "actions": 10,
+          "hypotheses": 1,
+          "reason": "conditional_plan",
+          "conditional_on_perception": true,
+          "planner_stop_reason": "exhausted",
+          "planner_backend": "fast"
+        },
+        "tail": [
+          {
+            "turn": 7,
+            "action": "up",
+            "reason": "conditional_plan",
+            "step_seconds": 0.001549,
+            "gap_seconds": 0.001094
+          },
+          {
+            "turn": 8,
+            "action": "right",
+            "reason": "conditional_plan",
+            "step_seconds": 0.002061,
+            "gap_seconds": 0.000945
+          },
+          {
+            "turn": 9,
+            "action": "right",
+            "reason": "conditional_plan",
+            "step_seconds": 0.001309,
+            "gap_seconds": 0.000923
+          }
+        ]
+      },
+      "actual_terminal_win": true,
+      "actual_score": -27
+    },
+    {
+      "notebook": false,
+      "label": "A10 Combined Mechanics",
+      "report": {
+        "source": "0b61f5c7c594541b12656995aa2389642ce37a48ad9f5a2bc3544360c45d92d5",
+        "trigger": "predicted_terminal_action",
+        "elapsed": 0.182239,
+        "agent_seconds": 0.145535,
+        "between_calls_seconds": 0.036699,
+        "inflight_step_seconds": 0.0,
+        "actions": 29,
+        "first_step_seconds": 0.079749,
+        "plan_remaining": 0,
+        "cutoff": 4.65,
+        "observed_status": {
+          "score": -84,
+          "phase": "ongoing",
+          "turn": 28
+        },
+        "predicted_status": [
+          {
+            "score": -84,
+            "win": true,
+            "lose": false
+          }
+        ],
+        "stats": {
+          "input_mode": "image",
+          "visual_discrepancies": 0,
+          "metadata_discrepancies": 0,
+          "repairs": 0,
+          "recoveries": 0,
+          "actions": 29,
+          "hypotheses": 1,
+          "reason": "conditional_plan",
+          "conditional_on_perception": true,
+          "planner_stop_reason": "deadline",
+          "planner_backend": "fast"
+        },
+        "tail": [
+          {
+            "turn": 26,
+            "action": "down",
+            "reason": "conditional_plan",
+            "step_seconds": 0.00259,
+            "gap_seconds": 0.001095
+          },
+          {
+            "turn": 27,
+            "action": "right",
+            "reason": "conditional_plan",
+            "step_seconds": 0.001571,
+            "gap_seconds": 0.001051
+          },
+          {
+            "turn": 28,
+            "action": "right",
+            "reason": "conditional_plan",
+            "step_seconds": 0.001567,
+            "gap_seconds": 0.001016
+          }
+        ]
+      },
+      "actual_terminal_win": true,
+      "actual_score": -84
+    },
+    {
+      "notebook": false,
+      "label": "B0 Thread the Needle",
+      "report": {
+        "source": "0b61f5c7c594541b12656995aa2389642ce37a48ad9f5a2bc3544360c45d92d5",
+        "trigger": "predicted_terminal_action",
+        "elapsed": 0.151594,
+        "agent_seconds": 0.127587,
+        "between_calls_seconds": 0.024001,
+        "inflight_step_seconds": 0.0,
+        "actions": 28,
+        "first_step_seconds": 0.078156,
+        "plan_remaining": 0,
+        "cutoff": 4.65,
+        "observed_status": {
+          "score": -81,
+          "phase": "ongoing",
+          "turn": 27
+        },
+        "predicted_status": [
+          {
+            "score": -81,
+            "win": true,
+            "lose": false
+          }
+        ],
+        "stats": {
+          "input_mode": "image",
+          "visual_discrepancies": 0,
+          "metadata_discrepancies": 0,
+          "repairs": 0,
+          "recoveries": 0,
+          "actions": 28,
+          "hypotheses": 1,
+          "reason": "conditional_plan",
+          "conditional_on_perception": true,
+          "planner_stop_reason": "deadline",
+          "planner_backend": "fast"
+        },
+        "tail": [
+          {
+            "turn": 25,
+            "action": "right",
+            "reason": "conditional_plan",
+            "step_seconds": 0.001605,
+            "gap_seconds": 0.000829
+          },
+          {
+            "turn": 26,
+            "action": "right",
+            "reason": "conditional_plan",
+            "step_seconds": 0.001568,
+            "gap_seconds": 0.000797
+          },
+          {
+            "turn": 27,
+            "action": "right",
+            "reason": "conditional_plan",
+            "step_seconds": 0.001587,
+            "gap_seconds": 0.000799
+          }
+        ]
+      },
+      "actual_terminal_win": true,
+      "actual_score": -81
+    },
+    {
+      "notebook": false,
+      "label": "B1 Hypnosis",
+      "report": {
+        "source": "0b61f5c7c594541b12656995aa2389642ce37a48ad9f5a2bc3544360c45d92d5",
+        "trigger": "predicted_terminal_action",
+        "elapsed": 0.240904,
+        "agent_seconds": 0.171258,
+        "between_calls_seconds": 0.069639,
+        "inflight_step_seconds": 0.0,
+        "actions": 27,
+        "first_step_seconds": 0.107081,
+        "plan_remaining": 0,
+        "cutoff": 4.65,
+        "observed_status": {
+          "score": -78,
+          "phase": "ongoing",
+          "turn": 26
+        },
+        "predicted_status": [
+          {
+            "score": -78,
+            "win": true,
+            "lose": false
+          }
+        ],
+        "stats": {
+          "input_mode": "image",
+          "visual_discrepancies": 0,
+          "metadata_discrepancies": 0,
+          "repairs": 0,
+          "recoveries": 0,
+          "actions": 27,
+          "hypotheses": 1,
+          "reason": "conditional_plan",
+          "conditional_on_perception": true,
+          "planner_stop_reason": "deadline",
+          "planner_backend": "fast"
+        },
+        "tail": [
+          {
+            "turn": 24,
+            "action": "right",
+            "reason": "conditional_plan",
+            "step_seconds": 0.002086,
+            "gap_seconds": 0.002496
+          },
+          {
+            "turn": 25,
+            "action": "right",
+            "reason": "conditional_plan",
+            "step_seconds": 0.002761,
+            "gap_seconds": 0.002439
+          },
+          {
+            "turn": 26,
+            "action": "right",
+            "reason": "conditional_plan",
+            "step_seconds": 0.002718,
+            "gap_seconds": 0.002445
+          }
+        ]
+      },
+      "actual_terminal_win": true,
+      "actual_score": -78
+    },
+    {
+      "notebook": false,
+      "label": "B2 The Vault",
+      "report": {
+        "source": "0b61f5c7c594541b12656995aa2389642ce37a48ad9f5a2bc3544360c45d92d5",
+        "trigger": "predicted_terminal_action",
+        "elapsed": 0.491476,
+        "agent_seconds": 0.375141,
+        "between_calls_seconds": 0.11633,
+        "inflight_step_seconds": 0.0,
+        "actions": 41,
+        "first_step_seconds": 0.263159,
+        "plan_remaining": 0,
+        "cutoff": 4.65,
+        "observed_status": {
+          "score": -65,
+          "phase": "ongoing",
+          "turn": 40
+        },
+        "predicted_status": [
+          {
+            "score": -65,
+            "win": true,
+            "lose": false
+          }
+        ],
+        "stats": {
+          "input_mode": "image",
+          "visual_discrepancies": 0,
+          "metadata_discrepancies": 0,
+          "repairs": 0,
+          "recoveries": 0,
+          "actions": 41,
+          "hypotheses": 1,
+          "reason": "conditional_plan",
+          "conditional_on_perception": true,
+          "planner_stop_reason": "deadline",
+          "planner_backend": "fast"
+        },
+        "tail": [
+          {
+            "turn": 38,
+            "action": "right",
+            "reason": "conditional_plan",
+            "step_seconds": 0.002673,
+            "gap_seconds": 0.002651
+          },
+          {
+            "turn": 39,
+            "action": "right",
+            "reason": "conditional_plan",
+            "step_seconds": 0.002381,
+            "gap_seconds": 0.002845
+          },
+          {
+            "turn": 40,
+            "action": "right",
+            "reason": "conditional_plan",
+            "step_seconds": 0.002536,
+            "gap_seconds": 0.00253
+          }
+        ]
+      },
+      "actual_terminal_win": true,
+      "actual_score": -65
+    },
+    {
+      "notebook": false,
+      "label": "B3 So Close Yet So Far",
+      "report": {
+        "source": "0b61f5c7c594541b12656995aa2389642ce37a48ad9f5a2bc3544360c45d92d5",
+        "trigger": "predicted_terminal_action",
+        "elapsed": 0.644443,
+        "agent_seconds": 0.429807,
+        "between_calls_seconds": 0.21462,
+        "inflight_step_seconds": 0.0,
+        "actions": 106,
+        "first_step_seconds": 0.205912,
+        "plan_remaining": 0,
+        "cutoff": 4.65,
+        "observed_status": {
+          "score": -315,
+          "phase": "ongoing",
+          "turn": 105
+        },
+        "predicted_status": [
+          {
+            "score": -315,
+            "win": true,
+            "lose": false
+          }
+        ],
+        "stats": {
+          "input_mode": "image",
+          "visual_discrepancies": 0,
+          "metadata_discrepancies": 0,
+          "repairs": 0,
+          "recoveries": 0,
+          "actions": 106,
+          "hypotheses": 1,
+          "reason": "conditional_plan",
+          "conditional_on_perception": true,
+          "planner_stop_reason": "deadline",
+          "planner_backend": "fast"
+        },
+        "tail": [
+          {
+            "turn": 103,
+            "action": "up",
+            "reason": "conditional_plan",
+            "step_seconds": 0.002086,
+            "gap_seconds": 0.002183
+          },
+          {
+            "turn": 104,
+            "action": "up",
+            "reason": "conditional_plan",
+            "step_seconds": 0.001787,
+            "gap_seconds": 0.001827
+          },
+          {
+            "turn": 105,
+            "action": "right",
+            "reason": "conditional_plan",
+            "step_seconds": 0.001868,
+            "gap_seconds": 0.001819
+          }
+        ]
+      },
+      "actual_terminal_win": true,
+      "actual_score": -315
+    },
+    {
+      "notebook": false,
+      "label": "B4 Measure Twice and Cut Once",
+      "report": {
+        "source": "0b61f5c7c594541b12656995aa2389642ce37a48ad9f5a2bc3544360c45d92d5",
+        "trigger": "predicted_terminal_action",
+        "elapsed": 0.930932,
+        "agent_seconds": 0.594679,
+        "between_calls_seconds": 0.336232,
+        "inflight_step_seconds": 0.0,
+        "actions": 130,
+        "first_step_seconds": 0.274809,
+        "plan_remaining": 0,
+        "cutoff": 4.65,
+        "observed_status": {
+          "score": -387,
+          "phase": "ongoing",
+          "turn": 129
+        },
+        "predicted_status": [
+          {
+            "score": -387,
+            "win": true,
+            "lose": false
+          }
+        ],
+        "stats": {
+          "input_mode": "image",
+          "visual_discrepancies": 0,
+          "metadata_discrepancies": 0,
+          "repairs": 0,
+          "recoveries": 0,
+          "actions": 130,
+          "hypotheses": 1,
+          "reason": "conditional_plan",
+          "conditional_on_perception": true,
+          "planner_stop_reason": "deadline",
+          "planner_backend": "fast"
+        },
+        "tail": [
+          {
+            "turn": 127,
+            "action": "down",
+            "reason": "conditional_plan",
+            "step_seconds": 0.002924,
+            "gap_seconds": 0.002261
+          },
+          {
+            "turn": 128,
+            "action": "down",
+            "reason": "conditional_plan",
+            "step_seconds": 0.002155,
+            "gap_seconds": 0.002364
+          },
+          {
+            "turn": 129,
+            "action": "right",
+            "reason": "conditional_plan",
+            "step_seconds": 0.002215,
+            "gap_seconds": 0.002442
+          }
+        ]
+      },
+      "actual_terminal_win": true,
+      "actual_score": -387
+    },
+    {
+      "notebook": false,
+      "label": "B5 Ow Oof Owie",
+      "report": {
+        "source": "0b61f5c7c594541b12656995aa2389642ce37a48ad9f5a2bc3544360c45d92d5",
+        "trigger": "predicted_terminal_action",
+        "elapsed": 0.531668,
+        "agent_seconds": 0.348404,
+        "between_calls_seconds": 0.183254,
+        "inflight_step_seconds": 0.0,
+        "actions": 71,
+        "first_step_seconds": 0.175148,
+        "plan_remaining": 0,
+        "cutoff": 4.65,
+        "observed_status": {
+          "score": -210,
+          "phase": "ongoing",
+          "turn": 70
+        },
+        "predicted_status": [
+          {
+            "score": -210,
+            "win": true,
+            "lose": false
+          }
+        ],
+        "stats": {
+          "input_mode": "image",
+          "visual_discrepancies": 0,
+          "metadata_discrepancies": 0,
+          "repairs": 0,
+          "recoveries": 0,
+          "actions": 71,
+          "hypotheses": 1,
+          "reason": "conditional_plan",
+          "conditional_on_perception": true,
+          "planner_stop_reason": "deadline",
+          "planner_backend": "fast"
+        },
+        "tail": [
+          {
+            "turn": 68,
+            "action": "left",
+            "reason": "conditional_plan",
+            "step_seconds": 0.002904,
+            "gap_seconds": 0.002843
+          },
+          {
+            "turn": 69,
+            "action": "left",
+            "reason": "conditional_plan",
+            "step_seconds": 0.002121,
+            "gap_seconds": 0.002313
+          },
+          {
+            "turn": 70,
+            "action": "left",
+            "reason": "conditional_plan",
+            "step_seconds": 0.002071,
+            "gap_seconds": 0.002531
+          }
+        ]
+      },
+      "actual_terminal_win": true,
+      "actual_score": -210
+    },
+    {
+      "notebook": false,
+      "label": "B6 Warehouse",
+      "report": {
+        "source": "0b61f5c7c594541b12656995aa2389642ce37a48ad9f5a2bc3544360c45d92d5",
+        "trigger": "predicted_terminal_action",
+        "elapsed": 0.525818,
+        "agent_seconds": 0.355658,
+        "between_calls_seconds": 0.170141,
+        "inflight_step_seconds": 0.0,
+        "actions": 72,
+        "first_step_seconds": 0.170465,
+        "plan_remaining": 0,
+        "cutoff": 4.65,
+        "observed_status": {
+          "score": -213,
+          "phase": "ongoing",
+          "turn": 71
+        },
+        "predicted_status": [
+          {
+            "score": -213,
+            "win": true,
+            "lose": false
+          }
+        ],
+        "stats": {
+          "input_mode": "image",
+          "visual_discrepancies": 0,
+          "metadata_discrepancies": 0,
+          "repairs": 0,
+          "recoveries": 0,
+          "actions": 72,
+          "hypotheses": 1,
+          "reason": "conditional_plan",
+          "conditional_on_perception": true,
+          "planner_stop_reason": "deadline",
+          "planner_backend": "fast"
+        },
+        "tail": [
+          {
+            "turn": 69,
+            "action": "left",
+            "reason": "conditional_plan",
+            "step_seconds": 0.002989,
+            "gap_seconds": 0.002342
+          },
+          {
+            "turn": 70,
+            "action": "left",
+            "reason": "conditional_plan",
+            "step_seconds": 0.00243,
+            "gap_seconds": 0.0025
+          },
+          {
+            "turn": 71,
+            "action": "left",
+            "reason": "conditional_plan",
+            "step_seconds": 0.003538,
+            "gap_seconds": 0.002171
+          }
+        ]
+      },
+      "actual_terminal_win": true,
+      "actual_score": -213
+    },
+    {
+      "notebook": false,
+      "label": "B7 Fire Resistance",
+      "report": {
+        "source": "0b61f5c7c594541b12656995aa2389642ce37a48ad9f5a2bc3544360c45d92d5",
+        "trigger": "predicted_terminal_action",
+        "elapsed": 0.294319,
+        "agent_seconds": 0.236974,
+        "between_calls_seconds": 0.057329,
+        "inflight_step_seconds": 0.0,
+        "actions": 38,
+        "first_step_seconds": 0.12918,
+        "plan_remaining": 0,
+        "cutoff": 4.65,
+        "observed_status": {
+          "score": -111,
+          "phase": "ongoing",
+          "turn": 37
+        },
+        "predicted_status": [
+          {
+            "score": -111,
+            "win": true,
+            "lose": false
+          }
+        ],
+        "stats": {
+          "input_mode": "image",
+          "visual_discrepancies": 0,
+          "metadata_discrepancies": 0,
+          "repairs": 0,
+          "recoveries": 0,
+          "actions": 38,
+          "hypotheses": 1,
+          "reason": "conditional_plan",
+          "conditional_on_perception": true,
+          "planner_stop_reason": "deadline",
+          "planner_backend": "fast"
+        },
+        "tail": [
+          {
+            "turn": 35,
+            "action": "left",
+            "reason": "conditional_plan",
+            "step_seconds": 0.002964,
+            "gap_seconds": 0.001398
+          },
+          {
+            "turn": 36,
+            "action": "down",
+            "reason": "conditional_plan",
+            "step_seconds": 0.004611,
+            "gap_seconds": 0.001409
+          },
+          {
+            "turn": 37,
+            "action": "down",
+            "reason": "conditional_plan",
+            "step_seconds": 0.002114,
+            "gap_seconds": 0.001357
+          }
+        ]
+      },
+      "actual_terminal_win": true,
+      "actual_score": -111
+    },
+    {
+      "notebook": false,
+      "label": "B8 Choose Wisely",
+      "report": {
+        "source": "0b61f5c7c594541b12656995aa2389642ce37a48ad9f5a2bc3544360c45d92d5",
+        "trigger": "predicted_terminal_action",
+        "elapsed": 0.309805,
+        "agent_seconds": 0.234029,
+        "between_calls_seconds": 0.075767,
+        "inflight_step_seconds": 0.0,
+        "actions": 32,
+        "first_step_seconds": 0.142157,
+        "plan_remaining": 0,
+        "cutoff": 4.65,
+        "observed_status": {
+          "score": -93,
+          "phase": "ongoing",
+          "turn": 31
+        },
+        "predicted_status": [
+          {
+            "score": -93,
+            "win": true,
+            "lose": false
+          }
+        ],
+        "stats": {
+          "input_mode": "image",
+          "visual_discrepancies": 0,
+          "metadata_discrepancies": 0,
+          "repairs": 0,
+          "recoveries": 0,
+          "actions": 32,
+          "hypotheses": 1,
+          "reason": "conditional_plan",
+          "conditional_on_perception": true,
+          "planner_stop_reason": "deadline",
+          "planner_backend": "fast"
+        },
+        "tail": [
+          {
+            "turn": 29,
+            "action": "right",
+            "reason": "conditional_plan",
+            "step_seconds": 0.002949,
+            "gap_seconds": 0.002118
+          },
+          {
+            "turn": 30,
+            "action": "right",
+            "reason": "conditional_plan",
+            "step_seconds": 0.002248,
+            "gap_seconds": 0.002726
+          },
+          {
+            "turn": 31,
+            "action": "right",
+            "reason": "conditional_plan",
+            "step_seconds": 0.007537,
+            "gap_seconds": 0.002175
+          }
+        ]
+      },
+      "actual_terminal_win": true,
+      "actual_score": -93
+    },
+    {
+      "notebook": false,
+      "label": "B9 Manhattan",
+      "report": {
+        "source": "0b61f5c7c594541b12656995aa2389642ce37a48ad9f5a2bc3544360c45d92d5",
+        "trigger": "predicted_terminal_action",
+        "elapsed": 0.187252,
+        "agent_seconds": 0.14519,
+        "between_calls_seconds": 0.042048,
+        "inflight_step_seconds": 0.0,
+        "actions": 22,
+        "first_step_seconds": 0.092904,
+        "plan_remaining": 0,
+        "cutoff": 4.65,
+        "observed_status": {
+          "score": -63,
+          "phase": "ongoing",
+          "turn": 21
+        },
+        "predicted_status": [
+          {
+            "score": -63,
+            "win": true,
+            "lose": false
+          }
+        ],
+        "stats": {
+          "input_mode": "image",
+          "visual_discrepancies": 0,
+          "metadata_discrepancies": 0,
+          "repairs": 0,
+          "recoveries": 0,
+          "actions": 22,
+          "hypotheses": 1,
+          "reason": "conditional_plan",
+          "conditional_on_perception": true,
+          "planner_stop_reason": "deadline",
+          "planner_backend": "fast"
+        },
+        "tail": [
+          {
+            "turn": 19,
+            "action": "right",
+            "reason": "conditional_plan",
+            "step_seconds": 0.002089,
+            "gap_seconds": 0.002022
+          },
+          {
+            "turn": 20,
+            "action": "down",
+            "reason": "conditional_plan",
+            "step_seconds": 0.002075,
+            "gap_seconds": 0.001853
+          },
+          {
+            "turn": 21,
+            "action": "down",
+            "reason": "conditional_plan",
+            "step_seconds": 0.00236,
+            "gap_seconds": 0.002146
+          }
+        ]
+      },
+      "actual_terminal_win": true,
+      "actual_score": -63
+    },
+    {
+      "notebook": false,
+      "label": "B10 Khoa Was Here",
+      "report": {
+        "source": "0b61f5c7c594541b12656995aa2389642ce37a48ad9f5a2bc3544360c45d92d5",
+        "trigger": "predicted_terminal_action",
+        "elapsed": 0.497636,
+        "agent_seconds": 0.358096,
+        "between_calls_seconds": 0.13953,
+        "inflight_step_seconds": 0.0,
+        "actions": 55,
+        "first_step_seconds": 0.194907,
+        "plan_remaining": 0,
+        "cutoff": 4.65,
+        "observed_status": {
+          "score": -162,
+          "phase": "ongoing",
+          "turn": 54
+        },
+        "predicted_status": [
+          {
+            "score": -162,
+            "win": true,
+            "lose": false
+          }
+        ],
+        "stats": {
+          "input_mode": "image",
+          "visual_discrepancies": 0,
+          "metadata_discrepancies": 0,
+          "repairs": 0,
+          "recoveries": 0,
+          "actions": 55,
+          "hypotheses": 1,
+          "reason": "conditional_plan",
+          "conditional_on_perception": true,
+          "planner_stop_reason": "deadline",
+          "planner_backend": "fast"
+        },
+        "tail": [
+          {
+            "turn": 52,
+            "action": "left",
+            "reason": "conditional_plan",
+            "step_seconds": 0.002266,
+            "gap_seconds": 0.00231
+          },
+          {
+            "turn": 53,
+            "action": "left",
+            "reason": "conditional_plan",
+            "step_seconds": 0.008705,
+            "gap_seconds": 0.002641
+          },
+          {
+            "turn": 54,
+            "action": "left",
+            "reason": "conditional_plan",
+            "step_seconds": 0.002365,
+            "gap_seconds": 0.002692
+          }
+        ]
+      },
+      "actual_terminal_win": true,
+      "actual_score": -162
+    },
+    {
+      "notebook": true,
+      "label": "A0 Basic Movement",
+      "report": {
+        "source": "0b61f5c7c594541b12656995aa2389642ce37a48ad9f5a2bc3544360c45d92d5",
+        "trigger": "predicted_terminal_action",
+        "elapsed": 0.045413,
+        "agent_seconds": 0.041726,
+        "between_calls_seconds": 0.003679,
+        "inflight_step_seconds": 0.0,
+        "actions": 4,
+        "first_step_seconds": 0.034123,
+        "plan_remaining": 0,
+        "cutoff": 4.65,
+        "observed_status": {
+          "score": -9,
+          "phase": "ongoing",
+          "turn": 3
+        },
+        "predicted_status": [
+          {
+            "score": -9,
+            "win": true,
+            "lose": false
+          }
+        ],
+        "stats": {
+          "input_mode": "image",
+          "visual_discrepancies": 0,
+          "metadata_discrepancies": 0,
+          "repairs": 0,
+          "recoveries": 0,
+          "actions": 4,
+          "hypotheses": 1,
+          "reason": "conditional_plan",
+          "conditional_on_perception": true,
+          "planner_stop_reason": "exhausted",
+          "planner_backend": "fast"
+        },
+        "tail": [
+          {
+            "turn": 1,
+            "action": "right",
+            "reason": "conditional_plan",
+            "step_seconds": 0.002684,
+            "gap_seconds": 0.000783
+          },
+          {
+            "turn": 2,
+            "action": "right",
+            "reason": "conditional_plan",
+            "step_seconds": 0.002556,
+            "gap_seconds": 0.000872
+          },
+          {
+            "turn": 3,
+            "action": "right",
+            "reason": "conditional_plan",
+            "step_seconds": 0.002363,
+            "gap_seconds": 0.000726
+          }
+        ]
+      },
+      "actual_terminal_win": true,
+      "actual_score": -9
+    },
+    {
+      "notebook": true,
+      "label": "A1 Maze Turns",
+      "report": {
+        "source": "0b61f5c7c594541b12656995aa2389642ce37a48ad9f5a2bc3544360c45d92d5",
+        "trigger": "predicted_terminal_action",
+        "elapsed": 0.063877,
+        "agent_seconds": 0.050415,
+        "between_calls_seconds": 0.013441,
+        "inflight_step_seconds": 0.0,
+        "actions": 10,
+        "first_step_seconds": 0.034372,
+        "plan_remaining": 0,
+        "cutoff": 4.65,
+        "observed_status": {
+          "score": -27,
+          "phase": "ongoing",
+          "turn": 9
+        },
+        "predicted_status": [
+          {
+            "score": -27,
+            "win": true,
+            "lose": false
+          }
+        ],
+        "stats": {
+          "input_mode": "image",
+          "visual_discrepancies": 0,
+          "metadata_discrepancies": 0,
+          "repairs": 0,
+          "recoveries": 0,
+          "actions": 10,
+          "hypotheses": 1,
+          "reason": "conditional_plan",
+          "conditional_on_perception": true,
+          "planner_stop_reason": "exhausted",
+          "planner_backend": "fast"
+        },
+        "tail": [
+          {
+            "turn": 7,
+            "action": "right",
+            "reason": "conditional_plan",
+            "step_seconds": 0.002502,
+            "gap_seconds": 0.001321
+          },
+          {
+            "turn": 8,
+            "action": "right",
+            "reason": "conditional_plan",
+            "step_seconds": 0.002237,
+            "gap_seconds": 0.001402
+          },
+          {
+            "turn": 9,
+            "action": "right",
+            "reason": "conditional_plan",
+            "step_seconds": 0.00166,
+            "gap_seconds": 0.001376
+          }
+        ]
+      },
+      "actual_terminal_win": true,
+      "actual_score": -27
+    },
+    {
+      "notebook": true,
+      "label": "A2 Optional Coin Path",
+      "report": {
+        "source": "0b61f5c7c594541b12656995aa2389642ce37a48ad9f5a2bc3544360c45d92d5",
+        "trigger": "predicted_terminal_action",
+        "elapsed": 0.238961,
+        "agent_seconds": 0.211605,
+        "between_calls_seconds": 0.027351,
+        "inflight_step_seconds": 0.0,
+        "actions": 18,
+        "first_step_seconds": 0.179991,
+        "plan_remaining": 0,
+        "cutoff": 4.65,
+        "observed_status": {
+          "score": -21,
+          "phase": "ongoing",
+          "turn": 17
+        },
+        "predicted_status": [
+          {
+            "score": -21,
+            "win": true,
+            "lose": false
+          }
+        ],
+        "stats": {
+          "input_mode": "image",
+          "visual_discrepancies": 0,
+          "metadata_discrepancies": 0,
+          "repairs": 0,
+          "recoveries": 0,
+          "actions": 18,
+          "hypotheses": 1,
+          "reason": "conditional_plan",
+          "conditional_on_perception": true,
+          "planner_stop_reason": "deadline",
+          "planner_backend": "fast"
+        },
+        "tail": [
+          {
+            "turn": 15,
+            "action": "right",
+            "reason": "conditional_plan",
+            "step_seconds": 0.002347,
+            "gap_seconds": 0.001445
+          },
+          {
+            "turn": 16,
+            "action": "pick_up",
+            "reason": "conditional_plan",
+            "step_seconds": 0.001629,
+            "gap_seconds": 0.001408
+          },
+          {
+            "turn": 17,
+            "action": "right",
+            "reason": "conditional_plan",
+            "step_seconds": 0.001467,
+            "gap_seconds": 0.001337
+          }
+        ]
+      },
+      "actual_terminal_win": true,
+      "actual_score": -21
+    },
+    {
+      "notebook": true,
+      "label": "A3 Multiple Required Gems",
+      "report": {
+        "source": "0b61f5c7c594541b12656995aa2389642ce37a48ad9f5a2bc3544360c45d92d5",
+        "trigger": "predicted_terminal_action",
+        "elapsed": 0.174215,
+        "agent_seconds": 0.123616,
+        "between_calls_seconds": 0.05059,
+        "inflight_step_seconds": 0.0,
+        "actions": 22,
+        "first_step_seconds": 0.077985,
+        "plan_remaining": 0,
+        "cutoff": 4.65,
+        "observed_status": {
+          "score": -63,
+          "phase": "ongoing",
+          "turn": 21
+        },
+        "predicted_status": [
+          {
+            "score": -63,
+            "win": true,
+            "lose": false
+          }
+        ],
+        "stats": {
+          "input_mode": "image",
+          "visual_discrepancies": 0,
+          "metadata_discrepancies": 0,
+          "repairs": 0,
+          "recoveries": 0,
+          "actions": 22,
+          "hypotheses": 1,
+          "reason": "conditional_plan",
+          "conditional_on_perception": true,
+          "planner_stop_reason": "deadline",
+          "planner_backend": "fast"
+        },
+        "tail": [
+          {
+            "turn": 19,
+            "action": "right",
+            "reason": "conditional_plan",
+            "step_seconds": 0.001612,
+            "gap_seconds": 0.002088
+          },
+          {
+            "turn": 20,
+            "action": "right",
+            "reason": "conditional_plan",
+            "step_seconds": 0.001658,
+            "gap_seconds": 0.002127
+          },
+          {
+            "turn": 21,
+            "action": "right",
+            "reason": "conditional_plan",
+            "step_seconds": 0.002451,
+            "gap_seconds": 0.002111
+          }
+        ]
+      },
+      "actual_terminal_win": true,
+      "actual_score": -63
+    },
+    {
+      "notebook": true,
+      "label": "A4 Key and Door",
+      "report": {
+        "source": "0b61f5c7c594541b12656995aa2389642ce37a48ad9f5a2bc3544360c45d92d5",
+        "trigger": "predicted_terminal_action",
+        "elapsed": 0.091969,
+        "agent_seconds": 0.0823,
+        "between_calls_seconds": 0.009661,
+        "inflight_step_seconds": 0.0,
+        "actions": 12,
+        "first_step_seconds": 0.060749,
+        "plan_remaining": 0,
+        "cutoff": 4.65,
+        "observed_status": {
+          "score": -33,
+          "phase": "ongoing",
+          "turn": 11
+        },
+        "predicted_status": [
+          {
+            "score": -33,
+            "win": true,
+            "lose": false
+          }
+        ],
+        "stats": {
+          "input_mode": "image",
+          "visual_discrepancies": 0,
+          "metadata_discrepancies": 0,
+          "repairs": 0,
+          "recoveries": 0,
+          "actions": 12,
+          "hypotheses": 1,
+          "reason": "conditional_plan",
+          "conditional_on_perception": true,
+          "planner_stop_reason": "exhausted",
+          "planner_backend": "fast"
+        },
+        "tail": [
+          {
+            "turn": 9,
+            "action": "right",
+            "reason": "conditional_plan",
+            "step_seconds": 0.00121,
+            "gap_seconds": 0.000724
+          },
+          {
+            "turn": 10,
+            "action": "right",
+            "reason": "conditional_plan",
+            "step_seconds": 0.00138,
+            "gap_seconds": 0.000687
+          },
+          {
+            "turn": 11,
+            "action": "right",
+            "reason": "conditional_plan",
+            "step_seconds": 0.002285,
+            "gap_seconds": 0.000945
+          }
+        ]
+      },
+      "actual_terminal_win": true,
+      "actual_score": -33
+    },
+    {
+      "notebook": true,
+      "label": "A5 Hazard Detour",
+      "report": {
+        "source": "0b61f5c7c594541b12656995aa2389642ce37a48ad9f5a2bc3544360c45d92d5",
+        "trigger": "predicted_terminal_action",
+        "elapsed": 0.104276,
+        "agent_seconds": 0.093369,
+        "between_calls_seconds": 0.010901,
+        "inflight_step_seconds": 0.0,
+        "actions": 14,
+        "first_step_seconds": 0.070478,
+        "plan_remaining": 0,
+        "cutoff": 4.65,
+        "observed_status": {
+          "score": -39,
+          "phase": "ongoing",
+          "turn": 13
+        },
+        "predicted_status": [
+          {
+            "score": -39,
+            "win": true,
+            "lose": false
+          }
+        ],
+        "stats": {
+          "input_mode": "image",
+          "visual_discrepancies": 0,
+          "metadata_discrepancies": 0,
+          "repairs": 0,
+          "recoveries": 0,
+          "actions": 14,
+          "hypotheses": 1,
+          "reason": "conditional_plan",
+          "conditional_on_perception": true,
+          "planner_stop_reason": "deadline",
+          "planner_backend": "fast"
+        },
+        "tail": [
+          {
+            "turn": 11,
+            "action": "down",
+            "reason": "conditional_plan",
+            "step_seconds": 0.002032,
+            "gap_seconds": 0.00089
+          },
+          {
+            "turn": 12,
+            "action": "down",
+            "reason": "conditional_plan",
+            "step_seconds": 0.001911,
+            "gap_seconds": 0.000795
+          },
+          {
+            "turn": 13,
+            "action": "down",
+            "reason": "conditional_plan",
+            "step_seconds": 0.001227,
+            "gap_seconds": 0.000773
+          }
+        ]
+      },
+      "actual_terminal_win": true,
+      "actual_score": -39
+    },
+    {
+      "notebook": true,
+      "label": "A6 Pushable Box",
+      "report": {
+        "source": "0b61f5c7c594541b12656995aa2389642ce37a48ad9f5a2bc3544360c45d92d5",
+        "trigger": "predicted_terminal_action",
+        "elapsed": 0.067903,
+        "agent_seconds": 0.061069,
+        "between_calls_seconds": 0.006829,
+        "inflight_step_seconds": 0.0,
+        "actions": 8,
+        "first_step_seconds": 0.046509,
+        "plan_remaining": 0,
+        "cutoff": 4.65,
+        "observed_status": {
+          "score": -21,
+          "phase": "ongoing",
+          "turn": 7
+        },
+        "predicted_status": [
+          {
+            "score": -21,
+            "win": true,
+            "lose": false
+          }
+        ],
+        "stats": {
+          "input_mode": "image",
+          "visual_discrepancies": 0,
+          "metadata_discrepancies": 0,
+          "repairs": 0,
+          "recoveries": 0,
+          "actions": 8,
+          "hypotheses": 1,
+          "reason": "conditional_plan",
+          "conditional_on_perception": true,
+          "planner_stop_reason": "exhausted",
+          "planner_backend": "fast"
+        },
+        "tail": [
+          {
+            "turn": 5,
+            "action": "right",
+            "reason": "conditional_plan",
+            "step_seconds": 0.001292,
+            "gap_seconds": 0.000736
+          },
+          {
+            "turn": 6,
+            "action": "right",
+            "reason": "conditional_plan",
+            "step_seconds": 0.001955,
+            "gap_seconds": 0.000689
+          },
+          {
+            "turn": 7,
+            "action": "right",
+            "reason": "conditional_plan",
+            "step_seconds": 0.00227,
+            "gap_seconds": 0.000739
+          }
+        ]
+      },
+      "actual_terminal_win": true,
+      "actual_score": -21
+    },
+    {
+      "notebook": true,
+      "label": "A7 Shield Powerup",
+      "report": {
+        "source": "0b61f5c7c594541b12656995aa2389642ce37a48ad9f5a2bc3544360c45d92d5",
+        "trigger": "predicted_terminal_action",
+        "elapsed": 0.100783,
+        "agent_seconds": 0.089471,
+        "between_calls_seconds": 0.011306,
+        "inflight_step_seconds": 0.0,
+        "actions": 15,
+        "first_step_seconds": 0.06582,
+        "plan_remaining": 0,
+        "cutoff": 4.65,
+        "observed_status": {
+          "score": -42,
+          "phase": "ongoing",
+          "turn": 14
+        },
+        "predicted_status": [
+          {
+            "score": -42,
+            "win": true,
+            "lose": false
+          }
+        ],
+        "stats": {
+          "input_mode": "image",
+          "visual_discrepancies": 0,
+          "metadata_discrepancies": 0,
+          "repairs": 0,
+          "recoveries": 0,
+          "actions": 15,
+          "hypotheses": 1,
+          "reason": "conditional_plan",
+          "conditional_on_perception": true,
+          "planner_stop_reason": "deadline",
+          "planner_backend": "fast"
+        },
+        "tail": [
+          {
+            "turn": 12,
+            "action": "right",
+            "reason": "conditional_plan",
+            "step_seconds": 0.001471,
+            "gap_seconds": 0.000918
+          },
+          {
+            "turn": 13,
+            "action": "right",
+            "reason": "conditional_plan",
+            "step_seconds": 0.001259,
+            "gap_seconds": 0.000699
+          },
+          {
+            "turn": 14,
+            "action": "right",
+            "reason": "conditional_plan",
+            "step_seconds": 0.002015,
+            "gap_seconds": 0.000702
+          }
+        ]
+      },
+      "actual_terminal_win": true,
+      "actual_score": -42
+    },
+    {
+      "notebook": true,
+      "label": "A8 Ghost Powerup",
+      "report": {
+        "source": "0b61f5c7c594541b12656995aa2389642ce37a48ad9f5a2bc3544360c45d92d5",
+        "trigger": "predicted_terminal_action",
+        "elapsed": 0.11852,
+        "agent_seconds": 0.106475,
+        "between_calls_seconds": 0.012035,
+        "inflight_step_seconds": 0.0,
+        "actions": 17,
+        "first_step_seconds": 0.070118,
+        "plan_remaining": 0,
+        "cutoff": 4.65,
+        "observed_status": {
+          "score": -48,
+          "phase": "ongoing",
+          "turn": 16
+        },
+        "predicted_status": [
+          {
+            "score": -48,
+            "win": true,
+            "lose": false
+          }
+        ],
+        "stats": {
+          "input_mode": "image",
+          "visual_discrepancies": 0,
+          "metadata_discrepancies": 0,
+          "repairs": 0,
+          "recoveries": 0,
+          "actions": 17,
+          "hypotheses": 1,
+          "reason": "conditional_plan",
+          "conditional_on_perception": true,
+          "planner_stop_reason": "deadline",
+          "planner_backend": "fast"
+        },
+        "tail": [
+          {
+            "turn": 14,
+            "action": "right",
+            "reason": "conditional_plan",
+            "step_seconds": 0.00219,
+            "gap_seconds": 0.000714
+          },
+          {
+            "turn": 15,
+            "action": "right",
+            "reason": "conditional_plan",
+            "step_seconds": 0.00125,
+            "gap_seconds": 0.000797
+          },
+          {
+            "turn": 16,
+            "action": "right",
+            "reason": "conditional_plan",
+            "step_seconds": 0.001935,
+            "gap_seconds": 0.000685
+          }
+        ]
+      },
+      "actual_terminal_win": true,
+      "actual_score": -48
+    },
+    {
+      "notebook": true,
+      "label": "A9 Boots Powerup",
+      "report": {
+        "source": "0b61f5c7c594541b12656995aa2389642ce37a48ad9f5a2bc3544360c45d92d5",
+        "trigger": "predicted_terminal_action",
+        "elapsed": 0.076419,
+        "agent_seconds": 0.06739,
+        "between_calls_seconds": 0.009023,
+        "inflight_step_seconds": 0.0,
+        "actions": 10,
+        "first_step_seconds": 0.051032,
+        "plan_remaining": 0,
+        "cutoff": 4.65,
+        "observed_status": {
+          "score": -27,
+          "phase": "ongoing",
+          "turn": 9
+        },
+        "predicted_status": [
+          {
+            "score": -27,
+            "win": true,
+            "lose": false
+          }
+        ],
+        "stats": {
+          "input_mode": "image",
+          "visual_discrepancies": 0,
+          "metadata_discrepancies": 0,
+          "repairs": 0,
+          "recoveries": 0,
+          "actions": 10,
+          "hypotheses": 1,
+          "reason": "conditional_plan",
+          "conditional_on_perception": true,
+          "planner_stop_reason": "exhausted",
+          "planner_backend": "fast"
+        },
+        "tail": [
+          {
+            "turn": 7,
+            "action": "up",
+            "reason": "conditional_plan",
+            "step_seconds": 0.001365,
+            "gap_seconds": 0.000836
+          },
+          {
+            "turn": 8,
+            "action": "right",
+            "reason": "conditional_plan",
+            "step_seconds": 0.002283,
+            "gap_seconds": 0.00108
+          },
+          {
+            "turn": 9,
+            "action": "right",
+            "reason": "conditional_plan",
+            "step_seconds": 0.001447,
+            "gap_seconds": 0.001077
+          }
+        ]
+      },
+      "actual_terminal_win": true,
+      "actual_score": -27
+    },
+    {
+      "notebook": true,
+      "label": "A10 Combined Mechanics",
+      "report": {
+        "source": "0b61f5c7c594541b12656995aa2389642ce37a48ad9f5a2bc3544360c45d92d5",
+        "trigger": "predicted_terminal_action",
+        "elapsed": 0.176916,
+        "agent_seconds": 0.143812,
+        "between_calls_seconds": 0.033099,
+        "inflight_step_seconds": 0.0,
+        "actions": 29,
+        "first_step_seconds": 0.07911,
+        "plan_remaining": 0,
+        "cutoff": 4.65,
+        "observed_status": {
+          "score": -84,
+          "phase": "ongoing",
+          "turn": 28
+        },
+        "predicted_status": [
+          {
+            "score": -84,
+            "win": true,
+            "lose": false
+          }
+        ],
+        "stats": {
+          "input_mode": "image",
+          "visual_discrepancies": 0,
+          "metadata_discrepancies": 0,
+          "repairs": 0,
+          "recoveries": 0,
+          "actions": 29,
+          "hypotheses": 1,
+          "reason": "conditional_plan",
+          "conditional_on_perception": true,
+          "planner_stop_reason": "deadline",
+          "planner_backend": "fast"
+        },
+        "tail": [
+          {
+            "turn": 26,
+            "action": "down",
+            "reason": "conditional_plan",
+            "step_seconds": 0.002553,
+            "gap_seconds": 0.001035
+          },
+          {
+            "turn": 27,
+            "action": "right",
+            "reason": "conditional_plan",
+            "step_seconds": 0.001584,
+            "gap_seconds": 0.001051
+          },
+          {
+            "turn": 28,
+            "action": "right",
+            "reason": "conditional_plan",
+            "step_seconds": 0.001558,
+            "gap_seconds": 0.001009
+          }
+        ]
+      },
+      "actual_terminal_win": true,
+      "actual_score": -84
+    },
+    {
+      "notebook": true,
+      "label": "B0 Thread the Needle",
+      "report": {
+        "source": "0b61f5c7c594541b12656995aa2389642ce37a48ad9f5a2bc3544360c45d92d5",
+        "trigger": "predicted_terminal_action",
+        "elapsed": 0.152048,
+        "agent_seconds": 0.127979,
+        "between_calls_seconds": 0.024056,
+        "inflight_step_seconds": 0.0,
+        "actions": 28,
+        "first_step_seconds": 0.077736,
+        "plan_remaining": 0,
+        "cutoff": 4.65,
+        "observed_status": {
+          "score": -81,
+          "phase": "ongoing",
+          "turn": 27
+        },
+        "predicted_status": [
+          {
+            "score": -81,
+            "win": true,
+            "lose": false
+          }
+        ],
+        "stats": {
+          "input_mode": "image",
+          "visual_discrepancies": 0,
+          "metadata_discrepancies": 0,
+          "repairs": 0,
+          "recoveries": 0,
+          "actions": 28,
+          "hypotheses": 1,
+          "reason": "conditional_plan",
+          "conditional_on_perception": true,
+          "planner_stop_reason": "deadline",
+          "planner_backend": "fast"
+        },
+        "tail": [
+          {
+            "turn": 25,
+            "action": "right",
+            "reason": "conditional_plan",
+            "step_seconds": 0.001719,
+            "gap_seconds": 0.000849
+          },
+          {
+            "turn": 26,
+            "action": "right",
+            "reason": "conditional_plan",
+            "step_seconds": 0.001561,
+            "gap_seconds": 0.000826
+          },
+          {
+            "turn": 27,
+            "action": "right",
+            "reason": "conditional_plan",
+            "step_seconds": 0.001713,
+            "gap_seconds": 0.000791
+          }
+        ]
+      },
+      "actual_terminal_win": true,
+      "actual_score": -81
+    },
+    {
+      "notebook": true,
+      "label": "B1 Hypnosis",
+      "report": {
+        "source": "0b61f5c7c594541b12656995aa2389642ce37a48ad9f5a2bc3544360c45d92d5",
+        "trigger": "predicted_terminal_action",
+        "elapsed": 0.239367,
+        "agent_seconds": 0.170524,
+        "between_calls_seconds": 0.068837,
+        "inflight_step_seconds": 0.0,
+        "actions": 27,
+        "first_step_seconds": 0.105302,
+        "plan_remaining": 0,
+        "cutoff": 4.65,
+        "observed_status": {
+          "score": -78,
+          "phase": "ongoing",
+          "turn": 26
+        },
+        "predicted_status": [
+          {
+            "score": -78,
+            "win": true,
+            "lose": false
+          }
+        ],
+        "stats": {
+          "input_mode": "image",
+          "visual_discrepancies": 0,
+          "metadata_discrepancies": 0,
+          "repairs": 0,
+          "recoveries": 0,
+          "actions": 27,
+          "hypotheses": 1,
+          "reason": "conditional_plan",
+          "conditional_on_perception": true,
+          "planner_stop_reason": "deadline",
+          "planner_backend": "fast"
+        },
+        "tail": [
+          {
+            "turn": 24,
+            "action": "right",
+            "reason": "conditional_plan",
+            "step_seconds": 0.002402,
+            "gap_seconds": 0.002882
+          },
+          {
+            "turn": 25,
+            "action": "right",
+            "reason": "conditional_plan",
+            "step_seconds": 0.00297,
+            "gap_seconds": 0.002565
+          },
+          {
+            "turn": 26,
+            "action": "right",
+            "reason": "conditional_plan",
+            "step_seconds": 0.002937,
+            "gap_seconds": 0.002657
+          }
+        ]
+      },
+      "actual_terminal_win": true,
+      "actual_score": -78
+    },
+    {
+      "notebook": true,
+      "label": "B2 The Vault",
+      "report": {
+        "source": "0b61f5c7c594541b12656995aa2389642ce37a48ad9f5a2bc3544360c45d92d5",
+        "trigger": "predicted_terminal_action",
+        "elapsed": 0.489353,
+        "agent_seconds": 0.375306,
+        "between_calls_seconds": 0.11404,
+        "inflight_step_seconds": 0.0,
+        "actions": 41,
+        "first_step_seconds": 0.264173,
+        "plan_remaining": 0,
+        "cutoff": 4.65,
+        "observed_status": {
+          "score": -65,
+          "phase": "ongoing",
+          "turn": 40
+        },
+        "predicted_status": [
+          {
+            "score": -65,
+            "win": true,
+            "lose": false
+          }
+        ],
+        "stats": {
+          "input_mode": "image",
+          "visual_discrepancies": 0,
+          "metadata_discrepancies": 0,
+          "repairs": 0,
+          "recoveries": 0,
+          "actions": 41,
+          "hypotheses": 1,
+          "reason": "conditional_plan",
+          "conditional_on_perception": true,
+          "planner_stop_reason": "deadline",
+          "planner_backend": "fast"
+        },
+        "tail": [
+          {
+            "turn": 38,
+            "action": "right",
+            "reason": "conditional_plan",
+            "step_seconds": 0.002378,
+            "gap_seconds": 0.002876
+          },
+          {
+            "turn": 39,
+            "action": "right",
+            "reason": "conditional_plan",
+            "step_seconds": 0.002574,
+            "gap_seconds": 0.002553
+          },
+          {
+            "turn": 40,
+            "action": "right",
+            "reason": "conditional_plan",
+            "step_seconds": 0.002403,
+            "gap_seconds": 0.002966
+          }
+        ]
+      },
+      "actual_terminal_win": true,
+      "actual_score": -65
+    },
+    {
+      "notebook": true,
+      "label": "B3 So Close Yet So Far",
+      "report": {
+        "source": "0b61f5c7c594541b12656995aa2389642ce37a48ad9f5a2bc3544360c45d92d5",
+        "trigger": "predicted_terminal_action",
+        "elapsed": 0.639941,
+        "agent_seconds": 0.427059,
+        "between_calls_seconds": 0.212876,
+        "inflight_step_seconds": 0.0,
+        "actions": 106,
+        "first_step_seconds": 0.202036,
+        "plan_remaining": 0,
+        "cutoff": 4.65,
+        "observed_status": {
+          "score": -315,
+          "phase": "ongoing",
+          "turn": 105
+        },
+        "predicted_status": [
+          {
+            "score": -315,
+            "win": true,
+            "lose": false
+          }
+        ],
+        "stats": {
+          "input_mode": "image",
+          "visual_discrepancies": 0,
+          "metadata_discrepancies": 0,
+          "repairs": 0,
+          "recoveries": 0,
+          "actions": 106,
+          "hypotheses": 1,
+          "reason": "conditional_plan",
+          "conditional_on_perception": true,
+          "planner_stop_reason": "deadline",
+          "planner_backend": "fast"
+        },
+        "tail": [
+          {
+            "turn": 103,
+            "action": "up",
+            "reason": "conditional_plan",
+            "step_seconds": 0.001837,
+            "gap_seconds": 0.002069
+          },
+          {
+            "turn": 104,
+            "action": "up",
+            "reason": "conditional_plan",
+            "step_seconds": 0.0018,
+            "gap_seconds": 0.001847
+          },
+          {
+            "turn": 105,
+            "action": "right",
+            "reason": "conditional_plan",
+            "step_seconds": 0.001977,
+            "gap_seconds": 0.002181
+          }
+        ]
+      },
+      "actual_terminal_win": true,
+      "actual_score": -315
+    },
+    {
+      "notebook": true,
+      "label": "B4 Measure Twice and Cut Once",
+      "report": {
+        "source": "0b61f5c7c594541b12656995aa2389642ce37a48ad9f5a2bc3544360c45d92d5",
+        "trigger": "predicted_terminal_action",
+        "elapsed": 0.864773,
+        "agent_seconds": 0.57176,
+        "between_calls_seconds": 0.293007,
+        "inflight_step_seconds": 0.0,
+        "actions": 130,
+        "first_step_seconds": 0.285207,
+        "plan_remaining": 0,
+        "cutoff": 4.65,
+        "observed_status": {
+          "score": -387,
+          "phase": "ongoing",
+          "turn": 129
+        },
+        "predicted_status": [
+          {
+            "score": -387,
+            "win": true,
+            "lose": false
+          }
+        ],
+        "stats": {
+          "input_mode": "image",
+          "visual_discrepancies": 0,
+          "metadata_discrepancies": 0,
+          "repairs": 0,
+          "recoveries": 0,
+          "actions": 130,
+          "hypotheses": 1,
+          "reason": "conditional_plan",
+          "conditional_on_perception": true,
+          "planner_stop_reason": "deadline",
+          "planner_backend": "fast"
+        },
+        "tail": [
+          {
+            "turn": 127,
+            "action": "down",
+            "reason": "conditional_plan",
+            "step_seconds": 0.002849,
+            "gap_seconds": 0.002087
+          },
+          {
+            "turn": 128,
+            "action": "down",
+            "reason": "conditional_plan",
+            "step_seconds": 0.001986,
+            "gap_seconds": 0.002406
+          },
+          {
+            "turn": 129,
+            "action": "right",
+            "reason": "conditional_plan",
+            "step_seconds": 0.001912,
+            "gap_seconds": 0.002049
+          }
+        ]
+      },
+      "actual_terminal_win": true,
+      "actual_score": -387
+    },
+    {
+      "notebook": true,
+      "label": "B5 Ow Oof Owie",
+      "report": {
+        "source": "0b61f5c7c594541b12656995aa2389642ce37a48ad9f5a2bc3544360c45d92d5",
+        "trigger": "predicted_terminal_action",
+        "elapsed": 0.500019,
+        "agent_seconds": 0.331281,
+        "between_calls_seconds": 0.168732,
+        "inflight_step_seconds": 0.0,
+        "actions": 71,
+        "first_step_seconds": 0.168042,
+        "plan_remaining": 0,
+        "cutoff": 4.65,
+        "observed_status": {
+          "score": -210,
+          "phase": "ongoing",
+          "turn": 70
+        },
+        "predicted_status": [
+          {
+            "score": -210,
+            "win": true,
+            "lose": false
+          }
+        ],
+        "stats": {
+          "input_mode": "image",
+          "visual_discrepancies": 0,
+          "metadata_discrepancies": 0,
+          "repairs": 0,
+          "recoveries": 0,
+          "actions": 71,
+          "hypotheses": 1,
+          "reason": "conditional_plan",
+          "conditional_on_perception": true,
+          "planner_stop_reason": "deadline",
+          "planner_backend": "fast"
+        },
+        "tail": [
+          {
+            "turn": 68,
+            "action": "left",
+            "reason": "conditional_plan",
+            "step_seconds": 0.002769,
+            "gap_seconds": 0.00225
+          },
+          {
+            "turn": 69,
+            "action": "left",
+            "reason": "conditional_plan",
+            "step_seconds": 0.001987,
+            "gap_seconds": 0.002345
+          },
+          {
+            "turn": 70,
+            "action": "left",
+            "reason": "conditional_plan",
+            "step_seconds": 0.001844,
+            "gap_seconds": 0.002207
+          }
+        ]
+      },
+      "actual_terminal_win": true,
+      "actual_score": -210
+    },
+    {
+      "notebook": true,
+      "label": "B6 Warehouse",
+      "report": {
+        "source": "0b61f5c7c594541b12656995aa2389642ce37a48ad9f5a2bc3544360c45d92d5",
+        "trigger": "predicted_terminal_action",
+        "elapsed": 0.468168,
+        "agent_seconds": 0.321923,
+        "between_calls_seconds": 0.146235,
+        "inflight_step_seconds": 0.0,
+        "actions": 72,
+        "first_step_seconds": 0.157121,
+        "plan_remaining": 0,
+        "cutoff": 4.65,
+        "observed_status": {
+          "score": -213,
+          "phase": "ongoing",
+          "turn": 71
+        },
+        "predicted_status": [
+          {
+            "score": -213,
+            "win": true,
+            "lose": false
+          }
+        ],
+        "stats": {
+          "input_mode": "image",
+          "visual_discrepancies": 0,
+          "metadata_discrepancies": 0,
+          "repairs": 0,
+          "recoveries": 0,
+          "actions": 72,
+          "hypotheses": 1,
+          "reason": "conditional_plan",
+          "conditional_on_perception": true,
+          "planner_stop_reason": "deadline",
+          "planner_backend": "fast"
+        },
+        "tail": [
+          {
+            "turn": 69,
+            "action": "left",
+            "reason": "conditional_plan",
+            "step_seconds": 0.002024,
+            "gap_seconds": 0.001937
+          },
+          {
+            "turn": 70,
+            "action": "left",
+            "reason": "conditional_plan",
+            "step_seconds": 0.002356,
+            "gap_seconds": 0.002038
+          },
+          {
+            "turn": 71,
+            "action": "left",
+            "reason": "conditional_plan",
+            "step_seconds": 0.002265,
+            "gap_seconds": 0.0021
+          }
+        ]
+      },
+      "actual_terminal_win": true,
+      "actual_score": -213
+    },
+    {
+      "notebook": true,
+      "label": "B7 Fire Resistance",
+      "report": {
+        "source": "0b61f5c7c594541b12656995aa2389642ce37a48ad9f5a2bc3544360c45d92d5",
+        "trigger": "predicted_terminal_action",
+        "elapsed": 0.271986,
+        "agent_seconds": 0.22024,
+        "between_calls_seconds": 0.051738,
+        "inflight_step_seconds": 0.0,
+        "actions": 38,
+        "first_step_seconds": 0.128115,
+        "plan_remaining": 0,
+        "cutoff": 4.65,
+        "observed_status": {
+          "score": -111,
+          "phase": "ongoing",
+          "turn": 37
+        },
+        "predicted_status": [
+          {
+            "score": -111,
+            "win": true,
+            "lose": false
+          }
+        ],
+        "stats": {
+          "input_mode": "image",
+          "visual_discrepancies": 0,
+          "metadata_discrepancies": 0,
+          "repairs": 0,
+          "recoveries": 0,
+          "actions": 38,
+          "hypotheses": 1,
+          "reason": "conditional_plan",
+          "conditional_on_perception": true,
+          "planner_stop_reason": "deadline",
+          "planner_backend": "fast"
+        },
+        "tail": [
+          {
+            "turn": 35,
+            "action": "left",
+            "reason": "conditional_plan",
+            "step_seconds": 0.0028,
+            "gap_seconds": 0.001248
+          },
+          {
+            "turn": 36,
+            "action": "down",
+            "reason": "conditional_plan",
+            "step_seconds": 0.002647,
+            "gap_seconds": 0.001407
+          },
+          {
+            "turn": 37,
+            "action": "down",
+            "reason": "conditional_plan",
+            "step_seconds": 0.001862,
+            "gap_seconds": 0.001385
+          }
+        ]
+      },
+      "actual_terminal_win": true,
+      "actual_score": -111
+    },
+    {
+      "notebook": true,
+      "label": "B8 Choose Wisely",
+      "report": {
+        "source": "0b61f5c7c594541b12656995aa2389642ce37a48ad9f5a2bc3544360c45d92d5",
+        "trigger": "predicted_terminal_action",
+        "elapsed": 0.28941,
+        "agent_seconds": 0.217618,
+        "between_calls_seconds": 0.07178,
+        "inflight_step_seconds": 0.0,
+        "actions": 32,
+        "first_step_seconds": 0.132993,
+        "plan_remaining": 0,
+        "cutoff": 4.65,
+        "observed_status": {
+          "score": -93,
+          "phase": "ongoing",
+          "turn": 31
+        },
+        "predicted_status": [
+          {
+            "score": -93,
+            "win": true,
+            "lose": false
+          }
+        ],
+        "stats": {
+          "input_mode": "image",
+          "visual_discrepancies": 0,
+          "metadata_discrepancies": 0,
+          "repairs": 0,
+          "recoveries": 0,
+          "actions": 32,
+          "hypotheses": 1,
+          "reason": "conditional_plan",
+          "conditional_on_perception": true,
+          "planner_stop_reason": "deadline",
+          "planner_backend": "fast"
+        },
+        "tail": [
+          {
+            "turn": 29,
+            "action": "right",
+            "reason": "conditional_plan",
+            "step_seconds": 0.002647,
+            "gap_seconds": 0.002044
+          },
+          {
+            "turn": 30,
+            "action": "right",
+            "reason": "conditional_plan",
+            "step_seconds": 0.002265,
+            "gap_seconds": 0.002384
+          },
+          {
+            "turn": 31,
+            "action": "right",
+            "reason": "conditional_plan",
+            "step_seconds": 0.007521,
+            "gap_seconds": 0.002242
+          }
+        ]
+      },
+      "actual_terminal_win": true,
+      "actual_score": -93
+    },
+    {
+      "notebook": true,
+      "label": "B9 Manhattan",
+      "report": {
+        "source": "0b61f5c7c594541b12656995aa2389642ce37a48ad9f5a2bc3544360c45d92d5",
+        "trigger": "predicted_terminal_action",
+        "elapsed": 0.184604,
+        "agent_seconds": 0.143625,
+        "between_calls_seconds": 0.040965,
+        "inflight_step_seconds": 0.0,
+        "actions": 22,
+        "first_step_seconds": 0.092314,
+        "plan_remaining": 0,
+        "cutoff": 4.65,
+        "observed_status": {
+          "score": -63,
+          "phase": "ongoing",
+          "turn": 21
+        },
+        "predicted_status": [
+          {
+            "score": -63,
+            "win": true,
+            "lose": false
+          }
+        ],
+        "stats": {
+          "input_mode": "image",
+          "visual_discrepancies": 0,
+          "metadata_discrepancies": 0,
+          "repairs": 0,
+          "recoveries": 0,
+          "actions": 22,
+          "hypotheses": 1,
+          "reason": "conditional_plan",
+          "conditional_on_perception": true,
+          "planner_stop_reason": "deadline",
+          "planner_backend": "fast"
+        },
+        "tail": [
+          {
+            "turn": 19,
+            "action": "right",
+            "reason": "conditional_plan",
+            "step_seconds": 0.002169,
+            "gap_seconds": 0.001822
+          },
+          {
+            "turn": 20,
+            "action": "down",
+            "reason": "conditional_plan",
+            "step_seconds": 0.002138,
+            "gap_seconds": 0.002056
+          },
+          {
+            "turn": 21,
+            "action": "down",
+            "reason": "conditional_plan",
+            "step_seconds": 0.002124,
+            "gap_seconds": 0.001941
+          }
+        ]
+      },
+      "actual_terminal_win": true,
+      "actual_score": -63
+    },
+    {
+      "notebook": true,
+      "label": "B10 Khoa Was Here",
+      "report": {
+        "source": "0b61f5c7c594541b12656995aa2389642ce37a48ad9f5a2bc3544360c45d92d5",
+        "trigger": "predicted_terminal_action",
+        "elapsed": 0.490907,
+        "agent_seconds": 0.353733,
+        "between_calls_seconds": 0.137159,
+        "inflight_step_seconds": 0.0,
+        "actions": 55,
+        "first_step_seconds": 0.193732,
+        "plan_remaining": 0,
+        "cutoff": 4.65,
+        "observed_status": {
+          "score": -162,
+          "phase": "ongoing",
+          "turn": 54
+        },
+        "predicted_status": [
+          {
+            "score": -162,
+            "win": true,
+            "lose": false
+          }
+        ],
+        "stats": {
+          "input_mode": "image",
+          "visual_discrepancies": 0,
+          "metadata_discrepancies": 0,
+          "repairs": 0,
+          "recoveries": 0,
+          "actions": 55,
+          "hypotheses": 1,
+          "reason": "conditional_plan",
+          "conditional_on_perception": true,
+          "planner_stop_reason": "deadline",
+          "planner_backend": "fast"
+        },
+        "tail": [
+          {
+            "turn": 52,
+            "action": "left",
+            "reason": "conditional_plan",
+            "step_seconds": 0.002522,
+            "gap_seconds": 0.0027
+          },
+          {
+            "turn": 53,
+            "action": "left",
+            "reason": "conditional_plan",
+            "step_seconds": 0.008169,
+            "gap_seconds": 0.002278
+          },
+          {
+            "turn": 54,
+            "action": "left",
+            "reason": "conditional_plan",
+            "step_seconds": 0.003022,
+            "gap_seconds": 0.002701
+          }
+        ]
+      },
+      "actual_terminal_win": true,
+      "actual_score": -162
+    }
+  ],
+  "controlled_clock_guards": [
+    {
+      "source": "0b61f5c7c594541b12656995aa2389642ce37a48ad9f5a2bc3544360c45d92d5",
+      "trigger": "first_fallback",
+      "elapsed": 4.701267,
+      "agent_seconds": 1.1e-05,
+      "between_calls_seconds": 4.701245,
+      "inflight_step_seconds": 0.0,
+      "actions": 1,
+      "first_step_seconds": 1.1e-05,
+      "plan_remaining": null,
+      "cutoff": 4.65,
+      "observed_status": {
+        "score": 0,
+        "phase": "ongoing",
+        "turn": 0
+      },
+      "predicted_status": [],
+      "stats": {
+        "input_mode": "image",
+        "visual_discrepancies": 0,
+        "metadata_discrepancies": 0,
+        "repairs": 0,
+        "recoveries": 0,
+        "actions": 1,
+        "hypotheses": 0,
+        "reason": "cutoff",
+        "conditional_on_perception": true
+      },
+      "tail": [
+        {
+          "turn": 0,
+          "action": "wait",
+          "reason": "cutoff",
+          "step_seconds": 1.1e-05,
+          "gap_seconds": 4.701245
+        }
+      ]
+    },
+    {
+      "source": "0b61f5c7c594541b12656995aa2389642ce37a48ad9f5a2bc3544360c45d92d5",
+      "trigger": "near_hard_limit_before_step",
+      "elapsed": 4.800027,
+      "agent_seconds": 0.0,
+      "between_calls_seconds": 4.800022,
+      "inflight_step_seconds": 0.0,
+      "actions": 0,
+      "first_step_seconds": null,
+      "plan_remaining": null,
+      "cutoff": 4.65,
+      "observed_status": {
+        "score": 0,
+        "phase": "ongoing",
+        "turn": 0
+      },
+      "predicted_status": [],
+      "stats": {
+        "input_mode": "unset",
+        "visual_discrepancies": 0,
+        "metadata_discrepancies": 0,
+        "repairs": 0,
+        "recoveries": 0,
+        "actions": 0,
+        "hypotheses": 0,
+        "reason": "not_started",
+        "conditional_on_perception": true
+      },
+      "tail": []
+    }
+  ]
+}

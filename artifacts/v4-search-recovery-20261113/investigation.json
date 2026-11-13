@@ -1,0 +1,52 @@
+{
+  "platform_basic_movement": {
+    "source": "User-provided V4_TIMING_832a traceback",
+    "step_seconds": 1.5712216800000078,
+    "cnn_seconds": 0.18476839899994957,
+    "planner_seconds": 1.3128192460000037,
+    "action": "right",
+    "hypotheses": 1,
+    "unresolved": [],
+    "planner_stop_reason": "exhausted",
+    "blas_threads": 2,
+    "cpu_count": 2,
+    "parsed_basic_board_correct": true
+  },
+  "local_original_profile": {
+    "label": "A0 Basic Movement",
+    "transitions": 9758,
+    "expansions": 1394,
+    "first_verified_win_seconds": 0.003111208032350987,
+    "planner_profiled_seconds": 0.153
+  },
+  "p2b_experiment": {
+    "cases": 22,
+    "wins": 21,
+    "target_rewards": 21,
+    "basic_transitions": 29,
+    "failures": [
+      {
+        "label": "B4 Measure Twice and Cut Once",
+        "win": false,
+        "reward": -450.0,
+        "target": -387,
+        "seconds": 3.6107752920361236,
+        "first": {
+          "seconds": 2.25564954202855,
+          "info": {
+            "search_calls": "0",
+            "cache_hits": "0",
+            "transitions": "0",
+            "expansions": "0",
+            "peak_states": "0",
+            "peak_records": "0",
+            "stop_reason": "unsupported",
+            "backend": "reference"
+          }
+        }
+      }
+    ]
+  },
+  "production_changed": false,
+  "status": "Pruning reduces avoidable search; failed-level platform diagnostics still needed before selecting a complete repair."
+}

@@ -1,0 +1,70 @@
+{
+  "created_utc": "2026-11-08T14:41:11.213787+00:00",
+  "status": "frozen P1; user-reported Debugging22/22 passed",
+  "source_sha256": "a51380b9771c6cb1c8614a09bbb79bc5a1a06a8dddcb761883b599924c13aea5",
+  "bytes": 37287,
+  "public_runs": 66,
+  "public_outcomes": {
+    "win": 66
+  },
+  "per_repeat": {
+    "0": {
+      "wins": 22,
+      "mean_effective_performance": 1.0
+    },
+    "1": {
+      "wins": 22,
+      "mean_effective_performance": 1.0
+    },
+    "2": {
+      "wins": 22,
+      "mean_effective_performance": 1.0
+    }
+  },
+  "intro_mean_effective_performance": 1.0,
+  "public_mean_effective_performance": 1.0,
+  "max_evaluation_seconds": 3.199104797000473,
+  "max_peak_rss_bytes": 322584576,
+  "setup_seconds_range": [
+    0.6170019880009932,
+    0.625914496002224
+  ],
+  "tuning": {
+    "verified": 50,
+    "excluded": 0,
+    "outcomes": {
+      "win": 50
+    }
+  },
+  "heldout": {
+    "verified": 50,
+    "excluded": 0,
+    "outcomes": {
+      "win": 50
+    },
+    "normalized_performance": "unavailable: generated optima not established"
+  },
+  "generated_revalidation_note": "Same frozen corpus replayed after public-data-guided ordering changes; not new independent heldout generalization evidence.",
+  "latency_diagnostic": {
+    "simulation": {
+      "count": 10080,
+      "mean_seconds": 0.0001434349915504595,
+      "p99_seconds": 0.00025550599821144715,
+      "max_seconds": 0.0010561429990048055
+    },
+    "state_key": {
+      "count": 1440,
+      "mean_seconds": 2.4816276360676664e-05,
+      "p99_seconds": 3.6993998946854845e-05,
+      "max_seconds": 0.0001248640000994783
+    }
+  },
+  "profile_summary_file": "profile-summary.json",
+  "tests": "68 passed locally (32.099s) and on Omarchy (20.252s); Ruff lint/format and ty with warnings as errors pass",
+  "review": "Guided/lazy planner reviewed at64 tests with no findings; focused carried-reference fix reviewed with no findings; subsequent small ordering weights covered by RED/GREEN tests and exact-source measurements.",
+  "historical_compatibility_record": "../compatibility.json refers to55d3 source, not current qualification.",
+  "platform_debugging": "22/22 passed, user-reported for latest delivered a51380b9; see platform-validation.json",
+  "graded_submission": "not performed by agent; user handoff",
+  "frozen_at_utc": "2026-11-08T14:47:52.613892+00:00",
+  "frozen_source": "../frozen/task1_agent.py"
+}

@@ -1,0 +1,36 @@
+[
+  {
+    "command": [
+      "ruff",
+      "check",
+      "agents/v4_perception.py",
+      "tests/test_v4_package.py",
+      "tests/test_v4_perception.py"
+    ],
+    "exit_code": 0,
+    "output": "All checks passed!\n"
+  },
+  {
+    "command": [
+      "ruff",
+      "format",
+      "--check",
+      "agents/v4_perception.py",
+      "tests/test_v4_package.py",
+      "tests/test_v4_perception.py"
+    ],
+    "exit_code": 0,
+    "output": "3 files already formatted\n"
+  },
+  {
+    "command": [
+      "ty",
+      "check",
+      "agents/v4_perception.py",
+      "tests/test_v4_package.py",
+      "tests/test_v4_perception.py"
+    ],
+    "exit_code": 0,
+    "output": "All checks passed!\n"
+  }
+]

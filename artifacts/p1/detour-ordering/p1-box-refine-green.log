@@ -1,0 +1,18 @@
+test_guided_refinement_improves_coin_and_shield_routes (tests.test_p1_search.GuidedSearchTests.test_guided_refinement_improves_coin_and_shield_routes) ... 
+  test_guided_refinement_improves_coin_and_shield_routes (tests.test_p1_search.GuidedSearchTests.test_guided_refinement_improves_coin_and_shield_routes) (label='A6 Pushable Box') ... FAIL
+test_guided_routes_around_pushed_boxes (tests.test_p1_search.GuidedSearchTests.test_guided_routes_around_pushed_boxes) ... ok
+test_guided_finds_hazard_detours_before_spending_search_budget (tests.test_p1_search.GuidedSearchTests.test_guided_finds_hazard_detours_before_spending_search_budget) ... ok
+
+======================================================================
+FAIL: test_guided_refinement_improves_coin_and_shield_routes (tests.test_p1_search.GuidedSearchTests.test_guided_refinement_improves_coin_and_shield_routes) (label='A6 Pushable Box')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/enxi/coding/autistic-sv-67/tests/test_p1_search.py", line 429, in test_guided_refinement_improves_coin_and_shield_routes
+    self.assertEqual(result.final_score, PUBLIC_LEVEL_MAX_REWARDS[label])
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: -27 != -21
+
+----------------------------------------------------------------------
+Ran 3 tests in 9.151s
+
+FAILED (failures=1)

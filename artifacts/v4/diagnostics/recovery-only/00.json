@@ -1,0 +1,5567 @@
+{
+  "source_sha256": "2c30a108b052fa59c6a34304fba7b77580a7943962ce43ee5b0431f3bdbe9493",
+  "diagnostic_only": true,
+  "results": [
+    {
+      "status": "loss",
+      "win": false,
+      "lose": true,
+      "reward": -450.0,
+      "evaluation_seconds": 3.5767856089951238,
+      "turns": 150,
+      "effective_performance": 0.0,
+      "unresolved": [],
+      "observation": "image",
+      "initial_board_exact": true,
+      "initial_confusion": [
+        [
+          "box",
+          "box",
+          1
+        ],
+        [
+          "coin",
+          "coin",
+          1
+        ],
+        [
+          "exit",
+          "exit",
+          1
+        ],
+        [
+          "floor",
+          "floor",
+          43
+        ],
+        [
+          "gem",
+          "gem",
+          2
+        ],
+        [
+          "human",
+          "human",
+          1
+        ],
+        [
+          "key",
+          "key",
+          1
+        ],
+        [
+          "lava",
+          "lava",
+          2
+        ],
+        [
+          "locked",
+          "locked",
+          1
+        ],
+        [
+          "opened",
+          "opened",
+          1
+        ],
+        [
+          "shield",
+          "shield",
+          1
+        ],
+        [
+          "wall",
+          "wall",
+          80
+        ]
+      ],
+      "agent_info": {
+        "name": "V4 recovery development",
+        "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+        "input_mode": "image",
+        "visual_discrepancies": "2",
+        "metadata_discrepancies": "0",
+        "repairs": "1",
+        "recoveries": "0",
+        "actions": "150",
+        "hypotheses": "1",
+        "reason": "cutoff",
+        "conditional_on_perception": "True",
+        "planner_stop_reason": "state_cap",
+        "planner_backend": "fast"
+      },
+      "budget_reset": false,
+      "budget_seconds": [
+        3.0,
+        3.5
+      ],
+      "diagnostic_only": true,
+      "trace": [
+        {
+          "turn": 0,
+          "action": "RIGHT",
+          "prediction_turns_before": [],
+          "prediction_turns_after": [
+            1
+          ],
+          "hypothesis_count": 1,
+          "current_board_matches_truth": true,
+          "agent_info": {
+            "name": "V4 recovery development",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "0",
+            "metadata_discrepancies": "0",
+            "repairs": "0",
+            "recoveries": "0",
+            "actions": "1",
+            "hypotheses": "1",
+            "reason": "conditional_plan",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.848403686992242,
+          "stages": {
+            "classify_initial": 0.472277736000251,
+            "grid_step": 0.0799620859179413,
+            "planner": 0.37013377199764363,
+            "common_safe_prefix": 0.0010288810008205473
+          },
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 1,
+          "action": "PICK_UP",
+          "prediction_turns_before": [
+            1
+          ],
+          "prediction_turns_after": [
+            2
+          ],
+          "hypothesis_count": 1,
+          "current_board_matches_truth": true,
+          "agent_info": {
+            "name": "V4 recovery development",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "0",
+            "metadata_discrepancies": "0",
+            "repairs": "0",
+            "recoveries": "0",
+            "actions": "2",
+            "hypotheses": "1",
+            "reason": "conditional_plan",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.009603138998500071,
+          "stages": {
+            "classify_initial": 0.0026083690027007833,
+            "check_observation": 0.004793347005033866,
+            "reconcile": 0.00181433699617628,
+            "planner": 0.00035056199703831226,
+            "grid_step": 0.0016457660094602033,
+            "common_safe_prefix": 0.0009122399933403358
+          },
+          "first_exception": null,
+          "observations": {
+            "check": {
+              "consistent": true,
+              "mismatches": [],
+              "changed_cells": [
+                [
+                  1,
+                  1
+                ],
+                [
+                  2,
+                  1
+                ]
+              ]
+            }
+          }
+        },
+        {
+          "turn": 2,
+          "action": "RIGHT",
+          "prediction_turns_before": [
+            2
+          ],
+          "prediction_turns_after": [
+            3
+          ],
+          "hypothesis_count": 1,
+          "current_board_matches_truth": true,
+          "agent_info": {
+            "name": "V4 recovery development",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "0",
+            "metadata_discrepancies": "0",
+            "repairs": "0",
+            "recoveries": "0",
+            "actions": "3",
+            "hypotheses": "1",
+            "reason": "conditional_plan",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.05260035900573712,
+          "stages": {
+            "classify_initial": 0.0017061140097212046,
+            "check_observation": 0.0018867460021283478,
+            "reconcile": 0.0016987050039460883,
+            "grid_step": 0.039116248008213006,
+            "planner": 0.04639996100740973,
+            "common_safe_prefix": 0.0008627100032754242
+          },
+          "first_exception": null,
+          "observations": {
+            "check": {
+              "consistent": true,
+              "mismatches": [],
+              "changed_cells": [
+                [
+                  2,
+                  1
+                ]
+              ]
+            }
+          }
+        },
+        {
+          "turn": 3,
+          "action": "USE_KEY",
+          "prediction_turns_before": [
+            3
+          ],
+          "prediction_turns_after": [
+            4
+          ],
+          "hypothesis_count": 1,
+          "current_board_matches_truth": true,
+          "agent_info": {
+            "name": "V4 recovery development",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "0",
+            "metadata_discrepancies": "0",
+            "repairs": "0",
+            "recoveries": "0",
+            "actions": "4",
+            "hypotheses": "1",
+            "reason": "conditional_plan",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.005936267989454791,
+          "stages": {
+            "classify_initial": 0.00125069500063546,
+            "check_observation": 0.001436657999875024,
+            "reconcile": 0.0015462550072697923,
+            "planner": 0.00034964599763043225,
+            "grid_step": 0.001609423998161219,
+            "common_safe_prefix": 0.0008829139987938106
+          },
+          "first_exception": null,
+          "observations": {
+            "check": {
+              "consistent": true,
+              "mismatches": [],
+              "changed_cells": [
+                [
+                  2,
+                  1
+                ],
+                [
+                  3,
+                  1
+                ]
+              ]
+            }
+          }
+        },
+        {
+          "turn": 4,
+          "action": "RIGHT",
+          "prediction_turns_before": [
+            4
+          ],
+          "prediction_turns_after": [
+            5
+          ],
+          "hypothesis_count": 1,
+          "current_board_matches_truth": true,
+          "agent_info": {
+            "name": "V4 recovery development",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "0",
+            "metadata_discrepancies": "0",
+            "repairs": "0",
+            "recoveries": "0",
+            "actions": "5",
+            "hypotheses": "1",
+            "reason": "conditional_plan",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.005842279002536088,
+          "stages": {
+            "classify_initial": 0.0012350449978839606,
+            "check_observation": 0.0014031550090294331,
+            "reconcile": 0.0015126710059121251,
+            "planner": 0.0003203069936716929,
+            "grid_step": 0.0016145929985214025,
+            "common_safe_prefix": 0.0008790019928710535
+          },
+          "first_exception": null,
+          "observations": {
+            "check": {
+              "consistent": true,
+              "mismatches": [],
+              "changed_cells": [
+                [
+                  4,
+                  1
+                ]
+              ]
+            }
+          }
+        },
+        {
+          "turn": 5,
+          "action": "RIGHT",
+          "prediction_turns_before": [
+            5
+          ],
+          "prediction_turns_after": [
+            6
+          ],
+          "hypothesis_count": 1,
+          "current_board_matches_truth": true,
+          "agent_info": {
+            "name": "V4 recovery development",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "0",
+            "metadata_discrepancies": "0",
+            "repairs": "0",
+            "recoveries": "0",
+            "actions": "6",
+            "hypotheses": "1",
+            "reason": "conditional_plan",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.0062277649994939566,
+          "stages": {
+            "classify_initial": 0.001686360003077425,
+            "check_observation": 0.0018600960029289126,
+            "reconcile": 0.0014652070094598457,
+            "planner": 0.0003216460027033463,
+            "grid_step": 0.0016049549885792658,
+            "common_safe_prefix": 0.0008738640026422217
+          },
+          "first_exception": null,
+          "observations": {
+            "check": {
+              "consistent": true,
+              "mismatches": [],
+              "changed_cells": [
+                [
+                  3,
+                  1
+                ],
+                [
+                  4,
+                  1
+                ]
+              ]
+            }
+          }
+        },
+        {
+          "turn": 6,
+          "action": "RIGHT",
+          "prediction_turns_before": [
+            6
+          ],
+          "prediction_turns_after": [
+            7
+          ],
+          "hypothesis_count": 1,
+          "current_board_matches_truth": true,
+          "agent_info": {
+            "name": "V4 recovery development",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "0",
+            "metadata_discrepancies": "0",
+            "repairs": "0",
+            "recoveries": "0",
+            "actions": "7",
+            "hypotheses": "1",
+            "reason": "conditional_plan",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.009243715991033241,
+          "stages": {
+            "classify_initial": 0.0012366730079520494,
+            "check_observation": 0.00484980498731602,
+            "reconcile": 0.0015139150054892525,
+            "planner": 0.0003301579999970272,
+            "grid_step": 0.0015789909957675263,
+            "common_safe_prefix": 0.0008579800050938502
+          },
+          "first_exception": null,
+          "observations": {
+            "check": {
+              "consistent": true,
+              "mismatches": [],
+              "changed_cells": [
+                [
+                  4,
+                  1
+                ],
+                [
+                  5,
+                  1
+                ]
+              ]
+            }
+          }
+        },
+        {
+          "turn": 7,
+          "action": "RIGHT",
+          "prediction_turns_before": [
+            7
+          ],
+          "prediction_turns_after": [
+            8
+          ],
+          "hypothesis_count": 1,
+          "current_board_matches_truth": true,
+          "agent_info": {
+            "name": "V4 recovery development",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "0",
+            "metadata_discrepancies": "0",
+            "repairs": "0",
+            "recoveries": "0",
+            "actions": "8",
+            "hypotheses": "1",
+            "reason": "conditional_plan",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.009205458001815714,
+          "stages": {
+            "classify_initial": 0.0012420239945640787,
+            "check_observation": 0.004809842997929081,
+            "reconcile": 0.0014814150054007769,
+            "planner": 0.0003296250069979578,
+            "grid_step": 0.0015990190004231408,
+            "common_safe_prefix": 0.0008709999965503812
+          },
+          "first_exception": null,
+          "observations": {
+            "check": {
+              "consistent": true,
+              "mismatches": [],
+              "changed_cells": [
+                [
+                  5,
+                  1
+                ],
+                [
+                  6,
+                  1
+                ]
+              ]
+            }
+          }
+        },
+        {
+          "turn": 8,
+          "action": "RIGHT",
+          "prediction_turns_before": [
+            8
+          ],
+          "prediction_turns_after": [
+            9
+          ],
+          "hypothesis_count": 1,
+          "current_board_matches_truth": true,
+          "agent_info": {
+            "name": "V4 recovery development",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "0",
+            "metadata_discrepancies": "0",
+            "repairs": "0",
+            "recoveries": "0",
+            "actions": "9",
+            "hypotheses": "1",
+            "reason": "conditional_plan",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.0057667829969432205,
+          "stages": {
+            "classify_initial": 0.0012336669897194952,
+            "check_observation": 0.0013993360043969005,
+            "reconcile": 0.0014938189997337759,
+            "planner": 0.00033136599813587964,
+            "grid_step": 0.0015744650008855388,
+            "common_safe_prefix": 0.0008587240008637309
+          },
+          "first_exception": null,
+          "observations": {
+            "check": {
+              "consistent": true,
+              "mismatches": [],
+              "changed_cells": [
+                [
+                  6,
+                  1
+                ],
+                [
+                  7,
+                  1
+                ]
+              ]
+            }
+          }
+        },
+        {
+          "turn": 9,
+          "action": "RIGHT",
+          "prediction_turns_before": [
+            9
+          ],
+          "prediction_turns_after": [
+            10
+          ],
+          "hypothesis_count": 1,
+          "current_board_matches_truth": true,
+          "agent_info": {
+            "name": "V4 recovery development",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "0",
+            "metadata_discrepancies": "0",
+            "repairs": "0",
+            "recoveries": "0",
+            "actions": "10",
+            "hypotheses": "1",
+            "reason": "conditional_plan",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.005783440996310674,
+          "stages": {
+            "classify_initial": 0.0012404700100887567,
+            "check_observation": 0.0014097029925324023,
+            "reconcile": 0.001496145996497944,
+            "planner": 0.0003259549994254485,
+            "grid_step": 0.0015812389901839197,
+            "common_safe_prefix": 0.0008595819963375106
+          },
+          "first_exception": null,
+          "observations": {
+            "check": {
+              "consistent": true,
+              "mismatches": [],
+              "changed_cells": [
+                [
+                  7,
+                  1
+                ],
+                [
+                  8,
+                  1
+                ]
+              ]
+            }
+          }
+        },
+        {
+          "turn": 10,
+          "action": "RIGHT",
+          "prediction_turns_before": [
+            10
+          ],
+          "prediction_turns_after": [
+            11
+          ],
+          "hypothesis_count": 1,
+          "current_board_matches_truth": true,
+          "agent_info": {
+            "name": "V4 recovery development",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "0",
+            "metadata_discrepancies": "0",
+            "repairs": "0",
+            "recoveries": "0",
+            "actions": "11",
+            "hypotheses": "1",
+            "reason": "conditional_plan",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.005790317998616956,
+          "stages": {
+            "classify_initial": 0.0012333170016063377,
+            "check_observation": 0.001404454989824444,
+            "reconcile": 0.0014740579936187714,
+            "planner": 0.0003295560018159449,
+            "grid_step": 0.0015818620013305917,
+            "common_safe_prefix": 0.0008632240060251206
+          },
+          "first_exception": null,
+          "observations": {
+            "check": {
+              "consistent": true,
+              "mismatches": [],
+              "changed_cells": [
+                [
+                  8,
+                  1
+                ],
+                [
+                  9,
+                  1
+                ]
+              ]
+            }
+          }
+        },
+        {
+          "turn": 11,
+          "action": "RIGHT",
+          "prediction_turns_before": [
+            11
+          ],
+          "prediction_turns_after": [
+            12
+          ],
+          "hypothesis_count": 1,
+          "current_board_matches_truth": true,
+          "agent_info": {
+            "name": "V4 recovery development",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "0",
+            "metadata_discrepancies": "0",
+            "repairs": "0",
+            "recoveries": "0",
+            "actions": "12",
+            "hypotheses": "1",
+            "reason": "conditional_plan",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.005793285003164783,
+          "stages": {
+            "classify_initial": 0.0012380870030028746,
+            "check_observation": 0.0014125750021776184,
+            "reconcile": 0.0014981730055296794,
+            "planner": 0.0003306220023659989,
+            "grid_step": 0.0015695050096837804,
+            "common_safe_prefix": 0.000855891004903242
+          },
+          "first_exception": null,
+          "observations": {
+            "check": {
+              "consistent": true,
+              "mismatches": [],
+              "changed_cells": [
+                [
+                  9,
+                  1
+                ],
+                [
+                  10,
+                  1
+                ]
+              ]
+            }
+          }
+        },
+        {
+          "turn": 12,
+          "action": "RIGHT",
+          "prediction_turns_before": [
+            12
+          ],
+          "prediction_turns_after": [
+            13
+          ],
+          "hypothesis_count": 1,
+          "current_board_matches_truth": true,
+          "agent_info": {
+            "name": "V4 recovery development",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "0",
+            "metadata_discrepancies": "0",
+            "repairs": "0",
+            "recoveries": "0",
+            "actions": "13",
+            "hypotheses": "1",
+            "reason": "conditional_plan",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.005764330009697005,
+          "stages": {
+            "classify_initial": 0.001237807999132201,
+            "check_observation": 0.0014064809947740287,
+            "reconcile": 0.0014762690116185695,
+            "planner": 0.0003170770069118589,
+            "grid_step": 0.0016012540145311505,
+            "common_safe_prefix": 0.0008696159929968417
+          },
+          "first_exception": null,
+          "observations": {
+            "check": {
+              "consistent": true,
+              "mismatches": [],
+              "changed_cells": [
+                [
+                  10,
+                  1
+                ],
+                [
+                  11,
+                  1
+                ]
+              ]
+            }
+          }
+        },
+        {
+          "turn": 13,
+          "action": "RIGHT",
+          "prediction_turns_before": [
+            13
+          ],
+          "prediction_turns_after": [
+            14
+          ],
+          "hypothesis_count": 1,
+          "current_board_matches_truth": true,
+          "agent_info": {
+            "name": "V4 recovery development",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "0",
+            "metadata_discrepancies": "0",
+            "repairs": "0",
+            "recoveries": "0",
+            "actions": "14",
+            "hypotheses": "1",
+            "reason": "conditional_plan",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.005745319998823106,
+          "stages": {
+            "classify_initial": 0.0012305279960855842,
+            "check_observation": 0.001397673986502923,
+            "reconcile": 0.0014862030075164512,
+            "planner": 0.0003206659894203767,
+            "grid_step": 0.0015805479924893007,
+            "common_safe_prefix": 0.0008648859948152676
+          },
+          "first_exception": null,
+          "observations": {
+            "check": {
+              "consistent": true,
+              "mismatches": [],
+              "changed_cells": [
+                [
+                  11,
+                  1
+                ],
+                [
+                  12,
+                  1
+                ]
+              ]
+            }
+          }
+        },
+        {
+          "turn": 14,
+          "action": "DOWN",
+          "prediction_turns_before": [
+            14
+          ],
+          "prediction_turns_after": [
+            15
+          ],
+          "hypothesis_count": 1,
+          "current_board_matches_truth": true,
+          "agent_info": {
+            "name": "V4 recovery development",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "0",
+            "metadata_discrepancies": "0",
+            "repairs": "0",
+            "recoveries": "0",
+            "actions": "15",
+            "hypotheses": "1",
+            "reason": "conditional_plan",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.0057677550066728145,
+          "stages": {
+            "classify_initial": 0.0012394849909469485,
+            "check_observation": 0.00140737000037916,
+            "reconcile": 0.0014791769935982302,
+            "planner": 0.00032150100742001086,
+            "grid_step": 0.0015798679960425943,
+            "common_safe_prefix": 0.0008581029978813604
+          },
+          "first_exception": null,
+          "observations": {
+            "check": {
+              "consistent": true,
+              "mismatches": [],
+              "changed_cells": [
+                [
+                  12,
+                  1
+                ],
+                [
+                  13,
+                  1
+                ]
+              ]
+            }
+          }
+        },
+        {
+          "turn": 15,
+          "action": "DOWN",
+          "prediction_turns_before": [
+            15
+          ],
+          "prediction_turns_after": [
+            16
+          ],
+          "hypothesis_count": 1,
+          "current_board_matches_truth": true,
+          "agent_info": {
+            "name": "V4 recovery development",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "0",
+            "metadata_discrepancies": "0",
+            "repairs": "0",
+            "recoveries": "0",
+            "actions": "16",
+            "hypotheses": "1",
+            "reason": "conditional_plan",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.005758524013799615,
+          "stages": {
+            "classify_initial": 0.0012338789965724573,
+            "check_observation": 0.0014047559961909428,
+            "reconcile": 0.0014853710017632693,
+            "planner": 0.0003251830057706684,
+            "grid_step": 0.0015780669928062707,
+            "common_safe_prefix": 0.0008650660020066425
+          },
+          "first_exception": null,
+          "observations": {
+            "check": {
+              "consistent": true,
+              "mismatches": [],
+              "changed_cells": [
+                [
+                  13,
+                  1
+                ],
+                [
+                  13,
+                  2
+                ]
+              ]
+            }
+          }
+        },
+        {
+          "turn": 16,
+          "action": "DOWN",
+          "prediction_turns_before": [
+            16
+          ],
+          "prediction_turns_after": [
+            17
+          ],
+          "hypothesis_count": 1,
+          "current_board_matches_truth": true,
+          "agent_info": {
+            "name": "V4 recovery development",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "0",
+            "metadata_discrepancies": "0",
+            "repairs": "0",
+            "recoveries": "0",
+            "actions": "17",
+            "hypotheses": "1",
+            "reason": "conditional_plan",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.005761767999501899,
+          "stages": {
+            "classify_initial": 0.0012289750011404976,
+            "check_observation": 0.0014043159899301827,
+            "reconcile": 0.0014957589883124456,
+            "planner": 0.00031705798755865544,
+            "grid_step": 0.0015752729959785938,
+            "common_safe_prefix": 0.0008644699992146343
+          },
+          "first_exception": null,
+          "observations": {
+            "check": {
+              "consistent": true,
+              "mismatches": [],
+              "changed_cells": [
+                [
+                  13,
+                  2
+                ],
+                [
+                  13,
+                  3
+                ]
+              ]
+            }
+          }
+        },
+        {
+          "turn": 17,
+          "action": "DOWN",
+          "prediction_turns_before": [
+            17
+          ],
+          "prediction_turns_after": [
+            18
+          ],
+          "hypothesis_count": 1,
+          "current_board_matches_truth": true,
+          "agent_info": {
+            "name": "V4 recovery development",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "0",
+            "metadata_discrepancies": "0",
+            "repairs": "0",
+            "recoveries": "0",
+            "actions": "18",
+            "hypotheses": "1",
+            "reason": "conditional_plan",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.005764670990174636,
+          "stages": {
+            "classify_initial": 0.001230339999892749,
+            "check_observation": 0.0014075539947953075,
+            "reconcile": 0.0014948659954825416,
+            "planner": 0.0003204720123903826,
+            "grid_step": 0.0015692599845351651,
+            "common_safe_prefix": 0.0008499210089212283
+          },
+          "first_exception": null,
+          "observations": {
+            "check": {
+              "consistent": true,
+              "mismatches": [],
+              "changed_cells": [
+                [
+                  13,
+                  3
+                ],
+                [
+                  13,
+                  4
+                ]
+              ]
+            }
+          }
+        },
+        {
+          "turn": 18,
+          "action": "DOWN",
+          "prediction_turns_before": [
+            18
+          ],
+          "prediction_turns_after": [
+            19
+          ],
+          "hypothesis_count": 1,
+          "current_board_matches_truth": true,
+          "agent_info": {
+            "name": "V4 recovery development",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "0",
+            "metadata_discrepancies": "0",
+            "repairs": "0",
+            "recoveries": "0",
+            "actions": "19",
+            "hypotheses": "1",
+            "reason": "conditional_plan",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.005787718997453339,
+          "stages": {
+            "classify_initial": 0.0012304889969527721,
+            "check_observation": 0.001409022996085696,
+            "reconcile": 0.0014990600029705092,
+            "planner": 0.0003227350098313764,
+            "grid_step": 0.0015834539954084903,
+            "common_safe_prefix": 0.000863102002767846
+          },
+          "first_exception": null,
+          "observations": {
+            "check": {
+              "consistent": true,
+              "mismatches": [],
+              "changed_cells": [
+                [
+                  13,
+                  4
+                ],
+                [
+                  13,
+                  5
+                ]
+              ]
+            }
+          }
+        },
+        {
+          "turn": 19,
+          "action": "DOWN",
+          "prediction_turns_before": [
+            19
+          ],
+          "prediction_turns_after": [
+            20
+          ],
+          "hypothesis_count": 1,
+          "current_board_matches_truth": true,
+          "agent_info": {
+            "name": "V4 recovery development",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "0",
+            "metadata_discrepancies": "0",
+            "repairs": "0",
+            "recoveries": "0",
+            "actions": "20",
+            "hypotheses": "1",
+            "reason": "conditional_plan",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.005762825996498577,
+          "stages": {
+            "classify_initial": 0.0012383200082695112,
+            "check_observation": 0.0014213880058377981,
+            "reconcile": 0.0014986790047260001,
+            "planner": 0.00031687899900134653,
+            "grid_step": 0.0015576689911540598,
+            "common_safe_prefix": 0.0008501309930579737
+          },
+          "first_exception": null,
+          "observations": {
+            "check": {
+              "consistent": true,
+              "mismatches": [],
+              "changed_cells": [
+                [
+                  13,
+                  5
+                ],
+                [
+                  13,
+                  6
+                ]
+              ]
+            }
+          }
+        },
+        {
+          "turn": 20,
+          "action": "LEFT",
+          "prediction_turns_before": [
+            20
+          ],
+          "prediction_turns_after": [
+            21
+          ],
+          "hypothesis_count": 1,
+          "current_board_matches_truth": true,
+          "agent_info": {
+            "name": "V4 recovery development",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "0",
+            "metadata_discrepancies": "0",
+            "repairs": "0",
+            "recoveries": "0",
+            "actions": "21",
+            "hypotheses": "1",
+            "reason": "conditional_plan",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.005817556011606939,
+          "stages": {
+            "classify_initial": 0.0012326559954090044,
+            "check_observation": 0.0014170249924063683,
+            "reconcile": 0.001489620000938885,
+            "planner": 0.0003277280047768727,
+            "grid_step": 0.0015974150010151789,
+            "common_safe_prefix": 0.0008704460051376373
+          },
+          "first_exception": null,
+          "observations": {
+            "check": {
+              "consistent": true,
+              "mismatches": [],
+              "changed_cells": [
+                [
+                  13,
+                  6
+                ],
+                [
+                  13,
+                  7
+                ]
+              ]
+            }
+          }
+        },
+        {
+          "turn": 21,
+          "action": "LEFT",
+          "prediction_turns_before": [
+            21
+          ],
+          "prediction_turns_after": [
+            22
+          ],
+          "hypothesis_count": 1,
+          "current_board_matches_truth": true,
+          "agent_info": {
+            "name": "V4 recovery development",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "0",
+            "metadata_discrepancies": "0",
+            "repairs": "0",
+            "recoveries": "0",
+            "actions": "22",
+            "hypotheses": "1",
+            "reason": "conditional_plan",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.00582738799857907,
+          "stages": {
+            "classify_initial": 0.001249054999789223,
+            "check_observation": 0.0014406830014195293,
+            "reconcile": 0.0014712780102854595,
+            "planner": 0.00032489300065208226,
+            "grid_step": 0.0015960409946274012,
+            "common_safe_prefix": 0.0008714599971426651
+          },
+          "first_exception": null,
+          "observations": {
+            "check": {
+              "consistent": true,
+              "mismatches": [],
+              "changed_cells": [
+                [
+                  12,
+                  7
+                ],
+                [
+                  13,
+                  7
+                ]
+              ]
+            }
+          }
+        },
+        {
+          "turn": 22,
+          "action": "UP",
+          "prediction_turns_before": [
+            22
+          ],
+          "prediction_turns_after": [
+            23
+          ],
+          "hypothesis_count": 1,
+          "current_board_matches_truth": true,
+          "agent_info": {
+            "name": "V4 recovery development",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "0",
+            "metadata_discrepancies": "0",
+            "repairs": "0",
+            "recoveries": "0",
+            "actions": "23",
+            "hypotheses": "1",
+            "reason": "conditional_plan",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.005779737999546342,
+          "stages": {
+            "classify_initial": 0.0012370899930829182,
+            "check_observation": 0.0014182769955368713,
+            "reconcile": 0.0014955439983168617,
+            "planner": 0.0003263500111643225,
+            "grid_step": 0.0015775970096001402,
+            "common_safe_prefix": 0.0008542220020899549
+          },
+          "first_exception": null,
+          "observations": {
+            "check": {
+              "consistent": true,
+              "mismatches": [],
+              "changed_cells": [
+                [
+                  11,
+                  7
+                ],
+                [
+                  12,
+                  7
+                ]
+              ]
+            }
+          }
+        },
+        {
+          "turn": 23,
+          "action": "UP",
+          "prediction_turns_before": [
+            23
+          ],
+          "prediction_turns_after": [
+            24
+          ],
+          "hypothesis_count": 1,
+          "current_board_matches_truth": true,
+          "agent_info": {
+            "name": "V4 recovery development",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "0",
+            "metadata_discrepancies": "0",
+            "repairs": "0",
+            "recoveries": "0",
+            "actions": "24",
+            "hypotheses": "1",
+            "reason": "conditional_plan",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.005778273000032641,
+          "stages": {
+            "classify_initial": 0.0012343269918346778,
+            "check_observation": 0.001421446999302134,
+            "reconcile": 0.0014973929937696084,
+            "planner": 0.00031705999572295696,
+            "grid_step": 0.0015766590076964349,
+            "common_safe_prefix": 0.0008539760019630194
+          },
+          "first_exception": null,
+          "observations": {
+            "check": {
+              "consistent": true,
+              "mismatches": [],
+              "changed_cells": [
+                [
+                  11,
+                  6
+                ],
+                [
+                  11,
+                  7
+                ]
+              ]
+            }
+          }
+        },
+        {
+          "turn": 24,
+          "action": "LEFT",
+          "prediction_turns_before": [
+            24
+          ],
+          "prediction_turns_after": [
+            25
+          ],
+          "hypothesis_count": 1,
+          "current_board_matches_truth": true,
+          "agent_info": {
+            "name": "V4 recovery development",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "0",
+            "metadata_discrepancies": "0",
+            "repairs": "0",
+            "recoveries": "0",
+            "actions": "25",
+            "hypotheses": "1",
+            "reason": "conditional_plan",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.005812547009554692,
+          "stages": {
+            "classify_initial": 0.0012370199983706698,
+            "check_observation": 0.0014218759897630662,
+            "reconcile": 0.0014724479988217354,
+            "planner": 0.0003214519965695217,
+            "grid_step": 0.0016096890030894428,
+            "common_safe_prefix": 0.0008750419947318733
+          },
+          "first_exception": null,
+          "observations": {
+            "check": {
+              "consistent": true,
+              "mismatches": [],
+              "changed_cells": [
+                [
+                  11,
+                  5
+                ],
+                [
+                  11,
+                  6
+                ]
+              ]
+            }
+          }
+        },
+        {
+          "turn": 25,
+          "action": "LEFT",
+          "prediction_turns_before": [
+            25
+          ],
+          "prediction_turns_after": [
+            26
+          ],
+          "hypothesis_count": 1,
+          "current_board_matches_truth": true,
+          "agent_info": {
+            "name": "V4 recovery development",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "0",
+            "metadata_discrepancies": "0",
+            "repairs": "0",
+            "recoveries": "0",
+            "actions": "26",
+            "hypotheses": "1",
+            "reason": "conditional_plan",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.005745268004829995,
+          "stages": {
+            "classify_initial": 0.0012319090019445866,
+            "check_observation": 0.0014149439957691357,
+            "reconcile": 0.0014801989891566336,
+            "planner": 0.0003218019992345944,
+            "grid_step": 0.0015541500033577904,
+            "common_safe_prefix": 0.0008427969878539443
+          },
+          "first_exception": null,
+          "observations": {
+            "check": {
+              "consistent": true,
+              "mismatches": [],
+              "changed_cells": [
+                [
+                  10,
+                  5
+                ],
+                [
+                  11,
+                  5
+                ]
+              ]
+            }
+          }
+        },
+        {
+          "turn": 26,
+          "action": "LEFT",
+          "prediction_turns_before": [
+            26
+          ],
+          "prediction_turns_after": [
+            27
+          ],
+          "hypothesis_count": 1,
+          "current_board_matches_truth": true,
+          "agent_info": {
+            "name": "V4 recovery development",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "0",
+            "metadata_discrepancies": "0",
+            "repairs": "0",
+            "recoveries": "0",
+            "actions": "27",
+            "hypotheses": "1",
+            "reason": "conditional_plan",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.0057847839925671,
+          "stages": {
+            "classify_initial": 0.0012357179948594421,
+            "check_observation": 0.0014165790053084493,
+            "reconcile": 0.001470285002142191,
+            "planner": 0.0003412079968256876,
+            "grid_step": 0.0015812850033398718,
+            "common_safe_prefix": 0.0008704929932719097
+          },
+          "first_exception": null,
+          "observations": {
+            "check": {
+              "consistent": true,
+              "mismatches": [],
+              "changed_cells": [
+                [
+                  9,
+                  5
+                ],
+                [
+                  10,
+                  5
+                ]
+              ]
+            }
+          }
+        },
+        {
+          "turn": 27,
+          "action": "LEFT",
+          "prediction_turns_before": [
+            27
+          ],
+          "prediction_turns_after": [
+            28
+          ],
+          "hypothesis_count": 1,
+          "current_board_matches_truth": true,
+          "agent_info": {
+            "name": "V4 recovery development",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "0",
+            "metadata_discrepancies": "0",
+            "repairs": "0",
+            "recoveries": "0",
+            "actions": "28",
+            "hypotheses": "1",
+            "reason": "conditional_plan",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.00573949099634774,
+          "stages": {
+            "classify_initial": 0.0012385829904815182,
+            "check_observation": 0.001420275992131792,
+            "reconcile": 0.0014679370069643483,
+            "planner": 0.0003178140032105148,
+            "grid_step": 0.0015701859956607223,
+            "common_safe_prefix": 0.0008566660108044744
+          },
+          "first_exception": null,
+          "observations": {
+            "check": {
+              "consistent": true,
+              "mismatches": [],
+              "changed_cells": [
+                [
+                  8,
+                  5
+                ],
+                [
+                  9,
+                  5
+                ]
+              ]
+            }
+          }
+        },
+        {
+          "turn": 28,
+          "action": "LEFT",
+          "prediction_turns_before": [
+            28
+          ],
+          "prediction_turns_after": [
+            29
+          ],
+          "hypothesis_count": 1,
+          "current_board_matches_truth": true,
+          "agent_info": {
+            "name": "V4 recovery development",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "0",
+            "metadata_discrepancies": "0",
+            "repairs": "0",
+            "recoveries": "0",
+            "actions": "29",
+            "hypotheses": "1",
+            "reason": "conditional_plan",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.005766289003076963,
+          "stages": {
+            "classify_initial": 0.0012418650003382936,
+            "check_observation": 0.0014233230031095445,
+            "reconcile": 0.0014802910009166226,
+            "planner": 0.00032015101169236004,
+            "grid_step": 0.0015739669906906784,
+            "common_safe_prefix": 0.0008520669944118708
+          },
+          "first_exception": null,
+          "observations": {
+            "check": {
+              "consistent": true,
+              "mismatches": [],
+              "changed_cells": [
+                [
+                  7,
+                  5
+                ],
+                [
+                  8,
+                  5
+                ]
+              ]
+            }
+          }
+        },
+        {
+          "turn": 29,
+          "action": "LEFT",
+          "prediction_turns_before": [
+            29
+          ],
+          "prediction_turns_after": [
+            30
+          ],
+          "hypothesis_count": 1,
+          "current_board_matches_truth": true,
+          "agent_info": {
+            "name": "V4 recovery development",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "0",
+            "metadata_discrepancies": "0",
+            "repairs": "0",
+            "recoveries": "0",
+            "actions": "30",
+            "hypotheses": "1",
+            "reason": "conditional_plan",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.005793067000922747,
+          "stages": {
+            "classify_initial": 0.001239589008037001,
+            "check_observation": 0.0014178730052663013,
+            "reconcile": 0.0014873359905323014,
+            "planner": 0.00031727200257591903,
+            "grid_step": 0.001575436006532982,
+            "common_safe_prefix": 0.0008567740005673841
+          },
+          "first_exception": null,
+          "observations": {
+            "check": {
+              "consistent": true,
+              "mismatches": [],
+              "changed_cells": [
+                [
+                  6,
+                  5
+                ],
+                [
+                  7,
+                  5
+                ]
+              ]
+            }
+          }
+        },
+        {
+          "turn": 30,
+          "action": "UP",
+          "prediction_turns_before": [
+            30
+          ],
+          "prediction_turns_after": [
+            31
+          ],
+          "hypothesis_count": 1,
+          "current_board_matches_truth": true,
+          "agent_info": {
+            "name": "V4 recovery development",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "0",
+            "metadata_discrepancies": "0",
+            "repairs": "0",
+            "recoveries": "0",
+            "actions": "31",
+            "hypotheses": "1",
+            "reason": "conditional_plan",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.00574268598575145,
+          "stages": {
+            "classify_initial": 0.001247652995516546,
+            "check_observation": 0.0014243339974200353,
+            "reconcile": 0.0014812839945079759,
+            "planner": 0.0003159710031468421,
+            "grid_step": 0.0015582149935653433,
+            "common_safe_prefix": 0.0008444300037808716
+          },
+          "first_exception": null,
+          "observations": {
+            "check": {
+              "consistent": true,
+              "mismatches": [],
+              "changed_cells": [
+                [
+                  5,
+                  5
+                ],
+                [
+                  6,
+                  5
+                ]
+              ]
+            }
+          }
+        },
+        {
+          "turn": 31,
+          "action": "UP",
+          "prediction_turns_before": [
+            31
+          ],
+          "prediction_turns_after": [
+            32
+          ],
+          "hypothesis_count": 1,
+          "current_board_matches_truth": true,
+          "agent_info": {
+            "name": "V4 recovery development",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "0",
+            "metadata_discrepancies": "0",
+            "repairs": "0",
+            "recoveries": "0",
+            "actions": "32",
+            "hypotheses": "1",
+            "reason": "conditional_plan",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.005787538000731729,
+          "stages": {
+            "classify_initial": 0.0012365480070002377,
+            "check_observation": 0.001415569000528194,
+            "reconcile": 0.0014869000006001443,
+            "planner": 0.00032444100361317396,
+            "grid_step": 0.0015946089988574386,
+            "common_safe_prefix": 0.0008802180091151968
+          },
+          "first_exception": null,
+          "observations": {
+            "check": {
+              "consistent": true,
+              "mismatches": [],
+              "changed_cells": [
+                [
+                  5,
+                  4
+                ],
+                [
+                  5,
+                  5
+                ]
+              ]
+            }
+          }
+        },
+        {
+          "turn": 32,
+          "action": "LEFT",
+          "prediction_turns_before": [
+            32
+          ],
+          "prediction_turns_after": [
+            33
+          ],
+          "hypothesis_count": 1,
+          "current_board_matches_truth": true,
+          "agent_info": {
+            "name": "V4 recovery development",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "0",
+            "metadata_discrepancies": "0",
+            "repairs": "0",
+            "recoveries": "0",
+            "actions": "33",
+            "hypotheses": "1",
+            "reason": "conditional_plan",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.0057746069942368194,
+          "stages": {
+            "classify_initial": 0.001232501002959907,
+            "check_observation": 0.0014125010056886822,
+            "reconcile": 0.0014848650025669485,
+            "planner": 0.0003197690093657002,
+            "grid_step": 0.0015692540036980063,
+            "common_safe_prefix": 0.0008456969953840598
+          },
+          "first_exception": null,
+          "observations": {
+            "check": {
+              "consistent": true,
+              "mismatches": [],
+              "changed_cells": [
+                [
+                  5,
+                  3
+                ],
+                [
+                  5,
+                  4
+                ]
+              ]
+            }
+          }
+        },
+        {
+          "turn": 33,
+          "action": "LEFT",
+          "prediction_turns_before": [
+            33
+          ],
+          "prediction_turns_after": [
+            34
+          ],
+          "hypothesis_count": 1,
+          "current_board_matches_truth": true,
+          "agent_info": {
+            "name": "V4 recovery development",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "0",
+            "metadata_discrepancies": "0",
+            "repairs": "0",
+            "recoveries": "0",
+            "actions": "34",
+            "hypotheses": "1",
+            "reason": "conditional_plan",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.005752518991357647,
+          "stages": {
+            "classify_initial": 0.0012395939993439242,
+            "check_observation": 0.0014148680056678131,
+            "reconcile": 0.001493124000262469,
+            "planner": 0.0003154689911752939,
+            "grid_step": 0.0015715810004621744,
+            "common_safe_prefix": 0.0008551339997211471
+          },
+          "first_exception": null,
+          "observations": {
+            "check": {
+              "consistent": true,
+              "mismatches": [],
+              "changed_cells": [
+                [
+                  4,
+                  3
+                ],
+                [
+                  5,
+                  3
+                ]
+              ]
+            }
+          }
+        },
+        {
+          "turn": 34,
+          "action": "LEFT",
+          "prediction_turns_before": [
+            34
+          ],
+          "prediction_turns_after": [
+            35
+          ],
+          "hypothesis_count": 1,
+          "current_board_matches_truth": true,
+          "agent_info": {
+            "name": "V4 recovery development",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "0",
+            "metadata_discrepancies": "0",
+            "repairs": "0",
+            "recoveries": "0",
+            "actions": "35",
+            "hypotheses": "1",
+            "reason": "conditional_plan",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.00575150600343477,
+          "stages": {
+            "classify_initial": 0.0012387290043989196,
+            "check_observation": 0.001409680990036577,
+            "reconcile": 0.001484339009039104,
+            "planner": 0.0003198729973519221,
+            "grid_step": 0.0015781950060045347,
+            "common_safe_prefix": 0.0008512380009051412
+          },
+          "first_exception": null,
+          "observations": {
+            "check": {
+              "consistent": true,
+              "mismatches": [],
+              "changed_cells": [
+                [
+                  3,
+                  3
+                ],
+                [
+                  4,
+                  3
+                ]
+              ]
+            }
+          }
+        },
+        {
+          "turn": 35,
+          "action": "LEFT",
+          "prediction_turns_before": [
+            35
+          ],
+          "prediction_turns_after": [
+            36
+          ],
+          "hypothesis_count": 1,
+          "current_board_matches_truth": true,
+          "agent_info": {
+            "name": "V4 recovery development",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "0",
+            "metadata_discrepancies": "0",
+            "repairs": "0",
+            "recoveries": "0",
+            "actions": "36",
+            "hypotheses": "1",
+            "reason": "conditional_plan",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.005817322002258152,
+          "stages": {
+            "classify_initial": 0.0012431740033207461,
+            "check_observation": 0.001417434003087692,
+            "reconcile": 0.0014749740075785667,
+            "planner": 0.00032278501021210104,
+            "grid_step": 0.0016172719915630296,
+            "common_safe_prefix": 0.0008878289954736829
+          },
+          "first_exception": null,
+          "observations": {
+            "check": {
+              "consistent": true,
+              "mismatches": [],
+              "changed_cells": [
+                [
+                  2,
+                  3
+                ],
+                [
+                  3,
+                  3
+                ]
+              ]
+            }
+          }
+        },
+        {
+          "turn": 36,
+          "action": "DOWN",
+          "prediction_turns_before": [
+            36
+          ],
+          "prediction_turns_after": [
+            37
+          ],
+          "hypothesis_count": 1,
+          "current_board_matches_truth": true,
+          "agent_info": {
+            "name": "V4 recovery development",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "0",
+            "metadata_discrepancies": "0",
+            "repairs": "0",
+            "recoveries": "0",
+            "actions": "37",
+            "hypotheses": "1",
+            "reason": "conditional_plan",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.00574224600859452,
+          "stages": {
+            "classify_initial": 0.0012354630016488954,
+            "check_observation": 0.0014075259969104081,
+            "reconcile": 0.0014905730058671907,
+            "planner": 0.00031835200206842273,
+            "grid_step": 0.0015553050034213811,
+            "common_safe_prefix": 0.0008515369991073385
+          },
+          "first_exception": null,
+          "observations": {
+            "check": {
+              "consistent": true,
+              "mismatches": [],
+              "changed_cells": [
+                [
+                  1,
+                  3
+                ],
+                [
+                  2,
+                  3
+                ]
+              ]
+            }
+          }
+        },
+        {
+          "turn": 37,
+          "action": "DOWN",
+          "prediction_turns_before": [
+            37
+          ],
+          "prediction_turns_after": [
+            38
+          ],
+          "hypothesis_count": 1,
+          "current_board_matches_truth": true,
+          "agent_info": {
+            "name": "V4 recovery development",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "0",
+            "metadata_discrepancies": "0",
+            "repairs": "0",
+            "recoveries": "0",
+            "actions": "38",
+            "hypotheses": "1",
+            "reason": "conditional_plan",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.005787742993561551,
+          "stages": {
+            "classify_initial": 0.0012411979987518862,
+            "check_observation": 0.0014192829985404387,
+            "reconcile": 0.0014929989993106574,
+            "planner": 0.00032653199741616845,
+            "grid_step": 0.0015913449897198007,
+            "common_safe_prefix": 0.0008663389889989048
+          },
+          "first_exception": null,
+          "observations": {
+            "check": {
+              "consistent": true,
+              "mismatches": [],
+              "changed_cells": [
+                [
+                  1,
+                  3
+                ],
+                [
+                  1,
+                  4
+                ]
+              ]
+            }
+          }
+        },
+        {
+          "turn": 38,
+          "action": "RIGHT",
+          "prediction_turns_before": [
+            38
+          ],
+          "prediction_turns_after": [
+            39
+          ],
+          "hypothesis_count": 1,
+          "current_board_matches_truth": true,
+          "agent_info": {
+            "name": "V4 recovery development",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "0",
+            "metadata_discrepancies": "0",
+            "repairs": "0",
+            "recoveries": "0",
+            "actions": "39",
+            "hypotheses": "1",
+            "reason": "conditional_plan",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.0057880249951267615,
+          "stages": {
+            "classify_initial": 0.0012437520053936169,
+            "check_observation": 0.0014229100052034482,
+            "reconcile": 0.0014707730006193742,
+            "planner": 0.00032223200832959265,
+            "grid_step": 0.0015929799992591143,
+            "common_safe_prefix": 0.0008676939905853942
+          },
+          "first_exception": null,
+          "observations": {
+            "check": {
+              "consistent": true,
+              "mismatches": [],
+              "changed_cells": [
+                [
+                  1,
+                  4
+                ],
+                [
+                  1,
+                  5
+                ]
+              ]
+            }
+          }
+        },
+        {
+          "turn": 39,
+          "action": "RIGHT",
+          "prediction_turns_before": [
+            39
+          ],
+          "prediction_turns_after": [
+            40
+          ],
+          "hypothesis_count": 1,
+          "current_board_matches_truth": true,
+          "agent_info": {
+            "name": "V4 recovery development",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "0",
+            "metadata_discrepancies": "0",
+            "repairs": "0",
+            "recoveries": "0",
+            "actions": "40",
+            "hypotheses": "1",
+            "reason": "conditional_plan",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.005799030986963771,
+          "stages": {
+            "classify_initial": 0.0012379899999359623,
+            "check_observation": 0.0014198490098351613,
+            "reconcile": 0.0014774279989069328,
+            "planner": 0.0003292839974164963,
+            "grid_step": 0.0015974180132616311,
+            "common_safe_prefix": 0.0008707060042070225
+          },
+          "first_exception": null,
+          "observations": {
+            "check": {
+              "consistent": true,
+              "mismatches": [],
+              "changed_cells": [
+                [
+                  1,
+                  5
+                ],
+                [
+                  2,
+                  5
+                ]
+              ]
+            }
+          }
+        },
+        {
+          "turn": 40,
+          "action": "DOWN",
+          "prediction_turns_before": [
+            40
+          ],
+          "prediction_turns_after": [
+            41
+          ],
+          "hypothesis_count": 1,
+          "current_board_matches_truth": true,
+          "agent_info": {
+            "name": "V4 recovery development",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "0",
+            "metadata_discrepancies": "0",
+            "repairs": "0",
+            "recoveries": "0",
+            "actions": "41",
+            "hypotheses": "1",
+            "reason": "conditional_plan",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.005795905002742074,
+          "stages": {
+            "classify_initial": 0.0012381749984342605,
+            "check_observation": 0.0014147370093269274,
+            "reconcile": 0.0014832930028205737,
+            "planner": 0.0003247029962949455,
+            "grid_step": 0.001603516997420229,
+            "common_safe_prefix": 0.0008695220021763816
+          },
+          "first_exception": null,
+          "observations": {
+            "check": {
+              "consistent": true,
+              "mismatches": [],
+              "changed_cells": [
+                [
+                  2,
+                  5
+                ],
+                [
+                  3,
+                  5
+                ]
+              ]
+            }
+          }
+        },
+        {
+          "turn": 41,
+          "action": "DOWN",
+          "prediction_turns_before": [
+            41
+          ],
+          "prediction_turns_after": [
+            42
+          ],
+          "hypothesis_count": 1,
+          "current_board_matches_truth": true,
+          "agent_info": {
+            "name": "V4 recovery development",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "0",
+            "metadata_discrepancies": "0",
+            "repairs": "0",
+            "recoveries": "0",
+            "actions": "42",
+            "hypotheses": "1",
+            "reason": "conditional_plan",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.005912264998187311,
+          "stages": {
+            "classify_initial": 0.0012439679994713515,
+            "check_observation": 0.001424984002369456,
+            "reconcile": 0.0014796039904467762,
+            "planner": 0.0003200270002707839,
+            "grid_step": 0.0017148740007542074,
+            "common_safe_prefix": 0.0009892379894154146
+          },
+          "first_exception": null,
+          "observations": {
+            "check": {
+              "consistent": true,
+              "mismatches": [],
+              "changed_cells": [
+                [
+                  3,
+                  5
+                ],
+                [
+                  3,
+                  6
+                ]
+              ]
+            }
+          }
+        },
+        {
+          "turn": 42,
+          "action": "RIGHT",
+          "prediction_turns_before": [
+            42
+          ],
+          "prediction_turns_after": [
+            43
+          ],
+          "hypothesis_count": 1,
+          "current_board_matches_truth": true,
+          "agent_info": {
+            "name": "V4 recovery development",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "0",
+            "metadata_discrepancies": "0",
+            "repairs": "0",
+            "recoveries": "0",
+            "actions": "43",
+            "hypotheses": "1",
+            "reason": "conditional_plan",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.005819868005346507,
+          "stages": {
+            "classify_initial": 0.0012407409958541393,
+            "check_observation": 0.0014253370027290657,
+            "reconcile": 0.0014808230043854564,
+            "planner": 0.00031707399466540664,
+            "grid_step": 0.0016141660016728565,
+            "common_safe_prefix": 0.0008756150054978207
+          },
+          "first_exception": null,
+          "observations": {
+            "check": {
+              "consistent": true,
+              "mismatches": [],
+              "changed_cells": [
+                [
+                  3,
+                  6
+                ],
+                [
+                  3,
+                  7
+                ]
+              ]
+            }
+          }
+        },
+        {
+          "turn": 43,
+          "action": "RIGHT",
+          "prediction_turns_before": [
+            43
+          ],
+          "prediction_turns_after": [
+            44
+          ],
+          "hypothesis_count": 1,
+          "current_board_matches_truth": true,
+          "agent_info": {
+            "name": "V4 recovery development",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "0",
+            "metadata_discrepancies": "0",
+            "repairs": "0",
+            "recoveries": "0",
+            "actions": "44",
+            "hypotheses": "1",
+            "reason": "conditional_plan",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.005748226001742296,
+          "stages": {
+            "classify_initial": 0.0012357730010990053,
+            "check_observation": 0.0014211359957698733,
+            "reconcile": 0.0014862889947835356,
+            "planner": 0.0003195809986209497,
+            "grid_step": 0.0015605590015184134,
+            "common_safe_prefix": 0.0008425919950241223
+          },
+          "first_exception": null,
+          "observations": {
+            "check": {
+              "consistent": true,
+              "mismatches": [],
+              "changed_cells": [
+                [
+                  3,
+                  7
+                ],
+                [
+                  4,
+                  7
+                ]
+              ]
+            }
+          }
+        },
+        {
+          "turn": 44,
+          "action": "WAIT",
+          "prediction_turns_before": [
+            44
+          ],
+          "prediction_turns_after": [],
+          "hypothesis_count": 0,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V4 recovery development",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "2",
+            "metadata_discrepancies": "0",
+            "repairs": "1",
+            "recoveries": "0",
+            "actions": "45",
+            "hypotheses": "1",
+            "reason": "unresolved_perception",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.0070021010033087805,
+          "stages": {
+            "classify_initial": 0.0012418310070643201,
+            "check_observation": 0.004808755998965353,
+            "reconcile": 0.0014814010064583272
+          },
+          "first_exception": null,
+          "observations": {
+            "check": {
+              "consistent": false,
+              "mismatches": [
+                [
+                  "cell",
+                  [
+                    5,
+                    7
+                  ],
+                  "human",
+                  "boots",
+                  [
+                    0.9998144507408142,
+                    2.44372620604583e-33,
+                    2.802596928649634e-45,
+                    0.0,
+                    0.0,
+                    2.802596928649634e-45,
+                    5.278630263017233e-31,
+                    0.00018552763503976166,
+                    5.17698506286024e-09,
+                    6.495897921485822e-31,
+                    1.723519243990168e-11,
+                    4.420918761122655e-32,
+                    1.365918983423553e-20,
+                    1.92573441459838e-40
+                  ]
+                ],
+                [
+                  "agent_position",
+                  [
+                    5,
+                    7
+                  ],
+                  null
+                ]
+              ],
+              "changed_cells": [
+                [
+                  4,
+                  7
+                ],
+                [
+                  5,
+                  7
+                ]
+              ]
+            }
+          }
+        },
+        {
+          "turn": 45,
+          "action": "WAIT",
+          "prediction_turns_before": [],
+          "prediction_turns_after": [],
+          "hypothesis_count": 0,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V4 recovery development",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "2",
+            "metadata_discrepancies": "0",
+            "repairs": "1",
+            "recoveries": "0",
+            "actions": "46",
+            "hypotheses": "1",
+            "reason": "unresolved_perception",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.02789250599744264,
+          "stages": {
+            "classify_initial": 0.026430325000546873
+          },
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 46,
+          "action": "WAIT",
+          "prediction_turns_before": [],
+          "prediction_turns_after": [],
+          "hypothesis_count": 0,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V4 recovery development",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "2",
+            "metadata_discrepancies": "0",
+            "repairs": "1",
+            "recoveries": "0",
+            "actions": "47",
+            "hypotheses": "1",
+            "reason": "unresolved_perception",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.02747266201185994,
+          "stages": {
+            "classify_initial": 0.026002307000453584
+          },
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 47,
+          "action": "WAIT",
+          "prediction_turns_before": [],
+          "prediction_turns_after": [],
+          "hypothesis_count": 0,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V4 recovery development",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "2",
+            "metadata_discrepancies": "0",
+            "repairs": "1",
+            "recoveries": "0",
+            "actions": "48",
+            "hypotheses": "1",
+            "reason": "unresolved_perception",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.02784070400230121,
+          "stages": {
+            "classify_initial": 0.026384195996797644
+          },
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 48,
+          "action": "WAIT",
+          "prediction_turns_before": [],
+          "prediction_turns_after": [],
+          "hypothesis_count": 0,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V4 recovery development",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "2",
+            "metadata_discrepancies": "0",
+            "repairs": "1",
+            "recoveries": "0",
+            "actions": "49",
+            "hypotheses": "1",
+            "reason": "unresolved_perception",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.02741468399472069,
+          "stages": {
+            "classify_initial": 0.02596712800732348
+          },
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 49,
+          "action": "WAIT",
+          "prediction_turns_before": [],
+          "prediction_turns_after": [],
+          "hypothesis_count": 0,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V4 recovery development",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "2",
+            "metadata_discrepancies": "0",
+            "repairs": "1",
+            "recoveries": "0",
+            "actions": "50",
+            "hypotheses": "1",
+            "reason": "unresolved_perception",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.027559162001125515,
+          "stages": {
+            "classify_initial": 0.02607748899026774
+          },
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 50,
+          "action": "WAIT",
+          "prediction_turns_before": [],
+          "prediction_turns_after": [],
+          "hypothesis_count": 0,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V4 recovery development",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "2",
+            "metadata_discrepancies": "0",
+            "repairs": "1",
+            "recoveries": "0",
+            "actions": "51",
+            "hypotheses": "1",
+            "reason": "unresolved_perception",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.027358366001863033,
+          "stages": {
+            "classify_initial": 0.025886378993163817
+          },
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 51,
+          "action": "WAIT",
+          "prediction_turns_before": [],
+          "prediction_turns_after": [],
+          "hypothesis_count": 0,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V4 recovery development",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "2",
+            "metadata_discrepancies": "0",
+            "repairs": "1",
+            "recoveries": "0",
+            "actions": "52",
+            "hypotheses": "1",
+            "reason": "unresolved_perception",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.027409999005612917,
+          "stages": {
+            "classify_initial": 0.025959864011383615
+          },
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 52,
+          "action": "WAIT",
+          "prediction_turns_before": [],
+          "prediction_turns_after": [],
+          "hypothesis_count": 0,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V4 recovery development",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "2",
+            "metadata_discrepancies": "0",
+            "repairs": "1",
+            "recoveries": "0",
+            "actions": "53",
+            "hypotheses": "1",
+            "reason": "unresolved_perception",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.027952599004493095,
+          "stages": {
+            "classify_initial": 0.026378010006737895
+          },
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 53,
+          "action": "WAIT",
+          "prediction_turns_before": [],
+          "prediction_turns_after": [],
+          "hypothesis_count": 0,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V4 recovery development",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "2",
+            "metadata_discrepancies": "0",
+            "repairs": "1",
+            "recoveries": "0",
+            "actions": "54",
+            "hypotheses": "1",
+            "reason": "unresolved_perception",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.027834166001412086,
+          "stages": {
+            "classify_initial": 0.0263214419974247
+          },
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 54,
+          "action": "WAIT",
+          "prediction_turns_before": [],
+          "prediction_turns_after": [],
+          "hypothesis_count": 0,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V4 recovery development",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "2",
+            "metadata_discrepancies": "0",
+            "repairs": "1",
+            "recoveries": "0",
+            "actions": "55",
+            "hypotheses": "1",
+            "reason": "unresolved_perception",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.027305429000989534,
+          "stages": {
+            "classify_initial": 0.025830045007751323
+          },
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 55,
+          "action": "WAIT",
+          "prediction_turns_before": [],
+          "prediction_turns_after": [],
+          "hypothesis_count": 0,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V4 recovery development",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "2",
+            "metadata_discrepancies": "0",
+            "repairs": "1",
+            "recoveries": "0",
+            "actions": "56",
+            "hypotheses": "1",
+            "reason": "unresolved_perception",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.027726051994250156,
+          "stages": {
+            "classify_initial": 0.02623811199737247
+          },
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 56,
+          "action": "WAIT",
+          "prediction_turns_before": [],
+          "prediction_turns_after": [],
+          "hypothesis_count": 0,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V4 recovery development",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "2",
+            "metadata_discrepancies": "0",
+            "repairs": "1",
+            "recoveries": "0",
+            "actions": "57",
+            "hypotheses": "1",
+            "reason": "unresolved_perception",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.027376304991776124,
+          "stages": {
+            "classify_initial": 0.025925802998244762
+          },
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 57,
+          "action": "WAIT",
+          "prediction_turns_before": [],
+          "prediction_turns_after": [],
+          "hypothesis_count": 0,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V4 recovery development",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "2",
+            "metadata_discrepancies": "0",
+            "repairs": "1",
+            "recoveries": "0",
+            "actions": "58",
+            "hypotheses": "1",
+            "reason": "unresolved_perception",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.027588975994149223,
+          "stages": {
+            "classify_initial": 0.02611181599786505
+          },
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 58,
+          "action": "WAIT",
+          "prediction_turns_before": [],
+          "prediction_turns_after": [],
+          "hypothesis_count": 0,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V4 recovery development",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "2",
+            "metadata_discrepancies": "0",
+            "repairs": "1",
+            "recoveries": "0",
+            "actions": "59",
+            "hypotheses": "1",
+            "reason": "unresolved_perception",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.02750759899208788,
+          "stages": {
+            "classify_initial": 0.026041602992336266
+          },
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 59,
+          "action": "WAIT",
+          "prediction_turns_before": [],
+          "prediction_turns_after": [],
+          "hypothesis_count": 0,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V4 recovery development",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "2",
+            "metadata_discrepancies": "0",
+            "repairs": "1",
+            "recoveries": "0",
+            "actions": "60",
+            "hypotheses": "1",
+            "reason": "unresolved_perception",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.027529899001820013,
+          "stages": {
+            "classify_initial": 0.02606955099327024
+          },
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 60,
+          "action": "WAIT",
+          "prediction_turns_before": [],
+          "prediction_turns_after": [],
+          "hypothesis_count": 0,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V4 recovery development",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "2",
+            "metadata_discrepancies": "0",
+            "repairs": "1",
+            "recoveries": "0",
+            "actions": "61",
+            "hypotheses": "1",
+            "reason": "unresolved_perception",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.02753526000014972,
+          "stages": {
+            "classify_initial": 0.02606177399866283
+          },
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 61,
+          "action": "WAIT",
+          "prediction_turns_before": [],
+          "prediction_turns_after": [],
+          "hypothesis_count": 0,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V4 recovery development",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "2",
+            "metadata_discrepancies": "0",
+            "repairs": "1",
+            "recoveries": "0",
+            "actions": "62",
+            "hypotheses": "1",
+            "reason": "unresolved_perception",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.02754327999718953,
+          "stages": {
+            "classify_initial": 0.026064858000609092
+          },
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 62,
+          "action": "WAIT",
+          "prediction_turns_before": [],
+          "prediction_turns_after": [],
+          "hypothesis_count": 0,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V4 recovery development",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "2",
+            "metadata_discrepancies": "0",
+            "repairs": "1",
+            "recoveries": "0",
+            "actions": "63",
+            "hypotheses": "1",
+            "reason": "unresolved_perception",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.027553649997571483,
+          "stages": {
+            "classify_initial": 0.026104539996595122
+          },
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 63,
+          "action": "WAIT",
+          "prediction_turns_before": [],
+          "prediction_turns_after": [],
+          "hypothesis_count": 0,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V4 recovery development",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "2",
+            "metadata_discrepancies": "0",
+            "repairs": "1",
+            "recoveries": "0",
+            "actions": "64",
+            "hypotheses": "1",
+            "reason": "unresolved_perception",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.027611152007011697,
+          "stages": {
+            "classify_initial": 0.026141827998799272
+          },
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 64,
+          "action": "WAIT",
+          "prediction_turns_before": [],
+          "prediction_turns_after": [],
+          "hypothesis_count": 0,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V4 recovery development",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "2",
+            "metadata_discrepancies": "0",
+            "repairs": "1",
+            "recoveries": "0",
+            "actions": "65",
+            "hypotheses": "1",
+            "reason": "unresolved_perception",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.02747664600610733,
+          "stages": {
+            "classify_initial": 0.02601076100836508
+          },
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 65,
+          "action": "WAIT",
+          "prediction_turns_before": [],
+          "prediction_turns_after": [],
+          "hypothesis_count": 0,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V4 recovery development",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "2",
+            "metadata_discrepancies": "0",
+            "repairs": "1",
+            "recoveries": "0",
+            "actions": "66",
+            "hypotheses": "1",
+            "reason": "unresolved_perception",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.027341068009263836,
+          "stages": {
+            "classify_initial": 0.025879578999592923
+          },
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 66,
+          "action": "WAIT",
+          "prediction_turns_before": [],
+          "prediction_turns_after": [],
+          "hypothesis_count": 0,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V4 recovery development",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "2",
+            "metadata_discrepancies": "0",
+            "repairs": "1",
+            "recoveries": "0",
+            "actions": "67",
+            "hypotheses": "1",
+            "reason": "unresolved_perception",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.027537187008420005,
+          "stages": {
+            "classify_initial": 0.026068847000715323
+          },
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 67,
+          "action": "WAIT",
+          "prediction_turns_before": [],
+          "prediction_turns_after": [],
+          "hypothesis_count": 0,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V4 recovery development",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "2",
+            "metadata_discrepancies": "0",
+            "repairs": "1",
+            "recoveries": "0",
+            "actions": "68",
+            "hypotheses": "1",
+            "reason": "unresolved_perception",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.027756823008530773,
+          "stages": {
+            "classify_initial": 0.02625941700534895
+          },
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 68,
+          "action": "WAIT",
+          "prediction_turns_before": [],
+          "prediction_turns_after": [],
+          "hypothesis_count": 0,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V4 recovery development",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "2",
+            "metadata_discrepancies": "0",
+            "repairs": "1",
+            "recoveries": "0",
+            "actions": "69",
+            "hypotheses": "1",
+            "reason": "unresolved_perception",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.027528544000233524,
+          "stages": {
+            "classify_initial": 0.02605080600187648
+          },
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 69,
+          "action": "WAIT",
+          "prediction_turns_before": [],
+          "prediction_turns_after": [],
+          "hypothesis_count": 0,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V4 recovery development",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "2",
+            "metadata_discrepancies": "0",
+            "repairs": "1",
+            "recoveries": "0",
+            "actions": "70",
+            "hypotheses": "1",
+            "reason": "unresolved_perception",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.02781313899322413,
+          "stages": {
+            "classify_initial": 0.026266640008543618
+          },
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 70,
+          "action": "WAIT",
+          "prediction_turns_before": [],
+          "prediction_turns_after": [],
+          "hypothesis_count": 0,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V4 recovery development",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "2",
+            "metadata_discrepancies": "0",
+            "repairs": "1",
+            "recoveries": "0",
+            "actions": "71",
+            "hypotheses": "1",
+            "reason": "unresolved_perception",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.027549669990548864,
+          "stages": {
+            "classify_initial": 0.026085303994477727
+          },
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 71,
+          "action": "WAIT",
+          "prediction_turns_before": [],
+          "prediction_turns_after": [],
+          "hypothesis_count": 0,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V4 recovery development",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "2",
+            "metadata_discrepancies": "0",
+            "repairs": "1",
+            "recoveries": "0",
+            "actions": "72",
+            "hypotheses": "1",
+            "reason": "unresolved_perception",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.027638996005407535,
+          "stages": {
+            "classify_initial": 0.026118209993001074
+          },
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 72,
+          "action": "WAIT",
+          "prediction_turns_before": [],
+          "prediction_turns_after": [],
+          "hypothesis_count": 0,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V4 recovery development",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "2",
+            "metadata_discrepancies": "0",
+            "repairs": "1",
+            "recoveries": "0",
+            "actions": "73",
+            "hypotheses": "1",
+            "reason": "unresolved_perception",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.027691807990777306,
+          "stages": {
+            "classify_initial": 0.0261881850019563
+          },
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 73,
+          "action": "WAIT",
+          "prediction_turns_before": [],
+          "prediction_turns_after": [],
+          "hypothesis_count": 0,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V4 recovery development",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "2",
+            "metadata_discrepancies": "0",
+            "repairs": "1",
+            "recoveries": "0",
+            "actions": "74",
+            "hypotheses": "1",
+            "reason": "unresolved_perception",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.02750084899889771,
+          "stages": {
+            "classify_initial": 0.026008746004663408
+          },
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 74,
+          "action": "WAIT",
+          "prediction_turns_before": [],
+          "prediction_turns_after": [],
+          "hypothesis_count": 0,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V4 recovery development",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "2",
+            "metadata_discrepancies": "0",
+            "repairs": "1",
+            "recoveries": "0",
+            "actions": "75",
+            "hypotheses": "1",
+            "reason": "unresolved_perception",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.02750932000344619,
+          "stages": {
+            "classify_initial": 0.026009373992565088
+          },
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 75,
+          "action": "WAIT",
+          "prediction_turns_before": [],
+          "prediction_turns_after": [],
+          "hypothesis_count": 0,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V4 recovery development",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "2",
+            "metadata_discrepancies": "0",
+            "repairs": "1",
+            "recoveries": "0",
+            "actions": "76",
+            "hypotheses": "1",
+            "reason": "unresolved_perception",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.027730533998692408,
+          "stages": {
+            "classify_initial": 0.026201963002677076
+          },
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 76,
+          "action": "WAIT",
+          "prediction_turns_before": [],
+          "prediction_turns_after": [],
+          "hypothesis_count": 0,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V4 recovery development",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "2",
+            "metadata_discrepancies": "0",
+            "repairs": "1",
+            "recoveries": "0",
+            "actions": "77",
+            "hypotheses": "1",
+            "reason": "unresolved_perception",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.027458073003799655,
+          "stages": {
+            "classify_initial": 0.02601273600885179
+          },
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 77,
+          "action": "WAIT",
+          "prediction_turns_before": [],
+          "prediction_turns_after": [],
+          "hypothesis_count": 0,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V4 recovery development",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "2",
+            "metadata_discrepancies": "0",
+            "repairs": "1",
+            "recoveries": "0",
+            "actions": "78",
+            "hypotheses": "1",
+            "reason": "unresolved_perception",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.027323321002768353,
+          "stages": {
+            "classify_initial": 0.02587903199309949
+          },
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 78,
+          "action": "WAIT",
+          "prediction_turns_before": [],
+          "prediction_turns_after": [],
+          "hypothesis_count": 0,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V4 recovery development",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "2",
+            "metadata_discrepancies": "0",
+            "repairs": "1",
+            "recoveries": "0",
+            "actions": "79",
+            "hypotheses": "1",
+            "reason": "unresolved_perception",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.027348087998689152,
+          "stages": {
+            "classify_initial": 0.025906292998115532
+          },
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 79,
+          "action": "WAIT",
+          "prediction_turns_before": [],
+          "prediction_turns_after": [],
+          "hypothesis_count": 0,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V4 recovery development",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "2",
+            "metadata_discrepancies": "0",
+            "repairs": "1",
+            "recoveries": "0",
+            "actions": "80",
+            "hypotheses": "1",
+            "reason": "unresolved_perception",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.02740261699364055,
+          "stages": {
+            "classify_initial": 0.02595643799577374
+          },
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 80,
+          "action": "WAIT",
+          "prediction_turns_before": [],
+          "prediction_turns_after": [],
+          "hypothesis_count": 0,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V4 recovery development",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "2",
+            "metadata_discrepancies": "0",
+            "repairs": "1",
+            "recoveries": "0",
+            "actions": "81",
+            "hypotheses": "1",
+            "reason": "unresolved_perception",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.027685605993610807,
+          "stages": {
+            "classify_initial": 0.026201340995612554
+          },
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 81,
+          "action": "WAIT",
+          "prediction_turns_before": [],
+          "prediction_turns_after": [],
+          "hypothesis_count": 0,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V4 recovery development",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "2",
+            "metadata_discrepancies": "0",
+            "repairs": "1",
+            "recoveries": "0",
+            "actions": "82",
+            "hypotheses": "1",
+            "reason": "unresolved_perception",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.027338287007296458,
+          "stages": {
+            "classify_initial": 0.025858521010377444
+          },
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 82,
+          "action": "WAIT",
+          "prediction_turns_before": [],
+          "prediction_turns_after": [],
+          "hypothesis_count": 0,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V4 recovery development",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "2",
+            "metadata_discrepancies": "0",
+            "repairs": "1",
+            "recoveries": "0",
+            "actions": "83",
+            "hypotheses": "1",
+            "reason": "unresolved_perception",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.02760528400540352,
+          "stages": {
+            "classify_initial": 0.026135002000955865
+          },
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 83,
+          "action": "WAIT",
+          "prediction_turns_before": [],
+          "prediction_turns_after": [],
+          "hypothesis_count": 0,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V4 recovery development",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "2",
+            "metadata_discrepancies": "0",
+            "repairs": "1",
+            "recoveries": "0",
+            "actions": "84",
+            "hypotheses": "1",
+            "reason": "unresolved_perception",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.027354372999980114,
+          "stages": {
+            "classify_initial": 0.02592212699528318
+          },
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 84,
+          "action": "WAIT",
+          "prediction_turns_before": [],
+          "prediction_turns_after": [],
+          "hypothesis_count": 0,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V4 recovery development",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "2",
+            "metadata_discrepancies": "0",
+            "repairs": "1",
+            "recoveries": "0",
+            "actions": "85",
+            "hypotheses": "1",
+            "reason": "unresolved_perception",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.02732564699545037,
+          "stages": {
+            "classify_initial": 0.02588842400291469
+          },
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 85,
+          "action": "WAIT",
+          "prediction_turns_before": [],
+          "prediction_turns_after": [],
+          "hypothesis_count": 0,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V4 recovery development",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "2",
+            "metadata_discrepancies": "0",
+            "repairs": "1",
+            "recoveries": "0",
+            "actions": "86",
+            "hypotheses": "1",
+            "reason": "unresolved_perception",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.027508441009558737,
+          "stages": {
+            "classify_initial": 0.02605431800475344
+          },
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 86,
+          "action": "WAIT",
+          "prediction_turns_before": [],
+          "prediction_turns_after": [],
+          "hypothesis_count": 0,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V4 recovery development",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "2",
+            "metadata_discrepancies": "0",
+            "repairs": "1",
+            "recoveries": "0",
+            "actions": "87",
+            "hypotheses": "1",
+            "reason": "unresolved_perception",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.02743956699850969,
+          "stages": {
+            "classify_initial": 0.02598636799666565
+          },
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 87,
+          "action": "WAIT",
+          "prediction_turns_before": [],
+          "prediction_turns_after": [],
+          "hypothesis_count": 0,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V4 recovery development",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "2",
+            "metadata_discrepancies": "0",
+            "repairs": "1",
+            "recoveries": "0",
+            "actions": "88",
+            "hypotheses": "1",
+            "reason": "unresolved_perception",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.027551488994504325,
+          "stages": {
+            "classify_initial": 0.026099758004420437
+          },
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 88,
+          "action": "WAIT",
+          "prediction_turns_before": [],
+          "prediction_turns_after": [],
+          "hypothesis_count": 0,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V4 recovery development",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "2",
+            "metadata_discrepancies": "0",
+            "repairs": "1",
+            "recoveries": "0",
+            "actions": "89",
+            "hypotheses": "1",
+            "reason": "unresolved_perception",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.027527294994797558,
+          "stages": {
+            "classify_initial": 0.026068456005305052
+          },
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 89,
+          "action": "WAIT",
+          "prediction_turns_before": [],
+          "prediction_turns_after": [],
+          "hypothesis_count": 0,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V4 recovery development",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "2",
+            "metadata_discrepancies": "0",
+            "repairs": "1",
+            "recoveries": "0",
+            "actions": "90",
+            "hypotheses": "1",
+            "reason": "unresolved_perception",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.027617514002486132,
+          "stages": {
+            "classify_initial": 0.026155793995712884
+          },
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 90,
+          "action": "WAIT",
+          "prediction_turns_before": [],
+          "prediction_turns_after": [],
+          "hypothesis_count": 0,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V4 recovery development",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "2",
+            "metadata_discrepancies": "0",
+            "repairs": "1",
+            "recoveries": "0",
+            "actions": "91",
+            "hypotheses": "1",
+            "reason": "unresolved_perception",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.027774586997111328,
+          "stages": {
+            "classify_initial": 0.02626524301012978
+          },
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 91,
+          "action": "WAIT",
+          "prediction_turns_before": [],
+          "prediction_turns_after": [],
+          "hypothesis_count": 0,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V4 recovery development",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "2",
+            "metadata_discrepancies": "0",
+            "repairs": "1",
+            "recoveries": "0",
+            "actions": "92",
+            "hypotheses": "1",
+            "reason": "unresolved_perception",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.02772926499892492,
+          "stages": {
+            "classify_initial": 0.026220036001177505
+          },
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 92,
+          "action": "WAIT",
+          "prediction_turns_before": [],
+          "prediction_turns_after": [],
+          "hypothesis_count": 0,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V4 recovery development",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "2",
+            "metadata_discrepancies": "0",
+            "repairs": "1",
+            "recoveries": "0",
+            "actions": "93",
+            "hypotheses": "1",
+            "reason": "unresolved_perception",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.027380241997889243,
+          "stages": {
+            "classify_initial": 0.025952990996302105
+          },
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 93,
+          "action": "WAIT",
+          "prediction_turns_before": [],
+          "prediction_turns_after": [],
+          "hypothesis_count": 0,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V4 recovery development",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "2",
+            "metadata_discrepancies": "0",
+            "repairs": "1",
+            "recoveries": "0",
+            "actions": "94",
+            "hypotheses": "1",
+            "reason": "unresolved_perception",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.0275811879982939,
+          "stages": {
+            "classify_initial": 0.02611162200628314
+          },
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 94,
+          "action": "WAIT",
+          "prediction_turns_before": [],
+          "prediction_turns_after": [],
+          "hypothesis_count": 0,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V4 recovery development",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "2",
+            "metadata_discrepancies": "0",
+            "repairs": "1",
+            "recoveries": "0",
+            "actions": "95",
+            "hypotheses": "1",
+            "reason": "unresolved_perception",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.027464876999147236,
+          "stages": {
+            "classify_initial": 0.025994797004386783
+          },
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 95,
+          "action": "WAIT",
+          "prediction_turns_before": [],
+          "prediction_turns_after": [],
+          "hypothesis_count": 0,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V4 recovery development",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "2",
+            "metadata_discrepancies": "0",
+            "repairs": "1",
+            "recoveries": "0",
+            "actions": "96",
+            "hypotheses": "1",
+            "reason": "unresolved_perception",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.0276014760020189,
+          "stages": {
+            "classify_initial": 0.026070028005051427
+          },
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 96,
+          "action": "WAIT",
+          "prediction_turns_before": [],
+          "prediction_turns_after": [],
+          "hypothesis_count": 0,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V4 recovery development",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "2",
+            "metadata_discrepancies": "0",
+            "repairs": "1",
+            "recoveries": "0",
+            "actions": "97",
+            "hypotheses": "1",
+            "reason": "unresolved_perception",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.02733217299100943,
+          "stages": {
+            "classify_initial": 0.025881630994263105
+          },
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 97,
+          "action": "WAIT",
+          "prediction_turns_before": [],
+          "prediction_turns_after": [],
+          "hypothesis_count": 0,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V4 recovery development",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "2",
+            "metadata_discrepancies": "0",
+            "repairs": "1",
+            "recoveries": "0",
+            "actions": "98",
+            "hypotheses": "1",
+            "reason": "unresolved_perception",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.027459410994197242,
+          "stages": {
+            "classify_initial": 0.026022398000350222
+          },
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 98,
+          "action": "WAIT",
+          "prediction_turns_before": [],
+          "prediction_turns_after": [],
+          "hypothesis_count": 0,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V4 recovery development",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "2",
+            "metadata_discrepancies": "0",
+            "repairs": "1",
+            "recoveries": "0",
+            "actions": "99",
+            "hypotheses": "1",
+            "reason": "unresolved_perception",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.027874649997102097,
+          "stages": {
+            "classify_initial": 0.026371219006250612
+          },
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 99,
+          "action": "WAIT",
+          "prediction_turns_before": [],
+          "prediction_turns_after": [],
+          "hypothesis_count": 0,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V4 recovery development",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "2",
+            "metadata_discrepancies": "0",
+            "repairs": "1",
+            "recoveries": "0",
+            "actions": "100",
+            "hypotheses": "1",
+            "reason": "unresolved_perception",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.027684690998285078,
+          "stages": {
+            "classify_initial": 0.026183043999481015
+          },
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 100,
+          "action": "WAIT",
+          "prediction_turns_before": [],
+          "prediction_turns_after": [],
+          "hypothesis_count": 0,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V4 recovery development",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "2",
+            "metadata_discrepancies": "0",
+            "repairs": "1",
+            "recoveries": "0",
+            "actions": "101",
+            "hypotheses": "1",
+            "reason": "unresolved_perception",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.027360421008779667,
+          "stages": {
+            "classify_initial": 0.02591503800067585
+          },
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 101,
+          "action": "WAIT",
+          "prediction_turns_before": [],
+          "prediction_turns_after": [],
+          "hypothesis_count": 0,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V4 recovery development",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "2",
+            "metadata_discrepancies": "0",
+            "repairs": "1",
+            "recoveries": "0",
+            "actions": "102",
+            "hypotheses": "1",
+            "reason": "unresolved_perception",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.027539854010683484,
+          "stages": {
+            "classify_initial": 0.02607537699805107
+          },
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 102,
+          "action": "WAIT",
+          "prediction_turns_before": [],
+          "prediction_turns_after": [],
+          "hypothesis_count": 0,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V4 recovery development",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "2",
+            "metadata_discrepancies": "0",
+            "repairs": "1",
+            "recoveries": "0",
+            "actions": "103",
+            "hypotheses": "1",
+            "reason": "unresolved_perception",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.02775896599632688,
+          "stages": {
+            "classify_initial": 0.0262532549968455
+          },
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 103,
+          "action": "WAIT",
+          "prediction_turns_before": [],
+          "prediction_turns_after": [],
+          "hypothesis_count": 0,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V4 recovery development",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "2",
+            "metadata_discrepancies": "0",
+            "repairs": "1",
+            "recoveries": "0",
+            "actions": "104",
+            "hypotheses": "1",
+            "reason": "unresolved_perception",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.027476800998556428,
+          "stages": {
+            "classify_initial": 0.025970577000407502
+          },
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 104,
+          "action": "WAIT",
+          "prediction_turns_before": [],
+          "prediction_turns_after": [],
+          "hypothesis_count": 0,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V4 recovery development",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "2",
+            "metadata_discrepancies": "0",
+            "repairs": "1",
+            "recoveries": "0",
+            "actions": "105",
+            "hypotheses": "1",
+            "reason": "unresolved_perception",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.027311698999255896,
+          "stages": {
+            "classify_initial": 0.025857839995296672
+          },
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 105,
+          "action": "WAIT",
+          "prediction_turns_before": [],
+          "prediction_turns_after": [],
+          "hypothesis_count": 0,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V4 recovery development",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "2",
+            "metadata_discrepancies": "0",
+            "repairs": "1",
+            "recoveries": "0",
+            "actions": "106",
+            "hypotheses": "1",
+            "reason": "unresolved_perception",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.027662353997584432,
+          "stages": {
+            "classify_initial": 0.026192185992840677
+          },
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 106,
+          "action": "WAIT",
+          "prediction_turns_before": [],
+          "prediction_turns_after": [],
+          "hypothesis_count": 0,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V4 recovery development",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "2",
+            "metadata_discrepancies": "0",
+            "repairs": "1",
+            "recoveries": "0",
+            "actions": "107",
+            "hypotheses": "1",
+            "reason": "unresolved_perception",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.027925174988922663,
+          "stages": {
+            "classify_initial": 0.026405124997836538
+          },
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 107,
+          "action": "WAIT",
+          "prediction_turns_before": [],
+          "prediction_turns_after": [],
+          "hypothesis_count": 0,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V4 recovery development",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "2",
+            "metadata_discrepancies": "0",
+            "repairs": "1",
+            "recoveries": "0",
+            "actions": "108",
+            "hypotheses": "1",
+            "reason": "unresolved_perception",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.027469223001389764,
+          "stages": {
+            "classify_initial": 0.026001744001405314
+          },
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 108,
+          "action": "WAIT",
+          "prediction_turns_before": [],
+          "prediction_turns_after": [],
+          "hypothesis_count": 0,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V4 recovery development",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "2",
+            "metadata_discrepancies": "0",
+            "repairs": "1",
+            "recoveries": "0",
+            "actions": "109",
+            "hypotheses": "1",
+            "reason": "unresolved_perception",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.02738381600647699,
+          "stages": {
+            "classify_initial": 0.02591566101182252
+          },
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 109,
+          "action": "WAIT",
+          "prediction_turns_before": [],
+          "prediction_turns_after": [],
+          "hypothesis_count": 0,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V4 recovery development",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "2",
+            "metadata_discrepancies": "0",
+            "repairs": "1",
+            "recoveries": "0",
+            "actions": "110",
+            "hypotheses": "1",
+            "reason": "unresolved_perception",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.027608652992057614,
+          "stages": {
+            "classify_initial": 0.02612799899361562
+          },
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 110,
+          "action": "WAIT",
+          "prediction_turns_before": [],
+          "prediction_turns_after": [],
+          "hypothesis_count": 0,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V4 recovery development",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "2",
+            "metadata_discrepancies": "0",
+            "repairs": "1",
+            "recoveries": "0",
+            "actions": "111",
+            "hypotheses": "1",
+            "reason": "unresolved_perception",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.02730335999513045,
+          "stages": {
+            "classify_initial": 0.025845928001217544
+          },
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 111,
+          "action": "WAIT",
+          "prediction_turns_before": [],
+          "prediction_turns_after": [],
+          "hypothesis_count": 0,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V4 recovery development",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "2",
+            "metadata_discrepancies": "0",
+            "repairs": "1",
+            "recoveries": "0",
+            "actions": "112",
+            "hypotheses": "1",
+            "reason": "unresolved_perception",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.02781642699846998,
+          "stages": {
+            "classify_initial": 0.0263153690029867
+          },
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 112,
+          "action": "WAIT",
+          "prediction_turns_before": [],
+          "prediction_turns_after": [],
+          "hypothesis_count": 0,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V4 recovery development",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "2",
+            "metadata_discrepancies": "0",
+            "repairs": "1",
+            "recoveries": "0",
+            "actions": "113",
+            "hypotheses": "1",
+            "reason": "unresolved_perception",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.027317651998600923,
+          "stages": {
+            "classify_initial": 0.025887326992233284
+          },
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 113,
+          "action": "WAIT",
+          "prediction_turns_before": [],
+          "prediction_turns_after": [],
+          "hypothesis_count": 0,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V4 recovery development",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "2",
+            "metadata_discrepancies": "0",
+            "repairs": "1",
+            "recoveries": "0",
+            "actions": "114",
+            "hypotheses": "1",
+            "reason": "unresolved_perception",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.02747517499665264,
+          "stages": {
+            "classify_initial": 0.026012729009380564
+          },
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 114,
+          "action": "WAIT",
+          "prediction_turns_before": [],
+          "prediction_turns_after": [],
+          "hypothesis_count": 0,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V4 recovery development",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "2",
+            "metadata_discrepancies": "0",
+            "repairs": "1",
+            "recoveries": "0",
+            "actions": "115",
+            "hypotheses": "1",
+            "reason": "unresolved_perception",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.02786212498904206,
+          "stages": {
+            "classify_initial": 0.02638066600775346
+          },
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 115,
+          "action": "WAIT",
+          "prediction_turns_before": [],
+          "prediction_turns_after": [],
+          "hypothesis_count": 0,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V4 recovery development",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "2",
+            "metadata_discrepancies": "0",
+            "repairs": "1",
+            "recoveries": "0",
+            "actions": "116",
+            "hypotheses": "1",
+            "reason": "unresolved_perception",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.027711154994904064,
+          "stages": {
+            "classify_initial": 0.026240313003654592
+          },
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 116,
+          "action": "WAIT",
+          "prediction_turns_before": [],
+          "prediction_turns_after": [],
+          "hypothesis_count": 0,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V4 recovery development",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "2",
+            "metadata_discrepancies": "0",
+            "repairs": "1",
+            "recoveries": "0",
+            "actions": "117",
+            "hypotheses": "1",
+            "reason": "unresolved_perception",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.027403123007388785,
+          "stages": {
+            "classify_initial": 0.0259724269999424
+          },
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 117,
+          "action": "WAIT",
+          "prediction_turns_before": [],
+          "prediction_turns_after": [],
+          "hypothesis_count": 0,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V4 recovery development",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "2",
+            "metadata_discrepancies": "0",
+            "repairs": "1",
+            "recoveries": "0",
+            "actions": "118",
+            "hypotheses": "1",
+            "reason": "unresolved_perception",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.027573568993830122,
+          "stages": {
+            "classify_initial": 0.026128037003218196
+          },
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 118,
+          "action": "WAIT",
+          "prediction_turns_before": [],
+          "prediction_turns_after": [],
+          "hypothesis_count": 0,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V4 recovery development",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "2",
+            "metadata_discrepancies": "0",
+            "repairs": "1",
+            "recoveries": "0",
+            "actions": "119",
+            "hypotheses": "1",
+            "reason": "unresolved_perception",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.02753142299479805,
+          "stages": {
+            "classify_initial": 0.026090871993801557
+          },
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 119,
+          "action": "WAIT",
+          "prediction_turns_before": [],
+          "prediction_turns_after": [],
+          "hypothesis_count": 0,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V4 recovery development",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "2",
+            "metadata_discrepancies": "0",
+            "repairs": "1",
+            "recoveries": "0",
+            "actions": "120",
+            "hypotheses": "1",
+            "reason": "unresolved_perception",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.027738994001992978,
+          "stages": {
+            "classify_initial": 0.0262404789973516
+          },
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 120,
+          "action": "WAIT",
+          "prediction_turns_before": [],
+          "prediction_turns_after": [],
+          "hypothesis_count": 0,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V4 recovery development",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "2",
+            "metadata_discrepancies": "0",
+            "repairs": "1",
+            "recoveries": "0",
+            "actions": "121",
+            "hypotheses": "1",
+            "reason": "cutoff",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.0006654799944953993,
+          "stages": {},
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 121,
+          "action": "WAIT",
+          "prediction_turns_before": [],
+          "prediction_turns_after": [],
+          "hypothesis_count": 0,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V4 recovery development",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "2",
+            "metadata_discrepancies": "0",
+            "repairs": "1",
+            "recoveries": "0",
+            "actions": "122",
+            "hypotheses": "1",
+            "reason": "cutoff",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.0006358719983836636,
+          "stages": {},
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 122,
+          "action": "WAIT",
+          "prediction_turns_before": [],
+          "prediction_turns_after": [],
+          "hypothesis_count": 0,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V4 recovery development",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "2",
+            "metadata_discrepancies": "0",
+            "repairs": "1",
+            "recoveries": "0",
+            "actions": "123",
+            "hypotheses": "1",
+            "reason": "cutoff",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.0006490310042863712,
+          "stages": {},
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 123,
+          "action": "WAIT",
+          "prediction_turns_before": [],
+          "prediction_turns_after": [],
+          "hypothesis_count": 0,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V4 recovery development",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "2",
+            "metadata_discrepancies": "0",
+            "repairs": "1",
+            "recoveries": "0",
+            "actions": "124",
+            "hypotheses": "1",
+            "reason": "cutoff",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.0006378880061674863,
+          "stages": {},
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 124,
+          "action": "WAIT",
+          "prediction_turns_before": [],
+          "prediction_turns_after": [],
+          "hypothesis_count": 0,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V4 recovery development",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "2",
+            "metadata_discrepancies": "0",
+            "repairs": "1",
+            "recoveries": "0",
+            "actions": "125",
+            "hypotheses": "1",
+            "reason": "cutoff",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.0006253540050238371,
+          "stages": {},
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 125,
+          "action": "WAIT",
+          "prediction_turns_before": [],
+          "prediction_turns_after": [],
+          "hypothesis_count": 0,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V4 recovery development",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "2",
+            "metadata_discrepancies": "0",
+            "repairs": "1",
+            "recoveries": "0",
+            "actions": "126",
+            "hypotheses": "1",
+            "reason": "cutoff",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.0006360390107147396,
+          "stages": {},
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 126,
+          "action": "WAIT",
+          "prediction_turns_before": [],
+          "prediction_turns_after": [],
+          "hypothesis_count": 0,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V4 recovery development",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "2",
+            "metadata_discrepancies": "0",
+            "repairs": "1",
+            "recoveries": "0",
+            "actions": "127",
+            "hypotheses": "1",
+            "reason": "cutoff",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.0006310119933914393,
+          "stages": {},
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 127,
+          "action": "WAIT",
+          "prediction_turns_before": [],
+          "prediction_turns_after": [],
+          "hypothesis_count": 0,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V4 recovery development",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "2",
+            "metadata_discrepancies": "0",
+            "repairs": "1",
+            "recoveries": "0",
+            "actions": "128",
+            "hypotheses": "1",
+            "reason": "cutoff",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.0006385089945979416,
+          "stages": {},
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 128,
+          "action": "WAIT",
+          "prediction_turns_before": [],
+          "prediction_turns_after": [],
+          "hypothesis_count": 0,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V4 recovery development",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "2",
+            "metadata_discrepancies": "0",
+            "repairs": "1",
+            "recoveries": "0",
+            "actions": "129",
+            "hypotheses": "1",
+            "reason": "cutoff",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.0006313019985100254,
+          "stages": {},
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 129,
+          "action": "WAIT",
+          "prediction_turns_before": [],
+          "prediction_turns_after": [],
+          "hypothesis_count": 0,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V4 recovery development",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "2",
+            "metadata_discrepancies": "0",
+            "repairs": "1",
+            "recoveries": "0",
+            "actions": "130",
+            "hypotheses": "1",
+            "reason": "cutoff",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.0006404330051736906,
+          "stages": {},
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 130,
+          "action": "WAIT",
+          "prediction_turns_before": [],
+          "prediction_turns_after": [],
+          "hypothesis_count": 0,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V4 recovery development",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "2",
+            "metadata_discrepancies": "0",
+            "repairs": "1",
+            "recoveries": "0",
+            "actions": "131",
+            "hypotheses": "1",
+            "reason": "cutoff",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.0006289449956966564,
+          "stages": {},
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 131,
+          "action": "WAIT",
+          "prediction_turns_before": [],
+          "prediction_turns_after": [],
+          "hypothesis_count": 0,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V4 recovery development",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "2",
+            "metadata_discrepancies": "0",
+            "repairs": "1",
+            "recoveries": "0",
+            "actions": "132",
+            "hypotheses": "1",
+            "reason": "cutoff",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.0006269299919949844,
+          "stages": {},
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 132,
+          "action": "WAIT",
+          "prediction_turns_before": [],
+          "prediction_turns_after": [],
+          "hypothesis_count": 0,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V4 recovery development",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "2",
+            "metadata_discrepancies": "0",
+            "repairs": "1",
+            "recoveries": "0",
+            "actions": "133",
+            "hypotheses": "1",
+            "reason": "cutoff",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.0006444199971156195,
+          "stages": {},
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 133,
+          "action": "WAIT",
+          "prediction_turns_before": [],
+          "prediction_turns_after": [],
+          "hypothesis_count": 0,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V4 recovery development",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "2",
+            "metadata_discrepancies": "0",
+            "repairs": "1",
+            "recoveries": "0",
+            "actions": "134",
+            "hypotheses": "1",
+            "reason": "cutoff",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.0006303090049186721,
+          "stages": {},
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 134,
+          "action": "WAIT",
+          "prediction_turns_before": [],
+          "prediction_turns_after": [],
+          "hypothesis_count": 0,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V4 recovery development",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "2",
+            "metadata_discrepancies": "0",
+            "repairs": "1",
+            "recoveries": "0",
+            "actions": "135",
+            "hypotheses": "1",
+            "reason": "cutoff",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.0006362309941323474,
+          "stages": {},
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 135,
+          "action": "WAIT",
+          "prediction_turns_before": [],
+          "prediction_turns_after": [],
+          "hypothesis_count": 0,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V4 recovery development",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "2",
+            "metadata_discrepancies": "0",
+            "repairs": "1",
+            "recoveries": "0",
+            "actions": "136",
+            "hypotheses": "1",
+            "reason": "cutoff",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.0006355439982144162,
+          "stages": {},
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 136,
+          "action": "WAIT",
+          "prediction_turns_before": [],
+          "prediction_turns_after": [],
+          "hypothesis_count": 0,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V4 recovery development",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "2",
+            "metadata_discrepancies": "0",
+            "repairs": "1",
+            "recoveries": "0",
+            "actions": "137",
+            "hypotheses": "1",
+            "reason": "cutoff",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.0006264190014917403,
+          "stages": {},
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 137,
+          "action": "WAIT",
+          "prediction_turns_before": [],
+          "prediction_turns_after": [],
+          "hypothesis_count": 0,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V4 recovery development",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "2",
+            "metadata_discrepancies": "0",
+            "repairs": "1",
+            "recoveries": "0",
+            "actions": "138",
+            "hypotheses": "1",
+            "reason": "cutoff",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.0006378139951266348,
+          "stages": {},
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 138,
+          "action": "WAIT",
+          "prediction_turns_before": [],
+          "prediction_turns_after": [],
+          "hypothesis_count": 0,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V4 recovery development",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "2",
+            "metadata_discrepancies": "0",
+            "repairs": "1",
+            "recoveries": "0",
+            "actions": "139",
+            "hypotheses": "1",
+            "reason": "cutoff",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.0006378850084729493,
+          "stages": {},
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 139,
+          "action": "WAIT",
+          "prediction_turns_before": [],
+          "prediction_turns_after": [],
+          "hypothesis_count": 0,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V4 recovery development",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "2",
+            "metadata_discrepancies": "0",
+            "repairs": "1",
+            "recoveries": "0",
+            "actions": "140",
+            "hypotheses": "1",
+            "reason": "cutoff",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.0006349780014716089,
+          "stages": {},
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 140,
+          "action": "WAIT",
+          "prediction_turns_before": [],
+          "prediction_turns_after": [],
+          "hypothesis_count": 0,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V4 recovery development",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "2",
+            "metadata_discrepancies": "0",
+            "repairs": "1",
+            "recoveries": "0",
+            "actions": "141",
+            "hypotheses": "1",
+            "reason": "cutoff",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.0006399539997801185,
+          "stages": {},
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 141,
+          "action": "WAIT",
+          "prediction_turns_before": [],
+          "prediction_turns_after": [],
+          "hypothesis_count": 0,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V4 recovery development",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "2",
+            "metadata_discrepancies": "0",
+            "repairs": "1",
+            "recoveries": "0",
+            "actions": "142",
+            "hypotheses": "1",
+            "reason": "cutoff",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.0006208330014487728,
+          "stages": {},
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 142,
+          "action": "WAIT",
+          "prediction_turns_before": [],
+          "prediction_turns_after": [],
+          "hypothesis_count": 0,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V4 recovery development",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "2",
+            "metadata_discrepancies": "0",
+            "repairs": "1",
+            "recoveries": "0",
+            "actions": "143",
+            "hypotheses": "1",
+            "reason": "cutoff",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.0006235719920368865,
+          "stages": {},
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 143,
+          "action": "WAIT",
+          "prediction_turns_before": [],
+          "prediction_turns_after": [],
+          "hypothesis_count": 0,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V4 recovery development",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "2",
+            "metadata_discrepancies": "0",
+            "repairs": "1",
+            "recoveries": "0",
+            "actions": "144",
+            "hypotheses": "1",
+            "reason": "cutoff",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.0006261369999265298,
+          "stages": {},
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 144,
+          "action": "WAIT",
+          "prediction_turns_before": [],
+          "prediction_turns_after": [],
+          "hypothesis_count": 0,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V4 recovery development",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "2",
+            "metadata_discrepancies": "0",
+            "repairs": "1",
+            "recoveries": "0",
+            "actions": "145",
+            "hypotheses": "1",
+            "reason": "cutoff",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.0006120540056144819,
+          "stages": {},
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 145,
+          "action": "WAIT",
+          "prediction_turns_before": [],
+          "prediction_turns_after": [],
+          "hypothesis_count": 0,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V4 recovery development",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "2",
+            "metadata_discrepancies": "0",
+            "repairs": "1",
+            "recoveries": "0",
+            "actions": "146",
+            "hypotheses": "1",
+            "reason": "cutoff",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.0006325770082185045,
+          "stages": {},
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 146,
+          "action": "WAIT",
+          "prediction_turns_before": [],
+          "prediction_turns_after": [],
+          "hypothesis_count": 0,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V4 recovery development",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "2",
+            "metadata_discrepancies": "0",
+            "repairs": "1",
+            "recoveries": "0",
+            "actions": "147",
+            "hypotheses": "1",
+            "reason": "cutoff",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.0006260570080485195,
+          "stages": {},
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 147,
+          "action": "WAIT",
+          "prediction_turns_before": [],
+          "prediction_turns_after": [],
+          "hypothesis_count": 0,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V4 recovery development",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "2",
+            "metadata_discrepancies": "0",
+            "repairs": "1",
+            "recoveries": "0",
+            "actions": "148",
+            "hypotheses": "1",
+            "reason": "cutoff",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.0006352140044327825,
+          "stages": {},
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 148,
+          "action": "WAIT",
+          "prediction_turns_before": [],
+          "prediction_turns_after": [],
+          "hypothesis_count": 0,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V4 recovery development",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "2",
+            "metadata_discrepancies": "0",
+            "repairs": "1",
+            "recoveries": "0",
+            "actions": "149",
+            "hypotheses": "1",
+            "reason": "cutoff",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.0006286989955697209,
+          "stages": {},
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 149,
+          "action": "WAIT",
+          "prediction_turns_before": [],
+          "prediction_turns_after": [],
+          "hypothesis_count": 0,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V4 recovery development",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "2",
+            "metadata_discrepancies": "0",
+            "repairs": "1",
+            "recoveries": "0",
+            "actions": "150",
+            "hypotheses": "1",
+            "reason": "cutoff",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.0006231379957171157,
+          "stages": {},
+          "first_exception": null,
+          "observations": {}
+        }
+      ],
+      "label": "combined/7297a35c9f88/6216229300",
+      "seed": 208801192575,
+      "setup_seconds": 0.11220849900564644,
+      "cold_import_to_terminal_seconds": 3.695688905005227,
+      "peak_rss_bytes": 315756544,
+      "provenance": {
+        "host": "omarchy",
+        "platform": "Linux-7.2.15-1-omarchy-x86_64-with-glibc2.44",
+        "cpu": "Intel(R) Core(TM) Ultra 9 275HX",
+        "python": "3.13.18 (main, Oct 26 2026, 14:08:20) [Clang 23.1.3 ]",
+        "packages": {
+          "grid-adventure": {
+            "version": "0.1.0",
+            "direct_url": {
+              "url": "https://github.com/grid-universe/grid-adventure-v1.git",
+              "vcs_info": {
+                "vcs": "git",
+                "commit_id": "2eb235e9ceffe241a12d63afc613b9bdbdf914be"
+              }
+            }
+          },
+          "grid-universe": {
+            "version": "0.1.0",
+            "direct_url": {
+              "url": "https://github.com/grid-universe/grid-universe.git",
+              "vcs_info": {
+                "vcs": "git",
+                "commit_id": "28615fa1b570b7ccdd5f56d86ca200baffa06d2c"
+              }
+            }
+          },
+          "numpy": {
+            "version": "2.3.0",
+            "direct_url": null
+          },
+          "pillow": {
+            "version": "11.2.1",
+            "direct_url": null
+          },
+          "torch": {
+            "version": "2.7.0+cpu",
+            "direct_url": null
+          }
+        },
+        "cpu_affinity": [
+          0
+        ],
+        "thread_limits": {
+          "OMP_NUM_THREADS": "1",
+          "OPENBLAS_NUM_THREADS": "1",
+          "MKL_NUM_THREADS": "1",
+          "NUMEXPR_NUM_THREADS": "1",
+          "VECLIB_MAXIMUM_THREADS": "1"
+        }
+      },
+      "runtime_overrides": {},
+      "entrypoint": "Agent",
+      "power_state_before": {
+        "cpu": 0,
+        "epp": "performance",
+        "governor": "powersave",
+        "max_freq": "5300000"
+      },
+      "power_state_after": {
+        "cpu": 0,
+        "epp": "performance",
+        "governor": "powersave",
+        "max_freq": "5300000"
+      },
+      "source_sha256": "2c30a108b052fa59c6a34304fba7b77580a7943962ce43ee5b0431f3bdbe9493",
+      "torch_threads": [
+        1,
+        1
+      ],
+      "strict_cold_seconds": 3.718330068004434,
+      "cold_watchdog_seconds": 30,
+      "job": {
+        "label": "combined/7297a35c9f88/6216229300",
+        "generated": 40009,
+        "multiple_gems": true,
+        "layout_split": "final",
+        "seed": 208801192575,
+        "asset_root": "artifacts/v3/data/final-300-v5/asset-root",
+        "appearance_manifest": "artifacts/v3/data/manifest-v5.json",
+        "appearance_manifest_sha256": "a17b735ba0e8183e8d51162c3e3b4219300d18dc080503bf93661fe1bb018e07",
+        "appearance_split": "final",
+        "appearance_seed": 6216229300,
+        "resolution": 512,
+        "expected_image_sha256": "fee5c28d00363137e88254157c9ad1470cebb5f909fb90269aecebdd90236f48",
+        "expected_pixels_sha256": "4f54f09a221285600272332da02bea8dcd8c3a9c22cc69bbc6d5bc44ea300873",
+        "expected_layout_sha256": "7297a35c9f88c38d85c2cdd1ec33c676b69d5236999a5a3aed8e4a7b45eb26de"
+      }
+    }
+  ]
+}

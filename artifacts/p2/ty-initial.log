@@ -1,0 +1,60 @@
+error[unresolved-attribute]: Attribute `pop` is not defined on `tuple[tuple[Unknown, Unknown, Unknown], ...]` in union `list[Unknown] | tuple[tuple[Unknown, Unknown, Unknown], ...]`
+   --> agents/p2.py:412:25
+    |
+412 |                         effects.pop(shield)
+    |                         ^^^^^^^^^^^
+
+error[invalid-assignment]: Cannot assign to a subscript on an object of type `tuple[tuple[Unknown, Unknown, Unknown], ...]`
+   --> agents/p2.py:414:25
+    |
+414 |                         effects[shield] = slot, t, u - 1
+    |                         ^^^^^^^^^^^^^^^
+info: The full type of the subscripted object is `list[Unknown] | tuple[tuple[Unknown, Unknown, Unknown], ...]`
+info: `tuple[tuple[Unknown, Unknown, Unknown], ...]` does not have a `__setitem__` method.
+
+error[call-non-callable]: Object of type `str` is not callable
+  --> tests/test_p2_package.py:22:35
+   |
+22 |             self.assertIsInstance(namespace["Agent"]().step(corridor()), Action)
+   |                                   ^^^^^^^^^^^^^^^^^^^^
+
+error[invalid-argument-type]: Argument to function `step` is incorrect
+  --> tests/test_p2_step.py:84:21
+   |
+84 |             step(s, "invalid")
+   |                     ^^^^^^^^^ Expected `Action`, found `Literal["invalid"]`
+info: Function defined here
+   --> .venv/lib/python3.13/site-packages/grid_adventure/grid.py:171:5
+    |
+171 | def step(gridstate: GridState, action: Action) -> GridState:
+    |     ^^^^                       -------------- Parameter declared here
+
+error[unresolved-attribute]: Unresolved attribute `grid_step` on type `ModuleType`
+  --> tools/benchmark_p2.py:39:5
+   |
+39 |     module.grid_step = transition
+   |     ^^^^^^^^^^^^^^^^
+
+error[unsupported-operator]: Unsupported `+` operation
+  --> tools/benchmark_p2.py:41:60
+   |
+41 |     deadline = transitions if transitions is not None else began + seconds
+   |                                                            -----^^^-------
+   |                                                            |       |
+   |                                                            |       Has type `Unknown | None`
+   |                                                            Has type `float`
+
+error[unresolved-attribute]: Unresolved attribute `grid_step` on type `ModuleType`
+  --> tools/benchmark_p2.py:50:9
+   |
+50 |         module.grid_step = original
+   |         ^^^^^^^^^^^^^^^^
+
+error[unsupported-operator]: Unary operator `-` is not supported for object of type `str | float`
+  --> tools/benchmark_p2.py:63:38
+   |
+63 |         functions.sort(key=lambda e: -e["own"])
+   |                                      ^^^^^^^^^
+info: `str` does not implement `__neg__`
+
+Found 8 diagnostics

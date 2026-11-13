@@ -1,0 +1,15 @@
+test_cold_perception_uses_recovery_without_an_extra_wait (tests.test_v4_agent.RecoveryTests.test_cold_perception_uses_recovery_without_an_extra_wait) ... FAIL
+
+======================================================================
+FAIL: test_cold_perception_uses_recovery_without_an_extra_wait (tests.test_v4_agent.RecoveryTests.test_cold_perception_uses_recovery_without_an_extra_wait)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/enxi/coding/autistic-sv-67/tests/test_v4_agent.py", line 38, in test_cold_perception_uses_recovery_without_an_extra_wait
+    self.assertEqual(agent.step(observation), Action.RIGHT)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: <Action.WAIT: 'wait'> != <Action.RIGHT: 'right'>
+
+----------------------------------------------------------------------
+Ran 1 test in 1.005s
+
+FAILED (failures=1)

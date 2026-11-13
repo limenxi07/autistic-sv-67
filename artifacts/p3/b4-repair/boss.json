@@ -1,0 +1,859 @@
+{
+  "suite": "boss",
+  "original_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+  "instrumented": false,
+  "entrypoint": "Task3Agent",
+  "runner_sha256": "cceeeb6fd2689121260f7165a604ce8611f34bc8bbec70dd83bcb9baaa52209e",
+  "results": [
+    {
+      "agent": "agents/p3.py",
+      "level": "C0 Everything Everywhere All at Once",
+      "seed": 42,
+      "split": null,
+      "turn_limit": 150,
+      "evaluation_limit_seconds": 15.0,
+      "setup_limit_seconds": 30.0,
+      "profiled": false,
+      "status": "win",
+      "effective_performance": 1.0,
+      "reward": -68.0,
+      "turns": 27,
+      "win": true,
+      "lose": false,
+      "evaluation_seconds": 0.28527329000644386,
+      "setup_seconds": 0.6174932580033783,
+      "peak_rss_bytes": 253390848,
+      "source_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+      "host": "omarchy",
+      "platform": "Linux-7.2.15-1-omarchy-x86_64-with-glibc2.44",
+      "cpu": "Intel(R) Core(TM) Ultra 9 275HX",
+      "python": "3.13.18 (main, Oct 26 2026, 14:08:20) [Clang 23.1.3 ]",
+      "packages": {
+        "grid-adventure": {
+          "version": "0.1.0",
+          "direct_url": {
+            "url": "https://github.com/grid-universe/grid-adventure-v1.git",
+            "vcs_info": {
+              "vcs": "git",
+              "commit_id": "2eb235e9ceffe241a12d63afc613b9bdbdf914be"
+            }
+          }
+        },
+        "grid-universe": {
+          "version": "0.1.0",
+          "direct_url": {
+            "url": "https://github.com/grid-universe/grid-universe.git",
+            "vcs_info": {
+              "vcs": "git",
+              "commit_id": "28615fa1b570b7ccdd5f56d86ca200baffa06d2c"
+            }
+          }
+        },
+        "numpy": {
+          "version": "2.3.0",
+          "direct_url": null
+        },
+        "pillow": {
+          "version": "11.2.1",
+          "direct_url": null
+        },
+        "torch": {
+          "version": "2.7.0+cpu",
+          "direct_url": null
+        }
+      },
+      "cpu_affinity": [
+        0
+      ],
+      "thread_limits": {
+        "OMP_NUM_THREADS": "1",
+        "OPENBLAS_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1"
+      },
+      "optimal_reward": -68,
+      "minimum_reward": -102.0,
+      "termination": "completed",
+      "trace_actions": [
+        "right",
+        "right",
+        "down",
+        "down",
+        "left",
+        "left",
+        "pick_up",
+        "right",
+        "down",
+        "pick_up",
+        "right",
+        "right",
+        "pick_up",
+        "left",
+        "left",
+        "left",
+        "pick_up",
+        "left",
+        "up",
+        "left",
+        "pick_up",
+        "left",
+        "down",
+        "down",
+        "down",
+        "pick_up",
+        "down"
+      ],
+      "agent_statistics": {
+        "search_calls": "1",
+        "cache_hits": "26",
+        "transitions": "22200",
+        "expansions": "3173",
+        "peak_states": "4096",
+        "peak_records": "7280",
+        "stop_reason": "state_cap",
+        "time_to_first_win": "0.03605863200209569",
+        "reference": null
+      },
+      "worker_exitcode": -15,
+      "worker_wall_seconds": 0.9638711150037125,
+      "energy_preference_before": "performance",
+      "energy_preference_after": "performance",
+      "power_profile_changed": false,
+      "repetition": 0,
+      "conservative_cold_seconds": 0.9638711150037125,
+      "replay": {
+        "win": true,
+        "lose": false,
+        "reward": -68,
+        "matches": true
+      }
+    },
+    {
+      "agent": "agents/p3.py",
+      "level": "C1 The Heist",
+      "seed": 42,
+      "split": null,
+      "turn_limit": 150,
+      "evaluation_limit_seconds": 15.0,
+      "setup_limit_seconds": 30.0,
+      "profiled": false,
+      "status": "win",
+      "effective_performance": 0.9367088607594937,
+      "reward": -163.0,
+      "turns": 57,
+      "win": true,
+      "lose": false,
+      "evaluation_seconds": 0.9280139229958877,
+      "setup_seconds": 0.607405539994943,
+      "peak_rss_bytes": 253280256,
+      "source_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+      "host": "omarchy",
+      "platform": "Linux-7.2.15-1-omarchy-x86_64-with-glibc2.44",
+      "cpu": "Intel(R) Core(TM) Ultra 9 275HX",
+      "python": "3.13.18 (main, Oct 26 2026, 14:08:20) [Clang 23.1.3 ]",
+      "packages": {
+        "grid-adventure": {
+          "version": "0.1.0",
+          "direct_url": {
+            "url": "https://github.com/grid-universe/grid-adventure-v1.git",
+            "vcs_info": {
+              "vcs": "git",
+              "commit_id": "2eb235e9ceffe241a12d63afc613b9bdbdf914be"
+            }
+          }
+        },
+        "grid-universe": {
+          "version": "0.1.0",
+          "direct_url": {
+            "url": "https://github.com/grid-universe/grid-universe.git",
+            "vcs_info": {
+              "vcs": "git",
+              "commit_id": "28615fa1b570b7ccdd5f56d86ca200baffa06d2c"
+            }
+          }
+        },
+        "numpy": {
+          "version": "2.3.0",
+          "direct_url": null
+        },
+        "pillow": {
+          "version": "11.2.1",
+          "direct_url": null
+        },
+        "torch": {
+          "version": "2.7.0+cpu",
+          "direct_url": null
+        }
+      },
+      "cpu_affinity": [
+        0
+      ],
+      "thread_limits": {
+        "OMP_NUM_THREADS": "1",
+        "OPENBLAS_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1"
+      },
+      "optimal_reward": -158,
+      "minimum_reward": -237.0,
+      "termination": "completed",
+      "trace_actions": [
+        "down",
+        "down",
+        "pick_up",
+        "up",
+        "up",
+        "right",
+        "right",
+        "right",
+        "right",
+        "right",
+        "right",
+        "right",
+        "right",
+        "right",
+        "right",
+        "right",
+        "pick_up",
+        "right",
+        "pick_up",
+        "down",
+        "down",
+        "down",
+        "left",
+        "left",
+        "left",
+        "down",
+        "down",
+        "down",
+        "left",
+        "left",
+        "left",
+        "use_key",
+        "up",
+        "up",
+        "pick_up",
+        "down",
+        "down",
+        "left",
+        "left",
+        "left",
+        "pick_up",
+        "down",
+        "pick_up",
+        "down",
+        "down",
+        "down",
+        "down",
+        "right",
+        "right",
+        "right",
+        "right",
+        "right",
+        "right",
+        "right",
+        "right",
+        "right",
+        "right"
+      ],
+      "agent_statistics": {
+        "search_calls": "1",
+        "cache_hits": "56",
+        "transitions": "23333",
+        "expansions": "3341",
+        "peak_states": "4096",
+        "peak_records": "7425",
+        "stop_reason": "state_cap",
+        "time_to_first_win": "0.5121578589896671",
+        "reference": null
+      },
+      "worker_exitcode": -15,
+      "worker_wall_seconds": 1.5836457330005942,
+      "energy_preference_before": "performance",
+      "energy_preference_after": "performance",
+      "power_profile_changed": false,
+      "repetition": 0,
+      "conservative_cold_seconds": 1.5836457330005942,
+      "replay": {
+        "win": true,
+        "lose": false,
+        "reward": -163,
+        "matches": true
+      }
+    },
+    {
+      "agent": "agents/p3.py",
+      "level": "C0 Everything Everywhere All at Once",
+      "seed": 43,
+      "split": null,
+      "turn_limit": 150,
+      "evaluation_limit_seconds": 15.0,
+      "setup_limit_seconds": 30.0,
+      "profiled": false,
+      "status": "win",
+      "effective_performance": 1.0,
+      "reward": -68.0,
+      "turns": 27,
+      "win": true,
+      "lose": false,
+      "evaluation_seconds": 0.2856629680027254,
+      "setup_seconds": 0.6077659489965299,
+      "peak_rss_bytes": 253476864,
+      "source_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+      "host": "omarchy",
+      "platform": "Linux-7.2.15-1-omarchy-x86_64-with-glibc2.44",
+      "cpu": "Intel(R) Core(TM) Ultra 9 275HX",
+      "python": "3.13.18 (main, Oct 26 2026, 14:08:20) [Clang 23.1.3 ]",
+      "packages": {
+        "grid-adventure": {
+          "version": "0.1.0",
+          "direct_url": {
+            "url": "https://github.com/grid-universe/grid-adventure-v1.git",
+            "vcs_info": {
+              "vcs": "git",
+              "commit_id": "2eb235e9ceffe241a12d63afc613b9bdbdf914be"
+            }
+          }
+        },
+        "grid-universe": {
+          "version": "0.1.0",
+          "direct_url": {
+            "url": "https://github.com/grid-universe/grid-universe.git",
+            "vcs_info": {
+              "vcs": "git",
+              "commit_id": "28615fa1b570b7ccdd5f56d86ca200baffa06d2c"
+            }
+          }
+        },
+        "numpy": {
+          "version": "2.3.0",
+          "direct_url": null
+        },
+        "pillow": {
+          "version": "11.2.1",
+          "direct_url": null
+        },
+        "torch": {
+          "version": "2.7.0+cpu",
+          "direct_url": null
+        }
+      },
+      "cpu_affinity": [
+        0
+      ],
+      "thread_limits": {
+        "OMP_NUM_THREADS": "1",
+        "OPENBLAS_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1"
+      },
+      "optimal_reward": -68,
+      "minimum_reward": -102.0,
+      "termination": "completed",
+      "trace_actions": [
+        "right",
+        "right",
+        "down",
+        "down",
+        "left",
+        "left",
+        "pick_up",
+        "right",
+        "down",
+        "pick_up",
+        "right",
+        "right",
+        "pick_up",
+        "left",
+        "left",
+        "left",
+        "pick_up",
+        "left",
+        "up",
+        "left",
+        "pick_up",
+        "left",
+        "down",
+        "down",
+        "down",
+        "pick_up",
+        "down"
+      ],
+      "agent_statistics": {
+        "search_calls": "1",
+        "cache_hits": "26",
+        "transitions": "22200",
+        "expansions": "3173",
+        "peak_states": "4096",
+        "peak_records": "7280",
+        "stop_reason": "state_cap",
+        "time_to_first_win": "0.03612015700491611",
+        "reference": null
+      },
+      "worker_exitcode": -15,
+      "worker_wall_seconds": 0.9407188119948842,
+      "energy_preference_before": "performance",
+      "energy_preference_after": "performance",
+      "power_profile_changed": false,
+      "repetition": 1,
+      "conservative_cold_seconds": 0.9407188119948842,
+      "replay": {
+        "win": true,
+        "lose": false,
+        "reward": -68,
+        "matches": true
+      }
+    },
+    {
+      "agent": "agents/p3.py",
+      "level": "C1 The Heist",
+      "seed": 43,
+      "split": null,
+      "turn_limit": 150,
+      "evaluation_limit_seconds": 15.0,
+      "setup_limit_seconds": 30.0,
+      "profiled": false,
+      "status": "win",
+      "effective_performance": 0.9367088607594937,
+      "reward": -163.0,
+      "turns": 57,
+      "win": true,
+      "lose": false,
+      "evaluation_seconds": 0.92757850101043,
+      "setup_seconds": 0.6085998199996538,
+      "peak_rss_bytes": 253083648,
+      "source_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+      "host": "omarchy",
+      "platform": "Linux-7.2.15-1-omarchy-x86_64-with-glibc2.44",
+      "cpu": "Intel(R) Core(TM) Ultra 9 275HX",
+      "python": "3.13.18 (main, Oct 26 2026, 14:08:20) [Clang 23.1.3 ]",
+      "packages": {
+        "grid-adventure": {
+          "version": "0.1.0",
+          "direct_url": {
+            "url": "https://github.com/grid-universe/grid-adventure-v1.git",
+            "vcs_info": {
+              "vcs": "git",
+              "commit_id": "2eb235e9ceffe241a12d63afc613b9bdbdf914be"
+            }
+          }
+        },
+        "grid-universe": {
+          "version": "0.1.0",
+          "direct_url": {
+            "url": "https://github.com/grid-universe/grid-universe.git",
+            "vcs_info": {
+              "vcs": "git",
+              "commit_id": "28615fa1b570b7ccdd5f56d86ca200baffa06d2c"
+            }
+          }
+        },
+        "numpy": {
+          "version": "2.3.0",
+          "direct_url": null
+        },
+        "pillow": {
+          "version": "11.2.1",
+          "direct_url": null
+        },
+        "torch": {
+          "version": "2.7.0+cpu",
+          "direct_url": null
+        }
+      },
+      "cpu_affinity": [
+        0
+      ],
+      "thread_limits": {
+        "OMP_NUM_THREADS": "1",
+        "OPENBLAS_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1"
+      },
+      "optimal_reward": -158,
+      "minimum_reward": -237.0,
+      "termination": "completed",
+      "trace_actions": [
+        "down",
+        "down",
+        "pick_up",
+        "up",
+        "up",
+        "right",
+        "right",
+        "right",
+        "right",
+        "right",
+        "right",
+        "right",
+        "right",
+        "right",
+        "right",
+        "right",
+        "pick_up",
+        "right",
+        "pick_up",
+        "down",
+        "down",
+        "down",
+        "left",
+        "left",
+        "left",
+        "down",
+        "down",
+        "down",
+        "left",
+        "left",
+        "left",
+        "use_key",
+        "up",
+        "up",
+        "pick_up",
+        "down",
+        "down",
+        "left",
+        "left",
+        "left",
+        "pick_up",
+        "down",
+        "pick_up",
+        "down",
+        "down",
+        "down",
+        "down",
+        "right",
+        "right",
+        "right",
+        "right",
+        "right",
+        "right",
+        "right",
+        "right",
+        "right",
+        "right"
+      ],
+      "agent_statistics": {
+        "search_calls": "1",
+        "cache_hits": "56",
+        "transitions": "23333",
+        "expansions": "3341",
+        "peak_states": "4096",
+        "peak_records": "7425",
+        "stop_reason": "state_cap",
+        "time_to_first_win": "0.5132847599888919",
+        "reference": null
+      },
+      "worker_exitcode": -15,
+      "worker_wall_seconds": 1.583767092000926,
+      "energy_preference_before": "performance",
+      "energy_preference_after": "performance",
+      "power_profile_changed": false,
+      "repetition": 1,
+      "conservative_cold_seconds": 1.583767092000926,
+      "replay": {
+        "win": true,
+        "lose": false,
+        "reward": -163,
+        "matches": true
+      }
+    },
+    {
+      "agent": "agents/p3.py",
+      "level": "C0 Everything Everywhere All at Once",
+      "seed": 44,
+      "split": null,
+      "turn_limit": 150,
+      "evaluation_limit_seconds": 15.0,
+      "setup_limit_seconds": 30.0,
+      "profiled": false,
+      "status": "win",
+      "effective_performance": 1.0,
+      "reward": -68.0,
+      "turns": 27,
+      "win": true,
+      "lose": false,
+      "evaluation_seconds": 0.2881446050014347,
+      "setup_seconds": 0.6099255010049092,
+      "peak_rss_bytes": 253435904,
+      "source_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+      "host": "omarchy",
+      "platform": "Linux-7.2.15-1-omarchy-x86_64-with-glibc2.44",
+      "cpu": "Intel(R) Core(TM) Ultra 9 275HX",
+      "python": "3.13.18 (main, Oct 26 2026, 14:08:20) [Clang 23.1.3 ]",
+      "packages": {
+        "grid-adventure": {
+          "version": "0.1.0",
+          "direct_url": {
+            "url": "https://github.com/grid-universe/grid-adventure-v1.git",
+            "vcs_info": {
+              "vcs": "git",
+              "commit_id": "2eb235e9ceffe241a12d63afc613b9bdbdf914be"
+            }
+          }
+        },
+        "grid-universe": {
+          "version": "0.1.0",
+          "direct_url": {
+            "url": "https://github.com/grid-universe/grid-universe.git",
+            "vcs_info": {
+              "vcs": "git",
+              "commit_id": "28615fa1b570b7ccdd5f56d86ca200baffa06d2c"
+            }
+          }
+        },
+        "numpy": {
+          "version": "2.3.0",
+          "direct_url": null
+        },
+        "pillow": {
+          "version": "11.2.1",
+          "direct_url": null
+        },
+        "torch": {
+          "version": "2.7.0+cpu",
+          "direct_url": null
+        }
+      },
+      "cpu_affinity": [
+        0
+      ],
+      "thread_limits": {
+        "OMP_NUM_THREADS": "1",
+        "OPENBLAS_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1"
+      },
+      "optimal_reward": -68,
+      "minimum_reward": -102.0,
+      "termination": "completed",
+      "trace_actions": [
+        "right",
+        "right",
+        "down",
+        "down",
+        "left",
+        "left",
+        "pick_up",
+        "right",
+        "down",
+        "pick_up",
+        "right",
+        "right",
+        "pick_up",
+        "left",
+        "left",
+        "left",
+        "pick_up",
+        "left",
+        "up",
+        "left",
+        "pick_up",
+        "left",
+        "down",
+        "down",
+        "down",
+        "pick_up",
+        "down"
+      ],
+      "agent_statistics": {
+        "search_calls": "1",
+        "cache_hits": "26",
+        "transitions": "22200",
+        "expansions": "3173",
+        "peak_states": "4096",
+        "peak_records": "7280",
+        "stop_reason": "state_cap",
+        "time_to_first_win": "0.03647301800083369",
+        "reference": null
+      },
+      "worker_exitcode": -15,
+      "worker_wall_seconds": 0.9457716850010911,
+      "energy_preference_before": "performance",
+      "energy_preference_after": "performance",
+      "power_profile_changed": false,
+      "repetition": 2,
+      "conservative_cold_seconds": 0.9457716850010911,
+      "replay": {
+        "win": true,
+        "lose": false,
+        "reward": -68,
+        "matches": true
+      }
+    },
+    {
+      "agent": "agents/p3.py",
+      "level": "C1 The Heist",
+      "seed": 44,
+      "split": null,
+      "turn_limit": 150,
+      "evaluation_limit_seconds": 15.0,
+      "setup_limit_seconds": 30.0,
+      "profiled": false,
+      "status": "win",
+      "effective_performance": 0.9367088607594937,
+      "reward": -163.0,
+      "turns": 57,
+      "win": true,
+      "lose": false,
+      "evaluation_seconds": 0.9230233900016174,
+      "setup_seconds": 0.6109678840002744,
+      "peak_rss_bytes": 253202432,
+      "source_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+      "host": "omarchy",
+      "platform": "Linux-7.2.15-1-omarchy-x86_64-with-glibc2.44",
+      "cpu": "Intel(R) Core(TM) Ultra 9 275HX",
+      "python": "3.13.18 (main, Oct 26 2026, 14:08:20) [Clang 23.1.3 ]",
+      "packages": {
+        "grid-adventure": {
+          "version": "0.1.0",
+          "direct_url": {
+            "url": "https://github.com/grid-universe/grid-adventure-v1.git",
+            "vcs_info": {
+              "vcs": "git",
+              "commit_id": "2eb235e9ceffe241a12d63afc613b9bdbdf914be"
+            }
+          }
+        },
+        "grid-universe": {
+          "version": "0.1.0",
+          "direct_url": {
+            "url": "https://github.com/grid-universe/grid-universe.git",
+            "vcs_info": {
+              "vcs": "git",
+              "commit_id": "28615fa1b570b7ccdd5f56d86ca200baffa06d2c"
+            }
+          }
+        },
+        "numpy": {
+          "version": "2.3.0",
+          "direct_url": null
+        },
+        "pillow": {
+          "version": "11.2.1",
+          "direct_url": null
+        },
+        "torch": {
+          "version": "2.7.0+cpu",
+          "direct_url": null
+        }
+      },
+      "cpu_affinity": [
+        0
+      ],
+      "thread_limits": {
+        "OMP_NUM_THREADS": "1",
+        "OPENBLAS_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1"
+      },
+      "optimal_reward": -158,
+      "minimum_reward": -237.0,
+      "termination": "completed",
+      "trace_actions": [
+        "down",
+        "down",
+        "pick_up",
+        "up",
+        "up",
+        "right",
+        "right",
+        "right",
+        "right",
+        "right",
+        "right",
+        "right",
+        "right",
+        "right",
+        "right",
+        "right",
+        "pick_up",
+        "right",
+        "pick_up",
+        "down",
+        "down",
+        "down",
+        "left",
+        "left",
+        "left",
+        "down",
+        "down",
+        "down",
+        "left",
+        "left",
+        "left",
+        "use_key",
+        "up",
+        "up",
+        "pick_up",
+        "down",
+        "down",
+        "left",
+        "left",
+        "left",
+        "pick_up",
+        "down",
+        "pick_up",
+        "down",
+        "down",
+        "down",
+        "down",
+        "right",
+        "right",
+        "right",
+        "right",
+        "right",
+        "right",
+        "right",
+        "right",
+        "right",
+        "right"
+      ],
+      "agent_statistics": {
+        "search_calls": "1",
+        "cache_hits": "56",
+        "transitions": "23333",
+        "expansions": "3341",
+        "peak_states": "4096",
+        "peak_records": "7425",
+        "stop_reason": "state_cap",
+        "time_to_first_win": "0.5110917569982121",
+        "reference": null
+      },
+      "worker_exitcode": -15,
+      "worker_wall_seconds": 1.5818861779989675,
+      "energy_preference_before": "performance",
+      "energy_preference_after": "performance",
+      "power_profile_changed": false,
+      "repetition": 2,
+      "conservative_cold_seconds": 1.5818861779989675,
+      "replay": {
+        "win": true,
+        "lose": false,
+        "reward": -163,
+        "matches": true
+      }
+    }
+  ],
+  "power_profile": "performance",
+  "energy_performance_preference": "performance",
+  "started_at_utc": "2026-11-09T05:20:37.552097+00:00",
+  "dependency_sha256": {
+    "tools/benchmark_p1.py": "e031dfda03ce57d91a789e1bfd9a251d24c7390c780ee1f8c42e62fabb7cb2e6",
+    "utils.py": "2556f4d40f590b5d5ebc7a38094cb5430f22c83dbdc6d28e086f10b855e3539f",
+    "public_levels/intro.py": "eeb57b9481d1dc5b826221726810405595d83b45e2d67423f21c657aa02f4dfa",
+    "public_levels/challenges.py": "9b11e70ab7f8a1b190231c1e950cfff81b1ce27f4cbd0a0b3169ba8e8c1414e9",
+    "public_levels/play.py": "ef65ad5bc506e09ebaa66faaa4a263ea76430862366a766973efcc0edb0db392",
+    "public_levels/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "public_levels/catalog.py": "2cb839a2aa859bb5b1c3504458b3f28ebb45205ddc50e015c9cc677f0c0db773",
+    "tests/p1_fixtures.py": "16773260874edd0bc46475b383751920e2dda047ee1a2d0ea6418bf63a9d5978",
+    "tests/p2_fixtures.py": "fa5de251111e4c1383cbcf6969a82757edbdd8536dd77fab175d2b7f162e57a3",
+    "tests/p2_next_fixtures.py": "e9f1277bf67d0fc6578076e26968a1cadd1066cb7d9fc0fb65739a1593bc5075",
+    "tests/p3_fixtures.py": "51d884b14a83a56ca93df357e407eb2017b2640ba87ee60482e6e601cb7129d2"
+  }
+}

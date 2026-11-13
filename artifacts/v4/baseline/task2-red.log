@@ -1,0 +1,18 @@
+test_v4_backend (unittest.loader._FailedTest.test_v4_backend) ... ERROR
+
+======================================================================
+ERROR: test_v4_backend (unittest.loader._FailedTest.test_v4_backend)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_v4_backend
+Traceback (most recent call last):
+  File "/Users/enxi/.local/share/uv/python/cpython-3.13.15-macos-aarch64-none/lib/python3.13/unittest/loader.py", line 141, in loadTestsFromName
+    module = __import__(module_name)
+  File "/Users/enxi/coding/autistic-sv-67/tests/test_v4_backend.py", line 6, in <module>
+    from agents import v4_backend as backend
+ImportError: cannot import name 'v4_backend' from 'agents' (/Users/enxi/coding/autistic-sv-67/agents/__init__.py)
+
+
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+FAILED (errors=1)

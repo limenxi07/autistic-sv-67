@@ -1,0 +1,20 @@
+test_notebook_cell_uses_configured_model_and_calibration (tests.test_v4_package.PackageTests.test_notebook_cell_uses_configured_model_and_calibration) ... FAIL
+
+======================================================================
+FAIL: test_notebook_cell_uses_configured_model_and_calibration (tests.test_v4_package.PackageTests.test_notebook_cell_uses_configured_model_and_calibration)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/enxi/coding/autistic-sv-67/tests/test_v4_package.py", line 127, in test_notebook_cell_uses_configured_model_and_calibration
+    self.assertEqual(result.returncode, 0, result.stderr + result.stdout)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 1 != 0 : Traceback (most recent call last):
+  File "<string>", line 27, in <module>
+    assert actions == [Action.RIGHT, Action.RIGHT], (actions, a.info())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ([<Action.WAIT: 'wait'>, <Action.WAIT: 'wait'>], {'name': 'V4 recovery development', 'backend_sha256': 'd487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4', 'input_mode': 'image', 'visual_discrepancies': '0', 'metadata_discrepancies': '0', 'repairs': '0', 'recoveries': '0', 'actions': '2', 'hypotheses': '0', 'reason': 'unsupported_observation:RuntimeError', 'conditional_on_perception': 'True'})
+
+
+----------------------------------------------------------------------
+Ran 1 test in 1.866s
+
+FAILED (failures=1)

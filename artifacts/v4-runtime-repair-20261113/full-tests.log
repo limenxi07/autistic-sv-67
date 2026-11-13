@@ -1,0 +1,56 @@
+................................................................................................................Matplotlib is building the font cache; this may take a moment.
+F.Matplotlib is building the font cache; this may take a moment.
+F..Matplotlib is building the font cache; this may take a moment.
+F/Users/enxi/coding/autistic-sv-67/.venv/lib/python3.13/site-packages/matplotlib/_fontconfig_pattern.py:64: PyparsingDeprecationWarning: 'oneOf' deprecated - use 'one_of'
+  prop = Group((name + Suppress("=") + comma_separated(value)) | oneOf(_CONSTANTS))
+/Users/enxi/coding/autistic-sv-67/.venv/lib/python3.13/site-packages/matplotlib/_fontconfig_pattern.py:85: PyparsingDeprecationWarning: 'parseString' deprecated - use 'parse_string'
+  parse = parser.parseString(pattern)
+/Users/enxi/coding/autistic-sv-67/.venv/lib/python3.13/site-packages/matplotlib/_fontconfig_pattern.py:89: PyparsingDeprecationWarning: 'resetCache' deprecated - use 'reset_cache'
+  parser.resetCache()
+Matplotlib is building the font cache; this may take a moment.
+/Users/enxi/coding/autistic-sv-67/.venv/lib/python3.13/site-packages/matplotlib/_mathtext.py:45: PyparsingDeprecationWarning: 'enablePackrat' deprecated - use 'enable_packrat'
+  ParserElement.enablePackrat()
+In /Users/enxi/coding/autistic-sv-67/.venv/lib/python3.13/site-packages/matplotlib/mpl-data/stylelib/classic.mplstyle: 'parseString' deprecated - use 'parse_string'
+In /Users/enxi/coding/autistic-sv-67/.venv/lib/python3.13/site-packages/matplotlib/mpl-data/stylelib/classic.mplstyle: 'resetCache' deprecated - use 'reset_cache'
+.................................................................................................................................................................................................................................................................................................
+======================================================================
+FAIL: test_error_and_loss (test_planner_p1_harness.HarnessTests.test_error_and_loss)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/enxi/coding/autistic-sv-67/tests/test_planner_p1_harness.py", line 129, in test_error_and_loss
+    self.assertEqual(result["status"], status)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'setup_error' != 'error'
+- setup_error
++ error
+
+
+======================================================================
+FAIL: test_hanging_evaluation_is_terminated (test_planner_p1_harness.HarnessTests.test_hanging_evaluation_is_terminated)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/enxi/coding/autistic-sv-67/tests/test_planner_p1_harness.py", line 96, in test_hanging_evaluation_is_terminated
+    self.assertEqual(result["status"], "timeout")
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'setup_error' != 'timeout'
+- setup_error
++ timeout
+
+
+======================================================================
+FAIL: test_optional_agent_statistics (test_planner_p1_harness.HarnessTests.test_optional_agent_statistics)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/enxi/coding/autistic-sv-67/tests/test_planner_p1_harness.py", line 116, in test_optional_agent_statistics
+    self.assertEqual(result["status"], "win")
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'setup_error' != 'win'
+- setup_error
++ win
+
+
+----------------------------------------------------------------------
+Ran 407 tests in 357.699s
+
+FAILED (failures=3)
+Restored archive

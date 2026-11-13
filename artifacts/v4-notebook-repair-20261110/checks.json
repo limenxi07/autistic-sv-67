@@ -1,0 +1,70 @@
+{
+  "repository_tests": {
+    "command": "MPLCONFIGDIR=/tmp/v4-mpl UV_CACHE_DIR=/tmp/v4-uv-cache uv run --frozen --no-sync python -m unittest discover -s tests -v",
+    "exit_code": 0,
+    "tests": 350,
+    "seconds": 164.845,
+    "log": "artifacts/v4-notebook-repair-20261110/all-tests.log"
+  },
+  "red_regression": {
+    "tests": 1,
+    "failures": 1,
+    "behavior": "Function-scoped pasted cell emits WAIT twice; unsupported_observation:RuntimeError",
+    "log": "artifacts/v4-notebook-repair-20261110/red.log"
+  },
+  "green_focused": {
+    "tests": 15,
+    "failures": 0,
+    "seconds": 5.409,
+    "log": "artifacts/v4-notebook-repair-20261110/green.log"
+  },
+  "static_checks": "artifacts/v4-notebook-repair-20261110/static-checks.json",
+  "protected_inventory": "artifacts/v4-notebook-repair-20261110/protected-check.json",
+  "platform_retest": "pending",
+  "original_final_corpus": "not rerun; old 299/300 result remains bound to original frozen source",
+  "public_execution_scopes": {
+    "module": {
+      "checks": {
+        "all_66": true,
+        "all_win": true,
+        "all_exact": true,
+        "all_rewards_equal_frozen_v4": true,
+        "all_episode_under_4_25s": true,
+        "all_strict_cold_under_5s": true,
+        "all_rss_under_1gb": true,
+        "all_cpu_threads_one": true,
+        "original_budget_unchanged": true,
+        "same_power_before_and_after": true
+      },
+      "passed": true,
+      "wins": 66,
+      "exact_boards": 66,
+      "max_episode_seconds": 3.3120566369907465,
+      "max_strict_cold_seconds": 3.4204706430027727,
+      "peak_rss_bytes": 328925184
+    },
+    "notebook-cell": {
+      "checks": {
+        "all_66": true,
+        "all_win": true,
+        "all_exact": true,
+        "all_rewards_equal_frozen_v4": true,
+        "all_episode_under_4_25s": true,
+        "all_strict_cold_under_5s": true,
+        "all_rss_under_1gb": true,
+        "all_cpu_threads_one": true,
+        "original_budget_unchanged": true,
+        "same_power_before_and_after": true
+      },
+      "passed": true,
+      "wins": 66,
+      "exact_boards": 66,
+      "max_episode_seconds": 3.306085089003318,
+      "max_strict_cold_seconds": 3.4140912480070256,
+      "peak_rss_bytes": 329011200
+    }
+  },
+  "source_sha256": "1e9246ede7c360da2d494fb174c4194da3fc3019f8e46d8b9155f6baef87e229",
+  "source_bytes": 693446,
+  "repackage_byte_identical": true
+}

@@ -1,0 +1,21 @@
+E
+======================================================================
+ERROR: test_verified_transitions_reuse_exact_objects_and_reject_changed_state (tests.test_v4_backend.TransitionReuseTests.test_verified_transitions_reuse_exact_objects_and_reject_changed_state)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/enxi/coding/autistic-sv-67/tests/test_v4_backend.py", line 167, in test_verified_transitions_reuse_exact_objects_and_reject_changed_state
+    with patch.object(v4_planner, 'grid_step', wraps=backend.grid_step) as simulate:
+         ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/enxi/.local/share/uv/python/cpython-3.13.15-macos-aarch64-none/lib/python3.13/unittest/mock.py", line 1503, in __enter__
+    original, local = self.get_original()
+                      ~~~~~~~~~~~~~~~~~^^
+  File "/Users/enxi/.local/share/uv/python/cpython-3.13.15-macos-aarch64-none/lib/python3.13/unittest/mock.py", line 1473, in get_original
+    raise AttributeError(
+        "%s does not have the attribute %r" % (target, name)
+    )
+AttributeError: <module 'agents.v4_planner' from '/Users/enxi/coding/autistic-sv-67/agents/v4_planner.py'> does not have the attribute 'grid_step'
+
+----------------------------------------------------------------------
+Ran 1 test in 0.002s
+
+FAILED (errors=1)

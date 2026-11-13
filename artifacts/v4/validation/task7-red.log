@@ -1,0 +1,18 @@
+test_v4_package (unittest.loader._FailedTest.test_v4_package) ... ERROR
+
+======================================================================
+ERROR: test_v4_package (unittest.loader._FailedTest.test_v4_package)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_v4_package
+Traceback (most recent call last):
+  File "/Users/enxi/.local/share/uv/python/cpython-3.13.15-macos-aarch64-none/lib/python3.13/unittest/loader.py", line 141, in loadTestsFromName
+    module = __import__(module_name)
+  File "/Users/enxi/coding/autistic-sv-67/tests/test_v4_package.py", line 8, in <module>
+    from tools.package_v4 import package
+ModuleNotFoundError: No module named 'tools.package_v4'
+
+
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+FAILED (errors=1)

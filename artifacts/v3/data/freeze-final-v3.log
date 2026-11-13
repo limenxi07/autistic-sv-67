@@ -1,0 +1,16 @@
+manifest_sha256 8d5eb0aa07b18a17c5278fd540abdae2506dd3fe7637062dd6a027bb70212c82
+{'boards': 300, 'geometry_split': 'final', 'appearance_split': 'final', 'records_sha256': 'd7f946bdb463a121c113d7460979cb428a376a01f84ce074bfd3e09d79ccbad8', 'manifest_sha256': '8d5eb0aa07b18a17c5278fd540abdae2506dd3fe7637062dd6a027bb70212c82', 'family_counts': {'maze': 30, 'multi-gem': 30, 'coins': 30, 'keys-doors': 30, 'boxes': 30, 'lava-shields': 30, 'boots': 30, 'phasing': 30, 'mixed-effects': 30, 'combined': 30}}
+Traceback (most recent call last):
+  File "/Users/enxi/coding/autistic-sv-67/artifacts/v3/data/freeze-final-v3.py", line 25, in <module>
+    print(audit_dataset(manifest,root/'final-300-v3'),flush=True)
+          ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/enxi/coding/autistic-sv-67/tools/v3_data.py", line 689, in audit_dataset
+    if digest(sample_path.read_bytes()) != report["samples_sha256"]:
+              ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/enxi/.local/share/uv/python/cpython-3.13.15-macos-aarch64-none/lib/python3.13/pathlib/_abc.py", line 625, in read_bytes
+    with self.open(mode='rb') as f:
+         ~~~~~~~~~^^^^^^^^^^^
+  File "/Users/enxi/.local/share/uv/python/cpython-3.13.15-macos-aarch64-none/lib/python3.13/pathlib/_local.py", line 537, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'artifacts/v3/data/final-300-v3/samples.jsonl'

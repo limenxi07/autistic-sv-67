@@ -1,0 +1,24 @@
+............./Users/enxi/coding/autistic-sv-67/.venv/lib/python3.13/site-packages/matplotlib/_fontconfig_pattern.py:64: PyparsingDeprecationWarning: 'oneOf' deprecated - use 'one_of'
+  prop = Group((name + Suppress("=") + comma_separated(value)) | oneOf(_CONSTANTS))
+/Users/enxi/coding/autistic-sv-67/.venv/lib/python3.13/site-packages/matplotlib/_fontconfig_pattern.py:85: PyparsingDeprecationWarning: 'parseString' deprecated - use 'parse_string'
+  parse = parser.parseString(pattern)
+/Users/enxi/coding/autistic-sv-67/.venv/lib/python3.13/site-packages/matplotlib/_fontconfig_pattern.py:89: PyparsingDeprecationWarning: 'resetCache' deprecated - use 'reset_cache'
+  parser.resetCache()
+/Users/enxi/coding/autistic-sv-67/.venv/lib/python3.13/site-packages/matplotlib/_mathtext.py:45: PyparsingDeprecationWarning: 'enablePackrat' deprecated - use 'enable_packrat'
+  ParserElement.enablePackrat()
+In /Users/enxi/coding/autistic-sv-67/.venv/lib/python3.13/site-packages/matplotlib/mpl-data/stylelib/classic.mplstyle: 'parseString' deprecated - use 'parse_string'
+In /Users/enxi/coding/autistic-sv-67/.venv/lib/python3.13/site-packages/matplotlib/mpl-data/stylelib/classic.mplstyle: 'resetCache' deprecated - use 'reset_cache'
+...........................................................................................................................................F.............................................................................................
+======================================================================
+FAIL: test_plain_agent_late_reference_keeps_original_clock_origin (test_p3_dispatch.DispatchTests.test_plain_agent_late_reference_keeps_original_clock_origin)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/enxi/coding/autistic-sv-67/tests/test_p3_dispatch.py", line 71, in test_plain_agent_late_reference_keeps_original_clock_origin
+    self.assertEqual(agent._reference._cutoff, 3.5)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 3.0 != 3.5
+
+----------------------------------------------------------------------
+Ran 246 tests in 98.932s
+
+FAILED (failures=1)

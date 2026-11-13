@@ -1,0 +1,18 @@
+test_terminal_after_cutoff_is_not_counted_as_an_emitted_transition (tests.test_v4_agent.RecoveryTests.test_terminal_after_cutoff_is_not_counted_as_an_emitted_transition) ... FAIL
+
+======================================================================
+FAIL: test_terminal_after_cutoff_is_not_counted_as_an_emitted_transition (tests.test_v4_agent.RecoveryTests.test_terminal_after_cutoff_is_not_counted_as_an_emitted_transition)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/enxi/coding/autistic-sv-67/tests/test_v4_agent.py", line 172, in test_terminal_after_cutoff_is_not_counted_as_an_emitted_transition
+    self.assertEqual(agent._last_emission.reason,'terminal')
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'cutoff' != 'terminal'
+- cutoff
++ terminal
+
+
+----------------------------------------------------------------------
+Ran 1 test in 0.021s
+
+FAILED (failures=1)

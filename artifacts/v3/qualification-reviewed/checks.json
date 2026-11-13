@@ -1,0 +1,33 @@
+{
+  "candidate_sha256": "8afdb5b286b9c27dc7d0fe588dee3c7e8024c15e49eedc8671429ba0bd19f13f",
+  "repository_tests": {
+    "command": "UV_CACHE_DIR=/tmp/v3-uv-cache uv run --frozen --no-sync python -m unittest discover -s tests -q",
+    "passed": 243,
+    "log": "all-tests-final.log"
+  },
+  "v3_tests": {
+    "command": "UV_CACHE_DIR=/tmp/v3-uv-cache MPLCONFIGDIR=/tmp/v3-mpl XDG_CACHE_HOME=/tmp/v3-cache uv run --frozen --no-sync python -m unittest discover -s tests -p 'test_v3_*.py' -v",
+    "passed": 80,
+    "log": "v3-tests-final.log"
+  },
+  "ruff": {
+    "passed": true,
+    "per_file_ignores": {
+      "agents/v3_model.py": [
+        "I001"
+      ]
+    },
+    "reason": "Generated exact selected TorchScript loader; keep qualifying bytes frozen.",
+    "log": "ruff-final.log"
+  },
+  "ty": {
+    "passed": true,
+    "log": "ty-final.log"
+  },
+  "repackage_byte_identical": true,
+  "protected_sources": {
+    "artifacts/p2/frozen/p2a/task1_agent.py": "e478c1ccb78c21ea4e97fa3c54ab08a28a401c9f4e4ca2846dfcb0590bb7c2cb",
+    "artifacts/p2/frozen/p2b/task1_agent.py": "551ee00377ffe42a343d18c887b1c7f36ef4baf4fa0fff6a22b0053c9845edd0",
+    "agents/p3.py": "a79ee77d6d2253f70f88351f133c462b54fdb1c90409bfee61b4b20ea0923a18"
+  }
+}

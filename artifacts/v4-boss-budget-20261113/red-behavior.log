@@ -1,0 +1,41 @@
+FFFF
+======================================================================
+FAIL: test_boss_package_can_plan_after_task2_deadline_in_both_modes (tests.test_v4_package.PackageTests.test_boss_package_can_plan_after_task2_deadline_in_both_modes) (mode='gridstate')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/enxi/coding/autistic-sv-67/tests/test_v4_package.py", line 140, in test_boss_package_can_plan_after_task2_deadline_in_both_modes
+    self.assertEqual(action, Action.RIGHT)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: <Action.WAIT: 'wait'> != <Action.RIGHT: 'right'>
+
+======================================================================
+FAIL: test_boss_package_can_plan_after_task2_deadline_in_both_modes (tests.test_v4_package.PackageTests.test_boss_package_can_plan_after_task2_deadline_in_both_modes) (mode='image')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/enxi/coding/autistic-sv-67/tests/test_v4_package.py", line 140, in test_boss_package_can_plan_after_task2_deadline_in_both_modes
+    self.assertEqual(action, Action.RIGHT)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: <Action.WAIT: 'wait'> != <Action.RIGHT: 'right'>
+
+======================================================================
+FAIL: test_boss_reference_fallback_keeps_longer_original_deadline (tests.test_v4_package.PackageTests.test_boss_reference_fallback_keeps_longer_original_deadline) (mode='gridstate')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/enxi/coding/autistic-sv-67/tests/test_v4_package.py", line 169, in test_boss_reference_fallback_keeps_longer_original_deadline
+    self.assertEqual(agent.step(state if mode == "gridstate" else observation), Action.RIGHT)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: <Action.WAIT: 'wait'> != <Action.RIGHT: 'right'>
+
+======================================================================
+FAIL: test_boss_reference_fallback_keeps_longer_original_deadline (tests.test_v4_package.PackageTests.test_boss_reference_fallback_keeps_longer_original_deadline) (mode='image')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/enxi/coding/autistic-sv-67/tests/test_v4_package.py", line 169, in test_boss_reference_fallback_keeps_longer_original_deadline
+    self.assertEqual(agent.step(state if mode == "gridstate" else observation), Action.RIGHT)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: <Action.WAIT: 'wait'> != <Action.RIGHT: 'right'>
+
+----------------------------------------------------------------------
+Ran 2 tests in 0.679s
+
+FAILED (failures=4)

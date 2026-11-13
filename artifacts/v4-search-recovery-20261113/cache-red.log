@@ -1,0 +1,14 @@
+E
+======================================================================
+ERROR: test_identical_pixels_are_inferred_once_and_cache_is_bounded (tests.test_v4_numpy_export.NumpyExportTests.test_identical_pixels_are_inferred_once_and_cache_is_bounded)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/enxi/coding/autistic-sv-67/tests/test_v4_numpy_export.py", line 51, in test_identical_pixels_are_inferred_once_and_cache_is_bounded
+    out = model(np.concatenate([a,b,a]))
+  File "<string>", line 24, in __call__
+AttributeError: '_NumpyCNN' object has no attribute 'kernels'
+
+----------------------------------------------------------------------
+Ran 1 test in 0.002s
+
+FAILED (errors=1)

@@ -1,0 +1,348 @@
+{
+  "diagnostic_only": true,
+  "losses": [
+    {
+      "job": {
+        "label": "combined/7297a35c9f88/6216229300",
+        "generated": 40009,
+        "multiple_gems": true,
+        "layout_split": "final",
+        "seed": 208801192575,
+        "asset_root": "artifacts/v3/data/final-300-v5/asset-root",
+        "appearance_manifest": "artifacts/v3/data/manifest-v5.json",
+        "appearance_manifest_sha256": "a17b735ba0e8183e8d51162c3e3b4219300d18dc080503bf93661fe1bb018e07",
+        "appearance_split": "final",
+        "appearance_seed": 6216229300,
+        "resolution": 512,
+        "expected_image_sha256": "fee5c28d00363137e88254157c9ad1470cebb5f909fb90269aecebdd90236f48",
+        "expected_pixels_sha256": "4f54f09a221285600272332da02bea8dcd8c3a9c22cc69bbc6d5bc44ea300873",
+        "expected_layout_sha256": "7297a35c9f88c38d85c2cdd1ec33c676b69d5236999a5a3aed8e4a7b45eb26de"
+      },
+      "trace": "artifacts/v4/diagnostics/v3/00.json",
+      "status": "loss",
+      "initial_board_exact": true,
+      "first_exception": {
+        "type": "ValueError",
+        "message": "History must be the same-turn prediction",
+        "stack": "Traceback (most recent call last):\n  File \"/tmp/v4-vision-recovery-20261109/tools/benchmark_v4.py\", line 563, in image_step\n    return original_image(obs)\n  File \"/tmp/v3-vision-20261109/artifacts/v3/frozen-reviewed/task2_agent.py\", line 3479, in _step_image\n    hypotheses = reconcile(\n        observation,\n    ...<3 lines>...\n        history=self._history,\n    )\n  File \"/tmp/v4-vision-recovery-20261109/tools/benchmark_v4.py\", line 547, in measured\n    return _fn(*args, **kwargs)\n  File \"/tmp/v3-vision-20261109/artifacts/v3/frozen-reviewed/task2_agent.py\", line 3272, in reconcile\n    _enumerate(\n    ~~~~~~~~~~^\n        labels,\n        ^^^^^^^\n    ...<4 lines>...\n        inherited=inherited + unresolved,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/tmp/v3-vision-20261109/artifacts/v3/frozen-reviewed/task2_agent.py\", line 2847, in _enumerate\n    base = reconstruct(labels, info, previous)\n  File \"/tmp/v3-vision-20261109/artifacts/v3/frozen-reviewed/task2_agent.py\", line 2426, in reconstruct\n    raise ValueError(\"History must be the same-turn prediction\")\nValueError: History must be the same-turn prediction\n",
+        "turn": 45
+      },
+      "first_nonplan_event": {
+        "turn": 44,
+        "action": "WAIT",
+        "prediction_turns_before": [
+          44
+        ],
+        "prediction_turns_after": [
+          44
+        ],
+        "hypothesis_count": 1,
+        "current_board_matches_truth": false,
+        "agent_info": {
+          "name": "V3 vision",
+          "backend_sha256": "6c668eaa24acf234d7188cb0606203e9af1ece9a3323b980adab75d50f5a30fd",
+          "input_mode": "image",
+          "visual_discrepancies": "2",
+          "metadata_discrepancies": "0",
+          "repairs": "1",
+          "recoveries": "0",
+          "actions": "44",
+          "hypotheses": "1",
+          "reason": "unresolved_perception",
+          "conditional_on_perception": "True",
+          "planner_stop_reason": "state_cap",
+          "planner_backend": "fast"
+        },
+        "elapsed": 0.007128308992832899,
+        "stages": {
+          "classify_initial": 0.0012456859985832125,
+          "check_observation": 0.004837155996938236,
+          "reconcile": 0.0015652860020054504
+        },
+        "first_exception": null
+      },
+      "oracle_status": "win",
+      "oracle_reward": -145.0,
+      "first_causal_boundary": "turn44 actor is independently misclassified as boots at probability0.999814, unresolved WAIT is not recorded, turn45 stale history raises ValueError",
+      "unresolved_hypotheses": [
+        "Recovery-only V4 removes stale-history exception but loses with unresolved perception; actor/composite training remains required."
+      ],
+      "control_trace": "artifacts/v4/diagnostics/p3-control/00.json",
+      "recovery_trace": "artifacts/v4/diagnostics/recovery-only/00.json"
+    },
+    {
+      "job": {
+        "label": "multi-gem/d0c11786c55c/6216438758",
+        "generated": 40011,
+        "multiple_gems": true,
+        "layout_split": "final",
+        "seed": 208801402033,
+        "asset_root": "artifacts/v3/data/final-300-v5/asset-root",
+        "appearance_manifest": "artifacts/v3/data/manifest-v5.json",
+        "appearance_manifest_sha256": "a17b735ba0e8183e8d51162c3e3b4219300d18dc080503bf93661fe1bb018e07",
+        "appearance_split": "final",
+        "appearance_seed": 6216438758,
+        "resolution": 512,
+        "expected_image_sha256": "bdf7849d974d9dab2aec517621a5986e9c646cc961b70bcf707adea464ea8fd1",
+        "expected_pixels_sha256": "74bb003145f782ebc7ae2c2517cfc118bfb2f1c7c2b4aa3883b2b5f847f02b6f",
+        "expected_layout_sha256": "d0c11786c55c62e723b83abdda337a1070beb59850c46c06162b53e6762b9d03"
+      },
+      "trace": "artifacts/v4/diagnostics/v3/01.json",
+      "status": "loss",
+      "initial_board_exact": false,
+      "first_exception": null,
+      "first_nonplan_event": {
+        "turn": 24,
+        "action": "WAIT",
+        "prediction_turns_before": [
+          24,
+          24,
+          24,
+          24
+        ],
+        "prediction_turns_after": [
+          24,
+          24,
+          24,
+          24
+        ],
+        "hypothesis_count": 4,
+        "current_board_matches_truth": false,
+        "agent_info": {
+          "name": "V3 vision",
+          "backend_sha256": "6c668eaa24acf234d7188cb0606203e9af1ece9a3323b980adab75d50f5a30fd",
+          "input_mode": "image",
+          "visual_discrepancies": "2",
+          "metadata_discrepancies": "0",
+          "repairs": "2",
+          "recoveries": "0",
+          "actions": "24",
+          "hypotheses": "4",
+          "reason": "hypothesis_disagreement_or_cutoff",
+          "conditional_on_perception": "True",
+          "planner_stop_reason": "deadline",
+          "planner_backend": "fast"
+        },
+        "elapsed": 0.38797678699484095,
+        "stages": {
+          "classify_initial": 0.0014378210034919903,
+          "check_observation": 0.0017461959942011163,
+          "reconcile": 0.006532329993206076,
+          "grid_step": 0.0012010619975626469,
+          "planner": 0.37910954300605226,
+          "common_safe_prefix": 4.277011612430215e-06
+        },
+        "first_exception": null
+      },
+      "oracle_status": "win",
+      "oracle_reward": -81.0,
+      "first_causal_boundary": "initial image classification differs from ground truth before planning",
+      "unresolved_hypotheses": [
+        "Initial errors and later repair exhaust shared deadline; separate trace timing is not qualification timing. No claim of planner insufficiency."
+      ]
+    },
+    {
+      "job": {
+        "label": "combined/e22a7e521384/6220418460",
+        "generated": 40049,
+        "multiple_gems": true,
+        "layout_split": "final",
+        "seed": 208805381735,
+        "asset_root": "artifacts/v3/data/final-300-v5/asset-root",
+        "appearance_manifest": "artifacts/v3/data/manifest-v5.json",
+        "appearance_manifest_sha256": "a17b735ba0e8183e8d51162c3e3b4219300d18dc080503bf93661fe1bb018e07",
+        "appearance_split": "final",
+        "appearance_seed": 6220418460,
+        "resolution": 512,
+        "expected_image_sha256": "8cbd5f4f2f47e4724c05f654084f23848e5c7763f3d1b448e535f9b1d802440c",
+        "expected_pixels_sha256": "80063c7b0ac9f066d248231138a4d03e0b8294929a0158e3f5c3784303ff5d86",
+        "expected_layout_sha256": "e22a7e5213846e721417f6161c7b8837365ae0d49d66656956d73ec1554d9e4c"
+      },
+      "trace": "artifacts/v4/diagnostics/v3/02.json",
+      "status": "loss",
+      "initial_board_exact": false,
+      "first_exception": null,
+      "first_nonplan_event": {
+        "turn": 70,
+        "action": "WAIT",
+        "prediction_turns_before": [
+          70,
+          70,
+          70,
+          70
+        ],
+        "prediction_turns_after": [
+          70,
+          70,
+          70,
+          70
+        ],
+        "hypothesis_count": 4,
+        "current_board_matches_truth": false,
+        "agent_info": {
+          "name": "V3 vision",
+          "backend_sha256": "6c668eaa24acf234d7188cb0606203e9af1ece9a3323b980adab75d50f5a30fd",
+          "input_mode": "image",
+          "visual_discrepancies": "1",
+          "metadata_discrepancies": "0",
+          "repairs": "1",
+          "recoveries": "0",
+          "actions": "70",
+          "hypotheses": "4",
+          "reason": "hypothesis_disagreement_or_cutoff",
+          "conditional_on_perception": "True",
+          "planner_stop_reason": "deadline",
+          "planner_backend": "fast"
+        },
+        "elapsed": 0.41897443200286943,
+        "stages": {
+          "classify_initial": 0.0013094809983158484,
+          "check_observation": 0.0015547600050922483,
+          "reconcile": 0.013502790010534227,
+          "grid_step": 0.0035158620012225583,
+          "planner": 0.4026937870075926,
+          "common_safe_prefix": 5.0910020945593715e-06
+        },
+        "first_exception": null
+      },
+      "oracle_status": "win",
+      "oracle_reward": -217.0,
+      "first_causal_boundary": "initial image classification differs from ground truth before planning",
+      "unresolved_hypotheses": [
+        "Initial errors and later repair exhaust shared deadline; separate trace timing is not qualification timing. No claim of planner insufficiency."
+      ]
+    },
+    {
+      "job": {
+        "label": "combined/d0e0df267c3a/6222513040",
+        "generated": 40069,
+        "multiple_gems": true,
+        "layout_split": "final",
+        "seed": 208807476315,
+        "asset_root": "artifacts/v3/data/final-300-v5/asset-root",
+        "appearance_manifest": "artifacts/v3/data/manifest-v5.json",
+        "appearance_manifest_sha256": "a17b735ba0e8183e8d51162c3e3b4219300d18dc080503bf93661fe1bb018e07",
+        "appearance_split": "final",
+        "appearance_seed": 6222513040,
+        "resolution": 512,
+        "expected_image_sha256": "fccf8811a414165f1514ad8ad7ce9602008809b799a9bb82e552fa31e79f1cb5",
+        "expected_pixels_sha256": "9490dd445d8e6b6b12d1993682c018d2deeec61fa2b41e4f968b7fd0230e0cad",
+        "expected_layout_sha256": "d0e0df267c3af4d77b8db3b5f8960cee8600928c137dbd7c4e371d51bef7e53b"
+      },
+      "trace": "artifacts/v4/diagnostics/v3/03.json",
+      "status": "loss",
+      "initial_board_exact": false,
+      "first_exception": null,
+      "first_nonplan_event": {
+        "turn": 69,
+        "action": "WAIT",
+        "prediction_turns_before": [
+          69,
+          69
+        ],
+        "prediction_turns_after": [
+          69,
+          69
+        ],
+        "hypothesis_count": 2,
+        "current_board_matches_truth": false,
+        "agent_info": {
+          "name": "V3 vision",
+          "backend_sha256": "6c668eaa24acf234d7188cb0606203e9af1ece9a3323b980adab75d50f5a30fd",
+          "input_mode": "image",
+          "visual_discrepancies": "3",
+          "metadata_discrepancies": "2",
+          "repairs": "3",
+          "recoveries": "1",
+          "actions": "69",
+          "hypotheses": "2",
+          "reason": "hypothesis_disagreement_or_cutoff",
+          "conditional_on_perception": "True",
+          "planner_stop_reason": "deadline",
+          "planner_backend": "fast"
+        },
+        "elapsed": 0.18110049300594255,
+        "stages": {
+          "classify_initial": 0.0015393520006909966,
+          "check_observation": 0.0018391459889244288,
+          "reconcile": 0.0062403360061580315,
+          "grid_step": 0.0010723110026447102,
+          "planner": 0.17201663699233904,
+          "common_safe_prefix": 2.90299067273736e-06
+        },
+        "first_exception": null
+      },
+      "oracle_status": "win",
+      "oracle_reward": -205.0,
+      "first_causal_boundary": "initial image classification differs from ground truth before planning",
+      "unresolved_hypotheses": [
+        "Initial errors and later repair exhaust shared deadline; separate trace timing is not qualification timing. No claim of planner insufficiency."
+      ]
+    },
+    {
+      "job": {
+        "label": "combined/b391e8446a65/6223560330",
+        "generated": 40079,
+        "multiple_gems": true,
+        "layout_split": "final",
+        "seed": 208808523605,
+        "asset_root": "artifacts/v3/data/final-300-v5/asset-root",
+        "appearance_manifest": "artifacts/v3/data/manifest-v5.json",
+        "appearance_manifest_sha256": "a17b735ba0e8183e8d51162c3e3b4219300d18dc080503bf93661fe1bb018e07",
+        "appearance_split": "final",
+        "appearance_seed": 6223560330,
+        "resolution": 512,
+        "expected_image_sha256": "bca7a5644db24a5903fe7a78a1a72a08ced0040542e1f29785e9b87e9d978801",
+        "expected_pixels_sha256": "0aac2bea2d52d2029e71fdf250cbf31e96b9f1eaff8d6981cfb865726577a4d9",
+        "expected_layout_sha256": "b391e8446a65e1422ca0888b37512569a75c41feee0ff975b6b6bc339d00218c"
+      },
+      "trace": "artifacts/v4/diagnostics/v3/04.json",
+      "status": "loss",
+      "initial_board_exact": false,
+      "first_exception": null,
+      "first_nonplan_event": {
+        "turn": 31,
+        "action": "WAIT",
+        "prediction_turns_before": [
+          31,
+          31,
+          31,
+          31
+        ],
+        "prediction_turns_after": [
+          31,
+          31,
+          31,
+          31
+        ],
+        "hypothesis_count": 4,
+        "current_board_matches_truth": false,
+        "agent_info": {
+          "name": "V3 vision",
+          "backend_sha256": "6c668eaa24acf234d7188cb0606203e9af1ece9a3323b980adab75d50f5a30fd",
+          "input_mode": "image",
+          "visual_discrepancies": "3",
+          "metadata_discrepancies": "0",
+          "repairs": "3",
+          "recoveries": "0",
+          "actions": "31",
+          "hypotheses": "4",
+          "reason": "cutoff",
+          "conditional_on_perception": "True",
+          "planner_stop_reason": "state_cap",
+          "planner_backend": "fast"
+        },
+        "elapsed": 0.0005770980060333386,
+        "stages": {},
+        "first_exception": null
+      },
+      "oracle_status": "win",
+      "oracle_reward": -91.0,
+      "first_causal_boundary": "initial image classification differs from ground truth before planning",
+      "unresolved_hypotheses": [
+        "Initial errors and later repair exhaust shared deadline; separate trace timing is not qualification timing. No claim of planner insufficiency."
+      ]
+    }
+  ],
+  "all_13_jobs_traced": true
+}

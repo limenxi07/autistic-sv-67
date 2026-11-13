@@ -1,0 +1,39 @@
+{
+  "source_sha256": "0951a3bcd131aa268846e765e7b93a6dec23ae4c1c84230fff239075bab8df54",
+  "bytes": 726425,
+  "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+  "model_sha256": "44c9f8ebe0e0bc5b663500ba8c6f401336ee6db023080058d8d23696f4e97f82",
+  "checkpoint_sha256": "45a6768c467d0bacac481f70e033b4f1d71560c5db49c2553ae4ba1861207690",
+  "policy_sha256": "5bdbe01ebb49b42d28de10ae5720ed25c6c1e8f298bac624ef7321aa110f3fd1",
+  "policy": {
+    "temperature": 1.8340080864093418,
+    "min_confidence": 0.9,
+    "min_margin": 0.1,
+    "view": "full"
+  },
+  "runtime_sources": {
+    "artifacts/p3/frozen/task1_agent.py": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+    "agents/vision_v4_backend.py": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+    "agents/vision_v4_types.py": "801aad04fc861ef98d6146880dc308df3bc23010551e76cb85858b487a582647",
+    "agents/vision_v4_bridge.py": "56b4b0e68207921b9786b49e15caff4f335b32d908dfb08dd62d30ce04e909dc",
+    "agents/vision_v4_model.py": "c9bc5cec8497ff1da6f9c3bbc5ff8695f2c12dd83163f85c9a55fb813202f63a",
+    "agents/vision_v4_perception.py": "55927b2098adfb9b1deade31cf423cd9a9efab6cdb160a63c3939656b3d1b9e0",
+    "agents/vision_v4_tracking.py": "a9e5b7cb32ef711322bc90f5312a7783edd2439cd3e45fda47c8fd64a36eec73",
+    "agents/vision_v4_search.py": "e776299122d4d58460065945387e2ca448ab0c14932c3536f3c7b2032166c1f1",
+    "agents/vision_v4_planner.py": "2703ed0cd82a58134a5778007d17f280b4a36230723ba27520c74f9eb181e9f3",
+    "agents/vision_v4.py": "b4be42d22eb67a222bdbdc48371a75329bd571cf3e9f6a01db441b793bcca83b"
+  },
+  "configuration": {
+    "initial_seconds": 3.0,
+    "cutoff_seconds": 3.5,
+    "image_execution_cutoff_seconds": 4.65,
+    "reference_initial_seconds": 2.0,
+    "max_hypotheses": 4,
+    "max_ambiguous_cells": 2,
+    "default_structured": "P3.Agent"
+  },
+  "export_parity_passed": true,
+  "runtime_overrides": {},
+  "inference_format": "numpy-fp32",
+  "status": "Source freeze only; qualification gates are separate."
+}

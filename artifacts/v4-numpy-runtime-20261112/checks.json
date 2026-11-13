@@ -1,0 +1,123 @@
+{
+  "repository_tests": {
+    "command": "MPLCONFIGDIR=/tmp/v4-mpl UV_CACHE_DIR=/tmp/v4-uv-cache uv run --frozen --no-sync python -m unittest discover -s tests -v",
+    "exit_code": 0,
+    "tests": 354,
+    "seconds": 159.914,
+    "log": "artifacts/v4-numpy-runtime-20261112/all-tests-final.log"
+  },
+  "initial_full_tests": {
+    "tests": 353,
+    "seconds": 167.788,
+    "log": "artifacts/v4-numpy-runtime-20261112/all-tests.log"
+  },
+  "validator_after_style_cleanup": {
+    "log": "artifacts/v4-numpy-runtime-20261112/package-final.log",
+    "exit_code": 0
+  },
+  "export_parity": "artifacts/v4-numpy-runtime-20261112/export/report.json",
+  "real_public_probability_parity": "artifacts/v4-numpy-runtime-20261112/public-probability-parity.json",
+  "static_checks": "artifacts/v4-numpy-runtime-20261112/static-checks-final.json",
+  "source_repackage_byte_identical": true,
+  "review": "artifacts/v4-numpy-runtime-20261112/review.md",
+  "protected_parent_inventory": "artifacts/v4-numpy-runtime-20261112/protected-check.json",
+  "local_seed42_diagnostic": {
+    "wins": 20,
+    "cases": 22,
+    "failed_cases": [
+      "B4 Measure Twice and Cut Once",
+      "B10 Khoa Was Here"
+    ],
+    "path": "artifacts/v4-numpy-runtime-20261112/local-seed42.json"
+  },
+  "target_host_validation": {
+    "public-module-66": {
+      "checks": {
+        "all_jobs": true,
+        "all_win": true,
+        "all_exact": true,
+        "no_torch_import": true,
+        "original_budgets": true,
+        "resources": true,
+        "performance_profile": true,
+        "same_rewards": true
+      },
+      "passed": true,
+      "wins": 66,
+      "exact_boards": 66,
+      "cases": 66,
+      "source_sha256": "832a8450b61fec09076d66bb03a324b10452a6bae0932d5fbb455238c9862c2e",
+      "max_episode_seconds": 3.3826433509821072,
+      "max_strict_cold_seconds": 3.49064490996534,
+      "peak_rss_bytes": 120254464,
+      "failures": []
+    },
+    "public-notebook-66": {
+      "checks": {
+        "all_jobs": true,
+        "all_win": true,
+        "all_exact": true,
+        "no_torch_import": true,
+        "original_budgets": true,
+        "resources": true,
+        "performance_profile": true,
+        "same_rewards": true
+      },
+      "passed": true,
+      "wins": 66,
+      "exact_boards": 66,
+      "cases": 66,
+      "source_sha256": "9ceb54993d1976b53301f381e7618da32f85fa6329c2ba68f6ade049fd792fe1",
+      "max_episode_seconds": 3.396148612955585,
+      "max_strict_cold_seconds": 3.5059287060284987,
+      "peak_rss_bytes": 119586816,
+      "failures": []
+    },
+    "debug-seed42-22": {
+      "checks": {
+        "all_jobs": true,
+        "all_win": true,
+        "all_exact": true,
+        "no_torch_import": true,
+        "original_budgets": true,
+        "resources": true,
+        "performance_profile": true
+      },
+      "passed": true,
+      "wins": 22,
+      "exact_boards": 22,
+      "cases": 22,
+      "source_sha256": "832a8450b61fec09076d66bb03a324b10452a6bae0932d5fbb455238c9862c2e",
+      "max_episode_seconds": 3.3731671730056405,
+      "max_strict_cold_seconds": 3.4824261459871195,
+      "peak_rss_bytes": 119406592,
+      "failures": []
+    },
+    "retired-300": {
+      "checks": {
+        "all_jobs": true,
+        "all_win": true,
+        "all_exact": true,
+        "no_torch_import": true,
+        "original_budgets": true,
+        "resources": true,
+        "performance_profile": true,
+        "same_rewards": true
+      },
+      "passed": true,
+      "wins": 300,
+      "exact_boards": 300,
+      "cases": 300,
+      "source_sha256": "832a8450b61fec09076d66bb03a324b10452a6bae0932d5fbb455238c9862c2e",
+      "max_episode_seconds": 3.187163606984541,
+      "max_strict_cold_seconds": 3.3185161410365254,
+      "peak_rss_bytes": 131903488,
+      "failures": []
+    }
+  },
+  "platform_retest": "pending",
+  "new_training_fits": 0,
+  "consumed_final_replays": 0,
+  "source_sha256": "832a8450b61fec09076d66bb03a324b10452a6bae0932d5fbb455238c9862c2e",
+  "source_bytes": 679147
+}

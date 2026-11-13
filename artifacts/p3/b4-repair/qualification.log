@@ -1,0 +1,65 @@
+{
+  "passed": true,
+  "source_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+  "checks": {
+    "boss": [],
+    "public": [],
+    "generated": [],
+    "stress": [],
+    "holdout": [],
+    "boss-paired-rewards": [],
+    "public-paired-rewards": [],
+    "generated-paired-rewards": [],
+    "stress-coverage": [],
+    "holdout-coverage": [],
+    "freeze-before-acceptance": [],
+    "frozen-fixture": [],
+    "stress-preserved-winners": [],
+    "differential": [],
+    "exact-source": [],
+    "protected-P1-P2": []
+  },
+  "distributions": {
+    "boss": {
+      "cases": 6,
+      "wins": 6,
+      "median_seconds": 0.605583997501526,
+      "maximum_seconds": 0.9280139229958877,
+      "p95_seconds": 0.9280139229958877,
+      "peak_rss_bytes": 253476864
+    },
+    "public": {
+      "cases": 66,
+      "wins": 66,
+      "median_seconds": 0.3608051670016721,
+      "maximum_seconds": 3.1747656259976793,
+      "p95_seconds": 0.5459385989961447,
+      "peak_rss_bytes": 301944832
+    },
+    "generated": {
+      "cases": 200,
+      "wins": 200,
+      "median_seconds": 0.3926539909953135,
+      "maximum_seconds": 3.2330043070105603,
+      "p95_seconds": 3.1917700310004875,
+      "peak_rss_bytes": 306978816
+    },
+    "stress": {
+      "cases": 36,
+      "wins": 36,
+      "median_seconds": 0.6118831205021706,
+      "maximum_seconds": 2.98117398499744,
+      "p95_seconds": 2.9704962090036133,
+      "peak_rss_bytes": 256577536
+    },
+    "holdout": {
+      "cases": 18,
+      "wins": 18,
+      "median_seconds": 1.1138480625013472,
+      "maximum_seconds": 3.2748882729938487,
+      "p95_seconds": 3.2748882729938487,
+      "peak_rss_bytes": 257105920
+    }
+  },
+  "evidence_scope": "P3 dispatch repair. All prior public/generated/stress/holdout fixtures are reused regression data, not untouched holdout/generalization evidence. Slow-transition virtual clock explicitly reproduces reported dispatch failure. Platform debugging rerun pending user."
+}

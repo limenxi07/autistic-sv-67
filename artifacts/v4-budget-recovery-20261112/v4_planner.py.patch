@@ -1,0 +1,18 @@
+--- before/agents/v4_planner.py
++++ after/agents/v4_planner.py
+@@ -3,6 +3,8 @@
+ The standalone packager vendors the exact parent bytes identified below.
+ This module does not read source files or import any vision library at runtime.
+ """
++
++from time import perf_counter
+ 
+ from agents.v4_backend import Agent as StructuredAgent
+ from agents.v4_backend import PlannerAdapter as BackendPlannerAdapter
+@@ -29,3 +31,6 @@
+                 budget.initial_deadline, budget.started_at + 2.0
+             ),
+         )
++        # Cold perception may have spent the initial interval before this
++        # adapter exists. Enter recovery now; never create a new deadline.
++        self._tried = perf_counter() >= self._initial_deadline

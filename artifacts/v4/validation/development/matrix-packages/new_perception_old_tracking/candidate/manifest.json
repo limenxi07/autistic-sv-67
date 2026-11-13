@@ -1,0 +1,38 @@
+{
+  "source_sha256": "98af44f7446fd4309036c79e478eb9d737141243aac02ce4dda738e04621f2e3",
+  "bytes": 683065,
+  "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+  "model_sha256": "d4e0bdc680995b556307eb696da4b03029ea8d326ca389add53ec6b4271a70b7",
+  "checkpoint_sha256": "45a6768c467d0bacac481f70e033b4f1d71560c5db49c2553ae4ba1861207690",
+  "policy_sha256": "680de13412d50a6e1b26cfc1e381aa5da61e9eb05b265e64b2187062cbafd390",
+  "policy": {
+    "temperature": 1.8340080864093418,
+    "min_confidence": 0.9,
+    "min_margin": 0.1,
+    "view": "full"
+  },
+  "runtime_sources": {
+    "artifacts/p3/frozen/task1_agent.py": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+    "agents/v4_backend.py": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+    "agents/v4_types.py": "f8260ca790f304d1708488663c0688b829b53a63ec92b6005eadf01a0c7e9fb2",
+    "agents/v4_bridge.py": "4de2865a94da7791ad0df8930939ba4e6dc86a012754adff88b4bcc0a67cce21",
+    "agents/v4_model.py": "3c8ffa1a0913d32588d94fb13760e55479c0538a8c122ba26314e316267fd2e8",
+    "agents/v4_perception.py": "d445198f6772f6b2f85c184154878b455bbca161e40117c1405a4db42fc3e58c",
+    "agents/v4_tracking.py": "70a26f4340c5f42b61ff7931e8289e7bba007468ed7201e0d2b351cddca67d08",
+    "agents/v4_planner.py": "0e0e3a97d2b6665f5e56ea4457b03509fa9d53df5ca18e8b2d628f0d294e0e80",
+    "agents/v4.py": "e6704c40708985220257f0dbf39bbdc5e8827be3ad9504a4d2109d2677afea06"
+  },
+  "configuration": {
+    "initial_seconds": 3.0,
+    "cutoff_seconds": 3.5,
+    "reference_initial_seconds": 2.0,
+    "max_hypotheses": 4,
+    "max_ambiguous_cells": 2,
+    "default_structured": "P3.Agent"
+  },
+  "export_parity_passed": true,
+  "runtime_overrides": {},
+  "status": "Source freeze only; qualification gates are separate.",
+  "ablation": "new_perception_old_tracking",
+  "perception_implementation": "selected V4"
+}

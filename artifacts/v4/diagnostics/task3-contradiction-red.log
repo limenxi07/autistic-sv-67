@@ -1,0 +1,21 @@
+test_exception_after_contradiction_cannot_advance_disproved_state (tests.test_v4_agent.RecoveryTests.test_exception_after_contradiction_cannot_advance_disproved_state) ... FAIL
+
+======================================================================
+FAIL: test_exception_after_contradiction_cannot_advance_disproved_state (tests.test_v4_agent.RecoveryTests.test_exception_after_contradiction_cannot_advance_disproved_state)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/enxi/coding/autistic-sv-67/tests/test_v4_agent.py", line 158, in test_exception_after_contradiction_cannot_advance_disproved_state
+    self.assertEqual(agent._hypotheses,())
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: Tuples differ: (BoardHypothesis(state=GridState(width=3, [877 chars]()),) != ()
+
+First tuple contains 1 additional elements.
+First extra element 0:
+BoardHypothesis(state=GridState(width=3, height=1, movement=CardinalMovement(name='cardinal', description='Single-step cardinal movement.', function=<function cardinal_move_fn at 0x108676ac0>), objective=CollectGemsAndExitObjective(name='collect_exit', description='Collect all gems (if any) and reach an exit tile.', functions=(<function collect_objective_fn at 0x108695760>, <function exit_objective_fn at 0x108695580>)), seed=42, grid=[[[]], [[AgentEntity(agent=Agent(), appearance=Appearance(name='human', priority=0, icon=False, background=False), collidable=Collidable(), health=Health(current_health=5, max_health=5), inventory=Inventory(item_ids=set()), status=Status(effect_ids=set()))]], [[ExitEntity(appearance=Appearance(name='exit', priority=9, icon=False, background=False), exit=Exit())]]], turn=2, score=-6, step_cost=3, win=False, lose=False, message=None, turn_limit=150), confidence=1.0, unresolved=())
+
+Diff is 932 characters long. Set self.maxDiff to None to see it.
+
+----------------------------------------------------------------------
+Ran 1 test in 1.072s
+
+FAILED (failures=1)

@@ -1,0 +1,43 @@
+...FF.FF.
+======================================================================
+FAIL: test_fast_cached_dispatch_checks_time_after_observation (tests.test_p2_next.DeadlineTests.test_fast_cached_dispatch_checks_time_after_observation)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/enxi/coding/autistic-sv-67/tests/test_p2_next.py", line 162, in test_fast_cached_dispatch_checks_time_after_observation
+    self.assertEqual(action, Action.WAIT)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+AssertionError: <Action.RIGHT: 'right'> != <Action.WAIT: 'wait'>
+
+======================================================================
+FAIL: test_late_fallback_uses_remaining_original_cutoff_immediately (tests.test_p2_next.DeadlineTests.test_late_fallback_uses_remaining_original_cutoff_immediately)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/enxi/coding/autistic-sv-67/tests/test_p2_next.py", line 217, in test_late_fallback_uses_remaining_original_cutoff_immediately
+    search.assert_called_once()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/enxi/.local/share/uv/python/cpython-3.13.15-macos-aarch64-none/lib/python3.13/unittest/mock.py", line 958, in assert_called_once
+    raise AssertionError(msg)
+AssertionError: Expected 'reference_search' to have been called once. Called 0 times.
+
+======================================================================
+FAIL: test_reference_cached_dispatch_checks_time_after_observation (tests.test_p2_next.DeadlineTests.test_reference_cached_dispatch_checks_time_after_observation)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/enxi/coding/autistic-sv-67/tests/test_p2_next.py", line 183, in test_reference_cached_dispatch_checks_time_after_observation
+    self.assertEqual(action, Action.WAIT)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+AssertionError: <Action.RIGHT: 'right'> != <Action.WAIT: 'wait'>
+
+======================================================================
+FAIL: test_search_completion_after_cutoff_does_not_dispatch (tests.test_p2_next.DeadlineTests.test_search_completion_after_cutoff_does_not_dispatch)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/enxi/coding/autistic-sv-67/tests/test_p2_next.py", line 208, in test_search_completion_after_cutoff_does_not_dispatch
+    self.assertEqual(action, Action.WAIT, "fast="+str(fast))
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: <Action.RIGHT: 'right'> != <Action.WAIT: 'wait'> : fast=True
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.006s
+
+FAILED (failures=4)

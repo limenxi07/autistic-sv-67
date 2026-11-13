@@ -1,0 +1,35 @@
+{
+  "repository_tests": {
+    "command": "MPLCONFIGDIR=/tmp/v4-mpl UV_CACHE_DIR=/tmp/v4-uv-cache uv run --frozen --no-sync python -m unittest discover -s tests -v",
+    "exit_code": 0,
+    "tests": 352,
+    "seconds": 178.073,
+    "log": "artifacts/v4-budget-recovery-20261112/all-tests-complete-repair.log"
+  },
+  "focused_tests": {
+    "tests": 47,
+    "seconds": 10.378,
+    "log": "artifacts/v4-budget-recovery-20261112/green-no-extra-wait.log"
+  },
+  "regressions_red": [
+    "artifacts/v4-budget-recovery-20261112/red.log",
+    "artifacts/v4-budget-recovery-20261112/red-no-extra-wait.log"
+  ],
+  "static_checks": "artifacts/v4-budget-recovery-20261112/static-checks.json",
+  "protected_inventory": "artifacts/v4-budget-recovery-20261112/protected-check.json",
+  "repackage_byte_identical": true,
+  "changed_runtime_modules": [
+    "agents/v4.py",
+    "agents/v4_planner.py"
+  ],
+  "unchanged": [
+    "CNN weights",
+    "selected policy",
+    "frozen P3 backend",
+    "original budgets",
+    "tracking visual policy"
+  ],
+  "platform_retest": "pending",
+  "new_fits": 0,
+  "final_corpus_replays": 0
+}

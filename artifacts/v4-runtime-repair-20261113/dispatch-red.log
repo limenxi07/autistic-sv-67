@@ -1,0 +1,38 @@
+test_copied_state_uses_normal_validation (tests.test_vision_v4_runtime_repair.VerifiedDispatchCostTests.test_copied_state_uses_normal_validation) ... ok
+test_mutation_rejects_saved_compact_key (tests.test_vision_v4_runtime_repair.VerifiedDispatchCostTests.test_mutation_rejects_saved_compact_key) ... 
+  test_mutation_rejects_saved_compact_key (tests.test_vision_v4_runtime_repair.VerifiedDispatchCostTests.test_mutation_rejects_saved_compact_key) (mutation='health') ... ERROR
+test_verified_state_dispatch_does_not_repeat_compact_schema_scan (tests.test_vision_v4_runtime_repair.VerifiedDispatchCostTests.test_verified_state_dispatch_does_not_repeat_compact_schema_scan) ... FAIL
+test_verified_state_guard_also_applies_after_planning_cutoff (tests.test_vision_v4_runtime_repair.VerifiedDispatchCostTests.test_verified_state_guard_also_applies_after_planning_cutoff) ... FAIL
+
+======================================================================
+ERROR: test_mutation_rejects_saved_compact_key (tests.test_vision_v4_runtime_repair.VerifiedDispatchCostTests.test_mutation_rejects_saved_compact_key) (mutation='health')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/enxi/coding/autistic-sv-67/tests/test_vision_v4_runtime_repair.py", line 42, in test_mutation_rejects_saved_compact_key
+    actor.health.current_health -= 1
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<string>", line 16, in __setattr__
+dataclasses.FrozenInstanceError: cannot assign to field 'current_health'
+
+======================================================================
+FAIL: test_verified_state_dispatch_does_not_repeat_compact_schema_scan (tests.test_vision_v4_runtime_repair.VerifiedDispatchCostTests.test_verified_state_dispatch_does_not_repeat_compact_schema_scan)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/enxi/coding/autistic-sv-67/tests/test_vision_v4_runtime_repair.py", line 25, in test_verified_state_dispatch_does_not_repeat_compact_schema_scan
+    self.assertEqual(scan.call_count, 0)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+AssertionError: 1 != 0
+
+======================================================================
+FAIL: test_verified_state_guard_also_applies_after_planning_cutoff (tests.test_vision_v4_runtime_repair.VerifiedDispatchCostTests.test_verified_state_guard_also_applies_after_planning_cutoff)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/enxi/coding/autistic-sv-67/tests/test_vision_v4_runtime_repair.py", line 60, in test_verified_state_guard_also_applies_after_planning_cutoff
+    self.assertEqual(scan.call_count, 0)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+AssertionError: 1 != 0
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.038s
+
+FAILED (failures=2, errors=1)

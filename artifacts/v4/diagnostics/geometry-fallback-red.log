@@ -1,0 +1,64 @@
+test_invalid_geometry_fallback_does_not_replay_old_board (tests.test_v4_agent.RecoveryTests.test_invalid_geometry_fallback_does_not_replay_old_board) ... FAIL
+
+======================================================================
+FAIL: test_invalid_geometry_fallback_does_not_replay_old_board (tests.test_v4_agent.RecoveryTests.test_invalid_geometry_fallback_does_not_replay_old_board)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/enxi/coding/autistic-sv-67/agents/v4.py", line 107, in step
+    return self._step_image(observation)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/Users/enxi/coding/autistic-sv-67/agents/v4.py", line 248, in _step_image
+    check = check_observation(
+        observation,
+    ...<3 lines>...
+        actor_template=self._actor_template,
+    )
+  File "/Users/enxi/.local/share/uv/python/cpython-3.13.15-macos-aarch64-none/lib/python3.13/unittest/mock.py", line 1169, in __call__
+    return self._mock_call(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/Users/enxi/.local/share/uv/python/cpython-3.13.15-macos-aarch64-none/lib/python3.13/unittest/mock.py", line 1173, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/Users/enxi/.local/share/uv/python/cpython-3.13.15-macos-aarch64-none/lib/python3.13/unittest/mock.py", line 1234, in _execute_mock_call
+    raise effect
+RuntimeError: bad frame
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/enxi/coding/autistic-sv-67/tests/test_v4_agent.py", line 181, in test_invalid_geometry_fallback_does_not_replay_old_board
+    self.assertEqual(agent.step(observation),Action.WAIT)
+                     ~~~~~~~~~~^^^^^^^^^^^^^
+  File "/Users/enxi/coding/autistic-sv-67/agents/v4.py", line 109, in step
+    return self._emit_action(
+           ~~~~~~~~~~~~~~~~~^
+        Action.WAIT,
+        ^^^^^^^^^^^^
+    ...<2 lines>...
+        reason="unsupported_observation:" + type(error).__name__,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/enxi/coding/autistic-sv-67/agents/v4.py", line 156, in _emit_action
+    predictions = tuple(
+        BoardHypothesis(
+    ...<2 lines>...
+        for h in hypotheses
+    )
+  File "/Users/enxi/coding/autistic-sv-67/agents/v4.py", line 158, in <genexpr>
+    grid_step(h.state, action), h.confidence, h.unresolved
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/Users/enxi/.local/share/uv/python/cpython-3.13.15-macos-aarch64-none/lib/python3.13/unittest/mock.py", line 1169, in __call__
+    return self._mock_call(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/Users/enxi/.local/share/uv/python/cpython-3.13.15-macos-aarch64-none/lib/python3.13/unittest/mock.py", line 1173, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/Users/enxi/.local/share/uv/python/cpython-3.13.15-macos-aarch64-none/lib/python3.13/unittest/mock.py", line 1234, in _execute_mock_call
+    raise effect
+AssertionError: invalid geometry replay
+
+----------------------------------------------------------------------
+Ran 1 test in 1.076s
+
+FAILED (failures=1)

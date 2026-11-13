@@ -1,0 +1,173 @@
+{
+  "status": "Task2 and Task3 promoted after user-reported platform Debugging passes.",
+  "candidate": {
+    "task2": {
+      "sha256": "291207ab939644f7c06ebf6e6f340b10f7665ee0d051804408fe10cda7106e9c",
+      "bytes": 731887,
+      "reproduced": true
+    },
+    "task3": {
+      "sha256": "ff7b47d1f2e6d97148cec07eac5ddcd2e6b959bac64192f763ec8c47e6c2f1c3",
+      "bytes": 734984,
+      "reproduced": true
+    }
+  },
+  "tests": {
+    "unittest": 415,
+    "passed": 415,
+    "ruff": "passed",
+    "ty_production_modules": "passed",
+    "diff_check": "passed",
+    "independent_review": "no remaining actionable findings"
+  },
+  "runs": {
+    "final-omarchy-public66": {
+      "source_sha256": "291207ab939644f7c06ebf6e6f340b10f7665ee0d051804408fe10cda7106e9c",
+      "episodes": 66,
+      "wins_within_limit": 66,
+      "max_seconds": 0.5728312330029439,
+      "min_score": 1,
+      "host": "omarchy",
+      "cpu": "Intel(R) Core(TM) Ultra 9 275HX",
+      "synthetic": false,
+      "failures": []
+    },
+    "final-omarchy-notebook22": {
+      "source_sha256": "e5111531e4ccfdde826ad5f61cadd58b35e7c024158f613697a147ecece2357f",
+      "episodes": 22,
+      "wins_within_limit": 22,
+      "max_seconds": 0.5255714610029827,
+      "min_score": 1,
+      "host": "omarchy",
+      "cpu": "Intel(R) Core(TM) Ultra 9 275HX",
+      "synthetic": false,
+      "failures": []
+    },
+    "final-omarchy-boss12": {
+      "source_sha256": "ff7b47d1f2e6d97148cec07eac5ddcd2e6b959bac64192f763ec8c47e6c2f1c3",
+      "episodes": 12,
+      "wins_within_limit": 12,
+      "max_seconds": 1.0221924259967636,
+      "min_score": 2,
+      "host": "omarchy",
+      "cpu": "Intel(R) Core(TM) Ultra 9 275HX",
+      "synthetic": false,
+      "failures": []
+    },
+    "final-omarchy-boss-notebook4": {
+      "source_sha256": "2e2db8c0866ae4941ea92cdf36cb2f658aaced73fd096367f4964f55f941f513",
+      "episodes": 4,
+      "wins_within_limit": 4,
+      "max_seconds": 0.995789191001677,
+      "min_score": 2,
+      "host": "omarchy",
+      "cpu": "Intel(R) Core(TM) Ultra 9 275HX",
+      "synthetic": false,
+      "failures": []
+    },
+    "final-stress6": {
+      "source_sha256": "291207ab939644f7c06ebf6e6f340b10f7665ee0d051804408fe10cda7106e9c",
+      "episodes": 22,
+      "wins_within_limit": 21,
+      "max_seconds": 5.02848852405441,
+      "min_score": 0.0,
+      "host": "basement",
+      "cpu": "arm",
+      "synthetic": true,
+      "failures": [
+        {
+          "label": "B4 Measure Twice and Cut Once",
+          "observation": null,
+          "seed": 42,
+          "turns": 122,
+          "seconds": 5.02848852405441,
+          "first_cutoff": {
+            "turn": 108,
+            "elapsed": 4.7000035240234865
+          },
+          "first_wait": null
+        }
+      ]
+    },
+    "final-boss-stress8": {
+      "source_sha256": "ff7b47d1f2e6d97148cec07eac5ddcd2e6b959bac64192f763ec8c47e6c2f1c3",
+      "episodes": 12,
+      "wins_within_limit": 12,
+      "max_seconds": 12.661293999990448,
+      "min_score": 2,
+      "host": "basement",
+      "cpu": "arm",
+      "synthetic": true,
+      "failures": []
+    }
+  },
+  "b4_comparison": {
+    "macOS": {
+      "baseline_agent_mean_seconds": 0.5962516970042392,
+      "candidate_agent_mean_seconds": 0.4174376259967782,
+      "agent_time_reduction_fraction": 0.29989695946507244,
+      "baseline_episode_mean_seconds": 1.093955152999115,
+      "candidate_episode_mean_seconds": 0.9061483193327149
+    },
+    "Omarchy": {
+      "baseline_agent_mean_seconds": 0.3464720543391498,
+      "candidate_agent_mean_seconds": 0.2581573303129214,
+      "agent_time_reduction_fraction": 0.2548971061884838,
+      "baseline_episode_mean_seconds": 0.6196632843299691,
+      "candidate_episode_mean_seconds": 0.5324439826678523
+    }
+  },
+  "limitations": [
+    "Sixfold macOS slowdown still times out B4; this is not a universal timeout fix.",
+    "Public and synthetic results do not certify unseen graded layouts.",
+    "Harness evidence_boundary string says macOS even in remote reports; per-row provenance correctly records Omarchy.",
+    "Episode timers include reset, construction, inference, history, rendering, and final history; module source loading is recorded separately."
+  ],
+  "promotion": "Current Task2 and Task3 match candidate4. Previous releases and historical artifact links preserved. No graded submission made by agent.",
+  "platform_debugging": {
+    "source": "User-pasted platform Debugging output; not independently executed here",
+    "candidate_sha256": "291207ab939644f7c06ebf6e6f340b10f7665ee0d051804408fe10cda7106e9c",
+    "grading_attempt_used": false,
+    "results": [
+      {
+        "test": "test_debugging_image_so_close_yet_so_far(Agent)",
+        "performance": 1.0,
+        "total_reward": -315.0,
+        "win": true,
+        "lose": false,
+        "timeout": false,
+        "error": false,
+        "runtime_seconds": 3.69
+      },
+      {
+        "test": "test_debugging_image_measure_twice_and_cut_once(Agent)",
+        "performance": 1.0,
+        "total_reward": -387.0,
+        "win": true,
+        "lose": false,
+        "timeout": false,
+        "error": false,
+        "runtime_seconds": 4.58
+      }
+    ],
+    "scope": "Two explicit results; do not interpret as all22 or a graded-set pass."
+  },
+  "platform_boss_debugging": {
+    "source": "User report in conversation: both passed, following request to test boss candidate with GridState and ImageObservation in Task3 Debugging.",
+    "candidate_sha256": "ff7b47d1f2e6d97148cec07eac5ddcd2e6b959bac64192f763ec8c47e6c2f1c3",
+    "results": [
+      {
+        "input": "GridState",
+        "reported_result": "passed"
+      },
+      {
+        "input": "ImageObservation",
+        "reported_result": "passed"
+      }
+    ],
+    "runtime_seconds": null,
+    "performance": null,
+    "scope": "User-reported Debugging passes in both input modes; individual test outputs, scores and runtimes were not supplied. Not a graded-set result.",
+    "grading_attempt_used_by_agent": false
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "frozen_at": "2026-11-09T04:42:13.646914+00:00",
+  "source_sha256": "a8efb9c0ce3a151d3170785a5ceb69ec76851c5b7a7eb27983d6b70f9b6554f1",
+  "source_bytes": 93486,
+  "parent_sha256": "6c668eaa24acf234d7188cb0606203e9af1ece9a3323b980adab75d50f5a30fd",
+  "budget": {
+    "default": [
+      3,
+      3.5,
+      5
+    ],
+    "structured_task3": [
+      11,
+      12,
+      15
+    ]
+  },
+  "policy": "Qualified primitive search first; bounded event search only for a nonwinning cap/exhausted result. Stop on first fully public-verified event win.",
+  "limits": {
+    "event_frontier": 1024,
+    "event_records": 8192,
+    "query_frontier": 1024,
+    "query_records": 8192,
+    "query_depth": 24,
+    "alternatives_per_goal": 4
+  },
+  "benefit_gate": "All six reproduced losses win; all existing paired public/generated/boss wins and rewards preserved; episode/RSS/source limits pass. Holdout reported without tuning.",
+  "holdout_opened": false
+}

@@ -1,0 +1,14 @@
+F
+======================================================================
+FAIL: test_safe_dispatch_simulates_returned_action_once (tests.test_v4_agent.RecoveryTests.test_safe_dispatch_simulates_returned_action_once)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/enxi/coding/autistic-sv-67/tests/test_v4_agent.py", line 23, in test_safe_dispatch_simulates_returned_action_once
+    self.assertEqual(emission_step.call_count + safety_step.call_count, 1)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 2 != 1
+
+----------------------------------------------------------------------
+Ran 1 test in 0.026s
+
+FAILED (failures=1)

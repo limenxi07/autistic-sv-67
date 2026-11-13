@@ -1,0 +1,47 @@
+[project]
+name = "cs2109s-ay2627s1-capstone-project"
+version = "0.1.0"
+requires-python = ">=3.13,<3.14"
+dependencies = [
+    "numpy==2.3.0",
+    "pandas==2.3.0",
+    "scikit-learn==1.7.0",
+    "matplotlib==3.10",
+    "pillow==11.2.1",
+    "scipy==1.15.3",
+    "sympy==1.14.0",
+    "joblib==1.5.1",
+    "seaborn==0.13.*",       # not available in Coursemology
+    "notebook==7.2.*",       # not available in Coursemology
+    "ipympl",                # not available in Coursemology
+    "ipykernel",
+    "grid-universe",
+    "grid-adventure",
+    "grid-play",
+]
+
+[dependency-groups]
+cpu = ["torch==2.7.0", "torchvision==0.22.0"]
+cu128 = ["torch==2.7.0", "torchvision==0.22.0"]
+
+[tool.uv]
+package = false
+default-groups = ["cpu"]
+conflicts = [[{ group = "cpu" }, { group = "cu128" }]]
+
+[[tool.uv.index]]
+name = "pytorch-cpu"
+url = "https://download.pytorch.org/whl/cpu"
+explicit = true
+
+[[tool.uv.index]]
+name = "pytorch-cu128"
+url = "https://download.pytorch.org/whl/cu128"
+explicit = true
+
+[tool.uv.sources]
+torch = [{ index = "pytorch-cpu", group = "cpu" }, { index = "pytorch-cu128", group = "cu128" }]
+torchvision = [{ index = "pytorch-cpu", group = "cpu" }, { index = "pytorch-cu128", group = "cu128" }]
+grid-universe = { git = "https://github.com/grid-universe/grid-universe.git" }
+grid-adventure = { git = "https://github.com/grid-universe/grid-adventure-v1.git" }
+grid-play = { git = "https://github.com/grid-universe/grid-play.git" }

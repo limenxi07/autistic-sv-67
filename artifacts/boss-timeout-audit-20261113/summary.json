@@ -1,0 +1,142 @@
+{
+  "task3_sha256": "8b8f72d79335ba31cf504ae8d1cf33954946905bcd45c6dfecd05f2308323104",
+  "production_changed": false,
+  "batches": {
+    "native-12": {
+      "source": "submissions/task3_agent.py",
+      "sha256": "8b8f72d79335ba31cf504ae8d1cf33954946905bcd45c6dfecd05f2308323104",
+      "cases": 12,
+      "wins_within_limit": 12,
+      "full_score_runs": 12,
+      "maximum_seconds": 1.6251256249997823,
+      "synthetic": false,
+      "failures": []
+    },
+    "stress6-4": {
+      "source": "submissions/task3_agent.py",
+      "sha256": "8b8f72d79335ba31cf504ae8d1cf33954946905bcd45c6dfecd05f2308323104",
+      "cases": 4,
+      "wins_within_limit": 4,
+      "full_score_runs": 4,
+      "maximum_seconds": 10.227456246002475,
+      "synthetic": true,
+      "failures": []
+    },
+    "stress8-12": {
+      "source": "submissions/task3_agent.py",
+      "sha256": "8b8f72d79335ba31cf504ae8d1cf33954946905bcd45c6dfecd05f2308323104",
+      "cases": 12,
+      "wins_within_limit": 9,
+      "full_score_runs": 9,
+      "maximum_seconds": 14.671478695960104,
+      "synthetic": true,
+      "failures": [
+        {
+          "label": "C1 The Heist",
+          "observation": "gridstate",
+          "seed": 42,
+          "reward": -450.0,
+          "seconds": 14.510482760160812,
+          "first_wait": null
+        },
+        {
+          "label": "C1 The Heist",
+          "observation": "gridstate",
+          "seed": 123,
+          "reward": -72.0,
+          "seconds": 12.066892327997266,
+          "first_wait": null
+        },
+        {
+          "label": "C1 The Heist",
+          "observation": "gridstate",
+          "seed": 211,
+          "reward": -450.0,
+          "seconds": 14.671478695960104,
+          "first_wait": null
+        }
+      ]
+    },
+    "task2-control-scale4": {
+      "source": "submissions/task2_agent.py",
+      "sha256": "0b61f5c7c594541b12656995aa2389642ce37a48ad9f5a2bc3544360c45d92d5",
+      "cases": 4,
+      "wins_within_limit": 2,
+      "full_score_runs": 2,
+      "maximum_seconds": 6.693353332057086,
+      "synthetic": true,
+      "failures": [
+        {
+          "label": "C1 The Heist",
+          "observation": "gridstate",
+          "seed": 42,
+          "reward": -450.0,
+          "seconds": 6.2381541959639435,
+          "first_wait": null
+        },
+        {
+          "label": "C1 The Heist",
+          "observation": "image",
+          "seed": 42,
+          "reward": -450.0,
+          "seconds": 6.693353332057086,
+          "first_wait": null
+        }
+      ]
+    },
+    "heist-cutoff-confirmation": {
+      "source": "submissions/task3_agent.py",
+      "sha256": "8b8f72d79335ba31cf504ae8d1cf33954946905bcd45c6dfecd05f2308323104",
+      "cases": 3,
+      "wins_within_limit": 0,
+      "full_score_runs": 0,
+      "maximum_seconds": 14.790277735985,
+      "synthetic": true,
+      "failures": [
+        {
+          "label": "C1 The Heist",
+          "observation": "gridstate",
+          "seed": 42,
+          "reward": -450.0,
+          "seconds": 14.790277735985,
+          "first_wait": {
+            "turn": 25,
+            "elapsed": 12.013804015974529,
+            "reason": "structured_cutoff",
+            "remaining_actions": 32,
+            "cutoff": 12.0
+          }
+        },
+        {
+          "label": "C1 The Heist",
+          "observation": "gridstate",
+          "seed": 123,
+          "reward": -450.0,
+          "seconds": 14.711128663824638,
+          "first_wait": {
+            "turn": 30,
+            "elapsed": 12.021737031960583,
+            "reason": "structured_cutoff",
+            "remaining_actions": 27,
+            "cutoff": 12.0
+          }
+        },
+        {
+          "label": "C1 The Heist",
+          "observation": "gridstate",
+          "seed": 211,
+          "reward": -450.0,
+          "seconds": 14.682709327986231,
+          "first_wait": {
+            "turn": 30,
+            "elapsed": 12.017573687973709,
+            "reason": "structured_cutoff",
+            "remaining_actions": 27,
+            "cutoff": 12.0
+          }
+        }
+      ]
+    }
+  },
+  "platform_status": "Not tested in this audit; synthetic failures do not establish a platform failure."
+}

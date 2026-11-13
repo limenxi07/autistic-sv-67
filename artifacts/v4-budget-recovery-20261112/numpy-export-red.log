@@ -1,0 +1,22 @@
+test_same_trained_cnn_runs_with_numpy_logits (tests.test_v4_numpy_export.NumpyExportTests.test_same_trained_cnn_runs_with_numpy_logits) ... FAIL
+
+======================================================================
+FAIL: test_same_trained_cnn_runs_with_numpy_logits (tests.test_v4_numpy_export.NumpyExportTests.test_same_trained_cnn_runs_with_numpy_logits)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/enxi/coding/autistic-sv-67/tests/test_v4_numpy_export.py", line 13, in test_same_trained_cnn_runs_with_numpy_logits
+    from tools.export_v4_numpy import export_numpy
+ModuleNotFoundError: No module named 'tools.export_v4_numpy'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/enxi/coding/autistic-sv-67/tests/test_v4_numpy_export.py", line 15, in test_same_trained_cnn_runs_with_numpy_logits
+    self.fail("NumPy export of the existing trained CNN is missing")
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: NumPy export of the existing trained CNN is missing
+
+----------------------------------------------------------------------
+Ran 1 test in 0.001s
+
+FAILED (failures=1)

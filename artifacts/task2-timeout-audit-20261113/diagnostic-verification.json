@@ -1,0 +1,5958 @@
+[
+  {
+    "notebook": false,
+    "label": "A0 Basic Movement",
+    "report": {
+      "source": "0b61f5c7c594541b12656995aa2389642ce37a48ad9f5a2bc3544360c45d92d5",
+      "trigger": "predicted_terminal_action",
+      "elapsed": 0.04776,
+      "inflight_step_seconds": 0.0,
+      "initial_window": 3.0,
+      "cutoff": 4.649999999999636,
+      "config": {
+        "movement": "cardinal",
+        "objective": "collect_exit",
+        "seed": 42,
+        "width": 7,
+        "height": 5,
+        "turn_limit": 150
+      },
+      "latest_status": {
+        "score": -9,
+        "phase": "ongoing",
+        "turn": 3
+      },
+      "stats": {
+        "input_mode": "image",
+        "visual_discrepancies": 0,
+        "metadata_discrepancies": 0,
+        "repairs": 0,
+        "recoveries": 0,
+        "actions": 4,
+        "hypotheses": 1,
+        "reason": "conditional_plan",
+        "conditional_on_perception": true,
+        "planner_stop_reason": "exhausted",
+        "planner_backend": "fast"
+      },
+      "plan_remaining": 0,
+      "planner_info": {
+        "search_calls": "1",
+        "cache_hits": "3",
+        "transitions": "29",
+        "expansions": "5",
+        "peak_states": "7",
+        "peak_records": "6",
+        "stop_reason": "exhausted",
+        "time_to_first_win": "0.0011639999993349193"
+      },
+      "stages_inclusive": {
+        "cnn_uncached": {
+          "calls": 4,
+          "seconds": 0.011782
+        },
+        "cnn_total": {
+          "calls": 4,
+          "seconds": 0.013371
+        },
+        "reference_search_transition": {
+          "calls": 4,
+          "seconds": 0.000535
+        },
+        "winning_replay": {
+          "calls": 1,
+          "seconds": 0.000818
+        },
+        "planning_dispatch": {
+          "calls": 4,
+          "seconds": 0.001848
+        },
+        "observation_check": {
+          "calls": 3,
+          "seconds": 0.009538
+        },
+        "reconcile": {
+          "calls": 3,
+          "seconds": 1.1e-05
+        }
+      },
+      "transition_cache_hits": 4,
+      "transition_cache_misses": 0,
+      "agent_seconds": 0.045239,
+      "between_calls_seconds": 0.002512,
+      "sampled_actions": 4,
+      "steps_first_last": [
+        {
+          "turn": 0,
+          "action": "right",
+          "reason": "conditional_plan",
+          "step_s": 0.034426,
+          "gap_s": 2.5e-05
+        },
+        {
+          "turn": 1,
+          "action": "right",
+          "reason": "conditional_plan",
+          "step_s": 0.006499,
+          "gap_s": 0.001037
+        },
+        {
+          "turn": 2,
+          "action": "right",
+          "reason": "conditional_plan",
+          "step_s": 0.00218,
+          "gap_s": 0.000761
+        },
+        {
+          "turn": 3,
+          "action": "right",
+          "reason": "conditional_plan",
+          "step_s": 0.002134,
+          "gap_s": 0.000688
+        }
+      ],
+      "image_shape": [
+        457,
+        640,
+        4
+      ],
+      "board_signature": "1d9170705d94781e",
+      "errors": []
+    },
+    "error_length": 1816
+  },
+  {
+    "notebook": false,
+    "label": "A1 Maze Turns",
+    "report": {
+      "source": "0b61f5c7c594541b12656995aa2389642ce37a48ad9f5a2bc3544360c45d92d5",
+      "trigger": "predicted_terminal_action",
+      "elapsed": 0.050446,
+      "inflight_step_seconds": 0.0,
+      "initial_window": 3.0,
+      "cutoff": 4.649999999999636,
+      "config": {
+        "movement": "cardinal",
+        "objective": "collect_exit",
+        "seed": 42,
+        "width": 9,
+        "height": 7,
+        "turn_limit": 150
+      },
+      "latest_status": {
+        "score": -27,
+        "phase": "ongoing",
+        "turn": 9
+      },
+      "stats": {
+        "input_mode": "image",
+        "visual_discrepancies": 0,
+        "metadata_discrepancies": 0,
+        "repairs": 0,
+        "recoveries": 0,
+        "actions": 10,
+        "hypotheses": 1,
+        "reason": "conditional_plan",
+        "conditional_on_perception": true,
+        "planner_stop_reason": "exhausted",
+        "planner_backend": "fast"
+      },
+      "plan_remaining": 0,
+      "planner_info": {
+        "search_calls": "1",
+        "cache_hits": "9",
+        "transitions": "407",
+        "expansions": "59",
+        "peak_states": "38",
+        "peak_records": "60",
+        "stop_reason": "exhausted",
+        "time_to_first_win": "0.004928083000777406"
+      },
+      "stages_inclusive": {
+        "cnn_uncached": {
+          "calls": 3,
+          "seconds": 0.003751
+        },
+        "cnn_total": {
+          "calls": 3,
+          "seconds": 0.004498
+        },
+        "reference_search_transition": {
+          "calls": 10,
+          "seconds": 0.002271
+        },
+        "winning_replay": {
+          "calls": 1,
+          "seconds": 0.003773
+        },
+        "planning_dispatch": {
+          "calls": 10,
+          "seconds": 0.011739
+        },
+        "observation_check": {
+          "calls": 9,
+          "seconds": 0.008241
+        },
+        "reconcile": {
+          "calls": 9,
+          "seconds": 2e-05
+        }
+      },
+      "transition_cache_hits": 10,
+      "transition_cache_misses": 0,
+      "agent_seconds": 0.040089,
+      "between_calls_seconds": 0.01035,
+      "sampled_actions": 10,
+      "steps_first_last": [
+        {
+          "turn": 0,
+          "action": "down",
+          "reason": "conditional_plan",
+          "step_s": 0.027294,
+          "gap_s": 3.8e-05
+        },
+        {
+          "turn": 1,
+          "action": "down",
+          "reason": "conditional_plan",
+          "step_s": 0.001382,
+          "gap_s": 0.001328
+        },
+        {
+          "turn": 2,
+          "action": "down",
+          "reason": "conditional_plan",
+          "step_s": 0.001147,
+          "gap_s": 0.001111
+        },
+        {
+          "turn": 7,
+          "action": "right",
+          "reason": "conditional_plan",
+          "step_s": 0.002316,
+          "gap_s": 0.001133
+        },
+        {
+          "turn": 8,
+          "action": "right",
+          "reason": "conditional_plan",
+          "step_s": 0.001805,
+          "gap_s": 0.001159
+        },
+        {
+          "turn": 9,
+          "action": "right",
+          "reason": "conditional_plan",
+          "step_s": 0.001208,
+          "gap_s": 0.001039
+        }
+      ],
+      "image_shape": [
+        497,
+        640,
+        4
+      ],
+      "board_signature": "6c921d9d43b17ad5",
+      "errors": []
+    },
+    "error_length": 2003
+  },
+  {
+    "notebook": false,
+    "label": "A2 Optional Coin Path",
+    "report": {
+      "source": "0b61f5c7c594541b12656995aa2389642ce37a48ad9f5a2bc3544360c45d92d5",
+      "trigger": "predicted_terminal_action",
+      "elapsed": 0.208405,
+      "inflight_step_seconds": 0.0,
+      "initial_window": 3.0,
+      "cutoff": 4.649999999999636,
+      "config": {
+        "movement": "cardinal",
+        "objective": "collect_exit",
+        "seed": 42,
+        "width": 9,
+        "height": 7,
+        "turn_limit": 150
+      },
+      "latest_status": {
+        "score": -21,
+        "phase": "ongoing",
+        "turn": 17
+      },
+      "stats": {
+        "input_mode": "image",
+        "visual_discrepancies": 0,
+        "metadata_discrepancies": 0,
+        "repairs": 0,
+        "recoveries": 0,
+        "actions": 18,
+        "hypotheses": 1,
+        "reason": "conditional_plan",
+        "conditional_on_perception": true,
+        "planner_stop_reason": "exhausted",
+        "planner_backend": "fast"
+      },
+      "plan_remaining": 0,
+      "planner_info": {
+        "search_calls": "1",
+        "cache_hits": "17",
+        "transitions": "7571",
+        "expansions": "1082",
+        "peak_states": "484",
+        "peak_records": "1088",
+        "stop_reason": "exhausted",
+        "time_to_first_win": "0.010555791999649955"
+      },
+      "stages_inclusive": {
+        "cnn_uncached": {
+          "calls": 6,
+          "seconds": 0.005764
+        },
+        "cnn_total": {
+          "calls": 6,
+          "seconds": 0.006851
+        },
+        "reference_search_transition": {
+          "calls": 45,
+          "seconds": 0.016171
+        },
+        "winning_replay": {
+          "calls": 3,
+          "seconds": 0.027127
+        },
+        "planning_dispatch": {
+          "calls": 18,
+          "seconds": 0.147128
+        },
+        "observation_check": {
+          "calls": 17,
+          "seconds": 0.015826
+        },
+        "reconcile": {
+          "calls": 17,
+          "seconds": 3.4e-05
+        }
+      },
+      "transition_cache_hits": 18,
+      "transition_cache_misses": 0,
+      "agent_seconds": 0.18629,
+      "between_calls_seconds": 0.022101,
+      "sampled_actions": 18,
+      "steps_first_last": [
+        {
+          "turn": 0,
+          "action": "right",
+          "reason": "conditional_plan",
+          "step_s": 0.161273,
+          "gap_s": 2.2e-05
+        },
+        {
+          "turn": 1,
+          "action": "down",
+          "reason": "conditional_plan",
+          "step_s": 0.001194,
+          "gap_s": 0.001324
+        },
+        {
+          "turn": 2,
+          "action": "down",
+          "reason": "conditional_plan",
+          "step_s": 0.001353,
+          "gap_s": 0.001251
+        },
+        {
+          "turn": 15,
+          "action": "right",
+          "reason": "conditional_plan",
+          "step_s": 0.002005,
+          "gap_s": 0.00117
+        },
+        {
+          "turn": 16,
+          "action": "pick_up",
+          "reason": "conditional_plan",
+          "step_s": 0.001231,
+          "gap_s": 0.001117
+        },
+        {
+          "turn": 17,
+          "action": "right",
+          "reason": "conditional_plan",
+          "step_s": 0.001201,
+          "gap_s": 0.001032
+        }
+      ],
+      "image_shape": [
+        497,
+        640,
+        4
+      ],
+      "board_signature": "ef9e7cc5f6c8a464",
+      "errors": []
+    },
+    "error_length": 2020
+  },
+  {
+    "notebook": false,
+    "label": "A3 Multiple Required Gems",
+    "report": {
+      "source": "0b61f5c7c594541b12656995aa2389642ce37a48ad9f5a2bc3544360c45d92d5",
+      "trigger": "predicted_terminal_action",
+      "elapsed": 0.145986,
+      "inflight_step_seconds": 0.0,
+      "initial_window": 3.0,
+      "cutoff": 4.649999999999636,
+      "config": {
+        "movement": "cardinal",
+        "objective": "collect_exit",
+        "seed": 42,
+        "width": 11,
+        "height": 9,
+        "turn_limit": 150
+      },
+      "latest_status": {
+        "score": -63,
+        "phase": "ongoing",
+        "turn": 21
+      },
+      "stats": {
+        "input_mode": "image",
+        "visual_discrepancies": 0,
+        "metadata_discrepancies": 0,
+        "repairs": 0,
+        "recoveries": 0,
+        "actions": 22,
+        "hypotheses": 1,
+        "reason": "conditional_plan",
+        "conditional_on_perception": true,
+        "planner_stop_reason": "deadline",
+        "planner_backend": "fast"
+      },
+      "plan_remaining": 0,
+      "planner_info": {
+        "search_calls": "1",
+        "cache_hits": "21",
+        "transitions": "845",
+        "expansions": "122",
+        "peak_states": "144",
+        "peak_records": "261",
+        "stop_reason": "deadline",
+        "time_to_first_win": "0.020520707999821752"
+      },
+      "stages_inclusive": {
+        "cnn_uncached": {
+          "calls": 10,
+          "seconds": 0.01262
+        },
+        "cnn_total": {
+          "calls": 10,
+          "seconds": 0.01498
+        },
+        "reference_search_transition": {
+          "calls": 22,
+          "seconds": 0.009897
+        },
+        "winning_replay": {
+          "calls": 1,
+          "seconds": 0.016282
+        },
+        "planning_dispatch": {
+          "calls": 22,
+          "seconds": 0.051239
+        },
+        "observation_check": {
+          "calls": 21,
+          "seconds": 0.019958
+        },
+        "reconcile": {
+          "calls": 21,
+          "seconds": 4.4e-05
+        }
+      },
+      "transition_cache_hits": 22,
+      "transition_cache_misses": 0,
+      "agent_seconds": 0.105737,
+      "between_calls_seconds": 0.040243,
+      "sampled_actions": 22,
+      "steps_first_last": [
+        {
+          "turn": 0,
+          "action": "right",
+          "reason": "conditional_plan",
+          "step_s": 0.069814,
+          "gap_s": 2.6e-05
+        },
+        {
+          "turn": 1,
+          "action": "right",
+          "reason": "conditional_plan",
+          "step_s": 0.002279,
+          "gap_s": 0.002481
+        },
+        {
+          "turn": 2,
+          "action": "right",
+          "reason": "conditional_plan",
+          "step_s": 0.001895,
+          "gap_s": 0.001794
+        },
+        {
+          "turn": 19,
+          "action": "right",
+          "reason": "conditional_plan",
+          "step_s": 0.001232,
+          "gap_s": 0.00159
+        },
+        {
+          "turn": 20,
+          "action": "right",
+          "reason": "conditional_plan",
+          "step_s": 0.001482,
+          "gap_s": 0.001649
+        },
+        {
+          "turn": 21,
+          "action": "right",
+          "reason": "conditional_plan",
+          "step_s": 0.00208,
+          "gap_s": 0.001848
+        }
+      ],
+      "image_shape": [
+        523,
+        640,
+        4
+      ],
+      "board_signature": "767c9710a70bfca6",
+      "errors": []
+    },
+    "error_length": 2016
+  },
+  {
+    "notebook": false,
+    "label": "A4 Key and Door",
+    "report": {
+      "source": "0b61f5c7c594541b12656995aa2389642ce37a48ad9f5a2bc3544360c45d92d5",
+      "trigger": "predicted_terminal_action",
+      "elapsed": 0.075921,
+      "inflight_step_seconds": 0.0,
+      "initial_window": 3.0,
+      "cutoff": 4.649999999999636,
+      "config": {
+        "movement": "cardinal",
+        "objective": "collect_exit",
+        "seed": 42,
+        "width": 11,
+        "height": 9,
+        "turn_limit": 150
+      },
+      "latest_status": {
+        "score": -33,
+        "phase": "ongoing",
+        "turn": 11
+      },
+      "stats": {
+        "input_mode": "image",
+        "visual_discrepancies": 0,
+        "metadata_discrepancies": 0,
+        "repairs": 0,
+        "recoveries": 0,
+        "actions": 12,
+        "hypotheses": 1,
+        "reason": "conditional_plan",
+        "conditional_on_perception": true,
+        "planner_stop_reason": "exhausted",
+        "planner_backend": "fast"
+      },
+      "plan_remaining": 0,
+      "planner_info": {
+        "search_calls": "1",
+        "cache_hits": "11",
+        "transitions": "1569",
+        "expansions": "225",
+        "peak_states": "107",
+        "peak_records": "226",
+        "stop_reason": "exhausted",
+        "time_to_first_win": "0.0060206250000192085"
+      },
+      "stages_inclusive": {
+        "cnn_uncached": {
+          "calls": 9,
+          "seconds": 0.009361
+        },
+        "cnn_total": {
+          "calls": 9,
+          "seconds": 0.01124
+        },
+        "reference_search_transition": {
+          "calls": 12,
+          "seconds": 0.003401
+        },
+        "winning_replay": {
+          "calls": 1,
+          "seconds": 0.00441
+        },
+        "planning_dispatch": {
+          "calls": 12,
+          "seconds": 0.022868
+        },
+        "observation_check": {
+          "calls": 11,
+          "seconds": 0.011415
+        },
+        "reconcile": {
+          "calls": 11,
+          "seconds": 2.2e-05
+        }
+      },
+      "transition_cache_hits": 12,
+      "transition_cache_misses": 0,
+      "agent_seconds": 0.066522,
+      "between_calls_seconds": 0.009395,
+      "sampled_actions": 12,
+      "steps_first_last": [
+        {
+          "turn": 0,
+          "action": "up",
+          "reason": "conditional_plan",
+          "step_s": 0.049638,
+          "gap_s": 4.7e-05
+        },
+        {
+          "turn": 1,
+          "action": "right",
+          "reason": "conditional_plan",
+          "step_s": 0.001875,
+          "gap_s": 0.000951
+        },
+        {
+          "turn": 2,
+          "action": "pick_up",
+          "reason": "conditional_plan",
+          "step_s": 0.001674,
+          "gap_s": 0.001337
+        },
+        {
+          "turn": 9,
+          "action": "right",
+          "reason": "conditional_plan",
+          "step_s": 0.001176,
+          "gap_s": 0.000659
+        },
+        {
+          "turn": 10,
+          "action": "right",
+          "reason": "conditional_plan",
+          "step_s": 0.001023,
+          "gap_s": 0.000634
+        },
+        {
+          "turn": 11,
+          "action": "right",
+          "reason": "conditional_plan",
+          "step_s": 0.001594,
+          "gap_s": 0.000555
+        }
+      ],
+      "image_shape": [
+        523,
+        640,
+        4
+      ],
+      "board_signature": "d62c767fc0b6e9e8",
+      "errors": []
+    },
+    "error_length": 2018
+  },
+  {
+    "notebook": false,
+    "label": "A5 Hazard Detour",
+    "report": {
+      "source": "0b61f5c7c594541b12656995aa2389642ce37a48ad9f5a2bc3544360c45d92d5",
+      "trigger": "predicted_terminal_action",
+      "elapsed": 0.088847,
+      "inflight_step_seconds": 0.0,
+      "initial_window": 3.0,
+      "cutoff": 4.649999999999636,
+      "config": {
+        "movement": "cardinal",
+        "objective": "collect_exit",
+        "seed": 42,
+        "width": 11,
+        "height": 9,
+        "turn_limit": 150
+      },
+      "latest_status": {
+        "score": -39,
+        "phase": "ongoing",
+        "turn": 13
+      },
+      "stats": {
+        "input_mode": "image",
+        "visual_discrepancies": 0,
+        "metadata_discrepancies": 0,
+        "repairs": 0,
+        "recoveries": 0,
+        "actions": 14,
+        "hypotheses": 1,
+        "reason": "conditional_plan",
+        "conditional_on_perception": true,
+        "planner_stop_reason": "deadline",
+        "planner_backend": "fast"
+      },
+      "plan_remaining": 0,
+      "planner_info": {
+        "search_calls": "1",
+        "cache_hits": "13",
+        "transitions": "1949",
+        "expansions": "284",
+        "peak_states": "260",
+        "peak_records": "451",
+        "stop_reason": "deadline",
+        "time_to_first_win": "0.005277750000459491"
+      },
+      "stages_inclusive": {
+        "cnn_uncached": {
+          "calls": 9,
+          "seconds": 0.012077
+        },
+        "cnn_total": {
+          "calls": 9,
+          "seconds": 0.01459
+        },
+        "reference_search_transition": {
+          "calls": 30,
+          "seconds": 0.004911
+        },
+        "winning_replay": {
+          "calls": 2,
+          "seconds": 0.007513
+        },
+        "planning_dispatch": {
+          "calls": 14,
+          "seconds": 0.031462
+        },
+        "observation_check": {
+          "calls": 13,
+          "seconds": 0.012362
+        },
+        "reconcile": {
+          "calls": 13,
+          "seconds": 2.2e-05
+        }
+      },
+      "transition_cache_hits": 14,
+      "transition_cache_misses": 0,
+      "agent_seconds": 0.080635,
+      "between_calls_seconds": 0.008204,
+      "sampled_actions": 14,
+      "steps_first_last": [
+        {
+          "turn": 0,
+          "action": "right",
+          "reason": "conditional_plan",
+          "step_s": 0.062169,
+          "gap_s": 2.9e-05
+        },
+        {
+          "turn": 1,
+          "action": "right",
+          "reason": "conditional_plan",
+          "step_s": 0.001733,
+          "gap_s": 0.000772
+        },
+        {
+          "turn": 2,
+          "action": "right",
+          "reason": "conditional_plan",
+          "step_s": 0.001916,
+          "gap_s": 0.000643
+        },
+        {
+          "turn": 11,
+          "action": "down",
+          "reason": "conditional_plan",
+          "step_s": 0.001454,
+          "gap_s": 0.000583
+        },
+        {
+          "turn": 12,
+          "action": "down",
+          "reason": "conditional_plan",
+          "step_s": 0.001976,
+          "gap_s": 0.000619
+        },
+        {
+          "turn": 13,
+          "action": "down",
+          "reason": "conditional_plan",
+          "step_s": 0.001128,
+          "gap_s": 0.000653
+        }
+      ],
+      "image_shape": [
+        523,
+        640,
+        4
+      ],
+      "board_signature": "93b82a3bbbd4fde5",
+      "errors": []
+    },
+    "error_length": 2015
+  },
+  {
+    "notebook": false,
+    "label": "A6 Pushable Box",
+    "report": {
+      "source": "0b61f5c7c594541b12656995aa2389642ce37a48ad9f5a2bc3544360c45d92d5",
+      "trigger": "predicted_terminal_action",
+      "elapsed": 0.054897,
+      "inflight_step_seconds": 0.0,
+      "initial_window": 3.0,
+      "cutoff": 4.649999999999636,
+      "config": {
+        "movement": "cardinal",
+        "objective": "collect_exit",
+        "seed": 42,
+        "width": 11,
+        "height": 9,
+        "turn_limit": 150
+      },
+      "latest_status": {
+        "score": -21,
+        "phase": "ongoing",
+        "turn": 7
+      },
+      "stats": {
+        "input_mode": "image",
+        "visual_discrepancies": 0,
+        "metadata_discrepancies": 0,
+        "repairs": 0,
+        "recoveries": 0,
+        "actions": 8,
+        "hypotheses": 1,
+        "reason": "conditional_plan",
+        "conditional_on_perception": true,
+        "planner_stop_reason": "exhausted",
+        "planner_backend": "fast"
+      },
+      "plan_remaining": 0,
+      "planner_info": {
+        "search_calls": "1",
+        "cache_hits": "7",
+        "transitions": "376",
+        "expansions": "55",
+        "peak_states": "35",
+        "peak_records": "66",
+        "stop_reason": "exhausted",
+        "time_to_first_win": "0.004136999999900581"
+      },
+      "stages_inclusive": {
+        "cnn_uncached": {
+          "calls": 7,
+          "seconds": 0.008018
+        },
+        "cnn_total": {
+          "calls": 7,
+          "seconds": 0.009947
+        },
+        "reference_search_transition": {
+          "calls": 18,
+          "seconds": 0.002793
+        },
+        "winning_replay": {
+          "calls": 2,
+          "seconds": 0.004226
+        },
+        "planning_dispatch": {
+          "calls": 8,
+          "seconds": 0.01139
+        },
+        "observation_check": {
+          "calls": 7,
+          "seconds": 0.008748
+        },
+        "reconcile": {
+          "calls": 7,
+          "seconds": 4.1e-05
+        }
+      },
+      "transition_cache_hits": 8,
+      "transition_cache_misses": 0,
+      "agent_seconds": 0.049958,
+      "between_calls_seconds": 0.004933,
+      "sampled_actions": 8,
+      "steps_first_last": [
+        {
+          "turn": 0,
+          "action": "right",
+          "reason": "conditional_plan",
+          "step_s": 0.037675,
+          "gap_s": 8.4e-05
+        },
+        {
+          "turn": 1,
+          "action": "right",
+          "reason": "conditional_plan",
+          "step_s": 0.002049,
+          "gap_s": 0.00077
+        },
+        {
+          "turn": 2,
+          "action": "right",
+          "reason": "conditional_plan",
+          "step_s": 0.001694,
+          "gap_s": 0.000845
+        },
+        {
+          "turn": 5,
+          "action": "right",
+          "reason": "conditional_plan",
+          "step_s": 0.001194,
+          "gap_s": 0.000586
+        },
+        {
+          "turn": 6,
+          "action": "right",
+          "reason": "conditional_plan",
+          "step_s": 0.001841,
+          "gap_s": 0.000727
+        },
+        {
+          "turn": 7,
+          "action": "right",
+          "reason": "conditional_plan",
+          "step_s": 0.00192,
+          "gap_s": 0.000659
+        }
+      ],
+      "image_shape": [
+        523,
+        640,
+        4
+      ],
+      "board_signature": "3bf6704a93e7f71d",
+      "errors": []
+    },
+    "error_length": 2003
+  },
+  {
+    "notebook": false,
+    "label": "A7 Shield Powerup",
+    "report": {
+      "source": "0b61f5c7c594541b12656995aa2389642ce37a48ad9f5a2bc3544360c45d92d5",
+      "trigger": "predicted_terminal_action",
+      "elapsed": 0.088834,
+      "inflight_step_seconds": 0.0,
+      "initial_window": 3.0,
+      "cutoff": 4.649999999999636,
+      "config": {
+        "movement": "cardinal",
+        "objective": "collect_exit",
+        "seed": 42,
+        "width": 11,
+        "height": 9,
+        "turn_limit": 150
+      },
+      "latest_status": {
+        "score": -42,
+        "phase": "ongoing",
+        "turn": 14
+      },
+      "stats": {
+        "input_mode": "image",
+        "visual_discrepancies": 0,
+        "metadata_discrepancies": 0,
+        "repairs": 0,
+        "recoveries": 0,
+        "actions": 15,
+        "hypotheses": 1,
+        "reason": "conditional_plan",
+        "conditional_on_perception": true,
+        "planner_stop_reason": "deadline",
+        "planner_backend": "fast"
+      },
+      "plan_remaining": 0,
+      "planner_info": {
+        "search_calls": "1",
+        "cache_hits": "14",
+        "transitions": "2532",
+        "expansions": "363",
+        "peak_states": "175",
+        "peak_records": "370",
+        "stop_reason": "deadline",
+        "time_to_first_win": "0.005603875000815606"
+      },
+      "stages_inclusive": {
+        "cnn_uncached": {
+          "calls": 8,
+          "seconds": 0.008226
+        },
+        "cnn_total": {
+          "calls": 8,
+          "seconds": 0.010083
+        },
+        "reference_search_transition": {
+          "calls": 15,
+          "seconds": 0.00241
+        },
+        "winning_replay": {
+          "calls": 1,
+          "seconds": 0.003643
+        },
+        "planning_dispatch": {
+          "calls": 15,
+          "seconds": 0.031945
+        },
+        "observation_check": {
+          "calls": 14,
+          "seconds": 0.012942
+        },
+        "reconcile": {
+          "calls": 14,
+          "seconds": 2.8e-05
+        }
+      },
+      "transition_cache_hits": 15,
+      "transition_cache_misses": 0,
+      "agent_seconds": 0.078014,
+      "between_calls_seconds": 0.010815,
+      "sampled_actions": 15,
+      "steps_first_last": [
+        {
+          "turn": 0,
+          "action": "up",
+          "reason": "conditional_plan",
+          "step_s": 0.057587,
+          "gap_s": 3.4e-05
+        },
+        {
+          "turn": 1,
+          "action": "up",
+          "reason": "conditional_plan",
+          "step_s": 0.002043,
+          "gap_s": 0.000919
+        },
+        {
+          "turn": 2,
+          "action": "up",
+          "reason": "conditional_plan",
+          "step_s": 0.001111,
+          "gap_s": 0.000861
+        },
+        {
+          "turn": 12,
+          "action": "right",
+          "reason": "conditional_plan",
+          "step_s": 0.001245,
+          "gap_s": 0.000616
+        },
+        {
+          "turn": 13,
+          "action": "right",
+          "reason": "conditional_plan",
+          "step_s": 0.001204,
+          "gap_s": 0.000911
+        },
+        {
+          "turn": 14,
+          "action": "right",
+          "reason": "conditional_plan",
+          "step_s": 0.00169,
+          "gap_s": 0.000715
+        }
+      ],
+      "image_shape": [
+        523,
+        640,
+        4
+      ],
+      "board_signature": "2c6e94e0cfa1c6c5",
+      "errors": []
+    },
+    "error_length": 2008
+  },
+  {
+    "notebook": false,
+    "label": "A8 Ghost Powerup",
+    "report": {
+      "source": "0b61f5c7c594541b12656995aa2389642ce37a48ad9f5a2bc3544360c45d92d5",
+      "trigger": "predicted_terminal_action",
+      "elapsed": 0.102844,
+      "inflight_step_seconds": 0.0,
+      "initial_window": 3.0,
+      "cutoff": 4.649999999999636,
+      "config": {
+        "movement": "cardinal",
+        "objective": "collect_exit",
+        "seed": 42,
+        "width": 13,
+        "height": 9,
+        "turn_limit": 150
+      },
+      "latest_status": {
+        "score": -48,
+        "phase": "ongoing",
+        "turn": 16
+      },
+      "stats": {
+        "input_mode": "image",
+        "visual_discrepancies": 0,
+        "metadata_discrepancies": 0,
+        "repairs": 0,
+        "recoveries": 0,
+        "actions": 17,
+        "hypotheses": 1,
+        "reason": "conditional_plan",
+        "conditional_on_perception": true,
+        "planner_stop_reason": "deadline",
+        "planner_backend": "fast"
+      },
+      "plan_remaining": 0,
+      "planner_info": {
+        "search_calls": "1",
+        "cache_hits": "16",
+        "transitions": "1850",
+        "expansions": "266",
+        "peak_states": "261",
+        "peak_records": "522",
+        "stop_reason": "deadline",
+        "time_to_first_win": "0.006717166999806068"
+      },
+      "stages_inclusive": {
+        "cnn_uncached": {
+          "calls": 17,
+          "seconds": 0.01574
+        },
+        "cnn_total": {
+          "calls": 17,
+          "seconds": 0.018875
+        },
+        "reference_search_transition": {
+          "calls": 17,
+          "seconds": 0.002248
+        },
+        "winning_replay": {
+          "calls": 1,
+          "seconds": 0.003504
+        },
+        "planning_dispatch": {
+          "calls": 17,
+          "seconds": 0.033199
+        },
+        "observation_check": {
+          "calls": 16,
+          "seconds": 0.021832
+        },
+        "reconcile": {
+          "calls": 16,
+          "seconds": 3.7e-05
+        }
+      },
+      "transition_cache_hits": 17,
+      "transition_cache_misses": 0,
+      "agent_seconds": 0.091434,
+      "between_calls_seconds": 0.011404,
+      "sampled_actions": 17,
+      "steps_first_last": [
+        {
+          "turn": 0,
+          "action": "up",
+          "reason": "conditional_plan",
+          "step_s": 0.061025,
+          "gap_s": 4e-05
+        },
+        {
+          "turn": 1,
+          "action": "up",
+          "reason": "conditional_plan",
+          "step_s": 0.001806,
+          "gap_s": 0.00078
+        },
+        {
+          "turn": 2,
+          "action": "up",
+          "reason": "conditional_plan",
+          "step_s": 0.001853,
+          "gap_s": 0.000843
+        },
+        {
+          "turn": 14,
+          "action": "right",
+          "reason": "conditional_plan",
+          "step_s": 0.001737,
+          "gap_s": 0.000708
+        },
+        {
+          "turn": 15,
+          "action": "right",
+          "reason": "conditional_plan",
+          "step_s": 0.00096,
+          "gap_s": 0.000617
+        },
+        {
+          "turn": 16,
+          "action": "right",
+          "reason": "conditional_plan",
+          "step_s": 0.001731,
+          "gap_s": 0.000589
+        }
+      ],
+      "image_shape": [
+        443,
+        640,
+        4
+      ],
+      "board_signature": "8bf29c2887e25c35",
+      "errors": []
+    },
+    "error_length": 2007
+  },
+  {
+    "notebook": false,
+    "label": "A9 Boots Powerup",
+    "report": {
+      "source": "0b61f5c7c594541b12656995aa2389642ce37a48ad9f5a2bc3544360c45d92d5",
+      "trigger": "predicted_terminal_action",
+      "elapsed": 0.062097,
+      "inflight_step_seconds": 0.0,
+      "initial_window": 3.0,
+      "cutoff": 4.649999999999636,
+      "config": {
+        "movement": "cardinal",
+        "objective": "collect_exit",
+        "seed": 42,
+        "width": 13,
+        "height": 9,
+        "turn_limit": 150
+      },
+      "latest_status": {
+        "score": -27,
+        "phase": "ongoing",
+        "turn": 9
+      },
+      "stats": {
+        "input_mode": "image",
+        "visual_discrepancies": 0,
+        "metadata_discrepancies": 0,
+        "repairs": 0,
+        "recoveries": 0,
+        "actions": 10,
+        "hypotheses": 1,
+        "reason": "conditional_plan",
+        "conditional_on_perception": true,
+        "planner_stop_reason": "exhausted",
+        "planner_backend": "fast"
+      },
+      "plan_remaining": 0,
+      "planner_info": {
+        "search_calls": "1",
+        "cache_hits": "9",
+        "transitions": "446",
+        "expansions": "67",
+        "peak_states": "40",
+        "peak_records": "69",
+        "stop_reason": "exhausted",
+        "time_to_first_win": "0.004370791000837926"
+      },
+      "stages_inclusive": {
+        "cnn_uncached": {
+          "calls": 7,
+          "seconds": 0.011338
+        },
+        "cnn_total": {
+          "calls": 7,
+          "seconds": 0.013934
+        },
+        "reference_search_transition": {
+          "calls": 10,
+          "seconds": 0.001977
+        },
+        "winning_replay": {
+          "calls": 1,
+          "seconds": 0.00311
+        },
+        "planning_dispatch": {
+          "calls": 10,
+          "seconds": 0.011475
+        },
+        "observation_check": {
+          "calls": 9,
+          "seconds": 0.00841
+        },
+        "reconcile": {
+          "calls": 9,
+          "seconds": 1.8e-05
+        }
+      },
+      "transition_cache_hits": 10,
+      "transition_cache_misses": 0,
+      "agent_seconds": 0.054102,
+      "between_calls_seconds": 0.007986,
+      "sampled_actions": 10,
+      "steps_first_last": [
+        {
+          "turn": 0,
+          "action": "down",
+          "reason": "conditional_plan",
+          "step_s": 0.040613,
+          "gap_s": 4.5e-05
+        },
+        {
+          "turn": 1,
+          "action": "right",
+          "reason": "conditional_plan",
+          "step_s": 0.001679,
+          "gap_s": 0.000861
+        },
+        {
+          "turn": 2,
+          "action": "right",
+          "reason": "conditional_plan",
+          "step_s": 0.001491,
+          "gap_s": 0.000685
+        },
+        {
+          "turn": 7,
+          "action": "up",
+          "reason": "conditional_plan",
+          "step_s": 0.001376,
+          "gap_s": 0.000873
+        },
+        {
+          "turn": 8,
+          "action": "right",
+          "reason": "conditional_plan",
+          "step_s": 0.001862,
+          "gap_s": 0.000976
+        },
+        {
+          "turn": 9,
+          "action": "right",
+          "reason": "conditional_plan",
+          "step_s": 0.001289,
+          "gap_s": 0.000898
+        }
+      ],
+      "image_shape": [
+        443,
+        640,
+        4
+      ],
+      "board_signature": "801a6ad9385f089c",
+      "errors": []
+    },
+    "error_length": 2004
+  },
+  {
+    "notebook": false,
+    "label": "A10 Combined Mechanics",
+    "report": {
+      "source": "0b61f5c7c594541b12656995aa2389642ce37a48ad9f5a2bc3544360c45d92d5",
+      "trigger": "predicted_terminal_action",
+      "elapsed": 0.152439,
+      "inflight_step_seconds": 0.0,
+      "initial_window": 3.0,
+      "cutoff": 4.649999999999636,
+      "config": {
+        "movement": "cardinal",
+        "objective": "collect_exit",
+        "seed": 42,
+        "width": 7,
+        "height": 7,
+        "turn_limit": 150
+      },
+      "latest_status": {
+        "score": -84,
+        "phase": "ongoing",
+        "turn": 28
+      },
+      "stats": {
+        "input_mode": "image",
+        "visual_discrepancies": 0,
+        "metadata_discrepancies": 0,
+        "repairs": 0,
+        "recoveries": 0,
+        "actions": 29,
+        "hypotheses": 1,
+        "reason": "conditional_plan",
+        "conditional_on_perception": true,
+        "planner_stop_reason": "deadline",
+        "planner_backend": "fast"
+      },
+      "plan_remaining": 0,
+      "planner_info": {
+        "search_calls": "1",
+        "cache_hits": "28",
+        "transitions": "1653",
+        "expansions": "238",
+        "peak_states": "267",
+        "peak_records": "495",
+        "stop_reason": "deadline",
+        "time_to_first_win": "0.011934791000385303"
+      },
+      "stages_inclusive": {
+        "cnn_uncached": {
+          "calls": 20,
+          "seconds": 0.015781
+        },
+        "cnn_total": {
+          "calls": 20,
+          "seconds": 0.01899
+        },
+        "reference_search_transition": {
+          "calls": 29,
+          "seconds": 0.005809
+        },
+        "winning_replay": {
+          "calls": 1,
+          "seconds": 0.008893
+        },
+        "planning_dispatch": {
+          "calls": 29,
+          "seconds": 0.039705
+        },
+        "observation_check": {
+          "calls": 28,
+          "seconds": 0.04039
+        },
+        "reconcile": {
+          "calls": 28,
+          "seconds": 5.6e-05
+        }
+      },
+      "transition_cache_hits": 29,
+      "transition_cache_misses": 0,
+      "agent_seconds": 0.122633,
+      "between_calls_seconds": 0.029801,
+      "sampled_actions": 29,
+      "steps_first_last": [
+        {
+          "turn": 0,
+          "action": "right",
+          "reason": "conditional_plan",
+          "step_s": 0.0691,
+          "gap_s": 4.9e-05
+        },
+        {
+          "turn": 1,
+          "action": "right",
+          "reason": "conditional_plan",
+          "step_s": 0.002459,
+          "gap_s": 0.001114
+        },
+        {
+          "turn": 2,
+          "action": "down",
+          "reason": "conditional_plan",
+          "step_s": 0.002041,
+          "gap_s": 0.001635
+        },
+        {
+          "turn": 26,
+          "action": "down",
+          "reason": "conditional_plan",
+          "step_s": 0.002052,
+          "gap_s": 0.000847
+        },
+        {
+          "turn": 27,
+          "action": "right",
+          "reason": "conditional_plan",
+          "step_s": 0.001267,
+          "gap_s": 0.000813
+        },
+        {
+          "turn": 28,
+          "action": "right",
+          "reason": "conditional_plan",
+          "step_s": 0.001241,
+          "gap_s": 0.000816
+        }
+      ],
+      "image_shape": [
+        640,
+        640,
+        4
+      ],
+      "board_signature": "7cdb17fc2e2e11d5",
+      "errors": []
+    },
+    "error_length": 2014
+  },
+  {
+    "notebook": false,
+    "label": "B0 Thread the Needle",
+    "report": {
+      "source": "0b61f5c7c594541b12656995aa2389642ce37a48ad9f5a2bc3544360c45d92d5",
+      "trigger": "predicted_terminal_action",
+      "elapsed": 0.130793,
+      "inflight_step_seconds": 0.0,
+      "initial_window": 3.0,
+      "cutoff": 4.649999999999636,
+      "config": {
+        "movement": "cardinal",
+        "objective": "collect_exit",
+        "seed": 42,
+        "width": 15,
+        "height": 15,
+        "turn_limit": 150
+      },
+      "latest_status": {
+        "score": -81,
+        "phase": "ongoing",
+        "turn": 27
+      },
+      "stats": {
+        "input_mode": "image",
+        "visual_discrepancies": 0,
+        "metadata_discrepancies": 0,
+        "repairs": 0,
+        "recoveries": 0,
+        "actions": 28,
+        "hypotheses": 1,
+        "reason": "conditional_plan",
+        "conditional_on_perception": true,
+        "planner_stop_reason": "deadline",
+        "planner_backend": "fast"
+      },
+      "plan_remaining": 0,
+      "planner_info": {
+        "search_calls": "1",
+        "cache_hits": "27",
+        "transitions": "1623",
+        "expansions": "233",
+        "peak_states": "305",
+        "peak_records": "532",
+        "stop_reason": "deadline",
+        "time_to_first_win": "0.01090858399948047"
+      },
+      "stages_inclusive": {
+        "cnn_uncached": {
+          "calls": 9,
+          "seconds": 0.006493
+        },
+        "cnn_total": {
+          "calls": 9,
+          "seconds": 0.007748
+        },
+        "reference_search_transition": {
+          "calls": 28,
+          "seconds": 0.004905
+        },
+        "winning_replay": {
+          "calls": 1,
+          "seconds": 0.007622
+        },
+        "planning_dispatch": {
+          "calls": 28,
+          "seconds": 0.0384
+        },
+        "observation_check": {
+          "calls": 27,
+          "seconds": 0.021388
+        },
+        "reconcile": {
+          "calls": 27,
+          "seconds": 5.3e-05
+        }
+      },
+      "transition_cache_hits": 28,
+      "transition_cache_misses": 0,
+      "agent_seconds": 0.109521,
+      "between_calls_seconds": 0.021262,
+      "sampled_actions": 28,
+      "steps_first_last": [
+        {
+          "turn": 0,
+          "action": "down",
+          "reason": "conditional_plan",
+          "step_s": 0.06677,
+          "gap_s": 5.2e-05
+        },
+        {
+          "turn": 1,
+          "action": "down",
+          "reason": "conditional_plan",
+          "step_s": 0.002034,
+          "gap_s": 0.000833
+        },
+        {
+          "turn": 2,
+          "action": "down",
+          "reason": "conditional_plan",
+          "step_s": 0.001921,
+          "gap_s": 0.00096
+        },
+        {
+          "turn": 25,
+          "action": "right",
+          "reason": "conditional_plan",
+          "step_s": 0.001292,
+          "gap_s": 0.000691
+        },
+        {
+          "turn": 26,
+          "action": "right",
+          "reason": "conditional_plan",
+          "step_s": 0.001469,
+          "gap_s": 0.000689
+        },
+        {
+          "turn": 27,
+          "action": "right",
+          "reason": "conditional_plan",
+          "step_s": 0.00187,
+          "gap_s": 0.001041
+        }
+      ],
+      "image_shape": [
+        640,
+        640,
+        4
+      ],
+      "board_signature": "db2909346461ffc6",
+      "errors": []
+    },
+    "error_length": 2011
+  },
+  {
+    "notebook": false,
+    "label": "B1 Hypnosis",
+    "report": {
+      "source": "0b61f5c7c594541b12656995aa2389642ce37a48ad9f5a2bc3544360c45d92d5",
+      "trigger": "predicted_terminal_action",
+      "elapsed": 0.208957,
+      "inflight_step_seconds": 0.0,
+      "initial_window": 3.0,
+      "cutoff": 4.649999999999636,
+      "config": {
+        "movement": "cardinal",
+        "objective": "collect_exit",
+        "seed": 42,
+        "width": 15,
+        "height": 15,
+        "turn_limit": 150
+      },
+      "latest_status": {
+        "score": -78,
+        "phase": "ongoing",
+        "turn": 26
+      },
+      "stats": {
+        "input_mode": "image",
+        "visual_discrepancies": 0,
+        "metadata_discrepancies": 0,
+        "repairs": 0,
+        "recoveries": 0,
+        "actions": 27,
+        "hypotheses": 1,
+        "reason": "conditional_plan",
+        "conditional_on_perception": true,
+        "planner_stop_reason": "deadline",
+        "planner_backend": "fast"
+      },
+      "plan_remaining": 0,
+      "planner_info": {
+        "search_calls": "1",
+        "cache_hits": "26",
+        "transitions": "718",
+        "expansions": "104",
+        "peak_states": "132",
+        "peak_records": "234",
+        "stop_reason": "deadline",
+        "time_to_first_win": "0.03406724999877042"
+      },
+      "stages_inclusive": {
+        "cnn_uncached": {
+          "calls": 14,
+          "seconds": 0.014252
+        },
+        "cnn_total": {
+          "calls": 14,
+          "seconds": 0.017204
+        },
+        "reference_search_transition": {
+          "calls": 27,
+          "seconds": 0.016314
+        },
+        "winning_replay": {
+          "calls": 1,
+          "seconds": 0.026044
+        },
+        "planning_dispatch": {
+          "calls": 27,
+          "seconds": 0.068435
+        },
+        "observation_check": {
+          "calls": 26,
+          "seconds": 0.026252
+        },
+        "reconcile": {
+          "calls": 26,
+          "seconds": 6.4e-05
+        }
+      },
+      "transition_cache_hits": 27,
+      "transition_cache_misses": 0,
+      "agent_seconds": 0.149985,
+      "between_calls_seconds": 0.058966,
+      "sampled_actions": 27,
+      "steps_first_last": [
+        {
+          "turn": 0,
+          "action": "right",
+          "reason": "conditional_plan",
+          "step_s": 0.093073,
+          "gap_s": 3.6e-05
+        },
+        {
+          "turn": 1,
+          "action": "right",
+          "reason": "conditional_plan",
+          "step_s": 0.002514,
+          "gap_s": 0.002487
+        },
+        {
+          "turn": 2,
+          "action": "up",
+          "reason": "conditional_plan",
+          "step_s": 0.002579,
+          "gap_s": 0.002034
+        },
+        {
+          "turn": 24,
+          "action": "right",
+          "reason": "conditional_plan",
+          "step_s": 0.001737,
+          "gap_s": 0.002185
+        },
+        {
+          "turn": 25,
+          "action": "right",
+          "reason": "conditional_plan",
+          "step_s": 0.002713,
+          "gap_s": 0.001915
+        },
+        {
+          "turn": 26,
+          "action": "right",
+          "reason": "conditional_plan",
+          "step_s": 0.00228,
+          "gap_s": 0.002066
+        }
+      ],
+      "image_shape": [
+        640,
+        640,
+        4
+      ],
+      "board_signature": "136ec2416a4236c8",
+      "errors": []
+    },
+    "error_length": 2016
+  },
+  {
+    "notebook": false,
+    "label": "B2 The Vault",
+    "report": {
+      "source": "0b61f5c7c594541b12656995aa2389642ce37a48ad9f5a2bc3544360c45d92d5",
+      "trigger": "40_action_sample",
+      "elapsed": 0.429196,
+      "inflight_step_seconds": 0.0,
+      "initial_window": 3.0,
+      "cutoff": 4.649999999999636,
+      "config": {
+        "movement": "cardinal",
+        "objective": "collect_exit",
+        "seed": 42,
+        "width": 15,
+        "height": 15,
+        "turn_limit": 150
+      },
+      "latest_status": {
+        "score": -62,
+        "phase": "ongoing",
+        "turn": 39
+      },
+      "stats": {
+        "input_mode": "image",
+        "visual_discrepancies": 0,
+        "metadata_discrepancies": 0,
+        "repairs": 0,
+        "recoveries": 0,
+        "actions": 40,
+        "hypotheses": 1,
+        "reason": "conditional_plan",
+        "conditional_on_perception": true,
+        "planner_stop_reason": "deadline",
+        "planner_backend": "fast"
+      },
+      "plan_remaining": 1,
+      "planner_info": {
+        "search_calls": "1",
+        "cache_hits": "39",
+        "transitions": "1642",
+        "expansions": "237",
+        "peak_states": "506",
+        "peak_records": "730",
+        "stop_reason": "deadline",
+        "time_to_first_win": "0.05260295799962478"
+      },
+      "stages_inclusive": {
+        "cnn_uncached": {
+          "calls": 20,
+          "seconds": 0.017909
+        },
+        "cnn_total": {
+          "calls": 20,
+          "seconds": 0.021507
+        },
+        "reference_search_transition": {
+          "calls": 69,
+          "seconds": 0.079721
+        },
+        "winning_replay": {
+          "calls": 2,
+          "seconds": 0.117945
+        },
+        "planning_dispatch": {
+          "calls": 40,
+          "seconds": 0.219338
+        },
+        "observation_check": {
+          "calls": 39,
+          "seconds": 0.038708
+        },
+        "reconcile": {
+          "calls": 39,
+          "seconds": 8.4e-05
+        }
+      },
+      "transition_cache_hits": 40,
+      "transition_cache_misses": 0,
+      "agent_seconds": 0.333868,
+      "between_calls_seconds": 0.095318,
+      "sampled_actions": 40,
+      "steps_first_last": [
+        {
+          "turn": 0,
+          "action": "down",
+          "reason": "conditional_plan",
+          "step_s": 0.238422,
+          "gap_s": 4.7e-05
+        },
+        {
+          "turn": 1,
+          "action": "right",
+          "reason": "conditional_plan",
+          "step_s": 0.00251,
+          "gap_s": 0.002735
+        },
+        {
+          "turn": 2,
+          "action": "right",
+          "reason": "conditional_plan",
+          "step_s": 0.002353,
+          "gap_s": 0.002306
+        },
+        {
+          "turn": 37,
+          "action": "right",
+          "reason": "conditional_plan",
+          "step_s": 0.002491,
+          "gap_s": 0.002455
+        },
+        {
+          "turn": 38,
+          "action": "right",
+          "reason": "conditional_plan",
+          "step_s": 0.002421,
+          "gap_s": 0.002547
+        },
+        {
+          "turn": 39,
+          "action": "right",
+          "reason": "conditional_plan",
+          "step_s": 0.002403,
+          "gap_s": 0.002499
+        }
+      ],
+      "image_shape": [
+        640,
+        640,
+        4
+      ],
+      "board_signature": "a43fd8027b61e31d",
+      "errors": []
+    },
+    "error_length": 2010
+  },
+  {
+    "notebook": false,
+    "label": "B3 So Close Yet So Far",
+    "report": {
+      "source": "0b61f5c7c594541b12656995aa2389642ce37a48ad9f5a2bc3544360c45d92d5",
+      "trigger": "40_action_sample",
+      "elapsed": 0.338029,
+      "inflight_step_seconds": 0.0,
+      "initial_window": 3.0,
+      "cutoff": 4.649999999999636,
+      "config": {
+        "movement": "cardinal",
+        "objective": "collect_exit",
+        "seed": 42,
+        "width": 15,
+        "height": 15,
+        "turn_limit": 150
+      },
+      "latest_status": {
+        "score": -117,
+        "phase": "ongoing",
+        "turn": 39
+      },
+      "stats": {
+        "input_mode": "image",
+        "visual_discrepancies": 0,
+        "metadata_discrepancies": 0,
+        "repairs": 0,
+        "recoveries": 0,
+        "actions": 40,
+        "hypotheses": 1,
+        "reason": "conditional_plan",
+        "conditional_on_perception": true,
+        "planner_stop_reason": "deadline",
+        "planner_backend": "fast"
+      },
+      "plan_remaining": 66,
+      "planner_info": {
+        "search_calls": "1",
+        "cache_hits": "39",
+        "transitions": "493",
+        "expansions": "123",
+        "peak_states": "222",
+        "peak_records": "279",
+        "stop_reason": "deadline",
+        "time_to_first_win": "0.1291356250003446"
+      },
+      "stages_inclusive": {
+        "cnn_uncached": {
+          "calls": 8,
+          "seconds": 0.011272
+        },
+        "cnn_total": {
+          "calls": 8,
+          "seconds": 0.013653
+        },
+        "reference_search_transition": {
+          "calls": 106,
+          "seconds": 0.074942
+        },
+        "winning_replay": {
+          "calls": 1,
+          "seconds": 0.105172
+        },
+        "planning_dispatch": {
+          "calls": 40,
+          "seconds": 0.16493
+        },
+        "observation_check": {
+          "calls": 39,
+          "seconds": 0.031147
+        },
+        "reconcile": {
+          "calls": 39,
+          "seconds": 8.3e-05
+        }
+      },
+      "transition_cache_hits": 40,
+      "transition_cache_misses": 0,
+      "agent_seconds": 0.265047,
+      "between_calls_seconds": 0.072974,
+      "sampled_actions": 40,
+      "steps_first_last": [
+        {
+          "turn": 0,
+          "action": "down",
+          "reason": "conditional_plan",
+          "step_s": 0.191088,
+          "gap_s": 6e-05
+        },
+        {
+          "turn": 1,
+          "action": "down",
+          "reason": "conditional_plan",
+          "step_s": 0.002875,
+          "gap_s": 0.002082
+        },
+        {
+          "turn": 2,
+          "action": "down",
+          "reason": "conditional_plan",
+          "step_s": 0.002619,
+          "gap_s": 0.002382
+        },
+        {
+          "turn": 37,
+          "action": "left",
+          "reason": "conditional_plan",
+          "step_s": 0.001715,
+          "gap_s": 0.002013
+        },
+        {
+          "turn": 38,
+          "action": "left",
+          "reason": "conditional_plan",
+          "step_s": 0.002588,
+          "gap_s": 0.001783
+        },
+        {
+          "turn": 39,
+          "action": "pick_up",
+          "reason": "conditional_plan",
+          "step_s": 0.002304,
+          "gap_s": 0.001749
+        }
+      ],
+      "image_shape": [
+        640,
+        640,
+        4
+      ],
+      "board_signature": "9884f1f044d656a1",
+      "errors": []
+    },
+    "error_length": 2005
+  },
+  {
+    "notebook": false,
+    "label": "B4 Measure Twice and Cut Once",
+    "report": {
+      "source": "0b61f5c7c594541b12656995aa2389642ce37a48ad9f5a2bc3544360c45d92d5",
+      "trigger": "40_action_sample",
+      "elapsed": 0.364901,
+      "inflight_step_seconds": 0.0,
+      "initial_window": 3.0,
+      "cutoff": 4.649999999999636,
+      "config": {
+        "movement": "cardinal",
+        "objective": "collect_exit",
+        "seed": 42,
+        "width": 15,
+        "height": 15,
+        "turn_limit": 150
+      },
+      "latest_status": {
+        "score": -117,
+        "phase": "ongoing",
+        "turn": 39
+      },
+      "stats": {
+        "input_mode": "image",
+        "visual_discrepancies": 0,
+        "metadata_discrepancies": 0,
+        "repairs": 0,
+        "recoveries": 0,
+        "actions": 40,
+        "hypotheses": 1,
+        "reason": "conditional_plan",
+        "conditional_on_perception": true,
+        "planner_stop_reason": "deadline",
+        "planner_backend": "fast"
+      },
+      "plan_remaining": 90,
+      "planner_info": {
+        "search_calls": "1",
+        "cache_hits": "39",
+        "transitions": "528",
+        "expansions": "135",
+        "peak_states": "252",
+        "peak_records": "306",
+        "stop_reason": "deadline",
+        "time_to_first_win": "0.16279683399989153"
+      },
+      "stages_inclusive": {
+        "cnn_uncached": {
+          "calls": 10,
+          "seconds": 0.011582
+        },
+        "cnn_total": {
+          "calls": 10,
+          "seconds": 0.014173
+        },
+        "reference_search_transition": {
+          "calls": 130,
+          "seconds": 0.07099
+        },
+        "winning_replay": {
+          "calls": 1,
+          "seconds": 0.115467
+        },
+        "planning_dispatch": {
+          "calls": 40,
+          "seconds": 0.200016
+        },
+        "observation_check": {
+          "calls": 39,
+          "seconds": 0.027055
+        },
+        "reconcile": {
+          "calls": 39,
+          "seconds": 7.4e-05
+        }
+      },
+      "transition_cache_hits": 40,
+      "transition_cache_misses": 0,
+      "agent_seconds": 0.291919,
+      "between_calls_seconds": 0.072976,
+      "sampled_actions": 40,
+      "steps_first_last": [
+        {
+          "turn": 0,
+          "action": "down",
+          "reason": "conditional_plan",
+          "step_s": 0.222134,
+          "gap_s": 4.8e-05
+        },
+        {
+          "turn": 1,
+          "action": "down",
+          "reason": "conditional_plan",
+          "step_s": 0.002539,
+          "gap_s": 0.001888
+        },
+        {
+          "turn": 2,
+          "action": "down",
+          "reason": "conditional_plan",
+          "step_s": 0.002078,
+          "gap_s": 0.001761
+        },
+        {
+          "turn": 37,
+          "action": "right",
+          "reason": "conditional_plan",
+          "step_s": 0.001712,
+          "gap_s": 0.002065
+        },
+        {
+          "turn": 38,
+          "action": "right",
+          "reason": "conditional_plan",
+          "step_s": 0.00167,
+          "gap_s": 0.001818
+        },
+        {
+          "turn": 39,
+          "action": "right",
+          "reason": "conditional_plan",
+          "step_s": 0.001602,
+          "gap_s": 0.001909
+        }
+      ],
+      "image_shape": [
+        640,
+        640,
+        4
+      ],
+      "board_signature": "177b79e1753a99d9",
+      "errors": []
+    },
+    "error_length": 2009
+  },
+  {
+    "notebook": false,
+    "label": "B5 Ow Oof Owie",
+    "report": {
+      "source": "0b61f5c7c594541b12656995aa2389642ce37a48ad9f5a2bc3544360c45d92d5",
+      "trigger": "40_action_sample",
+      "elapsed": 0.288879,
+      "inflight_step_seconds": 0.0,
+      "initial_window": 3.0,
+      "cutoff": 4.649999999999636,
+      "config": {
+        "movement": "cardinal",
+        "objective": "collect_exit",
+        "seed": 42,
+        "width": 15,
+        "height": 15,
+        "turn_limit": 150
+      },
+      "latest_status": {
+        "score": -117,
+        "phase": "ongoing",
+        "turn": 39
+      },
+      "stats": {
+        "input_mode": "image",
+        "visual_discrepancies": 0,
+        "metadata_discrepancies": 0,
+        "repairs": 0,
+        "recoveries": 0,
+        "actions": 40,
+        "hypotheses": 1,
+        "reason": "conditional_plan",
+        "conditional_on_perception": true,
+        "planner_stop_reason": "deadline",
+        "planner_backend": "fast"
+      },
+      "plan_remaining": 31,
+      "planner_info": {
+        "search_calls": "1",
+        "cache_hits": "39",
+        "transitions": "770",
+        "expansions": "155",
+        "peak_states": "212",
+        "peak_records": "307",
+        "stop_reason": "deadline",
+        "time_to_first_win": "0.0794504160003271"
+      },
+      "stages_inclusive": {
+        "cnn_uncached": {
+          "calls": 16,
+          "seconds": 0.013579
+        },
+        "cnn_total": {
+          "calls": 16,
+          "seconds": 0.016445
+        },
+        "reference_search_transition": {
+          "calls": 71,
+          "seconds": 0.038787
+        },
+        "winning_replay": {
+          "calls": 1,
+          "seconds": 0.062111
+        },
+        "planning_dispatch": {
+          "calls": 40,
+          "seconds": 0.116242
+        },
+        "observation_check": {
+          "calls": 39,
+          "seconds": 0.035179
+        },
+        "reconcile": {
+          "calls": 39,
+          "seconds": 7.9e-05
+        }
+      },
+      "transition_cache_hits": 40,
+      "transition_cache_misses": 0,
+      "agent_seconds": 0.213985,
+      "between_calls_seconds": 0.074889,
+      "sampled_actions": 40,
+      "steps_first_last": [
+        {
+          "turn": 0,
+          "action": "right",
+          "reason": "conditional_plan",
+          "step_s": 0.136441,
+          "gap_s": 4.1e-05
+        },
+        {
+          "turn": 1,
+          "action": "right",
+          "reason": "conditional_plan",
+          "step_s": 0.005991,
+          "gap_s": 0.001965
+        },
+        {
+          "turn": 2,
+          "action": "down",
+          "reason": "conditional_plan",
+          "step_s": 0.002009,
+          "gap_s": 0.0018
+        },
+        {
+          "turn": 37,
+          "action": "down",
+          "reason": "conditional_plan",
+          "step_s": 0.001482,
+          "gap_s": 0.001821
+        },
+        {
+          "turn": 38,
+          "action": "down",
+          "reason": "conditional_plan",
+          "step_s": 0.002113,
+          "gap_s": 0.002169
+        },
+        {
+          "turn": 39,
+          "action": "down",
+          "reason": "conditional_plan",
+          "step_s": 0.001607,
+          "gap_s": 0.001789
+        }
+      ],
+      "image_shape": [
+        640,
+        640,
+        4
+      ],
+      "board_signature": "2b00792c49eec60c",
+      "errors": []
+    },
+    "error_length": 2006
+  },
+  {
+    "notebook": false,
+    "label": "B6 Warehouse",
+    "report": {
+      "source": "0b61f5c7c594541b12656995aa2389642ce37a48ad9f5a2bc3544360c45d92d5",
+      "trigger": "40_action_sample",
+      "elapsed": 0.268412,
+      "inflight_step_seconds": 0.0,
+      "initial_window": 3.0,
+      "cutoff": 4.649999999999636,
+      "config": {
+        "movement": "cardinal",
+        "objective": "collect_exit",
+        "seed": 42,
+        "width": 15,
+        "height": 15,
+        "turn_limit": 150
+      },
+      "latest_status": {
+        "score": -117,
+        "phase": "ongoing",
+        "turn": 39
+      },
+      "stats": {
+        "input_mode": "image",
+        "visual_discrepancies": 0,
+        "metadata_discrepancies": 0,
+        "repairs": 0,
+        "recoveries": 0,
+        "actions": 40,
+        "hypotheses": 1,
+        "reason": "conditional_plan",
+        "conditional_on_perception": true,
+        "planner_stop_reason": "deadline",
+        "planner_backend": "fast"
+      },
+      "plan_remaining": 32,
+      "planner_info": {
+        "search_calls": "1",
+        "cache_hits": "39",
+        "transitions": "814",
+        "expansions": "155",
+        "peak_states": "223",
+        "peak_records": "330",
+        "stop_reason": "deadline",
+        "time_to_first_win": "0.07086504099970625"
+      },
+      "stages_inclusive": {
+        "cnn_uncached": {
+          "calls": 16,
+          "seconds": 0.014147
+        },
+        "cnn_total": {
+          "calls": 16,
+          "seconds": 0.017159
+        },
+        "reference_search_transition": {
+          "calls": 72,
+          "seconds": 0.030436
+        },
+        "winning_replay": {
+          "calls": 1,
+          "seconds": 0.048681
+        },
+        "planning_dispatch": {
+          "calls": 40,
+          "seconds": 0.105546
+        },
+        "observation_check": {
+          "calls": 39,
+          "seconds": 0.036176
+        },
+        "reconcile": {
+          "calls": 39,
+          "seconds": 8e-05
+        }
+      },
+      "transition_cache_hits": 40,
+      "transition_cache_misses": 0,
+      "agent_seconds": 0.203534,
+      "between_calls_seconds": 0.06487,
+      "sampled_actions": 40,
+      "steps_first_last": [
+        {
+          "turn": 0,
+          "action": "down",
+          "reason": "conditional_plan",
+          "step_s": 0.128383,
+          "gap_s": 4.3e-05
+        },
+        {
+          "turn": 1,
+          "action": "down",
+          "reason": "conditional_plan",
+          "step_s": 0.002852,
+          "gap_s": 0.001915
+        },
+        {
+          "turn": 2,
+          "action": "down",
+          "reason": "conditional_plan",
+          "step_s": 0.002466,
+          "gap_s": 0.001638
+        },
+        {
+          "turn": 37,
+          "action": "down",
+          "reason": "conditional_plan",
+          "step_s": 0.001472,
+          "gap_s": 0.001685
+        },
+        {
+          "turn": 38,
+          "action": "down",
+          "reason": "conditional_plan",
+          "step_s": 0.002434,
+          "gap_s": 0.001504
+        },
+        {
+          "turn": 39,
+          "action": "down",
+          "reason": "conditional_plan",
+          "step_s": 0.002932,
+          "gap_s": 0.001583
+        }
+      ],
+      "image_shape": [
+        640,
+        640,
+        4
+      ],
+      "board_signature": "bf160fea7abb29c5",
+      "errors": []
+    },
+    "error_length": 2004
+  },
+  {
+    "notebook": false,
+    "label": "B7 Fire Resistance",
+    "report": {
+      "source": "0b61f5c7c594541b12656995aa2389642ce37a48ad9f5a2bc3544360c45d92d5",
+      "trigger": "predicted_terminal_action",
+      "elapsed": 0.220871,
+      "inflight_step_seconds": 0.0,
+      "initial_window": 3.0,
+      "cutoff": 4.649999999999636,
+      "config": {
+        "movement": "cardinal",
+        "objective": "collect_exit",
+        "seed": 42,
+        "width": 15,
+        "height": 15,
+        "turn_limit": 150
+      },
+      "latest_status": {
+        "score": -111,
+        "phase": "ongoing",
+        "turn": 37
+      },
+      "stats": {
+        "input_mode": "image",
+        "visual_discrepancies": 0,
+        "metadata_discrepancies": 0,
+        "repairs": 0,
+        "recoveries": 0,
+        "actions": 38,
+        "hypotheses": 1,
+        "reason": "conditional_plan",
+        "conditional_on_perception": true,
+        "planner_stop_reason": "deadline",
+        "planner_backend": "fast"
+      },
+      "plan_remaining": 0,
+      "planner_info": {
+        "search_calls": "1",
+        "cache_hits": "37",
+        "transitions": "495",
+        "expansions": "72",
+        "peak_states": "161",
+        "peak_records": "230",
+        "stop_reason": "deadline",
+        "time_to_first_win": "0.044702416998916306"
+      },
+      "stages_inclusive": {
+        "cnn_uncached": {
+          "calls": 24,
+          "seconds": 0.018276
+        },
+        "cnn_total": {
+          "calls": 24,
+          "seconds": 0.021715
+        },
+        "reference_search_transition": {
+          "calls": 38,
+          "seconds": 0.015781
+        },
+        "winning_replay": {
+          "calls": 1,
+          "seconds": 0.023462
+        },
+        "planning_dispatch": {
+          "calls": 38,
+          "seconds": 0.075889
+        },
+        "observation_check": {
+          "calls": 37,
+          "seconds": 0.039706
+        },
+        "reconcile": {
+          "calls": 37,
+          "seconds": 7.5e-05
+        }
+      },
+      "transition_cache_hits": 38,
+      "transition_cache_misses": 0,
+      "agent_seconds": 0.180016,
+      "between_calls_seconds": 0.04085,
+      "sampled_actions": 38,
+      "steps_first_last": [
+        {
+          "turn": 0,
+          "action": "down",
+          "reason": "conditional_plan",
+          "step_s": 0.106126,
+          "gap_s": 4.8e-05
+        },
+        {
+          "turn": 1,
+          "action": "down",
+          "reason": "conditional_plan",
+          "step_s": 0.002325,
+          "gap_s": 0.001244
+        },
+        {
+          "turn": 2,
+          "action": "down",
+          "reason": "conditional_plan",
+          "step_s": 0.001993,
+          "gap_s": 0.001156
+        },
+        {
+          "turn": 35,
+          "action": "left",
+          "reason": "conditional_plan",
+          "step_s": 0.002029,
+          "gap_s": 0.000983
+        },
+        {
+          "turn": 36,
+          "action": "down",
+          "reason": "conditional_plan",
+          "step_s": 0.002225,
+          "gap_s": 0.001274
+        },
+        {
+          "turn": 37,
+          "action": "down",
+          "reason": "conditional_plan",
+          "step_s": 0.001477,
+          "gap_s": 0.00107
+        }
+      ],
+      "image_shape": [
+        640,
+        640,
+        4
+      ],
+      "board_signature": "7da8fd64bf637577",
+      "errors": []
+    },
+    "error_length": 2013
+  },
+  {
+    "notebook": false,
+    "label": "B8 Choose Wisely",
+    "report": {
+      "source": "0b61f5c7c594541b12656995aa2389642ce37a48ad9f5a2bc3544360c45d92d5",
+      "trigger": "predicted_terminal_action",
+      "elapsed": 0.275503,
+      "inflight_step_seconds": 0.0,
+      "initial_window": 3.0,
+      "cutoff": 4.649999999999636,
+      "config": {
+        "movement": "cardinal",
+        "objective": "collect_exit",
+        "seed": 42,
+        "width": 15,
+        "height": 15,
+        "turn_limit": 150
+      },
+      "latest_status": {
+        "score": -93,
+        "phase": "ongoing",
+        "turn": 31
+      },
+      "stats": {
+        "input_mode": "image",
+        "visual_discrepancies": 0,
+        "metadata_discrepancies": 0,
+        "repairs": 0,
+        "recoveries": 0,
+        "actions": 32,
+        "hypotheses": 1,
+        "reason": "conditional_plan",
+        "conditional_on_perception": true,
+        "planner_stop_reason": "deadline",
+        "planner_backend": "fast"
+      },
+      "plan_remaining": 0,
+      "planner_info": {
+        "search_calls": "1",
+        "cache_hits": "31",
+        "transitions": "758",
+        "expansions": "110",
+        "peak_states": "199",
+        "peak_records": "306",
+        "stop_reason": "deadline",
+        "time_to_first_win": "0.09162766699955682"
+      },
+      "stages_inclusive": {
+        "cnn_uncached": {
+          "calls": 18,
+          "seconds": 0.016651
+        },
+        "cnn_total": {
+          "calls": 18,
+          "seconds": 0.020022
+        },
+        "reference_search_transition": {
+          "calls": 32,
+          "seconds": 0.057943
+        },
+        "winning_replay": {
+          "calls": 1,
+          "seconds": 0.068433
+        },
+        "planning_dispatch": {
+          "calls": 32,
+          "seconds": 0.125983
+        },
+        "observation_check": {
+          "calls": 31,
+          "seconds": 0.034879
+        },
+        "reconcile": {
+          "calls": 31,
+          "seconds": 8.8e-05
+        }
+      },
+      "transition_cache_hits": 32,
+      "transition_cache_misses": 0,
+      "agent_seconds": 0.218382,
+      "between_calls_seconds": 0.057114,
+      "sampled_actions": 32,
+      "steps_first_last": [
+        {
+          "turn": 0,
+          "action": "right",
+          "reason": "conditional_plan",
+          "step_s": 0.150241,
+          "gap_s": 5.5e-05
+        },
+        {
+          "turn": 1,
+          "action": "pick_up",
+          "reason": "conditional_plan",
+          "step_s": 0.002227,
+          "gap_s": 0.002686
+        },
+        {
+          "turn": 2,
+          "action": "down",
+          "reason": "conditional_plan",
+          "step_s": 0.002127,
+          "gap_s": 0.001865
+        },
+        {
+          "turn": 29,
+          "action": "right",
+          "reason": "conditional_plan",
+          "step_s": 0.002308,
+          "gap_s": 0.002027
+        },
+        {
+          "turn": 30,
+          "action": "right",
+          "reason": "conditional_plan",
+          "step_s": 0.001553,
+          "gap_s": 0.001683
+        },
+        {
+          "turn": 31,
+          "action": "right",
+          "reason": "conditional_plan",
+          "step_s": 0.005871,
+          "gap_s": 0.001678
+        }
+      ],
+      "image_shape": [
+        640,
+        640,
+        4
+      ],
+      "board_signature": "e1d32954dff2f1bd",
+      "errors": []
+    },
+    "error_length": 2021
+  },
+  {
+    "notebook": false,
+    "label": "B9 Manhattan",
+    "report": {
+      "source": "0b61f5c7c594541b12656995aa2389642ce37a48ad9f5a2bc3544360c45d92d5",
+      "trigger": "predicted_terminal_action",
+      "elapsed": 0.154537,
+      "inflight_step_seconds": 0.0,
+      "initial_window": 3.0,
+      "cutoff": 4.649999999999636,
+      "config": {
+        "movement": "cardinal",
+        "objective": "collect_exit",
+        "seed": 42,
+        "width": 15,
+        "height": 15,
+        "turn_limit": 150
+      },
+      "latest_status": {
+        "score": -63,
+        "phase": "ongoing",
+        "turn": 21
+      },
+      "stats": {
+        "input_mode": "image",
+        "visual_discrepancies": 0,
+        "metadata_discrepancies": 0,
+        "repairs": 0,
+        "recoveries": 0,
+        "actions": 22,
+        "hypotheses": 1,
+        "reason": "conditional_plan",
+        "conditional_on_perception": true,
+        "planner_stop_reason": "deadline",
+        "planner_backend": "fast"
+      },
+      "plan_remaining": 0,
+      "planner_info": {
+        "search_calls": "1",
+        "cache_hits": "21",
+        "transitions": "939",
+        "expansions": "137",
+        "peak_states": "106",
+        "peak_records": "227",
+        "stop_reason": "deadline",
+        "time_to_first_win": "0.021775832999992417"
+      },
+      "stages_inclusive": {
+        "cnn_uncached": {
+          "calls": 13,
+          "seconds": 0.010856
+        },
+        "cnn_total": {
+          "calls": 13,
+          "seconds": 0.013099
+        },
+        "reference_search_transition": {
+          "calls": 22,
+          "seconds": 0.010352
+        },
+        "winning_replay": {
+          "calls": 1,
+          "seconds": 0.016114
+        },
+        "planning_dispatch": {
+          "calls": 22,
+          "seconds": 0.052187
+        },
+        "observation_check": {
+          "calls": 21,
+          "seconds": 0.020819
+        },
+        "reconcile": {
+          "calls": 21,
+          "seconds": 4.7e-05
+        }
+      },
+      "transition_cache_hits": 22,
+      "transition_cache_misses": 0,
+      "agent_seconds": 0.122081,
+      "between_calls_seconds": 0.032449,
+      "sampled_actions": 22,
+      "steps_first_last": [
+        {
+          "turn": 0,
+          "action": "down",
+          "reason": "conditional_plan",
+          "step_s": 0.07994,
+          "gap_s": 5.1e-05
+        },
+        {
+          "turn": 1,
+          "action": "down",
+          "reason": "conditional_plan",
+          "step_s": 0.002137,
+          "gap_s": 0.001654
+        },
+        {
+          "turn": 2,
+          "action": "right",
+          "reason": "conditional_plan",
+          "step_s": 0.001919,
+          "gap_s": 0.001345
+        },
+        {
+          "turn": 19,
+          "action": "right",
+          "reason": "conditional_plan",
+          "step_s": 0.001718,
+          "gap_s": 0.001581
+        },
+        {
+          "turn": 20,
+          "action": "down",
+          "reason": "conditional_plan",
+          "step_s": 0.001531,
+          "gap_s": 0.00165
+        },
+        {
+          "turn": 21,
+          "action": "down",
+          "reason": "conditional_plan",
+          "step_s": 0.001554,
+          "gap_s": 0.00146
+        }
+      ],
+      "image_shape": [
+        640,
+        640,
+        4
+      ],
+      "board_signature": "8073040ea3faab02",
+      "errors": []
+    },
+    "error_length": 2014
+  },
+  {
+    "notebook": false,
+    "label": "B10 Khoa Was Here",
+    "report": {
+      "source": "0b61f5c7c594541b12656995aa2389642ce37a48ad9f5a2bc3544360c45d92d5",
+      "trigger": "40_action_sample",
+      "elapsed": 0.331897,
+      "inflight_step_seconds": 0.0,
+      "initial_window": 3.0,
+      "cutoff": 4.649999999999636,
+      "config": {
+        "movement": "cardinal",
+        "objective": "collect_exit",
+        "seed": 42,
+        "width": 15,
+        "height": 15,
+        "turn_limit": 150
+      },
+      "latest_status": {
+        "score": -117,
+        "phase": "ongoing",
+        "turn": 39
+      },
+      "stats": {
+        "input_mode": "image",
+        "visual_discrepancies": 0,
+        "metadata_discrepancies": 0,
+        "repairs": 0,
+        "recoveries": 0,
+        "actions": 40,
+        "hypotheses": 1,
+        "reason": "conditional_plan",
+        "conditional_on_perception": true,
+        "planner_stop_reason": "deadline",
+        "planner_backend": "fast"
+      },
+      "plan_remaining": 15,
+      "planner_info": {
+        "search_calls": "1",
+        "cache_hits": "39",
+        "transitions": "508",
+        "expansions": "90",
+        "peak_states": "135",
+        "peak_records": "203",
+        "stop_reason": "deadline",
+        "time_to_first_win": "0.08986695799831068"
+      },
+      "stages_inclusive": {
+        "cnn_uncached": {
+          "calls": 23,
+          "seconds": 0.020073
+        },
+        "cnn_total": {
+          "calls": 23,
+          "seconds": 0.024362
+        },
+        "reference_search_transition": {
+          "calls": 55,
+          "seconds": 0.046295
+        },
+        "winning_replay": {
+          "calls": 1,
+          "seconds": 0.06987
+        },
+        "planning_dispatch": {
+          "calls": 40,
+          "seconds": 0.129129
+        },
+        "observation_check": {
+          "calls": 39,
+          "seconds": 0.044219
+        },
+        "reconcile": {
+          "calls": 39,
+          "seconds": 9.4e-05
+        }
+      },
+      "transition_cache_hits": 40,
+      "transition_cache_misses": 0,
+      "agent_seconds": 0.249364,
+      "between_calls_seconds": 0.082521,
+      "sampled_actions": 40,
+      "steps_first_last": [
+        {
+          "turn": 0,
+          "action": "down",
+          "reason": "conditional_plan",
+          "step_s": 0.152297,
+          "gap_s": 4e-05
+        },
+        {
+          "turn": 1,
+          "action": "down",
+          "reason": "conditional_plan",
+          "step_s": 0.002394,
+          "gap_s": 0.002012
+        },
+        {
+          "turn": 2,
+          "action": "down",
+          "reason": "conditional_plan",
+          "step_s": 0.002426,
+          "gap_s": 0.001951
+        },
+        {
+          "turn": 37,
+          "action": "right",
+          "reason": "conditional_plan",
+          "step_s": 0.003009,
+          "gap_s": 0.002196
+        },
+        {
+          "turn": 38,
+          "action": "down",
+          "reason": "conditional_plan",
+          "step_s": 0.002192,
+          "gap_s": 0.002255
+        },
+        {
+          "turn": 39,
+          "action": "down",
+          "reason": "conditional_plan",
+          "step_s": 0.002492,
+          "gap_s": 0.002271
+        }
+      ],
+      "image_shape": [
+        640,
+        640,
+        4
+      ],
+      "board_signature": "45cefd3b9b7f0d0d",
+      "errors": []
+    },
+    "error_length": 2004
+  },
+  {
+    "notebook": true,
+    "label": "A0 Basic Movement",
+    "report": {
+      "source": "0b61f5c7c594541b12656995aa2389642ce37a48ad9f5a2bc3544360c45d92d5",
+      "trigger": "predicted_terminal_action",
+      "elapsed": 0.033693,
+      "inflight_step_seconds": 0.0,
+      "initial_window": 3.0,
+      "cutoff": 4.649999999999636,
+      "config": {
+        "movement": "cardinal",
+        "objective": "collect_exit",
+        "seed": 42,
+        "width": 7,
+        "height": 5,
+        "turn_limit": 150
+      },
+      "latest_status": {
+        "score": -9,
+        "phase": "ongoing",
+        "turn": 3
+      },
+      "stats": {
+        "input_mode": "image",
+        "visual_discrepancies": 0,
+        "metadata_discrepancies": 0,
+        "repairs": 0,
+        "recoveries": 0,
+        "actions": 4,
+        "hypotheses": 1,
+        "reason": "conditional_plan",
+        "conditional_on_perception": true,
+        "planner_stop_reason": "exhausted",
+        "planner_backend": "fast"
+      },
+      "plan_remaining": 0,
+      "planner_info": {
+        "search_calls": "1",
+        "cache_hits": "3",
+        "transitions": "29",
+        "expansions": "5",
+        "peak_states": "7",
+        "peak_records": "6",
+        "stop_reason": "exhausted",
+        "time_to_first_win": "0.0010397080004622694"
+      },
+      "stages_inclusive": {
+        "cnn_uncached": {
+          "calls": 4,
+          "seconds": 0.006553
+        },
+        "cnn_total": {
+          "calls": 4,
+          "seconds": 0.008146
+        },
+        "reference_search_transition": {
+          "calls": 4,
+          "seconds": 0.000451
+        },
+        "winning_replay": {
+          "calls": 1,
+          "seconds": 0.000719
+        },
+        "planning_dispatch": {
+          "calls": 4,
+          "seconds": 0.00169
+        },
+        "observation_check": {
+          "calls": 3,
+          "seconds": 0.004771
+        },
+        "reconcile": {
+          "calls": 3,
+          "seconds": 8e-06
+        }
+      },
+      "transition_cache_hits": 4,
+      "transition_cache_misses": 0,
+      "agent_seconds": 0.031844,
+      "between_calls_seconds": 0.001844,
+      "sampled_actions": 4,
+      "steps_first_last": [
+        {
+          "turn": 0,
+          "action": "right",
+          "reason": "conditional_plan",
+          "step_s": 0.026123,
+          "gap_s": 1.7e-05
+        },
+        {
+          "turn": 1,
+          "action": "right",
+          "reason": "conditional_plan",
+          "step_s": 0.001981,
+          "gap_s": 0.000748
+        },
+        {
+          "turn": 2,
+          "action": "right",
+          "reason": "conditional_plan",
+          "step_s": 0.001946,
+          "gap_s": 0.000522
+        },
+        {
+          "turn": 3,
+          "action": "right",
+          "reason": "conditional_plan",
+          "step_s": 0.001795,
+          "gap_s": 0.000557
+        }
+      ],
+      "image_shape": [
+        457,
+        640,
+        4
+      ],
+      "board_signature": "1d9170705d94781e",
+      "errors": []
+    },
+    "error_length": 1815
+  },
+  {
+    "notebook": true,
+    "label": "A1 Maze Turns",
+    "report": {
+      "source": "0b61f5c7c594541b12656995aa2389642ce37a48ad9f5a2bc3544360c45d92d5",
+      "trigger": "predicted_terminal_action",
+      "elapsed": 0.047014,
+      "inflight_step_seconds": 0.0,
+      "initial_window": 3.0,
+      "cutoff": 4.649999999999636,
+      "config": {
+        "movement": "cardinal",
+        "objective": "collect_exit",
+        "seed": 42,
+        "width": 9,
+        "height": 7,
+        "turn_limit": 150
+      },
+      "latest_status": {
+        "score": -27,
+        "phase": "ongoing",
+        "turn": 9
+      },
+      "stats": {
+        "input_mode": "image",
+        "visual_discrepancies": 0,
+        "metadata_discrepancies": 0,
+        "repairs": 0,
+        "recoveries": 0,
+        "actions": 10,
+        "hypotheses": 1,
+        "reason": "conditional_plan",
+        "conditional_on_perception": true,
+        "planner_stop_reason": "exhausted",
+        "planner_backend": "fast"
+      },
+      "plan_remaining": 0,
+      "planner_info": {
+        "search_calls": "1",
+        "cache_hits": "9",
+        "transitions": "407",
+        "expansions": "59",
+        "peak_states": "38",
+        "peak_records": "60",
+        "stop_reason": "exhausted",
+        "time_to_first_win": "0.004836249998334097"
+      },
+      "stages_inclusive": {
+        "cnn_uncached": {
+          "calls": 3,
+          "seconds": 0.003008
+        },
+        "cnn_total": {
+          "calls": 3,
+          "seconds": 0.003704
+        },
+        "reference_search_transition": {
+          "calls": 10,
+          "seconds": 0.002064
+        },
+        "winning_replay": {
+          "calls": 1,
+          "seconds": 0.003466
+        },
+        "planning_dispatch": {
+          "calls": 10,
+          "seconds": 0.011458
+        },
+        "observation_check": {
+          "calls": 9,
+          "seconds": 0.007739
+        },
+        "reconcile": {
+          "calls": 9,
+          "seconds": 1.8e-05
+        }
+      },
+      "transition_cache_hits": 10,
+      "transition_cache_misses": 0,
+      "agent_seconds": 0.03746,
+      "between_calls_seconds": 0.009547,
+      "sampled_actions": 10,
+      "steps_first_last": [
+        {
+          "turn": 0,
+          "action": "down",
+          "reason": "conditional_plan",
+          "step_s": 0.025399,
+          "gap_s": 3.7e-05
+        },
+        {
+          "turn": 1,
+          "action": "down",
+          "reason": "conditional_plan",
+          "step_s": 0.001155,
+          "gap_s": 0.001112
+        },
+        {
+          "turn": 2,
+          "action": "down",
+          "reason": "conditional_plan",
+          "step_s": 0.001426,
+          "gap_s": 0.001133
+        },
+        {
+          "turn": 7,
+          "action": "right",
+          "reason": "conditional_plan",
+          "step_s": 0.001805,
+          "gap_s": 0.000985
+        },
+        {
+          "turn": 8,
+          "action": "right",
+          "reason": "conditional_plan",
+          "step_s": 0.001678,
+          "gap_s": 0.001007
+        },
+        {
+          "turn": 9,
+          "action": "right",
+          "reason": "conditional_plan",
+          "step_s": 0.001462,
+          "gap_s": 0.001052
+        }
+      ],
+      "image_shape": [
+        497,
+        640,
+        4
+      ],
+      "board_signature": "6c921d9d43b17ad5",
+      "errors": []
+    },
+    "error_length": 2005
+  },
+  {
+    "notebook": true,
+    "label": "A2 Optional Coin Path",
+    "report": {
+      "source": "0b61f5c7c594541b12656995aa2389642ce37a48ad9f5a2bc3544360c45d92d5",
+      "trigger": "predicted_terminal_action",
+      "elapsed": 0.193001,
+      "inflight_step_seconds": 0.0,
+      "initial_window": 3.0,
+      "cutoff": 4.649999999999636,
+      "config": {
+        "movement": "cardinal",
+        "objective": "collect_exit",
+        "seed": 42,
+        "width": 9,
+        "height": 7,
+        "turn_limit": 150
+      },
+      "latest_status": {
+        "score": -21,
+        "phase": "ongoing",
+        "turn": 17
+      },
+      "stats": {
+        "input_mode": "image",
+        "visual_discrepancies": 0,
+        "metadata_discrepancies": 0,
+        "repairs": 0,
+        "recoveries": 0,
+        "actions": 18,
+        "hypotheses": 1,
+        "reason": "conditional_plan",
+        "conditional_on_perception": true,
+        "planner_stop_reason": "exhausted",
+        "planner_backend": "fast"
+      },
+      "plan_remaining": 0,
+      "planner_info": {
+        "search_calls": "1",
+        "cache_hits": "17",
+        "transitions": "7571",
+        "expansions": "1082",
+        "peak_states": "484",
+        "peak_records": "1088",
+        "stop_reason": "exhausted",
+        "time_to_first_win": "0.006115041998782544"
+      },
+      "stages_inclusive": {
+        "cnn_uncached": {
+          "calls": 6,
+          "seconds": 0.005079
+        },
+        "cnn_total": {
+          "calls": 6,
+          "seconds": 0.006115
+        },
+        "reference_search_transition": {
+          "calls": 45,
+          "seconds": 0.013258
+        },
+        "winning_replay": {
+          "calls": 3,
+          "seconds": 0.021367
+        },
+        "planning_dispatch": {
+          "calls": 18,
+          "seconds": 0.136543
+        },
+        "observation_check": {
+          "calls": 17,
+          "seconds": 0.014534
+        },
+        "reconcile": {
+          "calls": 17,
+          "seconds": 2.7e-05
+        }
+      },
+      "transition_cache_hits": 18,
+      "transition_cache_misses": 0,
+      "agent_seconds": 0.17377,
+      "between_calls_seconds": 0.019222,
+      "sampled_actions": 18,
+      "steps_first_last": [
+        {
+          "turn": 0,
+          "action": "right",
+          "reason": "conditional_plan",
+          "step_s": 0.150619,
+          "gap_s": 2.3e-05
+        },
+        {
+          "turn": 1,
+          "action": "down",
+          "reason": "conditional_plan",
+          "step_s": 0.001335,
+          "gap_s": 0.001343
+        },
+        {
+          "turn": 2,
+          "action": "down",
+          "reason": "conditional_plan",
+          "step_s": 0.001171,
+          "gap_s": 0.001231
+        },
+        {
+          "turn": 15,
+          "action": "right",
+          "reason": "conditional_plan",
+          "step_s": 0.001707,
+          "gap_s": 0.001046
+        },
+        {
+          "turn": 16,
+          "action": "pick_up",
+          "reason": "conditional_plan",
+          "step_s": 0.001191,
+          "gap_s": 0.001034
+        },
+        {
+          "turn": 17,
+          "action": "right",
+          "reason": "conditional_plan",
+          "step_s": 0.001116,
+          "gap_s": 0.000998
+        }
+      ],
+      "image_shape": [
+        497,
+        640,
+        4
+      ],
+      "board_signature": "ef9e7cc5f6c8a464",
+      "errors": []
+    },
+    "error_length": 2021
+  },
+  {
+    "notebook": true,
+    "label": "A3 Multiple Required Gems",
+    "report": {
+      "source": "0b61f5c7c594541b12656995aa2389642ce37a48ad9f5a2bc3544360c45d92d5",
+      "trigger": "predicted_terminal_action",
+      "elapsed": 0.133132,
+      "inflight_step_seconds": 0.0,
+      "initial_window": 3.0,
+      "cutoff": 4.649999999999636,
+      "config": {
+        "movement": "cardinal",
+        "objective": "collect_exit",
+        "seed": 42,
+        "width": 11,
+        "height": 9,
+        "turn_limit": 150
+      },
+      "latest_status": {
+        "score": -63,
+        "phase": "ongoing",
+        "turn": 21
+      },
+      "stats": {
+        "input_mode": "image",
+        "visual_discrepancies": 0,
+        "metadata_discrepancies": 0,
+        "repairs": 0,
+        "recoveries": 0,
+        "actions": 22,
+        "hypotheses": 1,
+        "reason": "conditional_plan",
+        "conditional_on_perception": true,
+        "planner_stop_reason": "deadline",
+        "planner_backend": "fast"
+      },
+      "plan_remaining": 0,
+      "planner_info": {
+        "search_calls": "1",
+        "cache_hits": "21",
+        "transitions": "884",
+        "expansions": "128",
+        "peak_states": "144",
+        "peak_records": "264",
+        "stop_reason": "deadline",
+        "time_to_first_win": "0.019829291000860394"
+      },
+      "stages_inclusive": {
+        "cnn_uncached": {
+          "calls": 10,
+          "seconds": 0.010497
+        },
+        "cnn_total": {
+          "calls": 10,
+          "seconds": 0.012822
+        },
+        "reference_search_transition": {
+          "calls": 22,
+          "seconds": 0.009888
+        },
+        "winning_replay": {
+          "calls": 1,
+          "seconds": 0.015941
+        },
+        "planning_dispatch": {
+          "calls": 22,
+          "seconds": 0.050002
+        },
+        "observation_check": {
+          "calls": 21,
+          "seconds": 0.017258
+        },
+        "reconcile": {
+          "calls": 21,
+          "seconds": 3.3e-05
+        }
+      },
+      "transition_cache_hits": 22,
+      "transition_cache_misses": 0,
+      "agent_seconds": 0.098859,
+      "between_calls_seconds": 0.034269,
+      "sampled_actions": 22,
+      "steps_first_last": [
+        {
+          "turn": 0,
+          "action": "right",
+          "reason": "conditional_plan",
+          "step_s": 0.067471,
+          "gap_s": 2.5e-05
+        },
+        {
+          "turn": 1,
+          "action": "right",
+          "reason": "conditional_plan",
+          "step_s": 0.00205,
+          "gap_s": 0.001796
+        },
+        {
+          "turn": 2,
+          "action": "right",
+          "reason": "conditional_plan",
+          "step_s": 0.001833,
+          "gap_s": 0.001712
+        },
+        {
+          "turn": 19,
+          "action": "right",
+          "reason": "conditional_plan",
+          "step_s": 0.001214,
+          "gap_s": 0.001573
+        },
+        {
+          "turn": 20,
+          "action": "right",
+          "reason": "conditional_plan",
+          "step_s": 0.001178,
+          "gap_s": 0.001546
+        },
+        {
+          "turn": 21,
+          "action": "right",
+          "reason": "conditional_plan",
+          "step_s": 0.00182,
+          "gap_s": 0.001547
+        }
+      ],
+      "image_shape": [
+        523,
+        640,
+        4
+      ],
+      "board_signature": "767c9710a70bfca6",
+      "errors": []
+    },
+    "error_length": 2018
+  },
+  {
+    "notebook": true,
+    "label": "A4 Key and Door",
+    "report": {
+      "source": "0b61f5c7c594541b12656995aa2389642ce37a48ad9f5a2bc3544360c45d92d5",
+      "trigger": "predicted_terminal_action",
+      "elapsed": 0.069124,
+      "inflight_step_seconds": 0.0,
+      "initial_window": 3.0,
+      "cutoff": 4.649999999999636,
+      "config": {
+        "movement": "cardinal",
+        "objective": "collect_exit",
+        "seed": 42,
+        "width": 11,
+        "height": 9,
+        "turn_limit": 150
+      },
+      "latest_status": {
+        "score": -33,
+        "phase": "ongoing",
+        "turn": 11
+      },
+      "stats": {
+        "input_mode": "image",
+        "visual_discrepancies": 0,
+        "metadata_discrepancies": 0,
+        "repairs": 0,
+        "recoveries": 0,
+        "actions": 12,
+        "hypotheses": 1,
+        "reason": "conditional_plan",
+        "conditional_on_perception": true,
+        "planner_stop_reason": "exhausted",
+        "planner_backend": "fast"
+      },
+      "plan_remaining": 0,
+      "planner_info": {
+        "search_calls": "1",
+        "cache_hits": "11",
+        "transitions": "1569",
+        "expansions": "225",
+        "peak_states": "107",
+        "peak_records": "226",
+        "stop_reason": "exhausted",
+        "time_to_first_win": "0.0043539159996726085"
+      },
+      "stages_inclusive": {
+        "cnn_uncached": {
+          "calls": 9,
+          "seconds": 0.008694
+        },
+        "cnn_total": {
+          "calls": 9,
+          "seconds": 0.010519
+        },
+        "reference_search_transition": {
+          "calls": 12,
+          "seconds": 0.001917
+        },
+        "winning_replay": {
+          "calls": 1,
+          "seconds": 0.002853
+        },
+        "planning_dispatch": {
+          "calls": 12,
+          "seconds": 0.020674
+        },
+        "observation_check": {
+          "calls": 11,
+          "seconds": 0.010779
+        },
+        "reconcile": {
+          "calls": 11,
+          "seconds": 1.9e-05
+        }
+      },
+      "transition_cache_hits": 12,
+      "transition_cache_misses": 0,
+      "agent_seconds": 0.062344,
+      "between_calls_seconds": 0.006773,
+      "sampled_actions": 12,
+      "steps_first_last": [
+        {
+          "turn": 0,
+          "action": "up",
+          "reason": "conditional_plan",
+          "step_s": 0.046459,
+          "gap_s": 7.1e-05
+        },
+        {
+          "turn": 1,
+          "action": "right",
+          "reason": "conditional_plan",
+          "step_s": 0.001684,
+          "gap_s": 0.00074
+        },
+        {
+          "turn": 2,
+          "action": "pick_up",
+          "reason": "conditional_plan",
+          "step_s": 0.001501,
+          "gap_s": 0.000639
+        },
+        {
+          "turn": 9,
+          "action": "right",
+          "reason": "conditional_plan",
+          "step_s": 0.000961,
+          "gap_s": 0.000547
+        },
+        {
+          "turn": 10,
+          "action": "right",
+          "reason": "conditional_plan",
+          "step_s": 0.000957,
+          "gap_s": 0.000539
+        },
+        {
+          "turn": 11,
+          "action": "right",
+          "reason": "conditional_plan",
+          "step_s": 0.001966,
+          "gap_s": 0.000558
+        }
+      ],
+      "image_shape": [
+        523,
+        640,
+        4
+      ],
+      "board_signature": "d62c767fc0b6e9e8",
+      "errors": []
+    },
+    "error_length": 2019
+  },
+  {
+    "notebook": true,
+    "label": "A5 Hazard Detour",
+    "report": {
+      "source": "0b61f5c7c594541b12656995aa2389642ce37a48ad9f5a2bc3544360c45d92d5",
+      "trigger": "predicted_terminal_action",
+      "elapsed": 0.088191,
+      "inflight_step_seconds": 0.0,
+      "initial_window": 3.0,
+      "cutoff": 4.649999999999636,
+      "config": {
+        "movement": "cardinal",
+        "objective": "collect_exit",
+        "seed": 42,
+        "width": 11,
+        "height": 9,
+        "turn_limit": 150
+      },
+      "latest_status": {
+        "score": -39,
+        "phase": "ongoing",
+        "turn": 13
+      },
+      "stats": {
+        "input_mode": "image",
+        "visual_discrepancies": 0,
+        "metadata_discrepancies": 0,
+        "repairs": 0,
+        "recoveries": 0,
+        "actions": 14,
+        "hypotheses": 1,
+        "reason": "conditional_plan",
+        "conditional_on_perception": true,
+        "planner_stop_reason": "deadline",
+        "planner_backend": "fast"
+      },
+      "plan_remaining": 0,
+      "planner_info": {
+        "search_calls": "1",
+        "cache_hits": "13",
+        "transitions": "2100",
+        "expansions": "305",
+        "peak_states": "260",
+        "peak_records": "452",
+        "stop_reason": "deadline",
+        "time_to_first_win": "0.005227916999501758"
+      },
+      "stages_inclusive": {
+        "cnn_uncached": {
+          "calls": 9,
+          "seconds": 0.011119
+        },
+        "cnn_total": {
+          "calls": 9,
+          "seconds": 0.013554
+        },
+        "reference_search_transition": {
+          "calls": 30,
+          "seconds": 0.004883
+        },
+        "winning_replay": {
+          "calls": 2,
+          "seconds": 0.007413
+        },
+        "planning_dispatch": {
+          "calls": 14,
+          "seconds": 0.031457
+        },
+        "observation_check": {
+          "calls": 13,
+          "seconds": 0.012512
+        },
+        "reconcile": {
+          "calls": 13,
+          "seconds": 2.5e-05
+        }
+      },
+      "transition_cache_hits": 14,
+      "transition_cache_misses": 0,
+      "agent_seconds": 0.078963,
+      "between_calls_seconds": 0.009223,
+      "sampled_actions": 14,
+      "steps_first_last": [
+        {
+          "turn": 0,
+          "action": "right",
+          "reason": "conditional_plan",
+          "step_s": 0.059978,
+          "gap_s": 3e-05
+        },
+        {
+          "turn": 1,
+          "action": "right",
+          "reason": "conditional_plan",
+          "step_s": 0.002341,
+          "gap_s": 0.000936
+        },
+        {
+          "turn": 2,
+          "action": "right",
+          "reason": "conditional_plan",
+          "step_s": 0.001766,
+          "gap_s": 0.000826
+        },
+        {
+          "turn": 11,
+          "action": "down",
+          "reason": "conditional_plan",
+          "step_s": 0.001486,
+          "gap_s": 0.000601
+        },
+        {
+          "turn": 12,
+          "action": "down",
+          "reason": "conditional_plan",
+          "step_s": 0.001629,
+          "gap_s": 0.000585
+        },
+        {
+          "turn": 13,
+          "action": "down",
+          "reason": "conditional_plan",
+          "step_s": 0.001151,
+          "gap_s": 0.000753
+        }
+      ],
+      "image_shape": [
+        523,
+        640,
+        4
+      ],
+      "board_signature": "93b82a3bbbd4fde5",
+      "errors": []
+    },
+    "error_length": 2014
+  },
+  {
+    "notebook": true,
+    "label": "A6 Pushable Box",
+    "report": {
+      "source": "0b61f5c7c594541b12656995aa2389642ce37a48ad9f5a2bc3544360c45d92d5",
+      "trigger": "predicted_terminal_action",
+      "elapsed": 0.052064,
+      "inflight_step_seconds": 0.0,
+      "initial_window": 3.0,
+      "cutoff": 4.649999999999636,
+      "config": {
+        "movement": "cardinal",
+        "objective": "collect_exit",
+        "seed": 42,
+        "width": 11,
+        "height": 9,
+        "turn_limit": 150
+      },
+      "latest_status": {
+        "score": -21,
+        "phase": "ongoing",
+        "turn": 7
+      },
+      "stats": {
+        "input_mode": "image",
+        "visual_discrepancies": 0,
+        "metadata_discrepancies": 0,
+        "repairs": 0,
+        "recoveries": 0,
+        "actions": 8,
+        "hypotheses": 1,
+        "reason": "conditional_plan",
+        "conditional_on_perception": true,
+        "planner_stop_reason": "exhausted",
+        "planner_backend": "fast"
+      },
+      "plan_remaining": 0,
+      "planner_info": {
+        "search_calls": "1",
+        "cache_hits": "7",
+        "transitions": "376",
+        "expansions": "55",
+        "peak_states": "35",
+        "peak_records": "66",
+        "stop_reason": "exhausted",
+        "time_to_first_win": "0.0037982499998179264"
+      },
+      "stages_inclusive": {
+        "cnn_uncached": {
+          "calls": 7,
+          "seconds": 0.007742
+        },
+        "cnn_total": {
+          "calls": 7,
+          "seconds": 0.009468
+        },
+        "reference_search_transition": {
+          "calls": 18,
+          "seconds": 0.002496
+        },
+        "winning_replay": {
+          "calls": 2,
+          "seconds": 0.003817
+        },
+        "planning_dispatch": {
+          "calls": 8,
+          "seconds": 0.010872
+        },
+        "observation_check": {
+          "calls": 7,
+          "seconds": 0.008143
+        },
+        "reconcile": {
+          "calls": 7,
+          "seconds": 1.3e-05
+        }
+      },
+      "transition_cache_hits": 8,
+      "transition_cache_misses": 0,
+      "agent_seconds": 0.047636,
+      "between_calls_seconds": 0.004422,
+      "sampled_actions": 8,
+      "steps_first_last": [
+        {
+          "turn": 0,
+          "action": "right",
+          "reason": "conditional_plan",
+          "step_s": 0.036255,
+          "gap_s": 3.9e-05
+        },
+        {
+          "turn": 1,
+          "action": "right",
+          "reason": "conditional_plan",
+          "step_s": 0.001741,
+          "gap_s": 0.000718
+        },
+        {
+          "turn": 2,
+          "action": "right",
+          "reason": "conditional_plan",
+          "step_s": 0.001554,
+          "gap_s": 0.000572
+        },
+        {
+          "turn": 5,
+          "action": "right",
+          "reason": "conditional_plan",
+          "step_s": 0.001026,
+          "gap_s": 0.000564
+        },
+        {
+          "turn": 6,
+          "action": "right",
+          "reason": "conditional_plan",
+          "step_s": 0.001581,
+          "gap_s": 0.000544
+        },
+        {
+          "turn": 7,
+          "action": "right",
+          "reason": "conditional_plan",
+          "step_s": 0.001992,
+          "gap_s": 0.000794
+        }
+      ],
+      "image_shape": [
+        523,
+        640,
+        4
+      ],
+      "board_signature": "3bf6704a93e7f71d",
+      "errors": []
+    },
+    "error_length": 2007
+  },
+  {
+    "notebook": true,
+    "label": "A7 Shield Powerup",
+    "report": {
+      "source": "0b61f5c7c594541b12656995aa2389642ce37a48ad9f5a2bc3544360c45d92d5",
+      "trigger": "predicted_terminal_action",
+      "elapsed": 0.085826,
+      "inflight_step_seconds": 0.0,
+      "initial_window": 3.0,
+      "cutoff": 4.649999999999636,
+      "config": {
+        "movement": "cardinal",
+        "objective": "collect_exit",
+        "seed": 42,
+        "width": 11,
+        "height": 9,
+        "turn_limit": 150
+      },
+      "latest_status": {
+        "score": -42,
+        "phase": "ongoing",
+        "turn": 14
+      },
+      "stats": {
+        "input_mode": "image",
+        "visual_discrepancies": 0,
+        "metadata_discrepancies": 0,
+        "repairs": 0,
+        "recoveries": 0,
+        "actions": 15,
+        "hypotheses": 1,
+        "reason": "conditional_plan",
+        "conditional_on_perception": true,
+        "planner_stop_reason": "deadline",
+        "planner_backend": "fast"
+      },
+      "plan_remaining": 0,
+      "planner_info": {
+        "search_calls": "1",
+        "cache_hits": "14",
+        "transitions": "2516",
+        "expansions": "361",
+        "peak_states": "175",
+        "peak_records": "370",
+        "stop_reason": "deadline",
+        "time_to_first_win": "0.0073435419999441365"
+      },
+      "stages_inclusive": {
+        "cnn_uncached": {
+          "calls": 8,
+          "seconds": 0.008267
+        },
+        "cnn_total": {
+          "calls": 8,
+          "seconds": 0.01003
+        },
+        "reference_search_transition": {
+          "calls": 15,
+          "seconds": 0.004148
+        },
+        "winning_replay": {
+          "calls": 1,
+          "seconds": 0.005383
+        },
+        "planning_dispatch": {
+          "calls": 15,
+          "seconds": 0.03356
+        },
+        "observation_check": {
+          "calls": 14,
+          "seconds": 0.012118
+        },
+        "reconcile": {
+          "calls": 14,
+          "seconds": 2.4e-05
+        }
+      },
+      "transition_cache_hits": 15,
+      "transition_cache_misses": 0,
+      "agent_seconds": 0.077228,
+      "between_calls_seconds": 0.008594,
+      "sampled_actions": 15,
+      "steps_first_last": [
+        {
+          "turn": 0,
+          "action": "up",
+          "reason": "conditional_plan",
+          "step_s": 0.058608,
+          "gap_s": 3.5e-05
+        },
+        {
+          "turn": 1,
+          "action": "up",
+          "reason": "conditional_plan",
+          "step_s": 0.001699,
+          "gap_s": 0.000741
+        },
+        {
+          "turn": 2,
+          "action": "up",
+          "reason": "conditional_plan",
+          "step_s": 0.000976,
+          "gap_s": 0.000618
+        },
+        {
+          "turn": 12,
+          "action": "right",
+          "reason": "conditional_plan",
+          "step_s": 0.001054,
+          "gap_s": 0.000551
+        },
+        {
+          "turn": 13,
+          "action": "right",
+          "reason": "conditional_plan",
+          "step_s": 0.001005,
+          "gap_s": 0.000599
+        },
+        {
+          "turn": 14,
+          "action": "right",
+          "reason": "conditional_plan",
+          "step_s": 0.001584,
+          "gap_s": 0.000557
+        }
+      ],
+      "image_shape": [
+        523,
+        640,
+        4
+      ],
+      "board_signature": "2c6e94e0cfa1c6c5",
+      "errors": []
+    },
+    "error_length": 2009
+  },
+  {
+    "notebook": true,
+    "label": "A8 Ghost Powerup",
+    "report": {
+      "source": "0b61f5c7c594541b12656995aa2389642ce37a48ad9f5a2bc3544360c45d92d5",
+      "trigger": "predicted_terminal_action",
+      "elapsed": 0.100598,
+      "inflight_step_seconds": 0.0,
+      "initial_window": 3.0,
+      "cutoff": 4.649999999999636,
+      "config": {
+        "movement": "cardinal",
+        "objective": "collect_exit",
+        "seed": 42,
+        "width": 13,
+        "height": 9,
+        "turn_limit": 150
+      },
+      "latest_status": {
+        "score": -48,
+        "phase": "ongoing",
+        "turn": 16
+      },
+      "stats": {
+        "input_mode": "image",
+        "visual_discrepancies": 0,
+        "metadata_discrepancies": 0,
+        "repairs": 0,
+        "recoveries": 0,
+        "actions": 17,
+        "hypotheses": 1,
+        "reason": "conditional_plan",
+        "conditional_on_perception": true,
+        "planner_stop_reason": "deadline",
+        "planner_backend": "fast"
+      },
+      "plan_remaining": 0,
+      "planner_info": {
+        "search_calls": "1",
+        "cache_hits": "16",
+        "transitions": "1874",
+        "expansions": "269",
+        "peak_states": "261",
+        "peak_records": "525",
+        "stop_reason": "deadline",
+        "time_to_first_win": "0.006889500000397675"
+      },
+      "stages_inclusive": {
+        "cnn_uncached": {
+          "calls": 17,
+          "seconds": 0.014807
+        },
+        "cnn_total": {
+          "calls": 17,
+          "seconds": 0.018061
+        },
+        "reference_search_transition": {
+          "calls": 17,
+          "seconds": 0.002581
+        },
+        "winning_replay": {
+          "calls": 1,
+          "seconds": 0.003871
+        },
+        "planning_dispatch": {
+          "calls": 17,
+          "seconds": 0.033314
+        },
+        "observation_check": {
+          "calls": 16,
+          "seconds": 0.020663
+        },
+        "reconcile": {
+          "calls": 16,
+          "seconds": 3.2e-05
+        }
+      },
+      "transition_cache_hits": 17,
+      "transition_cache_misses": 0,
+      "agent_seconds": 0.090732,
+      "between_calls_seconds": 0.009861,
+      "sampled_actions": 17,
+      "steps_first_last": [
+        {
+          "turn": 0,
+          "action": "up",
+          "reason": "conditional_plan",
+          "step_s": 0.061863,
+          "gap_s": 2.9e-05
+        },
+        {
+          "turn": 1,
+          "action": "up",
+          "reason": "conditional_plan",
+          "step_s": 0.001688,
+          "gap_s": 0.000678
+        },
+        {
+          "turn": 2,
+          "action": "up",
+          "reason": "conditional_plan",
+          "step_s": 0.001539,
+          "gap_s": 0.000578
+        },
+        {
+          "turn": 14,
+          "action": "right",
+          "reason": "conditional_plan",
+          "step_s": 0.001629,
+          "gap_s": 0.000941
+        },
+        {
+          "turn": 15,
+          "action": "right",
+          "reason": "conditional_plan",
+          "step_s": 0.000917,
+          "gap_s": 0.000549
+        },
+        {
+          "turn": 16,
+          "action": "right",
+          "reason": "conditional_plan",
+          "step_s": 0.001435,
+          "gap_s": 0.000484
+        }
+      ],
+      "image_shape": [
+        443,
+        640,
+        4
+      ],
+      "board_signature": "8bf29c2887e25c35",
+      "errors": []
+    },
+    "error_length": 2012
+  },
+  {
+    "notebook": true,
+    "label": "A9 Boots Powerup",
+    "report": {
+      "source": "0b61f5c7c594541b12656995aa2389642ce37a48ad9f5a2bc3544360c45d92d5",
+      "trigger": "predicted_terminal_action",
+      "elapsed": 0.066757,
+      "inflight_step_seconds": 0.0,
+      "initial_window": 3.0,
+      "cutoff": 4.649999999999636,
+      "config": {
+        "movement": "cardinal",
+        "objective": "collect_exit",
+        "seed": 42,
+        "width": 13,
+        "height": 9,
+        "turn_limit": 150
+      },
+      "latest_status": {
+        "score": -27,
+        "phase": "ongoing",
+        "turn": 9
+      },
+      "stats": {
+        "input_mode": "image",
+        "visual_discrepancies": 0,
+        "metadata_discrepancies": 0,
+        "repairs": 0,
+        "recoveries": 0,
+        "actions": 10,
+        "hypotheses": 1,
+        "reason": "conditional_plan",
+        "conditional_on_perception": true,
+        "planner_stop_reason": "exhausted",
+        "planner_backend": "fast"
+      },
+      "plan_remaining": 0,
+      "planner_info": {
+        "search_calls": "1",
+        "cache_hits": "9",
+        "transitions": "446",
+        "expansions": "67",
+        "peak_states": "40",
+        "peak_records": "69",
+        "stop_reason": "exhausted",
+        "time_to_first_win": "0.004590917000314221"
+      },
+      "stages_inclusive": {
+        "cnn_uncached": {
+          "calls": 7,
+          "seconds": 0.012744
+        },
+        "cnn_total": {
+          "calls": 7,
+          "seconds": 0.015454
+        },
+        "reference_search_transition": {
+          "calls": 10,
+          "seconds": 0.002079
+        },
+        "winning_replay": {
+          "calls": 1,
+          "seconds": 0.003267
+        },
+        "planning_dispatch": {
+          "calls": 10,
+          "seconds": 0.011264
+        },
+        "observation_check": {
+          "calls": 9,
+          "seconds": 0.009218
+        },
+        "reconcile": {
+          "calls": 9,
+          "seconds": 2.1e-05
+        }
+      },
+      "transition_cache_hits": 10,
+      "transition_cache_misses": 0,
+      "agent_seconds": 0.059498,
+      "between_calls_seconds": 0.007254,
+      "sampled_actions": 10,
+      "steps_first_last": [
+        {
+          "turn": 0,
+          "action": "down",
+          "reason": "conditional_plan",
+          "step_s": 0.045016,
+          "gap_s": 6.6e-05
+        },
+        {
+          "turn": 1,
+          "action": "right",
+          "reason": "conditional_plan",
+          "step_s": 0.001996,
+          "gap_s": 0.000908
+        },
+        {
+          "turn": 2,
+          "action": "right",
+          "reason": "conditional_plan",
+          "step_s": 0.00232,
+          "gap_s": 0.000895
+        },
+        {
+          "turn": 7,
+          "action": "up",
+          "reason": "conditional_plan",
+          "step_s": 0.001097,
+          "gap_s": 0.000776
+        },
+        {
+          "turn": 8,
+          "action": "right",
+          "reason": "conditional_plan",
+          "step_s": 0.001613,
+          "gap_s": 0.0007
+        },
+        {
+          "turn": 9,
+          "action": "right",
+          "reason": "conditional_plan",
+          "step_s": 0.001094,
+          "gap_s": 0.000705
+        }
+      ],
+      "image_shape": [
+        443,
+        640,
+        4
+      ],
+      "board_signature": "801a6ad9385f089c",
+      "errors": []
+    },
+    "error_length": 2003
+  },
+  {
+    "notebook": true,
+    "label": "A10 Combined Mechanics",
+    "report": {
+      "source": "0b61f5c7c594541b12656995aa2389642ce37a48ad9f5a2bc3544360c45d92d5",
+      "trigger": "predicted_terminal_action",
+      "elapsed": 0.150833,
+      "inflight_step_seconds": 0.0,
+      "initial_window": 3.0,
+      "cutoff": 4.649999999999636,
+      "config": {
+        "movement": "cardinal",
+        "objective": "collect_exit",
+        "seed": 42,
+        "width": 7,
+        "height": 7,
+        "turn_limit": 150
+      },
+      "latest_status": {
+        "score": -84,
+        "phase": "ongoing",
+        "turn": 28
+      },
+      "stats": {
+        "input_mode": "image",
+        "visual_discrepancies": 0,
+        "metadata_discrepancies": 0,
+        "repairs": 0,
+        "recoveries": 0,
+        "actions": 29,
+        "hypotheses": 1,
+        "reason": "conditional_plan",
+        "conditional_on_perception": true,
+        "planner_stop_reason": "deadline",
+        "planner_backend": "fast"
+      },
+      "plan_remaining": 0,
+      "planner_info": {
+        "search_calls": "1",
+        "cache_hits": "28",
+        "transitions": "1827",
+        "expansions": "262",
+        "peak_states": "284",
+        "peak_records": "543",
+        "stop_reason": "deadline",
+        "time_to_first_win": "0.011487000001579872"
+      },
+      "stages_inclusive": {
+        "cnn_uncached": {
+          "calls": 20,
+          "seconds": 0.01608
+        },
+        "cnn_total": {
+          "calls": 20,
+          "seconds": 0.019254
+        },
+        "reference_search_transition": {
+          "calls": 29,
+          "seconds": 0.005627
+        },
+        "winning_replay": {
+          "calls": 1,
+          "seconds": 0.008655
+        },
+        "planning_dispatch": {
+          "calls": 29,
+          "seconds": 0.039202
+        },
+        "observation_check": {
+          "calls": 28,
+          "seconds": 0.038501
+        },
+        "reconcile": {
+          "calls": 28,
+          "seconds": 5.1e-05
+        }
+      },
+      "transition_cache_hits": 29,
+      "transition_cache_misses": 0,
+      "agent_seconds": 0.124446,
+      "between_calls_seconds": 0.026382,
+      "sampled_actions": 29,
+      "steps_first_last": [
+        {
+          "turn": 0,
+          "action": "right",
+          "reason": "conditional_plan",
+          "step_s": 0.073014,
+          "gap_s": 4.7e-05
+        },
+        {
+          "turn": 1,
+          "action": "right",
+          "reason": "conditional_plan",
+          "step_s": 0.002345,
+          "gap_s": 0.001139
+        },
+        {
+          "turn": 2,
+          "action": "down",
+          "reason": "conditional_plan",
+          "step_s": 0.001826,
+          "gap_s": 0.000914
+        },
+        {
+          "turn": 26,
+          "action": "down",
+          "reason": "conditional_plan",
+          "step_s": 0.002287,
+          "gap_s": 0.000874
+        },
+        {
+          "turn": 27,
+          "action": "right",
+          "reason": "conditional_plan",
+          "step_s": 0.001445,
+          "gap_s": 0.001073
+        },
+        {
+          "turn": 28,
+          "action": "right",
+          "reason": "conditional_plan",
+          "step_s": 0.001424,
+          "gap_s": 0.00088
+        }
+      ],
+      "image_shape": [
+        640,
+        640,
+        4
+      ],
+      "board_signature": "7cdb17fc2e2e11d5",
+      "errors": []
+    },
+    "error_length": 2016
+  },
+  {
+    "notebook": true,
+    "label": "B0 Thread the Needle",
+    "report": {
+      "source": "0b61f5c7c594541b12656995aa2389642ce37a48ad9f5a2bc3544360c45d92d5",
+      "trigger": "predicted_terminal_action",
+      "elapsed": 0.12493,
+      "inflight_step_seconds": 0.0,
+      "initial_window": 3.0,
+      "cutoff": 4.649999999999636,
+      "config": {
+        "movement": "cardinal",
+        "objective": "collect_exit",
+        "seed": 42,
+        "width": 15,
+        "height": 15,
+        "turn_limit": 150
+      },
+      "latest_status": {
+        "score": -81,
+        "phase": "ongoing",
+        "turn": 27
+      },
+      "stats": {
+        "input_mode": "image",
+        "visual_discrepancies": 0,
+        "metadata_discrepancies": 0,
+        "repairs": 0,
+        "recoveries": 0,
+        "actions": 28,
+        "hypotheses": 1,
+        "reason": "conditional_plan",
+        "conditional_on_perception": true,
+        "planner_stop_reason": "deadline",
+        "planner_backend": "fast"
+      },
+      "plan_remaining": 0,
+      "planner_info": {
+        "search_calls": "1",
+        "cache_hits": "27",
+        "transitions": "1672",
+        "expansions": "240",
+        "peak_states": "308",
+        "peak_records": "546",
+        "stop_reason": "deadline",
+        "time_to_first_win": "0.009830917000726913"
+      },
+      "stages_inclusive": {
+        "cnn_uncached": {
+          "calls": 9,
+          "seconds": 0.005918
+        },
+        "cnn_total": {
+          "calls": 9,
+          "seconds": 0.00712
+        },
+        "reference_search_transition": {
+          "calls": 28,
+          "seconds": 0.004241
+        },
+        "winning_replay": {
+          "calls": 1,
+          "seconds": 0.006594
+        },
+        "planning_dispatch": {
+          "calls": 28,
+          "seconds": 0.037372
+        },
+        "observation_check": {
+          "calls": 27,
+          "seconds": 0.019669
+        },
+        "reconcile": {
+          "calls": 27,
+          "seconds": 4.6e-05
+        }
+      },
+      "transition_cache_hits": 28,
+      "transition_cache_misses": 0,
+      "agent_seconds": 0.105096,
+      "between_calls_seconds": 0.019826,
+      "sampled_actions": 28,
+      "steps_first_last": [
+        {
+          "turn": 0,
+          "action": "down",
+          "reason": "conditional_plan",
+          "step_s": 0.064828,
+          "gap_s": 5.2e-05
+        },
+        {
+          "turn": 1,
+          "action": "down",
+          "reason": "conditional_plan",
+          "step_s": 0.001865,
+          "gap_s": 0.000959
+        },
+        {
+          "turn": 2,
+          "action": "down",
+          "reason": "conditional_plan",
+          "step_s": 0.001769,
+          "gap_s": 0.000696
+        },
+        {
+          "turn": 25,
+          "action": "right",
+          "reason": "conditional_plan",
+          "step_s": 0.001283,
+          "gap_s": 0.000694
+        },
+        {
+          "turn": 26,
+          "action": "right",
+          "reason": "conditional_plan",
+          "step_s": 0.001631,
+          "gap_s": 0.000675
+        },
+        {
+          "turn": 27,
+          "action": "right",
+          "reason": "conditional_plan",
+          "step_s": 0.001655,
+          "gap_s": 0.00092
+        }
+      ],
+      "image_shape": [
+        640,
+        640,
+        4
+      ],
+      "board_signature": "db2909346461ffc6",
+      "errors": []
+    },
+    "error_length": 2014
+  },
+  {
+    "notebook": true,
+    "label": "B1 Hypnosis",
+    "report": {
+      "source": "0b61f5c7c594541b12656995aa2389642ce37a48ad9f5a2bc3544360c45d92d5",
+      "trigger": "predicted_terminal_action",
+      "elapsed": 0.194087,
+      "inflight_step_seconds": 0.0,
+      "initial_window": 3.0,
+      "cutoff": 4.649999999999636,
+      "config": {
+        "movement": "cardinal",
+        "objective": "collect_exit",
+        "seed": 42,
+        "width": 15,
+        "height": 15,
+        "turn_limit": 150
+      },
+      "latest_status": {
+        "score": -78,
+        "phase": "ongoing",
+        "turn": 26
+      },
+      "stats": {
+        "input_mode": "image",
+        "visual_discrepancies": 0,
+        "metadata_discrepancies": 0,
+        "repairs": 0,
+        "recoveries": 0,
+        "actions": 27,
+        "hypotheses": 1,
+        "reason": "conditional_plan",
+        "conditional_on_perception": true,
+        "planner_stop_reason": "deadline",
+        "planner_backend": "fast"
+      },
+      "plan_remaining": 0,
+      "planner_info": {
+        "search_calls": "1",
+        "cache_hits": "26",
+        "transitions": "751",
+        "expansions": "109",
+        "peak_states": "140",
+        "peak_records": "246",
+        "stop_reason": "deadline",
+        "time_to_first_win": "0.03047850000075414"
+      },
+      "stages_inclusive": {
+        "cnn_uncached": {
+          "calls": 14,
+          "seconds": 0.012289
+        },
+        "cnn_total": {
+          "calls": 14,
+          "seconds": 0.014845
+        },
+        "reference_search_transition": {
+          "calls": 27,
+          "seconds": 0.013731
+        },
+        "winning_replay": {
+          "calls": 1,
+          "seconds": 0.023008
+        },
+        "planning_dispatch": {
+          "calls": 27,
+          "seconds": 0.064317
+        },
+        "observation_check": {
+          "calls": 26,
+          "seconds": 0.025019
+        },
+        "reconcile": {
+          "calls": 26,
+          "seconds": 5.5e-05
+        }
+      },
+      "transition_cache_hits": 27,
+      "transition_cache_misses": 0,
+      "agent_seconds": 0.139403,
+      "between_calls_seconds": 0.054679,
+      "sampled_actions": 27,
+      "steps_first_last": [
+        {
+          "turn": 0,
+          "action": "right",
+          "reason": "conditional_plan",
+          "step_s": 0.085875,
+          "gap_s": 3e-05
+        },
+        {
+          "turn": 1,
+          "action": "right",
+          "reason": "conditional_plan",
+          "step_s": 0.002365,
+          "gap_s": 0.00235
+        },
+        {
+          "turn": 2,
+          "action": "up",
+          "reason": "conditional_plan",
+          "step_s": 0.002346,
+          "gap_s": 0.002054
+        },
+        {
+          "turn": 24,
+          "action": "right",
+          "reason": "conditional_plan",
+          "step_s": 0.001703,
+          "gap_s": 0.002096
+        },
+        {
+          "turn": 25,
+          "action": "right",
+          "reason": "conditional_plan",
+          "step_s": 0.002472,
+          "gap_s": 0.002005
+        },
+        {
+          "turn": 26,
+          "action": "right",
+          "reason": "conditional_plan",
+          "step_s": 0.002191,
+          "gap_s": 0.002052
+        }
+      ],
+      "image_shape": [
+        640,
+        640,
+        4
+      ],
+      "board_signature": "136ec2416a4236c8",
+      "errors": []
+    },
+    "error_length": 2014
+  },
+  {
+    "notebook": true,
+    "label": "B2 The Vault",
+    "report": {
+      "source": "0b61f5c7c594541b12656995aa2389642ce37a48ad9f5a2bc3544360c45d92d5",
+      "trigger": "40_action_sample",
+      "elapsed": 0.407369,
+      "inflight_step_seconds": 0.0,
+      "initial_window": 3.0,
+      "cutoff": 4.649999999999636,
+      "config": {
+        "movement": "cardinal",
+        "objective": "collect_exit",
+        "seed": 42,
+        "width": 15,
+        "height": 15,
+        "turn_limit": 150
+      },
+      "latest_status": {
+        "score": -62,
+        "phase": "ongoing",
+        "turn": 39
+      },
+      "stats": {
+        "input_mode": "image",
+        "visual_discrepancies": 0,
+        "metadata_discrepancies": 0,
+        "repairs": 0,
+        "recoveries": 0,
+        "actions": 40,
+        "hypotheses": 1,
+        "reason": "conditional_plan",
+        "conditional_on_perception": true,
+        "planner_stop_reason": "deadline",
+        "planner_backend": "fast"
+      },
+      "plan_remaining": 1,
+      "planner_info": {
+        "search_calls": "1",
+        "cache_hits": "39",
+        "transitions": "1882",
+        "expansions": "271",
+        "peak_states": "572",
+        "peak_records": "832",
+        "stop_reason": "deadline",
+        "time_to_first_win": "0.05343233299936401"
+      },
+      "stages_inclusive": {
+        "cnn_uncached": {
+          "calls": 20,
+          "seconds": 0.0162
+        },
+        "cnn_total": {
+          "calls": 20,
+          "seconds": 0.01964
+        },
+        "reference_search_transition": {
+          "calls": 69,
+          "seconds": 0.072402
+        },
+        "winning_replay": {
+          "calls": 2,
+          "seconds": 0.108648
+        },
+        "planning_dispatch": {
+          "calls": 40,
+          "seconds": 0.218867
+        },
+        "observation_check": {
+          "calls": 39,
+          "seconds": 0.034339
+        },
+        "reconcile": {
+          "calls": 39,
+          "seconds": 7.8e-05
+        }
+      },
+      "transition_cache_hits": 40,
+      "transition_cache_misses": 0,
+      "agent_seconds": 0.322873,
+      "between_calls_seconds": 0.08449,
+      "sampled_actions": 40,
+      "steps_first_last": [
+        {
+          "turn": 0,
+          "action": "down",
+          "reason": "conditional_plan",
+          "step_s": 0.237513,
+          "gap_s": 3.9e-05
+        },
+        {
+          "turn": 1,
+          "action": "right",
+          "reason": "conditional_plan",
+          "step_s": 0.002417,
+          "gap_s": 0.002353
+        },
+        {
+          "turn": 2,
+          "action": "right",
+          "reason": "conditional_plan",
+          "step_s": 0.002474,
+          "gap_s": 0.002259
+        },
+        {
+          "turn": 37,
+          "action": "right",
+          "reason": "conditional_plan",
+          "step_s": 0.001911,
+          "gap_s": 0.002134
+        },
+        {
+          "turn": 38,
+          "action": "right",
+          "reason": "conditional_plan",
+          "step_s": 0.002096,
+          "gap_s": 0.002133
+        },
+        {
+          "turn": 39,
+          "action": "right",
+          "reason": "conditional_plan",
+          "step_s": 0.0019,
+          "gap_s": 0.002069
+        }
+      ],
+      "image_shape": [
+        640,
+        640,
+        4
+      ],
+      "board_signature": "a43fd8027b61e31d",
+      "errors": []
+    },
+    "error_length": 2005
+  },
+  {
+    "notebook": true,
+    "label": "B3 So Close Yet So Far",
+    "report": {
+      "source": "0b61f5c7c594541b12656995aa2389642ce37a48ad9f5a2bc3544360c45d92d5",
+      "trigger": "40_action_sample",
+      "elapsed": 0.312857,
+      "inflight_step_seconds": 0.0,
+      "initial_window": 3.0,
+      "cutoff": 4.649999999999636,
+      "config": {
+        "movement": "cardinal",
+        "objective": "collect_exit",
+        "seed": 42,
+        "width": 15,
+        "height": 15,
+        "turn_limit": 150
+      },
+      "latest_status": {
+        "score": -117,
+        "phase": "ongoing",
+        "turn": 39
+      },
+      "stats": {
+        "input_mode": "image",
+        "visual_discrepancies": 0,
+        "metadata_discrepancies": 0,
+        "repairs": 0,
+        "recoveries": 0,
+        "actions": 40,
+        "hypotheses": 1,
+        "reason": "conditional_plan",
+        "conditional_on_perception": true,
+        "planner_stop_reason": "deadline",
+        "planner_backend": "fast"
+      },
+      "plan_remaining": 66,
+      "planner_info": {
+        "search_calls": "1",
+        "cache_hits": "39",
+        "transitions": "510",
+        "expansions": "124",
+        "peak_states": "227",
+        "peak_records": "288",
+        "stop_reason": "deadline",
+        "time_to_first_win": "0.12819049999961862"
+      },
+      "stages_inclusive": {
+        "cnn_uncached": {
+          "calls": 8,
+          "seconds": 0.009502
+        },
+        "cnn_total": {
+          "calls": 8,
+          "seconds": 0.011562
+        },
+        "reference_search_transition": {
+          "calls": 106,
+          "seconds": 0.076633
+        },
+        "winning_replay": {
+          "calls": 1,
+          "seconds": 0.105121
+        },
+        "planning_dispatch": {
+          "calls": 40,
+          "seconds": 0.163019
+        },
+        "observation_check": {
+          "calls": 39,
+          "seconds": 0.027308
+        },
+        "reconcile": {
+          "calls": 39,
+          "seconds": 7.2e-05
+        }
+      },
+      "transition_cache_hits": 40,
+      "transition_cache_misses": 0,
+      "agent_seconds": 0.250816,
+      "between_calls_seconds": 0.062034,
+      "sampled_actions": 40,
+      "steps_first_last": [
+        {
+          "turn": 0,
+          "action": "down",
+          "reason": "conditional_plan",
+          "step_s": 0.184872,
+          "gap_s": 5.4e-05
+        },
+        {
+          "turn": 1,
+          "action": "down",
+          "reason": "conditional_plan",
+          "step_s": 0.002485,
+          "gap_s": 0.001719
+        },
+        {
+          "turn": 2,
+          "action": "down",
+          "reason": "conditional_plan",
+          "step_s": 0.002101,
+          "gap_s": 0.001721
+        },
+        {
+          "turn": 37,
+          "action": "left",
+          "reason": "conditional_plan",
+          "step_s": 0.001702,
+          "gap_s": 0.001641
+        },
+        {
+          "turn": 38,
+          "action": "left",
+          "reason": "conditional_plan",
+          "step_s": 0.002281,
+          "gap_s": 0.001615
+        },
+        {
+          "turn": 39,
+          "action": "pick_up",
+          "reason": "conditional_plan",
+          "step_s": 0.002189,
+          "gap_s": 0.001591
+        }
+      ],
+      "image_shape": [
+        640,
+        640,
+        4
+      ],
+      "board_signature": "9884f1f044d656a1",
+      "errors": []
+    },
+    "error_length": 2009
+  },
+  {
+    "notebook": true,
+    "label": "B4 Measure Twice and Cut Once",
+    "report": {
+      "source": "0b61f5c7c594541b12656995aa2389642ce37a48ad9f5a2bc3544360c45d92d5",
+      "trigger": "40_action_sample",
+      "elapsed": 0.362178,
+      "inflight_step_seconds": 0.0,
+      "initial_window": 3.0,
+      "cutoff": 4.649999999999636,
+      "config": {
+        "movement": "cardinal",
+        "objective": "collect_exit",
+        "seed": 42,
+        "width": 15,
+        "height": 15,
+        "turn_limit": 150
+      },
+      "latest_status": {
+        "score": -117,
+        "phase": "ongoing",
+        "turn": 39
+      },
+      "stats": {
+        "input_mode": "image",
+        "visual_discrepancies": 0,
+        "metadata_discrepancies": 0,
+        "repairs": 0,
+        "recoveries": 0,
+        "actions": 40,
+        "hypotheses": 1,
+        "reason": "conditional_plan",
+        "conditional_on_perception": true,
+        "planner_stop_reason": "deadline",
+        "planner_backend": "fast"
+      },
+      "plan_remaining": 90,
+      "planner_info": {
+        "search_calls": "1",
+        "cache_hits": "39",
+        "transitions": "527",
+        "expansions": "135",
+        "peak_states": "252",
+        "peak_records": "306",
+        "stop_reason": "deadline",
+        "time_to_first_win": "0.15934370799914177"
+      },
+      "stages_inclusive": {
+        "cnn_uncached": {
+          "calls": 10,
+          "seconds": 0.012182
+        },
+        "cnn_total": {
+          "calls": 10,
+          "seconds": 0.014714
+        },
+        "reference_search_transition": {
+          "calls": 130,
+          "seconds": 0.069834
+        },
+        "winning_replay": {
+          "calls": 1,
+          "seconds": 0.112118
+        },
+        "planning_dispatch": {
+          "calls": 40,
+          "seconds": 0.196497
+        },
+        "observation_check": {
+          "calls": 39,
+          "seconds": 0.027152
+        },
+        "reconcile": {
+          "calls": 39,
+          "seconds": 8e-05
+        }
+      },
+      "transition_cache_hits": 40,
+      "transition_cache_misses": 0,
+      "agent_seconds": 0.289072,
+      "between_calls_seconds": 0.0731,
+      "sampled_actions": 40,
+      "steps_first_last": [
+        {
+          "turn": 0,
+          "action": "down",
+          "reason": "conditional_plan",
+          "step_s": 0.218796,
+          "gap_s": 3.7e-05
+        },
+        {
+          "turn": 1,
+          "action": "down",
+          "reason": "conditional_plan",
+          "step_s": 0.002215,
+          "gap_s": 0.00191
+        },
+        {
+          "turn": 2,
+          "action": "down",
+          "reason": "conditional_plan",
+          "step_s": 0.002375,
+          "gap_s": 0.001807
+        },
+        {
+          "turn": 37,
+          "action": "right",
+          "reason": "conditional_plan",
+          "step_s": 0.001664,
+          "gap_s": 0.001989
+        },
+        {
+          "turn": 38,
+          "action": "right",
+          "reason": "conditional_plan",
+          "step_s": 0.001495,
+          "gap_s": 0.001744
+        },
+        {
+          "turn": 39,
+          "action": "right",
+          "reason": "conditional_plan",
+          "step_s": 0.001589,
+          "gap_s": 0.00211
+        }
+      ],
+      "image_shape": [
+        640,
+        640,
+        4
+      ],
+      "board_signature": "177b79e1753a99d9",
+      "errors": []
+    },
+    "error_length": 2005
+  },
+  {
+    "notebook": true,
+    "label": "B5 Ow Oof Owie",
+    "report": {
+      "source": "0b61f5c7c594541b12656995aa2389642ce37a48ad9f5a2bc3544360c45d92d5",
+      "trigger": "40_action_sample",
+      "elapsed": 0.283332,
+      "inflight_step_seconds": 0.0,
+      "initial_window": 3.0,
+      "cutoff": 4.649999999999636,
+      "config": {
+        "movement": "cardinal",
+        "objective": "collect_exit",
+        "seed": 42,
+        "width": 15,
+        "height": 15,
+        "turn_limit": 150
+      },
+      "latest_status": {
+        "score": -117,
+        "phase": "ongoing",
+        "turn": 39
+      },
+      "stats": {
+        "input_mode": "image",
+        "visual_discrepancies": 0,
+        "metadata_discrepancies": 0,
+        "repairs": 0,
+        "recoveries": 0,
+        "actions": 40,
+        "hypotheses": 1,
+        "reason": "conditional_plan",
+        "conditional_on_perception": true,
+        "planner_stop_reason": "deadline",
+        "planner_backend": "fast"
+      },
+      "plan_remaining": 31,
+      "planner_info": {
+        "search_calls": "1",
+        "cache_hits": "39",
+        "transitions": "805",
+        "expansions": "160",
+        "peak_states": "219",
+        "peak_records": "319",
+        "stop_reason": "deadline",
+        "time_to_first_win": "0.07450554100068985"
+      },
+      "stages_inclusive": {
+        "cnn_uncached": {
+          "calls": 16,
+          "seconds": 0.015485
+        },
+        "cnn_total": {
+          "calls": 16,
+          "seconds": 0.01847
+        },
+        "reference_search_transition": {
+          "calls": 71,
+          "seconds": 0.035695
+        },
+        "winning_replay": {
+          "calls": 1,
+          "seconds": 0.057745
+        },
+        "planning_dispatch": {
+          "calls": 40,
+          "seconds": 0.111185
+        },
+        "observation_check": {
+          "calls": 39,
+          "seconds": 0.034945
+        },
+        "reconcile": {
+          "calls": 39,
+          "seconds": 7.8e-05
+        }
+      },
+      "transition_cache_hits": 40,
+      "transition_cache_misses": 0,
+      "agent_seconds": 0.210144,
+      "between_calls_seconds": 0.073183,
+      "sampled_actions": 40,
+      "steps_first_last": [
+        {
+          "turn": 0,
+          "action": "right",
+          "reason": "conditional_plan",
+          "step_s": 0.132847,
+          "gap_s": 4.3e-05
+        },
+        {
+          "turn": 1,
+          "action": "right",
+          "reason": "conditional_plan",
+          "step_s": 0.006222,
+          "gap_s": 0.00198
+        },
+        {
+          "turn": 2,
+          "action": "down",
+          "reason": "conditional_plan",
+          "step_s": 0.002127,
+          "gap_s": 0.001909
+        },
+        {
+          "turn": 37,
+          "action": "down",
+          "reason": "conditional_plan",
+          "step_s": 0.001644,
+          "gap_s": 0.002052
+        },
+        {
+          "turn": 38,
+          "action": "down",
+          "reason": "conditional_plan",
+          "step_s": 0.002151,
+          "gap_s": 0.001858
+        },
+        {
+          "turn": 39,
+          "action": "down",
+          "reason": "conditional_plan",
+          "step_s": 0.001553,
+          "gap_s": 0.001765
+        }
+      ],
+      "image_shape": [
+        640,
+        640,
+        4
+      ],
+      "board_signature": "2b00792c49eec60c",
+      "errors": []
+    },
+    "error_length": 2007
+  },
+  {
+    "notebook": true,
+    "label": "B6 Warehouse",
+    "report": {
+      "source": "0b61f5c7c594541b12656995aa2389642ce37a48ad9f5a2bc3544360c45d92d5",
+      "trigger": "40_action_sample",
+      "elapsed": 0.272338,
+      "inflight_step_seconds": 0.0,
+      "initial_window": 3.0,
+      "cutoff": 4.649999999999636,
+      "config": {
+        "movement": "cardinal",
+        "objective": "collect_exit",
+        "seed": 42,
+        "width": 15,
+        "height": 15,
+        "turn_limit": 150
+      },
+      "latest_status": {
+        "score": -117,
+        "phase": "ongoing",
+        "turn": 39
+      },
+      "stats": {
+        "input_mode": "image",
+        "visual_discrepancies": 0,
+        "metadata_discrepancies": 0,
+        "repairs": 0,
+        "recoveries": 0,
+        "actions": 40,
+        "hypotheses": 1,
+        "reason": "conditional_plan",
+        "conditional_on_perception": true,
+        "planner_stop_reason": "deadline",
+        "planner_backend": "fast"
+      },
+      "plan_remaining": 32,
+      "planner_info": {
+        "search_calls": "1",
+        "cache_hits": "39",
+        "transitions": "815",
+        "expansions": "155",
+        "peak_states": "224",
+        "peak_records": "331",
+        "stop_reason": "deadline",
+        "time_to_first_win": "0.07457766700099455"
+      },
+      "stages_inclusive": {
+        "cnn_uncached": {
+          "calls": 16,
+          "seconds": 0.015003
+        },
+        "cnn_total": {
+          "calls": 16,
+          "seconds": 0.017875
+        },
+        "reference_search_transition": {
+          "calls": 72,
+          "seconds": 0.032762
+        },
+        "winning_replay": {
+          "calls": 1,
+          "seconds": 0.051721
+        },
+        "planning_dispatch": {
+          "calls": 40,
+          "seconds": 0.109408
+        },
+        "observation_check": {
+          "calls": 39,
+          "seconds": 0.035463
+        },
+        "reconcile": {
+          "calls": 39,
+          "seconds": 8.1e-05
+        }
+      },
+      "transition_cache_hits": 40,
+      "transition_cache_misses": 0,
+      "agent_seconds": 0.208655,
+      "between_calls_seconds": 0.063673,
+      "sampled_actions": 40,
+      "steps_first_last": [
+        {
+          "turn": 0,
+          "action": "down",
+          "reason": "conditional_plan",
+          "step_s": 0.133662,
+          "gap_s": 4.4e-05
+        },
+        {
+          "turn": 1,
+          "action": "down",
+          "reason": "conditional_plan",
+          "step_s": 0.002535,
+          "gap_s": 0.00193
+        },
+        {
+          "turn": 2,
+          "action": "down",
+          "reason": "conditional_plan",
+          "step_s": 0.002502,
+          "gap_s": 0.001516
+        },
+        {
+          "turn": 37,
+          "action": "down",
+          "reason": "conditional_plan",
+          "step_s": 0.00198,
+          "gap_s": 0.001973
+        },
+        {
+          "turn": 38,
+          "action": "down",
+          "reason": "conditional_plan",
+          "step_s": 0.002914,
+          "gap_s": 0.00204
+        },
+        {
+          "turn": 39,
+          "action": "down",
+          "reason": "conditional_plan",
+          "step_s": 0.002921,
+          "gap_s": 0.001856
+        }
+      ],
+      "image_shape": [
+        640,
+        640,
+        4
+      ],
+      "board_signature": "bf160fea7abb29c5",
+      "errors": []
+    },
+    "error_length": 2004
+  },
+  {
+    "notebook": true,
+    "label": "B7 Fire Resistance",
+    "report": {
+      "source": "0b61f5c7c594541b12656995aa2389642ce37a48ad9f5a2bc3544360c45d92d5",
+      "trigger": "predicted_terminal_action",
+      "elapsed": 0.219744,
+      "inflight_step_seconds": 0.0,
+      "initial_window": 3.0,
+      "cutoff": 4.649999999999636,
+      "config": {
+        "movement": "cardinal",
+        "objective": "collect_exit",
+        "seed": 42,
+        "width": 15,
+        "height": 15,
+        "turn_limit": 150
+      },
+      "latest_status": {
+        "score": -111,
+        "phase": "ongoing",
+        "turn": 37
+      },
+      "stats": {
+        "input_mode": "image",
+        "visual_discrepancies": 0,
+        "metadata_discrepancies": 0,
+        "repairs": 0,
+        "recoveries": 0,
+        "actions": 38,
+        "hypotheses": 1,
+        "reason": "conditional_plan",
+        "conditional_on_perception": true,
+        "planner_stop_reason": "deadline",
+        "planner_backend": "fast"
+      },
+      "plan_remaining": 0,
+      "planner_info": {
+        "search_calls": "1",
+        "cache_hits": "37",
+        "transitions": "464",
+        "expansions": "68",
+        "peak_states": "157",
+        "peak_records": "222",
+        "stop_reason": "deadline",
+        "time_to_first_win": "0.04131766699902073"
+      },
+      "stages_inclusive": {
+        "cnn_uncached": {
+          "calls": 24,
+          "seconds": 0.019099
+        },
+        "cnn_total": {
+          "calls": 24,
+          "seconds": 0.022856
+        },
+        "reference_search_transition": {
+          "calls": 38,
+          "seconds": 0.013752
+        },
+        "winning_replay": {
+          "calls": 1,
+          "seconds": 0.020679
+        },
+        "planning_dispatch": {
+          "calls": 38,
+          "seconds": 0.072525
+        },
+        "observation_check": {
+          "calls": 37,
+          "seconds": 0.039661
+        },
+        "reconcile": {
+          "calls": 37,
+          "seconds": 7.7e-05
+        }
+      },
+      "transition_cache_hits": 38,
+      "transition_cache_misses": 0,
+      "agent_seconds": 0.181044,
+      "between_calls_seconds": 0.038693,
+      "sampled_actions": 38,
+      "steps_first_last": [
+        {
+          "turn": 0,
+          "action": "down",
+          "reason": "conditional_plan",
+          "step_s": 0.106546,
+          "gap_s": 4.5e-05
+        },
+        {
+          "turn": 1,
+          "action": "down",
+          "reason": "conditional_plan",
+          "step_s": 0.002314,
+          "gap_s": 0.001382
+        },
+        {
+          "turn": 2,
+          "action": "down",
+          "reason": "conditional_plan",
+          "step_s": 0.002084,
+          "gap_s": 0.001264
+        },
+        {
+          "turn": 35,
+          "action": "left",
+          "reason": "conditional_plan",
+          "step_s": 0.00255,
+          "gap_s": 0.001187
+        },
+        {
+          "turn": 36,
+          "action": "down",
+          "reason": "conditional_plan",
+          "step_s": 0.002256,
+          "gap_s": 0.001117
+        },
+        {
+          "turn": 37,
+          "action": "down",
+          "reason": "conditional_plan",
+          "step_s": 0.001517,
+          "gap_s": 0.000996
+        }
+      ],
+      "image_shape": [
+        640,
+        640,
+        4
+      ],
+      "board_signature": "7da8fd64bf637577",
+      "errors": []
+    },
+    "error_length": 2013
+  },
+  {
+    "notebook": true,
+    "label": "B8 Choose Wisely",
+    "report": {
+      "source": "0b61f5c7c594541b12656995aa2389642ce37a48ad9f5a2bc3544360c45d92d5",
+      "trigger": "predicted_terminal_action",
+      "elapsed": 0.2768,
+      "inflight_step_seconds": 0.0,
+      "initial_window": 3.0,
+      "cutoff": 4.649999999999636,
+      "config": {
+        "movement": "cardinal",
+        "objective": "collect_exit",
+        "seed": 42,
+        "width": 15,
+        "height": 15,
+        "turn_limit": 150
+      },
+      "latest_status": {
+        "score": -93,
+        "phase": "ongoing",
+        "turn": 31
+      },
+      "stats": {
+        "input_mode": "image",
+        "visual_discrepancies": 0,
+        "metadata_discrepancies": 0,
+        "repairs": 0,
+        "recoveries": 0,
+        "actions": 32,
+        "hypotheses": 1,
+        "reason": "conditional_plan",
+        "conditional_on_perception": true,
+        "planner_stop_reason": "deadline",
+        "planner_backend": "fast"
+      },
+      "plan_remaining": 0,
+      "planner_info": {
+        "search_calls": "1",
+        "cache_hits": "31",
+        "transitions": "760",
+        "expansions": "110",
+        "peak_states": "201",
+        "peak_records": "308",
+        "stop_reason": "deadline",
+        "time_to_first_win": "0.09972774999914691"
+      },
+      "stages_inclusive": {
+        "cnn_uncached": {
+          "calls": 18,
+          "seconds": 0.017256
+        },
+        "cnn_total": {
+          "calls": 18,
+          "seconds": 0.020566
+        },
+        "reference_search_transition": {
+          "calls": 32,
+          "seconds": 0.01464
+        },
+        "winning_replay": {
+          "calls": 1,
+          "seconds": 0.024437
+        },
+        "planning_dispatch": {
+          "calls": 32,
+          "seconds": 0.133514
+        },
+        "observation_check": {
+          "calls": 31,
+          "seconds": 0.032778
+        },
+        "reconcile": {
+          "calls": 31,
+          "seconds": 5.9e-05
+        }
+      },
+      "transition_cache_hits": 32,
+      "transition_cache_misses": 0,
+      "agent_seconds": 0.223686,
+      "between_calls_seconds": 0.053108,
+      "sampled_actions": 32,
+      "steps_first_last": [
+        {
+          "turn": 0,
+          "action": "right",
+          "reason": "conditional_plan",
+          "step_s": 0.159455,
+          "gap_s": 4.7e-05
+        },
+        {
+          "turn": 1,
+          "action": "pick_up",
+          "reason": "conditional_plan",
+          "step_s": 0.002334,
+          "gap_s": 0.001861
+        },
+        {
+          "turn": 2,
+          "action": "down",
+          "reason": "conditional_plan",
+          "step_s": 0.002014,
+          "gap_s": 0.001753
+        },
+        {
+          "turn": 29,
+          "action": "right",
+          "reason": "conditional_plan",
+          "step_s": 0.002198,
+          "gap_s": 0.001669
+        },
+        {
+          "turn": 30,
+          "action": "right",
+          "reason": "conditional_plan",
+          "step_s": 0.001553,
+          "gap_s": 0.00161
+        },
+        {
+          "turn": 31,
+          "action": "right",
+          "reason": "conditional_plan",
+          "step_s": 0.005294,
+          "gap_s": 0.001604
+        }
+      ],
+      "image_shape": [
+        640,
+        640,
+        4
+      ],
+      "board_signature": "e1d32954dff2f1bd",
+      "errors": []
+    },
+    "error_length": 2017
+  },
+  {
+    "notebook": true,
+    "label": "B9 Manhattan",
+    "report": {
+      "source": "0b61f5c7c594541b12656995aa2389642ce37a48ad9f5a2bc3544360c45d92d5",
+      "trigger": "predicted_terminal_action",
+      "elapsed": 0.149247,
+      "inflight_step_seconds": 0.0,
+      "initial_window": 3.0,
+      "cutoff": 4.649999999999636,
+      "config": {
+        "movement": "cardinal",
+        "objective": "collect_exit",
+        "seed": 42,
+        "width": 15,
+        "height": 15,
+        "turn_limit": 150
+      },
+      "latest_status": {
+        "score": -63,
+        "phase": "ongoing",
+        "turn": 21
+      },
+      "stats": {
+        "input_mode": "image",
+        "visual_discrepancies": 0,
+        "metadata_discrepancies": 0,
+        "repairs": 0,
+        "recoveries": 0,
+        "actions": 22,
+        "hypotheses": 1,
+        "reason": "conditional_plan",
+        "conditional_on_perception": true,
+        "planner_stop_reason": "deadline",
+        "planner_backend": "fast"
+      },
+      "plan_remaining": 0,
+      "planner_info": {
+        "search_calls": "1",
+        "cache_hits": "21",
+        "transitions": "985",
+        "expansions": "144",
+        "peak_states": "106",
+        "peak_records": "237",
+        "stop_reason": "deadline",
+        "time_to_first_win": "0.01923966699905577"
+      },
+      "stages_inclusive": {
+        "cnn_uncached": {
+          "calls": 13,
+          "seconds": 0.011071
+        },
+        "cnn_total": {
+          "calls": 13,
+          "seconds": 0.013336
+        },
+        "reference_search_transition": {
+          "calls": 22,
+          "seconds": 0.008573
+        },
+        "winning_replay": {
+          "calls": 1,
+          "seconds": 0.01376
+        },
+        "planning_dispatch": {
+          "calls": 22,
+          "seconds": 0.049503
+        },
+        "observation_check": {
+          "calls": 21,
+          "seconds": 0.020163
+        },
+        "reconcile": {
+          "calls": 21,
+          "seconds": 4.7e-05
+        }
+      },
+      "transition_cache_hits": 22,
+      "transition_cache_misses": 0,
+      "agent_seconds": 0.117699,
+      "between_calls_seconds": 0.031544,
+      "sampled_actions": 22,
+      "steps_first_last": [
+        {
+          "turn": 0,
+          "action": "down",
+          "reason": "conditional_plan",
+          "step_s": 0.076134,
+          "gap_s": 4.6e-05
+        },
+        {
+          "turn": 1,
+          "action": "down",
+          "reason": "conditional_plan",
+          "step_s": 0.002395,
+          "gap_s": 0.001512
+        },
+        {
+          "turn": 2,
+          "action": "right",
+          "reason": "conditional_plan",
+          "step_s": 0.002108,
+          "gap_s": 0.001484
+        },
+        {
+          "turn": 19,
+          "action": "right",
+          "reason": "conditional_plan",
+          "step_s": 0.001668,
+          "gap_s": 0.001509
+        },
+        {
+          "turn": 20,
+          "action": "down",
+          "reason": "conditional_plan",
+          "step_s": 0.001731,
+          "gap_s": 0.001506
+        },
+        {
+          "turn": 21,
+          "action": "down",
+          "reason": "conditional_plan",
+          "step_s": 0.001581,
+          "gap_s": 0.001487
+        }
+      ],
+      "image_shape": [
+        640,
+        640,
+        4
+      ],
+      "board_signature": "8073040ea3faab02",
+      "errors": []
+    },
+    "error_length": 2015
+  },
+  {
+    "notebook": true,
+    "label": "B10 Khoa Was Here",
+    "report": {
+      "source": "0b61f5c7c594541b12656995aa2389642ce37a48ad9f5a2bc3544360c45d92d5",
+      "trigger": "40_action_sample",
+      "elapsed": 0.313451,
+      "inflight_step_seconds": 0.0,
+      "initial_window": 3.0,
+      "cutoff": 4.649999999999636,
+      "config": {
+        "movement": "cardinal",
+        "objective": "collect_exit",
+        "seed": 42,
+        "width": 15,
+        "height": 15,
+        "turn_limit": 150
+      },
+      "latest_status": {
+        "score": -117,
+        "phase": "ongoing",
+        "turn": 39
+      },
+      "stats": {
+        "input_mode": "image",
+        "visual_discrepancies": 0,
+        "metadata_discrepancies": 0,
+        "repairs": 0,
+        "recoveries": 0,
+        "actions": 40,
+        "hypotheses": 1,
+        "reason": "conditional_plan",
+        "conditional_on_perception": true,
+        "planner_stop_reason": "deadline",
+        "planner_backend": "fast"
+      },
+      "plan_remaining": 15,
+      "planner_info": {
+        "search_calls": "1",
+        "cache_hits": "39",
+        "transitions": "486",
+        "expansions": "89",
+        "peak_states": "126",
+        "peak_records": "191",
+        "stop_reason": "deadline",
+        "time_to_first_win": "0.0997841669995978"
+      },
+      "stages_inclusive": {
+        "cnn_uncached": {
+          "calls": 23,
+          "seconds": 0.018719
+        },
+        "cnn_total": {
+          "calls": 23,
+          "seconds": 0.022719
+        },
+        "reference_search_transition": {
+          "calls": 55,
+          "seconds": 0.05107
+        },
+        "winning_replay": {
+          "calls": 1,
+          "seconds": 0.08023
+        },
+        "planning_dispatch": {
+          "calls": 40,
+          "seconds": 0.137172
+        },
+        "observation_check": {
+          "calls": 39,
+          "seconds": 0.038102
+        },
+        "reconcile": {
+          "calls": 39,
+          "seconds": 6.5e-05
+        }
+      },
+      "transition_cache_hits": 40,
+      "transition_cache_misses": 0,
+      "agent_seconds": 0.244645,
+      "between_calls_seconds": 0.068802,
+      "sampled_actions": 40,
+      "steps_first_last": [
+        {
+          "turn": 0,
+          "action": "down",
+          "reason": "conditional_plan",
+          "step_s": 0.162158,
+          "gap_s": 4.2e-05
+        },
+        {
+          "turn": 1,
+          "action": "down",
+          "reason": "conditional_plan",
+          "step_s": 0.002591,
+          "gap_s": 0.002135
+        },
+        {
+          "turn": 2,
+          "action": "down",
+          "reason": "conditional_plan",
+          "step_s": 0.002316,
+          "gap_s": 0.001981
+        },
+        {
+          "turn": 37,
+          "action": "right",
+          "reason": "conditional_plan",
+          "step_s": 0.002206,
+          "gap_s": 0.001689
+        },
+        {
+          "turn": 38,
+          "action": "down",
+          "reason": "conditional_plan",
+          "step_s": 0.001687,
+          "gap_s": 0.001706
+        },
+        {
+          "turn": 39,
+          "action": "down",
+          "reason": "conditional_plan",
+          "step_s": 0.001641,
+          "gap_s": 0.001628
+        }
+      ],
+      "image_shape": [
+        640,
+        640,
+        4
+      ],
+      "board_signature": "45cefd3b9b7f0d0d",
+      "errors": []
+    },
+    "error_length": 2004
+  }
+]

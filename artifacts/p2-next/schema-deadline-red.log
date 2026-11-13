@@ -1,0 +1,86 @@
+EEEEEE.E
+======================================================================
+ERROR: test_absolute_origin_and_expired_cached_dispatch (tests.test_p2_next.DeadlineTests.test_absolute_origin_and_expired_cached_dispatch)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/enxi/coding/autistic-sv-67/tests/test_p2_next.py", line 85, in test_absolute_origin_and_expired_cached_dispatch
+    agent = self.adapter()
+  File "/Users/enxi/coding/autistic-sv-67/tests/test_p2_next.py", line 81, in adapter
+    return candidate.PlannerAdapter(SimpleNamespace(started_at=10.0,
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'agents.p2_next' has no attribute 'PlannerAdapter'
+
+======================================================================
+ERROR: test_budget_only_tightens (tests.test_p2_next.DeadlineTests.test_budget_only_tightens)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/enxi/coding/autistic-sv-67/tests/test_p2_next.py", line 107, in test_budget_only_tightens
+    agent = self.adapter()
+  File "/Users/enxi/coding/autistic-sv-67/tests/test_p2_next.py", line 81, in adapter
+    return candidate.PlannerAdapter(SimpleNamespace(started_at=10.0,
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'agents.p2_next' has no attribute 'PlannerAdapter'
+
+======================================================================
+ERROR: test_late_reference_constructor_inherits_absolute_budget (tests.test_p2_next.DeadlineTests.test_late_reference_constructor_inherits_absolute_budget)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/enxi/coding/autistic-sv-67/tests/test_p2_next.py", line 92, in test_late_reference_constructor_inherits_absolute_budget
+    agent = self.adapter(reference_initial_deadline=12.0)
+  File "/Users/enxi/coding/autistic-sv-67/tests/test_p2_next.py", line 81, in adapter
+    return candidate.PlannerAdapter(SimpleNamespace(started_at=10.0,
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'agents.p2_next' has no attribute 'PlannerAdapter'
+
+======================================================================
+ERROR: test_task3_is_explicit_and_default_stays_short (tests.test_p2_next.DeadlineTests.test_task3_is_explicit_and_default_stays_short)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/enxi/coding/autistic-sv-67/tests/test_p2_next.py", line 102, in test_task3_is_explicit_and_default_stays_short
+    normal, boss = candidate.Agent(), candidate.Task3Agent()
+                                      ^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'agents.p2_next' has no attribute 'Task3Agent'
+
+======================================================================
+ERROR: test_boss_like_witnesses_and_all_action_effect_frames (tests.test_p2_next.OneKeyTests.test_boss_like_witnesses_and_all_action_effect_frames)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/enxi/coding/autistic-sv-67/tests/test_p2_next.py", line 72, in test_boss_like_witnesses_and_all_action_effect_frames
+    self.compare(s, actions)
+    ~~~~~~~~~~~~^^^^^^^^^^^^
+  File "/Users/enxi/coding/autistic-sv-67/tests/test_p2_next.py", line 33, in compare
+    board, current, score = candidate.encode(state)
+                            ~~~~~~~~~~~~~~~~^^^^^^^
+  File "/Users/enxi/coding/autistic-sv-67/agents/p2_next.py", line 236, in encode
+    raise UnsupportedState("Large keyed inventory iteration history")
+agents.p2_next.UnsupportedState: Large keyed inventory iteration history
+
+======================================================================
+ERROR: test_many_items_one_key_all_actions (tests.test_p2_next.OneKeyTests.test_many_items_one_key_all_actions)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/enxi/coding/autistic-sv-67/tests/test_p2_next.py", line 49, in test_many_items_one_key_all_actions
+    self.compare(*many_items())
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/Users/enxi/coding/autistic-sv-67/tests/test_p2_next.py", line 33, in compare
+    board, current, score = candidate.encode(state)
+                            ~~~~~~~~~~~~~~~~^^^^^^^
+  File "/Users/enxi/coding/autistic-sv-67/agents/p2_next.py", line 236, in encode
+    raise UnsupportedState("Large keyed inventory iteration history")
+agents.p2_next.UnsupportedState: Large keyed inventory iteration history
+
+======================================================================
+ERROR: test_permuting_nonkey_and_single_key_inventory_preserves_successors (tests.test_p2_next.OneKeyTests.test_permuting_nonkey_and_single_key_inventory_preserves_successors)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/enxi/coding/autistic-sv-67/tests/test_p2_next.py", line 57, in test_permuting_nonkey_and_single_key_inventory_preserves_successors
+    b, _, _ = candidate.encode(state)
+              ~~~~~~~~~~~~~~~~^^^^^^^
+  File "/Users/enxi/coding/autistic-sv-67/agents/p2_next.py", line 236, in encode
+    raise UnsupportedState("Large keyed inventory iteration history")
+agents.p2_next.UnsupportedState: Large keyed inventory iteration history
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.006s
+
+FAILED (errors=7)

@@ -1,0 +1,23 @@
+FF
+======================================================================
+FAIL: test_long_verified_route_finishes_before_original_cutoff_on_slow_cpu (tests.test_p3_dispatch.DispatchTests.test_long_verified_route_finishes_before_original_cutoff_on_slow_cpu)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/enxi/coding/autistic-sv-67/tests/test_p3_dispatch.py", line 53, in test_long_verified_route_finishes_before_original_cutoff_on_slow_cpu
+    self.assertTrue(state.win, (state.score, elapsed, trace.count(Action.WAIT)))
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true : (-450, 3.8280000000000265, 59)
+
+======================================================================
+FAIL: test_structural_adapter_uses_the_same_dispatch_reserve (tests.test_p3_dispatch.DispatchTests.test_structural_adapter_uses_the_same_dispatch_reserve)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/enxi/coding/autistic-sv-67/tests/test_p3_dispatch.py", line 60, in test_structural_adapter_uses_the_same_dispatch_reserve
+    self.assertTrue(state.win)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^
+AssertionError: False is not true
+
+----------------------------------------------------------------------
+Ran 2 tests in 2.204s
+
+FAILED (failures=2)

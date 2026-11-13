@@ -1,0 +1,66 @@
+{
+  "created_utc": "2026-11-08T12:13:58.394747+00:00",
+  "status": "locally validated Task 1 candidate; platform Debugging pending",
+  "source_sha256": "3c56f6514b1839d444666b4ccc2efecf98c4f8f49452fcb5375314553021a7cd",
+  "bytes": 13014,
+  "public_runs": 66,
+  "public_outcomes": {
+    "win": 45,
+    "loss": 21
+  },
+  "per_repeat": {
+    "0": {
+      "wins": 15,
+      "mean_effective_performance": 0.6594405594405595
+    },
+    "1": {
+      "wins": 15,
+      "mean_effective_performance": 0.6594405594405595
+    },
+    "2": {
+      "wins": 15,
+      "mean_effective_performance": 0.6594405594405595
+    }
+  },
+  "intro_mean_effective_performance": 1.0,
+  "public_mean_effective_performance": 0.6594405594405595,
+  "max_evaluation_seconds": 3.7035732029999053,
+  "max_peak_rss_bytes": 312508416,
+  "setup_seconds_range": [
+    0.6184219719998509,
+    0.6255333869994502
+  ],
+  "heldout": {
+    "verified": 50,
+    "excluded": 0,
+    "outcomes": {
+      "win": 50
+    },
+    "normalized_performance": "unavailable: generated optima not established"
+  },
+  "latency_diagnostic": {
+    "simulation": {
+      "count": 10080,
+      "mean_seconds": 0.00014228350725268625,
+      "p99_seconds": 0.00025213000117219053,
+      "max_seconds": 0.0010366000005888054
+    },
+    "state_key": {
+      "count": 1440,
+      "mean_seconds": 2.4783159724645683e-05,
+      "p99_seconds": 3.55949996446725e-05,
+      "max_seconds": 0.00012082500143151265
+    }
+  },
+  "independent_review": "one Important qualification provenance gap fixed RED-to-GREEN; no solver findings or deferred minors; cleanup preserves executable AST/imports",
+  "cleanup": {
+    "old_sha256": "620f04dfdaeaaf8edad9a64feb84fbe2dbd66fafb41712d0c06162573b45d23f",
+    "new_sha256": "3c56f6514b1839d444666b4ccc2efecf98c4f8f49452fcb5375314553021a7cd",
+    "old_bytes": 12940,
+    "new_bytes": 13014
+  },
+  "heldout_revalidation_note": "Same frozen layouts rerun after comments/formatting only; not new independent generalization evidence",
+  "tests": "43 passed locally and on Omarchy; see candidate test logs",
+  "platform_debugging": "not uploaded; result required before recommending graded attempt",
+  "graded_submission": "not attempted"
+}

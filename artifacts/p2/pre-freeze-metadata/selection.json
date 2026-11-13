@@ -1,0 +1,49 @@
+{
+  "recommended": "p2a",
+  "candidate": "artifacts/p2/candidate/task1_agent.py",
+  "p2a": {
+    "source_sha256": "e478c1ccb78c21ea4e97fa3c54ab08a28a401c9f4e4ca2846dfcb0590bb7c2cb",
+    "bytes": 78653,
+    "public_wins": 66,
+    "public_episodes": 66,
+    "public_mean_seconds": 0.7398164939851003,
+    "public_max_seconds": 3.3805952230031835,
+    "public_peak_rss_bytes": 282447872,
+    "heldout_wins": 200,
+    "heldout_cases": 200,
+    "heldout_mean_seconds": 1.2183825180050007,
+    "regression_wins": 100,
+    "regression_cases": 100,
+    "regression_mean_seconds": 0.5067815747599889,
+    "fast_public_first_verified_win_mean_seconds": 0.05327974628571177,
+    "reference_public_cases": [
+      "B4 Measure Twice and Cut Once"
+    ],
+    "local_gates_passed": true
+  },
+  "p2b": {
+    "source_sha256": "551ee00377ffe42a343d18c887b1c7f36ef4baf4fa0fff6a22b0053c9845edd0",
+    "bytes": 78653,
+    "public_wins": 66,
+    "public_episodes": 66,
+    "public_mean_seconds": 0.6016399523181682,
+    "public_max_seconds": 3.378450365999015,
+    "public_peak_rss_bytes": 281812992,
+    "heldout_wins": 200,
+    "heldout_cases": 200,
+    "heldout_mean_seconds": 0.9791980174847958,
+    "regression_wins": 100,
+    "regression_cases": 100,
+    "regression_mean_seconds": 0.04953824158990756,
+    "fast_public_first_verified_win_mean_seconds": 0.053276596745981515,
+    "reference_public_cases": [
+      "B4 Measure Twice and Cut Once"
+    ],
+    "local_gates_passed": true
+  },
+  "p2b_promoted": false,
+  "reason": "Same rewards on every paired public, heldout and regression win; no demonstrated first-win improvement. P2b reduces total planning time. Preserve P2a per the planned benefit gate.",
+  "baseline_sha256": "a51380b9771c6cb1c8614a09bbb79bc5a1a06a8dddcb761883b599924c13aea5",
+  "platform_debugging": "P2 unverified; user handoff required. P1 user-reported 22/22 remains frozen.",
+  "graded_submission": "not performed"
+}

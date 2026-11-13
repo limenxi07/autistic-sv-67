@@ -1,0 +1,50 @@
+.......F.F..F.............................................
+======================================================================
+FAIL: test_reidentification_rebinds_verified_suffix (tests.test_v4_backend.BackendTests.test_reidentification_rebinds_verified_suffix)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/enxi/coding/autistic-sv-67/tests/test_v4_backend.py", line 114, in test_reidentification_rebinds_verified_suffix
+    ).test_reference_suffix_survives_public_resource_reidentification()
+      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/enxi/coding/autistic-sv-67/tests/test_v3_harness.py", line 94, in test_reference_suffix_survives_public_resource_reidentification
+    self.assertEqual(action, Action.PICK_UP)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: <Action.WAIT: 'wait'> != <Action.PICK_UP: 'pick_up'>
+
+======================================================================
+FAIL: test_generic_public_transitions_match_specialized_public_states (tests.test_v4_backend.ReferenceTransitionTests.test_generic_public_transitions_match_specialized_public_states)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/enxi/coding/autistic-sv-67/tests/test_v4_backend.py", line 257, in test_generic_public_transitions_match_specialized_public_states
+    self.assertEqual(reference_key(actual), reference_key(expected), label)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: Tuples differ: (7, 5[698 chars] ()), ('inventory_list', ()), ('status_list', [304 chars],)))) != (7, 5[698 chars] ()),),)), (3, 1, ((('blocking', ()),),)), (3,[84 chars],))))
+
+First differing element 11:
+((1, [189 chars] ()), ('inventory_list', ()), ('status_list', [303 chars]),)))
+((1, [189 chars] ()),),)), (3, 1, ((('blocking', ()),),)), (3,[83 chars]),)))
+
+Diff is 1392 characters long. Set self.maxDiff to None to see it. : A0 Basic Movement
+
+======================================================================
+FAIL: test_reference_verified_path_reuses_transitions (tests.test_v4_backend.TransitionReuseTests.test_reference_verified_path_reuses_transitions)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/enxi/coding/autistic-sv-67/tests/test_v4_backend.py", line 219, in test_reference_verified_path_reuses_transitions
+    successor = planner.predict(state, action)
+  File "/Users/enxi/coding/autistic-sv-67/agents/v4_planner.py", line 87, in predict
+    return grid_step(state, action)
+  File "/Users/enxi/.local/share/uv/python/cpython-3.13.15-macos-aarch64-none/lib/python3.13/unittest/mock.py", line 1169, in __call__
+    return self._mock_call(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/Users/enxi/.local/share/uv/python/cpython-3.13.15-macos-aarch64-none/lib/python3.13/unittest/mock.py", line 1173, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/Users/enxi/.local/share/uv/python/cpython-3.13.15-macos-aarch64-none/lib/python3.13/unittest/mock.py", line 1234, in _execute_mock_call
+    raise effect
+AssertionError: Repeated replay
+
+----------------------------------------------------------------------
+Ran 58 tests in 4.737s
+
+FAILED (failures=3)

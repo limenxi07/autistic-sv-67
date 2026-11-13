@@ -1,0 +1,48 @@
+{
+  "case": "test_debugging_image_basic_movement",
+  "diagnostic_tag": "V4_PLATFORM_DIAG_95e43962",
+  "report": {
+    "error": null,
+    "reason": "planner_no_verified_plan",
+    "seconds_before_first_step": 5.6e-05,
+    "step_seconds": 3.092559,
+    "action": "wait",
+    "hypotheses": 1,
+    "unresolved": [
+      "()"
+    ],
+    "torch_version": "2.7.0+cpu",
+    "torch_threads": [
+      1,
+      1
+    ],
+    "python": "3.13.3",
+    "image_shape": [
+      457,
+      640,
+      4
+    ],
+    "image_dtype": "uint8",
+    "observation_type": "dict",
+    "info_keys": [
+      "agent",
+      "config",
+      "message",
+      "status"
+    ],
+    "status": {
+      "score": 0,
+      "phase": "ongoing",
+      "turn": 0
+    },
+    "config": {
+      "movement": "cardinal",
+      "objective": "collect_exit",
+      "seed": 42,
+      "width": 7,
+      "height": 5,
+      "turn_limit": 150
+    }
+  },
+  "boundary": "User-provided platform diagnostic. Intentional diagnostic exception after first action. One admissible hypothesis is not proof of exact perception. Stage-specific times were not instrumented on platform."
+}

@@ -1,0 +1,304 @@
+{
+  "source_sha256": "6c668eaa24acf234d7188cb0606203e9af1ece9a3323b980adab75d50f5a30fd",
+  "source_bytes": 84390,
+  "suite_distributions": {
+    "boss": {
+      "cases": 6,
+      "statuses": {
+        "win": 6
+      },
+      "evaluation_seconds": {
+        "median": 0.6783795904993895,
+        "maximum": 1.0857254820002709,
+        "p95_nearest_rank": 1.0857254820002709
+      },
+      "cold_seconds": {
+        "median": 1.4326872135025042,
+        "maximum": 1.8480644459996256,
+        "p95_nearest_rank": 1.8480644459996256
+      },
+      "setup_seconds": {
+        "median": 0.6853691959986463,
+        "maximum": 0.7376701059984043,
+        "p95_nearest_rank": 0.7376701059984043
+      },
+      "peak_rss_bytes": 253374464
+    },
+    "public": {
+      "cases": 66,
+      "statuses": {
+        "win": 66
+      },
+      "evaluation_seconds": {
+        "median": 0.374719298499258,
+        "maximum": 3.245513725996716,
+        "p95_nearest_rank": 0.5669114510019426
+      },
+      "cold_seconds": {
+        "median": 1.0466755155030114,
+        "maximum": 3.928509703997406,
+        "p95_nearest_rank": 1.2390936610026984
+      },
+      "setup_seconds": {
+        "median": 0.6205918044979626,
+        "maximum": 0.6808723750000354,
+        "p95_nearest_rank": 0.6472162669961108
+      },
+      "peak_rss_bytes": 302268416
+    },
+    "stress": {
+      "cases": 12,
+      "statuses": {
+        "win": 6,
+        "loss": 6
+      },
+      "evaluation_seconds": {
+        "median": 6.32896140849698,
+        "maximum": 12.228405088993895,
+        "p95_nearest_rank": 12.228405088993895
+      },
+      "cold_seconds": {
+        "median": 6.98991313800434,
+        "maximum": 12.888299860998814,
+        "p95_nearest_rank": 12.888299860998814
+      },
+      "setup_seconds": {
+        "median": 0.6097553429972322,
+        "maximum": 0.6162315449982998,
+        "p95_nearest_rank": 0.6162315449982998
+      },
+      "peak_rss_bytes": 257265664
+    },
+    "generated": {
+      "cases": 200,
+      "statuses": {
+        "win": 200
+      },
+      "evaluation_seconds": {
+        "median": 0.4150276729997131,
+        "maximum": 3.21330654600024,
+        "p95_nearest_rank": 3.1116533469976275
+      },
+      "cold_seconds": {
+        "median": 1.115607739000552,
+        "maximum": 3.946147465001559,
+        "p95_nearest_rank": 3.822114884002076
+      },
+      "setup_seconds": {
+        "median": 0.6164203864973388,
+        "maximum": 0.7313854289968731,
+        "p95_nearest_rank": 0.7017244710004888
+      },
+      "peak_rss_bytes": 305426432
+    }
+  },
+  "bosses": {
+    "C0": {
+      "cases": 3,
+      "statuses": {
+        "win": 3
+      },
+      "evaluation_seconds": {
+        "median": 0.33249331100523705,
+        "maximum": 0.33667193799919914,
+        "p95_nearest_rank": 0.33667193799919914
+      },
+      "cold_seconds": {
+        "median": 1.07499463899876,
+        "maximum": 1.1394420190044912,
+        "p95_nearest_rank": 1.1394420190044912
+      },
+      "setup_seconds": {
+        "median": 0.6866679939994356,
+        "maximum": 0.7376701059984043,
+        "p95_nearest_rank": 0.7376701059984043
+      },
+      "peak_rss_bytes": 253374464,
+      "reward": -68.0,
+      "first_verified_search_seconds": 0.04137754999828758,
+      "stop_reasons": {
+        "state_cap": 3
+      }
+    },
+    "C1": {
+      "cases": 3,
+      "statuses": {
+        "win": 3
+      },
+      "evaluation_seconds": {
+        "median": 1.0585366310042446,
+        "maximum": 1.0857254820002709,
+        "p95_nearest_rank": 1.0857254820002709
+      },
+      "cold_seconds": {
+        "median": 1.7948300630014273,
+        "maximum": 1.8480644459996256,
+        "p95_nearest_rank": 1.8480644459996256
+      },
+      "setup_seconds": {
+        "median": 0.6840703979978571,
+        "maximum": 0.7102127219986869,
+        "p95_nearest_rank": 0.7102127219986869
+      },
+      "peak_rss_bytes": 253218816,
+      "reward": -163.0,
+      "first_verified_search_seconds": 0.5881609200005187,
+      "stop_reasons": {
+        "state_cap": 3
+      }
+    }
+  },
+  "differential": {
+    "comparisons": 257467,
+    "frames": 36781,
+    "many_initial_supported": 1000,
+    "many_compared": 1000,
+    "coverage": {
+      "many_items_one_key": 24284,
+      "mixed_inventory": 7985,
+      "key_consumed": 15056,
+      "stacked_effects": 15083,
+      "expiry": 480,
+      "boxes": 17104,
+      "overlaps": 10123,
+      "boots": 1360,
+      "phasing": 1029,
+      "shield": 18664
+    }
+  },
+  "coverage": {
+    "initial": {
+      "supported": 23,
+      "Large keyed inventory iteration history": 1
+    },
+    "public": {
+      "supported": 736,
+      "Large keyed inventory iteration history": 67
+    },
+    "p2-v2": {
+      "supported": 6776,
+      "Simultaneous pickups or overlapping locks": 80
+    },
+    "boss": {
+      "supported": 178
+    },
+    "candidate-boss": {
+      "supported": 86
+    }
+  },
+  "public_paired_rewards": "66/66 equal P2a and P2b",
+  "generated_paired_rewards": "200/200 equal P2a and P2b",
+  "oracle": "unchanged V3 and separate candidate probe each 22/22 paired reward matches",
+  "protected_hashes_unchanged": 22,
+  "repository_tests": 161,
+  "stress": [
+    {
+      "level": "case-000",
+      "seed": 42,
+      "status": "win",
+      "reward": -55.0,
+      "seconds": 0.27655671600223286,
+      "searches": 1,
+      "stop_reason": "state_cap"
+    },
+    {
+      "level": "case-001",
+      "seed": 42,
+      "status": "win",
+      "reward": -48.0,
+      "seconds": 0.4004746550053824,
+      "searches": 1,
+      "stop_reason": "state_cap"
+    },
+    {
+      "level": "case-002",
+      "seed": 42,
+      "status": "win",
+      "reward": -50.0,
+      "seconds": 0.3431778489975841,
+      "searches": 1,
+      "stop_reason": "state_cap"
+    },
+    {
+      "level": "case-003",
+      "seed": 42,
+      "status": "win",
+      "reward": -73.0,
+      "seconds": 0.44219174300087616,
+      "searches": 1,
+      "stop_reason": "state_cap"
+    },
+    {
+      "level": "case-004",
+      "seed": 42,
+      "status": "win",
+      "reward": -50.0,
+      "seconds": 0.3982193970005028,
+      "searches": 1,
+      "stop_reason": "state_cap"
+    },
+    {
+      "level": "case-005",
+      "seed": 42,
+      "status": "loss",
+      "reward": -450.0,
+      "seconds": 12.147836200994789,
+      "searches": 21,
+      "stop_reason": "deadline"
+    },
+    {
+      "level": "case-006",
+      "seed": 42,
+      "status": "loss",
+      "reward": -450.0,
+      "seconds": 12.178349476998847,
+      "searches": 16,
+      "stop_reason": "deadline"
+    },
+    {
+      "level": "case-007",
+      "seed": 42,
+      "status": "loss",
+      "reward": -450.0,
+      "seconds": 12.172797311999602,
+      "searches": 18,
+      "stop_reason": "deadline"
+    },
+    {
+      "level": "case-008",
+      "seed": 42,
+      "status": "win",
+      "reward": -84.0,
+      "seconds": 0.510086615999171,
+      "searches": 1,
+      "stop_reason": "state_cap"
+    },
+    {
+      "level": "case-009",
+      "seed": 42,
+      "status": "loss",
+      "reward": -450.0,
+      "seconds": 12.173663839996152,
+      "searches": 16,
+      "stop_reason": "deadline"
+    },
+    {
+      "level": "case-010",
+      "seed": 42,
+      "status": "loss",
+      "reward": -450.0,
+      "seconds": 12.190015729996958,
+      "searches": 16,
+      "stop_reason": "deadline"
+    },
+    {
+      "level": "case-011",
+      "seed": 42,
+      "status": "loss",
+      "reward": -450.0,
+      "seconds": 12.228405088993895,
+      "searches": 17,
+      "stop_reason": "deadline"
+    }
+  ]
+}

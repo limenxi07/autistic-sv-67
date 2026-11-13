@@ -1,0 +1,29 @@
+{
+  "repository_tests": {
+    "command": "MPLCONFIGDIR=/tmp/v4-mpl UV_CACHE_DIR=/tmp/v4-uv-cache uv run --frozen --no-sync python -m unittest discover -s tests -v",
+    "exit_code": 0,
+    "tests": 349,
+    "seconds": 129.616,
+    "log": "artifacts/v4/qualification/all-tests-delivery.log"
+  },
+  "static_checks": "artifacts/v4/qualification/static-final.json",
+  "protected_inventory_check": "artifacts/v4/qualification/protected-check-final.json",
+  "four_fit_code_lineage": "artifacts/v4/qualification/four-fit-lineage.json",
+  "fresh_review": "artifacts/v4/qualification/final-review.md",
+  "runtime_after_review_fixes": "Repeated identical ambiguity preserves verified plan; uncertain correct actor invokes independent measured template. Both reproduced with RED->GREEN tests;348/348 whole suite passes.",
+  "candidate": {
+    "revision": "fb978e3b8bc7",
+    "source": "artifacts/v4/candidates/fb978e3b8bc7/task2_agent.py",
+    "source_sha256": "b5aa48493cfb0150e3a86acd6e339e7d1140f4a11cafa8cbac5894ada0c96e8c",
+    "model_sha256": "d4e0bdc680995b556307eb696da4b03029ea8d326ca389add53ec6b4271a70b7",
+    "policy_sha256": "e394107ef244afa7af268525121b987d26350c4b4e58ca854eb98d71d0ae8632",
+    "checkpoint_sha256": "45a6768c467d0bacac481f70e033b4f1d71560c5db49c2553ae4ba1861207690",
+    "production_epoch": 14,
+    "status": "Repaired development candidate; new exact-source gates required.",
+    "previous_candidate_sha256": "17350fb33045c3b89549e61fd0cef1f014bb68536dc8536302f4a56c4309ce4b",
+    "runtime_change": "actor-template-repair"
+  },
+  "platform_submission": false,
+  "diagnostic_stage_fix": "Initial classify_evidence stage is now recorded; regression observed RED then GREEN, candidate bytes unchanged.",
+  "external_protected_drift": "artifacts/v4/qualification/protected-drift/receipt.json"
+}

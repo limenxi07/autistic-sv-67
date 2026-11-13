@@ -1,0 +1,47 @@
+F
+======================================================================
+FAIL: test_phasing_still_pushes_boxes_and_can_overlap_blocked_boxes (tests.test_p2_next.OneKeyTests.test_phasing_still_pushes_boxes_and_can_overlap_blocked_boxes)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/enxi/coding/autistic-sv-67/tests/test_p2_next.py", line 70, in test_phasing_still_pushes_boxes_and_can_overlap_blocked_boxes
+    self.compare(state, (Action.RIGHT, Action.WAIT, Action.RIGHT) + (Action.WAIT,) * 5)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/enxi/coding/autistic-sv-67/tests/test_p2_next.py", line 45, in compare
+    self.assertEqual(semantic_projection(project(step(state, alternative)), board.keys.bit_count()),
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        semantic_projection(project_fast(board, nxt, score + delta), board.keys.bit_count()),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        str(alternative))
+        ^^^^^^^^^^^^^^^^^
+AssertionError: Tuples differ: (2, -[334 chars]),)))), (5, 10, 'grid', (('blocking', ()), ('pushable', ()))))) != (2, -[334 chars]),)))), (5, 9, 'grid', (('blocking', ()), ('pushable', ())))))
+
+First differing element 4:
+((0, [311 chars]4),)))), (5, 10, 'grid', (('blocking', ()), ('pushable', ()))))
+((0, [311 chars]4),)))), (5, 9, 'grid', (('blocking', ()), ('pushable', ()))))
+
+  (2,
+   -6,
+   False,
+   False,
+   ((0,
+     9,
+     'grid',
+     (('_inventory_order', (('ids', ()),)),
+      ('agent', ()),
+      ('collidable', ()),
+      ('health', (('current_health', 5), ('max_health', 5))),
+      ('inventory', (('item_ids', ()),)),
+      ('status', (('effect_ids', ()),)))),
+    (1, 15, 'grid', (('exit', ()),)),
+    (2, -1, 'effect', (('phasing', ()), ('time_limit', (('amount', 4),)))),
+-   (5, 10, 'grid', (('blocking', ()), ('pushable', ())))))
+?       ^^
+
++   (5, 9, 'grid', (('blocking', ()), ('pushable', ())))))
+?       ^
+ : right
+
+----------------------------------------------------------------------
+Ran 1 test in 0.002s
+
+FAILED (failures=1)

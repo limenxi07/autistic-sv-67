@@ -1,0 +1,89 @@
+{
+  "created_utc": "2026-11-08T12:31:29.442603+00:00",
+  "status": "locally validated Task 1 candidate; platform Debugging pending",
+  "source_sha256": "55d3ae5655e5c4d6d289e7a8812a0a2bee2b37ae137008472539d5d405c5600a",
+  "bytes": 12922,
+  "public_runs": 66,
+  "public_outcomes": {
+    "win": 45,
+    "loss": 21
+  },
+  "per_repeat": {
+    "0": {
+      "wins": 15,
+      "mean_effective_performance": 0.6594405594405595
+    },
+    "1": {
+      "wins": 15,
+      "mean_effective_performance": 0.6594405594405595
+    },
+    "2": {
+      "wins": 15,
+      "mean_effective_performance": 0.6594405594405595
+    }
+  },
+  "intro_mean_effective_performance": 1.0,
+  "public_mean_effective_performance": 0.6594405594405595,
+  "max_evaluation_seconds": 3.7053821610006707,
+  "max_peak_rss_bytes": 312373248,
+  "setup_seconds_range": [
+    0.6178685080012656,
+    0.6404183409995312
+  ],
+  "heldout": {
+    "verified": 50,
+    "excluded": 0,
+    "outcomes": {
+      "win": 50
+    },
+    "normalized_performance": "unavailable: generated optima not established"
+  },
+  "latency_diagnostic": {
+    "simulation": {
+      "count": 10080,
+      "mean_seconds": 0.00014356300278194116,
+      "p99_seconds": 0.00025807299971347675,
+      "max_seconds": 0.0010620689990901155
+    },
+    "state_key": {
+      "count": 1440,
+      "mean_seconds": 2.484498887093246e-05,
+      "p99_seconds": 3.684600051201414e-05,
+      "max_seconds": 0.00012208000043756329
+    }
+  },
+  "independent_review": "one Important qualification provenance gap fixed RED-to-GREEN; no solver findings or deferred minors; cleanup preserves executable AST/imports",
+  "cleanup": {
+    "old_sha256": "620f04dfdaeaaf8edad9a64feb84fbe2dbd66fafb41712d0c06162573b45d23f",
+    "new_sha256": "3c56f6514b1839d444666b4ccc2efecf98c4f8f49452fcb5375314553021a7cd",
+    "old_bytes": 12940,
+    "new_bytes": 13014
+  },
+  "compatibility": {
+    "platform_result": {
+      "source": "user-reported",
+      "message": "Your code failed to evaluate correctly. There might be a syntax error or unsupported libraries are used, please check your code again.",
+      "submitted_hash": "not confirmed; most recently delivered source was3c56f6514b1839d444666b4ccc2efecf98c4f8f49452fcb5375314553021a7cd",
+      "paste_scope": "user replaced entire editor",
+      "grader_python_version": "not provided",
+      "notebook_python_version": "3.13.15"
+    },
+    "reproduced_locally": [
+      "Python3.10/3.11 syntax rejects type alias statements",
+      "dataclass with deferred annotations fails under exec with unregistered __name__",
+      "future import fails when a grader prelude precedes the source"
+    ],
+    "fix": [
+      "remove future import",
+      "use assignment type aliases",
+      "use NamedTuple SearchResult to tolerate unregistered modules, including inherited deferred-annotation compilation flags"
+    ],
+    "source_sha256": "55d3ae5655e5c4d6d289e7a8812a0a2bee2b37ae137008472539d5d405c5600a",
+    "tests": "46 passed; three new compatibility tests first failed then passed",
+    "root_cause_status": "actual grader traceback unavailable; locally reproduced compatibility hazards fixed"
+  },
+  "heldout_revalidation_note": "Same frozen layouts rerun after comments/formatting only; not new independent generalization evidence",
+  "tests": "46 passed locally and on Omarchy; see candidate test logs",
+  "platform_debugging": "prior generic failure reported; current compatibility retry pending; see platform-results.json",
+  "graded_submission": "not attempted"
+}

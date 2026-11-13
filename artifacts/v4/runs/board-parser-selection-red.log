@@ -1,0 +1,15 @@
+test_exact_board_uses_retained_view_winners_not_fused_top_class (tests.test_v4_training.TrainingTests.test_exact_board_uses_retained_view_winners_not_fused_top_class) ... ERROR
+
+======================================================================
+ERROR: test_exact_board_uses_retained_view_winners_not_fused_top_class (tests.test_v4_training.TrainingTests.test_exact_board_uses_retained_view_winners_not_fused_top_class)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/enxi/coding/autistic-sv-67/tests/test_v4_training.py", line 152, in test_exact_board_uses_retained_view_winners_not_fused_top_class
+    result=score_policy(np.log(full),np.log(inner),labels,np.zeros(3,dtype=int),
+                        PerceptionPolicy(1,.85,.1,'inset_005'),board_records=records)
+TypeError: score_policy() got an unexpected keyword argument 'board_records'
+
+----------------------------------------------------------------------
+Ran 1 test in 0.071s
+
+FAILED (errors=1)

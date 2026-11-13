@@ -1,0 +1,41 @@
+.......E..............................................
+======================================================================
+ERROR: test_reidentification_rebinds_verified_suffix (tests.test_v4_backend.BackendTests.test_reidentification_rebinds_verified_suffix)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/enxi/coding/autistic-sv-67/agents/v4_planner.py", line 211, in _search_step
+    board, start, score = encode(state)
+                          ~~~~~~^^^^^^^
+  File "/Users/enxi/coding/autistic-sv-67/agents/v4_backend.py", line 241, in encode
+    raise UnsupportedState("Large keyed inventory iteration history")
+agents.v4_backend.UnsupportedState: Large keyed inventory iteration history
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/enxi/coding/autistic-sv-67/tests/test_v4_backend.py", line 114, in test_reidentification_rebinds_verified_suffix
+    ).test_reference_suffix_survives_public_resource_reidentification()
+      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/enxi/coding/autistic-sv-67/tests/test_v3_harness.py", line 92, in test_reference_suffix_survives_public_resource_reidentification
+    action = planner.step(hyp.state)
+  File "/Users/enxi/coding/autistic-sv-67/agents/v4_planner.py", line 187, in step
+    return self._search_step(state)
+           ~~~~~~~~~~~~~~~~~^^^^^^^
+  File "/Users/enxi/coding/autistic-sv-67/agents/v4_planner.py", line 244, in _search_step
+    return self._fallback(state)
+           ~~~~~~~~~~~~~~^^^^^^^
+  File "/Users/enxi/coding/autistic-sv-67/agents/v4_planner.py", line 266, in _fallback
+    return backend.step(state)
+           ~~~~~~~~~~~~^^^^^^^
+  File "/Users/enxi/coding/autistic-sv-67/agents/v4_planner.py", line 130, in step
+    verified = self._verify_cached(
+        state,
+    ...<4 lines>...
+        clock=perf_counter,
+    )
+TypeError: _V4ReplayCache._verify_cached() got an unexpected keyword argument 'clock'
+
+----------------------------------------------------------------------
+Ran 54 tests in 2.942s
+
+FAILED (errors=1)

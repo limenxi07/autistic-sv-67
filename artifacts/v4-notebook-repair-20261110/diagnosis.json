@@ -1,0 +1,22 @@
+{
+  "original_source_sha256": "b5aa48493cfb0150e3a86acd6e339e7d1140f4a11cafa8cbac5894ada0c96e8c",
+  "repaired_source_sha256": "1e9246ede7c360da2d494fb174c4194da3fc3019f8e46d8b9155f6baef87e229",
+  "root_cause": "configure() rebinds module globals while functions nested in a pasted notebook cell capture separate cell-local loader/model/temperature/policy bindings.",
+  "original_reproduction": {
+    "module_action": "right",
+    "pasted_cell_action": "wait",
+    "uncaught_internal_error": "RuntimeError: V3 vision model has not been configured",
+    "caught_public_reason": "unsupported_observation:RuntimeError"
+  },
+  "repair": "Mutate a shared perception configuration object instead of rebinding globals. Both scopes then read the configured model, temperature and policy.",
+  "regression": "Real embedded-model inference, two actual corridor moves, one lazy model load, policy equality and exact full probability parity between function and module scopes.",
+  "unchanged": [
+    "CNN weights",
+    "selected temperature/confidence/margin/view",
+    "P3 backend bytes",
+    "initial/cutoff deadlines",
+    "action/tracking/planning algorithm"
+  ],
+  "validation_gap": "Previous standalone package tests executed source as a module or one global namespace; they omitted notebook function scope.",
+  "platform_boundary": "This reproduces a matching all-WAIT failure locally; the platform implementation and repaired-source retest are not directly observed."
+}

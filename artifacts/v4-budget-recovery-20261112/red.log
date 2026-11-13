@@ -1,0 +1,15 @@
+test_planless_wait_keeps_spent_initial_attempt_for_recovery (tests.test_v4_agent.RecoveryTests.test_planless_wait_keeps_spent_initial_attempt_for_recovery) ... FAIL
+
+======================================================================
+FAIL: test_planless_wait_keeps_spent_initial_attempt_for_recovery (tests.test_v4_agent.RecoveryTests.test_planless_wait_keeps_spent_initial_attempt_for_recovery)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/enxi/coding/autistic-sv-67/tests/test_v4_agent.py", line 42, in test_planless_wait_keeps_spent_initial_attempt_for_recovery
+    self.assertEqual(agent.step(vision_observation(state)), Action.RIGHT)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: <Action.WAIT: 'wait'> != <Action.RIGHT: 'right'>
+
+----------------------------------------------------------------------
+Ran 1 test in 1.893s
+
+FAILED (failures=1)

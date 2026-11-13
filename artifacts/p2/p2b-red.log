@@ -1,0 +1,42 @@
+test_bounds_sound_on_all_reachable_tiny_states (tests.test_p2_search.RewardBoundTests.test_bounds_sound_on_all_reachable_tiny_states) ... ERROR
+test_invalid_and_expired_upgrades_retain_actual_incumbent (tests.test_p2_search.RewardBoundTests.test_invalid_and_expired_upgrades_retain_actual_incumbent) ... ERROR
+test_p2b_matches_exhaustive_reward_and_prefers_longer_coin_route (tests.test_p2_search.RewardBoundTests.test_p2b_matches_exhaustive_reward_and_prefers_longer_coin_route) ... ERROR
+
+======================================================================
+ERROR: test_bounds_sound_on_all_reachable_tiny_states (tests.test_p2_search.RewardBoundTests.test_bounds_sound_on_all_reachable_tiny_states)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/enxi/coding/autistic-sv-67/tests/test_p2_search.py", line 109, in test_bounds_sound_on_all_reachable_tiny_states
+    self.assertGreaterEqual(p2.reward_upper_bound(b,c,value,mst=mst),best)
+                            ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'agents.p2' has no attribute 'reward_upper_bound'
+
+======================================================================
+ERROR: test_invalid_and_expired_upgrades_retain_actual_incumbent (tests.test_p2_search.RewardBoundTests.test_invalid_and_expired_upgrades_retain_actual_incumbent)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/enxi/coding/autistic-sv-67/tests/test_p2_search.py", line 131, in test_invalid_and_expired_upgrades_retain_actual_incumbent
+    result=p2.search(b,c,value,mode='p2b',deadline=perf_counter()+1,verify_candidate=verify)
+  File "/Users/enxi/coding/autistic-sv-67/agents/p2.py", line 1169, in search
+    raise ValueError('Unsupported mode: '+mode)
+ValueError: Unsupported mode: p2b
+
+======================================================================
+ERROR: test_p2b_matches_exhaustive_reward_and_prefers_longer_coin_route (tests.test_p2_search.RewardBoundTests.test_p2b_matches_exhaustive_reward_and_prefers_longer_coin_route)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/enxi/coding/autistic-sv-67/tests/test_p2_search.py", line 113, in test_p2b_matches_exhaustive_reward_and_prefers_longer_coin_route
+    result=solve(s,mode='p2b')
+  File "/Users/enxi/coding/autistic-sv-67/tests/test_p2_search.py", line 13, in solve
+    return p2.search(board,state,score,deadline=end,mode=mode,clock=clock,
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        verify_candidate=lambda actions,keys:p2.verify_plan(board,s,actions,keys,deadline=end,clock=clock))
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/enxi/coding/autistic-sv-67/agents/p2.py", line 1169, in search
+    raise ValueError('Unsupported mode: '+mode)
+ValueError: Unsupported mode: p2b
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.044s
+
+FAILED (errors=3)

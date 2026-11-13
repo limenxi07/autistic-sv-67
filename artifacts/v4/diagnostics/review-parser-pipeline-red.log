@@ -1,0 +1,39 @@
+test_policy_selection_requires_actual_board_contracts (tests.test_v4_training.TrainingTests.test_policy_selection_requires_actual_board_contracts) ... FAIL
+test_production_loads_actual_contracts_before_any_fit (tests.test_v4_training.TrainingTests.test_production_loads_actual_contracts_before_any_fit) ... ERROR
+
+======================================================================
+ERROR: test_production_loads_actual_contracts_before_any_fit (tests.test_v4_training.TrainingTests.test_production_loads_actual_contracts_before_any_fit)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/enxi/coding/autistic-sv-67/tests/test_v4_training.py", line 32, in test_production_loads_actual_contracts_before_any_fit
+    fit_production({"fold": "production", "epochs": 14,
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                    "data": "corpora/production", "output": "unused"},
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                   {"epoch": 14, "downstream_selection_complete": True})
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/enxi/coding/autistic-sv-67/tools/train_v4.py", line 661, in fit_production
+    weights = torch.load(final, map_location="cpu", weights_only=True)
+  File "/Users/enxi/coding/autistic-sv-67/.venv/lib/python3.13/site-packages/torch/serialization.py", line 1479, in load
+    with _open_file_like(f, "rb") as opened_file:
+         ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/Users/enxi/coding/autistic-sv-67/.venv/lib/python3.13/site-packages/torch/serialization.py", line 759, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+  File "/Users/enxi/coding/autistic-sv-67/.venv/lib/python3.13/site-packages/torch/serialization.py", line 740, in __init__
+    super().__init__(open(name, mode))
+                     ~~~~^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'unused/epoch-14.pt'
+
+======================================================================
+FAIL: test_policy_selection_requires_actual_board_contracts (tests.test_v4_training.TrainingTests.test_policy_selection_requires_actual_board_contracts)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/enxi/coding/autistic-sv-67/tests/test_v4_training.py", line 19, in test_policy_selection_requires_actual_board_contracts
+    with self.assertRaisesRegex(ValueError, "board contracts"):
+         ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ValueError not raised
+
+----------------------------------------------------------------------
+Ran 2 tests in 0.013s
+
+FAILED (failures=1, errors=1)

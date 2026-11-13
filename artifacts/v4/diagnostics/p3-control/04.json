@@ -1,0 +1,6529 @@
+{
+  "source_sha256": "c2337b3d3b5f7797cf07eca47904bfe6f895d7629c7cfc5b89e08664df6b39f9",
+  "diagnostic_only": true,
+  "results": [
+    {
+      "status": "loss",
+      "win": false,
+      "lose": true,
+      "reward": -445.0,
+      "evaluation_seconds": 3.7505800249928143,
+      "turns": 150,
+      "effective_performance": 0.0,
+      "unresolved": [],
+      "observation": "image",
+      "initial_board_exact": false,
+      "initial_confusion": [
+        [
+          "box",
+          "box",
+          1
+        ],
+        [
+          "coin",
+          "coin",
+          1
+        ],
+        [
+          "exit",
+          "exit",
+          1
+        ],
+        [
+          "floor",
+          "floor",
+          29
+        ],
+        [
+          "gem",
+          "ghost",
+          2
+        ],
+        [
+          "human",
+          "human",
+          1
+        ],
+        [
+          "key",
+          "key",
+          1
+        ],
+        [
+          "lava",
+          "lava",
+          2
+        ],
+        [
+          "locked",
+          "locked",
+          1
+        ],
+        [
+          "opened",
+          "opened",
+          1
+        ],
+        [
+          "shield",
+          "shield",
+          1
+        ],
+        [
+          "wall",
+          "wall",
+          64
+        ]
+      ],
+      "agent_info": {
+        "name": "V3 vision",
+        "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+        "input_mode": "image",
+        "visual_discrepancies": "4",
+        "metadata_discrepancies": "2",
+        "repairs": "4",
+        "recoveries": "0",
+        "actions": "31",
+        "hypotheses": "4",
+        "reason": "cutoff",
+        "conditional_on_perception": "True",
+        "planner_stop_reason": "deadline",
+        "planner_backend": "fast"
+      },
+      "budget_reset": false,
+      "budget_seconds": [
+        3.0,
+        3.5
+      ],
+      "diagnostic_only": true,
+      "trace": [
+        {
+          "turn": 0,
+          "action": "RIGHT",
+          "prediction_turns_before": [],
+          "prediction_turns_after": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "hypothesis_count": 4,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V3 vision",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "0",
+            "metadata_discrepancies": "0",
+            "repairs": "0",
+            "recoveries": "0",
+            "actions": "1",
+            "hypotheses": "4",
+            "reason": "conditional_plan",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.8187425780051854,
+          "stages": {
+            "classify_initial": 0.4673241809941828,
+            "grid_step": 0.04467216400371399,
+            "planner": 0.3421001289971173,
+            "common_safe_prefix": 0.0028928480023751035
+          },
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 1,
+          "action": "PICK_UP",
+          "prediction_turns_before": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "prediction_turns_after": [
+            2,
+            2,
+            2,
+            2
+          ],
+          "hypothesis_count": 4,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V3 vision",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "0",
+            "metadata_discrepancies": "0",
+            "repairs": "0",
+            "recoveries": "0",
+            "actions": "2",
+            "hypotheses": "4",
+            "reason": "conditional_plan",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.01634065801044926,
+          "stages": {
+            "classify_initial": 0.002480943003320135,
+            "check_observation": 0.004632609008694999,
+            "reconcile": 0.0052555869915522635,
+            "planner": 0.00029686299967579544,
+            "grid_step": 0.005238145007751882,
+            "common_safe_prefix": 0.0028786999901058152
+          },
+          "first_exception": null,
+          "observations": {
+            "check": {
+              "consistent": true,
+              "mismatches": [],
+              "changed_cells": [
+                [
+                  1,
+                  1
+                ],
+                [
+                  2,
+                  1
+                ]
+              ]
+            }
+          }
+        },
+        {
+          "turn": 2,
+          "action": "RIGHT",
+          "prediction_turns_before": [
+            2,
+            2,
+            2,
+            2
+          ],
+          "prediction_turns_after": [
+            3,
+            3,
+            3,
+            3
+          ],
+          "hypothesis_count": 4,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V3 vision",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "0",
+            "metadata_discrepancies": "0",
+            "repairs": "0",
+            "recoveries": "0",
+            "actions": "3",
+            "hypotheses": "4",
+            "reason": "conditional_plan",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.03599546299665235,
+          "stages": {
+            "classify_initial": 0.0016952739970292896,
+            "check_observation": 0.001862160992459394,
+            "reconcile": 0.005089331010822207,
+            "grid_step": 0.02338685998984147,
+            "planner": 0.023039442996378057,
+            "common_safe_prefix": 0.002725932004977949
+          },
+          "first_exception": null,
+          "observations": {
+            "check": {
+              "consistent": true,
+              "mismatches": [],
+              "changed_cells": [
+                [
+                  2,
+                  1
+                ]
+              ]
+            }
+          }
+        },
+        {
+          "turn": 3,
+          "action": "USE_KEY",
+          "prediction_turns_before": [
+            3,
+            3,
+            3,
+            3
+          ],
+          "prediction_turns_after": [
+            4,
+            4,
+            4,
+            4
+          ],
+          "hypothesis_count": 4,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V3 vision",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "0",
+            "metadata_discrepancies": "0",
+            "repairs": "0",
+            "recoveries": "0",
+            "actions": "4",
+            "hypotheses": "4",
+            "reason": "conditional_plan",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.01294234000670258,
+          "stages": {
+            "classify_initial": 0.0012383340072119609,
+            "check_observation": 0.0014036490028956905,
+            "reconcile": 0.005011984001612291,
+            "planner": 0.0002945489977719262,
+            "grid_step": 0.005283538994262926,
+            "common_safe_prefix": 0.0028268369933357462
+          },
+          "first_exception": null,
+          "observations": {
+            "check": {
+              "consistent": true,
+              "mismatches": [],
+              "changed_cells": [
+                [
+                  2,
+                  1
+                ],
+                [
+                  3,
+                  1
+                ]
+              ]
+            }
+          }
+        },
+        {
+          "turn": 4,
+          "action": "DOWN",
+          "prediction_turns_before": [
+            4,
+            4,
+            4,
+            4
+          ],
+          "prediction_turns_after": [
+            5,
+            5,
+            5,
+            5
+          ],
+          "hypothesis_count": 4,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V3 vision",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "0",
+            "metadata_discrepancies": "0",
+            "repairs": "0",
+            "recoveries": "0",
+            "actions": "5",
+            "hypotheses": "4",
+            "reason": "conditional_plan",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.012926823997986503,
+          "stages": {
+            "classify_initial": 0.0012466030020732433,
+            "check_observation": 0.0014040020032553002,
+            "reconcile": 0.004881244007265195,
+            "planner": 0.0002816659980453551,
+            "grid_step": 0.005430998033261858,
+            "common_safe_prefix": 0.0030789320007897913
+          },
+          "first_exception": null,
+          "observations": {
+            "check": {
+              "consistent": true,
+              "mismatches": [],
+              "changed_cells": [
+                [
+                  3,
+                  2
+                ]
+              ]
+            }
+          }
+        },
+        {
+          "turn": 5,
+          "action": "DOWN",
+          "prediction_turns_before": [
+            5,
+            5,
+            5,
+            5
+          ],
+          "prediction_turns_after": [
+            6,
+            6,
+            6,
+            6
+          ],
+          "hypothesis_count": 4,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V3 vision",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "0",
+            "metadata_discrepancies": "0",
+            "repairs": "0",
+            "recoveries": "0",
+            "actions": "6",
+            "hypotheses": "4",
+            "reason": "conditional_plan",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.01307261899637524,
+          "stages": {
+            "classify_initial": 0.0016765130130806938,
+            "check_observation": 0.0018383560091024265,
+            "reconcile": 0.00487904399051331,
+            "planner": 0.0002872460026992485,
+            "grid_step": 0.005131621961481869,
+            "common_safe_prefix": 0.002801026013912633
+          },
+          "first_exception": null,
+          "observations": {
+            "check": {
+              "consistent": true,
+              "mismatches": [],
+              "changed_cells": [
+                [
+                  3,
+                  1
+                ],
+                [
+                  3,
+                  2
+                ]
+              ]
+            }
+          }
+        },
+        {
+          "turn": 6,
+          "action": "RIGHT",
+          "prediction_turns_before": [
+            6,
+            6,
+            6,
+            6
+          ],
+          "prediction_turns_after": [
+            7,
+            7,
+            7,
+            7
+          ],
+          "hypothesis_count": 4,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V3 vision",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "0",
+            "metadata_discrepancies": "0",
+            "repairs": "0",
+            "recoveries": "0",
+            "actions": "7",
+            "hypotheses": "4",
+            "reason": "conditional_plan",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.016241208999417722,
+          "stages": {
+            "classify_initial": 0.0012530179956229404,
+            "check_observation": 0.004894079000223428,
+            "reconcile": 0.004936172001180239,
+            "planner": 0.00027357100043445826,
+            "grid_step": 0.005190169002162293,
+            "common_safe_prefix": 0.0028185849951114506
+          },
+          "first_exception": null,
+          "observations": {
+            "check": {
+              "consistent": true,
+              "mismatches": [],
+              "changed_cells": [
+                [
+                  3,
+                  2
+                ],
+                [
+                  3,
+                  3
+                ]
+              ]
+            }
+          }
+        },
+        {
+          "turn": 7,
+          "action": "RIGHT",
+          "prediction_turns_before": [
+            7,
+            7,
+            7,
+            7
+          ],
+          "prediction_turns_after": [
+            8,
+            8,
+            8,
+            8
+          ],
+          "hypothesis_count": 4,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V3 vision",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "0",
+            "metadata_discrepancies": "0",
+            "repairs": "0",
+            "recoveries": "0",
+            "actions": "8",
+            "hypotheses": "4",
+            "reason": "conditional_plan",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.016052899009082466,
+          "stages": {
+            "classify_initial": 0.0012381679989630356,
+            "check_observation": 0.004792830994119868,
+            "reconcile": 0.004912256001261994,
+            "planner": 0.0002852059988072142,
+            "grid_step": 0.0051342450169613585,
+            "common_safe_prefix": 0.002791125007206574
+          },
+          "first_exception": null,
+          "observations": {
+            "check": {
+              "consistent": true,
+              "mismatches": [],
+              "changed_cells": [
+                [
+                  3,
+                  3
+                ],
+                [
+                  4,
+                  3
+                ]
+              ]
+            }
+          }
+        },
+        {
+          "turn": 8,
+          "action": "DOWN",
+          "prediction_turns_before": [
+            8,
+            8,
+            8,
+            8
+          ],
+          "prediction_turns_after": [
+            9,
+            9,
+            9,
+            9
+          ],
+          "hypothesis_count": 4,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V3 vision",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "0",
+            "metadata_discrepancies": "0",
+            "repairs": "0",
+            "recoveries": "0",
+            "actions": "9",
+            "hypotheses": "4",
+            "reason": "conditional_plan",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.012718547994154505,
+          "stages": {
+            "classify_initial": 0.00124828600382898,
+            "check_observation": 0.0014061170077184215,
+            "reconcile": 0.004953997005941346,
+            "planner": 0.0002880979882320389,
+            "grid_step": 0.005142643989529461,
+            "common_safe_prefix": 0.0028064380021532997
+          },
+          "first_exception": null,
+          "observations": {
+            "check": {
+              "consistent": true,
+              "mismatches": [],
+              "changed_cells": [
+                [
+                  4,
+                  3
+                ],
+                [
+                  5,
+                  3
+                ]
+              ]
+            }
+          }
+        },
+        {
+          "turn": 9,
+          "action": "DOWN",
+          "prediction_turns_before": [
+            9,
+            9,
+            9,
+            9
+          ],
+          "prediction_turns_after": [
+            10,
+            10,
+            10,
+            10
+          ],
+          "hypothesis_count": 4,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V3 vision",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "0",
+            "metadata_discrepancies": "0",
+            "repairs": "0",
+            "recoveries": "0",
+            "actions": "10",
+            "hypotheses": "4",
+            "reason": "conditional_plan",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.012631221004994586,
+          "stages": {
+            "classify_initial": 0.0012421979918144643,
+            "check_observation": 0.0014085720031289384,
+            "reconcile": 0.004883829999016598,
+            "planner": 0.0002878210070775822,
+            "grid_step": 0.00513500499073416,
+            "common_safe_prefix": 0.0028071979904780164
+          },
+          "first_exception": null,
+          "observations": {
+            "check": {
+              "consistent": true,
+              "mismatches": [],
+              "changed_cells": [
+                [
+                  5,
+                  3
+                ],
+                [
+                  5,
+                  4
+                ]
+              ]
+            }
+          }
+        },
+        {
+          "turn": 10,
+          "action": "RIGHT",
+          "prediction_turns_before": [
+            10,
+            10,
+            10,
+            10
+          ],
+          "prediction_turns_after": [
+            11,
+            11,
+            11,
+            11
+          ],
+          "hypothesis_count": 4,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V3 vision",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "0",
+            "metadata_discrepancies": "0",
+            "repairs": "0",
+            "recoveries": "0",
+            "actions": "11",
+            "hypotheses": "4",
+            "reason": "conditional_plan",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.013117010006681085,
+          "stages": {
+            "classify_initial": 0.0015539239975623786,
+            "check_observation": 0.0017205360054504126,
+            "reconcile": 0.004864016009378247,
+            "planner": 0.0002887640002882108,
+            "grid_step": 0.0053212260390864685,
+            "common_safe_prefix": 0.002959645993541926
+          },
+          "first_exception": null,
+          "observations": {
+            "check": {
+              "consistent": true,
+              "mismatches": [],
+              "changed_cells": [
+                [
+                  5,
+                  4
+                ],
+                [
+                  5,
+                  5
+                ]
+              ]
+            }
+          }
+        },
+        {
+          "turn": 11,
+          "action": "RIGHT",
+          "prediction_turns_before": [
+            11,
+            11,
+            11,
+            11
+          ],
+          "prediction_turns_after": [
+            12,
+            12,
+            12,
+            12
+          ],
+          "hypothesis_count": 4,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V3 vision",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "0",
+            "metadata_discrepancies": "0",
+            "repairs": "0",
+            "recoveries": "0",
+            "actions": "12",
+            "hypotheses": "4",
+            "reason": "conditional_plan",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.01257348399667535,
+          "stages": {
+            "classify_initial": 0.001238949000253342,
+            "check_observation": 0.0014101690030656755,
+            "reconcile": 0.004860487999394536,
+            "planner": 0.0002744469966273755,
+            "grid_step": 0.005097105007735081,
+            "common_safe_prefix": 0.0027715009928215295
+          },
+          "first_exception": null,
+          "observations": {
+            "check": {
+              "consistent": true,
+              "mismatches": [],
+              "changed_cells": [
+                [
+                  5,
+                  5
+                ],
+                [
+                  6,
+                  5
+                ]
+              ]
+            }
+          }
+        },
+        {
+          "turn": 12,
+          "action": "RIGHT",
+          "prediction_turns_before": [
+            12,
+            12,
+            12,
+            12
+          ],
+          "prediction_turns_after": [
+            13,
+            13,
+            13,
+            13
+          ],
+          "hypothesis_count": 4,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V3 vision",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "0",
+            "metadata_discrepancies": "0",
+            "repairs": "0",
+            "recoveries": "0",
+            "actions": "13",
+            "hypotheses": "4",
+            "reason": "conditional_plan",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.012444655003491789,
+          "stages": {
+            "classify_initial": 0.0012335560022620484,
+            "check_observation": 0.0014022239920450374,
+            "reconcile": 0.004814030005945824,
+            "planner": 0.0002808209974318743,
+            "grid_step": 0.005032194007071666,
+            "common_safe_prefix": 0.002754165994701907
+          },
+          "first_exception": null,
+          "observations": {
+            "check": {
+              "consistent": true,
+              "mismatches": [],
+              "changed_cells": [
+                [
+                  6,
+                  5
+                ],
+                [
+                  7,
+                  5
+                ]
+              ]
+            }
+          }
+        },
+        {
+          "turn": 13,
+          "action": "RIGHT",
+          "prediction_turns_before": [
+            13,
+            13,
+            13,
+            13
+          ],
+          "prediction_turns_after": [
+            14,
+            14,
+            14,
+            14
+          ],
+          "hypothesis_count": 4,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V3 vision",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "0",
+            "metadata_discrepancies": "0",
+            "repairs": "0",
+            "recoveries": "0",
+            "actions": "14",
+            "hypotheses": "4",
+            "reason": "conditional_plan",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.012709503003861755,
+          "stages": {
+            "classify_initial": 0.0012324279960012063,
+            "check_observation": 0.0013990220031701028,
+            "reconcile": 0.004892796001513489,
+            "planner": 0.00029076200735289603,
+            "grid_step": 0.005197008998948149,
+            "common_safe_prefix": 0.002821507994667627
+          },
+          "first_exception": null,
+          "observations": {
+            "check": {
+              "consistent": true,
+              "mismatches": [],
+              "changed_cells": [
+                [
+                  7,
+                  5
+                ],
+                [
+                  8,
+                  5
+                ]
+              ]
+            }
+          }
+        },
+        {
+          "turn": 14,
+          "action": "UP",
+          "prediction_turns_before": [
+            14,
+            14,
+            14,
+            14
+          ],
+          "prediction_turns_after": [
+            15,
+            15,
+            15,
+            15
+          ],
+          "hypothesis_count": 4,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V3 vision",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "0",
+            "metadata_discrepancies": "0",
+            "repairs": "0",
+            "recoveries": "0",
+            "actions": "15",
+            "hypotheses": "4",
+            "reason": "conditional_plan",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.012619558998267166,
+          "stages": {
+            "classify_initial": 0.0012385169975459576,
+            "check_observation": 0.0014024230040377006,
+            "reconcile": 0.004867973999353126,
+            "planner": 0.00027545899502001703,
+            "grid_step": 0.005160450004041195,
+            "common_safe_prefix": 0.0028094389999751
+          },
+          "first_exception": null,
+          "observations": {
+            "check": {
+              "consistent": true,
+              "mismatches": [],
+              "changed_cells": [
+                [
+                  8,
+                  5
+                ],
+                [
+                  9,
+                  5
+                ]
+              ]
+            }
+          }
+        },
+        {
+          "turn": 15,
+          "action": "UP",
+          "prediction_turns_before": [
+            15,
+            15,
+            15,
+            15
+          ],
+          "prediction_turns_after": [
+            16,
+            16,
+            16,
+            16
+          ],
+          "hypothesis_count": 4,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V3 vision",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "0",
+            "metadata_discrepancies": "0",
+            "repairs": "0",
+            "recoveries": "0",
+            "actions": "16",
+            "hypotheses": "4",
+            "reason": "conditional_plan",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.012596020009368658,
+          "stages": {
+            "classify_initial": 0.0012350119941402227,
+            "check_observation": 0.0013999380025779828,
+            "reconcile": 0.004877766012214124,
+            "planner": 0.0002841179957613349,
+            "grid_step": 0.005112938000820577,
+            "common_safe_prefix": 0.002809875993989408
+          },
+          "first_exception": null,
+          "observations": {
+            "check": {
+              "consistent": true,
+              "mismatches": [],
+              "changed_cells": [
+                [
+                  9,
+                  4
+                ],
+                [
+                  9,
+                  5
+                ]
+              ]
+            }
+          }
+        },
+        {
+          "turn": 16,
+          "action": "UP",
+          "prediction_turns_before": [
+            16,
+            16,
+            16,
+            16
+          ],
+          "prediction_turns_after": [
+            17,
+            17,
+            17,
+            17
+          ],
+          "hypothesis_count": 4,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V3 vision",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "0",
+            "metadata_discrepancies": "0",
+            "repairs": "0",
+            "recoveries": "0",
+            "actions": "17",
+            "hypotheses": "4",
+            "reason": "conditional_plan",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.01273615199897904,
+          "stages": {
+            "classify_initial": 0.0012442160077625886,
+            "check_observation": 0.0014086720038903877,
+            "reconcile": 0.0048515020025661215,
+            "planner": 0.0002843370020855218,
+            "grid_step": 0.005261133017484099,
+            "common_safe_prefix": 0.0029005779942963272
+          },
+          "first_exception": null,
+          "observations": {
+            "check": {
+              "consistent": true,
+              "mismatches": [],
+              "changed_cells": [
+                [
+                  9,
+                  3
+                ],
+                [
+                  9,
+                  4
+                ]
+              ]
+            }
+          }
+        },
+        {
+          "turn": 17,
+          "action": "UP",
+          "prediction_turns_before": [
+            17,
+            17,
+            17,
+            17
+          ],
+          "prediction_turns_after": [
+            18,
+            18,
+            18,
+            18
+          ],
+          "hypothesis_count": 4,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V3 vision",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "0",
+            "metadata_discrepancies": "0",
+            "repairs": "0",
+            "recoveries": "0",
+            "actions": "18",
+            "hypotheses": "4",
+            "reason": "conditional_plan",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.012593004998052493,
+          "stages": {
+            "classify_initial": 0.0012321819958742708,
+            "check_observation": 0.0013902409991715103,
+            "reconcile": 0.004900170999462716,
+            "planner": 0.0002790239959722385,
+            "grid_step": 0.00510766998922918,
+            "common_safe_prefix": 0.002784447991871275
+          },
+          "first_exception": null,
+          "observations": {
+            "check": {
+              "consistent": true,
+              "mismatches": [],
+              "changed_cells": [
+                [
+                  9,
+                  2
+                ],
+                [
+                  9,
+                  3
+                ]
+              ]
+            }
+          }
+        },
+        {
+          "turn": 18,
+          "action": "RIGHT",
+          "prediction_turns_before": [
+            18,
+            18,
+            18,
+            18
+          ],
+          "prediction_turns_after": [
+            19,
+            19,
+            19,
+            19
+          ],
+          "hypothesis_count": 4,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V3 vision",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "0",
+            "metadata_discrepancies": "0",
+            "repairs": "0",
+            "recoveries": "0",
+            "actions": "19",
+            "hypotheses": "4",
+            "reason": "conditional_plan",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.012551982988952659,
+          "stages": {
+            "classify_initial": 0.0012303289986448362,
+            "check_observation": 0.0013855520082870498,
+            "reconcile": 0.004871105003985576,
+            "planner": 0.0002739570045378059,
+            "grid_step": 0.005107051983941346,
+            "common_safe_prefix": 0.00277996200020425
+          },
+          "first_exception": null,
+          "observations": {
+            "check": {
+              "consistent": true,
+              "mismatches": [],
+              "changed_cells": [
+                [
+                  9,
+                  1
+                ],
+                [
+                  9,
+                  2
+                ]
+              ]
+            }
+          }
+        },
+        {
+          "turn": 19,
+          "action": "RIGHT",
+          "prediction_turns_before": [
+            19,
+            19,
+            19,
+            19
+          ],
+          "prediction_turns_after": [
+            20,
+            20,
+            20,
+            20
+          ],
+          "hypothesis_count": 4,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V3 vision",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "0",
+            "metadata_discrepancies": "0",
+            "repairs": "0",
+            "recoveries": "0",
+            "actions": "20",
+            "hypotheses": "4",
+            "reason": "conditional_plan",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.012599360998137854,
+          "stages": {
+            "classify_initial": 0.0012416239915182814,
+            "check_observation": 0.0013979039940750226,
+            "reconcile": 0.004861278008320369,
+            "planner": 0.0002761000068858266,
+            "grid_step": 0.005144057984580286,
+            "common_safe_prefix": 0.0027905330061912537
+          },
+          "first_exception": null,
+          "observations": {
+            "check": {
+              "consistent": true,
+              "mismatches": [],
+              "changed_cells": [
+                [
+                  9,
+                  1
+                ],
+                [
+                  10,
+                  1
+                ]
+              ]
+            }
+          }
+        },
+        {
+          "turn": 20,
+          "action": "RIGHT",
+          "prediction_turns_before": [
+            20,
+            20,
+            20,
+            20
+          ],
+          "prediction_turns_after": [
+            21,
+            21,
+            21,
+            21
+          ],
+          "hypothesis_count": 4,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V3 vision",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "0",
+            "metadata_discrepancies": "0",
+            "repairs": "0",
+            "recoveries": "0",
+            "actions": "21",
+            "hypotheses": "4",
+            "reason": "conditional_plan",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.012606606003828347,
+          "stages": {
+            "classify_initial": 0.0012336110085016116,
+            "check_observation": 0.00139288000355009,
+            "reconcile": 0.004861729001277126,
+            "planner": 0.0002777370100375265,
+            "grid_step": 0.005144663038663566,
+            "common_safe_prefix": 0.0027772939938586205
+          },
+          "first_exception": null,
+          "observations": {
+            "check": {
+              "consistent": true,
+              "mismatches": [],
+              "changed_cells": [
+                [
+                  10,
+                  1
+                ],
+                [
+                  11,
+                  1
+                ]
+              ]
+            }
+          }
+        },
+        {
+          "turn": 21,
+          "action": "RIGHT",
+          "prediction_turns_before": [
+            21,
+            21,
+            21,
+            21
+          ],
+          "prediction_turns_after": [
+            22,
+            22,
+            22,
+            22
+          ],
+          "hypothesis_count": 4,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V3 vision",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "0",
+            "metadata_discrepancies": "0",
+            "repairs": "0",
+            "recoveries": "0",
+            "actions": "22",
+            "hypotheses": "4",
+            "reason": "conditional_plan",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.012572305000503547,
+          "stages": {
+            "classify_initial": 0.0012331609905231744,
+            "check_observation": 0.0013863420026609674,
+            "reconcile": 0.004871490993537009,
+            "planner": 0.00028609400033019483,
+            "grid_step": 0.00510195700917393,
+            "common_safe_prefix": 0.0027717129996744916
+          },
+          "first_exception": null,
+          "observations": {
+            "check": {
+              "consistent": true,
+              "mismatches": [],
+              "changed_cells": [
+                [
+                  11,
+                  1
+                ],
+                [
+                  12,
+                  1
+                ]
+              ]
+            }
+          }
+        },
+        {
+          "turn": 22,
+          "action": "DOWN",
+          "prediction_turns_before": [
+            22,
+            22,
+            22,
+            22
+          ],
+          "prediction_turns_after": [
+            23,
+            23,
+            23,
+            23
+          ],
+          "hypothesis_count": 4,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V3 vision",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "0",
+            "metadata_discrepancies": "0",
+            "repairs": "0",
+            "recoveries": "0",
+            "actions": "23",
+            "hypotheses": "4",
+            "reason": "conditional_plan",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.012657184997806326,
+          "stages": {
+            "classify_initial": 0.0012318459921516478,
+            "check_observation": 0.0013849730021320283,
+            "reconcile": 0.004861763998633251,
+            "planner": 0.0002783439995255321,
+            "grid_step": 0.005214295015321113,
+            "common_safe_prefix": 0.0028899269964313135
+          },
+          "first_exception": null,
+          "observations": {
+            "check": {
+              "consistent": true,
+              "mismatches": [],
+              "changed_cells": [
+                [
+                  12,
+                  1
+                ],
+                [
+                  13,
+                  1
+                ]
+              ]
+            }
+          }
+        },
+        {
+          "turn": 23,
+          "action": "DOWN",
+          "prediction_turns_before": [
+            23,
+            23,
+            23,
+            23
+          ],
+          "prediction_turns_after": [
+            24,
+            24,
+            24,
+            24
+          ],
+          "hypothesis_count": 4,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V3 vision",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "0",
+            "metadata_discrepancies": "0",
+            "repairs": "0",
+            "recoveries": "0",
+            "actions": "24",
+            "hypotheses": "4",
+            "reason": "conditional_plan",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.012587825010996312,
+          "stages": {
+            "classify_initial": 0.0012304760020924732,
+            "check_observation": 0.001385297000524588,
+            "reconcile": 0.004865398004767485,
+            "planner": 0.0002809020079439506,
+            "grid_step": 0.0051377390045672655,
+            "common_safe_prefix": 0.002792030994896777
+          },
+          "first_exception": null,
+          "observations": {
+            "check": {
+              "consistent": true,
+              "mismatches": [],
+              "changed_cells": [
+                [
+                  13,
+                  1
+                ],
+                [
+                  13,
+                  2
+                ]
+              ]
+            }
+          }
+        },
+        {
+          "turn": 24,
+          "action": "LEFT",
+          "prediction_turns_before": [
+            24,
+            24,
+            24,
+            24
+          ],
+          "prediction_turns_after": [
+            25,
+            25,
+            25,
+            25
+          ],
+          "hypothesis_count": 4,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V3 vision",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "0",
+            "metadata_discrepancies": "0",
+            "repairs": "0",
+            "recoveries": "0",
+            "actions": "25",
+            "hypotheses": "4",
+            "reason": "conditional_plan",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.012508282001363114,
+          "stages": {
+            "classify_initial": 0.0012259929935680702,
+            "check_observation": 0.0013854999997420236,
+            "reconcile": 0.0048196419957093894,
+            "planner": 0.00028295999800320715,
+            "grid_step": 0.005092470993986353,
+            "common_safe_prefix": 0.002736965994699858
+          },
+          "first_exception": null,
+          "observations": {
+            "check": {
+              "consistent": true,
+              "mismatches": [],
+              "changed_cells": [
+                [
+                  13,
+                  2
+                ],
+                [
+                  13,
+                  3
+                ]
+              ]
+            }
+          }
+        },
+        {
+          "turn": 25,
+          "action": "LEFT",
+          "prediction_turns_before": [
+            25,
+            25,
+            25,
+            25
+          ],
+          "prediction_turns_after": [
+            26,
+            26,
+            26,
+            26
+          ],
+          "hypothesis_count": 4,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V3 vision",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "0",
+            "metadata_discrepancies": "0",
+            "repairs": "0",
+            "recoveries": "0",
+            "actions": "26",
+            "hypotheses": "4",
+            "reason": "conditional_plan",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.012592665007105097,
+          "stages": {
+            "classify_initial": 0.0012294889893382788,
+            "check_observation": 0.0013923640071880072,
+            "reconcile": 0.004836590000195429,
+            "planner": 0.00028300000121816993,
+            "grid_step": 0.00516096199862659,
+            "common_safe_prefix": 0.002799751004204154
+          },
+          "first_exception": null,
+          "observations": {
+            "check": {
+              "consistent": true,
+              "mismatches": [],
+              "changed_cells": [
+                [
+                  12,
+                  3
+                ],
+                [
+                  13,
+                  3
+                ]
+              ]
+            }
+          }
+        },
+        {
+          "turn": 26,
+          "action": "PICK_UP",
+          "prediction_turns_before": [
+            26,
+            26,
+            26,
+            26
+          ],
+          "prediction_turns_after": [
+            27,
+            27,
+            27,
+            27
+          ],
+          "hypothesis_count": 4,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V3 vision",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "0",
+            "metadata_discrepancies": "0",
+            "repairs": "0",
+            "recoveries": "0",
+            "actions": "27",
+            "hypotheses": "4",
+            "reason": "conditional_plan",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.012569225989864208,
+          "stages": {
+            "classify_initial": 0.0012262119998922572,
+            "check_observation": 0.0013907600077800453,
+            "reconcile": 0.0048574940010439605,
+            "planner": 0.00027237999893259257,
+            "grid_step": 0.005131117010023445,
+            "common_safe_prefix": 0.0027953289973083884
+          },
+          "first_exception": null,
+          "observations": {
+            "check": {
+              "consistent": true,
+              "mismatches": [],
+              "changed_cells": [
+                [
+                  11,
+                  3
+                ],
+                [
+                  12,
+                  3
+                ]
+              ]
+            }
+          }
+        },
+        {
+          "turn": 27,
+          "action": "DOWN",
+          "prediction_turns_before": [
+            27,
+            27,
+            27,
+            27
+          ],
+          "prediction_turns_after": [
+            28,
+            28,
+            28,
+            28
+          ],
+          "hypothesis_count": 4,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V3 vision",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "0",
+            "metadata_discrepancies": "0",
+            "repairs": "0",
+            "recoveries": "0",
+            "actions": "28",
+            "hypotheses": "4",
+            "reason": "conditional_plan",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.016338239001925103,
+          "stages": {
+            "classify_initial": 0.0012349140015430748,
+            "check_observation": 0.0013897850003559142,
+            "reconcile": 0.005012412992073223,
+            "grid_step": 0.007723722999799065,
+            "planner": 0.003936445995350368,
+            "common_safe_prefix": 0.0026826069952221587
+          },
+          "first_exception": null,
+          "observations": {
+            "check": {
+              "consistent": true,
+              "mismatches": [],
+              "changed_cells": [
+                [
+                  11,
+                  3
+                ]
+              ]
+            }
+          }
+        },
+        {
+          "turn": 28,
+          "action": "DOWN",
+          "prediction_turns_before": [
+            28,
+            28,
+            28,
+            28
+          ],
+          "prediction_turns_after": [
+            29,
+            29,
+            29,
+            29
+          ],
+          "hypothesis_count": 4,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V3 vision",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "1",
+            "metadata_discrepancies": "0",
+            "repairs": "1",
+            "recoveries": "0",
+            "actions": "29",
+            "hypotheses": "4",
+            "reason": "conditional_plan",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.765093910988071,
+          "stages": {
+            "classify_initial": 0.0012358870008029044,
+            "check_observation": 0.0014047190052224323,
+            "reconcile": 0.007613945999764837,
+            "grid_step": 0.0071607190038776025,
+            "planner": 0.7498466559918597,
+            "common_safe_prefix": 0.002829927994753234
+          },
+          "first_exception": null,
+          "observations": {
+            "check": {
+              "consistent": false,
+              "mismatches": [
+                [
+                  "uncertain_cell",
+                  [
+                    11,
+                    5
+                  ],
+                  "ghost",
+                  "ghost",
+                  [
+                    0.0,
+                    0.0,
+                    0.4536230266094208,
+                    0.0,
+                    1.0949504329931044e-32,
+                    1.941389200510457e-06,
+                    0.5463749766349792,
+                    0.0,
+                    1.8316372227189684e-41,
+                    2.7524714503282347e-34,
+                    0.0,
+                    0.0,
+                    7.247218435699846e-23,
+                    1.5610560276942575e-30
+                  ]
+                ]
+              ],
+              "changed_cells": [
+                [
+                  11,
+                  3
+                ],
+                [
+                  11,
+                  4
+                ]
+              ]
+            }
+          }
+        },
+        {
+          "turn": 29,
+          "action": "RIGHT",
+          "prediction_turns_before": [
+            29,
+            29,
+            29,
+            29
+          ],
+          "prediction_turns_after": [
+            30,
+            30,
+            30,
+            30
+          ],
+          "hypothesis_count": 4,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V3 vision",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "2",
+            "metadata_discrepancies": "0",
+            "repairs": "2",
+            "recoveries": "0",
+            "actions": "30",
+            "hypotheses": "4",
+            "reason": "conditional_plan",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.7306044910073979,
+          "stages": {
+            "classify_initial": 0.0014857569913147017,
+            "check_observation": 0.0017210610094480217,
+            "reconcile": 0.007571184003609233,
+            "grid_step": 0.006523494972498156,
+            "planner": 0.7151046060025692,
+            "common_safe_prefix": 0.002864415990188718
+          },
+          "first_exception": null,
+          "observations": {
+            "check": {
+              "consistent": false,
+              "mismatches": [
+                [
+                  "uncertain_cell",
+                  [
+                    12,
+                    5
+                  ],
+                  "ghost",
+                  "ghost",
+                  [
+                    0.0,
+                    0.0,
+                    0.3492127060890198,
+                    0.0,
+                    4.940225128945873e-33,
+                    1.266253548237728e-05,
+                    0.6507746577262878,
+                    0.0,
+                    3.3568104712900993e-41,
+                    2.548339739056992e-34,
+                    0.0,
+                    0.0,
+                    1.3351147703438846e-22,
+                    3.352983471709223e-30
+                  ]
+                ]
+              ],
+              "changed_cells": [
+                [
+                  11,
+                  4
+                ],
+                [
+                  11,
+                  5
+                ]
+              ]
+            }
+          }
+        },
+        {
+          "turn": 30,
+          "action": "RIGHT",
+          "prediction_turns_before": [
+            30,
+            30,
+            30,
+            30
+          ],
+          "prediction_turns_after": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "hypothesis_count": 4,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V3 vision",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "3",
+            "metadata_discrepancies": "0",
+            "repairs": "3",
+            "recoveries": "0",
+            "actions": "31",
+            "hypotheses": "4",
+            "reason": "conditional_plan",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.7289793950039893,
+          "stages": {
+            "classify_initial": 0.001418316998751834,
+            "check_observation": 0.0016234290087595582,
+            "reconcile": 0.007675654997001402,
+            "grid_step": 0.0058623700169846416,
+            "planner": 0.7134990339982323,
+            "common_safe_prefix": 0.0028125850076321512
+          },
+          "first_exception": null,
+          "observations": {
+            "check": {
+              "consistent": false,
+              "mismatches": [
+                [
+                  "uncertain_cell",
+                  [
+                    11,
+                    5
+                  ],
+                  "ghost",
+                  "ghost",
+                  [
+                    0.0,
+                    0.0,
+                    0.4536230266094208,
+                    0.0,
+                    1.0949504329931044e-32,
+                    1.941389200510457e-06,
+                    0.5463749766349792,
+                    0.0,
+                    1.8316372227189684e-41,
+                    2.7524714503282347e-34,
+                    0.0,
+                    0.0,
+                    7.247218435699846e-23,
+                    1.5610560276942575e-30
+                  ]
+                ]
+              ],
+              "changed_cells": [
+                [
+                  11,
+                  5
+                ],
+                [
+                  12,
+                  5
+                ]
+              ]
+            }
+          }
+        },
+        {
+          "turn": 31,
+          "action": "WAIT",
+          "prediction_turns_before": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "prediction_turns_after": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "hypothesis_count": 4,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V3 vision",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "4",
+            "metadata_discrepancies": "2",
+            "repairs": "4",
+            "recoveries": "0",
+            "actions": "31",
+            "hypotheses": "4",
+            "reason": "hypothesis_disagreement_or_cutoff",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "deadline",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.014810153996222652,
+          "stages": {
+            "classify_initial": 0.0014085669972700998,
+            "check_observation": 0.005040707008447498,
+            "reconcile": 0.007558899000287056,
+            "grid_step": 0.0006820750131737441,
+            "planner": 0.0015954380069160834,
+            "common_safe_prefix": 2.99200473818928e-06
+          },
+          "first_exception": null,
+          "observations": {
+            "check": {
+              "consistent": false,
+              "mismatches": [
+                [
+                  "score",
+                  -85,
+                  -88
+                ],
+                [
+                  "phase",
+                  "win",
+                  "ongoing"
+                ],
+                [
+                  "uncertain_cell",
+                  [
+                    12,
+                    5
+                  ],
+                  "ghost",
+                  "ghost",
+                  [
+                    0.0,
+                    0.0,
+                    0.3492127060890198,
+                    0.0,
+                    4.940225128945873e-33,
+                    1.266253548237728e-05,
+                    0.6507746577262878,
+                    0.0,
+                    3.3568104712900993e-41,
+                    2.548339739056992e-34,
+                    0.0,
+                    0.0,
+                    1.3351147703438846e-22,
+                    3.352983471709223e-30
+                  ]
+                ]
+              ],
+              "changed_cells": [
+                [
+                  12,
+                  5
+                ],
+                [
+                  13,
+                  5
+                ]
+              ]
+            }
+          }
+        },
+        {
+          "turn": 32,
+          "action": "WAIT",
+          "prediction_turns_before": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "prediction_turns_after": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "hypothesis_count": 4,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V3 vision",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "4",
+            "metadata_discrepancies": "2",
+            "repairs": "4",
+            "recoveries": "0",
+            "actions": "31",
+            "hypotheses": "4",
+            "reason": "cutoff",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "deadline",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.0005465150024974719,
+          "stages": {},
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 33,
+          "action": "WAIT",
+          "prediction_turns_before": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "prediction_turns_after": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "hypothesis_count": 4,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V3 vision",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "4",
+            "metadata_discrepancies": "2",
+            "repairs": "4",
+            "recoveries": "0",
+            "actions": "31",
+            "hypotheses": "4",
+            "reason": "cutoff",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "deadline",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.0005498259997693822,
+          "stages": {},
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 34,
+          "action": "WAIT",
+          "prediction_turns_before": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "prediction_turns_after": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "hypothesis_count": 4,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V3 vision",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "4",
+            "metadata_discrepancies": "2",
+            "repairs": "4",
+            "recoveries": "0",
+            "actions": "31",
+            "hypotheses": "4",
+            "reason": "cutoff",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "deadline",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.0005330819985829294,
+          "stages": {},
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 35,
+          "action": "WAIT",
+          "prediction_turns_before": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "prediction_turns_after": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "hypothesis_count": 4,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V3 vision",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "4",
+            "metadata_discrepancies": "2",
+            "repairs": "4",
+            "recoveries": "0",
+            "actions": "31",
+            "hypotheses": "4",
+            "reason": "cutoff",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "deadline",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.00053614100033883,
+          "stages": {},
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 36,
+          "action": "WAIT",
+          "prediction_turns_before": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "prediction_turns_after": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "hypothesis_count": 4,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V3 vision",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "4",
+            "metadata_discrepancies": "2",
+            "repairs": "4",
+            "recoveries": "0",
+            "actions": "31",
+            "hypotheses": "4",
+            "reason": "cutoff",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "deadline",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.0005427619908004999,
+          "stages": {},
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 37,
+          "action": "WAIT",
+          "prediction_turns_before": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "prediction_turns_after": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "hypothesis_count": 4,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V3 vision",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "4",
+            "metadata_discrepancies": "2",
+            "repairs": "4",
+            "recoveries": "0",
+            "actions": "31",
+            "hypotheses": "4",
+            "reason": "cutoff",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "deadline",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.000548052994417958,
+          "stages": {},
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 38,
+          "action": "WAIT",
+          "prediction_turns_before": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "prediction_turns_after": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "hypothesis_count": 4,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V3 vision",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "4",
+            "metadata_discrepancies": "2",
+            "repairs": "4",
+            "recoveries": "0",
+            "actions": "31",
+            "hypotheses": "4",
+            "reason": "cutoff",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "deadline",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.0005346459947759286,
+          "stages": {},
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 39,
+          "action": "WAIT",
+          "prediction_turns_before": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "prediction_turns_after": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "hypothesis_count": 4,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V3 vision",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "4",
+            "metadata_discrepancies": "2",
+            "repairs": "4",
+            "recoveries": "0",
+            "actions": "31",
+            "hypotheses": "4",
+            "reason": "cutoff",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "deadline",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.0005405550036812201,
+          "stages": {},
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 40,
+          "action": "WAIT",
+          "prediction_turns_before": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "prediction_turns_after": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "hypothesis_count": 4,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V3 vision",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "4",
+            "metadata_discrepancies": "2",
+            "repairs": "4",
+            "recoveries": "0",
+            "actions": "31",
+            "hypotheses": "4",
+            "reason": "cutoff",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "deadline",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.0005370779981603846,
+          "stages": {},
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 41,
+          "action": "WAIT",
+          "prediction_turns_before": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "prediction_turns_after": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "hypothesis_count": 4,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V3 vision",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "4",
+            "metadata_discrepancies": "2",
+            "repairs": "4",
+            "recoveries": "0",
+            "actions": "31",
+            "hypotheses": "4",
+            "reason": "cutoff",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "deadline",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.0005479750107042491,
+          "stages": {},
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 42,
+          "action": "WAIT",
+          "prediction_turns_before": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "prediction_turns_after": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "hypothesis_count": 4,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V3 vision",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "4",
+            "metadata_discrepancies": "2",
+            "repairs": "4",
+            "recoveries": "0",
+            "actions": "31",
+            "hypotheses": "4",
+            "reason": "cutoff",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "deadline",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.0005433619953691959,
+          "stages": {},
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 43,
+          "action": "WAIT",
+          "prediction_turns_before": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "prediction_turns_after": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "hypothesis_count": 4,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V3 vision",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "4",
+            "metadata_discrepancies": "2",
+            "repairs": "4",
+            "recoveries": "0",
+            "actions": "31",
+            "hypotheses": "4",
+            "reason": "cutoff",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "deadline",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.0005531339993467554,
+          "stages": {},
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 44,
+          "action": "WAIT",
+          "prediction_turns_before": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "prediction_turns_after": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "hypothesis_count": 4,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V3 vision",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "4",
+            "metadata_discrepancies": "2",
+            "repairs": "4",
+            "recoveries": "0",
+            "actions": "31",
+            "hypotheses": "4",
+            "reason": "cutoff",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "deadline",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.0005489979957928881,
+          "stages": {},
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 45,
+          "action": "WAIT",
+          "prediction_turns_before": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "prediction_turns_after": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "hypothesis_count": 4,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V3 vision",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "4",
+            "metadata_discrepancies": "2",
+            "repairs": "4",
+            "recoveries": "0",
+            "actions": "31",
+            "hypotheses": "4",
+            "reason": "cutoff",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "deadline",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.0005486440059030429,
+          "stages": {},
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 46,
+          "action": "WAIT",
+          "prediction_turns_before": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "prediction_turns_after": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "hypothesis_count": 4,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V3 vision",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "4",
+            "metadata_discrepancies": "2",
+            "repairs": "4",
+            "recoveries": "0",
+            "actions": "31",
+            "hypotheses": "4",
+            "reason": "cutoff",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "deadline",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.0005390349979279563,
+          "stages": {},
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 47,
+          "action": "WAIT",
+          "prediction_turns_before": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "prediction_turns_after": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "hypothesis_count": 4,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V3 vision",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "4",
+            "metadata_discrepancies": "2",
+            "repairs": "4",
+            "recoveries": "0",
+            "actions": "31",
+            "hypotheses": "4",
+            "reason": "cutoff",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "deadline",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.0005382520030252635,
+          "stages": {},
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 48,
+          "action": "WAIT",
+          "prediction_turns_before": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "prediction_turns_after": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "hypothesis_count": 4,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V3 vision",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "4",
+            "metadata_discrepancies": "2",
+            "repairs": "4",
+            "recoveries": "0",
+            "actions": "31",
+            "hypotheses": "4",
+            "reason": "cutoff",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "deadline",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.0005488050082931295,
+          "stages": {},
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 49,
+          "action": "WAIT",
+          "prediction_turns_before": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "prediction_turns_after": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "hypothesis_count": 4,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V3 vision",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "4",
+            "metadata_discrepancies": "2",
+            "repairs": "4",
+            "recoveries": "0",
+            "actions": "31",
+            "hypotheses": "4",
+            "reason": "cutoff",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "deadline",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.0005468919989652932,
+          "stages": {},
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 50,
+          "action": "WAIT",
+          "prediction_turns_before": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "prediction_turns_after": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "hypothesis_count": 4,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V3 vision",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "4",
+            "metadata_discrepancies": "2",
+            "repairs": "4",
+            "recoveries": "0",
+            "actions": "31",
+            "hypotheses": "4",
+            "reason": "cutoff",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "deadline",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.0005511589988600463,
+          "stages": {},
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 51,
+          "action": "WAIT",
+          "prediction_turns_before": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "prediction_turns_after": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "hypothesis_count": 4,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V3 vision",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "4",
+            "metadata_discrepancies": "2",
+            "repairs": "4",
+            "recoveries": "0",
+            "actions": "31",
+            "hypotheses": "4",
+            "reason": "cutoff",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "deadline",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.0005401359958341345,
+          "stages": {},
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 52,
+          "action": "WAIT",
+          "prediction_turns_before": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "prediction_turns_after": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "hypothesis_count": 4,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V3 vision",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "4",
+            "metadata_discrepancies": "2",
+            "repairs": "4",
+            "recoveries": "0",
+            "actions": "31",
+            "hypotheses": "4",
+            "reason": "cutoff",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "deadline",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.000543012996786274,
+          "stages": {},
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 53,
+          "action": "WAIT",
+          "prediction_turns_before": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "prediction_turns_after": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "hypothesis_count": 4,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V3 vision",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "4",
+            "metadata_discrepancies": "2",
+            "repairs": "4",
+            "recoveries": "0",
+            "actions": "31",
+            "hypotheses": "4",
+            "reason": "cutoff",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "deadline",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.0005464090063469484,
+          "stages": {},
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 54,
+          "action": "WAIT",
+          "prediction_turns_before": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "prediction_turns_after": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "hypothesis_count": 4,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V3 vision",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "4",
+            "metadata_discrepancies": "2",
+            "repairs": "4",
+            "recoveries": "0",
+            "actions": "31",
+            "hypotheses": "4",
+            "reason": "cutoff",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "deadline",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.000539796004886739,
+          "stages": {},
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 55,
+          "action": "WAIT",
+          "prediction_turns_before": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "prediction_turns_after": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "hypothesis_count": 4,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V3 vision",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "4",
+            "metadata_discrepancies": "2",
+            "repairs": "4",
+            "recoveries": "0",
+            "actions": "31",
+            "hypotheses": "4",
+            "reason": "cutoff",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "deadline",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.0005549470079131424,
+          "stages": {},
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 56,
+          "action": "WAIT",
+          "prediction_turns_before": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "prediction_turns_after": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "hypothesis_count": 4,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V3 vision",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "4",
+            "metadata_discrepancies": "2",
+            "repairs": "4",
+            "recoveries": "0",
+            "actions": "31",
+            "hypotheses": "4",
+            "reason": "cutoff",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "deadline",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.0005367730045691133,
+          "stages": {},
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 57,
+          "action": "WAIT",
+          "prediction_turns_before": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "prediction_turns_after": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "hypothesis_count": 4,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V3 vision",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "4",
+            "metadata_discrepancies": "2",
+            "repairs": "4",
+            "recoveries": "0",
+            "actions": "31",
+            "hypotheses": "4",
+            "reason": "cutoff",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "deadline",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.0005419999943114817,
+          "stages": {},
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 58,
+          "action": "WAIT",
+          "prediction_turns_before": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "prediction_turns_after": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "hypothesis_count": 4,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V3 vision",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "4",
+            "metadata_discrepancies": "2",
+            "repairs": "4",
+            "recoveries": "0",
+            "actions": "31",
+            "hypotheses": "4",
+            "reason": "cutoff",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "deadline",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.0005318809999153018,
+          "stages": {},
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 59,
+          "action": "WAIT",
+          "prediction_turns_before": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "prediction_turns_after": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "hypothesis_count": 4,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V3 vision",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "4",
+            "metadata_discrepancies": "2",
+            "repairs": "4",
+            "recoveries": "0",
+            "actions": "31",
+            "hypotheses": "4",
+            "reason": "cutoff",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "deadline",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.0005420930101536214,
+          "stages": {},
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 60,
+          "action": "WAIT",
+          "prediction_turns_before": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "prediction_turns_after": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "hypothesis_count": 4,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V3 vision",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "4",
+            "metadata_discrepancies": "2",
+            "repairs": "4",
+            "recoveries": "0",
+            "actions": "31",
+            "hypotheses": "4",
+            "reason": "cutoff",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "deadline",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.0005421210080385208,
+          "stages": {},
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 61,
+          "action": "WAIT",
+          "prediction_turns_before": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "prediction_turns_after": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "hypothesis_count": 4,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V3 vision",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "4",
+            "metadata_discrepancies": "2",
+            "repairs": "4",
+            "recoveries": "0",
+            "actions": "31",
+            "hypotheses": "4",
+            "reason": "cutoff",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "deadline",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.0005427559954114258,
+          "stages": {},
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 62,
+          "action": "WAIT",
+          "prediction_turns_before": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "prediction_turns_after": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "hypothesis_count": 4,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V3 vision",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "4",
+            "metadata_discrepancies": "2",
+            "repairs": "4",
+            "recoveries": "0",
+            "actions": "31",
+            "hypotheses": "4",
+            "reason": "cutoff",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "deadline",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.0005439500091597438,
+          "stages": {},
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 63,
+          "action": "WAIT",
+          "prediction_turns_before": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "prediction_turns_after": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "hypothesis_count": 4,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V3 vision",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "4",
+            "metadata_discrepancies": "2",
+            "repairs": "4",
+            "recoveries": "0",
+            "actions": "31",
+            "hypotheses": "4",
+            "reason": "cutoff",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "deadline",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.0005353539891075343,
+          "stages": {},
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 64,
+          "action": "WAIT",
+          "prediction_turns_before": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "prediction_turns_after": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "hypothesis_count": 4,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V3 vision",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "4",
+            "metadata_discrepancies": "2",
+            "repairs": "4",
+            "recoveries": "0",
+            "actions": "31",
+            "hypotheses": "4",
+            "reason": "cutoff",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "deadline",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.0005358640046324581,
+          "stages": {},
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 65,
+          "action": "WAIT",
+          "prediction_turns_before": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "prediction_turns_after": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "hypothesis_count": 4,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V3 vision",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "4",
+            "metadata_discrepancies": "2",
+            "repairs": "4",
+            "recoveries": "0",
+            "actions": "31",
+            "hypotheses": "4",
+            "reason": "cutoff",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "deadline",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.000535198996658437,
+          "stages": {},
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 66,
+          "action": "WAIT",
+          "prediction_turns_before": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "prediction_turns_after": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "hypothesis_count": 4,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V3 vision",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "4",
+            "metadata_discrepancies": "2",
+            "repairs": "4",
+            "recoveries": "0",
+            "actions": "31",
+            "hypotheses": "4",
+            "reason": "cutoff",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "deadline",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.0005459920066641644,
+          "stages": {},
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 67,
+          "action": "WAIT",
+          "prediction_turns_before": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "prediction_turns_after": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "hypothesis_count": 4,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V3 vision",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "4",
+            "metadata_discrepancies": "2",
+            "repairs": "4",
+            "recoveries": "0",
+            "actions": "31",
+            "hypotheses": "4",
+            "reason": "cutoff",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "deadline",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.0005516910023288801,
+          "stages": {},
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 68,
+          "action": "WAIT",
+          "prediction_turns_before": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "prediction_turns_after": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "hypothesis_count": 4,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V3 vision",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "4",
+            "metadata_discrepancies": "2",
+            "repairs": "4",
+            "recoveries": "0",
+            "actions": "31",
+            "hypotheses": "4",
+            "reason": "cutoff",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "deadline",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.0005343369994079694,
+          "stages": {},
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 69,
+          "action": "WAIT",
+          "prediction_turns_before": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "prediction_turns_after": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "hypothesis_count": 4,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V3 vision",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "4",
+            "metadata_discrepancies": "2",
+            "repairs": "4",
+            "recoveries": "0",
+            "actions": "31",
+            "hypotheses": "4",
+            "reason": "cutoff",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "deadline",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.0005320880009094253,
+          "stages": {},
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 70,
+          "action": "WAIT",
+          "prediction_turns_before": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "prediction_turns_after": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "hypothesis_count": 4,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V3 vision",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "4",
+            "metadata_discrepancies": "2",
+            "repairs": "4",
+            "recoveries": "0",
+            "actions": "31",
+            "hypotheses": "4",
+            "reason": "cutoff",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "deadline",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.0005460610118461773,
+          "stages": {},
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 71,
+          "action": "WAIT",
+          "prediction_turns_before": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "prediction_turns_after": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "hypothesis_count": 4,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V3 vision",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "4",
+            "metadata_discrepancies": "2",
+            "repairs": "4",
+            "recoveries": "0",
+            "actions": "31",
+            "hypotheses": "4",
+            "reason": "cutoff",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "deadline",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.0005377079942263663,
+          "stages": {},
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 72,
+          "action": "WAIT",
+          "prediction_turns_before": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "prediction_turns_after": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "hypothesis_count": 4,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V3 vision",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "4",
+            "metadata_discrepancies": "2",
+            "repairs": "4",
+            "recoveries": "0",
+            "actions": "31",
+            "hypotheses": "4",
+            "reason": "cutoff",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "deadline",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.000532901001861319,
+          "stages": {},
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 73,
+          "action": "WAIT",
+          "prediction_turns_before": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "prediction_turns_after": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "hypothesis_count": 4,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V3 vision",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "4",
+            "metadata_discrepancies": "2",
+            "repairs": "4",
+            "recoveries": "0",
+            "actions": "31",
+            "hypotheses": "4",
+            "reason": "cutoff",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "deadline",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.0005332919972715899,
+          "stages": {},
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 74,
+          "action": "WAIT",
+          "prediction_turns_before": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "prediction_turns_after": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "hypothesis_count": 4,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V3 vision",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "4",
+            "metadata_discrepancies": "2",
+            "repairs": "4",
+            "recoveries": "0",
+            "actions": "31",
+            "hypotheses": "4",
+            "reason": "cutoff",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "deadline",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.0005402149981819093,
+          "stages": {},
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 75,
+          "action": "WAIT",
+          "prediction_turns_before": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "prediction_turns_after": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "hypothesis_count": 4,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V3 vision",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "4",
+            "metadata_discrepancies": "2",
+            "repairs": "4",
+            "recoveries": "0",
+            "actions": "31",
+            "hypotheses": "4",
+            "reason": "cutoff",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "deadline",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.0005489449977176264,
+          "stages": {},
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 76,
+          "action": "WAIT",
+          "prediction_turns_before": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "prediction_turns_after": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "hypothesis_count": 4,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V3 vision",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "4",
+            "metadata_discrepancies": "2",
+            "repairs": "4",
+            "recoveries": "0",
+            "actions": "31",
+            "hypotheses": "4",
+            "reason": "cutoff",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "deadline",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.0005347309925127774,
+          "stages": {},
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 77,
+          "action": "WAIT",
+          "prediction_turns_before": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "prediction_turns_after": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "hypothesis_count": 4,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V3 vision",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "4",
+            "metadata_discrepancies": "2",
+            "repairs": "4",
+            "recoveries": "0",
+            "actions": "31",
+            "hypotheses": "4",
+            "reason": "cutoff",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "deadline",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.0005428389995358884,
+          "stages": {},
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 78,
+          "action": "WAIT",
+          "prediction_turns_before": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "prediction_turns_after": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "hypothesis_count": 4,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V3 vision",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "4",
+            "metadata_discrepancies": "2",
+            "repairs": "4",
+            "recoveries": "0",
+            "actions": "31",
+            "hypotheses": "4",
+            "reason": "cutoff",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "deadline",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.0005327969993231818,
+          "stages": {},
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 79,
+          "action": "WAIT",
+          "prediction_turns_before": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "prediction_turns_after": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "hypothesis_count": 4,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V3 vision",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "4",
+            "metadata_discrepancies": "2",
+            "repairs": "4",
+            "recoveries": "0",
+            "actions": "31",
+            "hypotheses": "4",
+            "reason": "cutoff",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "deadline",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.0005427830037660897,
+          "stages": {},
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 80,
+          "action": "WAIT",
+          "prediction_turns_before": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "prediction_turns_after": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "hypothesis_count": 4,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V3 vision",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "4",
+            "metadata_discrepancies": "2",
+            "repairs": "4",
+            "recoveries": "0",
+            "actions": "31",
+            "hypotheses": "4",
+            "reason": "cutoff",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "deadline",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.000549201009562239,
+          "stages": {},
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 81,
+          "action": "WAIT",
+          "prediction_turns_before": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "prediction_turns_after": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "hypothesis_count": 4,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V3 vision",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "4",
+            "metadata_discrepancies": "2",
+            "repairs": "4",
+            "recoveries": "0",
+            "actions": "31",
+            "hypotheses": "4",
+            "reason": "cutoff",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "deadline",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.0005369819991756231,
+          "stages": {},
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 82,
+          "action": "WAIT",
+          "prediction_turns_before": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "prediction_turns_after": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "hypothesis_count": 4,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V3 vision",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "4",
+            "metadata_discrepancies": "2",
+            "repairs": "4",
+            "recoveries": "0",
+            "actions": "31",
+            "hypotheses": "4",
+            "reason": "cutoff",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "deadline",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.0005496059893630445,
+          "stages": {},
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 83,
+          "action": "WAIT",
+          "prediction_turns_before": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "prediction_turns_after": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "hypothesis_count": 4,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V3 vision",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "4",
+            "metadata_discrepancies": "2",
+            "repairs": "4",
+            "recoveries": "0",
+            "actions": "31",
+            "hypotheses": "4",
+            "reason": "cutoff",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "deadline",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.0005527999892365187,
+          "stages": {},
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 84,
+          "action": "WAIT",
+          "prediction_turns_before": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "prediction_turns_after": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "hypothesis_count": 4,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V3 vision",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "4",
+            "metadata_discrepancies": "2",
+            "repairs": "4",
+            "recoveries": "0",
+            "actions": "31",
+            "hypotheses": "4",
+            "reason": "cutoff",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "deadline",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.0005464389978442341,
+          "stages": {},
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 85,
+          "action": "WAIT",
+          "prediction_turns_before": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "prediction_turns_after": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "hypothesis_count": 4,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V3 vision",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "4",
+            "metadata_discrepancies": "2",
+            "repairs": "4",
+            "recoveries": "0",
+            "actions": "31",
+            "hypotheses": "4",
+            "reason": "cutoff",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "deadline",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.0005237579898675904,
+          "stages": {},
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 86,
+          "action": "WAIT",
+          "prediction_turns_before": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "prediction_turns_after": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "hypothesis_count": 4,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V3 vision",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "4",
+            "metadata_discrepancies": "2",
+            "repairs": "4",
+            "recoveries": "0",
+            "actions": "31",
+            "hypotheses": "4",
+            "reason": "cutoff",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "deadline",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.0005394820036599413,
+          "stages": {},
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 87,
+          "action": "WAIT",
+          "prediction_turns_before": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "prediction_turns_after": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "hypothesis_count": 4,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V3 vision",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "4",
+            "metadata_discrepancies": "2",
+            "repairs": "4",
+            "recoveries": "0",
+            "actions": "31",
+            "hypotheses": "4",
+            "reason": "cutoff",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "deadline",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.0005428489967016503,
+          "stages": {},
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 88,
+          "action": "WAIT",
+          "prediction_turns_before": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "prediction_turns_after": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "hypothesis_count": 4,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V3 vision",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "4",
+            "metadata_discrepancies": "2",
+            "repairs": "4",
+            "recoveries": "0",
+            "actions": "31",
+            "hypotheses": "4",
+            "reason": "cutoff",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "deadline",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.0005410879966802895,
+          "stages": {},
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 89,
+          "action": "WAIT",
+          "prediction_turns_before": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "prediction_turns_after": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "hypothesis_count": 4,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V3 vision",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "4",
+            "metadata_discrepancies": "2",
+            "repairs": "4",
+            "recoveries": "0",
+            "actions": "31",
+            "hypotheses": "4",
+            "reason": "cutoff",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "deadline",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.0005519920086953789,
+          "stages": {},
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 90,
+          "action": "WAIT",
+          "prediction_turns_before": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "prediction_turns_after": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "hypothesis_count": 4,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V3 vision",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "4",
+            "metadata_discrepancies": "2",
+            "repairs": "4",
+            "recoveries": "0",
+            "actions": "31",
+            "hypotheses": "4",
+            "reason": "cutoff",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "deadline",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.0005501080013345927,
+          "stages": {},
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 91,
+          "action": "WAIT",
+          "prediction_turns_before": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "prediction_turns_after": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "hypothesis_count": 4,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V3 vision",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "4",
+            "metadata_discrepancies": "2",
+            "repairs": "4",
+            "recoveries": "0",
+            "actions": "31",
+            "hypotheses": "4",
+            "reason": "cutoff",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "deadline",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.0005456740036606789,
+          "stages": {},
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 92,
+          "action": "WAIT",
+          "prediction_turns_before": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "prediction_turns_after": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "hypothesis_count": 4,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V3 vision",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "4",
+            "metadata_discrepancies": "2",
+            "repairs": "4",
+            "recoveries": "0",
+            "actions": "31",
+            "hypotheses": "4",
+            "reason": "cutoff",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "deadline",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.0005443499976536259,
+          "stages": {},
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 93,
+          "action": "WAIT",
+          "prediction_turns_before": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "prediction_turns_after": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "hypothesis_count": 4,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V3 vision",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "4",
+            "metadata_discrepancies": "2",
+            "repairs": "4",
+            "recoveries": "0",
+            "actions": "31",
+            "hypotheses": "4",
+            "reason": "cutoff",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "deadline",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.0005421069945441559,
+          "stages": {},
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 94,
+          "action": "WAIT",
+          "prediction_turns_before": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "prediction_turns_after": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "hypothesis_count": 4,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V3 vision",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "4",
+            "metadata_discrepancies": "2",
+            "repairs": "4",
+            "recoveries": "0",
+            "actions": "31",
+            "hypotheses": "4",
+            "reason": "cutoff",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "deadline",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.0005484379944391549,
+          "stages": {},
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 95,
+          "action": "WAIT",
+          "prediction_turns_before": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "prediction_turns_after": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "hypothesis_count": 4,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V3 vision",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "4",
+            "metadata_discrepancies": "2",
+            "repairs": "4",
+            "recoveries": "0",
+            "actions": "31",
+            "hypotheses": "4",
+            "reason": "cutoff",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "deadline",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.0005586379993474111,
+          "stages": {},
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 96,
+          "action": "WAIT",
+          "prediction_turns_before": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "prediction_turns_after": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "hypothesis_count": 4,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V3 vision",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "4",
+            "metadata_discrepancies": "2",
+            "repairs": "4",
+            "recoveries": "0",
+            "actions": "31",
+            "hypotheses": "4",
+            "reason": "cutoff",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "deadline",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.0005558959965128452,
+          "stages": {},
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 97,
+          "action": "WAIT",
+          "prediction_turns_before": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "prediction_turns_after": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "hypothesis_count": 4,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V3 vision",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "4",
+            "metadata_discrepancies": "2",
+            "repairs": "4",
+            "recoveries": "0",
+            "actions": "31",
+            "hypotheses": "4",
+            "reason": "cutoff",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "deadline",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.0005534040101338178,
+          "stages": {},
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 98,
+          "action": "WAIT",
+          "prediction_turns_before": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "prediction_turns_after": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "hypothesis_count": 4,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V3 vision",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "4",
+            "metadata_discrepancies": "2",
+            "repairs": "4",
+            "recoveries": "0",
+            "actions": "31",
+            "hypotheses": "4",
+            "reason": "cutoff",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "deadline",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.0005496650119312108,
+          "stages": {},
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 99,
+          "action": "WAIT",
+          "prediction_turns_before": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "prediction_turns_after": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "hypothesis_count": 4,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V3 vision",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "4",
+            "metadata_discrepancies": "2",
+            "repairs": "4",
+            "recoveries": "0",
+            "actions": "31",
+            "hypotheses": "4",
+            "reason": "cutoff",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "deadline",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.0005479349929373711,
+          "stages": {},
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 100,
+          "action": "WAIT",
+          "prediction_turns_before": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "prediction_turns_after": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "hypothesis_count": 4,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V3 vision",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "4",
+            "metadata_discrepancies": "2",
+            "repairs": "4",
+            "recoveries": "0",
+            "actions": "31",
+            "hypotheses": "4",
+            "reason": "cutoff",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "deadline",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.0005471680051414296,
+          "stages": {},
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 101,
+          "action": "WAIT",
+          "prediction_turns_before": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "prediction_turns_after": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "hypothesis_count": 4,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V3 vision",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "4",
+            "metadata_discrepancies": "2",
+            "repairs": "4",
+            "recoveries": "0",
+            "actions": "31",
+            "hypotheses": "4",
+            "reason": "cutoff",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "deadline",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.000546358001884073,
+          "stages": {},
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 102,
+          "action": "WAIT",
+          "prediction_turns_before": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "prediction_turns_after": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "hypothesis_count": 4,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V3 vision",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "4",
+            "metadata_discrepancies": "2",
+            "repairs": "4",
+            "recoveries": "0",
+            "actions": "31",
+            "hypotheses": "4",
+            "reason": "cutoff",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "deadline",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.0005506930028786883,
+          "stages": {},
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 103,
+          "action": "WAIT",
+          "prediction_turns_before": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "prediction_turns_after": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "hypothesis_count": 4,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V3 vision",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "4",
+            "metadata_discrepancies": "2",
+            "repairs": "4",
+            "recoveries": "0",
+            "actions": "31",
+            "hypotheses": "4",
+            "reason": "cutoff",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "deadline",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.0005596999981207773,
+          "stages": {},
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 104,
+          "action": "WAIT",
+          "prediction_turns_before": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "prediction_turns_after": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "hypothesis_count": 4,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V3 vision",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "4",
+            "metadata_discrepancies": "2",
+            "repairs": "4",
+            "recoveries": "0",
+            "actions": "31",
+            "hypotheses": "4",
+            "reason": "cutoff",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "deadline",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.0005455710052046925,
+          "stages": {},
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 105,
+          "action": "WAIT",
+          "prediction_turns_before": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "prediction_turns_after": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "hypothesis_count": 4,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V3 vision",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "4",
+            "metadata_discrepancies": "2",
+            "repairs": "4",
+            "recoveries": "0",
+            "actions": "31",
+            "hypotheses": "4",
+            "reason": "cutoff",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "deadline",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.0005474760109791532,
+          "stages": {},
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 106,
+          "action": "WAIT",
+          "prediction_turns_before": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "prediction_turns_after": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "hypothesis_count": 4,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V3 vision",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "4",
+            "metadata_discrepancies": "2",
+            "repairs": "4",
+            "recoveries": "0",
+            "actions": "31",
+            "hypotheses": "4",
+            "reason": "cutoff",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "deadline",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.0005480910040205345,
+          "stages": {},
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 107,
+          "action": "WAIT",
+          "prediction_turns_before": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "prediction_turns_after": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "hypothesis_count": 4,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V3 vision",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "4",
+            "metadata_discrepancies": "2",
+            "repairs": "4",
+            "recoveries": "0",
+            "actions": "31",
+            "hypotheses": "4",
+            "reason": "cutoff",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "deadline",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.0005595019902102649,
+          "stages": {},
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 108,
+          "action": "WAIT",
+          "prediction_turns_before": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "prediction_turns_after": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "hypothesis_count": 4,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V3 vision",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "4",
+            "metadata_discrepancies": "2",
+            "repairs": "4",
+            "recoveries": "0",
+            "actions": "31",
+            "hypotheses": "4",
+            "reason": "cutoff",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "deadline",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.000545793998753652,
+          "stages": {},
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 109,
+          "action": "WAIT",
+          "prediction_turns_before": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "prediction_turns_after": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "hypothesis_count": 4,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V3 vision",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "4",
+            "metadata_discrepancies": "2",
+            "repairs": "4",
+            "recoveries": "0",
+            "actions": "31",
+            "hypotheses": "4",
+            "reason": "cutoff",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "deadline",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.0005420059897005558,
+          "stages": {},
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 110,
+          "action": "WAIT",
+          "prediction_turns_before": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "prediction_turns_after": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "hypothesis_count": 4,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V3 vision",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "4",
+            "metadata_discrepancies": "2",
+            "repairs": "4",
+            "recoveries": "0",
+            "actions": "31",
+            "hypotheses": "4",
+            "reason": "cutoff",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "deadline",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.0005518939869944006,
+          "stages": {},
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 111,
+          "action": "WAIT",
+          "prediction_turns_before": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "prediction_turns_after": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "hypothesis_count": 4,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V3 vision",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "4",
+            "metadata_discrepancies": "2",
+            "repairs": "4",
+            "recoveries": "0",
+            "actions": "31",
+            "hypotheses": "4",
+            "reason": "cutoff",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "deadline",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.0005397619970608503,
+          "stages": {},
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 112,
+          "action": "WAIT",
+          "prediction_turns_before": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "prediction_turns_after": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "hypothesis_count": 4,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V3 vision",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "4",
+            "metadata_discrepancies": "2",
+            "repairs": "4",
+            "recoveries": "0",
+            "actions": "31",
+            "hypotheses": "4",
+            "reason": "cutoff",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "deadline",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.000537688989425078,
+          "stages": {},
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 113,
+          "action": "WAIT",
+          "prediction_turns_before": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "prediction_turns_after": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "hypothesis_count": 4,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V3 vision",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "4",
+            "metadata_discrepancies": "2",
+            "repairs": "4",
+            "recoveries": "0",
+            "actions": "31",
+            "hypotheses": "4",
+            "reason": "cutoff",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "deadline",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.0005689340032404289,
+          "stages": {},
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 114,
+          "action": "WAIT",
+          "prediction_turns_before": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "prediction_turns_after": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "hypothesis_count": 4,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V3 vision",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "4",
+            "metadata_discrepancies": "2",
+            "repairs": "4",
+            "recoveries": "0",
+            "actions": "31",
+            "hypotheses": "4",
+            "reason": "cutoff",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "deadline",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.0005458380037453026,
+          "stages": {},
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 115,
+          "action": "WAIT",
+          "prediction_turns_before": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "prediction_turns_after": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "hypothesis_count": 4,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V3 vision",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "4",
+            "metadata_discrepancies": "2",
+            "repairs": "4",
+            "recoveries": "0",
+            "actions": "31",
+            "hypotheses": "4",
+            "reason": "cutoff",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "deadline",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.0005394059990067035,
+          "stages": {},
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 116,
+          "action": "WAIT",
+          "prediction_turns_before": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "prediction_turns_after": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "hypothesis_count": 4,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V3 vision",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "4",
+            "metadata_discrepancies": "2",
+            "repairs": "4",
+            "recoveries": "0",
+            "actions": "31",
+            "hypotheses": "4",
+            "reason": "cutoff",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "deadline",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.0005410169978858903,
+          "stages": {},
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 117,
+          "action": "WAIT",
+          "prediction_turns_before": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "prediction_turns_after": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "hypothesis_count": 4,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V3 vision",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "4",
+            "metadata_discrepancies": "2",
+            "repairs": "4",
+            "recoveries": "0",
+            "actions": "31",
+            "hypotheses": "4",
+            "reason": "cutoff",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "deadline",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.0005409339937614277,
+          "stages": {},
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 118,
+          "action": "WAIT",
+          "prediction_turns_before": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "prediction_turns_after": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "hypothesis_count": 4,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V3 vision",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "4",
+            "metadata_discrepancies": "2",
+            "repairs": "4",
+            "recoveries": "0",
+            "actions": "31",
+            "hypotheses": "4",
+            "reason": "cutoff",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "deadline",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.0005424429982667789,
+          "stages": {},
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 119,
+          "action": "WAIT",
+          "prediction_turns_before": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "prediction_turns_after": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "hypothesis_count": 4,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V3 vision",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "4",
+            "metadata_discrepancies": "2",
+            "repairs": "4",
+            "recoveries": "0",
+            "actions": "31",
+            "hypotheses": "4",
+            "reason": "cutoff",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "deadline",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.0005433059995993972,
+          "stages": {},
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 120,
+          "action": "WAIT",
+          "prediction_turns_before": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "prediction_turns_after": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "hypothesis_count": 4,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V3 vision",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "4",
+            "metadata_discrepancies": "2",
+            "repairs": "4",
+            "recoveries": "0",
+            "actions": "31",
+            "hypotheses": "4",
+            "reason": "cutoff",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "deadline",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.0005558709963224828,
+          "stages": {},
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 121,
+          "action": "WAIT",
+          "prediction_turns_before": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "prediction_turns_after": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "hypothesis_count": 4,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V3 vision",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "4",
+            "metadata_discrepancies": "2",
+            "repairs": "4",
+            "recoveries": "0",
+            "actions": "31",
+            "hypotheses": "4",
+            "reason": "cutoff",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "deadline",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.0005384870019042864,
+          "stages": {},
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 122,
+          "action": "WAIT",
+          "prediction_turns_before": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "prediction_turns_after": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "hypothesis_count": 4,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V3 vision",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "4",
+            "metadata_discrepancies": "2",
+            "repairs": "4",
+            "recoveries": "0",
+            "actions": "31",
+            "hypotheses": "4",
+            "reason": "cutoff",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "deadline",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.0005467730079544708,
+          "stages": {},
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 123,
+          "action": "WAIT",
+          "prediction_turns_before": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "prediction_turns_after": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "hypothesis_count": 4,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V3 vision",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "4",
+            "metadata_discrepancies": "2",
+            "repairs": "4",
+            "recoveries": "0",
+            "actions": "31",
+            "hypotheses": "4",
+            "reason": "cutoff",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "deadline",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.0005553990049520507,
+          "stages": {},
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 124,
+          "action": "WAIT",
+          "prediction_turns_before": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "prediction_turns_after": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "hypothesis_count": 4,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V3 vision",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "4",
+            "metadata_discrepancies": "2",
+            "repairs": "4",
+            "recoveries": "0",
+            "actions": "31",
+            "hypotheses": "4",
+            "reason": "cutoff",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "deadline",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.0005426110001280904,
+          "stages": {},
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 125,
+          "action": "WAIT",
+          "prediction_turns_before": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "prediction_turns_after": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "hypothesis_count": 4,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V3 vision",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "4",
+            "metadata_discrepancies": "2",
+            "repairs": "4",
+            "recoveries": "0",
+            "actions": "31",
+            "hypotheses": "4",
+            "reason": "cutoff",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "deadline",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.0005440120003186166,
+          "stages": {},
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 126,
+          "action": "WAIT",
+          "prediction_turns_before": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "prediction_turns_after": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "hypothesis_count": 4,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V3 vision",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "4",
+            "metadata_discrepancies": "2",
+            "repairs": "4",
+            "recoveries": "0",
+            "actions": "31",
+            "hypotheses": "4",
+            "reason": "cutoff",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "deadline",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.0005409419973148033,
+          "stages": {},
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 127,
+          "action": "WAIT",
+          "prediction_turns_before": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "prediction_turns_after": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "hypothesis_count": 4,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V3 vision",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "4",
+            "metadata_discrepancies": "2",
+            "repairs": "4",
+            "recoveries": "0",
+            "actions": "31",
+            "hypotheses": "4",
+            "reason": "cutoff",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "deadline",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.0005426639982033521,
+          "stages": {},
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 128,
+          "action": "WAIT",
+          "prediction_turns_before": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "prediction_turns_after": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "hypothesis_count": 4,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V3 vision",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "4",
+            "metadata_discrepancies": "2",
+            "repairs": "4",
+            "recoveries": "0",
+            "actions": "31",
+            "hypotheses": "4",
+            "reason": "cutoff",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "deadline",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.0005398189969127998,
+          "stages": {},
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 129,
+          "action": "WAIT",
+          "prediction_turns_before": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "prediction_turns_after": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "hypothesis_count": 4,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V3 vision",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "4",
+            "metadata_discrepancies": "2",
+            "repairs": "4",
+            "recoveries": "0",
+            "actions": "31",
+            "hypotheses": "4",
+            "reason": "cutoff",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "deadline",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.0005448040028568357,
+          "stages": {},
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 130,
+          "action": "WAIT",
+          "prediction_turns_before": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "prediction_turns_after": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "hypothesis_count": 4,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V3 vision",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "4",
+            "metadata_discrepancies": "2",
+            "repairs": "4",
+            "recoveries": "0",
+            "actions": "31",
+            "hypotheses": "4",
+            "reason": "cutoff",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "deadline",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.0005396929918788373,
+          "stages": {},
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 131,
+          "action": "WAIT",
+          "prediction_turns_before": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "prediction_turns_after": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "hypothesis_count": 4,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V3 vision",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "4",
+            "metadata_discrepancies": "2",
+            "repairs": "4",
+            "recoveries": "0",
+            "actions": "31",
+            "hypotheses": "4",
+            "reason": "cutoff",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "deadline",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.0005448709998745471,
+          "stages": {},
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 132,
+          "action": "WAIT",
+          "prediction_turns_before": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "prediction_turns_after": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "hypothesis_count": 4,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V3 vision",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "4",
+            "metadata_discrepancies": "2",
+            "repairs": "4",
+            "recoveries": "0",
+            "actions": "31",
+            "hypotheses": "4",
+            "reason": "cutoff",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "deadline",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.000544632988749072,
+          "stages": {},
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 133,
+          "action": "WAIT",
+          "prediction_turns_before": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "prediction_turns_after": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "hypothesis_count": 4,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V3 vision",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "4",
+            "metadata_discrepancies": "2",
+            "repairs": "4",
+            "recoveries": "0",
+            "actions": "31",
+            "hypotheses": "4",
+            "reason": "cutoff",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "deadline",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.0005403379909694195,
+          "stages": {},
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 134,
+          "action": "WAIT",
+          "prediction_turns_before": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "prediction_turns_after": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "hypothesis_count": 4,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V3 vision",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "4",
+            "metadata_discrepancies": "2",
+            "repairs": "4",
+            "recoveries": "0",
+            "actions": "31",
+            "hypotheses": "4",
+            "reason": "cutoff",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "deadline",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.0005414900078903884,
+          "stages": {},
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 135,
+          "action": "WAIT",
+          "prediction_turns_before": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "prediction_turns_after": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "hypothesis_count": 4,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V3 vision",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "4",
+            "metadata_discrepancies": "2",
+            "repairs": "4",
+            "recoveries": "0",
+            "actions": "31",
+            "hypotheses": "4",
+            "reason": "cutoff",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "deadline",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.0005481779953697696,
+          "stages": {},
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 136,
+          "action": "WAIT",
+          "prediction_turns_before": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "prediction_turns_after": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "hypothesis_count": 4,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V3 vision",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "4",
+            "metadata_discrepancies": "2",
+            "repairs": "4",
+            "recoveries": "0",
+            "actions": "31",
+            "hypotheses": "4",
+            "reason": "cutoff",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "deadline",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.0005550560017582029,
+          "stages": {},
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 137,
+          "action": "WAIT",
+          "prediction_turns_before": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "prediction_turns_after": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "hypothesis_count": 4,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V3 vision",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "4",
+            "metadata_discrepancies": "2",
+            "repairs": "4",
+            "recoveries": "0",
+            "actions": "31",
+            "hypotheses": "4",
+            "reason": "cutoff",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "deadline",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.0005400750087574124,
+          "stages": {},
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 138,
+          "action": "WAIT",
+          "prediction_turns_before": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "prediction_turns_after": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "hypothesis_count": 4,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V3 vision",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "4",
+            "metadata_discrepancies": "2",
+            "repairs": "4",
+            "recoveries": "0",
+            "actions": "31",
+            "hypotheses": "4",
+            "reason": "cutoff",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "deadline",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.0005461100081447512,
+          "stages": {},
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 139,
+          "action": "WAIT",
+          "prediction_turns_before": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "prediction_turns_after": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "hypothesis_count": 4,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V3 vision",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "4",
+            "metadata_discrepancies": "2",
+            "repairs": "4",
+            "recoveries": "0",
+            "actions": "31",
+            "hypotheses": "4",
+            "reason": "cutoff",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "deadline",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.0005494139913935214,
+          "stages": {},
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 140,
+          "action": "WAIT",
+          "prediction_turns_before": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "prediction_turns_after": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "hypothesis_count": 4,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V3 vision",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "4",
+            "metadata_discrepancies": "2",
+            "repairs": "4",
+            "recoveries": "0",
+            "actions": "31",
+            "hypotheses": "4",
+            "reason": "cutoff",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "deadline",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.0005394660111051053,
+          "stages": {},
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 141,
+          "action": "WAIT",
+          "prediction_turns_before": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "prediction_turns_after": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "hypothesis_count": 4,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V3 vision",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "4",
+            "metadata_discrepancies": "2",
+            "repairs": "4",
+            "recoveries": "0",
+            "actions": "31",
+            "hypotheses": "4",
+            "reason": "cutoff",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "deadline",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.0005465980066219345,
+          "stages": {},
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 142,
+          "action": "WAIT",
+          "prediction_turns_before": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "prediction_turns_after": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "hypothesis_count": 4,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V3 vision",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "4",
+            "metadata_discrepancies": "2",
+            "repairs": "4",
+            "recoveries": "0",
+            "actions": "31",
+            "hypotheses": "4",
+            "reason": "cutoff",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "deadline",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.0005379030044423416,
+          "stages": {},
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 143,
+          "action": "WAIT",
+          "prediction_turns_before": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "prediction_turns_after": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "hypothesis_count": 4,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V3 vision",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "4",
+            "metadata_discrepancies": "2",
+            "repairs": "4",
+            "recoveries": "0",
+            "actions": "31",
+            "hypotheses": "4",
+            "reason": "cutoff",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "deadline",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.0005507039895746857,
+          "stages": {},
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 144,
+          "action": "WAIT",
+          "prediction_turns_before": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "prediction_turns_after": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "hypothesis_count": 4,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V3 vision",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "4",
+            "metadata_discrepancies": "2",
+            "repairs": "4",
+            "recoveries": "0",
+            "actions": "31",
+            "hypotheses": "4",
+            "reason": "cutoff",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "deadline",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.0005376649933168665,
+          "stages": {},
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 145,
+          "action": "WAIT",
+          "prediction_turns_before": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "prediction_turns_after": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "hypothesis_count": 4,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V3 vision",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "4",
+            "metadata_discrepancies": "2",
+            "repairs": "4",
+            "recoveries": "0",
+            "actions": "31",
+            "hypotheses": "4",
+            "reason": "cutoff",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "deadline",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.0005316840106388554,
+          "stages": {},
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 146,
+          "action": "WAIT",
+          "prediction_turns_before": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "prediction_turns_after": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "hypothesis_count": 4,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V3 vision",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "4",
+            "metadata_discrepancies": "2",
+            "repairs": "4",
+            "recoveries": "0",
+            "actions": "31",
+            "hypotheses": "4",
+            "reason": "cutoff",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "deadline",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.0005398770008469,
+          "stages": {},
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 147,
+          "action": "WAIT",
+          "prediction_turns_before": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "prediction_turns_after": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "hypothesis_count": 4,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V3 vision",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "4",
+            "metadata_discrepancies": "2",
+            "repairs": "4",
+            "recoveries": "0",
+            "actions": "31",
+            "hypotheses": "4",
+            "reason": "cutoff",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "deadline",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.0005375140026444569,
+          "stages": {},
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 148,
+          "action": "WAIT",
+          "prediction_turns_before": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "prediction_turns_after": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "hypothesis_count": 4,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V3 vision",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "4",
+            "metadata_discrepancies": "2",
+            "repairs": "4",
+            "recoveries": "0",
+            "actions": "31",
+            "hypotheses": "4",
+            "reason": "cutoff",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "deadline",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.0005414460028987378,
+          "stages": {},
+          "first_exception": null,
+          "observations": {}
+        },
+        {
+          "turn": 149,
+          "action": "WAIT",
+          "prediction_turns_before": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "prediction_turns_after": [
+            31,
+            31,
+            31,
+            31
+          ],
+          "hypothesis_count": 4,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V3 vision",
+            "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+            "input_mode": "image",
+            "visual_discrepancies": "4",
+            "metadata_discrepancies": "2",
+            "repairs": "4",
+            "recoveries": "0",
+            "actions": "31",
+            "hypotheses": "4",
+            "reason": "cutoff",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "deadline",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.0005352300067897886,
+          "stages": {},
+          "first_exception": null,
+          "observations": {}
+        }
+      ],
+      "label": "combined/b391e8446a65/6223560330",
+      "seed": 208808523605,
+      "setup_seconds": 0.09433550300309435,
+      "cold_import_to_terminal_seconds": 3.8518130000011297,
+      "peak_rss_bytes": 283742208,
+      "provenance": {
+        "host": "omarchy",
+        "platform": "Linux-7.2.15-1-omarchy-x86_64-with-glibc2.44",
+        "cpu": "Intel(R) Core(TM) Ultra 9 275HX",
+        "python": "3.13.18 (main, Oct 26 2026, 14:08:20) [Clang 23.1.3 ]",
+        "packages": {
+          "grid-adventure": {
+            "version": "0.1.0",
+            "direct_url": {
+              "url": "https://github.com/grid-universe/grid-adventure-v1.git",
+              "vcs_info": {
+                "vcs": "git",
+                "commit_id": "2eb235e9ceffe241a12d63afc613b9bdbdf914be"
+              }
+            }
+          },
+          "grid-universe": {
+            "version": "0.1.0",
+            "direct_url": {
+              "url": "https://github.com/grid-universe/grid-universe.git",
+              "vcs_info": {
+                "vcs": "git",
+                "commit_id": "28615fa1b570b7ccdd5f56d86ca200baffa06d2c"
+              }
+            }
+          },
+          "numpy": {
+            "version": "2.3.0",
+            "direct_url": null
+          },
+          "pillow": {
+            "version": "11.2.1",
+            "direct_url": null
+          },
+          "torch": {
+            "version": "2.7.0+cpu",
+            "direct_url": null
+          }
+        },
+        "cpu_affinity": [
+          0
+        ],
+        "thread_limits": {
+          "OMP_NUM_THREADS": "1",
+          "OPENBLAS_NUM_THREADS": "1",
+          "MKL_NUM_THREADS": "1",
+          "NUMEXPR_NUM_THREADS": "1",
+          "VECLIB_MAXIMUM_THREADS": "1"
+        }
+      },
+      "runtime_overrides": {},
+      "entrypoint": "Agent",
+      "power_state_before": {
+        "cpu": 0,
+        "epp": "performance",
+        "governor": "powersave",
+        "max_freq": "5300000"
+      },
+      "power_state_after": {
+        "cpu": 0,
+        "epp": "performance",
+        "governor": "powersave",
+        "max_freq": "5300000"
+      },
+      "source_sha256": "c2337b3d3b5f7797cf07eca47904bfe6f895d7629c7cfc5b89e08664df6b39f9",
+      "torch_threads": [
+        1,
+        1
+      ],
+      "strict_cold_seconds": 3.874378152002464,
+      "cold_watchdog_seconds": 30,
+      "job": {
+        "label": "combined/b391e8446a65/6223560330",
+        "generated": 40079,
+        "multiple_gems": true,
+        "layout_split": "final",
+        "seed": 208808523605,
+        "asset_root": "artifacts/v3/data/final-300-v5/asset-root",
+        "appearance_manifest": "artifacts/v3/data/manifest-v5.json",
+        "appearance_manifest_sha256": "a17b735ba0e8183e8d51162c3e3b4219300d18dc080503bf93661fe1bb018e07",
+        "appearance_split": "final",
+        "appearance_seed": 6223560330,
+        "resolution": 512,
+        "expected_image_sha256": "bca7a5644db24a5903fe7a78a1a72a08ced0040542e1f29785e9b87e9d978801",
+        "expected_pixels_sha256": "0aac2bea2d52d2029e71fdf250cbf31e96b9f1eaff8d6981cfb865726577a4d9",
+        "expected_layout_sha256": "b391e8446a65e1422ca0888b37512569a75c41feee0ff975b6b6bc339d00218c"
+      }
+    }
+  ]
+}

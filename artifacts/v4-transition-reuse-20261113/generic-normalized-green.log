@@ -1,0 +1,17 @@
+.......F..................................................
+======================================================================
+FAIL: test_reidentification_rebinds_verified_suffix (tests.test_v4_backend.BackendTests.test_reidentification_rebinds_verified_suffix)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/enxi/coding/autistic-sv-67/tests/test_v4_backend.py", line 114, in test_reidentification_rebinds_verified_suffix
+    ).test_reference_suffix_survives_public_resource_reidentification()
+      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/enxi/coding/autistic-sv-67/tests/test_v3_harness.py", line 94, in test_reference_suffix_survives_public_resource_reidentification
+    self.assertEqual(action, Action.PICK_UP)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: <Action.WAIT: 'wait'> != <Action.PICK_UP: 'pick_up'>
+
+----------------------------------------------------------------------
+Ran 58 tests in 4.355s
+
+FAILED (failures=1)

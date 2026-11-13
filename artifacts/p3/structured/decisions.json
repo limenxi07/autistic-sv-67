@@ -1,0 +1,42 @@
+{
+  "parent_sha256": "6c668eaa24acf234d7188cb0606203e9af1ece9a3323b980adab75d50f5a30fd",
+  "experiments": [
+    {
+      "experiment": "control",
+      "source": "experiments/baseline.py",
+      "declared_gate": "reproduce six losses",
+      "result": "six losses reproduced"
+    },
+    {
+      "experiment": "frontier-4x",
+      "source": "experiments/cap16384.py",
+      "declared_gate": "resolve all six under caps/RSS",
+      "result": "three wins; 007/010/011 remain losses"
+    },
+    {
+      "experiment": "gem-progress-ordering",
+      "source": "experiments/gem-ordering.py",
+      "declared_gate": "resolve all six with ordering only",
+      "result": "three wins; 007/009/011 remain losses"
+    },
+    {
+      "experiment": "combined-ordering-cap",
+      "source": "experiments/gem-cap16384.py",
+      "declared_gate": "avoid hierarchy if primitive combination suffices",
+      "result": "local diagnostic five wins, 011 fails; no acceptance claim"
+    },
+    {
+      "experiment": "resource-event-rescue",
+      "source": "../../../../agents/p3.py",
+      "declared_gate": "all six become verified wins; preserve qualified primitive winners",
+      "result": "Final exact-source pass: stress36/36, holdout18/18, bosses6/6, public66/66, generated200/200; all paired parent rewards preserved."
+    }
+  ],
+  "reason_for_hierarchy": "Cap-only and ordering-only experiments leave reproduced failures; combined bounded primitive probe still fails011.",
+  "schema_changed": false,
+  "source_frozen": true,
+  "holdout_tuning": false,
+  "acceptance_passed": true,
+  "remaining_measured_failures": [],
+  "latency_speedup_claim": false
+}

@@ -1,0 +1,105 @@
+{
+  "parent": "artifacts/p2/frozen/p2a/task1_agent.py",
+  "candidate": "agents/p2_next.py",
+  "decisions": [
+    {
+      "finding": "Both bosses fall back on large keyed inventory; each has one key",
+      "change": "Retain guard for >1 key, canonicalize inventory ordering when <=1 key",
+      "evidence": [
+        "baseline-report.md",
+        "schema-deadline-red.log",
+        "schema-deadline-green.log"
+      ]
+    },
+    {
+      "finding": "C1 still loses after narrow schema extension and 4x frontier cap",
+      "change": "Reject larger cap; keep STATE_CAP=4096 and RECORD_CAP=32768",
+      "evidence": [
+        "candidate-task3-boss-v1.json",
+        "candidate-cap16384-boss.json",
+        "cap-experiment.json"
+      ]
+    },
+    {
+      "finding": "C1 root explores 18032 transitions with no key carrying/door opening/gem pickup; 17838 successors in room",
+      "change": "Keep key bottlenecks in compact action ordering even when an uncollected ghost exists; ordering only, no pruning",
+      "evidence": [
+        "c1-resource-diagnostic-local.json",
+        "ordering-red.log",
+        "ordering-box-green-attempt.log",
+        "c1-ordering-diagnostic-local.json"
+      ]
+    },
+    {
+      "finding": "Broad all-action test fails on many-16 at comparison91555 (box pushed onto lava)",
+      "change": "Block box push onto collidable lava, public black-box probes",
+      "evidence": [
+        "differential-v1.json",
+        "box-hazard-red.log",
+        "ordering-box-green-attempt.log"
+      ]
+    },
+    {
+      "finding": "Need original caller deadline and separate explicit Task3 time allowance",
+      "change": "Structural PlannerAdapter, explicit Task3Agent11/12, normal Agent3/3.5; optional caller reference cap; verified suffix rebind",
+      "evidence": [
+        "candidate-contract-tests.log"
+      ]
+    },
+    {
+      "finding": "C1 verifies a primitive win after ordering fix at original caps",
+      "change": "No P3 hierarchy introduced",
+      "evidence": [
+        "candidate-task3-boss-v2.json"
+      ]
+    },
+    {
+      "finding": "Independent code review reproduced dispatch crossing cutoff during observation/search",
+      "change": "Recheck original cutoff after key observation and search before either fast/reference dispatch",
+      "evidence": [
+        "review-deadline-red.log",
+        "final-targeted-tests.log"
+      ]
+    },
+    {
+      "finding": "Late fallback had a spent initial interval but waited one turn before recovery",
+      "change": "New reference instance inherits elapsed phase and uses original cutoff immediately",
+      "evidence": [
+        "review-deadline-red.log",
+        "final-targeted-tests.log"
+      ]
+    },
+    {
+      "finding": "All-action corpus many-62 mismatch at comparison100004: phasing must still push movable boxes",
+      "change": "Attempt push while phased; overlap the box only if the push is blocked",
+      "evidence": [
+        "differential-v2.json",
+        "phase-box-red.log",
+        "box-probes.json",
+        "final-targeted-tests.log"
+      ]
+    },
+    {
+      "finding": "Review identified differential gate counted requested layouts rather than successful new layouts",
+      "change": "Gate many_initial_supported and many_compared separately; failed differential exits nonzero",
+      "evidence": [
+        "tools/differential_p2_next.py"
+      ]
+    }
+  ],
+  "limitations": [
+    "C1 reward -163 vs catalog -158 (five-point gap)",
+    "Unfamiliar boss-like stress: 6/12 wins; six losses remain at -450, final deadline stop after 16-21 searches",
+    "Development and interrupted stress outcomes were reused for revalidation after simulator fixes; no untouched-holdout claim",
+    "No platform submission or automatic V3 integration"
+  ],
+  "candidate_sha256": "6c668eaa24acf234d7188cb0606203e9af1ece9a3323b980adab75d50f5a30fd",
+  "review": {
+    "verdict": "Initial request changes; important findings fixed with red/green tests",
+    "fresh_reviewer": true,
+    "final_fix_verification": "19 targeted tests and 161 repository tests pass; 257467 all-action comparisons over 1000 successfully encoded new layouts; exact-source acceptance passed.",
+    "minor_deferred": []
+  },
+  "final_evidence": "verified-summary.json",
+  "p3_decision": "No hierarchy implemented. Primitive ordering fixes C1 at original caps; residual stress failures are documented targets for a separate measured continuation."
+}

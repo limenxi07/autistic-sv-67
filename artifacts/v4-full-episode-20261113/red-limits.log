@@ -1,0 +1,23 @@
+...FF.
+======================================================================
+FAIL: test_pixel_cache_has_byte_limit_for_large_cells (tests.test_v4_episode_cost.RawPixelCacheTests.test_pixel_cache_has_byte_limit_for_large_cells)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/enxi/coding/autistic-sv-67/tests/test_v4_episode_cost.py", line 71, in test_pixel_cache_has_byte_limit_for_large_cells
+    self.assertLessEqual(retained, 8 * 1024 * 1024)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 12582912 not less than or equal to 8388608
+
+======================================================================
+FAIL: test_cached_dispatch_reads_current_state_once (tests.test_v4_episode_cost.ReplayConversionCostTests.test_cached_dispatch_reads_current_state_once)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/enxi/coding/autistic-sv-67/tests/test_v4_episode_cost.py", line 87, in test_cached_dispatch_reads_current_state_once
+    self.assertEqual(observe.call_count, 1)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 2 != 1
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.297s
+
+FAILED (failures=2)

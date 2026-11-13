@@ -1,0 +1,23 @@
+..FF
+======================================================================
+FAIL: test_identical_pixels_reuse_inference_before_preprocessing (tests.test_v4_episode_cost.RawPixelCacheTests.test_identical_pixels_reuse_inference_before_preprocessing)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/enxi/coding/autistic-sv-67/tests/test_v4_episode_cost.py", line 45, in test_identical_pixels_reuse_inference_before_preprocessing
+    self.assertEqual(self.model.samples, calls)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 4 != 2
+
+======================================================================
+FAIL: test_winning_replay_avoids_reconstructing_unchanged_scenery (tests.test_v4_episode_cost.ReplayConversionCostTests.test_winning_replay_avoids_reconstructing_unchanged_scenery)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/enxi/coding/autistic-sv-67/tests/test_v4_episode_cost.py", line 87, in test_winning_replay_avoids_reconstructing_unchanged_scenery
+    self.assertLess(len(calls), len(planner._actions) * 15)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 9116 not less than 1590
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.234s
+
+FAILED (failures=2)

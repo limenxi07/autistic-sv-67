@@ -1,0 +1,26 @@
+test_numpy_load_requires_memory_and_disables_pickle (tests.test_v4_package.PackageTests.test_numpy_load_requires_memory_and_disables_pickle) ... 
+  test_numpy_load_requires_memory_and_disables_pickle (tests.test_v4_package.PackageTests.test_numpy_load_requires_memory_and_disables_pickle) (call="np.load('/tmp/model.npz', allow_pickle=False)") ... FAIL
+  test_numpy_load_requires_memory_and_disables_pickle (tests.test_v4_package.PackageTests.test_numpy_load_requires_memory_and_disables_pickle) (call="np.load(io.BytesIO(b''), allow_pickle=True)") ... FAIL
+
+======================================================================
+FAIL: test_numpy_load_requires_memory_and_disables_pickle (tests.test_v4_package.PackageTests.test_numpy_load_requires_memory_and_disables_pickle) (call="np.load('/tmp/model.npz', allow_pickle=False)")
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/enxi/coding/autistic-sv-67/tests/test_v4_package.py", line 133, in test_numpy_load_requires_memory_and_disables_pickle
+    with self.assertRaisesRegex(ValueError, "NumPy loading"):
+         ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ValueError not raised
+
+======================================================================
+FAIL: test_numpy_load_requires_memory_and_disables_pickle (tests.test_v4_package.PackageTests.test_numpy_load_requires_memory_and_disables_pickle) (call="np.load(io.BytesIO(b''), allow_pickle=True)")
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/enxi/coding/autistic-sv-67/tests/test_v4_package.py", line 133, in test_numpy_load_requires_memory_and_disables_pickle
+    with self.assertRaisesRegex(ValueError, "NumPy loading"):
+         ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ValueError not raised
+
+----------------------------------------------------------------------
+Ran 1 test in 0.325s
+
+FAILED (failures=2)

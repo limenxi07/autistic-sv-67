@@ -1,0 +1,22 @@
+test_group_balanced_renderer_preserves_pixel_binding (tests.test_v4_harness.HarnessTests.test_group_balanced_renderer_preserves_pixel_binding) ... ERROR
+
+======================================================================
+ERROR: test_group_balanced_renderer_preserves_pixel_binding (tests.test_v4_harness.HarnessTests.test_group_balanced_renderer_preserves_pixel_binding)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/enxi/coding/autistic-sv-67/tests/test_v4_harness.py", line 66, in test_group_balanced_renderer_preserves_pixel_binding
+    obs,_=recorded_appearance(image_env(state),job).reset()
+          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/enxi/coding/autistic-sv-67/tools/benchmark_v4.py", line 152, in reset
+    return self.render_observation(observation, initial=True), info
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/enxi/coding/autistic-sv-67/tools/benchmark_v4.py", line 136, in render_observation
+    raise ValueError(
+        "Initial decoded pixels differ from the frozen corpus"
+    )
+ValueError: Initial decoded pixels differ from the frozen corpus
+
+----------------------------------------------------------------------
+Ran 1 test in 0.392s
+
+FAILED (errors=1)

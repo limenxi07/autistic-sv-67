@@ -1,0 +1,43 @@
+{
+  "source_sha256": "ff7b47d1f2e6d97148cec07eac5ddcd2e6b959bac64192f763ec8c47e6c2f1c3",
+  "bytes": 734984,
+  "backend_sha256": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+  "model_sha256": "44c9f8ebe0e0bc5b663500ba8c6f401336ee6db023080058d8d23696f4e97f82",
+  "checkpoint_sha256": "45a6768c467d0bacac481f70e033b4f1d71560c5db49c2553ae4ba1861207690",
+  "policy_sha256": "5bdbe01ebb49b42d28de10ae5720ed25c6c1e8f298bac624ef7321aa110f3fd1",
+  "policy": {
+    "temperature": 1.8340080864093418,
+    "min_confidence": 0.9,
+    "min_margin": 0.1,
+    "view": "full"
+  },
+  "runtime_sources": {
+    "artifacts/p3/frozen/task1_agent.py": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+    "agents/vision_v4_backend.py": "d487728413d4ec7d24f7a8cbf52f4769f6830653db1549d22c82afb1254bc2f4",
+    "agents/vision_v4_types.py": "801aad04fc861ef98d6146880dc308df3bc23010551e76cb85858b487a582647",
+    "agents/vision_v4_bridge.py": "56b4b0e68207921b9786b49e15caff4f335b32d908dfb08dd62d30ce04e909dc",
+    "agents/vision_v4_model.py": "c9bc5cec8497ff1da6f9c3bbc5ff8695f2c12dd83163f85c9a55fb813202f63a",
+    "agents/vision_v4_perception.py": "c26d7495013e7e7e267ed8f52f0790ac1a545250caa6f15ac311508380be9458",
+    "agents/vision_v4_tracking.py": "6c9dcf70c48a7a18e2d5f2ad31d73d08b522c5adcbd87f208ef9be88ae7419cd",
+    "agents/vision_v4_search.py": "51bd435f8299bbadd0835a61d1d20e049c83b4a01b5663601a4a2b519529dc45",
+    "agents/vision_v4_planner.py": "67e19d59fb474d4e7770d3d93a042c2b6d3b55cb752ed7dff540b7d76ca7d36a",
+    "agents/vision_v4.py": "b4be42d22eb67a222bdbdc48371a75329bd571cf3e9f6a01db441b793bcca83b",
+    "agents/boss_v4.py": "5cbe4a6679fdec11e0f63dec1022b497e8271f77e7abb03e2a55c36ccc2d4552"
+  },
+  "configuration": {
+    "initial_seconds": 11.0,
+    "cutoff_seconds": 12.0,
+    "image_execution_cutoff_seconds": 14.65,
+    "reference_initial_seconds": 2.0,
+    "max_hypotheses": 4,
+    "max_ambiguous_cells": 2,
+    "default_structured": "BossStructuredAgent(P3.Task3Agent)",
+    "structured_execution_cutoff_seconds": 14.65,
+    "task": 3,
+    "episode_limit_seconds": 15.0
+  },
+  "export_parity_passed": true,
+  "runtime_overrides": {},
+  "inference_format": "numpy-fp32",
+  "status": "Source freeze only; qualification gates are separate."
+}

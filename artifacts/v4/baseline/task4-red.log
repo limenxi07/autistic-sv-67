@@ -1,0 +1,18 @@
+test_v4_data (unittest.loader._FailedTest.test_v4_data) ... ERROR
+
+======================================================================
+ERROR: test_v4_data (unittest.loader._FailedTest.test_v4_data)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_v4_data
+Traceback (most recent call last):
+  File "/Users/enxi/.local/share/uv/python/cpython-3.13.15-macos-aarch64-none/lib/python3.13/unittest/loader.py", line 141, in loadTestsFromName
+    module = __import__(module_name)
+  File "/Users/enxi/coding/autistic-sv-67/tests/test_v4_data.py", line 6, in <module>
+    from tools.v4_data import audit_v4_data, build_exposure, make_folds, validate_fold_initialization
+ModuleNotFoundError: No module named 'tools.v4_data'
+
+
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+FAILED (errors=1)

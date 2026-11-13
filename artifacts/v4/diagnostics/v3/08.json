@@ -1,0 +1,1708 @@
+{
+  "source_sha256": "8afdb5b286b9c27dc7d0fe588dee3c7e8024c15e49eedc8671429ba0bd19f13f",
+  "diagnostic_only": true,
+  "results": [
+    {
+      "status": "win",
+      "win": true,
+      "lose": false,
+      "reward": -115.0,
+      "evaluation_seconds": 1.6151170230004936,
+      "turns": 41,
+      "effective_performance": null,
+      "unresolved": [],
+      "observation": "image",
+      "initial_board_exact": false,
+      "initial_confusion": [
+        [
+          "box",
+          "box",
+          1
+        ],
+        [
+          "coin",
+          "coin",
+          1
+        ],
+        [
+          "exit",
+          "exit",
+          1
+        ],
+        [
+          "floor",
+          "floor",
+          29
+        ],
+        [
+          "gem",
+          "coin",
+          2
+        ],
+        [
+          "human",
+          "human",
+          1
+        ],
+        [
+          "key",
+          "key",
+          1
+        ],
+        [
+          "lava",
+          "lava",
+          2
+        ],
+        [
+          "locked",
+          "locked",
+          1
+        ],
+        [
+          "opened",
+          "opened",
+          1
+        ],
+        [
+          "shield",
+          "shield",
+          1
+        ],
+        [
+          "wall",
+          "wall",
+          64
+        ]
+      ],
+      "agent_info": {
+        "name": "V3 vision",
+        "backend_sha256": "6c668eaa24acf234d7188cb0606203e9af1ece9a3323b980adab75d50f5a30fd",
+        "input_mode": "image",
+        "visual_discrepancies": "0",
+        "metadata_discrepancies": "4",
+        "repairs": "2",
+        "recoveries": "1",
+        "actions": "41",
+        "hypotheses": "1",
+        "reason": "conditional_plan",
+        "conditional_on_perception": "True",
+        "planner_stop_reason": "exhausted",
+        "planner_backend": "fast"
+      },
+      "budget_reset": false,
+      "budget_seconds": [
+        3.0,
+        3.5
+      ],
+      "diagnostic_only": true,
+      "trace": [
+        {
+          "turn": 0,
+          "action": "UP",
+          "prediction_turns_before": [],
+          "prediction_turns_after": [
+            1
+          ],
+          "hypothesis_count": 1,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V3 vision",
+            "backend_sha256": "6c668eaa24acf234d7188cb0606203e9af1ece9a3323b980adab75d50f5a30fd",
+            "input_mode": "image",
+            "visual_discrepancies": "0",
+            "metadata_discrepancies": "0",
+            "repairs": "0",
+            "recoveries": "0",
+            "actions": "1",
+            "hypotheses": "1",
+            "reason": "conditional_plan",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.8339812939957483,
+          "stages": {
+            "classify_initial": 0.46643453199067153,
+            "grid_step": 0.08022443804657087,
+            "planner": 0.3627577949955594,
+            "common_safe_prefix": 0.0008774029993219301
+          },
+          "first_exception": null
+        },
+        {
+          "turn": 1,
+          "action": "PICK_UP",
+          "prediction_turns_before": [
+            1
+          ],
+          "prediction_turns_after": [
+            2
+          ],
+          "hypothesis_count": 1,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V3 vision",
+            "backend_sha256": "6c668eaa24acf234d7188cb0606203e9af1ece9a3323b980adab75d50f5a30fd",
+            "input_mode": "image",
+            "visual_discrepancies": "0",
+            "metadata_discrepancies": "0",
+            "repairs": "0",
+            "recoveries": "0",
+            "actions": "2",
+            "hypotheses": "1",
+            "reason": "conditional_plan",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.0087169280013768,
+          "stages": {
+            "classify_initial": 0.002432724999380298,
+            "check_observation": 0.004639935999875888,
+            "reconcile": 0.0015742390096420422,
+            "planner": 0.00029728699882980436,
+            "grid_step": 0.0014107149909250438,
+            "common_safe_prefix": 0.0007794199918862432
+          },
+          "first_exception": null
+        },
+        {
+          "turn": 2,
+          "action": "UP",
+          "prediction_turns_before": [
+            2
+          ],
+          "prediction_turns_after": [
+            3
+          ],
+          "hypothesis_count": 1,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V3 vision",
+            "backend_sha256": "6c668eaa24acf234d7188cb0606203e9af1ece9a3323b980adab75d50f5a30fd",
+            "input_mode": "image",
+            "visual_discrepancies": "0",
+            "metadata_discrepancies": "0",
+            "repairs": "0",
+            "recoveries": "0",
+            "actions": "3",
+            "hypotheses": "1",
+            "reason": "conditional_plan",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.03740385100536514,
+          "stages": {
+            "classify_initial": 0.0016924540104810148,
+            "check_observation": 0.0018654129962669685,
+            "reconcile": 0.0013372190005611628,
+            "grid_step": 0.027317696978570893,
+            "planner": 0.032069704990135506,
+            "common_safe_prefix": 0.0007213799981400371
+          },
+          "first_exception": null
+        },
+        {
+          "turn": 3,
+          "action": "USE_KEY",
+          "prediction_turns_before": [
+            3
+          ],
+          "prediction_turns_after": [
+            4
+          ],
+          "hypothesis_count": 1,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V3 vision",
+            "backend_sha256": "6c668eaa24acf234d7188cb0606203e9af1ece9a3323b980adab75d50f5a30fd",
+            "input_mode": "image",
+            "visual_discrepancies": "0",
+            "metadata_discrepancies": "0",
+            "repairs": "0",
+            "recoveries": "0",
+            "actions": "4",
+            "hypotheses": "1",
+            "reason": "conditional_plan",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.005239361998974346,
+          "stages": {
+            "classify_initial": 0.0012225760001456365,
+            "check_observation": 0.0013937930052634329,
+            "reconcile": 0.0013408509985310957,
+            "planner": 0.00029381799686234444,
+            "grid_step": 0.001410505996318534,
+            "common_safe_prefix": 0.000771759994677268
+          },
+          "first_exception": null
+        },
+        {
+          "turn": 4,
+          "action": "UP",
+          "prediction_turns_before": [
+            4
+          ],
+          "prediction_turns_after": [
+            5
+          ],
+          "hypothesis_count": 1,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V3 vision",
+            "backend_sha256": "6c668eaa24acf234d7188cb0606203e9af1ece9a3323b980adab75d50f5a30fd",
+            "input_mode": "image",
+            "visual_discrepancies": "0",
+            "metadata_discrepancies": "0",
+            "repairs": "0",
+            "recoveries": "0",
+            "actions": "5",
+            "hypotheses": "1",
+            "reason": "conditional_plan",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.005074433007393964,
+          "stages": {
+            "classify_initial": 0.0012206289975438267,
+            "check_observation": 0.0013743339950451627,
+            "reconcile": 0.0012510530068539083,
+            "planner": 0.00027168000815436244,
+            "grid_step": 0.0013842409971402958,
+            "common_safe_prefix": 0.0007654110086150467
+          },
+          "first_exception": null
+        },
+        {
+          "turn": 5,
+          "action": "UP",
+          "prediction_turns_before": [
+            5
+          ],
+          "prediction_turns_after": [
+            6
+          ],
+          "hypothesis_count": 1,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V3 vision",
+            "backend_sha256": "6c668eaa24acf234d7188cb0606203e9af1ece9a3323b980adab75d50f5a30fd",
+            "input_mode": "image",
+            "visual_discrepancies": "0",
+            "metadata_discrepancies": "0",
+            "repairs": "0",
+            "recoveries": "0",
+            "actions": "6",
+            "hypotheses": "1",
+            "reason": "conditional_plan",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.005576755997026339,
+          "stages": {
+            "classify_initial": 0.001663461996940896,
+            "check_observation": 0.0018283300014445558,
+            "reconcile": 0.0012759870005538687,
+            "planner": 0.0002776889887172729,
+            "grid_step": 0.0014046330034034327,
+            "common_safe_prefix": 0.0007711590005783364
+          },
+          "first_exception": null
+        },
+        {
+          "turn": 6,
+          "action": "RIGHT",
+          "prediction_turns_before": [
+            6
+          ],
+          "prediction_turns_after": [
+            7
+          ],
+          "hypothesis_count": 1,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V3 vision",
+            "backend_sha256": "6c668eaa24acf234d7188cb0606203e9af1ece9a3323b980adab75d50f5a30fd",
+            "input_mode": "image",
+            "visual_discrepancies": "0",
+            "metadata_discrepancies": "0",
+            "repairs": "0",
+            "recoveries": "0",
+            "actions": "7",
+            "hypotheses": "1",
+            "reason": "conditional_plan",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.008473007997963578,
+          "stages": {
+            "classify_initial": 0.0012284160038689151,
+            "check_observation": 0.004796972003532574,
+            "reconcile": 0.0012579460017150268,
+            "planner": 0.0002702060010051355,
+            "grid_step": 0.001379581997753121,
+            "common_safe_prefix": 0.000751394996768795
+          },
+          "first_exception": null
+        },
+        {
+          "turn": 7,
+          "action": "RIGHT",
+          "prediction_turns_before": [
+            7
+          ],
+          "prediction_turns_after": [
+            8
+          ],
+          "hypothesis_count": 1,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V3 vision",
+            "backend_sha256": "6c668eaa24acf234d7188cb0606203e9af1ece9a3323b980adab75d50f5a30fd",
+            "input_mode": "image",
+            "visual_discrepancies": "0",
+            "metadata_discrepancies": "0",
+            "repairs": "0",
+            "recoveries": "0",
+            "actions": "8",
+            "hypotheses": "1",
+            "reason": "conditional_plan",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.008419756995863281,
+          "stages": {
+            "classify_initial": 0.0012260450021130964,
+            "check_observation": 0.004754303008667193,
+            "reconcile": 0.0012628169934032485,
+            "planner": 0.0002735039888648316,
+            "grid_step": 0.0013727399928029627,
+            "common_safe_prefix": 0.0007441050111083314
+          },
+          "first_exception": null
+        },
+        {
+          "turn": 8,
+          "action": "RIGHT",
+          "prediction_turns_before": [
+            8
+          ],
+          "prediction_turns_after": [
+            9
+          ],
+          "hypothesis_count": 1,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V3 vision",
+            "backend_sha256": "6c668eaa24acf234d7188cb0606203e9af1ece9a3323b980adab75d50f5a30fd",
+            "input_mode": "image",
+            "visual_discrepancies": "0",
+            "metadata_discrepancies": "0",
+            "repairs": "0",
+            "recoveries": "0",
+            "actions": "9",
+            "hypotheses": "1",
+            "reason": "conditional_plan",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.005074053988209926,
+          "stages": {
+            "classify_initial": 0.0012175939918961376,
+            "check_observation": 0.0013712939980905503,
+            "reconcile": 0.0012579379981616512,
+            "planner": 0.00027412899362389,
+            "grid_step": 0.0013830390089424327,
+            "common_safe_prefix": 0.0007572169997729361
+          },
+          "first_exception": null
+        },
+        {
+          "turn": 9,
+          "action": "RIGHT",
+          "prediction_turns_before": [
+            9
+          ],
+          "prediction_turns_after": [
+            10
+          ],
+          "hypothesis_count": 1,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V3 vision",
+            "backend_sha256": "6c668eaa24acf234d7188cb0606203e9af1ece9a3323b980adab75d50f5a30fd",
+            "input_mode": "image",
+            "visual_discrepancies": "0",
+            "metadata_discrepancies": "0",
+            "repairs": "0",
+            "recoveries": "0",
+            "actions": "10",
+            "hypotheses": "1",
+            "reason": "conditional_plan",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.005068533995654434,
+          "stages": {
+            "classify_initial": 0.0012198949989397079,
+            "check_observation": 0.0013759619905613363,
+            "reconcile": 0.0012640739878406748,
+            "planner": 0.0002804910036502406,
+            "grid_step": 0.0013633680064231157,
+            "common_safe_prefix": 0.0007334940019063652
+          },
+          "first_exception": null
+        },
+        {
+          "turn": 10,
+          "action": "DOWN",
+          "prediction_turns_before": [
+            10
+          ],
+          "prediction_turns_after": [
+            11
+          ],
+          "hypothesis_count": 1,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V3 vision",
+            "backend_sha256": "6c668eaa24acf234d7188cb0606203e9af1ece9a3323b980adab75d50f5a30fd",
+            "input_mode": "image",
+            "visual_discrepancies": "0",
+            "metadata_discrepancies": "0",
+            "repairs": "0",
+            "recoveries": "0",
+            "actions": "11",
+            "hypotheses": "1",
+            "reason": "conditional_plan",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.005092938998132013,
+          "stages": {
+            "classify_initial": 0.001246668995008804,
+            "check_observation": 0.0014019310037838295,
+            "reconcile": 0.0012621559872059152,
+            "planner": 0.0002744590019574389,
+            "grid_step": 0.0013747230113949627,
+            "common_safe_prefix": 0.0007450600096490234
+          },
+          "first_exception": null
+        },
+        {
+          "turn": 11,
+          "action": "DOWN",
+          "prediction_turns_before": [
+            11
+          ],
+          "prediction_turns_after": [
+            12
+          ],
+          "hypothesis_count": 1,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V3 vision",
+            "backend_sha256": "6c668eaa24acf234d7188cb0606203e9af1ece9a3323b980adab75d50f5a30fd",
+            "input_mode": "image",
+            "visual_discrepancies": "0",
+            "metadata_discrepancies": "0",
+            "repairs": "0",
+            "recoveries": "0",
+            "actions": "12",
+            "hypotheses": "1",
+            "reason": "conditional_plan",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.005051864995039068,
+          "stages": {
+            "classify_initial": 0.001225276995683089,
+            "check_observation": 0.0013844670029357076,
+            "reconcile": 0.0012465429899748415,
+            "planner": 0.00027772600878961384,
+            "grid_step": 0.0013662109995493665,
+            "common_safe_prefix": 0.0007421819900628179
+          },
+          "first_exception": null
+        },
+        {
+          "turn": 12,
+          "action": "DOWN",
+          "prediction_turns_before": [
+            12
+          ],
+          "prediction_turns_after": [
+            13
+          ],
+          "hypothesis_count": 1,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V3 vision",
+            "backend_sha256": "6c668eaa24acf234d7188cb0606203e9af1ece9a3323b980adab75d50f5a30fd",
+            "input_mode": "image",
+            "visual_discrepancies": "0",
+            "metadata_discrepancies": "0",
+            "repairs": "0",
+            "recoveries": "0",
+            "actions": "13",
+            "hypotheses": "1",
+            "reason": "conditional_plan",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.005086028992081992,
+          "stages": {
+            "classify_initial": 0.0012289729929761961,
+            "check_observation": 0.0013878939935239032,
+            "reconcile": 0.0012659839994739741,
+            "planner": 0.00027978900470770895,
+            "grid_step": 0.001375067004119046,
+            "common_safe_prefix": 0.000757151996367611
+          },
+          "first_exception": null
+        },
+        {
+          "turn": 13,
+          "action": "DOWN",
+          "prediction_turns_before": [
+            13
+          ],
+          "prediction_turns_after": [
+            14
+          ],
+          "hypothesis_count": 1,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V3 vision",
+            "backend_sha256": "6c668eaa24acf234d7188cb0606203e9af1ece9a3323b980adab75d50f5a30fd",
+            "input_mode": "image",
+            "visual_discrepancies": "0",
+            "metadata_discrepancies": "0",
+            "repairs": "0",
+            "recoveries": "0",
+            "actions": "14",
+            "hypotheses": "1",
+            "reason": "conditional_plan",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.005073596010333858,
+          "stages": {
+            "classify_initial": 0.0012252370070200413,
+            "check_observation": 0.0013848329981556162,
+            "reconcile": 0.0012719289952656254,
+            "planner": 0.0002752009895630181,
+            "grid_step": 0.001367756980471313,
+            "common_safe_prefix": 0.0007510379946324974
+          },
+          "first_exception": null
+        },
+        {
+          "turn": 14,
+          "action": "RIGHT",
+          "prediction_turns_before": [
+            14
+          ],
+          "prediction_turns_after": [
+            15
+          ],
+          "hypothesis_count": 1,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V3 vision",
+            "backend_sha256": "6c668eaa24acf234d7188cb0606203e9af1ece9a3323b980adab75d50f5a30fd",
+            "input_mode": "image",
+            "visual_discrepancies": "0",
+            "metadata_discrepancies": "0",
+            "repairs": "0",
+            "recoveries": "0",
+            "actions": "15",
+            "hypotheses": "1",
+            "reason": "conditional_plan",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.00508674600860104,
+          "stages": {
+            "classify_initial": 0.001220361009472981,
+            "check_observation": 0.0013839129969710484,
+            "reconcile": 0.00126291299238801,
+            "planner": 0.0002753879962256178,
+            "grid_step": 0.001381485999445431,
+            "common_safe_prefix": 0.0007617899973411113
+          },
+          "first_exception": null
+        },
+        {
+          "turn": 15,
+          "action": "RIGHT",
+          "prediction_turns_before": [
+            15
+          ],
+          "prediction_turns_after": [
+            16
+          ],
+          "hypothesis_count": 1,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V3 vision",
+            "backend_sha256": "6c668eaa24acf234d7188cb0606203e9af1ece9a3323b980adab75d50f5a30fd",
+            "input_mode": "image",
+            "visual_discrepancies": "0",
+            "metadata_discrepancies": "0",
+            "repairs": "0",
+            "recoveries": "0",
+            "actions": "16",
+            "hypotheses": "1",
+            "reason": "conditional_plan",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.005044853998697363,
+          "stages": {
+            "classify_initial": 0.0012209220003569499,
+            "check_observation": 0.0013820309977745637,
+            "reconcile": 0.0012699229991994798,
+            "planner": 0.00027609099925030023,
+            "grid_step": 0.001349814992863685,
+            "common_safe_prefix": 0.0007378430018434301
+          },
+          "first_exception": null
+        },
+        {
+          "turn": 16,
+          "action": "UP",
+          "prediction_turns_before": [
+            16
+          ],
+          "prediction_turns_after": [
+            17
+          ],
+          "hypothesis_count": 1,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V3 vision",
+            "backend_sha256": "6c668eaa24acf234d7188cb0606203e9af1ece9a3323b980adab75d50f5a30fd",
+            "input_mode": "image",
+            "visual_discrepancies": "0",
+            "metadata_discrepancies": "0",
+            "repairs": "0",
+            "recoveries": "0",
+            "actions": "17",
+            "hypotheses": "1",
+            "reason": "conditional_plan",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.0050465670065023005,
+          "stages": {
+            "classify_initial": 0.0012285319971852005,
+            "check_observation": 0.0013904440129408613,
+            "reconcile": 0.001246860992978327,
+            "planner": 0.00026977800007443875,
+            "grid_step": 0.0013600370002677664,
+            "common_safe_prefix": 0.0007406189979519695
+          },
+          "first_exception": null
+        },
+        {
+          "turn": 17,
+          "action": "UP",
+          "prediction_turns_before": [
+            17
+          ],
+          "prediction_turns_after": [
+            18
+          ],
+          "hypothesis_count": 1,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V3 vision",
+            "backend_sha256": "6c668eaa24acf234d7188cb0606203e9af1ece9a3323b980adab75d50f5a30fd",
+            "input_mode": "image",
+            "visual_discrepancies": "0",
+            "metadata_discrepancies": "0",
+            "repairs": "0",
+            "recoveries": "0",
+            "actions": "18",
+            "hypotheses": "1",
+            "reason": "conditional_plan",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.005058983995695598,
+          "stages": {
+            "classify_initial": 0.001224723004270345,
+            "check_observation": 0.001388637989293784,
+            "reconcile": 0.0012559030001284555,
+            "planner": 0.0002761060022749007,
+            "grid_step": 0.0013629349996335804,
+            "common_safe_prefix": 0.0007385680073639378
+          },
+          "first_exception": null
+        },
+        {
+          "turn": 18,
+          "action": "UP",
+          "prediction_turns_before": [
+            18
+          ],
+          "prediction_turns_after": [
+            19
+          ],
+          "hypothesis_count": 1,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V3 vision",
+            "backend_sha256": "6c668eaa24acf234d7188cb0606203e9af1ece9a3323b980adab75d50f5a30fd",
+            "input_mode": "image",
+            "visual_discrepancies": "0",
+            "metadata_discrepancies": "0",
+            "repairs": "0",
+            "recoveries": "0",
+            "actions": "19",
+            "hypotheses": "1",
+            "reason": "conditional_plan",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.005099094996694475,
+          "stages": {
+            "classify_initial": 0.0012225849932292476,
+            "check_observation": 0.0013859440077794716,
+            "reconcile": 0.0012658129999181256,
+            "planner": 0.00027880899142473936,
+            "grid_step": 0.0013829009985784069,
+            "common_safe_prefix": 0.0007495710015064105
+          },
+          "first_exception": null
+        },
+        {
+          "turn": 19,
+          "action": "UP",
+          "prediction_turns_before": [
+            19
+          ],
+          "prediction_turns_after": [
+            20
+          ],
+          "hypothesis_count": 1,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V3 vision",
+            "backend_sha256": "6c668eaa24acf234d7188cb0606203e9af1ece9a3323b980adab75d50f5a30fd",
+            "input_mode": "image",
+            "visual_discrepancies": "0",
+            "metadata_discrepancies": "0",
+            "repairs": "0",
+            "recoveries": "0",
+            "actions": "20",
+            "hypotheses": "1",
+            "reason": "conditional_plan",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.005103071001940407,
+          "stages": {
+            "classify_initial": 0.0012237460032338277,
+            "check_observation": 0.0013816259888699278,
+            "reconcile": 0.0012838550028391182,
+            "planner": 0.00027902198780793697,
+            "grid_step": 0.0013775119878118858,
+            "common_safe_prefix": 0.0007482720102416351
+          },
+          "first_exception": null
+        },
+        {
+          "turn": 20,
+          "action": "RIGHT",
+          "prediction_turns_before": [
+            20
+          ],
+          "prediction_turns_after": [
+            21
+          ],
+          "hypothesis_count": 1,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V3 vision",
+            "backend_sha256": "6c668eaa24acf234d7188cb0606203e9af1ece9a3323b980adab75d50f5a30fd",
+            "input_mode": "image",
+            "visual_discrepancies": "0",
+            "metadata_discrepancies": "0",
+            "repairs": "0",
+            "recoveries": "0",
+            "actions": "21",
+            "hypotheses": "1",
+            "reason": "conditional_plan",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.00507631000073161,
+          "stages": {
+            "classify_initial": 0.0012258490023668855,
+            "check_observation": 0.0013832940021529794,
+            "reconcile": 0.0012653120065806434,
+            "planner": 0.0002813300088746473,
+            "grid_step": 0.0013732760126003996,
+            "common_safe_prefix": 0.0007424630020977929
+          },
+          "first_exception": null
+        },
+        {
+          "turn": 21,
+          "action": "RIGHT",
+          "prediction_turns_before": [
+            21
+          ],
+          "prediction_turns_after": [
+            22
+          ],
+          "hypothesis_count": 1,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V3 vision",
+            "backend_sha256": "6c668eaa24acf234d7188cb0606203e9af1ece9a3323b980adab75d50f5a30fd",
+            "input_mode": "image",
+            "visual_discrepancies": "0",
+            "metadata_discrepancies": "0",
+            "repairs": "0",
+            "recoveries": "0",
+            "actions": "22",
+            "hypotheses": "1",
+            "reason": "conditional_plan",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.005041498006903566,
+          "stages": {
+            "classify_initial": 0.0012329059973126277,
+            "check_observation": 0.0013861460029147565,
+            "reconcile": 0.0012499549920903519,
+            "planner": 0.000275101003353484,
+            "grid_step": 0.0013647320010932162,
+            "common_safe_prefix": 0.0007382080075331032
+          },
+          "first_exception": null
+        },
+        {
+          "turn": 22,
+          "action": "DOWN",
+          "prediction_turns_before": [
+            22
+          ],
+          "prediction_turns_after": [
+            23
+          ],
+          "hypothesis_count": 1,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V3 vision",
+            "backend_sha256": "6c668eaa24acf234d7188cb0606203e9af1ece9a3323b980adab75d50f5a30fd",
+            "input_mode": "image",
+            "visual_discrepancies": "0",
+            "metadata_discrepancies": "0",
+            "repairs": "0",
+            "recoveries": "0",
+            "actions": "23",
+            "hypotheses": "1",
+            "reason": "conditional_plan",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.005071998995845206,
+          "stages": {
+            "classify_initial": 0.001223753992235288,
+            "check_observation": 0.0013751759979641065,
+            "reconcile": 0.0012742899998556823,
+            "planner": 0.0002749879931798205,
+            "grid_step": 0.0013726469915127382,
+            "common_safe_prefix": 0.0007495839963667095
+          },
+          "first_exception": null
+        },
+        {
+          "turn": 23,
+          "action": "DOWN",
+          "prediction_turns_before": [
+            23
+          ],
+          "prediction_turns_after": [
+            24
+          ],
+          "hypothesis_count": 1,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V3 vision",
+            "backend_sha256": "6c668eaa24acf234d7188cb0606203e9af1ece9a3323b980adab75d50f5a30fd",
+            "input_mode": "image",
+            "visual_discrepancies": "0",
+            "metadata_discrepancies": "0",
+            "repairs": "0",
+            "recoveries": "0",
+            "actions": "24",
+            "hypotheses": "1",
+            "reason": "conditional_plan",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.005094443011330441,
+          "stages": {
+            "classify_initial": 0.0012454379902919754,
+            "check_observation": 0.0014013740001246333,
+            "reconcile": 0.0012660219945246354,
+            "planner": 0.00028461500187404454,
+            "grid_step": 0.001366454001981765,
+            "common_safe_prefix": 0.000740096002118662
+          },
+          "first_exception": null
+        },
+        {
+          "turn": 24,
+          "action": "DOWN",
+          "prediction_turns_before": [
+            24
+          ],
+          "prediction_turns_after": [
+            25
+          ],
+          "hypothesis_count": 1,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V3 vision",
+            "backend_sha256": "6c668eaa24acf234d7188cb0606203e9af1ece9a3323b980adab75d50f5a30fd",
+            "input_mode": "image",
+            "visual_discrepancies": "0",
+            "metadata_discrepancies": "0",
+            "repairs": "0",
+            "recoveries": "0",
+            "actions": "25",
+            "hypotheses": "1",
+            "reason": "conditional_plan",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.005081604002043605,
+          "stages": {
+            "classify_initial": 0.0012176769960206002,
+            "check_observation": 0.001374842002405785,
+            "reconcile": 0.0012817309907404706,
+            "planner": 0.00027076499827671796,
+            "grid_step": 0.0013774840044789016,
+            "common_safe_prefix": 0.0007495989993913099
+          },
+          "first_exception": null
+        },
+        {
+          "turn": 25,
+          "action": "DOWN",
+          "prediction_turns_before": [
+            25
+          ],
+          "prediction_turns_after": [
+            26
+          ],
+          "hypothesis_count": 1,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V3 vision",
+            "backend_sha256": "6c668eaa24acf234d7188cb0606203e9af1ece9a3323b980adab75d50f5a30fd",
+            "input_mode": "image",
+            "visual_discrepancies": "0",
+            "metadata_discrepancies": "0",
+            "repairs": "0",
+            "recoveries": "0",
+            "actions": "26",
+            "hypotheses": "1",
+            "reason": "conditional_plan",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.005068147991551086,
+          "stages": {
+            "classify_initial": 0.0012239839998073876,
+            "check_observation": 0.0013808740040985867,
+            "reconcile": 0.0012751690082950518,
+            "planner": 0.00027730500733014196,
+            "grid_step": 0.001366526004858315,
+            "common_safe_prefix": 0.0007441950001521036
+          },
+          "first_exception": null
+        },
+        {
+          "turn": 26,
+          "action": "RIGHT",
+          "prediction_turns_before": [
+            26
+          ],
+          "prediction_turns_after": [
+            27
+          ],
+          "hypothesis_count": 1,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V3 vision",
+            "backend_sha256": "6c668eaa24acf234d7188cb0606203e9af1ece9a3323b980adab75d50f5a30fd",
+            "input_mode": "image",
+            "visual_discrepancies": "0",
+            "metadata_discrepancies": "0",
+            "repairs": "0",
+            "recoveries": "0",
+            "actions": "27",
+            "hypotheses": "1",
+            "reason": "conditional_plan",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.005053846994997002,
+          "stages": {
+            "classify_initial": 0.0012230249994900078,
+            "check_observation": 0.00138601400249172,
+            "reconcile": 0.0012733500043395907,
+            "planner": 0.0002704219950828701,
+            "grid_step": 0.0013621520047308877,
+            "common_safe_prefix": 0.0007401469920296222
+          },
+          "first_exception": null
+        },
+        {
+          "turn": 27,
+          "action": "RIGHT",
+          "prediction_turns_before": [
+            27
+          ],
+          "prediction_turns_after": [
+            28
+          ],
+          "hypothesis_count": 1,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V3 vision",
+            "backend_sha256": "6c668eaa24acf234d7188cb0606203e9af1ece9a3323b980adab75d50f5a30fd",
+            "input_mode": "image",
+            "visual_discrepancies": "0",
+            "metadata_discrepancies": "0",
+            "repairs": "0",
+            "recoveries": "0",
+            "actions": "28",
+            "hypotheses": "1",
+            "reason": "conditional_plan",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.005082352989120409,
+          "stages": {
+            "classify_initial": 0.0012301449896767735,
+            "check_observation": 0.001392459002090618,
+            "reconcile": 0.0012654690071940422,
+            "planner": 0.0002746399986790493,
+            "grid_step": 0.0013691790081793442,
+            "common_safe_prefix": 0.000744799996027723
+          },
+          "first_exception": null
+        },
+        {
+          "turn": 28,
+          "action": "RIGHT",
+          "prediction_turns_before": [
+            28
+          ],
+          "prediction_turns_after": [
+            29
+          ],
+          "hypothesis_count": 1,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V3 vision",
+            "backend_sha256": "6c668eaa24acf234d7188cb0606203e9af1ece9a3323b980adab75d50f5a30fd",
+            "input_mode": "image",
+            "visual_discrepancies": "0",
+            "metadata_discrepancies": "0",
+            "repairs": "0",
+            "recoveries": "0",
+            "actions": "29",
+            "hypotheses": "1",
+            "reason": "conditional_plan",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.005081000010250136,
+          "stages": {
+            "classify_initial": 0.0012243719975231215,
+            "check_observation": 0.0013857729936717078,
+            "reconcile": 0.0012803490099031478,
+            "planner": 0.00027125499036628753,
+            "grid_step": 0.0013731320068472996,
+            "common_safe_prefix": 0.000741793992347084
+          },
+          "first_exception": null
+        },
+        {
+          "turn": 29,
+          "action": "RIGHT",
+          "prediction_turns_before": [
+            29
+          ],
+          "prediction_turns_after": [
+            30
+          ],
+          "hypothesis_count": 1,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V3 vision",
+            "backend_sha256": "6c668eaa24acf234d7188cb0606203e9af1ece9a3323b980adab75d50f5a30fd",
+            "input_mode": "image",
+            "visual_discrepancies": "0",
+            "metadata_discrepancies": "0",
+            "repairs": "0",
+            "recoveries": "0",
+            "actions": "30",
+            "hypotheses": "1",
+            "reason": "conditional_plan",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.005031010994571261,
+          "stages": {
+            "classify_initial": 0.0012290580052649602,
+            "check_observation": 0.001393309998093173,
+            "reconcile": 0.001252139001735486,
+            "planner": 0.0002693089918466285,
+            "grid_step": 0.0013507910043699667,
+            "common_safe_prefix": 0.0007322329911403358
+          },
+          "first_exception": null
+        },
+        {
+          "turn": 30,
+          "action": "UP",
+          "prediction_turns_before": [
+            30
+          ],
+          "prediction_turns_after": [
+            31
+          ],
+          "hypothesis_count": 1,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V3 vision",
+            "backend_sha256": "6c668eaa24acf234d7188cb0606203e9af1ece9a3323b980adab75d50f5a30fd",
+            "input_mode": "image",
+            "visual_discrepancies": "0",
+            "metadata_discrepancies": "0",
+            "repairs": "0",
+            "recoveries": "0",
+            "actions": "31",
+            "hypotheses": "1",
+            "reason": "conditional_plan",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.0050463420047890395,
+          "stages": {
+            "classify_initial": 0.0012228339910507202,
+            "check_observation": 0.001386903997627087,
+            "reconcile": 0.0012695399927906692,
+            "planner": 0.0002722470089793205,
+            "grid_step": 0.001349198995740153,
+            "common_safe_prefix": 0.0007387969963019714
+          },
+          "first_exception": null
+        },
+        {
+          "turn": 31,
+          "action": "UP",
+          "prediction_turns_before": [
+            31
+          ],
+          "prediction_turns_after": [
+            32
+          ],
+          "hypothesis_count": 1,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V3 vision",
+            "backend_sha256": "6c668eaa24acf234d7188cb0606203e9af1ece9a3323b980adab75d50f5a30fd",
+            "input_mode": "image",
+            "visual_discrepancies": "0",
+            "metadata_discrepancies": "0",
+            "repairs": "0",
+            "recoveries": "0",
+            "actions": "32",
+            "hypotheses": "1",
+            "reason": "conditional_plan",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.0050594240019563586,
+          "stages": {
+            "classify_initial": 0.0012283790129004046,
+            "check_observation": 0.0013893680006731302,
+            "reconcile": 0.0012556529982248321,
+            "planner": 0.0002737280010478571,
+            "grid_step": 0.0013650079927174374,
+            "common_safe_prefix": 0.0007506010006181896
+          },
+          "first_exception": null
+        },
+        {
+          "turn": 32,
+          "action": "LEFT",
+          "prediction_turns_before": [
+            32
+          ],
+          "prediction_turns_after": [
+            33
+          ],
+          "hypothesis_count": 1,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V3 vision",
+            "backend_sha256": "6c668eaa24acf234d7188cb0606203e9af1ece9a3323b980adab75d50f5a30fd",
+            "input_mode": "image",
+            "visual_discrepancies": "0",
+            "metadata_discrepancies": "0",
+            "repairs": "0",
+            "recoveries": "0",
+            "actions": "33",
+            "hypotheses": "1",
+            "reason": "conditional_plan",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.005111448001116514,
+          "stages": {
+            "classify_initial": 0.001222353006596677,
+            "check_observation": 0.0013860619947081432,
+            "reconcile": 0.0012645290116779506,
+            "planner": 0.0002754829911282286,
+            "grid_step": 0.0013918759941589087,
+            "common_safe_prefix": 0.000740859002689831
+          },
+          "first_exception": null
+        },
+        {
+          "turn": 33,
+          "action": "LEFT",
+          "prediction_turns_before": [
+            33
+          ],
+          "prediction_turns_after": [
+            34
+          ],
+          "hypothesis_count": 1,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V3 vision",
+            "backend_sha256": "6c668eaa24acf234d7188cb0606203e9af1ece9a3323b980adab75d50f5a30fd",
+            "input_mode": "image",
+            "visual_discrepancies": "0",
+            "metadata_discrepancies": "0",
+            "repairs": "0",
+            "recoveries": "0",
+            "actions": "34",
+            "hypotheses": "1",
+            "reason": "conditional_plan",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.005061892996309325,
+          "stages": {
+            "classify_initial": 0.0012200750061310828,
+            "check_observation": 0.0013781010056845844,
+            "reconcile": 0.0012635060120373964,
+            "planner": 0.0002704759972402826,
+            "grid_step": 0.0013805489870719612,
+            "common_safe_prefix": 0.0007565060077467933
+          },
+          "first_exception": null
+        },
+        {
+          "turn": 34,
+          "action": "PICK_UP",
+          "prediction_turns_before": [
+            34
+          ],
+          "prediction_turns_after": [
+            35
+          ],
+          "hypothesis_count": 1,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V3 vision",
+            "backend_sha256": "6c668eaa24acf234d7188cb0606203e9af1ece9a3323b980adab75d50f5a30fd",
+            "input_mode": "image",
+            "visual_discrepancies": "0",
+            "metadata_discrepancies": "0",
+            "repairs": "0",
+            "recoveries": "0",
+            "actions": "35",
+            "hypotheses": "1",
+            "reason": "conditional_plan",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.0050808319938369095,
+          "stages": {
+            "classify_initial": 0.001228213994181715,
+            "check_observation": 0.0013898299948778003,
+            "reconcile": 0.0012658659979933873,
+            "planner": 0.0002785840042633936,
+            "grid_step": 0.0013674220099346712,
+            "common_safe_prefix": 0.0007466289971489459
+          },
+          "first_exception": null
+        },
+        {
+          "turn": 35,
+          "action": "UP",
+          "prediction_turns_before": [
+            35
+          ],
+          "prediction_turns_after": [
+            36
+          ],
+          "hypothesis_count": 1,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V3 vision",
+            "backend_sha256": "6c668eaa24acf234d7188cb0606203e9af1ece9a3323b980adab75d50f5a30fd",
+            "input_mode": "image",
+            "visual_discrepancies": "0",
+            "metadata_discrepancies": "0",
+            "repairs": "0",
+            "recoveries": "0",
+            "actions": "36",
+            "hypotheses": "1",
+            "reason": "conditional_plan",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.010552188992733136,
+          "stages": {
+            "classify_initial": 0.0012156740122009069,
+            "check_observation": 0.0013648379972437397,
+            "reconcile": 0.0013135339977452531,
+            "grid_step": 0.005509265974978916,
+            "planner": 0.005755267004133202,
+            "common_safe_prefix": 0.0007112480088835582
+          },
+          "first_exception": null
+        },
+        {
+          "turn": 36,
+          "action": "UP",
+          "prediction_turns_before": [
+            36
+          ],
+          "prediction_turns_after": [
+            37
+          ],
+          "hypothesis_count": 1,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V3 vision",
+            "backend_sha256": "6c668eaa24acf234d7188cb0606203e9af1ece9a3323b980adab75d50f5a30fd",
+            "input_mode": "image",
+            "visual_discrepancies": "0",
+            "metadata_discrepancies": "0",
+            "repairs": "0",
+            "recoveries": "0",
+            "actions": "37",
+            "hypotheses": "1",
+            "reason": "conditional_plan",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.005138699998497032,
+          "stages": {
+            "classify_initial": 0.0012257939961273223,
+            "check_observation": 0.0013885000080335885,
+            "reconcile": 0.0012868649937445298,
+            "planner": 0.0002808459976222366,
+            "grid_step": 0.001401465997332707,
+            "common_safe_prefix": 0.0007747269992250949
+          },
+          "first_exception": null
+        },
+        {
+          "turn": 37,
+          "action": "PICK_UP",
+          "prediction_turns_before": [
+            37
+          ],
+          "prediction_turns_after": [
+            38
+          ],
+          "hypothesis_count": 1,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V3 vision",
+            "backend_sha256": "6c668eaa24acf234d7188cb0606203e9af1ece9a3323b980adab75d50f5a30fd",
+            "input_mode": "image",
+            "visual_discrepancies": "0",
+            "metadata_discrepancies": "0",
+            "repairs": "0",
+            "recoveries": "0",
+            "actions": "38",
+            "hypotheses": "1",
+            "reason": "conditional_plan",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "state_cap",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.005112180995638482,
+          "stages": {
+            "classify_initial": 0.0012258750066393986,
+            "check_observation": 0.0013872830022592098,
+            "reconcile": 0.001288037994527258,
+            "planner": 0.00027213399880565703,
+            "grid_step": 0.0013858489983249456,
+            "common_safe_prefix": 0.0007630500040249899
+          },
+          "first_exception": null
+        },
+        {
+          "turn": 38,
+          "action": "RIGHT",
+          "prediction_turns_before": [
+            38
+          ],
+          "prediction_turns_after": [
+            39
+          ],
+          "hypothesis_count": 1,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V3 vision",
+            "backend_sha256": "6c668eaa24acf234d7188cb0606203e9af1ece9a3323b980adab75d50f5a30fd",
+            "input_mode": "image",
+            "visual_discrepancies": "0",
+            "metadata_discrepancies": "2",
+            "repairs": "1",
+            "recoveries": "0",
+            "actions": "39",
+            "hypotheses": "1",
+            "reason": "conditional_plan",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "exhausted",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.3065751749963965,
+          "stages": {
+            "classify_initial": 0.00122112401004415,
+            "check_observation": 0.0013768820062978193,
+            "reconcile": 0.0013424089993350208,
+            "grid_step": 0.0047591889888281,
+            "planner": 0.30161654500989243,
+            "common_safe_prefix": 0.0007870590052334592
+          },
+          "first_exception": null
+        },
+        {
+          "turn": 39,
+          "action": "PICK_UP",
+          "prediction_turns_before": [
+            39
+          ],
+          "prediction_turns_after": [
+            40
+          ],
+          "hypothesis_count": 1,
+          "current_board_matches_truth": false,
+          "agent_info": {
+            "name": "V3 vision",
+            "backend_sha256": "6c668eaa24acf234d7188cb0606203e9af1ece9a3323b980adab75d50f5a30fd",
+            "input_mode": "image",
+            "visual_discrepancies": "0",
+            "metadata_discrepancies": "2",
+            "repairs": "1",
+            "recoveries": "1",
+            "actions": "40",
+            "hypotheses": "1",
+            "reason": "conditional_plan",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "exhausted",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.0052359489927766845,
+          "stages": {
+            "classify_initial": 0.001301349009736441,
+            "check_observation": 0.0014868450089124963,
+            "reconcile": 0.0013538080092985183,
+            "planner": 0.00027258400223217905,
+            "grid_step": 0.0013431950064841658,
+            "common_safe_prefix": 0.0007271710055647418
+          },
+          "first_exception": null
+        },
+        {
+          "turn": 40,
+          "action": "RIGHT",
+          "prediction_turns_before": [
+            40
+          ],
+          "prediction_turns_after": [
+            41
+          ],
+          "hypothesis_count": 1,
+          "current_board_matches_truth": true,
+          "agent_info": {
+            "name": "V3 vision",
+            "backend_sha256": "6c668eaa24acf234d7188cb0606203e9af1ece9a3323b980adab75d50f5a30fd",
+            "input_mode": "image",
+            "visual_discrepancies": "0",
+            "metadata_discrepancies": "4",
+            "repairs": "2",
+            "recoveries": "1",
+            "actions": "41",
+            "hypotheses": "1",
+            "reason": "conditional_plan",
+            "conditional_on_perception": "True",
+            "planner_stop_reason": "exhausted",
+            "planner_backend": "fast"
+          },
+          "elapsed": 0.15304761100560427,
+          "stages": {
+            "classify_initial": 0.0012672669981839135,
+            "check_observation": 0.0014272970001911744,
+            "reconcile": 0.0013443369971355423,
+            "grid_step": 0.002055459000985138,
+            "planner": 0.14811072300653905,
+            "common_safe_prefix": 0.0007454239967046306
+          },
+          "first_exception": null
+        }
+      ],
+      "label": "combined/df81f42a4f64/6218323880",
+      "seed": 208803287155,
+      "setup_seconds": 0.09474945800320711,
+      "cold_import_to_terminal_seconds": 1.7165621989988722,
+      "peak_rss_bytes": 283742208,
+      "provenance": {
+        "host": "omarchy",
+        "platform": "Linux-7.2.15-1-omarchy-x86_64-with-glibc2.44",
+        "cpu": "Intel(R) Core(TM) Ultra 9 275HX",
+        "python": "3.13.18 (main, Oct 26 2026, 14:08:20) [Clang 23.1.3 ]",
+        "packages": {
+          "grid-adventure": {
+            "version": "0.1.0",
+            "direct_url": {
+              "url": "https://github.com/grid-universe/grid-adventure-v1.git",
+              "vcs_info": {
+                "vcs": "git",
+                "commit_id": "2eb235e9ceffe241a12d63afc613b9bdbdf914be"
+              }
+            }
+          },
+          "grid-universe": {
+            "version": "0.1.0",
+            "direct_url": {
+              "url": "https://github.com/grid-universe/grid-universe.git",
+              "vcs_info": {
+                "vcs": "git",
+                "commit_id": "28615fa1b570b7ccdd5f56d86ca200baffa06d2c"
+              }
+            }
+          },
+          "numpy": {
+            "version": "2.3.0",
+            "direct_url": null
+          },
+          "pillow": {
+            "version": "11.2.1",
+            "direct_url": null
+          },
+          "torch": {
+            "version": "2.7.0+cpu",
+            "direct_url": null
+          }
+        },
+        "cpu_affinity": [
+          0
+        ],
+        "thread_limits": {
+          "OMP_NUM_THREADS": "1",
+          "OPENBLAS_NUM_THREADS": "1",
+          "MKL_NUM_THREADS": "1",
+          "NUMEXPR_NUM_THREADS": "1",
+          "VECLIB_MAXIMUM_THREADS": "1"
+        }
+      },
+      "runtime_overrides": {},
+      "entrypoint": "Agent",
+      "power_state_before": {
+        "cpu": 0,
+        "epp": "performance",
+        "governor": "powersave",
+        "max_freq": "5300000"
+      },
+      "power_state_after": {
+        "cpu": 0,
+        "epp": "performance",
+        "governor": "powersave",
+        "max_freq": "5300000"
+      },
+      "source_sha256": "8afdb5b286b9c27dc7d0fe588dee3c7e8024c15e49eedc8671429ba0bd19f13f",
+      "torch_threads": [
+        1,
+        1
+      ],
+      "strict_cold_seconds": 1.737998778000474,
+      "cold_watchdog_seconds": 30,
+      "job": {
+        "label": "combined/df81f42a4f64/6218323880",
+        "generated": 40029,
+        "multiple_gems": true,
+        "layout_split": "final",
+        "seed": 208803287155,
+        "asset_root": "artifacts/v3/data/final-300-v5/asset-root",
+        "appearance_manifest": "artifacts/v3/data/manifest-v5.json",
+        "appearance_manifest_sha256": "a17b735ba0e8183e8d51162c3e3b4219300d18dc080503bf93661fe1bb018e07",
+        "appearance_split": "final",
+        "appearance_seed": 6218323880,
+        "resolution": 512,
+        "expected_image_sha256": "ef2dae178dfc346adefa4d35fd864d99f3686e01b82c4ba8bd94da09be69ad6e",
+        "expected_pixels_sha256": "62a1e1987843e83fc4187edf4109683eb9ea6b9f1d880da938b1677973e0ea6c",
+        "expected_layout_sha256": "df81f42a4f64c1dc4fb9b28237222ab6db5115622f0759c04f194ff8939b6800"
+      }
+    }
+  ]
+}

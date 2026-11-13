@@ -1,0 +1,65 @@
+{
+  "passed": true,
+  "source_sha256": "a8efb9c0ce3a151d3170785a5ceb69ec76851c5b7a7eb27983d6b70f9b6554f1",
+  "checks": {
+    "boss": [],
+    "public": [],
+    "generated": [],
+    "stress": [],
+    "holdout": [],
+    "boss-paired-rewards": [],
+    "public-paired-rewards": [],
+    "generated-paired-rewards": [],
+    "stress-coverage": [],
+    "holdout-coverage": [],
+    "freeze-before-acceptance": [],
+    "frozen-fixture": [],
+    "stress-preserved-winners": [],
+    "differential": [],
+    "exact-source": [],
+    "protected-P1-P2": []
+  },
+  "distributions": {
+    "boss": {
+      "cases": 6,
+      "wins": 6,
+      "median_seconds": 0.6462375420014723,
+      "maximum_seconds": 0.9872834169946145,
+      "p95_seconds": 0.9872834169946145,
+      "peak_rss_bytes": 253571072
+    },
+    "public": {
+      "cases": 66,
+      "wins": 66,
+      "median_seconds": 0.37258005450712517,
+      "maximum_seconds": 3.2957591070007766,
+      "p95_seconds": 0.569839982999838,
+      "peak_rss_bytes": 302600192
+    },
+    "generated": {
+      "cases": 200,
+      "wins": 200,
+      "median_seconds": 0.39950619750015903,
+      "maximum_seconds": 3.1605301030067494,
+      "p95_seconds": 3.1065105949965073,
+      "peak_rss_bytes": 306159616
+    },
+    "stress": {
+      "cases": 36,
+      "wins": 36,
+      "median_seconds": 0.6109743409979274,
+      "maximum_seconds": 3.0310412910039304,
+      "p95_seconds": 3.023597549996339,
+      "peak_rss_bytes": 256704512
+    },
+    "holdout": {
+      "cases": 18,
+      "wins": 18,
+      "median_seconds": 1.1148098850026145,
+      "maximum_seconds": 3.2755672600032995,
+      "p95_seconds": 3.2755672600032995,
+      "peak_rss_bytes": 257085440
+    }
+  },
+  "evidence_scope": "Structured public API only; raw generated rewards; old stress/public/generated reused; frozen disjoint holdout opened after candidate freeze; no perception or platform submission."
+}

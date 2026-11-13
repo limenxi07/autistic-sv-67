@@ -1,0 +1,848 @@
+{
+  "passed": true,
+  "seed": 20261108,
+  "comparisons": 128912,
+  "layouts": 1000,
+  "coverage": {
+    "movement": 73664,
+    "pickup": 18416,
+    "key-door": 34685,
+    "box": 10423,
+    "overlap": 17850,
+    "damage": 49168,
+    "shield": 39382,
+    "stacked": 14833,
+    "boots": 8001,
+    "phasing": 4326,
+    "wait": 18416,
+    "terminal": 3409,
+    "final-turn": 14
+  },
+  "source_hashes": {
+    "agents/p2.py": "551ee00377ffe42a343d18c887b1c7f36ef4baf4fa0fff6a22b0053c9845edd0",
+    "/Users/enxi/coding/autistic-sv-67/tools/differential_p2.py": "8cd8f6768ee34e56ea500a3a994141de82f021f2be05a3bc1649e47a83d4f188",
+    "tests/p2_fixtures.py": "fa5de251111e4c1383cbcf6969a82757edbdd8536dd77fab175d2b7f162e57a3"
+  },
+  "public_trace_cases": 22,
+  "unsupported_reference_prefixes": [
+    {
+      "layout": "interaction-1",
+      "reason": "Simultaneous pickups or overlapping locks"
+    },
+    {
+      "layout": "interaction-2",
+      "reason": "Simultaneous pickups or overlapping locks"
+    },
+    {
+      "layout": "interaction-3",
+      "reason": "Simultaneous pickups or overlapping locks"
+    },
+    {
+      "layout": "development-8",
+      "reason": "Simultaneous pickups or overlapping locks"
+    },
+    {
+      "layout": "development-9",
+      "reason": "Simultaneous pickups or overlapping locks"
+    },
+    {
+      "layout": "development-18",
+      "reason": "Simultaneous pickups or overlapping locks"
+    },
+    {
+      "layout": "development-19",
+      "reason": "Simultaneous pickups or overlapping locks"
+    },
+    {
+      "layout": "development-28",
+      "reason": "Simultaneous pickups or overlapping locks"
+    },
+    {
+      "layout": "development-29",
+      "reason": "Simultaneous pickups or overlapping locks"
+    },
+    {
+      "layout": "development-38",
+      "reason": "Simultaneous pickups or overlapping locks"
+    },
+    {
+      "layout": "development-39",
+      "reason": "Simultaneous pickups or overlapping locks"
+    },
+    {
+      "layout": "development-48",
+      "reason": "Simultaneous pickups or overlapping locks"
+    },
+    {
+      "layout": "development-49",
+      "reason": "Simultaneous pickups or overlapping locks"
+    },
+    {
+      "layout": "development-58",
+      "reason": "Simultaneous pickups or overlapping locks"
+    },
+    {
+      "layout": "development-59",
+      "reason": "Simultaneous pickups or overlapping locks"
+    },
+    {
+      "layout": "development-68",
+      "reason": "Simultaneous pickups or overlapping locks"
+    },
+    {
+      "layout": "development-69",
+      "reason": "Simultaneous pickups or overlapping locks"
+    },
+    {
+      "layout": "development-78",
+      "reason": "Simultaneous pickups or overlapping locks"
+    },
+    {
+      "layout": "development-79",
+      "reason": "Simultaneous pickups or overlapping locks"
+    },
+    {
+      "layout": "development-88",
+      "reason": "Simultaneous pickups or overlapping locks"
+    },
+    {
+      "layout": "development-89",
+      "reason": "Simultaneous pickups or overlapping locks"
+    },
+    {
+      "layout": "development-98",
+      "reason": "Simultaneous pickups or overlapping locks"
+    },
+    {
+      "layout": "development-99",
+      "reason": "Simultaneous pickups or overlapping locks"
+    },
+    {
+      "layout": "development-108",
+      "reason": "Simultaneous pickups or overlapping locks"
+    },
+    {
+      "layout": "development-109",
+      "reason": "Simultaneous pickups or overlapping locks"
+    },
+    {
+      "layout": "development-118",
+      "reason": "Simultaneous pickups or overlapping locks"
+    },
+    {
+      "layout": "development-119",
+      "reason": "Simultaneous pickups or overlapping locks"
+    },
+    {
+      "layout": "development-128",
+      "reason": "Simultaneous pickups or overlapping locks"
+    },
+    {
+      "layout": "development-129",
+      "reason": "Simultaneous pickups or overlapping locks"
+    },
+    {
+      "layout": "development-138",
+      "reason": "Simultaneous pickups or overlapping locks"
+    },
+    {
+      "layout": "development-139",
+      "reason": "Simultaneous pickups or overlapping locks"
+    },
+    {
+      "layout": "development-148",
+      "reason": "Simultaneous pickups or overlapping locks"
+    },
+    {
+      "layout": "development-149",
+      "reason": "Simultaneous pickups or overlapping locks"
+    },
+    {
+      "layout": "development-158",
+      "reason": "Simultaneous pickups or overlapping locks"
+    },
+    {
+      "layout": "development-159",
+      "reason": "Simultaneous pickups or overlapping locks"
+    },
+    {
+      "layout": "development-168",
+      "reason": "Simultaneous pickups or overlapping locks"
+    },
+    {
+      "layout": "development-169",
+      "reason": "Simultaneous pickups or overlapping locks"
+    },
+    {
+      "layout": "development-178",
+      "reason": "Simultaneous pickups or overlapping locks"
+    },
+    {
+      "layout": "development-179",
+      "reason": "Simultaneous pickups or overlapping locks"
+    },
+    {
+      "layout": "development-188",
+      "reason": "Simultaneous pickups or overlapping locks"
+    },
+    {
+      "layout": "development-189",
+      "reason": "Simultaneous pickups or overlapping locks"
+    },
+    {
+      "layout": "development-198",
+      "reason": "Simultaneous pickups or overlapping locks"
+    },
+    {
+      "layout": "development-199",
+      "reason": "Simultaneous pickups or overlapping locks"
+    },
+    {
+      "layout": "development-208",
+      "reason": "Simultaneous pickups or overlapping locks"
+    },
+    {
+      "layout": "development-209",
+      "reason": "Simultaneous pickups or overlapping locks"
+    },
+    {
+      "layout": "development-218",
+      "reason": "Simultaneous pickups or overlapping locks"
+    },
+    {
+      "layout": "development-219",
+      "reason": "Simultaneous pickups or overlapping locks"
+    },
+    {
+      "layout": "development-228",
+      "reason": "Simultaneous pickups or overlapping locks"
+    },
+    {
+      "layout": "development-229",
+      "reason": "Simultaneous pickups or overlapping locks"
+    },
+    {
+      "layout": "development-238",
+      "reason": "Simultaneous pickups or overlapping locks"
+    },
+    {
+      "layout": "development-239",
+      "reason": "Simultaneous pickups or overlapping locks"
+    },
+    {
+      "layout": "development-248",
+      "reason": "Simultaneous pickups or overlapping locks"
+    },
+    {
+      "layout": "development-249",
+      "reason": "Simultaneous pickups or overlapping locks"
+    },
+    {
+      "layout": "development-258",
+      "reason": "Simultaneous pickups or overlapping locks"
+    },
+    {
+      "layout": "development-259",
+      "reason": "Simultaneous pickups or overlapping locks"
+    },
+    {
+      "layout": "development-268",
+      "reason": "Simultaneous pickups or overlapping locks"
+    },
+    {
+      "layout": "development-269",
+      "reason": "Simultaneous pickups or overlapping locks"
+    },
+    {
+      "layout": "development-278",
+      "reason": "Simultaneous pickups or overlapping locks"
+    },
+    {
+      "layout": "development-279",
+      "reason": "Simultaneous pickups or overlapping locks"
+    },
+    {
+      "layout": "development-288",
+      "reason": "Simultaneous pickups or overlapping locks"
+    },
+    {
+      "layout": "development-289",
+      "reason": "Simultaneous pickups or overlapping locks"
+    },
+    {
+      "layout": "development-298",
+      "reason": "Simultaneous pickups or overlapping locks"
+    },
+    {
+      "layout": "development-299",
+      "reason": "Simultaneous pickups or overlapping locks"
+    },
+    {
+      "layout": "development-308",
+      "reason": "Simultaneous pickups or overlapping locks"
+    },
+    {
+      "layout": "development-309",
+      "reason": "Simultaneous pickups or overlapping locks"
+    },
+    {
+      "layout": "development-318",
+      "reason": "Simultaneous pickups or overlapping locks"
+    },
+    {
+      "layout": "development-319",
+      "reason": "Simultaneous pickups or overlapping locks"
+    },
+    {
+      "layout": "development-328",
+      "reason": "Simultaneous pickups or overlapping locks"
+    },
+    {
+      "layout": "development-329",
+      "reason": "Simultaneous pickups or overlapping locks"
+    },
+    {
+      "layout": "development-338",
+      "reason": "Simultaneous pickups or overlapping locks"
+    },
+    {
+      "layout": "development-339",
+      "reason": "Simultaneous pickups or overlapping locks"
+    },
+    {
+      "layout": "development-348",
+      "reason": "Simultaneous pickups or overlapping locks"
+    },
+    {
+      "layout": "development-349",
+      "reason": "Simultaneous pickups or overlapping locks"
+    },
+    {
+      "layout": "development-358",
+      "reason": "Simultaneous pickups or overlapping locks"
+    },
+    {
+      "layout": "development-359",
+      "reason": "Simultaneous pickups or overlapping locks"
+    },
+    {
+      "layout": "development-368",
+      "reason": "Simultaneous pickups or overlapping locks"
+    },
+    {
+      "layout": "development-369",
+      "reason": "Simultaneous pickups or overlapping locks"
+    },
+    {
+      "layout": "development-378",
+      "reason": "Simultaneous pickups or overlapping locks"
+    },
+    {
+      "layout": "development-379",
+      "reason": "Simultaneous pickups or overlapping locks"
+    },
+    {
+      "layout": "development-388",
+      "reason": "Simultaneous pickups or overlapping locks"
+    },
+    {
+      "layout": "development-389",
+      "reason": "Simultaneous pickups or overlapping locks"
+    },
+    {
+      "layout": "development-398",
+      "reason": "Simultaneous pickups or overlapping locks"
+    },
+    {
+      "layout": "development-399",
+      "reason": "Simultaneous pickups or overlapping locks"
+    },
+    {
+      "layout": "development-408",
+      "reason": "Simultaneous pickups or overlapping locks"
+    },
+    {
+      "layout": "development-409",
+      "reason": "Simultaneous pickups or overlapping locks"
+    },
+    {
+      "layout": "development-418",
+      "reason": "Simultaneous pickups or overlapping locks"
+    },
+    {
+      "layout": "development-419",
+      "reason": "Simultaneous pickups or overlapping locks"
+    },
+    {
+      "layout": "development-428",
+      "reason": "Simultaneous pickups or overlapping locks"
+    },
+    {
+      "layout": "development-429",
+      "reason": "Simultaneous pickups or overlapping locks"
+    },
+    {
+      "layout": "development-438",
+      "reason": "Simultaneous pickups or overlapping locks"
+    },
+    {
+      "layout": "development-439",
+      "reason": "Simultaneous pickups or overlapping locks"
+    },
+    {
+      "layout": "development-448",
+      "reason": "Simultaneous pickups or overlapping locks"
+    },
+    {
+      "layout": "development-449",
+      "reason": "Simultaneous pickups or overlapping locks"
+    },
+    {
+      "layout": "development-458",
+      "reason": "Simultaneous pickups or overlapping locks"
+    },
+    {
+      "layout": "development-459",
+      "reason": "Simultaneous pickups or overlapping locks"
+    },
+    {
+      "layout": "development-468",
+      "reason": "Simultaneous pickups or overlapping locks"
+    },
+    {
+      "layout": "development-469",
+      "reason": "Simultaneous pickups or overlapping locks"
+    },
+    {
+      "layout": "development-478",
+      "reason": "Simultaneous pickups or overlapping locks"
+    },
+    {
+      "layout": "development-479",
+      "reason": "Simultaneous pickups or overlapping locks"
+    },
+    {
+      "layout": "development-488",
+      "reason": "Simultaneous pickups or overlapping locks"
+    },
+    {
+      "layout": "development-489",
+      "reason": "Simultaneous pickups or overlapping locks"
+    },
+    {
+      "layout": "development-498",
+      "reason": "Simultaneous pickups or overlapping locks"
+    },
+    {
+      "layout": "development-499",
+      "reason": "Simultaneous pickups or overlapping locks"
+    },
+    {
+      "layout": "development-508",
+      "reason": "Simultaneous pickups or overlapping locks"
+    },
+    {
+      "layout": "development-509",
+      "reason": "Simultaneous pickups or overlapping locks"
+    },
+    {
+      "layout": "development-518",
+      "reason": "Simultaneous pickups or overlapping locks"
+    },
+    {
+      "layout": "development-519",
+      "reason": "Simultaneous pickups or overlapping locks"
+    },
+    {
+      "layout": "development-528",
+      "reason": "Simultaneous pickups or overlapping locks"
+    },
+    {
+      "layout": "development-529",
+      "reason": "Simultaneous pickups or overlapping locks"
+    },
+    {
+      "layout": "development-538",
+      "reason": "Simultaneous pickups or overlapping locks"
+    },
+    {
+      "layout": "development-539",
+      "reason": "Simultaneous pickups or overlapping locks"
+    },
+    {
+      "layout": "development-548",
+      "reason": "Simultaneous pickups or overlapping locks"
+    },
+    {
+      "layout": "development-549",
+      "reason": "Simultaneous pickups or overlapping locks"
+    },
+    {
+      "layout": "development-558",
+      "reason": "Simultaneous pickups or overlapping locks"
+    },
+    {
+      "layout": "development-559",
+      "reason": "Simultaneous pickups or overlapping locks"
+    },
+    {
+      "layout": "development-568",
+      "reason": "Simultaneous pickups or overlapping locks"
+    },
+    {
+      "layout": "development-569",
+      "reason": "Simultaneous pickups or overlapping locks"
+    },
+    {
+      "layout": "development-578",
+      "reason": "Simultaneous pickups or overlapping locks"
+    },
+    {
+      "layout": "development-579",
+      "reason": "Simultaneous pickups or overlapping locks"
+    },
+    {
+      "layout": "development-588",
+      "reason": "Simultaneous pickups or overlapping locks"
+    },
+    {
+      "layout": "development-589",
+      "reason": "Simultaneous pickups or overlapping locks"
+    },
+    {
+      "layout": "development-598",
+      "reason": "Simultaneous pickups or overlapping locks"
+    },
+    {
+      "layout": "development-599",
+      "reason": "Simultaneous pickups or overlapping locks"
+    },
+    {
+      "layout": "development-608",
+      "reason": "Simultaneous pickups or overlapping locks"
+    },
+    {
+      "layout": "development-609",
+      "reason": "Simultaneous pickups or overlapping locks"
+    },
+    {
+      "layout": "development-618",
+      "reason": "Simultaneous pickups or overlapping locks"
+    },
+    {
+      "layout": "development-619",
+      "reason": "Simultaneous pickups or overlapping locks"
+    },
+    {
+      "layout": "development-628",
+      "reason": "Simultaneous pickups or overlapping locks"
+    },
+    {
+      "layout": "development-629",
+      "reason": "Simultaneous pickups or overlapping locks"
+    },
+    {
+      "layout": "development-638",
+      "reason": "Simultaneous pickups or overlapping locks"
+    },
+    {
+      "layout": "development-639",
+      "reason": "Simultaneous pickups or overlapping locks"
+    },
+    {
+      "layout": "development-648",
+      "reason": "Simultaneous pickups or overlapping locks"
+    },
+    {
+      "layout": "development-649",
+      "reason": "Simultaneous pickups or overlapping locks"
+    },
+    {
+      "layout": "development-658",
+      "reason": "Simultaneous pickups or overlapping locks"
+    },
+    {
+      "layout": "development-659",
+      "reason": "Simultaneous pickups or overlapping locks"
+    },
+    {
+      "layout": "development-668",
+      "reason": "Simultaneous pickups or overlapping locks"
+    },
+    {
+      "layout": "development-669",
+      "reason": "Simultaneous pickups or overlapping locks"
+    },
+    {
+      "layout": "development-678",
+      "reason": "Simultaneous pickups or overlapping locks"
+    },
+    {
+      "layout": "development-679",
+      "reason": "Simultaneous pickups or overlapping locks"
+    },
+    {
+      "layout": "development-688",
+      "reason": "Simultaneous pickups or overlapping locks"
+    },
+    {
+      "layout": "development-689",
+      "reason": "Simultaneous pickups or overlapping locks"
+    },
+    {
+      "layout": "development-698",
+      "reason": "Simultaneous pickups or overlapping locks"
+    },
+    {
+      "layout": "development-699",
+      "reason": "Simultaneous pickups or overlapping locks"
+    },
+    {
+      "layout": "development-708",
+      "reason": "Simultaneous pickups or overlapping locks"
+    },
+    {
+      "layout": "development-709",
+      "reason": "Simultaneous pickups or overlapping locks"
+    },
+    {
+      "layout": "development-718",
+      "reason": "Simultaneous pickups or overlapping locks"
+    },
+    {
+      "layout": "development-719",
+      "reason": "Simultaneous pickups or overlapping locks"
+    },
+    {
+      "layout": "development-728",
+      "reason": "Simultaneous pickups or overlapping locks"
+    },
+    {
+      "layout": "development-729",
+      "reason": "Simultaneous pickups or overlapping locks"
+    },
+    {
+      "layout": "development-738",
+      "reason": "Simultaneous pickups or overlapping locks"
+    },
+    {
+      "layout": "development-739",
+      "reason": "Simultaneous pickups or overlapping locks"
+    },
+    {
+      "layout": "development-748",
+      "reason": "Simultaneous pickups or overlapping locks"
+    },
+    {
+      "layout": "development-749",
+      "reason": "Simultaneous pickups or overlapping locks"
+    },
+    {
+      "layout": "development-758",
+      "reason": "Simultaneous pickups or overlapping locks"
+    },
+    {
+      "layout": "development-759",
+      "reason": "Simultaneous pickups or overlapping locks"
+    },
+    {
+      "layout": "development-768",
+      "reason": "Simultaneous pickups or overlapping locks"
+    },
+    {
+      "layout": "development-769",
+      "reason": "Simultaneous pickups or overlapping locks"
+    },
+    {
+      "layout": "development-778",
+      "reason": "Simultaneous pickups or overlapping locks"
+    },
+    {
+      "layout": "development-779",
+      "reason": "Simultaneous pickups or overlapping locks"
+    },
+    {
+      "layout": "development-788",
+      "reason": "Simultaneous pickups or overlapping locks"
+    },
+    {
+      "layout": "development-789",
+      "reason": "Simultaneous pickups or overlapping locks"
+    },
+    {
+      "layout": "development-798",
+      "reason": "Simultaneous pickups or overlapping locks"
+    },
+    {
+      "layout": "development-799",
+      "reason": "Simultaneous pickups or overlapping locks"
+    },
+    {
+      "layout": "development-808",
+      "reason": "Simultaneous pickups or overlapping locks"
+    },
+    {
+      "layout": "development-809",
+      "reason": "Simultaneous pickups or overlapping locks"
+    },
+    {
+      "layout": "development-818",
+      "reason": "Simultaneous pickups or overlapping locks"
+    },
+    {
+      "layout": "development-819",
+      "reason": "Simultaneous pickups or overlapping locks"
+    },
+    {
+      "layout": "development-828",
+      "reason": "Simultaneous pickups or overlapping locks"
+    },
+    {
+      "layout": "development-829",
+      "reason": "Simultaneous pickups or overlapping locks"
+    },
+    {
+      "layout": "development-838",
+      "reason": "Simultaneous pickups or overlapping locks"
+    },
+    {
+      "layout": "development-839",
+      "reason": "Simultaneous pickups or overlapping locks"
+    },
+    {
+      "layout": "development-848",
+      "reason": "Simultaneous pickups or overlapping locks"
+    },
+    {
+      "layout": "development-849",
+      "reason": "Simultaneous pickups or overlapping locks"
+    },
+    {
+      "layout": "development-858",
+      "reason": "Simultaneous pickups or overlapping locks"
+    },
+    {
+      "layout": "development-859",
+      "reason": "Simultaneous pickups or overlapping locks"
+    },
+    {
+      "layout": "development-868",
+      "reason": "Simultaneous pickups or overlapping locks"
+    },
+    {
+      "layout": "development-869",
+      "reason": "Simultaneous pickups or overlapping locks"
+    },
+    {
+      "layout": "development-878",
+      "reason": "Simultaneous pickups or overlapping locks"
+    },
+    {
+      "layout": "development-879",
+      "reason": "Simultaneous pickups or overlapping locks"
+    },
+    {
+      "layout": "development-888",
+      "reason": "Simultaneous pickups or overlapping locks"
+    },
+    {
+      "layout": "development-889",
+      "reason": "Simultaneous pickups or overlapping locks"
+    },
+    {
+      "layout": "development-898",
+      "reason": "Simultaneous pickups or overlapping locks"
+    },
+    {
+      "layout": "development-899",
+      "reason": "Simultaneous pickups or overlapping locks"
+    },
+    {
+      "layout": "development-908",
+      "reason": "Simultaneous pickups or overlapping locks"
+    },
+    {
+      "layout": "development-909",
+      "reason": "Simultaneous pickups or overlapping locks"
+    },
+    {
+      "layout": "development-918",
+      "reason": "Simultaneous pickups or overlapping locks"
+    },
+    {
+      "layout": "development-919",
+      "reason": "Simultaneous pickups or overlapping locks"
+    },
+    {
+      "layout": "development-928",
+      "reason": "Simultaneous pickups or overlapping locks"
+    },
+    {
+      "layout": "development-929",
+      "reason": "Simultaneous pickups or overlapping locks"
+    },
+    {
+      "layout": "development-938",
+      "reason": "Simultaneous pickups or overlapping locks"
+    },
+    {
+      "layout": "development-939",
+      "reason": "Simultaneous pickups or overlapping locks"
+    },
+    {
+      "layout": "development-948",
+      "reason": "Simultaneous pickups or overlapping locks"
+    },
+    {
+      "layout": "development-949",
+      "reason": "Simultaneous pickups or overlapping locks"
+    },
+    {
+      "layout": "development-958",
+      "reason": "Simultaneous pickups or overlapping locks"
+    },
+    {
+      "layout": "development-959",
+      "reason": "Simultaneous pickups or overlapping locks"
+    },
+    {
+      "layout": "development-968",
+      "reason": "Simultaneous pickups or overlapping locks"
+    },
+    {
+      "layout": "development-969",
+      "reason": "Simultaneous pickups or overlapping locks"
+    },
+    {
+      "layout": "development-978",
+      "reason": "Simultaneous pickups or overlapping locks"
+    },
+    {
+      "layout": "development-979",
+      "reason": "Simultaneous pickups or overlapping locks"
+    },
+    {
+      "layout": "development-988",
+      "reason": "Simultaneous pickups or overlapping locks"
+    },
+    {
+      "layout": "development-989",
+      "reason": "Simultaneous pickups or overlapping locks"
+    },
+    {
+      "layout": "development-998",
+      "reason": "Simultaneous pickups or overlapping locks"
+    },
+    {
+      "layout": "development-999",
+      "reason": "Simultaneous pickups or overlapping locks"
+    },
+    {
+      "layout": "public-B4 Measure Twice and Cut Once",
+      "reason": "Large keyed inventory iteration history"
+    }
+  ],
+  "fast_transition_key_seconds": 1.5053756194829475,
+  "reference_step_seconds": 102.79303434654139,
+  "transition_key_speedup": 68.28397711253474
+}

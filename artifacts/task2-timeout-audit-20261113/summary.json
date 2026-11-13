@@ -1,0 +1,83 @@
+{
+  "source_sha256": "0b61f5c7c594541b12656995aa2389642ce37a48ad9f5a2bc3544360c45d92d5",
+  "platform_result": "User reports test_graded_image_observation_4: 3 timeouts at 5 seconds; board mapping unknown.",
+  "production_changed": false,
+  "batches": {
+    "native-default-66": {
+      "cases": 66,
+      "wins_within_limit": 66,
+      "full_scores": 66,
+      "max_seconds": 0.93618058300126,
+      "synthetic": false,
+      "failed": []
+    },
+    "stress6-history-22": {
+      "cases": 22,
+      "wins_within_limit": 21,
+      "full_scores": 21,
+      "max_seconds": 5.009634800047934,
+      "synthetic": true,
+      "failed": [
+        {
+          "label": "B4 Measure Twice and Cut Once",
+          "seconds": 5.009634800047934,
+          "turns": 120,
+          "first_cutoff": {
+            "turn": 105,
+            "elapsed": 4.689426776041728
+          }
+        }
+      ]
+    },
+    "stress6-no-history-22": {
+      "cases": 22,
+      "wins_within_limit": 21,
+      "full_scores": 21,
+      "max_seconds": 4.99255547996836,
+      "synthetic": true,
+      "failed": [
+        {
+          "label": "B4 Measure Twice and Cut Once",
+          "seconds": 4.99255547996836,
+          "turns": 150,
+          "first_cutoff": {
+            "turn": 129,
+            "elapsed": 4.696832987963717
+          }
+        }
+      ]
+    }
+  },
+  "diagnostic_checks": 44,
+  "board_signatures": {
+    "1d9170705d94781e": "A0 Basic Movement",
+    "6c921d9d43b17ad5": "A1 Maze Turns",
+    "ef9e7cc5f6c8a464": "A2 Optional Coin Path",
+    "767c9710a70bfca6": "A3 Multiple Required Gems",
+    "d62c767fc0b6e9e8": "A4 Key and Door",
+    "93b82a3bbbd4fde5": "A5 Hazard Detour",
+    "3bf6704a93e7f71d": "A6 Pushable Box",
+    "2c6e94e0cfa1c6c5": "A7 Shield Powerup",
+    "8bf29c2887e25c35": "A8 Ghost Powerup",
+    "801a6ad9385f089c": "A9 Boots Powerup",
+    "7cdb17fc2e2e11d5": "A10 Combined Mechanics",
+    "db2909346461ffc6": "B0 Thread the Needle",
+    "136ec2416a4236c8": "B1 Hypnosis",
+    "a43fd8027b61e31d": "B2 The Vault",
+    "9884f1f044d656a1": "B3 So Close Yet So Far",
+    "177b79e1753a99d9": "B4 Measure Twice and Cut Once",
+    "2b00792c49eec60c": "B5 Ow Oof Owie",
+    "bf160fea7abb29c5": "B6 Warehouse",
+    "7da8fd64bf637577": "B7 Fire Resistance",
+    "e1d32954dff2f1bd": "B8 Choose Wisely",
+    "8073040ea3faab02": "B9 Manhattan",
+    "45cefd3b9b7f0d0d": "B10 Khoa Was Here"
+  },
+  "limitations": [
+    "Measured locally on macOS, not grader hardware.",
+    "Sixfold clock scaling plus 14ms environment-step floor is synthetic.",
+    "Public-helper loop is reproduced, but grader overhead and test-set mapping are unavailable.",
+    "Instrumentation affects timing; stage timings overlap and must not be summed.",
+    "No production fix or platform pass is claimed."
+  ]
+}

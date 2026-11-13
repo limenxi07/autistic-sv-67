@@ -1,0 +1,14 @@
+--- before/agents/v4.py
++++ after/agents/v4.py
+@@ -214,7 +214,10 @@
+                 action = Action.WAIT
+                 reason = "emission_failure:" + type(error).__name__
+         valid = bool(predictions)
+-        if not valid or reason != "conditional_plan":
++        # A verified WAIT with no cached plan still consumed an initial search
++        # attempt. Retain that attempt so the next observed state can use the
++        # original recovery interval instead of restarting an expired interval.
++        if not valid or reason not in ("conditional_plan", "planner_no_verified_plan"):
+             self._planner = None
+         if not valid:
+             previous_image = background = actor_template = history = None

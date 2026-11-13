@@ -1,0 +1,32 @@
+EFE
+======================================================================
+ERROR: test_event_query_obeys_expired_original_deadline (tests.test_p3_search.SearchTests.test_event_query_obeys_expired_original_deadline)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/enxi/coding/autistic-sv-67/tests/test_p3_search.py", line 28, in test_event_query_obeys_expired_original_deadline
+    endpoints,transitions,records=p3.event_query(b,c,v,('item',goal),deadline=0)
+                                  ^^^^^^^^^^^^^^
+AttributeError: module 'agents.p3' has no attribute 'event_query'
+
+======================================================================
+ERROR: test_resource_event_is_pickup_and_retains_complete_endpoint (tests.test_p3_search.SearchTests.test_resource_event_is_pickup_and_retains_complete_endpoint)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/enxi/coding/autistic-sv-67/tests/test_p3_search.py", line 16, in test_resource_event_is_pickup_and_retains_complete_endpoint
+    endpoints,_,_=p3.event_query(b,c,v,('item',goal),deadline=perf_counter()+1)
+                  ^^^^^^^^^^^^^^
+AttributeError: module 'agents.p3' has no attribute 'event_query'
+
+======================================================================
+FAIL: test_long_resource_route_finds_public_verified_win (tests.test_p3_search.SearchTests.test_long_resource_route_finds_public_verified_win)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/enxi/coding/autistic-sv-67/tests/test_p3_search.py", line 37, in test_long_resource_route_finds_public_verified_win
+    self.assertTrue(result.winning,result.stop_reason)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true : state_cap
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.934s
+
+FAILED (failures=1, errors=2)

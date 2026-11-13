@@ -1,0 +1,1819 @@
+{
+  "schema_version": 1,
+  "policy": {
+    "original_chats": "preserve unchanged; normalize a separate export",
+    "matching": "exact paths/imports first; prose aliases require project context",
+    "exclude": [
+      "frozen artifact paths",
+      "hashes",
+      "URLs",
+      "ambiguous aliases"
+    ],
+    "historical_documents": "retain original names; use this ledger when reading them"
+  },
+  "versions": [
+    {
+      "id": "p1",
+      "module": "planner_p1",
+      "display_name": "Reference-state planner (P1)",
+      "prose_aliases": [
+        "p1",
+        "P1"
+      ],
+      "context_required": true,
+      "previous_module": "reference_state_planner_p1"
+    },
+    {
+      "id": "p2",
+      "module": "compact_p2",
+      "display_name": "Compact-state planner (P2)",
+      "prose_aliases": [
+        "p2",
+        "P2"
+      ],
+      "context_required": true,
+      "previous_module": "compact_state_planner_p2"
+    },
+    {
+      "id": "p2_next",
+      "module": "boss_p2_next",
+      "display_name": "Boss-search planner (P2-next)",
+      "prose_aliases": [
+        "p2_next",
+        "P2-NEXT",
+        "P2-next",
+        "p2-next"
+      ],
+      "context_required": true,
+      "previous_module": "boss_search_planner_p2_next"
+    },
+    {
+      "id": "p3",
+      "module": "hierarchical_p3",
+      "display_name": "Hierarchical planner (P3)",
+      "prose_aliases": [
+        "p3",
+        "P3"
+      ],
+      "context_required": true,
+      "previous_module": "hierarchical_planner_p3"
+    },
+    {
+      "id": "v3",
+      "module": "vision_v3",
+      "display_name": "Image-tracking agent (V3)",
+      "prose_aliases": [
+        "v3",
+        "V3"
+      ],
+      "context_required": true,
+      "previous_module": "image_tracking_agent_v3"
+    },
+    {
+      "id": "v4",
+      "module": "vision_v4",
+      "display_name": "Image-recovery agent (V4)",
+      "prose_aliases": [
+        "v4",
+        "V4"
+      ],
+      "context_required": true,
+      "previous_module": "image_recovery_agent_v4"
+    },
+    {
+      "id": "v4_boss",
+      "module": "boss_v4",
+      "display_name": "Boss-mode agent (V4)",
+      "prose_aliases": [
+        "v4_boss",
+        "V4-BOSS"
+      ],
+      "context_required": true,
+      "previous_module": "boss_mode_agent_v4"
+    }
+  ],
+  "renames": [
+    {
+      "old_path": "agents/p1.py",
+      "new_path": "agents/planner_p1.py",
+      "old_module": "agents.p1",
+      "new_module": "agents.planner_p1",
+      "reason": "describe purpose while retaining version identity",
+      "intermediate_path": "agents/reference_state_planner_p1.py",
+      "intermediate_module": "agents.reference_state_planner_p1"
+    },
+    {
+      "old_path": "agents/p2.py",
+      "new_path": "agents/compact_p2.py",
+      "old_module": "agents.p2",
+      "new_module": "agents.compact_p2",
+      "reason": "describe purpose while retaining version identity",
+      "intermediate_path": "agents/compact_state_planner_p2.py",
+      "intermediate_module": "agents.compact_state_planner_p2"
+    },
+    {
+      "old_path": "agents/p2_next.py",
+      "new_path": "agents/boss_p2_next.py",
+      "old_module": "agents.p2_next",
+      "new_module": "agents.boss_p2_next",
+      "reason": "describe purpose while retaining version identity",
+      "intermediate_path": "agents/boss_search_planner_p2_next.py",
+      "intermediate_module": "agents.boss_search_planner_p2_next"
+    },
+    {
+      "old_path": "agents/p3.py",
+      "new_path": "agents/hierarchical_p3.py",
+      "old_module": "agents.p3",
+      "new_module": "agents.hierarchical_p3",
+      "reason": "describe purpose while retaining version identity",
+      "intermediate_path": "agents/hierarchical_planner_p3.py",
+      "intermediate_module": "agents.hierarchical_planner_p3"
+    },
+    {
+      "old_path": "agents/v3.py",
+      "new_path": "agents/vision_v3.py",
+      "old_module": "agents.v3",
+      "new_module": "agents.vision_v3",
+      "reason": "describe purpose while retaining version identity",
+      "intermediate_path": "agents/image_tracking_agent_v3.py",
+      "intermediate_module": "agents.image_tracking_agent_v3"
+    },
+    {
+      "old_path": "agents/v3_bridge.py",
+      "new_path": "agents/vision_v3_bridge.py",
+      "old_module": "agents.v3_bridge",
+      "new_module": "agents.vision_v3_bridge",
+      "reason": "describe purpose while retaining version identity",
+      "intermediate_path": "agents/image_tracking_agent_v3_bridge.py",
+      "intermediate_module": "agents.image_tracking_agent_v3_bridge"
+    },
+    {
+      "old_path": "agents/v3_model.py",
+      "new_path": "agents/vision_v3_model.py",
+      "old_module": "agents.v3_model",
+      "new_module": "agents.vision_v3_model",
+      "reason": "describe purpose while retaining version identity",
+      "intermediate_path": "agents/image_tracking_agent_v3_model.py",
+      "intermediate_module": "agents.image_tracking_agent_v3_model"
+    },
+    {
+      "old_path": "agents/v3_perception.py",
+      "new_path": "agents/vision_v3_perception.py",
+      "old_module": "agents.v3_perception",
+      "new_module": "agents.vision_v3_perception",
+      "reason": "describe purpose while retaining version identity",
+      "intermediate_path": "agents/image_tracking_agent_v3_perception.py",
+      "intermediate_module": "agents.image_tracking_agent_v3_perception"
+    },
+    {
+      "old_path": "agents/v3_planner.py",
+      "new_path": "agents/vision_v3_planner.py",
+      "old_module": "agents.v3_planner",
+      "new_module": "agents.vision_v3_planner",
+      "reason": "describe purpose while retaining version identity",
+      "intermediate_path": "agents/image_tracking_agent_v3_planner.py",
+      "intermediate_module": "agents.image_tracking_agent_v3_planner"
+    },
+    {
+      "old_path": "agents/v3_tracking.py",
+      "new_path": "agents/vision_v3_tracking.py",
+      "old_module": "agents.v3_tracking",
+      "new_module": "agents.vision_v3_tracking",
+      "reason": "describe purpose while retaining version identity",
+      "intermediate_path": "agents/image_tracking_agent_v3_tracking.py",
+      "intermediate_module": "agents.image_tracking_agent_v3_tracking"
+    },
+    {
+      "old_path": "agents/v3_types.py",
+      "new_path": "agents/vision_v3_types.py",
+      "old_module": "agents.v3_types",
+      "new_module": "agents.vision_v3_types",
+      "reason": "describe purpose while retaining version identity",
+      "intermediate_path": "agents/image_tracking_agent_v3_types.py",
+      "intermediate_module": "agents.image_tracking_agent_v3_types"
+    },
+    {
+      "old_path": "agents/v4.py",
+      "new_path": "agents/vision_v4.py",
+      "old_module": "agents.v4",
+      "new_module": "agents.vision_v4",
+      "reason": "describe purpose while retaining version identity",
+      "intermediate_path": "agents/image_recovery_agent_v4.py",
+      "intermediate_module": "agents.image_recovery_agent_v4"
+    },
+    {
+      "old_path": "agents/v4_backend.py",
+      "new_path": "agents/vision_v4_backend.py",
+      "old_module": "agents.v4_backend",
+      "new_module": "agents.vision_v4_backend",
+      "reason": "describe purpose while retaining version identity",
+      "intermediate_path": "agents/image_recovery_agent_v4_backend.py",
+      "intermediate_module": "agents.image_recovery_agent_v4_backend"
+    },
+    {
+      "old_path": "agents/v4_boss.py",
+      "new_path": "agents/boss_v4.py",
+      "old_module": "agents.v4_boss",
+      "new_module": "agents.boss_v4",
+      "reason": "describe purpose while retaining version identity",
+      "intermediate_path": "agents/boss_mode_agent_v4.py",
+      "intermediate_module": "agents.boss_mode_agent_v4"
+    },
+    {
+      "old_path": "agents/v4_bridge.py",
+      "new_path": "agents/vision_v4_bridge.py",
+      "old_module": "agents.v4_bridge",
+      "new_module": "agents.vision_v4_bridge",
+      "reason": "describe purpose while retaining version identity",
+      "intermediate_path": "agents/image_recovery_agent_v4_bridge.py",
+      "intermediate_module": "agents.image_recovery_agent_v4_bridge"
+    },
+    {
+      "old_path": "agents/v4_model.py",
+      "new_path": "agents/vision_v4_model.py",
+      "old_module": "agents.v4_model",
+      "new_module": "agents.vision_v4_model",
+      "reason": "describe purpose while retaining version identity",
+      "intermediate_path": "agents/image_recovery_agent_v4_model.py",
+      "intermediate_module": "agents.image_recovery_agent_v4_model"
+    },
+    {
+      "old_path": "agents/v4_perception.py",
+      "new_path": "agents/vision_v4_perception.py",
+      "old_module": "agents.v4_perception",
+      "new_module": "agents.vision_v4_perception",
+      "reason": "describe purpose while retaining version identity",
+      "intermediate_path": "agents/image_recovery_agent_v4_perception.py",
+      "intermediate_module": "agents.image_recovery_agent_v4_perception"
+    },
+    {
+      "old_path": "agents/v4_planner.py",
+      "new_path": "agents/vision_v4_planner.py",
+      "old_module": "agents.v4_planner",
+      "new_module": "agents.vision_v4_planner",
+      "reason": "describe purpose while retaining version identity",
+      "intermediate_path": "agents/image_recovery_agent_v4_planner.py",
+      "intermediate_module": "agents.image_recovery_agent_v4_planner"
+    },
+    {
+      "old_path": "agents/v4_search.py",
+      "new_path": "agents/vision_v4_search.py",
+      "old_module": "agents.v4_search",
+      "new_module": "agents.vision_v4_search",
+      "reason": "describe purpose while retaining version identity",
+      "intermediate_path": "agents/image_recovery_agent_v4_search.py",
+      "intermediate_module": "agents.image_recovery_agent_v4_search"
+    },
+    {
+      "old_path": "agents/v4_tracking.py",
+      "new_path": "agents/vision_v4_tracking.py",
+      "old_module": "agents.v4_tracking",
+      "new_module": "agents.vision_v4_tracking",
+      "reason": "describe purpose while retaining version identity",
+      "intermediate_path": "agents/image_recovery_agent_v4_tracking.py",
+      "intermediate_module": "agents.image_recovery_agent_v4_tracking"
+    },
+    {
+      "old_path": "agents/v4_types.py",
+      "new_path": "agents/vision_v4_types.py",
+      "old_module": "agents.v4_types",
+      "new_module": "agents.vision_v4_types",
+      "reason": "describe purpose while retaining version identity",
+      "intermediate_path": "agents/image_recovery_agent_v4_types.py",
+      "intermediate_module": "agents.image_recovery_agent_v4_types"
+    },
+    {
+      "old_path": "tests/p1_fixtures.py",
+      "new_path": "tests/planner_p1_fixtures.py",
+      "old_module": "tests.p1_fixtures",
+      "new_module": "tests.planner_p1_fixtures",
+      "reason": "describe purpose while retaining version identity",
+      "intermediate_path": "tests/reference_state_planner_p1_fixtures.py",
+      "intermediate_module": "tests.reference_state_planner_p1_fixtures"
+    },
+    {
+      "old_path": "tests/p2_fixtures.py",
+      "new_path": "tests/compact_p2_fixtures.py",
+      "old_module": "tests.p2_fixtures",
+      "new_module": "tests.compact_p2_fixtures",
+      "reason": "describe purpose while retaining version identity",
+      "intermediate_path": "tests/compact_state_planner_p2_fixtures.py",
+      "intermediate_module": "tests.compact_state_planner_p2_fixtures"
+    },
+    {
+      "old_path": "tests/p2_next_fixtures.py",
+      "new_path": "tests/boss_p2_next_fixtures.py",
+      "old_module": "tests.p2_next_fixtures",
+      "new_module": "tests.boss_p2_next_fixtures",
+      "reason": "describe purpose while retaining version identity",
+      "intermediate_path": "tests/boss_search_planner_p2_next_fixtures.py",
+      "intermediate_module": "tests.boss_search_planner_p2_next_fixtures"
+    },
+    {
+      "old_path": "tests/p3_fixtures.py",
+      "new_path": "tests/hierarchical_p3_fixtures.py",
+      "old_module": "tests.p3_fixtures",
+      "new_module": "tests.hierarchical_p3_fixtures",
+      "reason": "describe purpose while retaining version identity",
+      "intermediate_path": "tests/hierarchical_planner_p3_fixtures.py",
+      "intermediate_module": "tests.hierarchical_planner_p3_fixtures"
+    },
+    {
+      "old_path": "tests/test_p1_agent.py",
+      "new_path": "tests/test_planner_p1_agent.py",
+      "old_module": "tests.test_p1_agent",
+      "new_module": "tests.test_planner_p1_agent",
+      "reason": "describe purpose while retaining version identity",
+      "intermediate_path": "tests/test_reference_state_planner_p1_agent.py",
+      "intermediate_module": "tests.test_reference_state_planner_p1_agent"
+    },
+    {
+      "old_path": "tests/test_p1_generated.py",
+      "new_path": "tests/test_planner_p1_generated.py",
+      "old_module": "tests.test_p1_generated",
+      "new_module": "tests.test_planner_p1_generated",
+      "reason": "describe purpose while retaining version identity",
+      "intermediate_path": "tests/test_reference_state_planner_p1_generated.py",
+      "intermediate_module": "tests.test_reference_state_planner_p1_generated"
+    },
+    {
+      "old_path": "tests/test_p1_harness.py",
+      "new_path": "tests/test_planner_p1_harness.py",
+      "old_module": "tests.test_p1_harness",
+      "new_module": "tests.test_planner_p1_harness",
+      "reason": "describe purpose while retaining version identity",
+      "intermediate_path": "tests/test_reference_state_planner_p1_harness.py",
+      "intermediate_module": "tests.test_reference_state_planner_p1_harness"
+    },
+    {
+      "old_path": "tests/test_p1_package.py",
+      "new_path": "tests/test_planner_p1_package.py",
+      "old_module": "tests.test_p1_package",
+      "new_module": "tests.test_planner_p1_package",
+      "reason": "describe purpose while retaining version identity",
+      "intermediate_path": "tests/test_reference_state_planner_p1_package.py",
+      "intermediate_module": "tests.test_reference_state_planner_p1_package"
+    },
+    {
+      "old_path": "tests/test_p1_qualification.py",
+      "new_path": "tests/test_planner_p1_qualification.py",
+      "old_module": "tests.test_p1_qualification",
+      "new_module": "tests.test_planner_p1_qualification",
+      "reason": "describe purpose while retaining version identity",
+      "intermediate_path": "tests/test_reference_state_planner_p1_qualification.py",
+      "intermediate_module": "tests.test_reference_state_planner_p1_qualification"
+    },
+    {
+      "old_path": "tests/test_p1_search.py",
+      "new_path": "tests/test_planner_p1_search.py",
+      "old_module": "tests.test_p1_search",
+      "new_module": "tests.test_planner_p1_search",
+      "reason": "describe purpose while retaining version identity",
+      "intermediate_path": "tests/test_reference_state_planner_p1_search.py",
+      "intermediate_module": "tests.test_reference_state_planner_p1_search"
+    },
+    {
+      "old_path": "tests/test_p1_state.py",
+      "new_path": "tests/test_planner_p1_state.py",
+      "old_module": "tests.test_p1_state",
+      "new_module": "tests.test_planner_p1_state",
+      "reason": "describe purpose while retaining version identity",
+      "intermediate_path": "tests/test_reference_state_planner_p1_state.py",
+      "intermediate_module": "tests.test_reference_state_planner_p1_state"
+    },
+    {
+      "old_path": "tests/test_p2_agent.py",
+      "new_path": "tests/test_compact_p2_agent.py",
+      "old_module": "tests.test_p2_agent",
+      "new_module": "tests.test_compact_p2_agent",
+      "reason": "describe purpose while retaining version identity",
+      "intermediate_path": "tests/test_compact_state_planner_p2_agent.py",
+      "intermediate_module": "tests.test_compact_state_planner_p2_agent"
+    },
+    {
+      "old_path": "tests/test_p2_generated.py",
+      "new_path": "tests/test_compact_p2_generated.py",
+      "old_module": "tests.test_p2_generated",
+      "new_module": "tests.test_compact_p2_generated",
+      "reason": "describe purpose while retaining version identity",
+      "intermediate_path": "tests/test_compact_state_planner_p2_generated.py",
+      "intermediate_module": "tests.test_compact_state_planner_p2_generated"
+    },
+    {
+      "old_path": "tests/test_p2_next.py",
+      "new_path": "tests/test_boss_p2_next.py",
+      "old_module": "tests.test_p2_next",
+      "new_module": "tests.test_boss_p2_next",
+      "reason": "describe purpose while retaining version identity",
+      "intermediate_path": "tests/test_boss_search_planner_p2_next.py",
+      "intermediate_module": "tests.test_boss_search_planner_p2_next"
+    },
+    {
+      "old_path": "tests/test_p2_package.py",
+      "new_path": "tests/test_compact_p2_package.py",
+      "old_module": "tests.test_p2_package",
+      "new_module": "tests.test_compact_p2_package",
+      "reason": "describe purpose while retaining version identity",
+      "intermediate_path": "tests/test_compact_state_planner_p2_package.py",
+      "intermediate_module": "tests.test_compact_state_planner_p2_package"
+    },
+    {
+      "old_path": "tests/test_p2_qualification.py",
+      "new_path": "tests/test_compact_p2_qualification.py",
+      "old_module": "tests.test_p2_qualification",
+      "new_module": "tests.test_compact_p2_qualification",
+      "reason": "describe purpose while retaining version identity",
+      "intermediate_path": "tests/test_compact_state_planner_p2_qualification.py",
+      "intermediate_module": "tests.test_compact_state_planner_p2_qualification"
+    },
+    {
+      "old_path": "tests/test_p2_search.py",
+      "new_path": "tests/test_compact_p2_search.py",
+      "old_module": "tests.test_p2_search",
+      "new_module": "tests.test_compact_p2_search",
+      "reason": "describe purpose while retaining version identity",
+      "intermediate_path": "tests/test_compact_state_planner_p2_search.py",
+      "intermediate_module": "tests.test_compact_state_planner_p2_search"
+    },
+    {
+      "old_path": "tests/test_p2_state.py",
+      "new_path": "tests/test_compact_p2_state.py",
+      "old_module": "tests.test_p2_state",
+      "new_module": "tests.test_compact_p2_state",
+      "reason": "describe purpose while retaining version identity",
+      "intermediate_path": "tests/test_compact_state_planner_p2_state.py",
+      "intermediate_module": "tests.test_compact_state_planner_p2_state"
+    },
+    {
+      "old_path": "tests/test_p2_step.py",
+      "new_path": "tests/test_compact_p2_step.py",
+      "old_module": "tests.test_p2_step",
+      "new_module": "tests.test_compact_p2_step",
+      "reason": "describe purpose while retaining version identity",
+      "intermediate_path": "tests/test_compact_state_planner_p2_step.py",
+      "intermediate_module": "tests.test_compact_state_planner_p2_step"
+    },
+    {
+      "old_path": "tests/test_p3_adapter.py",
+      "new_path": "tests/test_hierarchical_p3_adapter.py",
+      "old_module": "tests.test_p3_adapter",
+      "new_module": "tests.test_hierarchical_p3_adapter",
+      "reason": "describe purpose while retaining version identity",
+      "intermediate_path": "tests/test_hierarchical_planner_p3_adapter.py",
+      "intermediate_module": "tests.test_hierarchical_planner_p3_adapter"
+    },
+    {
+      "old_path": "tests/test_p3_dispatch.py",
+      "new_path": "tests/test_hierarchical_p3_dispatch.py",
+      "old_module": "tests.test_p3_dispatch",
+      "new_module": "tests.test_hierarchical_p3_dispatch",
+      "reason": "describe purpose while retaining version identity",
+      "intermediate_path": "tests/test_hierarchical_planner_p3_dispatch.py",
+      "intermediate_module": "tests.test_hierarchical_planner_p3_dispatch"
+    },
+    {
+      "old_path": "tests/test_p3_package.py",
+      "new_path": "tests/test_hierarchical_p3_package.py",
+      "old_module": "tests.test_p3_package",
+      "new_module": "tests.test_hierarchical_p3_package",
+      "reason": "describe purpose while retaining version identity",
+      "intermediate_path": "tests/test_hierarchical_planner_p3_package.py",
+      "intermediate_module": "tests.test_hierarchical_planner_p3_package"
+    },
+    {
+      "old_path": "tests/test_p3_qualification.py",
+      "new_path": "tests/test_hierarchical_p3_qualification.py",
+      "old_module": "tests.test_p3_qualification",
+      "new_module": "tests.test_hierarchical_p3_qualification",
+      "reason": "describe purpose while retaining version identity",
+      "intermediate_path": "tests/test_hierarchical_planner_p3_qualification.py",
+      "intermediate_module": "tests.test_hierarchical_planner_p3_qualification"
+    },
+    {
+      "old_path": "tests/test_p3_search.py",
+      "new_path": "tests/test_hierarchical_p3_search.py",
+      "old_module": "tests.test_p3_search",
+      "new_module": "tests.test_hierarchical_p3_search",
+      "reason": "describe purpose while retaining version identity",
+      "intermediate_path": "tests/test_hierarchical_planner_p3_search.py",
+      "intermediate_module": "tests.test_hierarchical_planner_p3_search"
+    },
+    {
+      "old_path": "tests/test_v3_agent.py",
+      "new_path": "tests/test_vision_v3_agent.py",
+      "old_module": "tests.test_v3_agent",
+      "new_module": "tests.test_vision_v3_agent",
+      "reason": "describe purpose while retaining version identity",
+      "intermediate_path": "tests/test_image_tracking_agent_v3_agent.py",
+      "intermediate_module": "tests.test_image_tracking_agent_v3_agent"
+    },
+    {
+      "old_path": "tests/test_v3_bridge.py",
+      "new_path": "tests/test_vision_v3_bridge.py",
+      "old_module": "tests.test_v3_bridge",
+      "new_module": "tests.test_vision_v3_bridge",
+      "reason": "describe purpose while retaining version identity",
+      "intermediate_path": "tests/test_image_tracking_agent_v3_bridge.py",
+      "intermediate_module": "tests.test_image_tracking_agent_v3_bridge"
+    },
+    {
+      "old_path": "tests/test_v3_data.py",
+      "new_path": "tests/test_vision_v3_data.py",
+      "old_module": "tests.test_v3_data",
+      "new_module": "tests.test_vision_v3_data",
+      "reason": "describe purpose while retaining version identity",
+      "intermediate_path": "tests/test_image_tracking_agent_v3_data.py",
+      "intermediate_module": "tests.test_image_tracking_agent_v3_data"
+    },
+    {
+      "old_path": "tests/test_v3_export.py",
+      "new_path": "tests/test_vision_v3_export.py",
+      "old_module": "tests.test_v3_export",
+      "new_module": "tests.test_vision_v3_export",
+      "reason": "describe purpose while retaining version identity",
+      "intermediate_path": "tests/test_image_tracking_agent_v3_export.py",
+      "intermediate_module": "tests.test_image_tracking_agent_v3_export"
+    },
+    {
+      "old_path": "tests/test_v3_harness.py",
+      "new_path": "tests/test_vision_v3_harness.py",
+      "old_module": "tests.test_v3_harness",
+      "new_module": "tests.test_vision_v3_harness",
+      "reason": "describe purpose while retaining version identity",
+      "intermediate_path": "tests/test_image_tracking_agent_v3_harness.py",
+      "intermediate_module": "tests.test_image_tracking_agent_v3_harness"
+    },
+    {
+      "old_path": "tests/test_v3_model.py",
+      "new_path": "tests/test_vision_v3_model.py",
+      "old_module": "tests.test_v3_model",
+      "new_module": "tests.test_vision_v3_model",
+      "reason": "describe purpose while retaining version identity",
+      "intermediate_path": "tests/test_image_tracking_agent_v3_model.py",
+      "intermediate_module": "tests.test_image_tracking_agent_v3_model"
+    },
+    {
+      "old_path": "tests/test_v3_package.py",
+      "new_path": "tests/test_vision_v3_package.py",
+      "old_module": "tests.test_v3_package",
+      "new_module": "tests.test_vision_v3_package",
+      "reason": "describe purpose while retaining version identity",
+      "intermediate_path": "tests/test_image_tracking_agent_v3_package.py",
+      "intermediate_module": "tests.test_image_tracking_agent_v3_package"
+    },
+    {
+      "old_path": "tests/test_v3_qualification.py",
+      "new_path": "tests/test_vision_v3_qualification.py",
+      "old_module": "tests.test_v3_qualification",
+      "new_module": "tests.test_vision_v3_qualification",
+      "reason": "describe purpose while retaining version identity",
+      "intermediate_path": "tests/test_image_tracking_agent_v3_qualification.py",
+      "intermediate_module": "tests.test_image_tracking_agent_v3_qualification"
+    },
+    {
+      "old_path": "tests/test_v3_tracking.py",
+      "new_path": "tests/test_vision_v3_tracking.py",
+      "old_module": "tests.test_v3_tracking",
+      "new_module": "tests.test_vision_v3_tracking",
+      "reason": "describe purpose while retaining version identity",
+      "intermediate_path": "tests/test_image_tracking_agent_v3_tracking.py",
+      "intermediate_module": "tests.test_image_tracking_agent_v3_tracking"
+    },
+    {
+      "old_path": "tests/test_v3_wandb.py",
+      "new_path": "tests/test_vision_v3_wandb.py",
+      "old_module": "tests.test_v3_wandb",
+      "new_module": "tests.test_vision_v3_wandb",
+      "reason": "describe purpose while retaining version identity",
+      "intermediate_path": "tests/test_image_tracking_agent_v3_wandb.py",
+      "intermediate_module": "tests.test_image_tracking_agent_v3_wandb"
+    },
+    {
+      "old_path": "tests/test_v4_agent.py",
+      "new_path": "tests/test_vision_v4_agent.py",
+      "old_module": "tests.test_v4_agent",
+      "new_module": "tests.test_vision_v4_agent",
+      "reason": "describe purpose while retaining version identity",
+      "intermediate_path": "tests/test_image_recovery_agent_v4_agent.py",
+      "intermediate_module": "tests.test_image_recovery_agent_v4_agent"
+    },
+    {
+      "old_path": "tests/test_v4_backend.py",
+      "new_path": "tests/test_vision_v4_backend.py",
+      "old_module": "tests.test_v4_backend",
+      "new_module": "tests.test_vision_v4_backend",
+      "reason": "describe purpose while retaining version identity",
+      "intermediate_path": "tests/test_image_recovery_agent_v4_backend.py",
+      "intermediate_module": "tests.test_image_recovery_agent_v4_backend"
+    },
+    {
+      "old_path": "tests/test_v4_bridge.py",
+      "new_path": "tests/test_vision_v4_bridge.py",
+      "old_module": "tests.test_v4_bridge",
+      "new_module": "tests.test_vision_v4_bridge",
+      "reason": "describe purpose while retaining version identity",
+      "intermediate_path": "tests/test_image_recovery_agent_v4_bridge.py",
+      "intermediate_module": "tests.test_image_recovery_agent_v4_bridge"
+    },
+    {
+      "old_path": "tests/test_v4_crop_regressions.py",
+      "new_path": "tests/test_vision_v4_crop_regressions.py",
+      "old_module": "tests.test_v4_crop_regressions",
+      "new_module": "tests.test_vision_v4_crop_regressions",
+      "reason": "describe purpose while retaining version identity",
+      "intermediate_path": "tests/test_image_recovery_agent_v4_crop_regressions.py",
+      "intermediate_module": "tests.test_image_recovery_agent_v4_crop_regressions"
+    },
+    {
+      "old_path": "tests/test_v4_data.py",
+      "new_path": "tests/test_vision_v4_data.py",
+      "old_module": "tests.test_v4_data",
+      "new_module": "tests.test_vision_v4_data",
+      "reason": "describe purpose while retaining version identity",
+      "intermediate_path": "tests/test_image_recovery_agent_v4_data.py",
+      "intermediate_module": "tests.test_image_recovery_agent_v4_data"
+    },
+    {
+      "old_path": "tests/test_v4_development.py",
+      "new_path": "tests/test_vision_v4_development.py",
+      "old_module": "tests.test_v4_development",
+      "new_module": "tests.test_vision_v4_development",
+      "reason": "describe purpose while retaining version identity",
+      "intermediate_path": "tests/test_image_recovery_agent_v4_development.py",
+      "intermediate_module": "tests.test_image_recovery_agent_v4_development"
+    },
+    {
+      "old_path": "tests/test_v4_diagnostics.py",
+      "new_path": "tests/test_vision_v4_diagnostics.py",
+      "old_module": "tests.test_v4_diagnostics",
+      "new_module": "tests.test_vision_v4_diagnostics",
+      "reason": "describe purpose while retaining version identity",
+      "intermediate_path": "tests/test_image_recovery_agent_v4_diagnostics.py",
+      "intermediate_module": "tests.test_image_recovery_agent_v4_diagnostics"
+    },
+    {
+      "old_path": "tests/test_v4_episode_cost.py",
+      "new_path": "tests/test_vision_v4_episode_cost.py",
+      "old_module": "tests.test_v4_episode_cost",
+      "new_module": "tests.test_vision_v4_episode_cost",
+      "reason": "describe purpose while retaining version identity",
+      "intermediate_path": "tests/test_image_recovery_agent_v4_episode_cost.py",
+      "intermediate_module": "tests.test_image_recovery_agent_v4_episode_cost"
+    },
+    {
+      "old_path": "tests/test_v4_export.py",
+      "new_path": "tests/test_vision_v4_export.py",
+      "old_module": "tests.test_v4_export",
+      "new_module": "tests.test_vision_v4_export",
+      "reason": "describe purpose while retaining version identity",
+      "intermediate_path": "tests/test_image_recovery_agent_v4_export.py",
+      "intermediate_module": "tests.test_image_recovery_agent_v4_export"
+    },
+    {
+      "old_path": "tests/test_v4_harness.py",
+      "new_path": "tests/test_vision_v4_harness.py",
+      "old_module": "tests.test_v4_harness",
+      "new_module": "tests.test_vision_v4_harness",
+      "reason": "describe purpose while retaining version identity",
+      "intermediate_path": "tests/test_image_recovery_agent_v4_harness.py",
+      "intermediate_module": "tests.test_image_recovery_agent_v4_harness"
+    },
+    {
+      "old_path": "tests/test_v4_model.py",
+      "new_path": "tests/test_vision_v4_model.py",
+      "old_module": "tests.test_v4_model",
+      "new_module": "tests.test_vision_v4_model",
+      "reason": "describe purpose while retaining version identity",
+      "intermediate_path": "tests/test_image_recovery_agent_v4_model.py",
+      "intermediate_module": "tests.test_image_recovery_agent_v4_model"
+    },
+    {
+      "old_path": "tests/test_v4_numpy_export.py",
+      "new_path": "tests/test_vision_v4_numpy_export.py",
+      "old_module": "tests.test_v4_numpy_export",
+      "new_module": "tests.test_vision_v4_numpy_export",
+      "reason": "describe purpose while retaining version identity",
+      "intermediate_path": "tests/test_image_recovery_agent_v4_numpy_export.py",
+      "intermediate_module": "tests.test_image_recovery_agent_v4_numpy_export"
+    },
+    {
+      "old_path": "tests/test_v4_package.py",
+      "new_path": "tests/test_vision_v4_package.py",
+      "old_module": "tests.test_v4_package",
+      "new_module": "tests.test_vision_v4_package",
+      "reason": "describe purpose while retaining version identity",
+      "intermediate_path": "tests/test_image_recovery_agent_v4_package.py",
+      "intermediate_module": "tests.test_image_recovery_agent_v4_package"
+    },
+    {
+      "old_path": "tests/test_v4_perception.py",
+      "new_path": "tests/test_vision_v4_perception.py",
+      "old_module": "tests.test_v4_perception",
+      "new_module": "tests.test_vision_v4_perception",
+      "reason": "describe purpose while retaining version identity",
+      "intermediate_path": "tests/test_image_recovery_agent_v4_perception.py",
+      "intermediate_module": "tests.test_image_recovery_agent_v4_perception"
+    },
+    {
+      "old_path": "tests/test_v4_qualification.py",
+      "new_path": "tests/test_vision_v4_qualification.py",
+      "old_module": "tests.test_v4_qualification",
+      "new_module": "tests.test_vision_v4_qualification",
+      "reason": "describe purpose while retaining version identity",
+      "intermediate_path": "tests/test_image_recovery_agent_v4_qualification.py",
+      "intermediate_module": "tests.test_image_recovery_agent_v4_qualification"
+    },
+    {
+      "old_path": "tests/test_v4_tracking.py",
+      "new_path": "tests/test_vision_v4_tracking.py",
+      "old_module": "tests.test_v4_tracking",
+      "new_module": "tests.test_vision_v4_tracking",
+      "reason": "describe purpose while retaining version identity",
+      "intermediate_path": "tests/test_image_recovery_agent_v4_tracking.py",
+      "intermediate_module": "tests.test_image_recovery_agent_v4_tracking"
+    },
+    {
+      "old_path": "tests/test_v4_training.py",
+      "new_path": "tests/test_vision_v4_training.py",
+      "old_module": "tests.test_v4_training",
+      "new_module": "tests.test_vision_v4_training",
+      "reason": "describe purpose while retaining version identity",
+      "intermediate_path": "tests/test_image_recovery_agent_v4_training.py",
+      "intermediate_module": "tests.test_image_recovery_agent_v4_training"
+    },
+    {
+      "old_path": "tests/v3_fixtures.py",
+      "new_path": "tests/vision_v3_fixtures.py",
+      "old_module": "tests.v3_fixtures",
+      "new_module": "tests.vision_v3_fixtures",
+      "reason": "describe purpose while retaining version identity",
+      "intermediate_path": "tests/image_tracking_agent_v3_fixtures.py",
+      "intermediate_module": "tests.image_tracking_agent_v3_fixtures"
+    },
+    {
+      "old_path": "tests/v4_fixtures.py",
+      "new_path": "tests/vision_v4_fixtures.py",
+      "old_module": "tests.v4_fixtures",
+      "new_module": "tests.vision_v4_fixtures",
+      "reason": "describe purpose while retaining version identity",
+      "intermediate_path": "tests/image_recovery_agent_v4_fixtures.py",
+      "intermediate_module": "tests.image_recovery_agent_v4_fixtures"
+    },
+    {
+      "old_path": "tools/audit_v4_data.py",
+      "new_path": "tools/audit_vision_v4_data.py",
+      "old_module": "tools.audit_v4_data",
+      "new_module": "tools.audit_vision_v4_data",
+      "reason": "describe purpose while retaining version identity",
+      "intermediate_path": "tools/audit_image_recovery_agent_v4_data.py",
+      "intermediate_module": "tools.audit_image_recovery_agent_v4_data"
+    },
+    {
+      "old_path": "tools/benchmark_p1.py",
+      "new_path": "tools/benchmark_planner_p1.py",
+      "old_module": "tools.benchmark_p1",
+      "new_module": "tools.benchmark_planner_p1",
+      "reason": "describe purpose while retaining version identity",
+      "intermediate_path": "tools/benchmark_reference_state_planner_p1.py",
+      "intermediate_module": "tools.benchmark_reference_state_planner_p1"
+    },
+    {
+      "old_path": "tools/benchmark_p2.py",
+      "new_path": "tools/benchmark_compact_p2.py",
+      "old_module": "tools.benchmark_p2",
+      "new_module": "tools.benchmark_compact_p2",
+      "reason": "describe purpose while retaining version identity",
+      "intermediate_path": "tools/benchmark_compact_state_planner_p2.py",
+      "intermediate_module": "tools.benchmark_compact_state_planner_p2"
+    },
+    {
+      "old_path": "tools/benchmark_p3.py",
+      "new_path": "tools/benchmark_hierarchical_p3.py",
+      "old_module": "tools.benchmark_p3",
+      "new_module": "tools.benchmark_hierarchical_p3",
+      "reason": "describe purpose while retaining version identity",
+      "intermediate_path": "tools/benchmark_hierarchical_planner_p3.py",
+      "intermediate_module": "tools.benchmark_hierarchical_planner_p3"
+    },
+    {
+      "old_path": "tools/benchmark_v3.py",
+      "new_path": "tools/benchmark_vision_v3.py",
+      "old_module": "tools.benchmark_v3",
+      "new_module": "tools.benchmark_vision_v3",
+      "reason": "describe purpose while retaining version identity",
+      "intermediate_path": "tools/benchmark_image_tracking_agent_v3.py",
+      "intermediate_module": "tools.benchmark_image_tracking_agent_v3"
+    },
+    {
+      "old_path": "tools/benchmark_v4.py",
+      "new_path": "tools/benchmark_vision_v4.py",
+      "old_module": "tools.benchmark_v4",
+      "new_module": "tools.benchmark_vision_v4",
+      "reason": "describe purpose while retaining version identity",
+      "intermediate_path": "tools/benchmark_image_recovery_agent_v4.py",
+      "intermediate_module": "tools.benchmark_image_recovery_agent_v4"
+    },
+    {
+      "old_path": "tools/benchmark_v4_boss.py",
+      "new_path": "tools/benchmark_boss_v4.py",
+      "old_module": "tools.benchmark_v4_boss",
+      "new_module": "tools.benchmark_boss_v4",
+      "reason": "describe purpose while retaining version identity",
+      "intermediate_path": "tools/benchmark_boss_mode_agent_v4.py",
+      "intermediate_module": "tools.benchmark_boss_mode_agent_v4"
+    },
+    {
+      "old_path": "tools/diagnose_v4.py",
+      "new_path": "tools/diagnose_vision_v4.py",
+      "old_module": "tools.diagnose_v4",
+      "new_module": "tools.diagnose_vision_v4",
+      "reason": "describe purpose while retaining version identity",
+      "intermediate_path": "tools/diagnose_image_recovery_agent_v4.py",
+      "intermediate_module": "tools.diagnose_image_recovery_agent_v4"
+    },
+    {
+      "old_path": "tools/differential_p2.py",
+      "new_path": "tools/differential_compact_p2.py",
+      "old_module": "tools.differential_p2",
+      "new_module": "tools.differential_compact_p2",
+      "reason": "describe purpose while retaining version identity",
+      "intermediate_path": "tools/differential_compact_state_planner_p2.py",
+      "intermediate_module": "tools.differential_compact_state_planner_p2"
+    },
+    {
+      "old_path": "tools/differential_p2_next.py",
+      "new_path": "tools/differential_boss_p2_next.py",
+      "old_module": "tools.differential_p2_next",
+      "new_module": "tools.differential_boss_p2_next",
+      "reason": "describe purpose while retaining version identity",
+      "intermediate_path": "tools/differential_boss_search_planner_p2_next.py",
+      "intermediate_module": "tools.differential_boss_search_planner_p2_next"
+    },
+    {
+      "old_path": "tools/differential_p3.py",
+      "new_path": "tools/differential_hierarchical_p3.py",
+      "old_module": "tools.differential_p3",
+      "new_module": "tools.differential_hierarchical_p3",
+      "reason": "describe purpose while retaining version identity",
+      "intermediate_path": "tools/differential_hierarchical_planner_p3.py",
+      "intermediate_module": "tools.differential_hierarchical_planner_p3"
+    },
+    {
+      "old_path": "tools/export_v3.py",
+      "new_path": "tools/export_vision_v3.py",
+      "old_module": "tools.export_v3",
+      "new_module": "tools.export_vision_v3",
+      "reason": "describe purpose while retaining version identity",
+      "intermediate_path": "tools/export_image_tracking_agent_v3.py",
+      "intermediate_module": "tools.export_image_tracking_agent_v3"
+    },
+    {
+      "old_path": "tools/export_v4_numpy.py",
+      "new_path": "tools/export_vision_v4_numpy.py",
+      "old_module": "tools.export_v4_numpy",
+      "new_module": "tools.export_vision_v4_numpy",
+      "reason": "describe purpose while retaining version identity",
+      "intermediate_path": "tools/export_image_recovery_agent_v4_numpy.py",
+      "intermediate_module": "tools.export_image_recovery_agent_v4_numpy"
+    },
+    {
+      "old_path": "tools/package_p1.py",
+      "new_path": "tools/package_planner_p1.py",
+      "old_module": "tools.package_p1",
+      "new_module": "tools.package_planner_p1",
+      "reason": "describe purpose while retaining version identity",
+      "intermediate_path": "tools/package_reference_state_planner_p1.py",
+      "intermediate_module": "tools.package_reference_state_planner_p1"
+    },
+    {
+      "old_path": "tools/package_v3.py",
+      "new_path": "tools/package_vision_v3.py",
+      "old_module": "tools.package_v3",
+      "new_module": "tools.package_vision_v3",
+      "reason": "describe purpose while retaining version identity",
+      "intermediate_path": "tools/package_image_tracking_agent_v3.py",
+      "intermediate_module": "tools.package_image_tracking_agent_v3"
+    },
+    {
+      "old_path": "tools/package_v4.py",
+      "new_path": "tools/package_vision_v4.py",
+      "old_module": "tools.package_v4",
+      "new_module": "tools.package_vision_v4",
+      "reason": "describe purpose while retaining version identity",
+      "intermediate_path": "tools/package_image_recovery_agent_v4.py",
+      "intermediate_module": "tools.package_image_recovery_agent_v4"
+    },
+    {
+      "old_path": "tools/probe_p2_next.py",
+      "new_path": "tools/probe_boss_p2_next.py",
+      "old_module": "tools.probe_p2_next",
+      "new_module": "tools.probe_boss_p2_next",
+      "reason": "describe purpose while retaining version identity",
+      "intermediate_path": "tools/probe_boss_search_planner_p2_next.py",
+      "intermediate_module": "tools.probe_boss_search_planner_p2_next"
+    },
+    {
+      "old_path": "tools/probe_p3_dispatch.py",
+      "new_path": "tools/probe_hierarchical_p3_dispatch.py",
+      "old_module": "tools.probe_p3_dispatch",
+      "new_module": "tools.probe_hierarchical_p3_dispatch",
+      "reason": "describe purpose while retaining version identity",
+      "intermediate_path": "tools/probe_hierarchical_planner_p3_dispatch.py",
+      "intermediate_module": "tools.probe_hierarchical_planner_p3_dispatch"
+    },
+    {
+      "old_path": "tools/profile_p3.py",
+      "new_path": "tools/profile_hierarchical_p3.py",
+      "old_module": "tools.profile_p3",
+      "new_module": "tools.profile_hierarchical_p3",
+      "reason": "describe purpose while retaining version identity",
+      "intermediate_path": "tools/profile_hierarchical_planner_p3.py",
+      "intermediate_module": "tools.profile_hierarchical_planner_p3"
+    },
+    {
+      "old_path": "tools/qualify_p1.py",
+      "new_path": "tools/qualify_planner_p1.py",
+      "old_module": "tools.qualify_p1",
+      "new_module": "tools.qualify_planner_p1",
+      "reason": "describe purpose while retaining version identity",
+      "intermediate_path": "tools/qualify_reference_state_planner_p1.py",
+      "intermediate_module": "tools.qualify_reference_state_planner_p1"
+    },
+    {
+      "old_path": "tools/qualify_p2.py",
+      "new_path": "tools/qualify_compact_p2.py",
+      "old_module": "tools.qualify_p2",
+      "new_module": "tools.qualify_compact_p2",
+      "reason": "describe purpose while retaining version identity",
+      "intermediate_path": "tools/qualify_compact_state_planner_p2.py",
+      "intermediate_module": "tools.qualify_compact_state_planner_p2"
+    },
+    {
+      "old_path": "tools/qualify_p3.py",
+      "new_path": "tools/qualify_hierarchical_p3.py",
+      "old_module": "tools.qualify_p3",
+      "new_module": "tools.qualify_hierarchical_p3",
+      "reason": "describe purpose while retaining version identity",
+      "intermediate_path": "tools/qualify_hierarchical_planner_p3.py",
+      "intermediate_module": "tools.qualify_hierarchical_planner_p3"
+    },
+    {
+      "old_path": "tools/qualify_v3.py",
+      "new_path": "tools/qualify_vision_v3.py",
+      "old_module": "tools.qualify_v3",
+      "new_module": "tools.qualify_vision_v3",
+      "reason": "describe purpose while retaining version identity",
+      "intermediate_path": "tools/qualify_image_tracking_agent_v3.py",
+      "intermediate_module": "tools.qualify_image_tracking_agent_v3"
+    },
+    {
+      "old_path": "tools/qualify_v4.py",
+      "new_path": "tools/qualify_vision_v4.py",
+      "old_module": "tools.qualify_v4",
+      "new_module": "tools.qualify_vision_v4",
+      "reason": "describe purpose while retaining version identity",
+      "intermediate_path": "tools/qualify_image_recovery_agent_v4.py",
+      "intermediate_module": "tools.qualify_image_recovery_agent_v4"
+    },
+    {
+      "old_path": "tools/run_p3_acceptance.sh",
+      "new_path": "tools/run_hierarchical_p3_acceptance.sh",
+      "old_module": null,
+      "new_module": null,
+      "reason": "describe purpose while retaining version identity",
+      "intermediate_path": "tools/run_hierarchical_planner_p3_acceptance.sh",
+      "intermediate_module": null
+    },
+    {
+      "old_path": "tools/run_v4_p3_gates.py",
+      "new_path": "tools/run_vision_planner_gates.py",
+      "old_module": "tools.run_v4_p3_gates",
+      "new_module": "tools.run_vision_planner_gates",
+      "reason": "describe purpose while retaining version identity",
+      "intermediate_path": "tools/run_vision_planner_gates.py",
+      "intermediate_module": "tools.run_vision_planner_gates"
+    },
+    {
+      "old_path": "tools/train_v3.py",
+      "new_path": "tools/train_vision_v3.py",
+      "old_module": "tools.train_v3",
+      "new_module": "tools.train_vision_v3",
+      "reason": "describe purpose while retaining version identity",
+      "intermediate_path": "tools/train_image_tracking_agent_v3.py",
+      "intermediate_module": "tools.train_image_tracking_agent_v3"
+    },
+    {
+      "old_path": "tools/train_v4.py",
+      "new_path": "tools/train_vision_v4.py",
+      "old_module": "tools.train_v4",
+      "new_module": "tools.train_vision_v4",
+      "reason": "describe purpose while retaining version identity",
+      "intermediate_path": "tools/train_image_recovery_agent_v4.py",
+      "intermediate_module": "tools.train_image_recovery_agent_v4"
+    },
+    {
+      "old_path": "tools/v3_data.py",
+      "new_path": "tools/vision_v3_data.py",
+      "old_module": "tools.v3_data",
+      "new_module": "tools.vision_v3_data",
+      "reason": "describe purpose while retaining version identity",
+      "intermediate_path": "tools/image_tracking_agent_v3_data.py",
+      "intermediate_module": "tools.image_tracking_agent_v3_data"
+    },
+    {
+      "old_path": "tools/v3_wandb.py",
+      "new_path": "tools/vision_v3_wandb.py",
+      "old_module": "tools.v3_wandb",
+      "new_module": "tools.vision_v3_wandb",
+      "reason": "describe purpose while retaining version identity",
+      "intermediate_path": "tools/image_tracking_agent_v3_wandb.py",
+      "intermediate_module": "tools.image_tracking_agent_v3_wandb"
+    },
+    {
+      "old_path": "tools/v4_crop_regressions.py",
+      "new_path": "tools/vision_v4_crop_regressions.py",
+      "old_module": "tools.v4_crop_regressions",
+      "new_module": "tools.vision_v4_crop_regressions",
+      "reason": "describe purpose while retaining version identity",
+      "intermediate_path": "tools/image_recovery_agent_v4_crop_regressions.py",
+      "intermediate_module": "tools.image_recovery_agent_v4_crop_regressions"
+    },
+    {
+      "old_path": "tools/v4_data.py",
+      "new_path": "tools/vision_v4_data.py",
+      "old_module": "tools.v4_data",
+      "new_module": "tools.vision_v4_data",
+      "reason": "describe purpose while retaining version identity",
+      "intermediate_path": "tools/image_recovery_agent_v4_data.py",
+      "intermediate_module": "tools.image_recovery_agent_v4_data"
+    },
+    {
+      "old_path": "tools/v4_development.py",
+      "new_path": "tools/vision_v4_development.py",
+      "old_module": "tools.v4_development",
+      "new_module": "tools.vision_v4_development",
+      "reason": "describe purpose while retaining version identity",
+      "intermediate_path": "tools/image_recovery_agent_v4_development.py",
+      "intermediate_module": "tools.image_recovery_agent_v4_development"
+    },
+    {
+      "old_path": "tools/v4_final.py",
+      "new_path": "tools/vision_v4_final.py",
+      "old_module": "tools.v4_final",
+      "new_module": "tools.vision_v4_final",
+      "reason": "describe purpose while retaining version identity",
+      "intermediate_path": "tools/image_recovery_agent_v4_final.py",
+      "intermediate_module": "tools.image_recovery_agent_v4_final"
+    },
+    {
+      "old_path": "tools/v4_production.py",
+      "new_path": "tools/vision_v4_production.py",
+      "old_module": "tools.v4_production",
+      "new_module": "tools.vision_v4_production",
+      "reason": "describe purpose while retaining version identity",
+      "intermediate_path": "tools/image_recovery_agent_v4_production.py",
+      "intermediate_module": "tools.image_recovery_agent_v4_production"
+    },
+    {
+      "old_path": "tools/v4_reselect.py",
+      "new_path": "tools/vision_v4_reselect.py",
+      "old_module": "tools.v4_reselect",
+      "new_module": "tools.vision_v4_reselect",
+      "reason": "describe purpose while retaining version identity",
+      "intermediate_path": "tools/image_recovery_agent_v4_reselect.py",
+      "intermediate_module": "tools.image_recovery_agent_v4_reselect"
+    },
+    {
+      "old_path": "tools/v4_selection.py",
+      "new_path": "tools/vision_v4_selection.py",
+      "old_module": "tools.v4_selection",
+      "new_module": "tools.vision_v4_selection",
+      "reason": "describe purpose while retaining version identity",
+      "intermediate_path": "tools/image_recovery_agent_v4_selection.py",
+      "intermediate_module": "tools.image_recovery_agent_v4_selection"
+    },
+    {
+      "old_path": "tools/validate_p3_witnesses.py",
+      "new_path": "tools/validate_hierarchical_p3_witnesses.py",
+      "old_module": "tools.validate_p3_witnesses",
+      "new_module": "tools.validate_hierarchical_p3_witnesses",
+      "reason": "describe purpose while retaining version identity",
+      "intermediate_path": "tools/validate_hierarchical_planner_p3_witnesses.py",
+      "intermediate_module": "tools.validate_hierarchical_planner_p3_witnesses"
+    },
+    {
+      "old_path": "tools/verify_p2_next_evidence.py",
+      "new_path": "tools/verify_boss_p2_next_evidence.py",
+      "old_module": "tools.verify_p2_next_evidence",
+      "new_module": "tools.verify_boss_p2_next_evidence",
+      "reason": "describe purpose while retaining version identity",
+      "intermediate_path": "tools/verify_boss_search_planner_p2_next_evidence.py",
+      "intermediate_module": "tools.verify_boss_search_planner_p2_next_evidence"
+    }
+  ],
+  "source_snapshot_commit": "943daf2809051aa857ebc53ae62f65308e2a1964",
+  "symbol_renames": [
+    {
+      "old": "agents.v4_search.v4_search",
+      "new": "agents.vision_v4_search.vision_v4_search",
+      "intermediate": "agents.image_recovery_agent_v4_search.image_recovery_agent_v4_search"
+    },
+    {
+      "old": "tools.v4_data.audit_v4_data",
+      "new": "tools.vision_v4_data.audit_vision_v4_data",
+      "intermediate": "tools.image_recovery_agent_v4_data.audit_image_recovery_agent_v4_data"
+    }
+  ],
+  "naming_rounds": [
+    {
+      "description": "Shorten descriptive prefixes; preserve separate modules",
+      "renames": [
+        {
+          "old_path": "agents/boss_search_planner_p2_next.py",
+          "new_path": "agents/boss_p2_next.py",
+          "old_module": "agents.boss_search_planner_p2_next",
+          "new_module": "agents.boss_p2_next"
+        },
+        {
+          "old_path": "agents/image_recovery_agent_v4_bridge.py",
+          "new_path": "agents/vision_v4_bridge.py",
+          "old_module": "agents.image_recovery_agent_v4_bridge",
+          "new_module": "agents.vision_v4_bridge"
+        },
+        {
+          "old_path": "agents/image_recovery_agent_v4_model.py",
+          "new_path": "agents/vision_v4_model.py",
+          "old_module": "agents.image_recovery_agent_v4_model",
+          "new_module": "agents.vision_v4_model"
+        },
+        {
+          "old_path": "agents/image_recovery_agent_v4_tracking.py",
+          "new_path": "agents/vision_v4_tracking.py",
+          "old_module": "agents.image_recovery_agent_v4_tracking",
+          "new_module": "agents.vision_v4_tracking"
+        },
+        {
+          "old_path": "agents/image_recovery_agent_v4.py",
+          "new_path": "agents/vision_v4.py",
+          "old_module": "agents.image_recovery_agent_v4",
+          "new_module": "agents.vision_v4"
+        },
+        {
+          "old_path": "agents/image_recovery_agent_v4_perception.py",
+          "new_path": "agents/vision_v4_perception.py",
+          "old_module": "agents.image_recovery_agent_v4_perception",
+          "new_module": "agents.vision_v4_perception"
+        },
+        {
+          "old_path": "agents/image_tracking_agent_v3_perception.py",
+          "new_path": "agents/vision_v3_perception.py",
+          "old_module": "agents.image_tracking_agent_v3_perception",
+          "new_module": "agents.vision_v3_perception"
+        },
+        {
+          "old_path": "agents/hierarchical_planner_p3.py",
+          "new_path": "agents/hierarchical_p3.py",
+          "old_module": "agents.hierarchical_planner_p3",
+          "new_module": "agents.hierarchical_p3"
+        },
+        {
+          "old_path": "agents/image_recovery_agent_v4_planner.py",
+          "new_path": "agents/vision_v4_planner.py",
+          "old_module": "agents.image_recovery_agent_v4_planner",
+          "new_module": "agents.vision_v4_planner"
+        },
+        {
+          "old_path": "agents/image_tracking_agent_v3_types.py",
+          "new_path": "agents/vision_v3_types.py",
+          "old_module": "agents.image_tracking_agent_v3_types",
+          "new_module": "agents.vision_v3_types"
+        },
+        {
+          "old_path": "agents/image_tracking_agent_v3_planner.py",
+          "new_path": "agents/vision_v3_planner.py",
+          "old_module": "agents.image_tracking_agent_v3_planner",
+          "new_module": "agents.vision_v3_planner"
+        },
+        {
+          "old_path": "agents/image_tracking_agent_v3.py",
+          "new_path": "agents/vision_v3.py",
+          "old_module": "agents.image_tracking_agent_v3",
+          "new_module": "agents.vision_v3"
+        },
+        {
+          "old_path": "agents/image_recovery_agent_v4_backend.py",
+          "new_path": "agents/vision_v4_backend.py",
+          "old_module": "agents.image_recovery_agent_v4_backend",
+          "new_module": "agents.vision_v4_backend"
+        },
+        {
+          "old_path": "agents/image_tracking_agent_v3_model.py",
+          "new_path": "agents/vision_v3_model.py",
+          "old_module": "agents.image_tracking_agent_v3_model",
+          "new_module": "agents.vision_v3_model"
+        },
+        {
+          "old_path": "agents/reference_state_planner_p1.py",
+          "new_path": "agents/planner_p1.py",
+          "old_module": "agents.reference_state_planner_p1",
+          "new_module": "agents.planner_p1"
+        },
+        {
+          "old_path": "agents/image_tracking_agent_v3_tracking.py",
+          "new_path": "agents/vision_v3_tracking.py",
+          "old_module": "agents.image_tracking_agent_v3_tracking",
+          "new_module": "agents.vision_v3_tracking"
+        },
+        {
+          "old_path": "agents/boss_mode_agent_v4.py",
+          "new_path": "agents/boss_v4.py",
+          "old_module": "agents.boss_mode_agent_v4",
+          "new_module": "agents.boss_v4"
+        },
+        {
+          "old_path": "agents/compact_state_planner_p2.py",
+          "new_path": "agents/compact_p2.py",
+          "old_module": "agents.compact_state_planner_p2",
+          "new_module": "agents.compact_p2"
+        },
+        {
+          "old_path": "agents/image_recovery_agent_v4_search.py",
+          "new_path": "agents/vision_v4_search.py",
+          "old_module": "agents.image_recovery_agent_v4_search",
+          "new_module": "agents.vision_v4_search"
+        },
+        {
+          "old_path": "agents/image_recovery_agent_v4_types.py",
+          "new_path": "agents/vision_v4_types.py",
+          "old_module": "agents.image_recovery_agent_v4_types",
+          "new_module": "agents.vision_v4_types"
+        },
+        {
+          "old_path": "agents/image_tracking_agent_v3_bridge.py",
+          "new_path": "agents/vision_v3_bridge.py",
+          "old_module": "agents.image_tracking_agent_v3_bridge",
+          "new_module": "agents.vision_v3_bridge"
+        },
+        {
+          "old_path": "tools/image_recovery_agent_v4_production.py",
+          "new_path": "tools/vision_v4_production.py",
+          "old_module": "tools.image_recovery_agent_v4_production",
+          "new_module": "tools.vision_v4_production"
+        },
+        {
+          "old_path": "tools/package_image_recovery_agent_v4.py",
+          "new_path": "tools/package_vision_v4.py",
+          "old_module": "tools.package_image_recovery_agent_v4",
+          "new_module": "tools.package_vision_v4"
+        },
+        {
+          "old_path": "tools/probe_boss_search_planner_p2_next.py",
+          "new_path": "tools/probe_boss_p2_next.py",
+          "old_module": "tools.probe_boss_search_planner_p2_next",
+          "new_module": "tools.probe_boss_p2_next"
+        },
+        {
+          "old_path": "tools/validate_hierarchical_planner_p3_witnesses.py",
+          "new_path": "tools/validate_hierarchical_p3_witnesses.py",
+          "old_module": "tools.validate_hierarchical_planner_p3_witnesses",
+          "new_module": "tools.validate_hierarchical_p3_witnesses"
+        },
+        {
+          "old_path": "tools/verify_boss_search_planner_p2_next_evidence.py",
+          "new_path": "tools/verify_boss_p2_next_evidence.py",
+          "old_module": "tools.verify_boss_search_planner_p2_next_evidence",
+          "new_module": "tools.verify_boss_p2_next_evidence"
+        },
+        {
+          "old_path": "tools/image_tracking_agent_v3_wandb.py",
+          "new_path": "tools/vision_v3_wandb.py",
+          "old_module": "tools.image_tracking_agent_v3_wandb",
+          "new_module": "tools.vision_v3_wandb"
+        },
+        {
+          "old_path": "tools/benchmark_boss_mode_agent_v4.py",
+          "new_path": "tools/benchmark_boss_v4.py",
+          "old_module": "tools.benchmark_boss_mode_agent_v4",
+          "new_module": "tools.benchmark_boss_v4"
+        },
+        {
+          "old_path": "tools/image_recovery_agent_v4_selection.py",
+          "new_path": "tools/vision_v4_selection.py",
+          "old_module": "tools.image_recovery_agent_v4_selection",
+          "new_module": "tools.vision_v4_selection"
+        },
+        {
+          "old_path": "tools/package_image_tracking_agent_v3.py",
+          "new_path": "tools/package_vision_v3.py",
+          "old_module": "tools.package_image_tracking_agent_v3",
+          "new_module": "tools.package_vision_v3"
+        },
+        {
+          "old_path": "tools/export_image_recovery_agent_v4_numpy.py",
+          "new_path": "tools/export_vision_v4_numpy.py",
+          "old_module": "tools.export_image_recovery_agent_v4_numpy",
+          "new_module": "tools.export_vision_v4_numpy"
+        },
+        {
+          "old_path": "tools/image_recovery_agent_v4_data.py",
+          "new_path": "tools/vision_v4_data.py",
+          "old_module": "tools.image_recovery_agent_v4_data",
+          "new_module": "tools.vision_v4_data"
+        },
+        {
+          "old_path": "tools/benchmark_compact_state_planner_p2.py",
+          "new_path": "tools/benchmark_compact_p2.py",
+          "old_module": "tools.benchmark_compact_state_planner_p2",
+          "new_module": "tools.benchmark_compact_p2"
+        },
+        {
+          "old_path": "tools/benchmark_reference_state_planner_p1.py",
+          "new_path": "tools/benchmark_planner_p1.py",
+          "old_module": "tools.benchmark_reference_state_planner_p1",
+          "new_module": "tools.benchmark_planner_p1"
+        },
+        {
+          "old_path": "tools/differential_hierarchical_planner_p3.py",
+          "new_path": "tools/differential_hierarchical_p3.py",
+          "old_module": "tools.differential_hierarchical_planner_p3",
+          "new_module": "tools.differential_hierarchical_p3"
+        },
+        {
+          "old_path": "tools/image_recovery_agent_v4_development.py",
+          "new_path": "tools/vision_v4_development.py",
+          "old_module": "tools.image_recovery_agent_v4_development",
+          "new_module": "tools.vision_v4_development"
+        },
+        {
+          "old_path": "tools/benchmark_image_recovery_agent_v4.py",
+          "new_path": "tools/benchmark_vision_v4.py",
+          "old_module": "tools.benchmark_image_recovery_agent_v4",
+          "new_module": "tools.benchmark_vision_v4"
+        },
+        {
+          "old_path": "tools/image_recovery_agent_v4_final.py",
+          "new_path": "tools/vision_v4_final.py",
+          "old_module": "tools.image_recovery_agent_v4_final",
+          "new_module": "tools.vision_v4_final"
+        },
+        {
+          "old_path": "tools/image_recovery_agent_v4_reselect.py",
+          "new_path": "tools/vision_v4_reselect.py",
+          "old_module": "tools.image_recovery_agent_v4_reselect",
+          "new_module": "tools.vision_v4_reselect"
+        },
+        {
+          "old_path": "tools/qualify_image_recovery_agent_v4.py",
+          "new_path": "tools/qualify_vision_v4.py",
+          "old_module": "tools.qualify_image_recovery_agent_v4",
+          "new_module": "tools.qualify_vision_v4"
+        },
+        {
+          "old_path": "tools/audit_image_recovery_agent_v4_data.py",
+          "new_path": "tools/audit_vision_v4_data.py",
+          "old_module": "tools.audit_image_recovery_agent_v4_data",
+          "new_module": "tools.audit_vision_v4_data"
+        },
+        {
+          "old_path": "tools/diagnose_image_recovery_agent_v4.py",
+          "new_path": "tools/diagnose_vision_v4.py",
+          "old_module": "tools.diagnose_image_recovery_agent_v4",
+          "new_module": "tools.diagnose_vision_v4"
+        },
+        {
+          "old_path": "tools/train_image_recovery_agent_v4.py",
+          "new_path": "tools/train_vision_v4.py",
+          "old_module": "tools.train_image_recovery_agent_v4",
+          "new_module": "tools.train_vision_v4"
+        },
+        {
+          "old_path": "tools/differential_boss_search_planner_p2_next.py",
+          "new_path": "tools/differential_boss_p2_next.py",
+          "old_module": "tools.differential_boss_search_planner_p2_next",
+          "new_module": "tools.differential_boss_p2_next"
+        },
+        {
+          "old_path": "tools/qualify_image_tracking_agent_v3.py",
+          "new_path": "tools/qualify_vision_v3.py",
+          "old_module": "tools.qualify_image_tracking_agent_v3",
+          "new_module": "tools.qualify_vision_v3"
+        },
+        {
+          "old_path": "tools/package_reference_state_planner_p1.py",
+          "new_path": "tools/package_planner_p1.py",
+          "old_module": "tools.package_reference_state_planner_p1",
+          "new_module": "tools.package_planner_p1"
+        },
+        {
+          "old_path": "tools/image_tracking_agent_v3_data.py",
+          "new_path": "tools/vision_v3_data.py",
+          "old_module": "tools.image_tracking_agent_v3_data",
+          "new_module": "tools.vision_v3_data"
+        },
+        {
+          "old_path": "tools/qualify_reference_state_planner_p1.py",
+          "new_path": "tools/qualify_planner_p1.py",
+          "old_module": "tools.qualify_reference_state_planner_p1",
+          "new_module": "tools.qualify_planner_p1"
+        },
+        {
+          "old_path": "tools/benchmark_image_tracking_agent_v3.py",
+          "new_path": "tools/benchmark_vision_v3.py",
+          "old_module": "tools.benchmark_image_tracking_agent_v3",
+          "new_module": "tools.benchmark_vision_v3"
+        },
+        {
+          "old_path": "tools/differential_compact_state_planner_p2.py",
+          "new_path": "tools/differential_compact_p2.py",
+          "old_module": "tools.differential_compact_state_planner_p2",
+          "new_module": "tools.differential_compact_p2"
+        },
+        {
+          "old_path": "tools/run_hierarchical_planner_p3_acceptance.sh",
+          "new_path": "tools/run_hierarchical_p3_acceptance.sh",
+          "old_module": null,
+          "new_module": null
+        },
+        {
+          "old_path": "tools/image_recovery_agent_v4_crop_regressions.py",
+          "new_path": "tools/vision_v4_crop_regressions.py",
+          "old_module": "tools.image_recovery_agent_v4_crop_regressions",
+          "new_module": "tools.vision_v4_crop_regressions"
+        },
+        {
+          "old_path": "tools/benchmark_hierarchical_planner_p3.py",
+          "new_path": "tools/benchmark_hierarchical_p3.py",
+          "old_module": "tools.benchmark_hierarchical_planner_p3",
+          "new_module": "tools.benchmark_hierarchical_p3"
+        },
+        {
+          "old_path": "tools/profile_hierarchical_planner_p3.py",
+          "new_path": "tools/profile_hierarchical_p3.py",
+          "old_module": "tools.profile_hierarchical_planner_p3",
+          "new_module": "tools.profile_hierarchical_p3"
+        },
+        {
+          "old_path": "tools/train_image_tracking_agent_v3.py",
+          "new_path": "tools/train_vision_v3.py",
+          "old_module": "tools.train_image_tracking_agent_v3",
+          "new_module": "tools.train_vision_v3"
+        },
+        {
+          "old_path": "tools/export_image_tracking_agent_v3.py",
+          "new_path": "tools/export_vision_v3.py",
+          "old_module": "tools.export_image_tracking_agent_v3",
+          "new_module": "tools.export_vision_v3"
+        },
+        {
+          "old_path": "tools/qualify_compact_state_planner_p2.py",
+          "new_path": "tools/qualify_compact_p2.py",
+          "old_module": "tools.qualify_compact_state_planner_p2",
+          "new_module": "tools.qualify_compact_p2"
+        },
+        {
+          "old_path": "tools/qualify_hierarchical_planner_p3.py",
+          "new_path": "tools/qualify_hierarchical_p3.py",
+          "old_module": "tools.qualify_hierarchical_planner_p3",
+          "new_module": "tools.qualify_hierarchical_p3"
+        },
+        {
+          "old_path": "tools/probe_hierarchical_planner_p3_dispatch.py",
+          "new_path": "tools/probe_hierarchical_p3_dispatch.py",
+          "old_module": "tools.probe_hierarchical_planner_p3_dispatch",
+          "new_module": "tools.probe_hierarchical_p3_dispatch"
+        },
+        {
+          "old_path": "tests/test_image_recovery_agent_v4_perception.py",
+          "new_path": "tests/test_vision_v4_perception.py",
+          "old_module": "tests.test_image_recovery_agent_v4_perception",
+          "new_module": "tests.test_vision_v4_perception"
+        },
+        {
+          "old_path": "tests/test_image_recovery_agent_v4_training.py",
+          "new_path": "tests/test_vision_v4_training.py",
+          "old_module": "tests.test_image_recovery_agent_v4_training",
+          "new_module": "tests.test_vision_v4_training"
+        },
+        {
+          "old_path": "tests/test_image_tracking_agent_v3_data.py",
+          "new_path": "tests/test_vision_v3_data.py",
+          "old_module": "tests.test_image_tracking_agent_v3_data",
+          "new_module": "tests.test_vision_v3_data"
+        },
+        {
+          "old_path": "tests/test_image_tracking_agent_v3_model.py",
+          "new_path": "tests/test_vision_v3_model.py",
+          "old_module": "tests.test_image_tracking_agent_v3_model",
+          "new_module": "tests.test_vision_v3_model"
+        },
+        {
+          "old_path": "tests/test_image_tracking_agent_v3_export.py",
+          "new_path": "tests/test_vision_v3_export.py",
+          "old_module": "tests.test_image_tracking_agent_v3_export",
+          "new_module": "tests.test_vision_v3_export"
+        },
+        {
+          "old_path": "tests/test_compact_state_planner_p2_state.py",
+          "new_path": "tests/test_compact_p2_state.py",
+          "old_module": "tests.test_compact_state_planner_p2_state",
+          "new_module": "tests.test_compact_p2_state"
+        },
+        {
+          "old_path": "tests/test_image_recovery_agent_v4_qualification.py",
+          "new_path": "tests/test_vision_v4_qualification.py",
+          "old_module": "tests.test_image_recovery_agent_v4_qualification",
+          "new_module": "tests.test_vision_v4_qualification"
+        },
+        {
+          "old_path": "tests/test_reference_state_planner_p1_state.py",
+          "new_path": "tests/test_planner_p1_state.py",
+          "old_module": "tests.test_reference_state_planner_p1_state",
+          "new_module": "tests.test_planner_p1_state"
+        },
+        {
+          "old_path": "tests/test_image_tracking_agent_v3_agent.py",
+          "new_path": "tests/test_vision_v3_agent.py",
+          "old_module": "tests.test_image_tracking_agent_v3_agent",
+          "new_module": "tests.test_vision_v3_agent"
+        },
+        {
+          "old_path": "tests/test_image_tracking_agent_v3_bridge.py",
+          "new_path": "tests/test_vision_v3_bridge.py",
+          "old_module": "tests.test_image_tracking_agent_v3_bridge",
+          "new_module": "tests.test_vision_v3_bridge"
+        },
+        {
+          "old_path": "tests/image_recovery_agent_v4_fixtures.py",
+          "new_path": "tests/vision_v4_fixtures.py",
+          "old_module": "tests.image_recovery_agent_v4_fixtures",
+          "new_module": "tests.vision_v4_fixtures"
+        },
+        {
+          "old_path": "tests/test_hierarchical_planner_p3_dispatch.py",
+          "new_path": "tests/test_hierarchical_p3_dispatch.py",
+          "old_module": "tests.test_hierarchical_planner_p3_dispatch",
+          "new_module": "tests.test_hierarchical_p3_dispatch"
+        },
+        {
+          "old_path": "tests/test_image_recovery_agent_v4_tracking.py",
+          "new_path": "tests/test_vision_v4_tracking.py",
+          "old_module": "tests.test_image_recovery_agent_v4_tracking",
+          "new_module": "tests.test_vision_v4_tracking"
+        },
+        {
+          "old_path": "tests/test_boss_search_planner_p2_next.py",
+          "new_path": "tests/test_boss_p2_next.py",
+          "old_module": "tests.test_boss_search_planner_p2_next",
+          "new_module": "tests.test_boss_p2_next"
+        },
+        {
+          "old_path": "tests/test_image_tracking_agent_v3_harness.py",
+          "new_path": "tests/test_vision_v3_harness.py",
+          "old_module": "tests.test_image_tracking_agent_v3_harness",
+          "new_module": "tests.test_vision_v3_harness"
+        },
+        {
+          "old_path": "tests/test_image_recovery_agent_v4_backend.py",
+          "new_path": "tests/test_vision_v4_backend.py",
+          "old_module": "tests.test_image_recovery_agent_v4_backend",
+          "new_module": "tests.test_vision_v4_backend"
+        },
+        {
+          "old_path": "tests/test_image_tracking_agent_v3_package.py",
+          "new_path": "tests/test_vision_v3_package.py",
+          "old_module": "tests.test_image_tracking_agent_v3_package",
+          "new_module": "tests.test_vision_v3_package"
+        },
+        {
+          "old_path": "tests/test_image_recovery_agent_v4_harness.py",
+          "new_path": "tests/test_vision_v4_harness.py",
+          "old_module": "tests.test_image_recovery_agent_v4_harness",
+          "new_module": "tests.test_vision_v4_harness"
+        },
+        {
+          "old_path": "tests/test_compact_state_planner_p2_step.py",
+          "new_path": "tests/test_compact_p2_step.py",
+          "old_module": "tests.test_compact_state_planner_p2_step",
+          "new_module": "tests.test_compact_p2_step"
+        },
+        {
+          "old_path": "tests/test_reference_state_planner_p1_harness.py",
+          "new_path": "tests/test_planner_p1_harness.py",
+          "old_module": "tests.test_reference_state_planner_p1_harness",
+          "new_module": "tests.test_planner_p1_harness"
+        },
+        {
+          "old_path": "tests/test_compact_state_planner_p2_qualification.py",
+          "new_path": "tests/test_compact_p2_qualification.py",
+          "old_module": "tests.test_compact_state_planner_p2_qualification",
+          "new_module": "tests.test_compact_p2_qualification"
+        },
+        {
+          "old_path": "tests/test_reference_state_planner_p1_agent.py",
+          "new_path": "tests/test_planner_p1_agent.py",
+          "old_module": "tests.test_reference_state_planner_p1_agent",
+          "new_module": "tests.test_planner_p1_agent"
+        },
+        {
+          "old_path": "tests/test_compact_state_planner_p2_generated.py",
+          "new_path": "tests/test_compact_p2_generated.py",
+          "old_module": "tests.test_compact_state_planner_p2_generated",
+          "new_module": "tests.test_compact_p2_generated"
+        },
+        {
+          "old_path": "tests/test_compact_state_planner_p2_package.py",
+          "new_path": "tests/test_compact_p2_package.py",
+          "old_module": "tests.test_compact_state_planner_p2_package",
+          "new_module": "tests.test_compact_p2_package"
+        },
+        {
+          "old_path": "tests/test_reference_state_planner_p1_package.py",
+          "new_path": "tests/test_planner_p1_package.py",
+          "old_module": "tests.test_reference_state_planner_p1_package",
+          "new_module": "tests.test_planner_p1_package"
+        },
+        {
+          "old_path": "tests/test_compact_state_planner_p2_agent.py",
+          "new_path": "tests/test_compact_p2_agent.py",
+          "old_module": "tests.test_compact_state_planner_p2_agent",
+          "new_module": "tests.test_compact_p2_agent"
+        },
+        {
+          "old_path": "tests/test_image_recovery_agent_v4_package.py",
+          "new_path": "tests/test_vision_v4_package.py",
+          "old_module": "tests.test_image_recovery_agent_v4_package",
+          "new_module": "tests.test_vision_v4_package"
+        },
+        {
+          "old_path": "tests/image_tracking_agent_v3_fixtures.py",
+          "new_path": "tests/vision_v3_fixtures.py",
+          "old_module": "tests.image_tracking_agent_v3_fixtures",
+          "new_module": "tests.vision_v3_fixtures"
+        },
+        {
+          "old_path": "tests/boss_search_planner_p2_next_fixtures.py",
+          "new_path": "tests/boss_p2_next_fixtures.py",
+          "old_module": "tests.boss_search_planner_p2_next_fixtures",
+          "new_module": "tests.boss_p2_next_fixtures"
+        },
+        {
+          "old_path": "tests/test_image_tracking_agent_v3_tracking.py",
+          "new_path": "tests/test_vision_v3_tracking.py",
+          "old_module": "tests.test_image_tracking_agent_v3_tracking",
+          "new_module": "tests.test_vision_v3_tracking"
+        },
+        {
+          "old_path": "tests/test_image_recovery_agent_v4_diagnostics.py",
+          "new_path": "tests/test_vision_v4_diagnostics.py",
+          "old_module": "tests.test_image_recovery_agent_v4_diagnostics",
+          "new_module": "tests.test_vision_v4_diagnostics"
+        },
+        {
+          "old_path": "tests/test_image_recovery_agent_v4_model.py",
+          "new_path": "tests/test_vision_v4_model.py",
+          "old_module": "tests.test_image_recovery_agent_v4_model",
+          "new_module": "tests.test_vision_v4_model"
+        },
+        {
+          "old_path": "tests/test_image_recovery_agent_v4_episode_cost.py",
+          "new_path": "tests/test_vision_v4_episode_cost.py",
+          "old_module": "tests.test_image_recovery_agent_v4_episode_cost",
+          "new_module": "tests.test_vision_v4_episode_cost"
+        },
+        {
+          "old_path": "tests/test_image_recovery_agent_v4_numpy_export.py",
+          "new_path": "tests/test_vision_v4_numpy_export.py",
+          "old_module": "tests.test_image_recovery_agent_v4_numpy_export",
+          "new_module": "tests.test_vision_v4_numpy_export"
+        },
+        {
+          "old_path": "tests/compact_state_planner_p2_fixtures.py",
+          "new_path": "tests/compact_p2_fixtures.py",
+          "old_module": "tests.compact_state_planner_p2_fixtures",
+          "new_module": "tests.compact_p2_fixtures"
+        },
+        {
+          "old_path": "tests/test_image_recovery_agent_v4_development.py",
+          "new_path": "tests/test_vision_v4_development.py",
+          "old_module": "tests.test_image_recovery_agent_v4_development",
+          "new_module": "tests.test_vision_v4_development"
+        },
+        {
+          "old_path": "tests/hierarchical_planner_p3_fixtures.py",
+          "new_path": "tests/hierarchical_p3_fixtures.py",
+          "old_module": "tests.hierarchical_planner_p3_fixtures",
+          "new_module": "tests.hierarchical_p3_fixtures"
+        },
+        {
+          "old_path": "tests/test_compact_state_planner_p2_search.py",
+          "new_path": "tests/test_compact_p2_search.py",
+          "old_module": "tests.test_compact_state_planner_p2_search",
+          "new_module": "tests.test_compact_p2_search"
+        },
+        {
+          "old_path": "tests/test_hierarchical_planner_p3_package.py",
+          "new_path": "tests/test_hierarchical_p3_package.py",
+          "old_module": "tests.test_hierarchical_planner_p3_package",
+          "new_module": "tests.test_hierarchical_p3_package"
+        },
+        {
+          "old_path": "tests/test_reference_state_planner_p1_generated.py",
+          "new_path": "tests/test_planner_p1_generated.py",
+          "old_module": "tests.test_reference_state_planner_p1_generated",
+          "new_module": "tests.test_planner_p1_generated"
+        },
+        {
+          "old_path": "tests/test_image_recovery_agent_v4_data.py",
+          "new_path": "tests/test_vision_v4_data.py",
+          "old_module": "tests.test_image_recovery_agent_v4_data",
+          "new_module": "tests.test_vision_v4_data"
+        },
+        {
+          "old_path": "tests/test_image_recovery_agent_v4_agent.py",
+          "new_path": "tests/test_vision_v4_agent.py",
+          "old_module": "tests.test_image_recovery_agent_v4_agent",
+          "new_module": "tests.test_vision_v4_agent"
+        },
+        {
+          "old_path": "tests/test_image_recovery_agent_v4_export.py",
+          "new_path": "tests/test_vision_v4_export.py",
+          "old_module": "tests.test_image_recovery_agent_v4_export",
+          "new_module": "tests.test_vision_v4_export"
+        },
+        {
+          "old_path": "tests/test_reference_state_planner_p1_qualification.py",
+          "new_path": "tests/test_planner_p1_qualification.py",
+          "old_module": "tests.test_reference_state_planner_p1_qualification",
+          "new_module": "tests.test_planner_p1_qualification"
+        },
+        {
+          "old_path": "tests/test_hierarchical_planner_p3_search.py",
+          "new_path": "tests/test_hierarchical_p3_search.py",
+          "old_module": "tests.test_hierarchical_planner_p3_search",
+          "new_module": "tests.test_hierarchical_p3_search"
+        },
+        {
+          "old_path": "tests/test_image_recovery_agent_v4_crop_regressions.py",
+          "new_path": "tests/test_vision_v4_crop_regressions.py",
+          "old_module": "tests.test_image_recovery_agent_v4_crop_regressions",
+          "new_module": "tests.test_vision_v4_crop_regressions"
+        },
+        {
+          "old_path": "tests/test_image_tracking_agent_v3_wandb.py",
+          "new_path": "tests/test_vision_v3_wandb.py",
+          "old_module": "tests.test_image_tracking_agent_v3_wandb",
+          "new_module": "tests.test_vision_v3_wandb"
+        },
+        {
+          "old_path": "tests/test_hierarchical_planner_p3_qualification.py",
+          "new_path": "tests/test_hierarchical_p3_qualification.py",
+          "old_module": "tests.test_hierarchical_planner_p3_qualification",
+          "new_module": "tests.test_hierarchical_p3_qualification"
+        },
+        {
+          "old_path": "tests/test_image_recovery_agent_v4_bridge.py",
+          "new_path": "tests/test_vision_v4_bridge.py",
+          "old_module": "tests.test_image_recovery_agent_v4_bridge",
+          "new_module": "tests.test_vision_v4_bridge"
+        },
+        {
+          "old_path": "tests/test_hierarchical_planner_p3_adapter.py",
+          "new_path": "tests/test_hierarchical_p3_adapter.py",
+          "old_module": "tests.test_hierarchical_planner_p3_adapter",
+          "new_module": "tests.test_hierarchical_p3_adapter"
+        },
+        {
+          "old_path": "tests/test_reference_state_planner_p1_search.py",
+          "new_path": "tests/test_planner_p1_search.py",
+          "old_module": "tests.test_reference_state_planner_p1_search",
+          "new_module": "tests.test_planner_p1_search"
+        },
+        {
+          "old_path": "tests/test_image_tracking_agent_v3_qualification.py",
+          "new_path": "tests/test_vision_v3_qualification.py",
+          "old_module": "tests.test_image_tracking_agent_v3_qualification",
+          "new_module": "tests.test_vision_v3_qualification"
+        },
+        {
+          "old_path": "tests/reference_state_planner_p1_fixtures.py",
+          "new_path": "tests/planner_p1_fixtures.py",
+          "old_module": "tests.reference_state_planner_p1_fixtures",
+          "new_module": "tests.planner_p1_fixtures"
+        }
+      ],
+      "source_commit": "ca7f4b442abf03a5859193a64e89dbd7aff51401"
+    }
+  ],
+  "artifact_alias_manifest": "docs/reproducibility/deduplication.json",
+  "current_submission_manifest": "submissions/manifest.json",
+  "source_extractions": [
+    {
+      "source_commit": "bd5ef94f66b937a6377989362cb514fe5efd5e73",
+      "old_path": "capstone-project.py",
+      "component": "starter Agent cell imports and class",
+      "new_path": "agents/starter.py",
+      "benchmark_source_sha256": "acfd718212104aef1b685f34d1571b130e40748dc346978463ff73da5230abec",
+      "note": "Marimo files removed; original Jupyter notebooks retained."
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+test_v4_agent (unittest.loader._FailedTest.test_v4_agent) ... ERROR
+
+======================================================================
+ERROR: test_v4_agent (unittest.loader._FailedTest.test_v4_agent)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_v4_agent
+Traceback (most recent call last):
+  File "/Users/enxi/.local/share/uv/python/cpython-3.13.15-macos-aarch64-none/lib/python3.13/unittest/loader.py", line 141, in loadTestsFromName
+    module = __import__(module_name)
+  File "/Users/enxi/coding/autistic-sv-67/tests/test_v4_agent.py", line 9, in <module>
+    from agents.v4 import Agent, PerceptionUncertainty
+ModuleNotFoundError: No module named 'agents.v4'
+
+
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+FAILED (errors=1)

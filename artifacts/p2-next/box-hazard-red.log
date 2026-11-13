@@ -1,0 +1,52 @@
+F
+======================================================================
+FAIL: test_boxes_cannot_be_pushed_onto_a_collidable_hazard (tests.test_p2_next.OneKeyTests.test_boxes_cannot_be_pushed_onto_a_collidable_hazard)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/enxi/coding/autistic-sv-67/tests/test_p2_next.py", line 58, in test_boxes_cannot_be_pushed_onto_a_collidable_hazard
+    self.compare(state, (Action.RIGHT, Action.WAIT))
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/enxi/coding/autistic-sv-67/tests/test_p2_next.py", line 45, in compare
+    self.assertEqual(semantic_projection(project(step(state, alternative)), board.keys.bit_count()),
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        semantic_projection(project_fast(board, nxt, score + delta), board.keys.bit_count()),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        str(alternative))
+        ^^^^^^^^^^^^^^^^^
+AssertionError: Tuples differ: (1, -[17 chars]((0, 8, 'grid', (('_inventory_order', (('ids',[325 chars]))))) != (1, -[17 chars]((0, 9, 'grid', (('_inventory_order', (('ids',[326 chars])))))
+
+First differing element 4:
+((0, 8, 'grid', (('_inventory_order', (('ids',[324 chars])))))
+((0, 9, 'grid', (('_inventory_order', (('ids',[325 chars])))))
+
+  (1,
+   -3,
+   False,
+   False,
+   ((0,
+-    8,
+?    ^
+
++    9,
+?    ^
+
+     'grid',
+     (('_inventory_order', (('ids', ()),)),
+      ('agent', ()),
+      ('collidable', ()),
+      ('health', (('current_health', 5), ('max_health', 5))),
+      ('inventory', (('item_ids', ()),)),
+      ('status', (('effect_ids', ()),)))),
+    (1, 15, 'grid', (('exit', ()),)),
+-   (2, 9, 'grid', (('blocking', ()), ('pushable', ()))),
+?       ^
+
++   (2, 10, 'grid', (('blocking', ()), ('pushable', ()))),
+?       ^^
+
+    (3, 10, 'grid', (('collidable', ()), ('damage', (('amount', 2),)))))) : right
+
+----------------------------------------------------------------------
+Ran 1 test in 0.002s
+
+FAILED (failures=1)

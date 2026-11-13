@@ -1,0 +1,31 @@
+error[unresolved-attribute]: Attribute `_actions` is not defined on `None` in union `ReferenceAgent | None`
+    --> agents/p3.py:2427:18
+     |
+2427 |         suffix = backend._actions[backend._next :]
+     |                  ^^^^^^^^^^^^^^^^
+
+error[unresolved-attribute]: Attribute `_next` is not defined on `None` in union `ReferenceAgent | None`
+    --> agents/p3.py:2427:35
+     |
+2427 |         suffix = backend._actions[backend._next :]
+     |                                   ^^^^^^^^^^^^^
+
+error[invalid-assignment]: Object of type `tuple[Action, ...]` is not assignable to attribute `_actions` on type `ReferenceAgent | None`
+    --> agents/p3.py:2437:9
+     |
+2437 |         backend._actions, backend._keys, backend._next = suffix, tuple(keys), 0
+     |         ^^^^^^^^^^^^^^^^
+
+error[invalid-assignment]: Object of type `tuple[tuple[Hashable, ...], ...]` is not assignable to attribute `_keys` on type `ReferenceAgent | None`
+    --> agents/p3.py:2437:27
+     |
+2437 |         backend._actions, backend._keys, backend._next = suffix, tuple(keys), 0
+     |                           ^^^^^^^^^^^^^
+
+error[invalid-assignment]: Object of type `Literal[0]` is not assignable to attribute `_next` on type `ReferenceAgent | None`
+    --> agents/p3.py:2437:42
+     |
+2437 |         backend._actions, backend._keys, backend._next = suffix, tuple(keys), 0
+     |                                          ^^^^^^^^^^^^^
+
+Found 5 diagnostics

@@ -1,0 +1,62 @@
+# Reproducibility assets stored with Git LFS
+"artifacts/p1/pre-cleanup/p1-supplementary.zip" filter=lfs diff=lfs merge=lfs -text
+"artifacts/p1/pre-compatibility/p1-supplementary.zip" filter=lfs diff=lfs merge=lfs -text
+"artifacts/p2/p2-frozen-e478c1cc-551ee003.zip" filter=lfs diff=lfs merge=lfs -text
+"artifacts/p2/p2-supplementary.zip" filter=lfs diff=lfs merge=lfs -text
+"artifacts/p3/p3-b4-repair-d4877284.tar.gz" filter=lfs diff=lfs merge=lfs -text
+"artifacts/p3/p3-frozen-d4877284.tar.gz" filter=lfs diff=lfs merge=lfs -text
+"artifacts/p3/p3-structured-a8efb9c0.tar.gz" filter=lfs diff=lfs merge=lfs -text
+"artifacts/v3/checkpoints/final-datasets-v3.tar.gz" filter=lfs diff=lfs merge=lfs -text
+"artifacts/v3/checkpoints/final-datasets-v4.tar.gz" filter=lfs diff=lfs merge=lfs -text
+"artifacts/v3/checkpoints/final-datasets-v5.tar.gz" filter=lfs diff=lfs merge=lfs -text
+"artifacts/v3/checkpoints/task1.zip" filter=lfs diff=lfs merge=lfs -text
+"artifacts/v3/checkpoints/task2-datasets-v2.tar" filter=lfs diff=lfs merge=lfs -text
+"artifacts/v3/checkpoints/task2.zip" filter=lfs diff=lfs merge=lfs -text
+"artifacts/v3/checkpoints/task3.zip" filter=lfs diff=lfs merge=lfs -text
+"artifacts/v3/models/feature-linear/weights.npz" filter=lfs diff=lfs merge=lfs -text
+"artifacts/v3/models/full-seed20261109-export-local/model.pt" filter=lfs diff=lfs merge=lfs -text
+"artifacts/v3/models/pilot-validation-snapshot.pt" filter=lfs diff=lfs merge=lfs -text
+"artifacts/v3/models/selected-export/model.pt" filter=lfs diff=lfs merge=lfs -text
+"artifacts/v3/models/untrained-cold-probe/checkpoint.pt" filter=lfs diff=lfs merge=lfs -text
+"artifacts/v3/runs/full-compile-aug-seed20261109/best.pt" filter=lfs diff=lfs merge=lfs -text
+"artifacts/v3/runs/full-compile-aug-seed20261110/best.pt" filter=lfs diff=lfs merge=lfs -text
+"artifacts/v3/runs/full-compile-aug-seed20261111/best.pt" filter=lfs diff=lfs merge=lfs -text
+"artifacts/v3/runs/pilot-compile-seed20261109/best.pt" filter=lfs diff=lfs merge=lfs -text
+"artifacts/v3/supplementary/code-models-reviewed.tar.gz" filter=lfs diff=lfs merge=lfs -text
+"artifacts/v3/supplementary/code-models.tar.gz" filter=lfs diff=lfs merge=lfs -text
+"artifacts/v4/checkpoints/implemented-runtime-pending-remote.tar.gz" filter=lfs diff=lfs merge=lfs -text
+"artifacts/v4/checkpoints/source-v4-admissible-stage.tar.gz" filter=lfs diff=lfs merge=lfs -text
+"artifacts/v4/checkpoints/source-v4-audit-stage.tar.gz" filter=lfs diff=lfs merge=lfs -text
+"artifacts/v4/checkpoints/source-v4-cold-export-refresh.tar.gz" filter=lfs diff=lfs merge=lfs -text
+"artifacts/v4/checkpoints/source-v4-data-stage.tar.gz" filter=lfs diff=lfs merge=lfs -text
+"artifacts/v4/checkpoints/source-v4-export-stage.tar.gz" filter=lfs diff=lfs merge=lfs -text
+"artifacts/v4/checkpoints/source-v4-policy-screen-stage.tar.gz" filter=lfs diff=lfs merge=lfs -text
+"artifacts/v4/checkpoints/source-v4-production-stage.tar.gz" filter=lfs diff=lfs merge=lfs -text
+"artifacts/v4/checkpoints/source-v4-training-stage.tar.gz" filter=lfs diff=lfs merge=lfs -text
+"artifacts/v4/checkpoints/tasks1-2-code.tar.gz" filter=lfs diff=lfs merge=lfs -text
+"artifacts/v4/checkpoints/tasks3-4-and-generic-tools.tar.gz" filter=lfs diff=lfs merge=lfs -text
+"artifacts/v4/data/smoke-crops-140/crops-0000.npz" filter=lfs diff=lfs merge=lfs -text
+"artifacts/v4/models/selected-export/model.pt" filter=lfs diff=lfs merge=lfs -text
+"artifacts/v4/models/selected-export-v1-raw-metric/model.pt" filter=lfs diff=lfs merge=lfs -text
+"artifacts/v4/supplementary/code-models-evidence-final.tar.gz" filter=lfs diff=lfs merge=lfs -text
+"artifacts/v4/supplementary/final-delivery.tar.gz" filter=lfs diff=lfs merge=lfs -text
+"artifacts/v4/supplementary/generated-datasets.tar.gz" filter=lfs diff=lfs merge=lfs -text
+"artifacts/v4/supplementary/source-completion.tar.gz" filter=lfs diff=lfs merge=lfs -text
+"artifacts/v4/validation/development/acceptance-manifest.json" filter=lfs diff=lfs merge=lfs -text
+"artifacts/v4-notebook-repair-20261110/supplementary.tar.gz" filter=lfs diff=lfs merge=lfs -text
+"artifacts/v4-numpy-runtime-20261112/supplementary.tar.gz" filter=lfs diff=lfs merge=lfs -text
+"artifacts/v3/checkpoints/task2-datasets-v2.tar.part000" filter=lfs diff=lfs merge=lfs -text
+"artifacts/v3/checkpoints/task2-datasets-v2.tar.part001" filter=lfs diff=lfs merge=lfs -text
+"artifacts/v4/supplementary/generated-datasets.tar.gz.part000" filter=lfs diff=lfs merge=lfs -text
+"artifacts/v4/supplementary/generated-datasets.tar.gz.part001" filter=lfs diff=lfs merge=lfs -text
+"artifacts/v4/supplementary/generated-datasets.tar.gz.part002" filter=lfs diff=lfs merge=lfs -text
+"artifacts/v4/supplementary/generated-datasets.tar.gz.part003" filter=lfs diff=lfs merge=lfs -text
+"artifacts/v4/supplementary/generated-datasets.tar.gz.part004" filter=lfs diff=lfs merge=lfs -text
+"artifacts/v4/supplementary/generated-datasets.tar.gz.part005" filter=lfs diff=lfs merge=lfs -text
+artifacts/shared/** filter=lfs diff=lfs merge=lfs -text
+
+# Historical release bytes are immutable, including original whitespace.
+submissions/releases/** -whitespace
+
+# Preserve the course starter AST hash, including docstring whitespace.
+agents/starter.py -whitespace

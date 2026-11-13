@@ -1,0 +1,1068 @@
+{
+  "instrumented": true,
+  "source_sha256": "6c668eaa24acf234d7188cb0606203e9af1ece9a3323b980adab75d50f5a30fd",
+  "results": [
+    {
+      "case": 5,
+      "seconds": 1.985764332988765,
+      "metrics": {
+        "transitions": 21737,
+        "duplicates": 14333,
+        "max_turn": 23,
+        "max_gems": 1,
+        "max_items": 3,
+        "doors_opened": 21731,
+        "loss": 464
+      },
+      "result": {
+        "actions": [],
+        "expected_keys": [],
+        "winning": false,
+        "final_score": null,
+        "stop_reason": "state_cap",
+        "expansions": 3113,
+        "transitions": 21737,
+        "time_to_first_win": null,
+        "peak_states": 4096,
+        "peak_records": 7197
+      },
+      "profile": [
+        {
+          "function": "('/Users/enxi/coding/autistic-sv-67/agents/p3.py', 1869, 'search')",
+          "calls": 1,
+          "self_seconds": 0.07410896,
+          "cumulative_seconds": 1.9837226250000002
+        },
+        {
+          "function": "('/Users/enxi/coding/autistic-sv-67/agents/p3.py', 1567, 'estimate')",
+          "calls": 19381,
+          "self_seconds": 0.651112239,
+          "cumulative_seconds": 1.4095868390000001
+        },
+        {
+          "function": "('/Users/enxi/coding/autistic-sv-67/agents/p3.py', 1735, 'actions')",
+          "calls": 3113,
+          "self_seconds": 0.031324201,
+          "cumulative_seconds": 0.9051163440000001
+        },
+        {
+          "function": "('/Users/enxi/coding/autistic-sv-67/agents/p3.py', 1927, 'priority')",
+          "calls": 7197,
+          "self_seconds": 0.006989716000000001,
+          "cumulative_seconds": 0.56661605
+        },
+        {
+          "function": "('/Users/enxi/coding/autistic-sv-67/tools/profile_p3.py', 17, 'step')",
+          "calls": 21737,
+          "self_seconds": 0.05950673100000001,
+          "cumulative_seconds": 0.383783768
+        },
+        {
+          "function": "('~', 0, '<built-in method builtins.sum>')",
+          "calls": 35098,
+          "self_seconds": 0.130516924,
+          "cumulative_seconds": 0.35418382600000003
+        },
+        {
+          "function": "('/Users/enxi/coding/autistic-sv-67/agents/p3.py', 411, 'fast_step')",
+          "calls": 21737,
+          "self_seconds": 0.164492848,
+          "cumulative_seconds": 0.30808418600000004
+        },
+        {
+          "function": "('/Users/enxi/coding/autistic-sv-67/agents/p3.py', 1582, '<genexpr>')",
+          "calls": 1472956,
+          "self_seconds": 0.221112305,
+          "cumulative_seconds": 0.221112305
+        },
+        {
+          "function": "('/Users/enxi/coding/autistic-sv-67/agents/p3.py', 899, 'future')",
+          "calls": 160362,
+          "self_seconds": 0.09969696800000001,
+          "cumulative_seconds": 0.214679328
+        },
+        {
+          "function": "('~', 0, '<built-in method builtins.any>')",
+          "calls": 87359,
+          "self_seconds": 0.030878759000000002,
+          "cumulative_seconds": 0.116039183
+        },
+        {
+          "function": "('/Users/enxi/coding/autistic-sv-67/agents/p3.py', 952, '_future')",
+          "calls": 1111,
+          "self_seconds": 0.003161856,
+          "cumulative_seconds": 0.101283491
+        },
+        {
+          "function": "('~', 0, '<built-in method time.perf_counter>')",
+          "calls": 845717,
+          "self_seconds": 0.07538109700000001,
+          "cumulative_seconds": 0.07538109700000001
+        },
+        {
+          "function": "('/Users/enxi/coding/autistic-sv-67/agents/p3.py', 851, 'tour')",
+          "calls": 21692,
+          "self_seconds": 0.011624252000000002,
+          "cumulative_seconds": 0.061886529
+        },
+        {
+          "function": "('/Users/enxi/coding/autistic-sv-67/agents/p3.py', 1671, '<genexpr>')",
+          "calls": 35144,
+          "self_seconds": 0.008850808,
+          "cumulative_seconds": 0.060665984000000006
+        },
+        {
+          "function": "('~', 0, '<built-in method builtins.min>')",
+          "calls": 27262,
+          "self_seconds": 0.005317093,
+          "cumulative_seconds": 0.055099875000000006
+        },
+        {
+          "function": "('/Users/enxi/coding/autistic-sv-67/agents/p3.py', 805, 'distance')",
+          "calls": 8327,
+          "self_seconds": 0.027626393000000003,
+          "cumulative_seconds": 0.05376728
+        },
+        {
+          "function": "('/Users/enxi/coding/autistic-sv-67/agents/p3.py', 1009, 'reachable')",
+          "calls": 28660,
+          "self_seconds": 0.02067575,
+          "cumulative_seconds": 0.052704534000000004
+        },
+        {
+          "function": "('/Users/enxi/coding/autistic-sv-67/agents/p3.py', 922, 'ghost_route')",
+          "calls": 435,
+          "self_seconds": 0.015687744,
+          "cumulative_seconds": 0.039890220000000004
+        },
+        {
+          "function": "('/Users/enxi/coding/autistic-sv-67/agents/p3.py', 882, '<genexpr>')",
+          "calls": 5323,
+          "self_seconds": 0.002613254,
+          "cumulative_seconds": 0.035106043
+        },
+        {
+          "function": "('~', 0, '<built-in method builtins.abs>')",
+          "calls": 489834,
+          "self_seconds": 0.032525304000000005,
+          "cumulative_seconds": 0.032525304000000005
+        },
+        {
+          "function": "('~', 0, \"<method 'append' of 'list' objects>\")",
+          "calls": 270594,
+          "self_seconds": 0.026487082000000002,
+          "cumulative_seconds": 0.026487082000000002
+        },
+        {
+          "function": "('/Users/enxi/coding/autistic-sv-67/agents/p3.py', 983, '<genexpr>')",
+          "calls": 3294,
+          "self_seconds": 0.00080678,
+          "cumulative_seconds": 0.023262624000000003
+        },
+        {
+          "function": "('/Users/enxi/coding/autistic-sv-67/agents/p3.py', 955, '<genexpr>')",
+          "calls": 2222,
+          "self_seconds": 0.000584717,
+          "cumulative_seconds": 0.022239971
+        },
+        {
+          "function": "('/Users/enxi/coding/autistic-sv-67/agents/p3.py', 799, '<genexpr>')",
+          "calls": 127920,
+          "self_seconds": 0.019649505,
+          "cumulative_seconds": 0.019649505
+        },
+        {
+          "function": "('~', 0, '<built-in method builtins.sorted>')",
+          "calls": 93919,
+          "self_seconds": 0.018772595,
+          "cumulative_seconds": 0.019537959
+        }
+      ]
+    },
+    {
+      "case": 6,
+      "seconds": 2.490008792025037,
+      "metrics": {
+        "transitions": 27628,
+        "duplicates": 19590,
+        "max_turn": 35,
+        "max_gems": 2,
+        "max_items": 2,
+        "doors_opened": 27621,
+        "loss": 0
+      },
+      "result": {
+        "actions": [],
+        "expected_keys": [],
+        "winning": false,
+        "final_score": null,
+        "stop_reason": "state_cap",
+        "expansions": 3956,
+        "transitions": 27628,
+        "time_to_first_win": null,
+        "peak_states": 4096,
+        "peak_records": 8039
+      },
+      "profile": [
+        {
+          "function": "('/Users/enxi/coding/autistic-sv-67/agents/p3.py', 1869, 'search')",
+          "calls": 1,
+          "self_seconds": 0.090981214,
+          "cumulative_seconds": 2.487842917
+        },
+        {
+          "function": "('/Users/enxi/coding/autistic-sv-67/agents/p3.py', 1567, 'estimate')",
+          "calls": 23377,
+          "self_seconds": 0.8824897620000001,
+          "cumulative_seconds": 1.75016005
+        },
+        {
+          "function": "('/Users/enxi/coding/autistic-sv-67/agents/p3.py', 1735, 'actions')",
+          "calls": 3956,
+          "self_seconds": 0.03790538,
+          "cumulative_seconds": 1.1913647410000001
+        },
+        {
+          "function": "('/Users/enxi/coding/autistic-sv-67/agents/p3.py', 1927, 'priority')",
+          "calls": 8039,
+          "self_seconds": 0.007288419000000001,
+          "cumulative_seconds": 0.634502075
+        },
+        {
+          "function": "('~', 0, '<built-in method builtins.sum>')",
+          "calls": 41308,
+          "self_seconds": 0.188180744,
+          "cumulative_seconds": 0.512612617
+        },
+        {
+          "function": "('/Users/enxi/coding/autistic-sv-67/tools/profile_p3.py', 17, 'step')",
+          "calls": 27628,
+          "self_seconds": 0.076105777,
+          "cumulative_seconds": 0.5051235980000001
+        },
+        {
+          "function": "('/Users/enxi/coding/autistic-sv-67/agents/p3.py', 411, 'fast_step')",
+          "calls": 27628,
+          "self_seconds": 0.21330532500000002,
+          "cumulative_seconds": 0.40837243100000004
+        },
+        {
+          "function": "('/Users/enxi/coding/autistic-sv-67/agents/p3.py', 1582, '<genexpr>')",
+          "calls": 2174061,
+          "self_seconds": 0.32184540700000003,
+          "cumulative_seconds": 0.32184540700000003
+        },
+        {
+          "function": "('/Users/enxi/coding/autistic-sv-67/agents/p3.py', 899, 'future')",
+          "calls": 189282,
+          "self_seconds": 0.10412998600000001,
+          "cumulative_seconds": 0.194534595
+        },
+        {
+          "function": "('~', 0, '<built-in method time.perf_counter>')",
+          "calls": 1240162,
+          "self_seconds": 0.108824365,
+          "cumulative_seconds": 0.108824365
+        },
+        {
+          "function": "('/Users/enxi/coding/autistic-sv-67/agents/p3.py', 952, '_future')",
+          "calls": 1897,
+          "self_seconds": 0.002500753,
+          "cumulative_seconds": 0.07377958300000001
+        },
+        {
+          "function": "('~', 0, '<built-in method builtins.any>')",
+          "calls": 76682,
+          "self_seconds": 0.034700970000000005,
+          "cumulative_seconds": 0.071421039
+        },
+        {
+          "function": "('~', 0, '<built-in method builtins.abs>')",
+          "calls": 731790,
+          "self_seconds": 0.048005288,
+          "cumulative_seconds": 0.048005288
+        },
+        {
+          "function": "('/Users/enxi/coding/autistic-sv-67/agents/p3.py', 851, 'tour')",
+          "calls": 21233,
+          "self_seconds": 0.011312164000000001,
+          "cumulative_seconds": 0.04139413
+        },
+        {
+          "function": "('/Users/enxi/coding/autistic-sv-67/agents/p3.py', 922, 'ghost_route')",
+          "calls": 441,
+          "self_seconds": 0.015742254,
+          "cumulative_seconds": 0.038632929
+        },
+        {
+          "function": "('~', 0, '<built-in method builtins.min>')",
+          "calls": 28359,
+          "self_seconds": 0.006248976000000001,
+          "cumulative_seconds": 0.036688570000000004
+        },
+        {
+          "function": "('/Users/enxi/coding/autistic-sv-67/agents/p3.py', 805, 'distance')",
+          "calls": 7132,
+          "self_seconds": 0.013450222000000001,
+          "cumulative_seconds": 0.027020932
+        },
+        {
+          "function": "('~', 0, \"<method 'append' of 'list' objects>\")",
+          "calls": 262999,
+          "self_seconds": 0.025782452,
+          "cumulative_seconds": 0.025782452
+        },
+        {
+          "function": "('/Users/enxi/coding/autistic-sv-67/agents/p3.py', 955, '<genexpr>')",
+          "calls": 3794,
+          "self_seconds": 0.0012163760000000001,
+          "cumulative_seconds": 0.0241933
+        },
+        {
+          "function": "('~', 0, '<built-in method builtins.sorted>')",
+          "calls": 118115,
+          "self_seconds": 0.023156061000000002,
+          "cumulative_seconds": 0.02417454
+        },
+        {
+          "function": "('/Users/enxi/.local/share/uv/python/cpython-3.13.15-macos-aarch64-none/lib/python3.13/enum.py', 801, '<genexpr>')",
+          "calls": 252672,
+          "self_seconds": 0.022693265,
+          "cumulative_seconds": 0.022693265
+        },
+        {
+          "function": "('/Users/enxi/coding/autistic-sv-67/agents/p3.py', 882, '<genexpr>')",
+          "calls": 5295,
+          "self_seconds": 0.002826158,
+          "cumulative_seconds": 0.019990626
+        },
+        {
+          "function": "('/Users/enxi/coding/autistic-sv-67/agents/p3.py', 402, '_reference_set')",
+          "calls": 27628,
+          "self_seconds": 0.013847746000000001,
+          "cumulative_seconds": 0.019448804
+        },
+        {
+          "function": "('~', 0, '<built-in method builtins.len>')",
+          "calls": 198447,
+          "self_seconds": 0.016517433,
+          "cumulative_seconds": 0.016517433
+        },
+        {
+          "function": "('/Users/enxi/coding/autistic-sv-67/agents/p3.py', 436, '<genexpr>')",
+          "calls": 112998,
+          "self_seconds": 0.014005156000000001,
+          "cumulative_seconds": 0.014005156000000001
+        }
+      ]
+    },
+    {
+      "case": 7,
+      "seconds": 2.4267329999711365,
+      "metrics": {
+        "transitions": 19974,
+        "duplicates": 12851,
+        "max_turn": 27,
+        "max_gems": 1,
+        "max_items": 2,
+        "doors_opened": 19968,
+        "loss": 434
+      },
+      "result": {
+        "actions": [],
+        "expected_keys": [],
+        "winning": false,
+        "final_score": null,
+        "stop_reason": "state_cap",
+        "expansions": 2862,
+        "transitions": 19974,
+        "time_to_first_win": null,
+        "peak_states": 4096,
+        "peak_records": 6945
+      },
+      "profile": [
+        {
+          "function": "('/Users/enxi/coding/autistic-sv-67/agents/p3.py', 1869, 'search')",
+          "calls": 1,
+          "self_seconds": 0.07307772900000001,
+          "cumulative_seconds": 2.424765625
+        },
+        {
+          "function": "('/Users/enxi/coding/autistic-sv-67/agents/p3.py', 1567, 'estimate')",
+          "calls": 18165,
+          "self_seconds": 0.826800211,
+          "cumulative_seconds": 1.8670465630000002
+        },
+        {
+          "function": "('/Users/enxi/coding/autistic-sv-67/agents/p3.py', 1735, 'actions')",
+          "calls": 2862,
+          "self_seconds": 0.031150502000000004,
+          "cumulative_seconds": 1.1910819300000002
+        },
+        {
+          "function": "('/Users/enxi/coding/autistic-sv-67/agents/p3.py', 1927, 'priority')",
+          "calls": 6945,
+          "self_seconds": 0.008336883,
+          "cumulative_seconds": 0.738417548
+        },
+        {
+          "function": "('~', 0, '<built-in method builtins.sum>')",
+          "calls": 34442,
+          "self_seconds": 0.15097217500000001,
+          "cumulative_seconds": 0.410579807
+        },
+        {
+          "function": "('/Users/enxi/coding/autistic-sv-67/tools/profile_p3.py', 17, 'step')",
+          "calls": 19974,
+          "self_seconds": 0.058207273000000004,
+          "cumulative_seconds": 0.368444037
+        },
+        {
+          "function": "('/Users/enxi/coding/autistic-sv-67/agents/p3.py', 899, 'future')",
+          "calls": 212002,
+          "self_seconds": 0.1353934,
+          "cumulative_seconds": 0.34227493400000003
+        },
+        {
+          "function": "('/Users/enxi/coding/autistic-sv-67/agents/p3.py', 411, 'fast_step')",
+          "calls": 19974,
+          "self_seconds": 0.16197008200000002,
+          "cumulative_seconds": 0.294956033
+        },
+        {
+          "function": "('/Users/enxi/coding/autistic-sv-67/agents/p3.py', 1582, '<genexpr>')",
+          "calls": 1689345,
+          "self_seconds": 0.256427163,
+          "cumulative_seconds": 0.256427163
+        },
+        {
+          "function": "('/Users/enxi/coding/autistic-sv-67/agents/p3.py', 952, '_future')",
+          "calls": 3292,
+          "self_seconds": 0.008754544000000001,
+          "cumulative_seconds": 0.18793289700000002
+        },
+        {
+          "function": "('~', 0, '<built-in method builtins.any>')",
+          "calls": 81545,
+          "self_seconds": 0.033409324000000004,
+          "cumulative_seconds": 0.169939684
+        },
+        {
+          "function": "('/Users/enxi/coding/autistic-sv-67/agents/p3.py', 1671, '<genexpr>')",
+          "calls": 54577,
+          "self_seconds": 0.014430414,
+          "cumulative_seconds": 0.111757746
+        },
+        {
+          "function": "('~', 0, '<built-in method time.perf_counter>')",
+          "calls": 1223596,
+          "self_seconds": 0.111142556,
+          "cumulative_seconds": 0.111142556
+        },
+        {
+          "function": "('/Users/enxi/coding/autistic-sv-67/agents/p3.py', 922, 'ghost_route')",
+          "calls": 907,
+          "self_seconds": 0.046550014,
+          "cumulative_seconds": 0.105437762
+        },
+        {
+          "function": "('/Users/enxi/coding/autistic-sv-67/agents/p3.py', 1009, 'reachable')",
+          "calls": 43663,
+          "self_seconds": 0.034642424000000005,
+          "cumulative_seconds": 0.09787941500000001
+        },
+        {
+          "function": "('/Users/enxi/coding/autistic-sv-67/agents/p3.py', 851, 'tour')",
+          "calls": 58097,
+          "self_seconds": 0.031060663000000002,
+          "cumulative_seconds": 0.08653487900000001
+        },
+        {
+          "function": "('~', 0, '<built-in method builtins.min>')",
+          "calls": 66572,
+          "self_seconds": 0.011762432000000001,
+          "cumulative_seconds": 0.070516535
+        },
+        {
+          "function": "('/Users/enxi/coding/autistic-sv-67/agents/p3.py', 805, 'distance')",
+          "calls": 13683,
+          "self_seconds": 0.029670148,
+          "cumulative_seconds": 0.059417842000000005
+        },
+        {
+          "function": "('~', 0, '<built-in method builtins.abs>')",
+          "calls": 809952,
+          "self_seconds": 0.054942751000000005,
+          "cumulative_seconds": 0.054942751000000005
+        },
+        {
+          "function": "('/Users/enxi/coding/autistic-sv-67/agents/p3.py', 1035, '<genexpr>')",
+          "calls": 56238,
+          "self_seconds": 0.029292862000000003,
+          "cumulative_seconds": 0.042378281000000004
+        },
+        {
+          "function": "('/Users/enxi/coding/autistic-sv-67/agents/p3.py', 882, '<genexpr>')",
+          "calls": 7004,
+          "self_seconds": 0.0038872670000000002,
+          "cumulative_seconds": 0.034518846
+        },
+        {
+          "function": "('~', 0, \"<method 'append' of 'list' objects>\")",
+          "calls": 303091,
+          "self_seconds": 0.030557282,
+          "cumulative_seconds": 0.030557282
+        },
+        {
+          "function": "('/Users/enxi/coding/autistic-sv-67/agents/p3.py', 955, '<genexpr>')",
+          "calls": 6584,
+          "self_seconds": 0.002245346,
+          "cumulative_seconds": 0.027665559000000003
+        },
+        {
+          "function": "('/Users/enxi/coding/autistic-sv-67/agents/p3.py', 799, '<genexpr>')",
+          "calls": 142293,
+          "self_seconds": 0.023687229,
+          "cumulative_seconds": 0.023687229
+        },
+        {
+          "function": "('/Users/enxi/coding/autistic-sv-67/agents/p3.py', 983, '<genexpr>')",
+          "calls": 7908,
+          "self_seconds": 0.002021735,
+          "cumulative_seconds": 0.022548838
+        }
+      ]
+    },
+    {
+      "case": 9,
+      "seconds": 2.6032884580199607,
+      "metrics": {
+        "transitions": 27911,
+        "duplicates": 19660,
+        "max_turn": 35,
+        "max_gems": 1,
+        "max_items": 2,
+        "doors_opened": 27904,
+        "loss": 0
+      },
+      "result": {
+        "actions": [],
+        "expected_keys": [],
+        "winning": false,
+        "final_score": null,
+        "stop_reason": "state_cap",
+        "expansions": 3997,
+        "transitions": 27911,
+        "time_to_first_win": null,
+        "peak_states": 4096,
+        "peak_records": 8079
+      },
+      "profile": [
+        {
+          "function": "('/Users/enxi/coding/autistic-sv-67/agents/p3.py', 1869, 'search')",
+          "calls": 1,
+          "self_seconds": 0.098614925,
+          "cumulative_seconds": 2.5982186250000003
+        },
+        {
+          "function": "('/Users/enxi/coding/autistic-sv-67/agents/p3.py', 1567, 'estimate')",
+          "calls": 23466,
+          "self_seconds": 0.908033512,
+          "cumulative_seconds": 1.7936935250000001
+        },
+        {
+          "function": "('/Users/enxi/coding/autistic-sv-67/agents/p3.py', 1735, 'actions')",
+          "calls": 3997,
+          "self_seconds": 0.040903098000000006,
+          "cumulative_seconds": 1.243238571
+        },
+        {
+          "function": "('/Users/enxi/coding/autistic-sv-67/agents/p3.py', 1927, 'priority')",
+          "calls": 8079,
+          "self_seconds": 0.007763946000000001,
+          "cumulative_seconds": 0.654924468
+        },
+        {
+          "function": "('~', 0, '<built-in method builtins.sum>')",
+          "calls": 41789,
+          "self_seconds": 0.19757191600000001,
+          "cumulative_seconds": 0.552098392
+        },
+        {
+          "function": "('/Users/enxi/coding/autistic-sv-67/tools/profile_p3.py', 17, 'step')",
+          "calls": 27911,
+          "self_seconds": 0.078865085,
+          "cumulative_seconds": 0.532220484
+        },
+        {
+          "function": "('/Users/enxi/coding/autistic-sv-67/agents/p3.py', 411, 'fast_step')",
+          "calls": 27911,
+          "self_seconds": 0.22311955100000003,
+          "cumulative_seconds": 0.431866929
+        },
+        {
+          "function": "('/Users/enxi/coding/autistic-sv-67/agents/p3.py', 1582, '<genexpr>')",
+          "calls": 2229270,
+          "self_seconds": 0.35181852700000005,
+          "cumulative_seconds": 0.35181852700000005
+        },
+        {
+          "function": "('/Users/enxi/coding/autistic-sv-67/agents/p3.py', 899, 'future')",
+          "calls": 164299,
+          "self_seconds": 0.095159565,
+          "cumulative_seconds": 0.17834533700000002
+        },
+        {
+          "function": "('~', 0, '<built-in method time.perf_counter>')",
+          "calls": 1171667,
+          "self_seconds": 0.10444154100000001,
+          "cumulative_seconds": 0.10444154100000001
+        },
+        {
+          "function": "('~', 0, '<built-in method builtins.any>')",
+          "calls": 77910,
+          "self_seconds": 0.03359169,
+          "cumulative_seconds": 0.06913190500000001
+        },
+        {
+          "function": "('/Users/enxi/coding/autistic-sv-67/agents/p3.py', 952, '_future')",
+          "calls": 1628,
+          "self_seconds": 0.002252202,
+          "cumulative_seconds": 0.068544801
+        },
+        {
+          "function": "('~', 0, '<built-in method builtins.abs>')",
+          "calls": 703934,
+          "self_seconds": 0.046295572,
+          "cumulative_seconds": 0.046295572
+        },
+        {
+          "function": "('/Users/enxi/coding/autistic-sv-67/agents/p3.py', 851, 'tour')",
+          "calls": 17704,
+          "self_seconds": 0.009658931,
+          "cumulative_seconds": 0.03874627
+        },
+        {
+          "function": "('/Users/enxi/coding/autistic-sv-67/agents/p3.py', 922, 'ghost_route')",
+          "calls": 411,
+          "self_seconds": 0.014518549,
+          "cumulative_seconds": 0.035069582
+        },
+        {
+          "function": "('~', 0, '<built-in method builtins.min>')",
+          "calls": 24349,
+          "self_seconds": 0.005372181,
+          "cumulative_seconds": 0.034405461000000005
+        },
+        {
+          "function": "('/Users/enxi/coding/autistic-sv-67/agents/p3.py', 1764, '<genexpr>')",
+          "calls": 31976,
+          "self_seconds": 0.027204309000000003,
+          "cumulative_seconds": 0.027204309000000003
+        },
+        {
+          "function": "('/Users/enxi/coding/autistic-sv-67/agents/p3.py', 805, 'distance')",
+          "calls": 6170,
+          "self_seconds": 0.013491560000000001,
+          "cumulative_seconds": 0.027048192000000002
+        },
+        {
+          "function": "('~', 0, '<built-in method builtins.sorted>')",
+          "calls": 119174,
+          "self_seconds": 0.025048070000000002,
+          "cumulative_seconds": 0.026091388
+        },
+        {
+          "function": "('/Users/enxi/.local/share/uv/python/cpython-3.13.15-macos-aarch64-none/lib/python3.13/enum.py', 801, '<genexpr>')",
+          "calls": 255264,
+          "self_seconds": 0.024122948,
+          "cumulative_seconds": 0.024122948
+        },
+        {
+          "function": "('~', 0, \"<method 'append' of 'list' objects>\")",
+          "calls": 238135,
+          "self_seconds": 0.023954301,
+          "cumulative_seconds": 0.023954301
+        },
+        {
+          "function": "('/Users/enxi/coding/autistic-sv-67/agents/p3.py', 955, '<genexpr>')",
+          "calls": 3256,
+          "self_seconds": 0.001109273,
+          "cumulative_seconds": 0.023877676
+        },
+        {
+          "function": "('/Users/enxi/coding/autistic-sv-67/agents/p3.py', 402, '_reference_set')",
+          "calls": 27911,
+          "self_seconds": 0.014686094,
+          "cumulative_seconds": 0.020817196
+        },
+        {
+          "function": "('/Users/enxi/coding/autistic-sv-67/agents/p3.py', 882, '<genexpr>')",
+          "calls": 4451,
+          "self_seconds": 0.002363093,
+          "cumulative_seconds": 0.019265548
+        },
+        {
+          "function": "('/Users/enxi/coding/autistic-sv-67/agents/p3.py', 545, '<genexpr>')",
+          "calls": 53072,
+          "self_seconds": 0.008507074,
+          "cumulative_seconds": 0.01842299
+        }
+      ]
+    },
+    {
+      "case": 10,
+      "seconds": 2.6687877920339815,
+      "metrics": {
+        "transitions": 23192,
+        "duplicates": 15650,
+        "max_turn": 28,
+        "max_gems": 2,
+        "max_items": 3,
+        "doors_opened": 23186,
+        "loss": 232
+      },
+      "result": {
+        "actions": [],
+        "expected_keys": [],
+        "winning": false,
+        "final_score": null,
+        "stop_reason": "state_cap",
+        "expansions": 3320,
+        "transitions": 23192,
+        "time_to_first_win": null,
+        "peak_states": 4096,
+        "peak_records": 7405
+      },
+      "profile": [
+        {
+          "function": "('/Users/enxi/coding/autistic-sv-67/agents/p3.py', 1869, 'search')",
+          "calls": 1,
+          "self_seconds": 0.080955022,
+          "cumulative_seconds": 2.666749292
+        },
+        {
+          "function": "('/Users/enxi/coding/autistic-sv-67/agents/p3.py', 1567, 'estimate')",
+          "calls": 20421,
+          "self_seconds": 0.9142985370000001,
+          "cumulative_seconds": 2.0446070460000003
+        },
+        {
+          "function": "('/Users/enxi/coding/autistic-sv-67/agents/p3.py', 1735, 'actions')",
+          "calls": 3320,
+          "self_seconds": 0.033993493,
+          "cumulative_seconds": 1.320485418
+        },
+        {
+          "function": "('/Users/enxi/coding/autistic-sv-67/agents/p3.py', 1927, 'priority')",
+          "calls": 7405,
+          "self_seconds": 0.007624387000000001,
+          "cumulative_seconds": 0.792116456
+        },
+        {
+          "function": "('~', 0, '<built-in method builtins.sum>')",
+          "calls": 38992,
+          "self_seconds": 0.17873249600000002,
+          "cumulative_seconds": 0.490726598
+        },
+        {
+          "function": "('/Users/enxi/coding/autistic-sv-67/tools/profile_p3.py', 17, 'step')",
+          "calls": 23192,
+          "self_seconds": 0.065151202,
+          "cumulative_seconds": 0.413728998
+        },
+        {
+          "function": "('/Users/enxi/coding/autistic-sv-67/agents/p3.py', 899, 'future')",
+          "calls": 194927,
+          "self_seconds": 0.12766179600000002,
+          "cumulative_seconds": 0.344932617
+        },
+        {
+          "function": "('/Users/enxi/coding/autistic-sv-67/agents/p3.py', 411, 'fast_step')",
+          "calls": 23192,
+          "self_seconds": 0.17730510000000002,
+          "cumulative_seconds": 0.33160252700000004
+        },
+        {
+          "function": "('/Users/enxi/coding/autistic-sv-67/agents/p3.py', 1582, '<genexpr>')",
+          "calls": 2042100,
+          "self_seconds": 0.308182218,
+          "cumulative_seconds": 0.308182218
+        },
+        {
+          "function": "('/Users/enxi/coding/autistic-sv-67/agents/p3.py', 952, '_future')",
+          "calls": 3567,
+          "self_seconds": 0.009006763000000001,
+          "cumulative_seconds": 0.20009748200000002
+        },
+        {
+          "function": "('~', 0, '<built-in method builtins.any>')",
+          "calls": 95811,
+          "self_seconds": 0.038999274,
+          "cumulative_seconds": 0.17912086900000002
+        },
+        {
+          "function": "('~', 0, '<built-in method time.perf_counter>')",
+          "calls": 1306503,
+          "self_seconds": 0.116125878,
+          "cumulative_seconds": 0.116125878
+        },
+        {
+          "function": "('/Users/enxi/coding/autistic-sv-67/agents/p3.py', 1671, '<genexpr>')",
+          "calls": 59009,
+          "self_seconds": 0.015203897000000001,
+          "cumulative_seconds": 0.110143193
+        },
+        {
+          "function": "('/Users/enxi/coding/autistic-sv-67/agents/p3.py', 922, 'ghost_route')",
+          "calls": 967,
+          "self_seconds": 0.048008163,
+          "cumulative_seconds": 0.108230744
+        },
+        {
+          "function": "('/Users/enxi/coding/autistic-sv-67/agents/p3.py', 1009, 'reachable')",
+          "calls": 45659,
+          "self_seconds": 0.036716825,
+          "cumulative_seconds": 0.09662129500000001
+        },
+        {
+          "function": "('/Users/enxi/coding/autistic-sv-67/agents/p3.py', 851, 'tour')",
+          "calls": 57878,
+          "self_seconds": 0.031023144000000002,
+          "cumulative_seconds": 0.093072609
+        },
+        {
+          "function": "('~', 0, '<built-in method builtins.min>')",
+          "calls": 66541,
+          "self_seconds": 0.012462786,
+          "cumulative_seconds": 0.078444388
+        },
+        {
+          "function": "('/Users/enxi/coding/autistic-sv-67/agents/p3.py', 805, 'distance')",
+          "calls": 14576,
+          "self_seconds": 0.033999262,
+          "cumulative_seconds": 0.06446674000000001
+        },
+        {
+          "function": "('~', 0, '<built-in method builtins.abs>')",
+          "calls": 859878,
+          "self_seconds": 0.056822300000000006,
+          "cumulative_seconds": 0.056822300000000006
+        },
+        {
+          "function": "('/Users/enxi/coding/autistic-sv-67/agents/p3.py', 882, '<genexpr>')",
+          "calls": 7802,
+          "self_seconds": 0.004373578,
+          "cumulative_seconds": 0.038980235
+        },
+        {
+          "function": "('/Users/enxi/coding/autistic-sv-67/agents/p3.py', 1035, '<genexpr>')",
+          "calls": 64258,
+          "self_seconds": 0.021655561,
+          "cumulative_seconds": 0.036741022000000005
+        },
+        {
+          "function": "('/Users/enxi/coding/autistic-sv-67/agents/p3.py', 955, '<genexpr>')",
+          "calls": 7134,
+          "self_seconds": 0.0033424600000000002,
+          "cumulative_seconds": 0.031214516
+        },
+        {
+          "function": "('~', 0, \"<method 'append' of 'list' objects>\")",
+          "calls": 289236,
+          "self_seconds": 0.028469464000000003,
+          "cumulative_seconds": 0.028469464000000003
+        },
+        {
+          "function": "('/Users/enxi/coding/autistic-sv-67/agents/p3.py', 983, '<genexpr>')",
+          "calls": 8316,
+          "self_seconds": 0.002210137,
+          "cumulative_seconds": 0.026474258
+        },
+        {
+          "function": "('/Users/enxi/coding/autistic-sv-67/agents/p3.py', 799, '<genexpr>')",
+          "calls": 158538,
+          "self_seconds": 0.025748461,
+          "cumulative_seconds": 0.025748461
+        }
+      ]
+    },
+    {
+      "case": 11,
+      "seconds": 2.5646420419798233,
+      "metrics": {
+        "transitions": 17613,
+        "duplicates": 10858,
+        "max_turn": 22,
+        "max_gems": 0,
+        "max_items": 2,
+        "doors_opened": 17607,
+        "loss": 203
+      },
+      "result": {
+        "actions": [],
+        "expected_keys": [],
+        "winning": false,
+        "final_score": null,
+        "stop_reason": "state_cap",
+        "expansions": 2524,
+        "transitions": 17613,
+        "time_to_first_win": null,
+        "peak_states": 4096,
+        "peak_records": 6608
+      },
+      "profile": [
+        {
+          "function": "('/Users/enxi/coding/autistic-sv-67/agents/p3.py', 1869, 'search')",
+          "calls": 1,
+          "self_seconds": 0.06360735000000001,
+          "cumulative_seconds": 2.562321833
+        },
+        {
+          "function": "('/Users/enxi/coding/autistic-sv-67/agents/p3.py', 1567, 'estimate')",
+          "calls": 16541,
+          "self_seconds": 0.905874406,
+          "cumulative_seconds": 2.0800925930000003
+        },
+        {
+          "function": "('/Users/enxi/coding/autistic-sv-67/agents/p3.py', 1735, 'actions')",
+          "calls": 2524,
+          "self_seconds": 0.026590071000000003,
+          "cumulative_seconds": 1.222733378
+        },
+        {
+          "function": "('/Users/enxi/coding/autistic-sv-67/agents/p3.py', 1927, 'priority')",
+          "calls": 6608,
+          "self_seconds": 0.006837145,
+          "cumulative_seconds": 0.910369928
+        },
+        {
+          "function": "('/Users/enxi/coding/autistic-sv-67/agents/p3.py', 899, 'future')",
+          "calls": 238360,
+          "self_seconds": 0.148008351,
+          "cumulative_seconds": 0.49157287600000005
+        },
+        {
+          "function": "('~', 0, '<built-in method builtins.sum>')",
+          "calls": 31155,
+          "self_seconds": 0.150175642,
+          "cumulative_seconds": 0.413152817
+        },
+        {
+          "function": "('/Users/enxi/coding/autistic-sv-67/agents/p3.py', 952, '_future')",
+          "calls": 3057,
+          "self_seconds": 0.006842733,
+          "cumulative_seconds": 0.322663645
+        },
+        {
+          "function": "('/Users/enxi/coding/autistic-sv-67/tools/profile_p3.py', 17, 'step')",
+          "calls": 17613,
+          "self_seconds": 0.049613741,
+          "cumulative_seconds": 0.318319733
+        },
+        {
+          "function": "('/Users/enxi/coding/autistic-sv-67/agents/p3.py', 1582, '<genexpr>')",
+          "calls": 1720264,
+          "self_seconds": 0.260100265,
+          "cumulative_seconds": 0.260100265
+        },
+        {
+          "function": "('/Users/enxi/coding/autistic-sv-67/agents/p3.py', 411, 'fast_step')",
+          "calls": 17613,
+          "self_seconds": 0.139038995,
+          "cumulative_seconds": 0.255235696
+        },
+        {
+          "function": "('/Users/enxi/coding/autistic-sv-67/agents/p3.py', 851, 'tour')",
+          "calls": 64877,
+          "self_seconds": 0.033742515,
+          "cumulative_seconds": 0.19210994
+        },
+        {
+          "function": "('/Users/enxi/coding/autistic-sv-67/agents/p3.py', 805, 'distance')",
+          "calls": 17603,
+          "self_seconds": 0.09716092700000001,
+          "cumulative_seconds": 0.183122733
+        },
+        {
+          "function": "('~', 0, '<built-in method builtins.min>')",
+          "calls": 69409,
+          "self_seconds": 0.011976084000000001,
+          "cumulative_seconds": 0.16263754800000002
+        },
+        {
+          "function": "('/Users/enxi/coding/autistic-sv-67/agents/p3.py', 922, 'ghost_route')",
+          "calls": 836,
+          "self_seconds": 0.053110959000000006,
+          "cumulative_seconds": 0.13157205600000002
+        },
+        {
+          "function": "('~', 0, '<built-in method time.perf_counter>')",
+          "calls": 1406275,
+          "self_seconds": 0.124724992,
+          "cumulative_seconds": 0.124724992
+        },
+        {
+          "function": "('~', 0, '<built-in method builtins.any>')",
+          "calls": 71070,
+          "self_seconds": 0.028206563,
+          "cumulative_seconds": 0.120958217
+        },
+        {
+          "function": "('/Users/enxi/coding/autistic-sv-67/agents/p3.py', 882, '<genexpr>')",
+          "calls": 12390,
+          "self_seconds": 0.006634360000000001,
+          "cumulative_seconds": 0.10855442500000001
+        },
+        {
+          "function": "('/Users/enxi/coding/autistic-sv-67/agents/p3.py', 983, '<genexpr>')",
+          "calls": 6250,
+          "self_seconds": 0.00160147,
+          "cumulative_seconds": 0.074820068
+        },
+        {
+          "function": "('/Users/enxi/coding/autistic-sv-67/agents/p3.py', 1671, '<genexpr>')",
+          "calls": 37421,
+          "self_seconds": 0.009551667,
+          "cumulative_seconds": 0.070656282
+        },
+        {
+          "function": "('~', 0, '<built-in method builtins.abs>')",
+          "calls": 992290,
+          "self_seconds": 0.06471998400000001,
+          "cumulative_seconds": 0.06471998400000001
+        },
+        {
+          "function": "('/Users/enxi/coding/autistic-sv-67/agents/p3.py', 1009, 'reachable')",
+          "calls": 30871,
+          "self_seconds": 0.022075263,
+          "cumulative_seconds": 0.062248867000000006
+        },
+        {
+          "function": "('/Users/enxi/coding/autistic-sv-67/agents/p3.py', 955, '<genexpr>')",
+          "calls": 6114,
+          "self_seconds": 0.0016159190000000002,
+          "cumulative_seconds": 0.061156010000000004
+        },
+        {
+          "function": "('/Users/enxi/coding/autistic-sv-67/agents/p3.py', 799, '<genexpr>')",
+          "calls": 311988,
+          "self_seconds": 0.045957552000000006,
+          "cumulative_seconds": 0.045957552000000006
+        },
+        {
+          "function": "('~', 0, \"<method 'append' of 'list' objects>\")",
+          "calls": 325862,
+          "self_seconds": 0.042139109,
+          "cumulative_seconds": 0.042139109
+        },
+        {
+          "function": "('/Users/enxi/coding/autistic-sv-67/agents/p3.py', 1035, '<genexpr>')",
+          "calls": 33381,
+          "self_seconds": 0.012621822000000001,
+          "cumulative_seconds": 0.020221237
+        }
+      ]
+    }
+  ]
+}
